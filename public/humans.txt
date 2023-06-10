@@ -1,0 +1,15 @@
+/* TEAM */
+	Adler Medrado
+	Contact: adler [at] adlermedrado.com.br
+	Twitter: @adlermedrado
+	From:Sao Paulo, SP, Brasil
+
+/* SITE */
+	Last update: 2023/05/17
+	Language: Brazilian Portuguese / English
+	Standards: HTML5, CSS3
+	IDE: Intellij, Vim
+
+/* THANKS */
+	Name: James Tomasino (https://tomasino.org)
+	Description: The simplicity of his website inspired me to do the same.

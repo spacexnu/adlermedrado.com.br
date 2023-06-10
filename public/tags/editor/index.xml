@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>editor on Adler Medrado&#39;s personal blog</title>
+    <link>https://blog.adlermedrado.com.br/tags/editor/</link>
+    <description>Recent content in editor on Adler Medrado&#39;s personal blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 04 Aug 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adlermedrado.com.br/tags/editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Atom e PHP: Em busca da configuração perfeita</title>
+      <link>https://blog.adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</link>
+      <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</guid>
+      <description>Como eu disse recentemente, eu deixei de usar o Textmate, passei a usar o Atom e recomendei alguns packages que eu estou usando e estão me ajudando diariamente.
+Neste post eu quero mostrar mais alguns packages bem úteis para desenvolvimento PHP:
+linter-phpmd linter-phpcs php-getters-setters Os dois primeiros para funcionar precisam que tanto o PHPMD (PHP Mess Detector) e o PHP_CodeSniffer esteja instalados no ambiente e acessíveis por meio do PATH, ou seja, os comandos phpcs e phpmd devem ser acessíveis de qualquer local.</description>
+    </item>
+    
+  </channel>
+</rss>

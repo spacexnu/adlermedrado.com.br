@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on Adler Medrado&#39;s personal blog</title>
+    <link>https://blog.adlermedrado.com.br/tags/php/</link>
+    <description>Recent content in php on Adler Medrado&#39;s personal blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adlermedrado.com.br/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP para Todos</title>
+      <link>https://blog.adlermedrado.com.br/posts/php-para-todos/</link>
+      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adlermedrado.com.br/posts/php-para-todos/</guid>
+      <description>Resolvi colocar em prática uma idéia que deixei hibernando por um bom tempo, que era a de criar um site com conteúdo voltado a iniciantes em desenvolvimento com PHP.
+É muito fácil encontrar conteúdos de excelente qualidade que são voltados a pessoas que já possuem um nível de conhecimento maior em PHP, mas o mesmo não pode ser dito a respeito de conteúdos para iniciantes, sendo assim, eu topei o desafio e criei o PHP para Todos, estou tentando manter uma regularidade nos artigos e também estou preparando novidades que espero lançar em breve.</description>
+    </item>
+    
+    <item>
+      <title>Magento: Crash nos pacotes de produtos</title>
+      <link>https://blog.adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</link>
+      <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</guid>
+      <description>Esta é a primeira dica sobre Magento publicada por mim, acredito que isso se tornará algo recorrente daqui para a frente.
+Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo.</description>
+    </item>
+    
+    <item>
+      <title>Atom e PHP: Em busca da configuração perfeita</title>
+      <link>https://blog.adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</link>
+      <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</guid>
+      <description>Como eu disse recentemente, eu deixei de usar o Textmate, passei a usar o Atom e recomendei alguns packages que eu estou usando e estão me ajudando diariamente.
+Neste post eu quero mostrar mais alguns packages bem úteis para desenvolvimento PHP:
+linter-phpmd linter-phpcs php-getters-setters Os dois primeiros para funcionar precisam que tanto o PHPMD (PHP Mess Detector) e o PHP_CodeSniffer esteja instalados no ambiente e acessíveis por meio do PATH, ou seja, os comandos phpcs e phpmd devem ser acessíveis de qualquer local.</description>
+    </item>
+    
+    <item>
+      <title>Configurando um repositório privado usando Composer e Satis</title>
+      <link>https://blog.adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</link>
+      <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</guid>
+      <description>Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando na Coderockr e este repositório deveria ser importado no projeto por meio do composer, talvez isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível pelo composer que utilizasse um repositório git privado.
+Como faz? Após algumas pesquisas eu encontrei o projeto Satis, que pelo que pude compreender é mantido pelos mesmos desenvolvedores que mantém o composer.</description>
+    </item>
+    
+  </channel>
+</rss>

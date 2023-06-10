@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: Consolas, monospace;
+    font-size: 130%;
+    line-height: 1.5;
+    margin: 3% 5%;
+    max-width: 80em;
+    background: #141414;
+    color: #c2c2c1;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+ul > li:before {
+    content: "-";
+    position: absolute;
+    margin-left: -1.1rem;
+}
+
+ul > li:after {
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+    color: #00ad22
+}
+
+small {
+    color: #86f48f;
+    font-size: 80%;
+}
+
+p {
+    margin-bottom: .75rem
+}
+
+h1 {
+    line-height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #F36D33FF;
+}
+
+h2 {
+    line-height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #aef486;
+}
+
+h3 {
+    line-height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #aef486;
+}
+
+h4 {
+    line-height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #aef486;
+}
+
+h5 {
+    line-height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #aef486;
+}
+
+h6 {
+    line-height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #aef486;
+}
+
+strong {
+    font-weight: 800;
+}
+
+.post_metadata {
+    color: #86f48f;
+    font-size: 40%;
+}
+
+code {
+    background: #000000;
+    border: 1px solid #BF00FF;
+    color: #F36D33FF;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+em {
+    font-style: italic;
+}
+
+.error_not_found {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.error_not_found p {
+    font: normal bold 1.2rem Consolas, monospace;
+    text-align: center;
+}
+
+.gpg_signed_info p {
+    font-size: x-small;
+}
+
+.line_break::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25px;
+    padding: 0;
+}
+
+.navbar_right {
+    display: flex;
+}
+
+.navbar_right a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #86f48f;
+    transition: all 100ms;
+}
+
+.navbar_right a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #edf4f9;
+        color: #40302f;
+    }
+
+    a {
+        color: #172b73;
+        text-decoration: underline;
+    }
+
+    h1, h2 {
+        color: #40302f;
+        font-weight: bold;
+    }
+}

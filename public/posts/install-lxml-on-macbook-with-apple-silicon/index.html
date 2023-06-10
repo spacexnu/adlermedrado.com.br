@@ -3,7 +3,7 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
 <a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p><img src=/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png alt="pip install error when installing lxml"></p><p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p><pre><code>Building wheels for collected packages: xmlsec  
@@ -38,18 +38,18 @@ ERROR: Could not build wheels for xmlsec, which is required to install pyproject
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSEsKcACgkQKWCEk4dB
-O2DaYRAAm+fpSKzDpvK262/vgVpxxz21a3vVtSAl2FNz/PMeYHRPfpqvae4ofWDH
-h8/HHU5EoHB2yISlh1I8A1N7FRpWAgSQ/cvUJAjr1rSHJ1hFt+vtlIXumxEbVcfT
-lM0pz0uOspAYHQx5gJ+5jvK1836kzwYJmgzGLaHN3rzN0KWWJPGEPiJr6JaZoo3z
-CqF6B5h8kY0rjWdrogA69lLRoa8UxqnBySe5mnY/Yo5Dqn2F4DLS8KPyuvAAUBjm
-QoD5CX+NGRR+LH0WIhfX/U11ev10ONhCkFnfL5GWoSQL7WvU2IHx/NSUFfdYPK0e
-jxBGQBp01DT4Z71AL3Jk55OrP519FMXGVyiNoh/keh/wtW8JWJbI84emODyVgmDv
-EZba8sgboCEybEgzurXDwgE2TV92r+u8w0ZCNTRpmri1F0M8Ep+BtiUSEKAxZD9D
-GN2Uvw2O4d7A+1TvgTZ6XYyUlX7zv8JWKYqmc6vvL1yzb+3BgOjWiRKgm3FbACLz
-SlDmPG0t6eV2pOPk+jD6s674RKYFuukhwKFcJ+ar9Z8fp2nJR/DD91GehmrKgIN7
-6lVmW8Lmtd+W9zMqHRs5prdDAh/u41TYtgFGSO2sEaxM33V5szajdoJaWe4kvt3W
-gBz/LG0YyUHcmJar2+tNR+AiAskSUNKoXFMSIGnHwazfUUVxsOw=
-=WvRg
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSExiYACgkQKWCEk4dB
+O2CRkhAAm2DBfub/iqmBPMIbmTwzzXIATeUTpJr8wtgW64D8z9ihcqeLsE6IDuUd
+K2W9rlIXBsZfhkj0ShtuGpQJnyJwFtTnEAGmyjX6uPXrLFnMkbyuKgcAuBBh/AcB
+PbGptVGS7GbWl02YNYK7O8hiUk7uQBKXOAm5OmApWD8hYj6nRmNiMh0kw8gjAVGZ
+9KgaXxwh6A14fKKny9Nb/CfzUqxE8wAdWCjPkI0r6enrOIJf7rtAVKaIyLz6z711
+69B98tzDMlrNNaG1Ij/jxpjHjKNE9+Z70CpMLuQkgAWq8wboYeynj2AKjeWYJAAl
+xEZU1dZMvezc3kLPAqKfZBQNqqFGisJvE5mG/+LsfZru8iP6lLVWfNxriAViE6+2
+57r08tVbme2r+SglLt3W+r9Ep4fM575IfupvhXxFDZ08+abEc5hZejS9E9nsQZRK
+1tpUH8bEO7gP7bAoN5Q6vL9kKlEyUe1gCJCNdxzovPCm8un5bduNIAof90sMkLCZ
+DKiSRkvGXCLZmQhRmc8yLZG3/gyi4o/Gl6VVAXBJh7/Pts/bUxX4+wbo7oQ2krY4
+86+vu414thK5/iGAjLQDO/rxYRl30V1zJCsfkOkQBX2yjAX8KZ2Yt8kVxKleRV1X
+0bG3uMSenI4NqTa2Vg/k2b6uJ4mSUNO6+TzCei3hWCXKAc097Ac=
+=T91M
 -----END PGP SIGNATURE-----
 -->

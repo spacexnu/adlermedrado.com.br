@@ -37,7 +37,7 @@ talk to me privately, I think that an PGP encrypted email is the safest way.
 ### Email
 
 * <adler@adlermedrado.com.br>
-* [Public Key](/pub-key.asc)
+* GPG [Public Key](/pub-key.asc)
 
 ### IRC
 

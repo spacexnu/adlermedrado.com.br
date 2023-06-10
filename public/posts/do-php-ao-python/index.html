@@ -3,7 +3,7 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
 <a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Do PHP ao Python</h1><div><div><p><small><time>June 9, 2017</time>
 |
 11 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Um pouco da minha experiência na transição de PHP para Python</p><p><img src=/posts/images/1*wlukTN8cgk7n2rJTOKlOkw.jpeg alt></p><p>Eu e o Elephant na PHP Conference Brasil 2012</p><h4 id=introdução>Introdução</h4><p>Em Dezembro de 2015 eu fui convidado a trabalhar no Olist e eu comecei a trabalhar efetivamente em Janeiro de 2016.
@@ -72,18 +72,18 @@ equipe, <a href=https://www.99jobs.com/olist>saiba mais aqui</a>.</p></div></div
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/do-php-ao-python/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSEsKUACgkQKWCEk4dB
-O2DDdw/+LykLyyx1/P8FdbU2nU3WRNylqdzIJgTbDPWjIv3e1/ltNgcxI83e6Lww
-hvT6K5TRmJfduai7lkceOBEFlpfSPPmMw1wKFjJgf6m9r7OOuk1xjnlD5/qcT0FI
-y2vJih9F3Jfs/yzEfi5JuZ8TxCbB4wf2AhnV4QvftLK0dVrsBXKoRoHENV5XBpKJ
-T/r/jlHf74J145RtUpHLcaOsAFuweKCjr3iT5A3x3cCGQPMxeLWZfBQ6rnocrjiT
-RKc1Hx5pkcJ2QHn5ygjsr1ACRopcAVBeGPo6QeP8oZVnJ69XCJ6aWKr0YZZsG1sI
-bBd+sO09NnRZDv6czaEZ6QJLGrhSiQ+nJoijMh0ay9xPxC5j7uFurse3vvZ9Q3NK
-RH5tW3dsYcJHu0t2/XQTo23ba23hZzWbwEqHUCGRWAQasWZ8Y9YVngcGt+E4Fzi4
-LW1zWJov2hnljknpDPeAxu9AdDu09JK4FGwcQb+EXMEwPeiLcaz0VNMoljGeqfyO
-Mz8+mYsPc7itKLi+jBGMru5ry2L5Q0yad0yvEEezbGxjF8O6OqhC+lLx/2nQ6gOw
-SE2RnrfMN5TgUkH7BEyiSWAbELWj8VGTywoL35woxzam+Lplwlpwli8inijUWK0Q
-zs99PDOV/8OD5tkOCvkaT7lla1ef0mPX/nJBCS4fqAPV4l4kd64=
-=aMj9
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSExiQACgkQKWCEk4dB
+O2DMCw/8Dsf+xX3vPdRn/zjGZUeLJLBhd9IId9P6Q9xZLvpkK7z9PLgLqQDknHq+
+bH+/yPhzCxttUBBJT8p0cfdlnzcGPnFsEqriayYdTLd/nmCpiaPqrBZEj6s2NZl8
+f2UkSdEYThcJV2C2vhL/p/zOJo6iyGi7PPli+CM/NXlvsG+5HD5/tQAtT43NEHQW
+COjvxoKYq2PAkrNujsBlX4Gw3nR1vUZ8+KvCen4tj84pzN0mV6O6ZazAU7Ui7NuJ
+QEPUVDFm7CxuoqK2ctaC7r3D7BrzcisS3xmnuJIszXIRVJk6RgfbWYO69TLeG9/c
+46sGCI6CopkJ1Qugc9Uih4R9LtDU2pBEWpY36YH/mbqAIBWuglbpBBYOmAGnsW5q
+QuVMEXKzxrJ5vY/Jbb1//7Ksa8hvlezFexGuiJTd/+nqSw5OQ881Wzth2RFtTrIM
+leZD4Lzv3MOYgvJicaBIdAtsPX2IkSmiEaHteXLo9Um5iWVCpZwY6S9G+nYH+e7Q
+KMduPzXzlI7KwdSsRJbfwCdlDy1rvNstV3AGPvvd8TAlp0eEAUKr1nRLar48EMqW
+iMAcEPyxFPPVgbFuGCPpAWHQCb1qV3bJ1L/QTaCm4U2aN4j3SD1e+UdE9tLwKC35
+NeAOHieBUrPCzZH/2zyMzwRYu/B2Z8fmHOJvu6ZRgde8ksGX8vY=
+=aevJ
 -----END PGP SIGNATURE-----
 -->

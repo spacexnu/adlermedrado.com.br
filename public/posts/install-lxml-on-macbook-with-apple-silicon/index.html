@@ -1,45 +1,12 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport
-          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
-    <meta name="description" content="My corner of the web">
-    <title>Adler Medrado's corner of the web</title>
-    <link rel="author" href="/humans.txt"/>
-    <link rel="canonical" href="https://adlermedrado.com.br"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head><body><header>
-    <nav class="navbar" role="navigation">
-        <div class="navbar_left">
-            <a href="/"><strong>Adler Medrado's corner of the web</strong></a>
-        </div>
-        <div class="navbar_right">
-            <a href="/posts">Posts</a>
-            <a href="/tags">Posts by Tags</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Install lxml on MacBook with Apple Silicon</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>January 3, 2023</time>
-                            |
-                            1  minute  read
-                        </small>
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p><img src="/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png" alt="pip install error when installing lxml"></p>
-<p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p>
-<pre><code>Building wheels for collected packages: xmlsec  
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!doctype html><html lang=en><head><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
+|
+1 minute read</small></p></div><span class=line_break></span></div><div class=content><p><img src=/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png alt="pip install error when installing lxml"></p><p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p><pre><code>Building wheels for collected packages: xmlsec  
 Building wheel for xmlsec (pyproject.toml) … error  
 error: subprocess-exited-with-error  
 × Building wheel for xmlsec (pyproject.toml) did not run successfully.  
@@ -63,39 +30,26 @@ note: This error originates from a subprocess, and is likely not a problem with 
 ERROR: Failed building wheel for xmlsec  
 Failed to build xmlsec  
 ERROR: Could not build wheels for xmlsec, which is required to install pyproject.toml-based projects
-</code></pre>
-<p>So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I needed to execute the following commands:</p>
-<p>Install some dependencies on OS level:
-<code>❯ brew install libxml2 libxmlsec1 pkg-config</code></p>
-<p>Set the dependencies&rsquo; path:
-<code>export LDFLAGS=&quot;-L/opt/homebrew/opt/libxml2/lib&quot;   export CPPFLAGS=&quot;-I/opt/homebrew/opt/libxml2/include&quot;</code></p>
-<p>Run the pip command again:</p>
-<p><code>pip install lxml</code></p>
-<p>That&rsquo;s it.</p>
+</code></pre><p>So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I needed to execute the following commands:</p><p>Install some dependencies on OS level:
+<code>❯ brew install libxml2 libxmlsec1 pkg-config</code></p><p>Set the dependencies&rsquo; path:
+<code>export LDFLAGS="-L/opt/homebrew/opt/libxml2/lib" export CPPFLAGS="-I/opt/homebrew/opt/libxml2/include"</code></p><p>Run the pip command again:</p><p><code>pip install lxml</code></p><p>That&rsquo;s it.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/>&#8592; Enabling Click and Drag on MacBook</a>
+|</div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
 
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="https://blog.adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/">&#8592; Enabling Click and Drag on MacBook</a>
-                
-                |
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><span class="line_break"></span>
-<span class="line_break"></span>
-<footer>
-    <div>
-        <p><small>&copy; 1996-2023 Adler Medrado</small></p>
-    </div>
-    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
-        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl https://blog.adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/ | gpg --verify</em></p></div>
-</footer></body>
-</html>
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSEocMACgkQKWCEk4dB
+O2Ao0A/8CvBfbp4JloMxqGyWnbRYgBOMRrQ21n70EHbyos6nIwR4mgq3KwyBT7Hl
+YhA+3qByb2aSDRxPpkvB/t5x5UnD4ENN7yo6y5I2iEoe4aigAYatiKfhrfJNzFTU
+xZ5tBHxtg9fqEVofXpiZ2pUsl7p97AQ4O6EYolEbf753g2qAdm0aDnYnbTi9ZicI
+Vy1RTh9K+bmcagvvNKcDIwLZxbrmCmiEyAqYHLo2gymF09/qswaOkqZcuuc8IHfE
+me9gHE5t3+suZbH4TtI00eTXXNPsZ013DpTNKsir/l8cptRhu9EUJZETlCfxIe07
+mwq0LQyacMVwLGX5jrdvZQ7qGkHtmcKbpq/fARFJwbSNDQlwbWia99op0DG5W0td
+p4iW7bf4HPDvLkioE1DzrP3g7ExFmsQs1n3mHuP92Xnaw0y2oFfwlLOSYgdaIj7n
+moZtoqro/yeylydQLyw/hKMRdcIApinevW1LWTshHu4+7LnavtMq3paUjs3/uGd3
+WH8gsDDdLIDLyQ0WxI2WGkSHZ6J68i6rzwAJrE7j2u7+cms/5mom5PH39pomNQ25
++mpDYo5+swgpXv38//zMHMlXQx25FYpbcMNz3pvIPogLzalXIZaKh+qUB2lCMcpd
+M+HL16U4hCD81up7n+utPKEyAPXb1C/snPgmeFK9HoCjsNtfp6M=
+=nGAH
+-----END PGP SIGNATURE-----
+-->

@@ -1,43 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>mac on Adler Medrado&#39;s personal blog</title>
-    <link>https://blog.adlermedrado.com.br/tags/mac/</link>
-    <description>Recent content in mac on Adler Medrado&#39;s personal blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adlermedrado.com.br/tags/mac/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Install lxml on MacBook with Apple Silicon</title>
-      <link>https://blog.adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</link>
-      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</guid>
-      <description>Today I needed to install lxml into a python project I&amp;rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:
-Building wheels for collected packages: xmlsec Building wheel for xmlsec (pyproject.toml) … error error: subprocess-exited-with-error × Building wheel for xmlsec (pyproject.toml) did not run successfully. │ exit code: 1 ╰─&amp;gt; [13 lines of output] running bdist_wheel running build running build_py creating build creating build/lib.</description>
-    </item>
-    
-    <item>
-      <title>Enabling Click and Drag on MacBook</title>
-      <link>https://blog.adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</link>
-      <pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</guid>
-      <description>I&amp;rsquo;m using macOS again, and of course that I&amp;rsquo;ll forget this tip, so I&amp;rsquo;ll write this post to help me another day in the future.
-If you want to enable the click and drag option on MacBook, just go to: System Preferences → Accessibility → Pointer Control → Mouse and Trackpad → Trackpad Options → Enable Dragging.</description>
-    </item>
-    
-    <item>
-      <title>Erro incômodo com o Postgresql no Mac</title>
-      <link>https://blog.adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</link>
-      <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</guid>
-      <description>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a atualização para o MacOS Sierra.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mac on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/mac/</link><description>Recent content in mac on Adler Medrado's corner of the web</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/mac/index.xml" rel="self" type="application/rss+xml"/><item><title>Install lxml on MacBook with Apple Silicon</title><link>https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</link><pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</guid><description>Today I needed to install lxml into a python project I&amp;rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:
+Building wheels for collected packages: xmlsec Building wheel for xmlsec (pyproject.toml) … error error: subprocess-exited-with-error × Building wheel for xmlsec (pyproject.toml) did not run successfully. │ exit code: 1 ╰─&amp;gt; [13 lines of output] running bdist_wheel running build running build_py creating build creating build/lib.</description></item><item><title>Enabling Click and Drag on MacBook</title><link>https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</link><pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</guid><description>I&amp;rsquo;m using macOS again, and of course that I&amp;rsquo;ll forget this tip, so I&amp;rsquo;ll write this post to help me another day in the future.
+If you want to enable the click and drag option on MacBook, just go to: System Preferences → Accessibility → Pointer Control → Mouse and Trackpad → Trackpad Options → Enable Dragging.</description></item><item><title>Erro incômodo com o Postgresql no Mac</title><link>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</link><pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</guid><description>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a atualização para o MacOS Sierra.
 O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:
 WTF?
-Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:</description>
-    </item>
-    
-  </channel>
-</rss>
+Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:</description></item></channel></rss>

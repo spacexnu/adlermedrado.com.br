@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>apple on Adler Medrado&#39;s personal blog</title>
-    <link>https://blog.adlermedrado.com.br/tags/apple/</link>
-    <description>Recent content in apple on Adler Medrado&#39;s personal blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 22 May 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adlermedrado.com.br/tags/apple/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>De volta ao mundo Apple</title>
-      <link>https://blog.adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</link>
-      <pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</guid>
-      <description>Apesar de ter dito diversas vezes: Apple nunca mais, dois meses atrás eu voltei a usar um Mac. Até então eu tinha decidido me desfazer de todos os dispositivos Apple que eu tinha (dei meu Macbook Pro e meu iPod para minha esposa) e buscado outras alternativas como Android, Linux e Windows.
-Eu me saí muito bem durante este período, principalmente com a plataforma Windows, como pode ser visto no entanto durante este período o trabalho que eu realizava era em sua maior parte realizada na plataforma da Microsoft, então eu não sentia tantas dificuldades de adaptação eu até comecei a escrever um livro sobre isso e espero termina-lo em breve.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>apple on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/apple/</link><description>Recent content in apple on Adler Medrado's corner of the web</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 22 May 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/apple/index.xml" rel="self" type="application/rss+xml"/><item><title>De volta ao mundo Apple</title><link>https://adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</link><pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</guid><description>Apesar de ter dito diversas vezes: Apple nunca mais, dois meses atrás eu voltei a usar um Mac. Até então eu tinha decidido me desfazer de todos os dispositivos Apple que eu tinha (dei meu Macbook Pro e meu iPod para minha esposa) e buscado outras alternativas como Android, Linux e Windows.
+Eu me saí muito bem durante este período, principalmente com a plataforma Windows, como pode ser visto no entanto durante este período o trabalho que eu realizava era em sua maior parte realizada na plataforma da Microsoft, então eu não sentia tantas dificuldades de adaptação eu até comecei a escrever um livro sobre isso e espero termina-lo em breve.</description></item></channel></rss>

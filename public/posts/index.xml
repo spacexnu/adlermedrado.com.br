@@ -1,524 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Adler Medrado&#39;s personal blog</title>
-    <link>https://blog.adlermedrado.com.br/posts/</link>
-    <description>Recent content in Posts on Adler Medrado&#39;s personal blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.adlermedrado.com.br/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Install lxml on MacBook with Apple Silicon</title>
-      <link>https://blog.adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</link>
-      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</guid>
-      <description>Today I needed to install lxml into a python project I&amp;rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:
-Building wheels for collected packages: xmlsec Building wheel for xmlsec (pyproject.toml) … error error: subprocess-exited-with-error × Building wheel for xmlsec (pyproject.toml) did not run successfully. │ exit code: 1 ╰─&amp;gt; [13 lines of output] running bdist_wheel running build running build_py creating build creating build/lib.</description>
-    </item>
-    
-    <item>
-      <title>Enabling Click and Drag on MacBook</title>
-      <link>https://blog.adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</link>
-      <pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</guid>
-      <description>I&amp;rsquo;m using macOS again, and of course that I&amp;rsquo;ll forget this tip, so I&amp;rsquo;ll write this post to help me another day in the future.
-If you want to enable the click and drag option on MacBook, just go to: System Preferences → Accessibility → Pointer Control → Mouse and Trackpad → Trackpad Options → Enable Dragging.</description>
-    </item>
-    
-    <item>
-      <title>Posts antigos restaurados</title>
-      <link>https://blog.adlermedrado.com.br/posts/posts-antigos-restaurados/</link>
-      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/posts-antigos-restaurados/</guid>
-      <description>É muito legal ser programador e participar de projetos com as mais variadas dimensões e complexidades, mas uma das coisas que eu acho mais legal em ser um programador é o fato de poder utilizar este conhecimento para automatizar tarefas e resolver problemas do cotidiano.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/posts/</link><description>Recent content in Posts on Adler Medrado's corner of the web</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Install lxml on MacBook with Apple Silicon</title><link>https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</link><pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</guid><description>Today I needed to install lxml into a python project I&amp;rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:
+Building wheels for collected packages: xmlsec Building wheel for xmlsec (pyproject.toml) … error error: subprocess-exited-with-error × Building wheel for xmlsec (pyproject.toml) did not run successfully. │ exit code: 1 ╰─&amp;gt; [13 lines of output] running bdist_wheel running build running build_py creating build creating build/lib.</description></item><item><title>Enabling Click and Drag on MacBook</title><link>https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</link><pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</guid><description>I&amp;rsquo;m using macOS again, and of course that I&amp;rsquo;ll forget this tip, so I&amp;rsquo;ll write this post to help me another day in the future.
+If you want to enable the click and drag option on MacBook, just go to: System Preferences → Accessibility → Pointer Control → Mouse and Trackpad → Trackpad Options → Enable Dragging.</description></item><item><title>Posts antigos restaurados</title><link>https://adlermedrado.com.br/posts/posts-antigos-restaurados/</link><pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/posts-antigos-restaurados/</guid><description>É muito legal ser programador e participar de projetos com as mais variadas dimensões e complexidades, mas uma das coisas que eu acho mais legal em ser um programador é o fato de poder utilizar este conhecimento para automatizar tarefas e resolver problemas do cotidiano.
 Resolvi escrever este post justamente porque eu automatizei uma tarefa que me tomaria algumas horas com um pequeno e simples script python.
-Eu achei legal escrever um pouco sobre isso porque pode servir de exemplo para pessoas que não trabalham com programação diariamente de que elas podem se beneficiar em conhecer um pouco e tentar otimizar tarefas repetitivas.</description>
-    </item>
-    
-    <item>
-      <title>Do PHP ao Python</title>
-      <link>https://blog.adlermedrado.com.br/posts/do-php-ao-python/</link>
-      <pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/do-php-ao-python/</guid>
-      <description>Um pouco da minha experiência na transição de PHP para Python
+Eu achei legal escrever um pouco sobre isso porque pode servir de exemplo para pessoas que não trabalham com programação diariamente de que elas podem se beneficiar em conhecer um pouco e tentar otimizar tarefas repetitivas.</description></item><item><title>Do PHP ao Python</title><link>https://adlermedrado.com.br/posts/do-php-ao-python/</link><pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/do-php-ao-python/</guid><description>Um pouco da minha experiência na transição de PHP para Python
 Eu e o Elephant na PHP Conference Brasil 2012
 Introdução Em Dezembro de 2015 eu fui convidado a trabalhar no Olist e eu comecei a trabalhar efetivamente em Janeiro de 2016. A situação naquela época está mais ou menos descrita neste post do osantana.
-Era um desafio pois a equipe estava bem restrita, a plataforma era monolítica e de difícil manutenção, somado a isso o negócio do Olist em si não é algo trivial.</description>
-    </item>
-    
-    <item>
-      <title>Erro incômodo com o Postgresql no Mac</title>
-      <link>https://blog.adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</link>
-      <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</guid>
-      <description>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a atualização para o MacOS Sierra.
+Era um desafio pois a equipe estava bem restrita, a plataforma era monolítica e de difícil manutenção, somado a isso o negócio do Olist em si não é algo trivial.</description></item><item><title>Erro incômodo com o Postgresql no Mac</title><link>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</link><pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</guid><description>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a atualização para o MacOS Sierra.
 O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:
 WTF?
-Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:</description>
-    </item>
-    
-    <item>
-      <title>Home-Office significa trabalhar de cueca?</title>
-      <link>https://blog.adlermedrado.com.br/posts/home-office-significa-trabalhar-de-cueca/</link>
-      <pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/home-office-significa-trabalhar-de-cueca/</guid>
-      <description>Ah, o home-office: Muita gente pensa que trabalhar nessa modalidade significa trabalhar a hora que quiser, de cueca e meias, tomando cerveja e que quando cansa pode dar uma paradinha pra ir caminhar na praia, parque ou qualquer outro ambiente agradável.
-Bom, pode até ser que algumas pessoas trabalhem assim, mas, comigo é diferente e neste artigo eu irei expor a minha experiência trabalhando com home-office. Eu gosto de ler sobre a experiência de outras pessoas em diversos aspectos e home-office é uma delas, então porque não falar sobre a minha e e fazer o intercâmbio de experiências?</description>
-    </item>
-    
-    <item>
-      <title>PHP para Todos</title>
-      <link>https://blog.adlermedrado.com.br/posts/php-para-todos/</link>
-      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/php-para-todos/</guid>
-      <description>Resolvi colocar em prática uma idéia que deixei hibernando por um bom tempo, que era a de criar um site com conteúdo voltado a iniciantes em desenvolvimento com PHP.
-É muito fácil encontrar conteúdos de excelente qualidade que são voltados a pessoas que já possuem um nível de conhecimento maior em PHP, mas o mesmo não pode ser dito a respeito de conteúdos para iniciantes, sendo assim, eu topei o desafio e criei o PHP para Todos, estou tentando manter uma regularidade nos artigos e também estou preparando novidades que espero lançar em breve.</description>
-    </item>
-    
-    <item>
-      <title>BBS: Depois de muitos anos, um acesso</title>
-      <link>https://blog.adlermedrado.com.br/posts/bbs-depois-de-muitos-anos-um-acesso/</link>
-      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/bbs-depois-de-muitos-anos-um-acesso/</guid>
-      <description>Hoje depois de trabalhar o dia todo e uma parte da noite, eu resolvi pesquisar se ainda existia algum BBS online.
+Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:</description></item><item><title>Home-Office significa trabalhar de cueca?</title><link>https://adlermedrado.com.br/posts/home-office-significa-trabalhar-de-cueca/</link><pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/home-office-significa-trabalhar-de-cueca/</guid><description>Ah, o home-office: Muita gente pensa que trabalhar nessa modalidade significa trabalhar a hora que quiser, de cueca e meias, tomando cerveja e que quando cansa pode dar uma paradinha pra ir caminhar na praia, parque ou qualquer outro ambiente agradável.
+Bom, pode até ser que algumas pessoas trabalhem assim, mas, comigo é diferente e neste artigo eu irei expor a minha experiência trabalhando com home-office. Eu gosto de ler sobre a experiência de outras pessoas em diversos aspectos e home-office é uma delas, então porque não falar sobre a minha e e fazer o intercâmbio de experiências?</description></item><item><title>PHP para Todos</title><link>https://adlermedrado.com.br/posts/php-para-todos/</link><pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/php-para-todos/</guid><description>Resolvi colocar em prática uma idéia que deixei hibernando por um bom tempo, que era a de criar um site com conteúdo voltado a iniciantes em desenvolvimento com PHP.
+É muito fácil encontrar conteúdos de excelente qualidade que são voltados a pessoas que já possuem um nível de conhecimento maior em PHP, mas o mesmo não pode ser dito a respeito de conteúdos para iniciantes, sendo assim, eu topei o desafio e criei o PHP para Todos, estou tentando manter uma regularidade nos artigos e também estou preparando novidades que espero lançar em breve.</description></item><item><title>BBS: Depois de muitos anos, um acesso</title><link>https://adlermedrado.com.br/posts/bbs-depois-de-muitos-anos-um-acesso/</link><pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/bbs-depois-de-muitos-anos-um-acesso/</guid><description>Hoje depois de trabalhar o dia todo e uma parte da noite, eu resolvi pesquisar se ainda existia algum BBS online.
 O interessante é que sim, existem, contudo, ao invés de usar uma linha telefônica para acessa-los, nós usamos o protocolo telnet.
-Nessas horas que eu percebo que estou ficando velho e olha que quando eu entrei naquele mundo dos BBSs já tinham os veteranos, old-school (pra não chamar de mais-velhos-ainda) que habitavam aquele universo.</description>
-    </item>
-    
-    <item>
-      <title>Bug estranho na integração do Mac OS X com o Google</title>
-      <link>https://blog.adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</link>
-      <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</guid>
-      <description>Recentemente aconteceu uma coisa esquisita.
+Nessas horas que eu percebo que estou ficando velho e olha que quando eu entrei naquele mundo dos BBSs já tinham os veteranos, old-school (pra não chamar de mais-velhos-ainda) que habitavam aquele universo.</description></item><item><title>Bug estranho na integração do Mac OS X com o Google</title><link>https://adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</link><pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</guid><description>Recentemente aconteceu uma coisa esquisita.
 Eu tinha 3 contas do Google configuradas em meu OS X El Capitan, a integração é bem legal porque ao integrar uma conta do Google com o OS X ele já configura o Mail, o iMessage, o Calendar, o Notes e os Contatos o que facilita bastante a minha vida.
-Mas ontem todas as contas do Google que eu tinha configurado aqui, ao mesmo tempo, passaram a solicitar novamente a senha e sempre que eu tentava autenticar novamente o Internet Accounts travava conforme a tela abaixo:</description>
-    </item>
-    
-    <item>
-      <title>Palestra proferida na Faculdade Guairacá em Guarapuava/PR</title>
-      <link>https://blog.adlermedrado.com.br/posts/palestra-proferida-na-faculdade-guairaca-em-guarapuava-pr/</link>
-      <pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/palestra-proferida-na-faculdade-guairaca-em-guarapuava-pr/</guid>
-      <description>Demorei mas postei os slides aqui em meu site.
+Mas ontem todas as contas do Google que eu tinha configurado aqui, ao mesmo tempo, passaram a solicitar novamente a senha e sempre que eu tentava autenticar novamente o Internet Accounts travava conforme a tela abaixo:</description></item><item><title>Palestra proferida na Faculdade Guairacá em Guarapuava/PR</title><link>https://adlermedrado.com.br/posts/palestra-proferida-na-faculdade-guairaca-em-guarapuava-pr/</link><pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/palestra-proferida-na-faculdade-guairaca-em-guarapuava-pr/</guid><description>Demorei mas postei os slides aqui em meu site.
 No início de Outubro/2015 eu proferi uma palestra na Faculdade Guairacá para os alunos do curso de Sistemas de Informação.
 O objetivo da palestra era passar para eles um pouco da minha experiência na área e no mercado de trabalho, eu tentei passar algumas dicas e espero que elas possam ajuda-los em suas carreiras.
-Caso haja interesse, os slides podem ser encontrados no Slideshare ou na página de Palestras aqui em meu site.</description>
-    </item>
-    
-    <item>
-      <title>Linguagens baseadas na JVM</title>
-      <link>https://blog.adlermedrado.com.br/posts/linguagens-baseadas-na-jvm/</link>
-      <pubDate>Sun, 11 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/linguagens-baseadas-na-jvm/</guid>
-      <description>Apesar de existirem muitas críticas à linguagem Java, é um fato que a JVM (Java Virtual Machine) é uma obra-prima.
-Muitas pessoas confundem a Java Virtual Machine com a linguagem Java e tratam tudo como se fosse uma coisa só, esse é o tipo de ignorância que infelizmente é muito difundida por aí. Uma coisa é a linguagem Java ter suas deficiências (como qualquer outra linguagem tem) e receber críticas por isso e outra coisa é a plataforma e ecossistema Java.</description>
-    </item>
-    
-    <item>
-      <title>Reflexão diária</title>
-      <link>https://blog.adlermedrado.com.br/posts/reflexao-diaria/</link>
-      <pubDate>Tue, 25 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/reflexao-diaria/</guid>
-      <description>Enquanto seu inimigo dorme quente em sua cama, você deve treinar o seu machado com muito esforço e dedicação, e quando estiver frente a frente a ele, lembre-se das noites em que ele dormia aquecido e você treinava sozinho e ao relento.
+Caso haja interesse, os slides podem ser encontrados no Slideshare ou na página de Palestras aqui em meu site.</description></item><item><title>Linguagens baseadas na JVM</title><link>https://adlermedrado.com.br/posts/linguagens-baseadas-na-jvm/</link><pubDate>Sun, 11 Oct 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/linguagens-baseadas-na-jvm/</guid><description>Apesar de existirem muitas críticas à linguagem Java, é um fato que a JVM (Java Virtual Machine) é uma obra-prima.
+Muitas pessoas confundem a Java Virtual Machine com a linguagem Java e tratam tudo como se fosse uma coisa só, esse é o tipo de ignorância que infelizmente é muito difundida por aí. Uma coisa é a linguagem Java ter suas deficiências (como qualquer outra linguagem tem) e receber críticas por isso e outra coisa é a plataforma e ecossistema Java.</description></item><item><title>Reflexão diária</title><link>https://adlermedrado.com.br/posts/reflexao-diaria/</link><pubDate>Tue, 25 Aug 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/reflexao-diaria/</guid><description>Enquanto seu inimigo dorme quente em sua cama, você deve treinar o seu machado com muito esforço e dedicação, e quando estiver frente a frente a ele, lembre-se das noites em que ele dormia aquecido e você treinava sozinho e ao relento.
 E quando finalmente o olhar nos olhos, lembre o quanto ele está atrasado diante de você na arte da guerra.
 Guam Yu
-Imagem original</description>
-    </item>
-    
-    <item>
-      <title>Magento: Crash nos pacotes de produtos</title>
-      <link>https://blog.adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</link>
-      <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</guid>
-      <description>Esta é a primeira dica sobre Magento publicada por mim, acredito que isso se tornará algo recorrente daqui para a frente.
-Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo.</description>
-    </item>
-    
-    <item>
-      <title>Atom e PHP: Em busca da configuração perfeita</title>
-      <link>https://blog.adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</link>
-      <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</guid>
-      <description>Como eu disse recentemente, eu deixei de usar o Textmate, passei a usar o Atom e recomendei alguns packages que eu estou usando e estão me ajudando diariamente.
+Imagem original</description></item><item><title>Magento: Crash nos pacotes de produtos</title><link>https://adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</link><pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</guid><description>Esta é a primeira dica sobre Magento publicada por mim, acredito que isso se tornará algo recorrente daqui para a frente.
+Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo.</description></item><item><title>Atom e PHP: Em busca da configuração perfeita</title><link>https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</link><pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</guid><description>Como eu disse recentemente, eu deixei de usar o Textmate, passei a usar o Atom e recomendei alguns packages que eu estou usando e estão me ajudando diariamente.
 Neste post eu quero mostrar mais alguns packages bem úteis para desenvolvimento PHP:
-linter-phpmd linter-phpcs php-getters-setters Os dois primeiros para funcionar precisam que tanto o PHPMD (PHP Mess Detector) e o PHP_CodeSniffer esteja instalados no ambiente e acessíveis por meio do PATH, ou seja, os comandos phpcs e phpmd devem ser acessíveis de qualquer local.</description>
-    </item>
-    
-    <item>
-      <title>Migrando para o Atom</title>
-      <link>https://blog.adlermedrado.com.br/posts/migrando-para-o-atom/</link>
-      <pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/migrando-para-o-atom/</guid>
-      <description>Na primeira vez em que tive um Mac, um dos primeiros softwares que comprei foi o Textmate.
-Na época ele era o editor de textos predileto dos desenvolvedores e realmente ele era muito bom, tão bom que eu ainda usava ele até o início desta semana, quando eu passei a ter alguns problemas principalmente com bundles dele como o de ctags e quando eu busquei solução para eles eu percebi que muitos dos bundles que eu usava, hoje não possuem mais suporte porque os autores deixaram de usar o Textmate.</description>
-    </item>
-    
-    <item>
-      <title>Configurando um repositório privado usando Composer e Satis</title>
-      <link>https://blog.adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</link>
-      <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</guid>
-      <description>Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando na Coderockr e este repositório deveria ser importado no projeto por meio do composer, talvez isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível pelo composer que utilizasse um repositório git privado.
-Como faz? Após algumas pesquisas eu encontrei o projeto Satis, que pelo que pude compreender é mantido pelos mesmos desenvolvedores que mantém o composer.</description>
-    </item>
-    
-    <item>
-      <title>Liberdade</title>
-      <link>https://blog.adlermedrado.com.br/posts/liberdade/</link>
-      <pubDate>Sat, 13 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/liberdade/</guid>
-      <description>Eu estava refletindo hoje:
-Tiraram nosso direito de portar armas e dificultam ao extremo o direito de obte-las. Inventaram a tal lei da palmada. A patrulha dos politicamente corretos impera. Agora querem nos tirar o direito de portar facas. Querem impor quais tipos de alimentos nós podemos comer. Limitam o período em que podemos sacar dinheiro em caixas eletrônicos. Querem impor a vacinação (por exemplo, a de HPV em crianças). Proibições ridículas como a de vender somente álcool em gel, ou ao menos dificultar a venda de álcool que não seja gel.</description>
-    </item>
-    
-    <item>
-      <title>Dica: Solução de problema ao configurar Kitematic/Docker</title>
-      <link>https://blog.adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/</link>
-      <pubDate>Wed, 03 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/</guid>
-      <description>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras pessoas.
+linter-phpmd linter-phpcs php-getters-setters Os dois primeiros para funcionar precisam que tanto o PHPMD (PHP Mess Detector) e o PHP_CodeSniffer esteja instalados no ambiente e acessíveis por meio do PATH, ou seja, os comandos phpcs e phpmd devem ser acessíveis de qualquer local.</description></item><item><title>Migrando para o Atom</title><link>https://adlermedrado.com.br/posts/migrando-para-o-atom/</link><pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/migrando-para-o-atom/</guid><description>Na primeira vez em que tive um Mac, um dos primeiros softwares que comprei foi o Textmate.
+Na época ele era o editor de textos predileto dos desenvolvedores e realmente ele era muito bom, tão bom que eu ainda usava ele até o início desta semana, quando eu passei a ter alguns problemas principalmente com bundles dele como o de ctags e quando eu busquei solução para eles eu percebi que muitos dos bundles que eu usava, hoje não possuem mais suporte porque os autores deixaram de usar o Textmate.</description></item><item><title>Configurando um repositório privado usando Composer e Satis</title><link>https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</link><pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</guid><description>Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando na Coderockr e este repositório deveria ser importado no projeto por meio do composer, talvez isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível pelo composer que utilizasse um repositório git privado.
+Como faz? Após algumas pesquisas eu encontrei o projeto Satis, que pelo que pude compreender é mantido pelos mesmos desenvolvedores que mantém o composer.</description></item><item><title>Liberdade</title><link>https://adlermedrado.com.br/posts/liberdade/</link><pubDate>Sat, 13 Jun 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/liberdade/</guid><description>Eu estava refletindo hoje:
+Tiraram nosso direito de portar armas e dificultam ao extremo o direito de obte-las. Inventaram a tal lei da palmada. A patrulha dos politicamente corretos impera. Agora querem nos tirar o direito de portar facas. Querem impor quais tipos de alimentos nós podemos comer. Limitam o período em que podemos sacar dinheiro em caixas eletrônicos. Querem impor a vacinação (por exemplo, a de HPV em crianças). Proibições ridículas como a de vender somente álcool em gel, ou ao menos dificultar a venda de álcool que não seja gel.</description></item><item><title>Dica: Solução de problema ao configurar Kitematic/Docker</title><link>https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/</link><pubDate>Wed, 03 Jun 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/</guid><description>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras pessoas.
 Um projeto que estou trabalhando usa o RabbitMQ e para tentar manter o meu OS X o mais higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós decidimos utilizar o Docker e um container do RabbitMQ.
-Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que precisam ser aparadas, mas no geral ele funciona bem.</description>
-    </item>
-    
-    <item>
-      <title>Segurança ou sensação de segurança?</title>
-      <link>https://blog.adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/</link>
-      <pubDate>Wed, 03 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/</guid>
-      <description>Hoje eu contratei o serviço de uma empresa que disponibiliza um vigilante para circular de moto ou carro (depende do frio) durante a noite, todos os dias da semana para ficar de olho em relação a suspeitos na vizinhança, auxiliar e verificar se está tudo tranquilo ao sair de casa ou chegar com carro a noite, etc., principalmente porque eu sempre viajo pra visitar meus sogros, mãe e irmãs que não moram na mesma cidade que eu e isso me deixa com uma sensação melhor ao deixar minha casa sozinha.</description>
-    </item>
-    
-    <item>
-      <title>Música para trabalhar em um domingo preguiçoso</title>
-      <link>https://blog.adlermedrado.com.br/posts/musica-para-trabalhar-em-um-domingo-preguicoso/</link>
-      <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/musica-para-trabalhar-em-um-domingo-preguicoso/</guid>
-      <description>Hoje o dia está bastante preguiçoso, frio, nublado além de ser domingo e domingo ser um dia preguiçoso por si só, mas, eu preciso trabalhar e por isso nesses casos eu costumo escutar alguma música que me mantenha acordado e hoje resolvi compartilhar a música que estou escutando e surtiu algum efeito:</description>
-    </item>
-    
-    <item>
-      <title>De volta ao mundo Apple</title>
-      <link>https://blog.adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</link>
-      <pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</guid>
-      <description>Apesar de ter dito diversas vezes: Apple nunca mais, dois meses atrás eu voltei a usar um Mac. Até então eu tinha decidido me desfazer de todos os dispositivos Apple que eu tinha (dei meu Macbook Pro e meu iPod para minha esposa) e buscado outras alternativas como Android, Linux e Windows.
-Eu me saí muito bem durante este período, principalmente com a plataforma Windows, como pode ser visto no entanto durante este período o trabalho que eu realizava era em sua maior parte realizada na plataforma da Microsoft, então eu não sentia tantas dificuldades de adaptação eu até comecei a escrever um livro sobre isso e espero termina-lo em breve.</description>
-    </item>
-    
-    <item>
-      <title>Informação importante</title>
-      <link>https://blog.adlermedrado.com.br/posts/informacao-importante/</link>
-      <pubDate>Fri, 27 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/informacao-importante/</guid>
-      <description>Informo a quem interessar possa que a partir do dia 28/02/2015 nenhum indivíduo, empresa ou qualquer outro tipo de instituição está autorizado(a) a utilizar minhas certificações em concorrências, licitações ou fazer qualquer outro uso delas salvo autorização minha por escrito e registrada em cartório.</description>
-    </item>
-    
-    <item>
-      <title>Sugestões para o carnaval</title>
-      <link>https://blog.adlermedrado.com.br/posts/sugestoes-para-o-carnaval/</link>
-      <pubDate>Mon, 16 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/sugestoes-para-o-carnaval/</guid>
-      <description>Se você não vai passar o carnaval se embriagando, rebolando, copulando com a maior quantidade possível de vagabundas(ou vagabundos), agindo como se fosse um animal treinado correndo atrás de um trio elétrico ou qualquer coisa do gênero e quer relaxar ou estudar, deixo as seguintes dicas para vocês:
-Assista ao filme ALGORITHM: The Hacker Movie É um filme independente e está disponibilizado oficialmente no Youtube com legendas em PT_BR que o Crash do Área 31 Hackerspace fez.</description>
-    </item>
-    
-    <item>
-      <title>Introdução a Criptografia — Parte 3</title>
-      <link>https://blog.adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/</link>
-      <pubDate>Tue, 06 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/</guid>
-      <description>Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma Windows, Gnu/Linux e Darwin (Mac OS X).
+Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que precisam ser aparadas, mas no geral ele funciona bem.</description></item><item><title>Segurança ou sensação de segurança?</title><link>https://adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/</link><pubDate>Wed, 03 Jun 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/</guid><description>Hoje eu contratei o serviço de uma empresa que disponibiliza um vigilante para circular de moto ou carro (depende do frio) durante a noite, todos os dias da semana para ficar de olho em relação a suspeitos na vizinhança, auxiliar e verificar se está tudo tranquilo ao sair de casa ou chegar com carro a noite, etc., principalmente porque eu sempre viajo pra visitar meus sogros, mãe e irmãs que não moram na mesma cidade que eu e isso me deixa com uma sensação melhor ao deixar minha casa sozinha.</description></item><item><title>Música para trabalhar em um domingo preguiçoso</title><link>https://adlermedrado.com.br/posts/musica-para-trabalhar-em-um-domingo-preguicoso/</link><pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/musica-para-trabalhar-em-um-domingo-preguicoso/</guid><description>Hoje o dia está bastante preguiçoso, frio, nublado além de ser domingo e domingo ser um dia preguiçoso por si só, mas, eu preciso trabalhar e por isso nesses casos eu costumo escutar alguma música que me mantenha acordado e hoje resolvi compartilhar a música que estou escutando e surtiu algum efeito:</description></item><item><title>De volta ao mundo Apple</title><link>https://adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</link><pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</guid><description>Apesar de ter dito diversas vezes: Apple nunca mais, dois meses atrás eu voltei a usar um Mac. Até então eu tinha decidido me desfazer de todos os dispositivos Apple que eu tinha (dei meu Macbook Pro e meu iPod para minha esposa) e buscado outras alternativas como Android, Linux e Windows.
+Eu me saí muito bem durante este período, principalmente com a plataforma Windows, como pode ser visto no entanto durante este período o trabalho que eu realizava era em sua maior parte realizada na plataforma da Microsoft, então eu não sentia tantas dificuldades de adaptação eu até comecei a escrever um livro sobre isso e espero termina-lo em breve.</description></item><item><title>Informação importante</title><link>https://adlermedrado.com.br/posts/informacao-importante/</link><pubDate>Fri, 27 Feb 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/informacao-importante/</guid><description>Informo a quem interessar possa que a partir do dia 28/02/2015 nenhum indivíduo, empresa ou qualquer outro tipo de instituição está autorizado(a) a utilizar minhas certificações em concorrências, licitações ou fazer qualquer outro uso delas salvo autorização minha por escrito e registrada em cartório.</description></item><item><title>Sugestões para o carnaval</title><link>https://adlermedrado.com.br/posts/sugestoes-para-o-carnaval/</link><pubDate>Mon, 16 Feb 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/sugestoes-para-o-carnaval/</guid><description>Se você não vai passar o carnaval se embriagando, rebolando, copulando com a maior quantidade possível de vagabundas(ou vagabundos), agindo como se fosse um animal treinado correndo atrás de um trio elétrico ou qualquer coisa do gênero e quer relaxar ou estudar, deixo as seguintes dicas para vocês:
+Assista ao filme ALGORITHM: The Hacker Movie É um filme independente e está disponibilizado oficialmente no Youtube com legendas em PT_BR que o Crash do Área 31 Hackerspace fez.</description></item><item><title>Introdução a Criptografia — Parte 3</title><link>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/</link><pubDate>Tue, 06 Jan 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/</guid><description>Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma Windows, Gnu/Linux e Darwin (Mac OS X).
 Apesar de cada plataforma possuir ferramentas gráficas para a gestão das chaves, não é fácil manter uma uniformidade neste processo, então eu mostrarei como fazer esta gestão utilizando o cliente de e-mail pois assim haverá uniformidade independente da plataforma utilizada por você, leitor.
-É possível também gerenciar estas chaves através da linha de comando, no entanto meu objetivo aqui é facilitar e não complicar e eu presumo também que se você, caro leitor, possui as habilidades necessárias para usar a linha de comando em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas man pages ou similares.</description>
-    </item>
-    
-    <item>
-      <title>Feliz 2015</title>
-      <link>https://blog.adlermedrado.com.br/posts/feliz-2015/</link>
-      <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/feliz-2015/</guid>
-      <description>É praticamente impossível chegar nesta época do ano sem refletir nas coisas que aconteceram durante o ano vigente.
+É possível também gerenciar estas chaves através da linha de comando, no entanto meu objetivo aqui é facilitar e não complicar e eu presumo também que se você, caro leitor, possui as habilidades necessárias para usar a linha de comando em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas man pages ou similares.</description></item><item><title>Feliz 2015</title><link>https://adlermedrado.com.br/posts/feliz-2015/</link><pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/feliz-2015/</guid><description>É praticamente impossível chegar nesta época do ano sem refletir nas coisas que aconteceram durante o ano vigente.
 Comparando os anos de 2013 e 2014, eu posso dizer que 2014 foi melhor pois foi um pouco menos turbulento, posso afirmar que ele está chegando ao fim com o saldo positivo e dentre tudo que aconteceu eu posso enumerar as seguintes como muito positivas:
-Fiz uma cirurgia que mudou a minha vida;; Mudei de cidade (Francisco Beltrão para Guarapuava); Depois de quase 3 anos trabalhando em home-office, voltei a trabalhar na modalidade presencial (post em breve para explicar o lado positivo disso); Atualizei meus conhecimentos em C# e Powershell; Comecei a praticar exercícios; Conheci bastante pessoas; Existem outros pontos mas estes são os que considero mais positivos e enumerar apenas estes é suficiente para acreditar que apesar de ter consciência de que 2015 será um ano difícil, com trabalho e dedicação eu tenho certeza que é possível deixar o saldo dele no positivo também, se D-us quiser.</description>
-    </item>
-    
-    <item>
-      <title>Introdução a Criptografia — Parte 2</title>
-      <link>https://blog.adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/</link>
-      <pubDate>Mon, 29 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/</guid>
-      <description>Como eu havia prometido, continuo com a série de posts sobre criptografia, se você chegou aqui sem ter visto a parte 1, sugiro que comece lendo por aqui.
+Fiz uma cirurgia que mudou a minha vida;; Mudei de cidade (Francisco Beltrão para Guarapuava); Depois de quase 3 anos trabalhando em home-office, voltei a trabalhar na modalidade presencial (post em breve para explicar o lado positivo disso); Atualizei meus conhecimentos em C# e Powershell; Comecei a praticar exercícios; Conheci bastante pessoas; Existem outros pontos mas estes são os que considero mais positivos e enumerar apenas estes é suficiente para acreditar que apesar de ter consciência de que 2015 será um ano difícil, com trabalho e dedicação eu tenho certeza que é possível deixar o saldo dele no positivo também, se D-us quiser.</description></item><item><title>Introdução a Criptografia — Parte 2</title><link>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/</link><pubDate>Mon, 29 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/</guid><description>Como eu havia prometido, continuo com a série de posts sobre criptografia, se você chegou aqui sem ter visto a parte 1, sugiro que comece lendo por aqui.
 Introdução Atualmente as duas formas mais comuns de criptografia são a simétrica e
 a assimétrica, fique tranquilo pois apesar dos nomes intimidarem são dois
 conceitos bem simples de serem compreendidos.
-Criptografia Simétrica A criptografia é feita usando a mesma chave para criptografar e descriptografar a informação, similar ao que foi mostrado na primeira parte deste tutorial.</description>
-    </item>
-    
-    <item>
-      <title>Introdução a Criptografia — Parte 1</title>
-      <link>https://blog.adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/</link>
-      <pubDate>Sun, 28 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/</guid>
-      <description>Eu gosto muito de chuva —apenas quando estou tranquila e confortavelmente em casa— e agora no momento em que escrevo este, está caindo uma chuva muito boa aqui em Guarapuava/PR, além disso está ventando bastante a ponto das janelas da minha casa ficarem vibrando, isso é muito bom para relaxar…
+Criptografia Simétrica A criptografia é feita usando a mesma chave para criptografar e descriptografar a informação, similar ao que foi mostrado na primeira parte deste tutorial.</description></item><item><title>Introdução a Criptografia — Parte 1</title><link>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/</link><pubDate>Sun, 28 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/</guid><description>Eu gosto muito de chuva —apenas quando estou tranquila e confortavelmente em casa— e agora no momento em que escrevo este, está caindo uma chuva muito boa aqui em Guarapuava/PR, além disso está ventando bastante a ponto das janelas da minha casa ficarem vibrando, isso é muito bom para relaxar…
 Eu não sei porque escrevi isso, mas tudo bem, agora vamos ao que interessa.
-Introdução O objetivo deste post é tentar mostrar o conceito básico de criptografia de uma maneira bem simples para que todos possam entender, pois o que eu desejo é que usuários comuns aka não-técnicos, saibam o que é criptografia e como fazer uso dela em seu dia-a-dia.</description>
-    </item>
-    
-    <item>
-      <title>Meu ambiente de trabalho na plataforma Windows</title>
-      <link>https://blog.adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/</link>
-      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/</guid>
-      <description>A cerca de um ano e alguns meses eu tenho usado a plataforma Microsoft Windows de uma forma sistemática e eu achei interessante escrever um pouco sobre o que eu costumo usar em meu computador.
-Multimídia Eu faço uso recorrente do player desktop do Rdio para ouvir música em streaming. Este é um serviço que vale muito a pena e apesar de ver bastante gente migrando para o Spotify eu estou feliz com o Rdio pois ele me atende bem; VLC — Player de vídeo open-source com suporte à maioria dos formatos disponíveis no mercado; gPodder — Gerenciador de podcasts.</description>
-    </item>
-    
-    <item>
-      <title>Dica: Criptografia de informações importantes</title>
-      <link>https://blog.adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/</link>
-      <pubDate>Mon, 22 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/</guid>
-      <description>Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você possui um cofre para garantir que itens valiosos como documentos, dinheiro, jóias, etc. fiquem seguros, pois você sabe que para abri-lo é necessário uma chave que somente você tem e um código que somente você sabe.
-Você sabe que o cofre não garante 100% de segurança contra arrombamentos mas tem consciência que ele dará muito mais trabalho para quem quiser roubar suas coisas.</description>
-    </item>
-    
-    <item>
-      <title>Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony</title>
-      <link>https://blog.adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/</link>
-      <pubDate>Sun, 21 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/</guid>
-      <description>Se você não estava em uma caverna, provavelmente assistiu, leu ou ouviu sobre o caso de cracking e vazamento de dados da Sony Pictures Entertainment, onde um grupo de crackers (provavelmente norte-coreanos) invadiram os computadores dela e obtiveram dados sigilosos como informações a respeito de futuros lançamentos e conversas via e-mail de executivos da empresa.
-Basicamente, estes criminosos estão ameaçando a empresa dizendo que vazarão dados sigilosos dela ao mundo caso suas demandas não sejam atendidas, além de tornar públicas informações como os salários de executivos da empresa, números do seguro social de funcionários da empresa, incluindo celebridades.</description>
-    </item>
-    
-    <item>
-      <title>Gerenciador de pacotes para Windows</title>
-      <link>https://blog.adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/</link>
-      <pubDate>Sun, 24 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/</guid>
-      <description>Não é segredo que nos últimos meses eu tenho usado Windows como a minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como ambiente de trabalho em alguns projetos.
-Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes nix eu sempre busco por alternativas similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o chocolatey, que é um gerenciador de pacotes similar ao apt-get no linux, só que para windows.</description>
-    </item>
-    
-    <item>
-      <title>Acessando o Office 365 via Powershell</title>
-      <link>https://blog.adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/</link>
-      <pubDate>Sat, 26 Jul 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/</guid>
-      <description>É muito fácil acessar sua conta do Office365 usando Powershell,
+Introdução O objetivo deste post é tentar mostrar o conceito básico de criptografia de uma maneira bem simples para que todos possam entender, pois o que eu desejo é que usuários comuns aka não-técnicos, saibam o que é criptografia e como fazer uso dela em seu dia-a-dia.</description></item><item><title>Meu ambiente de trabalho na plataforma Windows</title><link>https://adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/</link><pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/</guid><description>A cerca de um ano e alguns meses eu tenho usado a plataforma Microsoft Windows de uma forma sistemática e eu achei interessante escrever um pouco sobre o que eu costumo usar em meu computador.
+Multimídia Eu faço uso recorrente do player desktop do Rdio para ouvir música em streaming. Este é um serviço que vale muito a pena e apesar de ver bastante gente migrando para o Spotify eu estou feliz com o Rdio pois ele me atende bem; VLC — Player de vídeo open-source com suporte à maioria dos formatos disponíveis no mercado; gPodder — Gerenciador de podcasts.</description></item><item><title>Dica: Criptografia de informações importantes</title><link>https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/</link><pubDate>Mon, 22 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/</guid><description>Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você possui um cofre para garantir que itens valiosos como documentos, dinheiro, jóias, etc. fiquem seguros, pois você sabe que para abri-lo é necessário uma chave que somente você tem e um código que somente você sabe.
+Você sabe que o cofre não garante 100% de segurança contra arrombamentos mas tem consciência que ele dará muito mais trabalho para quem quiser roubar suas coisas.</description></item><item><title>Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony</title><link>https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/</link><pubDate>Sun, 21 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/</guid><description>Se você não estava em uma caverna, provavelmente assistiu, leu ou ouviu sobre o caso de cracking e vazamento de dados da Sony Pictures Entertainment, onde um grupo de crackers (provavelmente norte-coreanos) invadiram os computadores dela e obtiveram dados sigilosos como informações a respeito de futuros lançamentos e conversas via e-mail de executivos da empresa.
+Basicamente, estes criminosos estão ameaçando a empresa dizendo que vazarão dados sigilosos dela ao mundo caso suas demandas não sejam atendidas, além de tornar públicas informações como os salários de executivos da empresa, números do seguro social de funcionários da empresa, incluindo celebridades.</description></item><item><title>Gerenciador de pacotes para Windows</title><link>https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/</link><pubDate>Sun, 24 Aug 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/</guid><description>Não é segredo que nos últimos meses eu tenho usado Windows como a minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como ambiente de trabalho em alguns projetos.
+Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes nix eu sempre busco por alternativas similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o chocolatey, que é um gerenciador de pacotes similar ao apt-get no linux, só que para windows.</description></item><item><title>Acessando o Office 365 via Powershell</title><link>https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/</link><pubDate>Sat, 26 Jul 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/</guid><description>É muito fácil acessar sua conta do Office365 usando Powershell,
 principalmente se você precisa otimizar a administração de contas corporativas
 via script em situações onde é necessário manipular muitos usuários simultaneamente.
 Alguns exemplos de tarefas que podem ser executadas são:
 Adicionar novos usuários Remover usuários Mudar permissões etc. No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.
-O primeiro passo é instalar os Cmdlets para Office365 ao Powershell,</description>
-    </item>
-    
-    <item>
-      <title>Como subverter uma nação. Por Yuri Bezmenov</title>
-      <link>https://blog.adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/</link>
-      <pubDate>Sat, 21 Jun 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/</guid>
-      <description>Yuri Bezmenov foi um jornalista russo que trabalhou na Ria Novosti e atuava como agente da KGB.
+O primeiro passo é instalar os Cmdlets para Office365 ao Powershell,</description></item><item><title>Como subverter uma nação. Por Yuri Bezmenov</title><link>https://adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/</link><pubDate>Sat, 21 Jun 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/</guid><description>Yuri Bezmenov foi um jornalista russo que trabalhou na Ria Novosti e atuava como agente da KGB.
 Atuando pela KGB ele era ativo na área de subversão e após alguns anos trabalhando nesta área ele manifestou descontentamento com a política soviética e então decidiu desertar para o ocidente, conseguindo asilo no Canadá.
-Ele escreveu livros e proferiu palestras que explicava as táticas usadas pela KGB afim de subverter as nações ocidentais e mostrava que ela não era apenas uma agência de espionagem, muito pelo contrário, pois apenas entre 10% a 15% dos recursos da KGB eram usados com este tipo de atividade.</description>
-    </item>
-    
-    <item>
-      <title>Configurando o Ruby no Windows</title>
-      <link>https://blog.adlermedrado.com.br/posts/configurando-o-ruby-no-windows/</link>
-      <pubDate>Mon, 16 Jun 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/configurando-o-ruby-no-windows/</guid>
-      <description>Recentemente eu instalei o Windows no meu PC e como eu uso o octopress para gerir este blog, eu estava usando uma VM com linux como ‘plataforma de blogging’.
+Ele escreveu livros e proferiu palestras que explicava as táticas usadas pela KGB afim de subverter as nações ocidentais e mostrava que ela não era apenas uma agência de espionagem, muito pelo contrário, pois apenas entre 10% a 15% dos recursos da KGB eram usados com este tipo de atividade.</description></item><item><title>Configurando o Ruby no Windows</title><link>https://adlermedrado.com.br/posts/configurando-o-ruby-no-windows/</link><pubDate>Mon, 16 Jun 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/configurando-o-ruby-no-windows/</guid><description>Recentemente eu instalei o Windows no meu PC e como eu uso o octopress para gerir este blog, eu estava usando uma VM com linux como ‘plataforma de blogging’.
 No entanto eu acho que não faz muito sentido manter uma máquina virtual só para isso, então eu instalei o ambiente Ruby no windows para usar o octopress.
-Como eu sempre usei ruby com Mac OS X ou Linux e não tinha experiência com a configuração do ambiente Ruby na plataforma da Microsoft, eu apanhei um pouco para configurar, mas deu certo e os passos que eu executei estão listados abaixo:</description>
-    </item>
-    
-    <item>
-      <title>Minha vida após a cirurgia: Novas perspectivas</title>
-      <link>https://blog.adlermedrado.com.br/posts/minha-vida-apos-a-cirurgia-novas-perspectivas/</link>
-      <pubDate>Sun, 11 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/minha-vida-apos-a-cirurgia-novas-perspectivas/</guid>
-      <description>Hoje fazem 2 meses e dois dias que eu fiz a gastrectomia vertical, também conhecida como sleeve gástrico que é a retirada de uma parte do estômago.
+Como eu sempre usei ruby com Mac OS X ou Linux e não tinha experiência com a configuração do ambiente Ruby na plataforma da Microsoft, eu apanhei um pouco para configurar, mas deu certo e os passos que eu executei estão listados abaixo:</description></item><item><title>Minha vida após a cirurgia: Novas perspectivas</title><link>https://adlermedrado.com.br/posts/minha-vida-apos-a-cirurgia-novas-perspectivas/</link><pubDate>Sun, 11 May 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/minha-vida-apos-a-cirurgia-novas-perspectivas/</guid><description>Hoje fazem 2 meses e dois dias que eu fiz a gastrectomia vertical, também conhecida como sleeve gástrico que é a retirada de uma parte do estômago.
 Muitos generalizam chamando qualquer cirurgia do gênero apenas como cirurgia bariátrica ou a mais popular “cirurgia de redução do estômago”.
-Eu nunca fui muito a favor deste tipo de cirurgia, mesmo estando em uma situação de obesidade mórbida grave eu nunca considerei a cirurgia como uma opção, pois, eu dizia que não me mutilaria para fins estéticos.</description>
-    </item>
-    
-    <item>
-      <title>A Segurança Das Urnas Eletrônicas</title>
-      <link>https://blog.adlermedrado.com.br/posts/a-seguranca-das-urnas-eletronicas/</link>
-      <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/a-seguranca-das-urnas-eletronicas/</guid>
-      <description>Quem me conhece sabe que eu sempre desconfiei da segurança das urnas
+Eu nunca fui muito a favor deste tipo de cirurgia, mesmo estando em uma situação de obesidade mórbida grave eu nunca considerei a cirurgia como uma opção, pois, eu dizia que não me mutilaria para fins estéticos.</description></item><item><title>A Segurança Das Urnas Eletrônicas</title><link>https://adlermedrado.com.br/posts/a-seguranca-das-urnas-eletronicas/</link><pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/a-seguranca-das-urnas-eletronicas/</guid><description>Quem me conhece sabe que eu sempre desconfiei da segurança das urnas
 eletrônicas brasileiras, um dos fatores que me levam a ter essa postura
 é devido ao fato de o código das urnas ser fechado e não passar por
 auditorias externas.
 Outro motivo é que aqui no Brasil nada que o governo coloca as mãos
 funciona direito, vide a saúde, educação, segurança, etc., então é de
-se desconfiar que a única coisa que funciona bem seja a urna eletrônica,</description>
-    </item>
-    
-    <item>
-      <title>Flisol Francisco Beltrão 2014</title>
-      <link>https://blog.adlermedrado.com.br/posts/flisol-francisco-beltrao-2014/</link>
-      <pubDate>Fri, 25 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/flisol-francisco-beltrao-2014/</guid>
-      <description>Amanhã eu irei proferir uma palestra sobre ReactPHP no Flisol de Francisco Beltrão.
-Se puder, prestigie o evento.</description>
-    </item>
-    
-    <item>
-      <title>OFF-TOPIC — O desarmamento e suas falácias</title>
-      <link>https://blog.adlermedrado.com.br/posts/off-topic-o-desarmamento-e-suas-falacias/</link>
-      <pubDate>Mon, 24 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/off-topic-o-desarmamento-e-suas-falacias/</guid>
-      <description>Ontem no Jornal de Beltrão teve uma reportagem sobre os bandidos estarem invadindo casas e tal. Nesta reportagem um quadro informava sobre armas e na reportagem havia um trecho com a opinião de um delegado.
-Eu acho uma vergonha um delegado prestar um serviço de desinformação num jornal dizendo que “O cidadão que compra uma arma pode estar armando um bandido” e em seguida dizer que o cidadão “precisa tomar cuidados como reforçar a segurança de portas, janelas e evitar deixar bens à mostra”.</description>
-    </item>
-    
-    <item>
-      <title>O fim do GetOnCode();</title>
-      <link>https://blog.adlermedrado.com.br/posts/o-fim-do-getoncode/</link>
-      <pubDate>Wed, 19 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/o-fim-do-getoncode/</guid>
-      <description>Em 2011 eu iniciei um projeto chamado Get On Code, a idéia inicial era a de publicar notícias, artigos, etc., relacionados a desenvolvimento, bem como produzir um podcast que falasse sobre o assunto.
-A idéia começou bem, com uma boa resposta dos visitantes do site e ouvintes do podcast, no entanto, com o passar do tempo eu passei a ter menos disponibilidade para continuar com o projeto e passei por diversas situações na minha vida que me atrapalharam a me dedicar a ele.</description>
-    </item>
-    
-    <item>
-      <title>Para refletir</title>
-      <link>https://blog.adlermedrado.com.br/posts/para-refletir/</link>
-      <pubDate>Wed, 29 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/para-refletir/</guid>
-      <description>Hoje eu recebi por e-mail a seguinte foto, eu creio que ela fala por ela mesma, não é?
+se desconfiar que a única coisa que funciona bem seja a urna eletrônica,</description></item><item><title>Flisol Francisco Beltrão 2014</title><link>https://adlermedrado.com.br/posts/flisol-francisco-beltrao-2014/</link><pubDate>Fri, 25 Apr 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/flisol-francisco-beltrao-2014/</guid><description>Amanhã eu irei proferir uma palestra sobre ReactPHP no Flisol de Francisco Beltrão.
+Se puder, prestigie o evento.</description></item><item><title>OFF-TOPIC — O desarmamento e suas falácias</title><link>https://adlermedrado.com.br/posts/off-topic-o-desarmamento-e-suas-falacias/</link><pubDate>Mon, 24 Feb 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/off-topic-o-desarmamento-e-suas-falacias/</guid><description>Ontem no Jornal de Beltrão teve uma reportagem sobre os bandidos estarem invadindo casas e tal. Nesta reportagem um quadro informava sobre armas e na reportagem havia um trecho com a opinião de um delegado.
+Eu acho uma vergonha um delegado prestar um serviço de desinformação num jornal dizendo que “O cidadão que compra uma arma pode estar armando um bandido” e em seguida dizer que o cidadão “precisa tomar cuidados como reforçar a segurança de portas, janelas e evitar deixar bens à mostra”.</description></item><item><title>O fim do GetOnCode();</title><link>https://adlermedrado.com.br/posts/o-fim-do-getoncode/</link><pubDate>Wed, 19 Feb 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/o-fim-do-getoncode/</guid><description>Em 2011 eu iniciei um projeto chamado Get On Code, a idéia inicial era a de publicar notícias, artigos, etc., relacionados a desenvolvimento, bem como produzir um podcast que falasse sobre o assunto.
+A idéia começou bem, com uma boa resposta dos visitantes do site e ouvintes do podcast, no entanto, com o passar do tempo eu passei a ter menos disponibilidade para continuar com o projeto e passei por diversas situações na minha vida que me atrapalharam a me dedicar a ele.</description></item><item><title>Para refletir</title><link>https://adlermedrado.com.br/posts/para-refletir/</link><pubDate>Wed, 29 Jan 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/para-refletir/</guid><description>Hoje eu recebi por e-mail a seguinte foto, eu creio que ela fala por ela mesma, não é?
 Após observa-la por algum tempo, eu pude perceber que nossa sociedade não vive diferente dos animais retratados na imagem:
-Nós pensamos que somos livres, mas não somos. Nós pensamos que temos o direito de escolher o que é melhor para nós, mas não temos. O que nós temos é a ilusão de que somos livres, mas, na verdade o que nós somos mesmo é escravos, prisioneiros do sistema.</description>
-    </item>
-    
-    <item>
-      <title>Quer ser um bom programador? Dica #2</title>
-      <link>https://blog.adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-2/</link>
-      <pubDate>Wed, 22 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-2/</guid>
-      <description>Este é o segundo de uma série de posts com dicas para se tornar um bom programador.
+Nós pensamos que somos livres, mas não somos. Nós pensamos que temos o direito de escolher o que é melhor para nós, mas não temos. O que nós temos é a ilusão de que somos livres, mas, na verdade o que nós somos mesmo é escravos, prisioneiros do sistema.</description></item><item><title>Quer ser um bom programador? Dica #2</title><link>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-2/</link><pubDate>Wed, 22 Jan 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-2/</guid><description>Este é o segundo de uma série de posts com dicas para se tornar um bom programador.
 O primeiro post da série encontra-se aqui
-Dica #2: Mantenha o hábito de continuar sempre aprendendo. Conhecimento nunca é demais, principalmente com programação onde novas tecnologias despontam quase que diariamente, por isso, é importante deixar de lado qualquer ideologia, fanatismo -Muitas vezes até parecido com fanatismo religioso- e estudar coisas novas, mesmo porque estudando uma linguagem diferente daquela usada diariamente pode dar idéias de como resolver melhor certos problemas do dia-a-dia.</description>
-    </item>
-    
-    <item>
-      <title>Quer ser um bom programador? Dica #1</title>
-      <link>https://blog.adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-1/</link>
-      <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-1/</guid>
-      <description>Uma das primeiras dicas que dou quando alguém me pergunta o que é necessário para ser um bom programador, será também a primeira de uma série de posts que farei a respeito deste assunto.
-Dica #1: Conheça a plataforma que você usa para trabalhar. Para ilustrar a minha idéia, usarei como exemplo a linguagem PHP, mas a dica pode ser considerada para qualquer ou pelo menos a maioria das linguagens.</description>
-    </item>
-    
-    <item>
-      <title>Não execute comandos a esmo. Escreva-os.</title>
-      <link>https://blog.adlermedrado.com.br/posts/nao-execute-comandos-a-esmo-escreva-os/</link>
-      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/nao-execute-comandos-a-esmo-escreva-os/</guid>
-      <description>Eu sempre fui um cara afobado, então sempre quando precisava executar um comando em um servidor por exemplo, eu simplesmente o executava e se alguns dias, semanas ou meses depois eu precisasse executa-lo novamente eu me pegava tentando me lembrar como que tinha feito da outra vez.
+Dica #2: Mantenha o hábito de continuar sempre aprendendo. Conhecimento nunca é demais, principalmente com programação onde novas tecnologias despontam quase que diariamente, por isso, é importante deixar de lado qualquer ideologia, fanatismo -Muitas vezes até parecido com fanatismo religioso- e estudar coisas novas, mesmo porque estudando uma linguagem diferente daquela usada diariamente pode dar idéias de como resolver melhor certos problemas do dia-a-dia.</description></item><item><title>Quer ser um bom programador? Dica #1</title><link>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-1/</link><pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-1/</guid><description>Uma das primeiras dicas que dou quando alguém me pergunta o que é necessário para ser um bom programador, será também a primeira de uma série de posts que farei a respeito deste assunto.
+Dica #1: Conheça a plataforma que você usa para trabalhar. Para ilustrar a minha idéia, usarei como exemplo a linguagem PHP, mas a dica pode ser considerada para qualquer ou pelo menos a maioria das linguagens.</description></item><item><title>Não execute comandos a esmo. Escreva-os.</title><link>https://adlermedrado.com.br/posts/nao-execute-comandos-a-esmo-escreva-os/</link><pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/nao-execute-comandos-a-esmo-escreva-os/</guid><description>Eu sempre fui um cara afobado, então sempre quando precisava executar um comando em um servidor por exemplo, eu simplesmente o executava e se alguns dias, semanas ou meses depois eu precisasse executa-lo novamente eu me pegava tentando me lembrar como que tinha feito da outra vez.
 Quem nunca passou por isso?
 Então já tem algum tempo, eu adotei o seguinte lema:
 Não simplesmente execute comandos. Escreva-os.
-Isso mesmo: Sempre que preciso executar um comando SQL, independente de qual seja, um comando bash em um servidor ou até mesmo comandos repetitivos de backup entre outros, eu o escrevo antes, guardo o script, comando, etc.</description>
-    </item>
-    
-    <item>
-      <title>Happy New Year</title>
-      <link>https://blog.adlermedrado.com.br/posts/happy-new-year/</link>
-      <pubDate>Tue, 31 Dec 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/happy-new-year/</guid>
-      <description>Happy New Year, folks.</description>
-    </item>
-    
-    <item>
-      <title>Porque o coitadismo é tão difundido no Brasil?</title>
-      <link>https://blog.adlermedrado.com.br/posts/porque-o-coitadismo-e-tao-difundido-no-brasil/</link>
-      <pubDate>Mon, 16 Dec 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/porque-o-coitadismo-e-tao-difundido-no-brasil/</guid>
-      <description>Uma das coisas que eu abomino é a cultura do coitadismo que, infelizmente, está enraizado no DNA do brasileiro.
-Eu não sei o motivo desse comportamento, mas o que eu observo é que aparentemente as pessoas estão cada vez mais buscando encontrar um papel de vítima no qual ele possa se encaixar. O motivo? Não sei, talvez por nossa sociedade ser hipócrita o suficiente para valorizar quem não se esforça, quem não faz por merecer em detrimento daqueles que se esforçam para ser ou conseguir alguma coisa.</description>
-    </item>
-    
-    <item>
-      <title>Mais um pouco sobre privacidade</title>
-      <link>https://blog.adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</link>
-      <pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</guid>
-      <description>Eu resolvi escrever este post depois de ficar pensando neste assunto por um tempo, então se você não se importa muito com a proteção da privacidade e/ou acha que quem se preocupa com isso é teórico da conspiração, pirado, louco ou qualquer coisa do gênero, fique com essa foto desse gatinho com uma cara engraçada, assim a vinda até este post não foi em vão.
-Mas se você quiser ler um resumo sobre o que penso a respeito deste assunto, é só continuar a leitura.</description>
-    </item>
-    
-    <item>
-      <title>Web Analytics e Privacidade</title>
-      <link>https://blog.adlermedrado.com.br/posts/web-analytics-e-privacidade/</link>
-      <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/web-analytics-e-privacidade/</guid>
-      <description>Intro Recentemente, eu publiquei um post a respeito do meu novo blog, aproveitando o embalo eu estou tentando torna-lo o mais transparente possível para aqueles que o visitam, então a primeira iniciativa foi **descartar o uso do Google Analytics **.
-Rastreamento Há muito tempo, bem antes desse burburinho todo por causa da NSA que eu me preocupo com a minha privacidade na web, eu acho que comecei a me preocupar e a me interessar por esse tipo de assunto por volta de 1998 ou 1999 quando lia sobre echelon.</description>
-    </item>
-    
-    <item>
-      <title>Novo blog</title>
-      <link>https://blog.adlermedrado.com.br/posts/novo-blog/</link>
-      <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.adlermedrado.com.br/posts/novo-blog/</guid>
-      <description>Olá, bem vindo ao meu novo blog. Eu estou abandonando o meu projeto dangolino, a partir desse post o meu blog voltará a ser baseado no bom e velho wordpress e tentarei enumerar os motivos logo abaixo:
+Isso mesmo: Sempre que preciso executar um comando SQL, independente de qual seja, um comando bash em um servidor ou até mesmo comandos repetitivos de backup entre outros, eu o escrevo antes, guardo o script, comando, etc.</description></item><item><title>Happy New Year</title><link>https://adlermedrado.com.br/posts/happy-new-year/</link><pubDate>Tue, 31 Dec 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/happy-new-year/</guid><description>Happy New Year, folks.</description></item><item><title>Porque o coitadismo é tão difundido no Brasil?</title><link>https://adlermedrado.com.br/posts/porque-o-coitadismo-e-tao-difundido-no-brasil/</link><pubDate>Mon, 16 Dec 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/porque-o-coitadismo-e-tao-difundido-no-brasil/</guid><description>Uma das coisas que eu abomino é a cultura do coitadismo que, infelizmente, está enraizado no DNA do brasileiro.
+Eu não sei o motivo desse comportamento, mas o que eu observo é que aparentemente as pessoas estão cada vez mais buscando encontrar um papel de vítima no qual ele possa se encaixar. O motivo? Não sei, talvez por nossa sociedade ser hipócrita o suficiente para valorizar quem não se esforça, quem não faz por merecer em detrimento daqueles que se esforçam para ser ou conseguir alguma coisa.</description></item><item><title>Mais um pouco sobre privacidade</title><link>https://adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</link><pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</guid><description>Eu resolvi escrever este post depois de ficar pensando neste assunto por um tempo, então se você não se importa muito com a proteção da privacidade e/ou acha que quem se preocupa com isso é teórico da conspiração, pirado, louco ou qualquer coisa do gênero, fique com essa foto desse gatinho com uma cara engraçada, assim a vinda até este post não foi em vão.
+Mas se você quiser ler um resumo sobre o que penso a respeito deste assunto, é só continuar a leitura.</description></item><item><title>Web Analytics e Privacidade</title><link>https://adlermedrado.com.br/posts/web-analytics-e-privacidade/</link><pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/web-analytics-e-privacidade/</guid><description>Intro Recentemente, eu publiquei um post a respeito do meu novo blog, aproveitando o embalo eu estou tentando torna-lo o mais transparente possível para aqueles que o visitam, então a primeira iniciativa foi **descartar o uso do Google Analytics **.
+Rastreamento Há muito tempo, bem antes desse burburinho todo por causa da NSA que eu me preocupo com a minha privacidade na web, eu acho que comecei a me preocupar e a me interessar por esse tipo de assunto por volta de 1998 ou 1999 quando lia sobre echelon.</description></item><item><title>Novo blog</title><link>https://adlermedrado.com.br/posts/novo-blog/</link><pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/novo-blog/</guid><description>Olá, bem vindo ao meu novo blog. Eu estou abandonando o meu projeto dangolino, a partir desse post o meu blog voltará a ser baseado no bom e velho wordpress e tentarei enumerar os motivos logo abaixo:
 Falta de tempo
-Quando eu iniciei o projeto do dangolino, eu tinha tempo disponível e queria trabalhar em algo que pudesse usar no meu dia-a-dia, objetivo este que foi atendido, pois o dangolino me serviu por mais de um ano, sem problemas e sem precisar adicionar funcionalidade alguma a ele neste período.</description>
-    </item>
-    
-  </channel>
-</rss>
+Quando eu iniciei o projeto do dangolino, eu tinha tempo disponível e queria trabalhar em algo que pudesse usar no meu dia-a-dia, objetivo este que foi atendido, pois o dangolino me serviu por mais de um ano, sem problemas e sem precisar adicionar funcionalidade alguma a ele neste período.</description></item></channel></rss>

@@ -1,59 +1,16 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport
-          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
-    <meta name="description" content="My corner of the web">
-    <title>Adler Medrado's corner of the web</title>
-    <link rel="author" href="/humans.txt"/>
-    <link rel="canonical" href="https://adlermedrado.com.br"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head><body><header>
-    <nav class="navbar" role="navigation">
-        <div class="navbar_left">
-            <a href="/"><strong>Adler Medrado's corner of the web</strong></a>
-        </div>
-        <div class="navbar_right">
-            <a href="/posts">Posts</a>
-            <a href="/tags">Posts by Tags</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Configurando um repositório privado usando Composer e Satis</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>June 21, 2015</time>
-                            |
-                            2  minutes  read
-                        </small>
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando
-na <a href="http://coderockr.com">Coderockr</a> e este repositório deveria ser importado no projeto por meio do composer, talvez
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!doctype html><html lang=en><head><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Configurando um repositório privado usando Composer e Satis</h1><div><div><p><small><time>June 21, 2015</time>
+|
+2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando
+na <a href=http://coderockr.com>Coderockr</a> e este repositório deveria ser importado no projeto por meio do composer, talvez
 isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível
-pelo <a href="https://getcomposer.org">composer</a> que utilizasse um repositório git privado.</p>
-<h4 id="como-faz">Como faz?</h4>
-<p>Após algumas pesquisas eu encontrei o projeto <a href="https://github.com/composer/satis">Satis</a>, que pelo que pude compreender
-é mantido pelos mesmos desenvolvedores que mantém o composer.</p>
-<p>O uso dele é bem simples e eu tentarei descrever os passos de uma forma bem simples e objetiva:</p>
-<h4 id="instale-o-composer">Instale o Composer</h4>
-<p>Se ainda não o tiver feito, <a href="https://getcomposer.org/doc/00-intro.md">(aprenda como)</a>.</p>
-<h4 id="instale-o-satis">Instale o Satis</h4>
-<p>Crie um projeto usando o composer, basta rodar o seguinte comando no terminal:</p>
-<p><code>php composer.phar create-project composer/satis --stability=dev --keep-vcs</code></p>
-<h4 id="configure-o-para-prover-o-acesso-ao-seu-repositório-privado">Configure-o para prover o acesso ao seu repositório privado</h4>
-<p>A primeira coisa que deve ser feita é criar um arquivo chamado satis.json no<br>
-root do projeto que foi criado acima, segue um exemplo deste arqvivo:</p>
-<pre><code>{  
+pelo <a href=https://getcomposer.org>composer</a> que utilizasse um repositório git privado.</p><h4 id=como-faz>Como faz?</h4><p>Após algumas pesquisas eu encontrei o projeto <a href=https://github.com/composer/satis>Satis</a>, que pelo que pude compreender
+é mantido pelos mesmos desenvolvedores que mantém o composer.</p><p>O uso dele é bem simples e eu tentarei descrever os passos de uma forma bem simples e objetiva:</p><h4 id=instale-o-composer>Instale o Composer</h4><p>Se ainda não o tiver feito, <a href=https://getcomposer.org/doc/00-intro.md>(aprenda como)</a>.</p><h4 id=instale-o-satis>Instale o Satis</h4><p>Crie um projeto usando o composer, basta rodar o seguinte comando no terminal:</p><p><code>php composer.phar create-project composer/satis --stability=dev --keep-vcs</code></p><h4 id=configure-o-para-prover-o-acesso-ao-seu-repositório-privado>Configure-o para prover o acesso ao seu repositório privado</h4><p>A primeira coisa que deve ser feita é criar um arquivo chamado satis.json no<br>root do projeto que foi criado acima, segue um exemplo deste arqvivo:</p><pre><code>{  
     &quot;name&quot;: &quot;Repositório Local&quot;,  
     &quot;homepage&quot;: &quot;http://localhost:8888&quot;,  
     &quot;archive&quot;: {  
@@ -66,29 +23,14 @@ root do projeto que foi criado acima, segue um exemplo deste arqvivo:</p>
         &quot;seu-pacote/sua-lib&quot;: &quot;\*&quot;  
     }  
 }
-</code></pre>
-<p>Como pode ser observado acima, eu configuro com o repositório que eu quero disponibilizar, se precisar colocar mais do
-que um repositório basta adicionar woutro elemento no array <em>repositories</em>.</p>
-<p>Em seguida, informe o nome do seu pacote/library e qual versão deseja usar.</p>
-<p>Acima, no atributo homepage é informado qual o endereço local que será usado para servir o projeto. Você pode usar uma
-URL diferente de localhost sem problemas.</p>
-<h4 id="faça-a-_build_-do-seu-repositório">Faça a <em>build</em> do seu repositório</h4>
-<p>Execute o comando abaixo sempre que houver mudanças no seu repositório:</p>
-<pre><code>php bin/satis build &lt;configuration file&gt; &lt;build dir&gt;
-</code></pre>
-<p>Por exemplo, eu rodei assim:</p>
-<pre><code>php bin/satis build satis.json repo
-</code></pre>
-<p>O diretório repo será usado para disponibilizar os fontes do repositório privado.</p>
-<h4 id="disponibilize-o-repositório">Disponibilize o repositório</h4>
-<p>Você pode criar um virtual host apontando para o diretório <em>repo</em>, mas dependendo do caso, usar o webserver embutido no
-CLI do PHP:</p>
-<pre><code>php -S 0.0.0.0:8888 -t repo
-</code></pre>
-<p>Após rodar o comando acima (ou configurar um virtual host), acesse: <a href="http://localhost:8888"><strong>http://localhost:8888</strong></a></p>
-<p>Se for mostrada uma tela com os repositórios que você configurou eles poderão ser usados adicionando no composer.json do
-seu projeto:</p>
-<pre><code>&quot;repositories&quot;: [  
+</code></pre><p>Como pode ser observado acima, eu configuro com o repositório que eu quero disponibilizar, se precisar colocar mais do
+que um repositório basta adicionar woutro elemento no array <em>repositories</em>.</p><p>Em seguida, informe o nome do seu pacote/library e qual versão deseja usar.</p><p>Acima, no atributo homepage é informado qual o endereço local que será usado para servir o projeto. Você pode usar uma
+URL diferente de localhost sem problemas.</p><h4 id=faça-a-_build_-do-seu-repositório>Faça a <em>build</em> do seu repositório</h4><p>Execute o comando abaixo sempre que houver mudanças no seu repositório:</p><pre><code>php bin/satis build &lt;configuration file&gt; &lt;build dir&gt;
+</code></pre><p>Por exemplo, eu rodei assim:</p><pre><code>php bin/satis build satis.json repo
+</code></pre><p>O diretório repo será usado para disponibilizar os fontes do repositório privado.</p><h4 id=disponibilize-o-repositório>Disponibilize o repositório</h4><p>Você pode criar um virtual host apontando para o diretório <em>repo</em>, mas dependendo do caso, usar o webserver embutido no
+CLI do PHP:</p><pre><code>php -S 0.0.0.0:8888 -t repo
+</code></pre><p>Após rodar o comando acima (ou configurar um virtual host), acesse: <a href=http://localhost:8888><strong>http://localhost:8888</strong></a></p><p>Se for mostrada uma tela com os repositórios que você configurou eles poderão ser usados adicionando no composer.json do
+seu projeto:</p><pre><code>&quot;repositories&quot;: [  
     {  
       &quot;type&quot;: &quot;composer&quot;,  
       &quot;url&quot;: &quot;http://localhost:8888&quot;  
@@ -97,37 +39,26 @@ seu projeto:</p>
   &quot;require&quot;: {  
     &quot;seu-pacote/sua-lib&quot;: &quot;dev-master&quot;  
   }
-</code></pre>
-<h4 id="conclusão">Conclusão</h4>
-<p>Existem muitas outras configurações que podem ser feitas, mas essa configuração básica já ajuda na maioria das
-situações.</p>
-<p>Você conhece alguma outra maneira de lidar com uma situação como essa? Deixe seu comentário.</p>
+</code></pre><h4 id=conclusão>Conclusão</h4><p>Existem muitas outras configurações que podem ser feitas, mas essa configuração básica já ajuda na maioria das
+situações.</p><p>Você conhece alguma outra maneira de lidar com uma situação como essa? Deixe seu comentário.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/liberdade/>&#8592; Liberdade</a>
+|
+<a href=https://adlermedrado.com.br/posts/migrando-para-o-atom/>Migrando para o Atom &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
 
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="https://blog.adlermedrado.com.br/posts/liberdade/">&#8592; Liberdade</a>
-                
-                |
-                
-                <a href="https://blog.adlermedrado.com.br/posts/migrando-para-o-atom/">Migrando para o Atom &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><span class="line_break"></span>
-<span class="line_break"></span>
-<footer>
-    <div>
-        <p><small>&copy; 1996-2023 Adler Medrado</small></p>
-    </div>
-    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
-        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl https://blog.adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/ | gpg --verify</em></p></div>
-</footer></body>
-</html>
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSEob8ACgkQKWCEk4dB
+O2BDlg/9HBU1Up5WHomk2XpByTb2/wkb1u4qIYopKq1fKEIg9MJme3k+therrbr0
+eL84pHr5MbBxRCjtYsbpHRDY25clefQ2yJtofq234DIuBjH/NZpzrbN75YaSsTgX
+1UmPWaHLUYszqLs8cQmYZ9eukeF1YkPaCLuVs4KBlZzfR8QYsoaKuLU0USbMCjA5
+FyeOaVDql9eOdHnxmUZqD89Uubqwv6lzTKrS8FLJkglnkB132hkCU7Uyb7JOW7Ot
++yAs+hF+tGhiNt+l1wayzeAWMiOPIWSpFN71RvY3SSWR2Uz5N68bb9qKVzR6RTxw
+w4FnmKcJifwmddiqAhHlGyo5c015gJJQnltG1TvqT7nZfTMBEPxcwyYZNIj0Kzrq
+68zchUhtKu7oNM8cxGuNQcbYu8iijtHk5CS/rO6Pc6PjTnZ7QA6GMnQ7TimZStWB
+xeEbEvh+pF0A0gJ/Rm5W9T7tUcv8or0L/Jg2TRKw6cJ6wvKdlBZ3Gy1KFe1TYddM
+uXjZUoaKn54SJGV/++olXLcg8j4+FQ8TKs/tsJjEHJG19udnuQf4idjNKMUxaWmm
+knWWJz6PK6MTa03BzSg2BUQR2E/zI4Jgb+uRGcEOHUHhGkq6y7GgTANVsgroyTO4
+hPeCbiJJpkkeqqsnSej4Bi33t9R42jbCdz64/s1H9fIysEMhpUg=
+=T0vx
+-----END PGP SIGNATURE-----
+-->

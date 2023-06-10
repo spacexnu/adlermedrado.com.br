@@ -1,102 +1,43 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport
-          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
-    <meta name="description" content="My corner of the web">
-    <title>Adler Medrado's corner of the web</title>
-    <link rel="author" href="/humans.txt"/>
-    <link rel="canonical" href="https://adlermedrado.com.br"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head><body><header>
-    <nav class="navbar" role="navigation">
-        <div class="navbar_left">
-            <a href="/"><strong>Adler Medrado's corner of the web</strong></a>
-        </div>
-        <div class="navbar_right">
-            <a href="/posts">Posts</a>
-            <a href="/tags">Posts by Tags</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Gerenciador de pacotes para Windows</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>August 24, 2014</time>
-                            |
-                            1  minute  read
-                        </small>
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Não é segredo que nos últimos meses eu tenho usado <a href="http://windows.microsoft.com/pt-br/windows/home">Windows</a> como a
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!doctype html><html lang=en><head><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Gerenciador de pacotes para Windows</h1><div><div><p><small><time>August 24, 2014</time>
+|
+1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Não é segredo que nos últimos meses eu tenho usado <a href=http://windows.microsoft.com/pt-br/windows/home>Windows</a> como a
 minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como
-ambiente de trabalho em alguns projetos.</p>
-<p>Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes <em>nix</em> eu sempre busco por alternativas
-similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o <a href="https://chocolatey.org/">chocolatey</a>, que é
-um gerenciador de pacotes similar ao apt-get no linux, só que para windows.</p>
-<p>Para instalar, basta abrir uma janela do <a href="http://technet.microsoft.com/pt-br/library/bb978526.aspx">Powershell</a> em modo
-administrador e digitar:</p>
-<pre><code>iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
-</code></pre>
-<p>Após a instalação, o comando <em>choco</em> será disponibilizado no sistema, e a partir daí diversas aplicações poderão ser
-instaladas (e desinstaladas se for o caso) via linha de comando.</p>
-<p>Os comandos básicos são:</p>
-<p><em>list</em></p>
-<pre><code>choco list
-</code></pre>
-<p>Exemplo: Listar todos pacotes que possuem <em>git</em> no nome</p>
-<pre><code>choco list git
-</code></pre>
-<p><em>update</em></p>
-<p>Ex: Atualiza todos os pacotes</p>
-<pre><code>choco update
-</code></pre>
-<p>Ex: Atualiza pacote específico</p>
-<pre><code>choco update git
-</code></pre>
-<p><em>uninstall</em></p>
-<pre><code>choco uninstall git
-</code></pre>
-<p><em>help</em></p>
-<pre><code>choco /?
-</code></pre>
-<p>É isso. Mais uma <em>hidden gem</em> do mundo windows que até pouco tempo atrás eu não conhecia.</p>
-<p>Para conhecer melhor, visite a <a href="https://github.com/chocolatey/chocolatey/wiki">documentação do projeto</a>.</p>
+ambiente de trabalho em alguns projetos.</p><p>Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes <em>nix</em> eu sempre busco por alternativas
+similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o <a href=https://chocolatey.org/>chocolatey</a>, que é
+um gerenciador de pacotes similar ao apt-get no linux, só que para windows.</p><p>Para instalar, basta abrir uma janela do <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a> em modo
+administrador e digitar:</p><pre><code>iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
+</code></pre><p>Após a instalação, o comando <em>choco</em> será disponibilizado no sistema, e a partir daí diversas aplicações poderão ser
+instaladas (e desinstaladas se for o caso) via linha de comando.</p><p>Os comandos básicos são:</p><p><em>list</em></p><pre><code>choco list
+</code></pre><p>Exemplo: Listar todos pacotes que possuem <em>git</em> no nome</p><pre><code>choco list git
+</code></pre><p><em>update</em></p><p>Ex: Atualiza todos os pacotes</p><pre><code>choco update
+</code></pre><p>Ex: Atualiza pacote específico</p><pre><code>choco update git
+</code></pre><p><em>uninstall</em></p><pre><code>choco uninstall git
+</code></pre><p><em>help</em></p><pre><code>choco /?
+</code></pre><p>É isso. Mais uma <em>hidden gem</em> do mundo windows que até pouco tempo atrás eu não conhecia.</p><p>Para conhecer melhor, visite a <a href=https://github.com/chocolatey/chocolatey/wiki>documentação do projeto</a>.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/>&#8592; Acessando o Office 365 via Powershell</a>
+|
+<a href=https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/>Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
 
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="https://blog.adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/">&#8592; Acessando o Office 365 via Powershell</a>
-                
-                |
-                
-                <a href="https://blog.adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/">Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><span class="line_break"></span>
-<span class="line_break"></span>
-<footer>
-    <div>
-        <p><small>&copy; 1996-2023 Adler Medrado</small></p>
-    </div>
-    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
-        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl https://blog.adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/ | gpg --verify</em></p></div>
-</footer></body>
-</html>
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSEocIACgkQKWCEk4dB
+O2DvuBAAghG2d+R0Nw1slcsrB03CkjEHGbjDWvZjx06zXTIPAXtqk5l+cWn54LFx
+/uBYv1qO6amagLNUja6159AsDkZFWZV922TMuGVpn5E8tYC9C0B7IN5CuHaTWDPk
+Bins7HZUh1pcTjnMCjs9faQxnUaurd+of3yhs0Q9oBSuqdOro5+0WgU9/OFT+O9Y
+s8vwZLzm5FJl2C0OFM/EWdLVmBPiguegSZlSiIRgJA+fGrVclEP7Jd2GamccX9AQ
+kUJGtX4OkKRxJgpN7aO40OzuY3+JRHeUQUelwbFR9rRc9K8bUKai03Itk7Q+m5b5
+dBRfMbARpdVOiaJ//3g4yxbrtnP83I39a47RD3BvB2PBYLP8rZdgOLwryR3UaqgB
+Mc13tGr50Ac5E3g39uiY54Z6bZhDR7amR+n2fZicgNnZKASv7p1FeYSKRWfbsngB
+DPg5M16YBVL6CZnaL1M3a7Au03nA6hfidbdJcP7nWLMxq1Fcduq+Nh58bhRjym2I
++6qe8mL0V29TFiSgKcnRiZa1xKmi6TTIsGC/m3Q8GKOPJYvUP1WjEN/obep6baVB
+CcNAwld1k+/NQ81sWjHYnL8BJFLbFo4+6YC+hBVzUSxGse2U6EfZAZ5Hota+J8fR
+wtoVywQ2RY8wq9cCLZffMZ+9B8p8AHw+POzAyDIw0xYznadZ/dg=
+=RSVI
+-----END PGP SIGNATURE-----
+-->

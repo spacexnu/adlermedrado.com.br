@@ -1,0 +1,128 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Tutorial Zend Paginator</h1><div><div><p><small><time>March 28, 2009</time>
+|
+5 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>O Zend Framework é muito interessante mesmo nos componentes mais simples, desta vez eu irei falar sobre o componente
+Zend_Paginator, que é um componente que se propõe a fazer a paginação de qualquer coleção de dados de uma maneira bem
+simples e mostrar os dados paginados para o usuário.</p><p><strong>ADAPTERS</strong></p><p>Este componente não exige que os dados a serem paginados sejam especificamente dados provenientes de bancos de dados,
+ele faz a paginação de arrays, de dados relacionados a objetos Zend_Db_Select e Zend_Db_Table_Select e Iterators. Hoje
+iremos nos ater ao uso dos Adapters Array e DbTableSelect.</p><p><strong>Os Adapters disponíveis são:</strong></p><p><code>Array</code> - Manipula qualquer Array criado em PHP
+<code>DbSelect</code> - Utiliza um objeto Zend_Db_Select que retornará um Array
+<code>DbTableSelect</code> - Utiliza um objeto Zend_Db_Table_Select, que retornará uma instância de Zend_Db_Rowset_Abstract.
+<code>Iterator</code> - Utiliza uma instância de Iterator
+<code>Null</code> - Não utiliza o mecanismo de paginação do componente permitindo que o programador possa implementar seu próprio
+mecanismo.</p><p><strong>ME MOSTRE O CÓDIGO</strong></p><p>Quem está acostumado a ler meus artigos e tutoriais sabem que gosto de ir direto ao assunto e evito colocar textos
+enfadonhos, então eu irei mostrar logo algum código aqui pra acordar quem já estiver babando em cima do teclado.</p><p>O primeiro exemplo será de uma paginação com um simples array.</p><p><code>ExemploController.php</code></p><pre><code>$tabela = new Tabela();
+$res = $tabela-&gt;fetchAll();
+
+$paginator = Zend_Paginator::factory($res);
+$paginator-&gt;setItemCountPerPage(10);
+$paginator-&gt;setCurrentPageNumber($this-&gt;_request-&gt;getParam('page'));
+
+$this-&gt;view-&gt;paginator = $paginator;
+?&gt;
+</code></pre><p>O código acima representa as definições de um paginator em uma action do seu controller. Primeiro é criada a instância
+do objeto <code>Zend_Db_Table</code> que será usado para buscar um array com os dados a serem paginados, depois criamos o objeto do
+Zend_Paginator passando este array como parâmetro, informamos qual a quantidade de ítens por página e qual a página
+atual que é informada por meio de parâmetro via method GET.</p><p>O array poderia ser um simples array ‘criado na mão’ que funcionaria direitinho também.</p><p>Agora vamos dar uma olhada no template da view.</p><p><code>arquivo.phtml</code></p><pre><code>&lt;?php if (count($this-&gt;paginator)): ?&gt;
+&lt;?php foreach ($this-&gt;paginator as $exemplo): ?&gt;
+&lt;h5&gt;&lt;?php echo $exemplo['titulo']?&gt;&lt;/h5&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;?php echo $exemplo['info']?&gt;&lt;/p&gt;
+&lt;?php endforeach; ?&gt;
+&lt;?echo $this-&gt;paginationControl($this-&gt;paginator,
+'All',
+'paginator_item.phtml'); ?&gt;
+&lt;?php endif; ?&gt;
+</code></pre><p>Muito simples. Nós iteramos o objeto paginator que passamos para a view e então manipulamos os ítens do array que passamos como parâmetro no controller.</p><p>O bloco de paginação com First, Last, Next, Last nós colocamos em um arquivo de template (phtml) separado e o passamos
+como parâmetro no <code>Zend_View_Helper</code> <code>paginationControl</code> que é quem lida com o controle de paginação.</p><p>Na documentação do <code>Zend_Paginator</code> pode-se encontrar alguns exemplos de template de controle que podemos pegar e usar.</p><p>Vamos ver como isso funciona utilizando-se um objeto <code>Zend_Db_Table_Select</code>:</p><pre><code>$tabela = new Tabela();
+$tabelaSelect = $tabela-&gt;select();
+
+$paginator = Zend_Paginator::factory($tabelaSelect);
+$paginator-&gt;setItemCountPerPage(10);
+$paginator-&gt;setCurrentPageNumber($this-&gt;_request-&gt;getParam('page'));
+$this-&gt;view-&gt;paginator = $paginator;
+</code></pre><p>A diferença foi apenas o parâmetro que passamos, ao invés de um array, um objeto.</p><p>Vejamos como ficou o template com a iteração do resultado disso:</p><pre><code>&lt;?php if (count($this-&gt;paginator)): ?&gt;
+&lt;?php foreach ($this-&gt;paginator as $exemplo): ?&gt;
+&lt;h5&gt;&lt;?php echo $exemplo-&gt;titulo?&gt;&lt;/h5&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;?php echo $exemplo-&gt;info?&gt;&lt;/p&gt;
+&lt;?php endforeach; ?&gt;
+&lt;?echo $this-&gt;paginationControl($this-&gt;paginator,
+'All',
+'paginator_item.phtml'); ?&gt;
+&lt;?php endif; ?&gt;
+</code></pre><p>A única diferença em relação ao exemplo com array, é que pelo fato de o retorno ser um objeto <code>Zend_Db_Table_Rowset</code>, nós podemos acessar cada coluna do retorno do banco de dados como uma propriedade de um objeto, dessa forma nós tratamos tudo como um objeto.</p><p>Uma outra diferença que também é importante, é que o <code>Zend_Paginator</code> ao ver que a coleção de dados a ser paginada será o
+resultado gerado por um objeto <code>Zend_Db_Table_Select</code> ele vai saber como realizar aquela query de paginação com limit e
+etc, evitando que todo o conjunto de dados seja retornado de uma única vez. Quando passamos um array por exemplo, nós
+enviamos ao <code>Zend_Paginator</code> uma coleção completa e a paginação é feita nele, já com o objeto não, pois ele saberá fazer o
+limit implicitamente.</p><p>Bacana não é?</p><p>Vou colocar o código do template do controle de paginação que usei nesses exemplos, que é idêntico ao que está na
+documentação do ZF:</p><pre><code>&lt;?php if ($this-&gt;pageCount): ?&gt;
+&lt;div class=&quot;paginationControl&quot;&gt;
+&lt;?= $this-&gt;firstItemNumber; ?&gt; - &lt;?= $this-&gt;lastItemNumber; ?&gt; of &lt;?= $this-&gt;totalItemCount; ?&gt;
+
+&lt;?php if (isset($this-&gt;previous)): ?&gt;
+&lt;a href=&quot;&lt;?= $this-&gt;url(array('page' =&gt; $this-&gt;first)); ?&gt;&quot;&gt;
+First
+&lt;/a&gt; |
+&lt;?php else: ?&gt;
+&lt;span class=&quot;disabled&quot;&gt;First&lt;/span&gt; |
+&lt;?php endif; ?&gt;
+
+&lt;?php if (isset($this-&gt;previous)): ?&gt;
+&lt;a href=&quot;&lt;?= $this-&gt;url(array('page' =&gt; $this-&gt;previous)); ?&gt;&quot;&gt;
+&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;lt; Previous
+&lt;/a&gt; |
+&lt;?php else: ?&gt;
+&lt;span class=&quot;disabled&quot;&gt;&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;lt; Previous&lt;/span&gt; |
+&lt;?php endif; ?&gt;
+
+&lt;?php if (isset($this-&gt;next)): ?&gt;
+&lt;a href=&quot;&lt;?= $this-&gt;url(array('page' =&gt; $this-&gt;next)); ?&gt;&quot;&gt;
+Next &amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt;
+&lt;/a&gt; |
+&lt;?php else: ?&gt;
+&lt;span class=&quot;disabled&quot;&gt;Next &amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;gt;&lt;/span&gt; |
+&lt;?php endif; ?&gt;
+&lt;?php if (isset($this-&gt;next)): ?&gt;
+&lt;a href=&quot;&lt;?= $this-&gt;url(array('page' =&gt; $this-&gt;last)); ?&gt;&quot;&gt;
+Last
+&lt;/a&gt;
+&lt;?php else: ?&gt;
+&lt;span class=&quot;disabled&quot;&gt;Last&lt;/span&gt;
+&lt;?php endif; ?&gt;
+
+&lt;/div&gt;
+&lt;?php endif; ?&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;
+</code></pre><p><strong>CONSIDERAÇÕES FINAIS</strong></p><p>Este componente torna simples o trabalho chato de fazer um paginador na mão nos dando ainda a flexibilidade de não
+precisar utilizar somente coleções de dados provenientes de um banco de dados.</p><p>Existem outros macetes que podem ser vistos na documentação do componente, eu coloquei aqui de maneira bem simples
+apenas duas formas de se implementar paginação com o componente <code>Zend_Paginator</code> utilizando duas coleções de dados
+diferentes.</p><p>Para quem já implementou isso antes sabe que não é um bicho de sete cabeças mas de vez em quando pode se tornar uma
+coisa chata e se já temos um componente pronto nós podemos utilizar nossa criatividade e conhecimento diretamente no
+negócio da aplicação e não em estrutura.</p><p>Deixe seu comentário sobre este artigo.</p><p>Até o próximo.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/>&#8592; Enfim Zend Certified Engineer #2</a>
+|
+<a href=https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/>Chegou meu certificado ZCE-ZF &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/tutorial-zend-paginator/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSGOZcACgkQKWCEk4dB
+O2BQyw//Wcu+nJLOXOQEGGEvEl2DG0w9fj2XWCKBTqxFF+b5HeNAAe+9AGKUMtGd
+iVGKmMbvAamJq3Srw2HkFd0WyQ7ggTWbMEqPvLtH03jiwaQ5YZP9dwpAcUOczCPR
+ZSmqwCIC+3EvX63gpmD6v/e4kzKTgt/h9ME0DYNSz5EYLYSV/8w2At940FqV9jGR
+MTZLo5sIx+gxkqDXDGcPhSSQgwRsMrOb72nwDTjS9zc6PhJlg2fAq3L4jmcf8gGS
+f0OAF5U0LW3O1mSuJ26Dwec6tMC8s4UPUzodhyw4eBME+5lFn12HRz6kIs0Zda8a
+Ajvcf4pCn+SJfJbnOLwogqqK02N85VpUpBGQU/evrQVT0V/V6BcocG0Lv/3ZB1lk
+3o1jB9Bytll8NVU+get5mzlyVnA7CA1HRfkHOf80yhmpXk6/wjgnYbWO4qIcdWZk
+WLfYGddrBLBzLWyHZwQTet9bVcDUeFHehaCMrGJvr9H151T3PqDMK/Hoe0RWuu3c
+CbFCd05N62AxZrj4j+DGNAKxkWX2jecfR2tqXq+TRqm2LF/DkqWm72bw9pgp31+C
+EYdMmScBkYdaQfDZGr0aPz+IA4acV0yJ5LiBimzgp/SVJqtRsCIoNhW57DvjDtaQ
+rjyORA58c67wH8DKmM16G05wxFhoCOcZbOS/PT4feU+6tPTeVhc=
+=kt8t
+-----END PGP SIGNATURE-----
+-->

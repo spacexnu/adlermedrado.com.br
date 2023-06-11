@@ -1,0 +1,33 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Atualizacao No Site</h1><div><div><p><small><time>May 9, 2008</time>
+|
+1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.</p><p>O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.</p><p>Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
+Zend_Services_Flickr.</p><p>Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:</p><p>Controller:</p><pre><code>$flickr = new Zend_Service_Flickr(’MINHA_CHAVE_DO_FLICKR;
+$this-&gt;view-&gt;imgRes = $flickr-&gt;userSearch(’EMAIL_DO_USUARIO);
+</code></pre><p>Na View, basta manipular o objeto <code>Zend_Services_Flickr_Resultset</code> e <code>Zend_Services_Flickr_Image</code>.</p><p>Simples demais!!!</p><p>Abraço.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/>&#8592; O endereço do meu blog irá mudar</a>
+|
+<a href=https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/>Mudança de endereço realizada &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/atualizacao-no-site/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSGOYQACgkQKWCEk4dB
+O2CjOA/6AyAUyCW9WdfCdAXtNRrzPDQ13iEwfDafUC0wq7u83WCx/k4Zxol4RQNx
+2cUkqUUvymqQPk0Hx8PJQCp4kW7W0LUrCCwT8ojRfswq/Z2sA5rp5dYAdg4qPueI
+V8dadGyb1hTlR0PCb9ifKVoxrDd1VNL1org98Miukwf5VnMqygaVauGC61hnsr51
+nhdZfy2qatLVU84rMZjQzF3/gb7YdhCiLHeeoGC8q/dYEmTfPyS3XTPTiEEK3C/2
+NrsghLjPNu5JNdS1e2AeTs6v48B2gOziqJywiCoPR3SP56Z4MSklWLgKvhZTAAfS
+U+vTCLli0BG4Wy8sg4KbgiOkwceD8ZKm23ag6Ilid5lP4d5KelgvtFdd9HvvyX8p
+hpN/3fdBnz/4JE9w4UFSaNRLYvNPiI5qBPWuzHEBfWjts8T41cNonjvtWsswfDx1
+7JoXPrQhQLzHtTHZPntuxbFzhl96hHXXLIw7Md+46LlTHB6KWmB2UZ1V8SF5X6rH
+wU5eirnerdww38QD2FtVzL98nGmWnS3fVI+QHmChZG+XGPX0nOyyAb4dJPSUcOTv
+UOtvX9S1ZyuEIKjEGjNykPKXLJv2Z9qe9HwnhBvgMHPv8xU3ZizgmXPy2CKz/l63
+YAHOaSIZtpj7TQ7oYnYHfVxMmYjt54abVcSLHyjKyY1HC8VKQb0=
+=mHZg
+-----END PGP SIGNATURE-----
+-->

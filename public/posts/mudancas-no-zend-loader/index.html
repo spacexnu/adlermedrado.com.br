@@ -1,0 +1,52 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Mudanças no Zend_Loader</h1><div><div><p><small><time>May 28, 2009</time>
+|
+3 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
+autoload.</p><p>Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:</p><p><code>Zend_Loader::registerAutoload();</code></p><p>Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no
+pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está
+deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não
+receba um notice nas versões atuais.</p><p><strong>O que mudou ?</strong></p><p>Foi criada uma nova classe chamada <code>Zend_Loader_Autoloader</code> que implementa algumas novas funcionalidades e facilita a
+inclusão de bibliotecas externas à nossa aplicação. Para utilizarmos, basta criarmos uma instância dela no bootstrapper
+conforme o exemplo abaixo e pronto.</p><p><strong>Como assim?</strong></p><p>Antes de mostrar o código vamos entender como a coisa funciona:</p><p>Ao criar uma instância da classe <code>Zend_Loader_Autoloader</code> no bootstrapper o ZF registra a regra de autoloading com
+spl_autoload e assim o processo é automatizado.</p><p>Quando a instância é criada, o ZF já busca pelas classes dos namespaces <code>Zend_</code> e <code>ZendX_</code> automaticamente, porém qualquer
+classe adicional não será encontrada.</p><p>Mas antes de resolver isso segue o código que deve ser escrito para habilitar o autoload para <code>Zend_</code> e <code>ZendX_</code>:</p><pre><code>// Inicializa o autoloader padrão para Zend_ e ZendX_
+$autoloader = Zend_Loader_Autoloader::getInstance();
+</code></pre><p>Beleza. Agora vamos configurar para que outras classes sem namespace sejam incluídas pelo autoload (lembrando que elas
+devem estar no include_path).</p><pre><code>// Inicializa o autoloader padrão para Zend_ e ZendX_
+$autoloader-&gt;setFallbackAutoloader(true);
+</code></pre><p><strong>Fácil demais não é?</strong></p><p>Agora supondo que você crie o seu próprio namespace e por exemplo crie suas próprias classes usando herança e extendendo
+classes do próprio ZF.</p><p>Quando eu faço isso eu normalmente uso o prefixo <code>Base_</code> para o meu namespace, então, para colocar este namespace no
+autoload eu faço assim:</p><pre><code>// Registra o namespace Base_ no autoloader
+$autoloader-&gt;registerNamespace('Base_');
+</code></pre><p><strong>Tranquilo, certo?</strong></p><p>Bem, lembra de um post que coloquei aqui a algum tempo atrás que mostrava como integrar outras libs com o autoload do
+ZF? Naquele caso foi integrando o ezComponentes com o ZF.</p><p>Bem, esquece tudo aquilo porque aquilo já não nos pertence mais. Agora nós devemos fazer assim:</p><pre><code>$autoloader-&gt;pushAutoloader(array('ezcBase', 'autoload'), 'ezc');
+</code></pre><p><strong>Concluindo</strong></p><p>Apesar de ter havido uma quebra de compatibilidade com versões anteriores estas modificações foram bem legais porque
+facilitam no nosso dia-a-dia e com isso nossa produtividade aumenta.</p><p>Ainda existem outros aspectos que poderiam ser abordados mas que não julguei importantes para o post, como retornar
+todos os namespaces registrados, excluir um determinado namespace do autoloader e etc.</p><p>Outro ponto que achei bacana nesse novo objeto é que nós podemos modificar as configurações de autoloading em outros
+locais diferentes do bootstrapper como por exemplo num controller.</p><p>Espero que gostem da dica.</p><p>Abraços.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/>&#8592; Heróis Brasileiros esquecidos ou quase</a>
+|
+<a href=https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/>Slides da Palestra sobre Zend Framework no PHPSC Conf &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/mudancas-no-zend-loader/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSGOY4ACgkQKWCEk4dB
+O2BeCxAAn4vBkWpJLh0Qto/bjuv2HxJHQFXQ87kSeVXLTlKzK/CLSQxBSCl7jcVM
+qzBgzGzTTok6fv+EKIpow1KaPvKwfh6X2Yd36+L7HmlOUHJARHC8iPwYOjGGf9tf
+TNne+Zm1vjf/LeivWqwKk5C8IJxPNrBga31HU0t/mbtqJLsr35371VI5xQmO5NCm
+FMQLfWukpyTacrVT4TBCJJn3hVi3ypYn+X5GoddtyxUIvS1kwskzEh28TpPE9xvj
+u9jP00re7YSRKcJK6vLxrHUeg/bkN1wqrupJSihDRpr0XjCSZaGz2DbPRwWG+g1y
+NfOKQkiW4fkFap5zZIFeR2Rpuy7vkFybHMKfS29q2Kxm2tYoSbg/2dUMu2ngiN2W
+kGTZrIv51K7Tzh5QVD2F4YUCO5XQieALP96EHzTVliyHgmVwAPRdQco644EXp/P8
+POWY3yAKjmYl3sSK1RvyYoQBBLDeVW/3UXjW/IUUgIo5rJl6CplwfEF93w6sFxue
+/fJ8jBFkNvy665hX7j8OBOCkV/M2GPRgXf/bhKaqIXVuDHcJ1WG674jMpo1OLGa4
+WnOVYh9JvFxNPmmy4ibVjg/jZ9/6nMTwvvtRiNXUf8/Iu+J/+7Rk5f3axNgZx29N
+R5Ckxs+Enl32zpdTjPPr1U2BFk7Uy2XTd6+E5S8EUzr74+jrs+E=
+=XaG/
+-----END PGP SIGNATURE-----
+-->

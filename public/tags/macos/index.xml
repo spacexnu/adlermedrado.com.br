@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>macos on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/macos/</link><description>Recent content in macos on Adler Medrado's corner of the web</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 02 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/macos/index.xml" rel="self" type="application/rss+xml"/><item><title>Erro incômodo com o Postgresql no Mac</title><link>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</link><pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</guid><description>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a atualização para o MacOS Sierra.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macos on Adler Medrado&#39;s corner of the web</title>
+    <link>https://adlermedrado.com.br/tags/macos/</link>
+    <description>Recent content in macos on Adler Medrado&#39;s corner of the web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Erro incômodo com o Postgresql no Mac</title>
+      <link>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</link>
+      <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</guid>
+      <description>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a atualização para o MacOS Sierra.
 O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:
 WTF?
-Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:</description></item></channel></rss>
+Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:</description>
+    </item>
+    
+  </channel>
+</rss>

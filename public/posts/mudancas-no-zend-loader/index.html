@@ -3,50 +3,141 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Mudanças no Zend_Loader</h1><div><div><p><small><time>May 28, 2009</time>
-|
-3 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
-autoload.</p><p>Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:</p><p><code>Zend_Loader::registerAutoload();</code></p><p>Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8" />
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport
+          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
+    <meta name="description" content="My corner of the web">
+    <title>Adler Medrado's little piece of turf</title>
+    <link rel="author" href="/humans.txt"/>
+    <link rel="canonical" href="https://adlermedrado.com.br"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header>
+    <nav class="navbar" role="navigation">
+        <div class="navbar_left">
+            <a href="/"><strong>Adler Medrado</strong></a>
+        </div>
+        <div class="navbar_right">
+            <a href="/posts">Posts</a>
+            <a href="/tags">Posts by Tags</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="section">
+    <article>
+        <div>
+            <h1>Mudanças no Zend_Loader</h1>
+            <div>
+                <div>
+                    <p>
+                        <small>
+                            <time>May 28, 2009</time>
+                            |
+                            3  minutes  read
+                        </small>
+                    </p>
+                </div>
+                <span class="line_break"></span>
+            </div>
+            <div class="content">
+                <p>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
+autoload.</p>
+<p>Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:</p>
+<p><code>Zend_Loader::registerAutoload();</code></p>
+<p>Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no
 pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está
 deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não
-receba um notice nas versões atuais.</p><p><strong>O que mudou ?</strong></p><p>Foi criada uma nova classe chamada <code>Zend_Loader_Autoloader</code> que implementa algumas novas funcionalidades e facilita a
+receba um notice nas versões atuais.</p>
+<p><strong>O que mudou ?</strong></p>
+<p>Foi criada uma nova classe chamada <code>Zend_Loader_Autoloader</code> que implementa algumas novas funcionalidades e facilita a
 inclusão de bibliotecas externas à nossa aplicação. Para utilizarmos, basta criarmos uma instância dela no bootstrapper
-conforme o exemplo abaixo e pronto.</p><p><strong>Como assim?</strong></p><p>Antes de mostrar o código vamos entender como a coisa funciona:</p><p>Ao criar uma instância da classe <code>Zend_Loader_Autoloader</code> no bootstrapper o ZF registra a regra de autoloading com
-spl_autoload e assim o processo é automatizado.</p><p>Quando a instância é criada, o ZF já busca pelas classes dos namespaces <code>Zend_</code> e <code>ZendX_</code> automaticamente, porém qualquer
-classe adicional não será encontrada.</p><p>Mas antes de resolver isso segue o código que deve ser escrito para habilitar o autoload para <code>Zend_</code> e <code>ZendX_</code>:</p><pre><code>// Inicializa o autoloader padrão para Zend_ e ZendX_
+conforme o exemplo abaixo e pronto.</p>
+<p><strong>Como assim?</strong></p>
+<p>Antes de mostrar o código vamos entender como a coisa funciona:</p>
+<p>Ao criar uma instância da classe <code>Zend_Loader_Autoloader</code> no bootstrapper o ZF registra a regra de autoloading com
+spl_autoload e assim o processo é automatizado.</p>
+<p>Quando a instância é criada, o ZF já busca pelas classes dos namespaces <code>Zend_</code> e <code>ZendX_</code> automaticamente, porém qualquer
+classe adicional não será encontrada.</p>
+<p>Mas antes de resolver isso segue o código que deve ser escrito para habilitar o autoload para <code>Zend_</code> e <code>ZendX_</code>:</p>
+<pre><code>// Inicializa o autoloader padrão para Zend_ e ZendX_
 $autoloader = Zend_Loader_Autoloader::getInstance();
-</code></pre><p>Beleza. Agora vamos configurar para que outras classes sem namespace sejam incluídas pelo autoload (lembrando que elas
-devem estar no include_path).</p><pre><code>// Inicializa o autoloader padrão para Zend_ e ZendX_
+</code></pre>
+<p>Beleza. Agora vamos configurar para que outras classes sem namespace sejam incluídas pelo autoload (lembrando que elas
+devem estar no include_path).</p>
+<pre><code>// Inicializa o autoloader padrão para Zend_ e ZendX_
 $autoloader-&gt;setFallbackAutoloader(true);
-</code></pre><p><strong>Fácil demais não é?</strong></p><p>Agora supondo que você crie o seu próprio namespace e por exemplo crie suas próprias classes usando herança e extendendo
-classes do próprio ZF.</p><p>Quando eu faço isso eu normalmente uso o prefixo <code>Base_</code> para o meu namespace, então, para colocar este namespace no
-autoload eu faço assim:</p><pre><code>// Registra o namespace Base_ no autoloader
+</code></pre>
+<p><strong>Fácil demais não é?</strong></p>
+<p>Agora supondo que você crie o seu próprio namespace e por exemplo crie suas próprias classes usando herança e extendendo
+classes do próprio ZF.</p>
+<p>Quando eu faço isso eu normalmente uso o prefixo <code>Base_</code> para o meu namespace, então, para colocar este namespace no
+autoload eu faço assim:</p>
+<pre><code>// Registra o namespace Base_ no autoloader
 $autoloader-&gt;registerNamespace('Base_');
-</code></pre><p><strong>Tranquilo, certo?</strong></p><p>Bem, lembra de um post que coloquei aqui a algum tempo atrás que mostrava como integrar outras libs com o autoload do
-ZF? Naquele caso foi integrando o ezComponentes com o ZF.</p><p>Bem, esquece tudo aquilo porque aquilo já não nos pertence mais. Agora nós devemos fazer assim:</p><pre><code>$autoloader-&gt;pushAutoloader(array('ezcBase', 'autoload'), 'ezc');
-</code></pre><p><strong>Concluindo</strong></p><p>Apesar de ter havido uma quebra de compatibilidade com versões anteriores estas modificações foram bem legais porque
-facilitam no nosso dia-a-dia e com isso nossa produtividade aumenta.</p><p>Ainda existem outros aspectos que poderiam ser abordados mas que não julguei importantes para o post, como retornar
-todos os namespaces registrados, excluir um determinado namespace do autoloader e etc.</p><p>Outro ponto que achei bacana nesse novo objeto é que nós podemos modificar as configurações de autoloading em outros
-locais diferentes do bootstrapper como por exemplo num controller.</p><p>Espero que gostem da dica.</p><p>Abraços.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/>&#8592; Heróis Brasileiros esquecidos ou quase</a>
-|
-<a href=https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/>Slides da Palestra sobre Zend Framework no PHPSC Conf &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/mudancas-no-zend-loader/ | gpg --verify</em></p></div></footer></body></html><!--
+</code></pre>
+<p><strong>Tranquilo, certo?</strong></p>
+<p>Bem, lembra de um post que coloquei aqui a algum tempo atrás que mostrava como integrar outras libs com o autoload do
+ZF? Naquele caso foi integrando o ezComponentes com o ZF.</p>
+<p>Bem, esquece tudo aquilo porque aquilo já não nos pertence mais. Agora nós devemos fazer assim:</p>
+<pre><code>$autoloader-&gt;pushAutoloader(array('ezcBase', 'autoload'), 'ezc');
+</code></pre>
+<p><strong>Concluindo</strong></p>
+<p>Apesar de ter havido uma quebra de compatibilidade com versões anteriores estas modificações foram bem legais porque
+facilitam no nosso dia-a-dia e com isso nossa produtividade aumenta.</p>
+<p>Ainda existem outros aspectos que poderiam ser abordados mas que não julguei importantes para o post, como retornar
+todos os namespaces registrados, excluir um determinado namespace do autoloader e etc.</p>
+<p>Outro ponto que achei bacana nesse novo objeto é que nós podemos modificar as configurações de autoloading em outros
+locais diferentes do bootstrapper como por exemplo num controller.</p>
+<p>Espero que gostem da dica.</p>
+<p>Abraços.</p>
+
+            </div>
+        </div>
+    </article>
+    <div>
+        <div>
+            <div>
+                
+                <a href="https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/">&#8592; Heróis Brasileiros esquecidos ou quase</a>
+                
+                |
+                
+                <a href="https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/">Slides da Palestra sobre Zend Framework no PHPSC Conf &#8594;</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+</main><span class="line_break"></span>
+<span class="line_break"></span>
+<footer>
+    <div>
+        <p><small>&copy; 1996-2023 Adler Medrado</small></p>
+    </div>
+    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
+        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/mudancas-no-zend-loader/ | gpg --verify</em></p></div>
+</footer></body>
+</html>
+<!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSGO8YACgkQKWCEk4dB
-O2ACTBAAiJuWn9Baf6N+lb8EXQZgve4SPtwXb1v5TbDoAjxv9xFG2+xNcL9huSKS
-6R/tTwk9Mi+t1nTlMLS4My1DEqP9PPLJ/PEmhCL3tCaqklomrvvO4MlG9crb2vwq
-iCGO2rqt7//f9jzd46SIIP9rNevSDz2TQJGi5AARMCbMbmjqAisj0jyPlQA7PVpq
-kyZTCTKcRpKYyKLR1nKgErelZKmaWofFppCv1Vl1zjKSg1eSey0260b7kJUYsCUJ
-tk9hs2tdRXJnmIYqiVGQ7BXCbDqnp6O+ogzzMIODCYlyhiUCYhTNur9TakPu2NYI
-QVOSu6TxBfgRMSwnCfZE5dY/QmIxB1oMVUiswGHfacUH+kKnlwAyvr2w3PPfpYvo
-DDqgTSfE0vXvGb7Arv7dIrBBcq8z7IUaUV9dvR8n1i+s+kx1oASpQx5Eu6smURBz
-Y0gQUyyGXoO8ucrX8oEXxmwchq4edU99gGBdQI+zPYS74cQasWBPWjVyBpuAgjji
-h/w1NsJVXq4t2D50Y691j0+FIAimVp2D+fsF7c/genpN/72ccxOXZKCsVy0atufG
-obvn03lWic6KbshMSRdmo/ebxfIjpUyYcIFTUyqVm/1PbhwfOT4clBqgyTex6Rs9
-WCItwF+RCpbbZXDxRa40qrUis2qhlcsKV9Bbom17s5dF5KceHJ0=
-=OHPO
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr+YACgkQKWCEk4dB
+O2DmPA/8D2fU44vmw1mYofTm5JISEOrb0dlKeujROCIC0RLp29lpsD6fyTklX+ZT
++myE/an8clEvk1xiyWrA4fxXDvClSNObNGDtnGAp8X9vXnyiIc1P6XB1FPiFDQkh
+KL+LRrGkMy1GKdnZw68JuVbcpRNE6GlLYqVLUodL82Yr7lIifFj0DoWaElzGV3tT
+5+9fhc742PKDULfJ0714Z6/kFHDhJUvnSBFnfLrfayBhq/CmsQbHhjfr3rZFJfFn
+Gu79hQFoODmNZX/jvHqP5NoSsbkvLkug6Ut5gEAWNAceZYOvqitKKnPwWsqCjFnX
+0sP8iUeQa9dat3qEcxSjFEOGAii/hcN4v9e2sThKa5S5IY9YEH4YNF+e2kOn2EUR
+wONZk7xv1O36ShBQTFAAlnu0PxOCDQMXGymwOI4H3rLDNhlAmSskduGtaOu6H9/i
+nKzyJn42ryyGaWl9TDjAsIjC+RG6+6AGaITONsw3JZMxkhwTJsDa5n59M1JdATJa
+l2E5aHAcd3Qg78HNpV+T2Oz4B5TRhQO4MveWFgUAiJBn+b0ctthxXLVS1jVoBvJy
+WRz2M7c4gXzcIVpdxRaOdCvI/g9jv0LhU/ZYExZTPHINGCzxzVmkQZp56iCbkc7U
+nQwPyWiAYVeCLkWZNB6qwL4tsHf8/QJTC8RC4uPihG185BtyxIE=
+=70X+
 -----END PGP SIGNATURE-----
 -->

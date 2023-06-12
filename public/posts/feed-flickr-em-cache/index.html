@@ -3,15 +3,56 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Feed e Flickr em cache</h1><div><div><p><small><time>May 10, 2008</time>
-|
-1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Quem está me acompanhando no twitter e tem lido meus últimos posts, sabe que criei um site e etc, porém, nos últimos
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8" />
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport
+          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
+    <meta name="description" content="My corner of the web">
+    <title>Adler Medrado's little piece of turf</title>
+    <link rel="author" href="/humans.txt"/>
+    <link rel="canonical" href="https://adlermedrado.com.br"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header>
+    <nav class="navbar" role="navigation">
+        <div class="navbar_left">
+            <a href="/"><strong>Adler Medrado</strong></a>
+        </div>
+        <div class="navbar_right">
+            <a href="/posts">Posts</a>
+            <a href="/tags">Posts by Tags</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="section">
+    <article>
+        <div>
+            <h1>Feed e Flickr em cache</h1>
+            <div>
+                <div>
+                    <p>
+                        <small>
+                            <time>May 10, 2008</time>
+                            |
+                            1  minute  read
+                        </small>
+                    </p>
+                </div>
+                <span class="line_break"></span>
+            </div>
+            <div class="content">
+                <p>Quem está me acompanhando no twitter e tem lido meus últimos posts, sabe que criei um site e etc, porém, nos últimos
 dias meu server no dreamhost está um pouco lento e justamente no consumo dos feeds do meu blog e na requisição REST para
 minha página no Flickr o meu site tem tipo um comportamento um pouco lento. É lógico que não é culpa exclusiva do
 consumo de feed e do REST do Flickr, porém, para melhorar um pouco eu usei o componente Zend_Cache do ZF para colocar
-estes dois objetos em cache.</p><p>Eu coloquei o cache em arquivo em disco, porquê não estou com saco pra recompilar meu PHP no Dreamhost para usar o APC,
-então a melhora na performance poderia ser ainda melhor.</p><p>Um exemplo de como usar o Zend_Cache colocando objeto serializado em arquivo:</p><pre><code>private function getFeed()
+estes dois objetos em cache.</p>
+<p>Eu coloquei o cache em arquivo em disco, porquê não estou com saco pra recompilar meu PHP no Dreamhost para usar o APC,
+então a melhora na performance poderia ser ainda melhor.</p>
+<p>Um exemplo de como usar o Zend_Cache colocando objeto serializado em arquivo:</p>
+<pre><code>private function getFeed()
 {
     $frontend = array(
     'lifetime' =&gt; 7200, // vida do cache eh duas horas
@@ -31,25 +72,51 @@ então a melhora na performance poderia ser ainda melhor.</p><p>Um exemplo de co
     }
     return $objFeed;
 }
-</code></pre></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/>&#8592; Mudança de endereço realizada</a>
-|
-<a href=https://adlermedrado.com.br/posts/heavy-metal-pra-quem-gosta-de-historia/>Heavy Metal pra quem gosta de história &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/feed-flickr-em-cache/ | gpg --verify</em></p></div></footer></body></html><!--
+</code></pre>
+
+            </div>
+        </div>
+    </article>
+    <div>
+        <div>
+            <div>
+                
+                <a href="https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/">&#8592; Mudança de endereço realizada</a>
+                
+                |
+                
+                <a href="https://adlermedrado.com.br/posts/heavy-metal-pra-quem-gosta-de-historia/">Heavy Metal pra quem gosta de história &#8594;</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+</main><span class="line_break"></span>
+<span class="line_break"></span>
+<footer>
+    <div>
+        <p><small>&copy; 1996-2023 Adler Medrado</small></p>
+    </div>
+    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
+        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/feed-flickr-em-cache/ | gpg --verify</em></p></div>
+</footer></body>
+</html>
+<!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSGO78ACgkQKWCEk4dB
-O2BeUA//S+L7iBbV4FvGG3HRXTMtyxzUu4YaWtM9K21vc2B/9HCl4wGuxF20VP4s
-Jb7M0tnJ5XiFoEwKyywE5KmWZkg7ZxVf9wJ4Kays4hNUjfPnxcFzxTEaj+2UNDKL
-rHhUCZb6Ix152WQREfDR7MzI1T5m4uCShKU4AIZwb9bFZKAElDpblVM6pouZVklp
-dFd1OUnWPh8LZThK71uvxUItqXmZrn8pwLhoa6KXRP1vqoPlhe/IBw4zDnmSSENs
-71qWyqkne94Kuny7fc+2pgBC2Dk25HCnYZaVfU62UbefSetDfQscT7VGsU+o8Pvi
-y5D43D4g+dm9nCNQwjfNI3U1tqwtnu8HmPChQUaWUPBLlatlS5Bpuwo5jebIBNFj
-evsxupkwkOaF3Ai+WQSHUkfud9RSFknA4RSrVJDQbhdkJH18E+DYXpnkVvy8FN/o
-H6GCJVfE7PdOBSSFeuIbGWlNCyasGf26MwF03KVneITENBDX4axpePKRd+XeIvLS
-TT5cU8XpZJ1rPvhxq6hnB7ec/SUoch8ELLhgFpOUl7SBUz/aEiZAprZAQRtKwWiA
-ZsFtHI+//nwY/aCEd9/IJoKgA9tpOYqCMoDnejUa11F6ejmXnYEU2rM1IjvNAYNX
-NjWT8ZZ59FFFBIFAd9cCvYRTWk54xIvqNGjBSU3X0JKYeZllpgM=
-=hwnX
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr98ACgkQKWCEk4dB
+O2DfIw//doelkU4Lv/2YtshaDbWgySdQwJQoK3tBhvaK+nwdp+SYehiqjgErqjYO
+Fmb/kFRG6F7kkKjfBFHnyalB56YNr07ZtqeXz0olLxf7vR3RGuq1rdAgAtz5OuyA
+r8Fumw36m3JXEaPW6E4R0LzjxvJiq3BJ2iYhQxTyDpSHA52TwE4GdiNjawncZic0
+Y+ia0h713BGX9Ws6wxFK4a/G2ES1YkW+PtYwqXCUIxzvplN7Yd4Z5NJU46+Wtt7J
+Thj5ILt88bWMJY/ALPSrAAWZGdBc40EF0TtHgzy550Dl+dy9SpZ4+aKtF4FJFkOr
+5A361cWdsLieHEs5/O5Bd3PZXQRho3JbftLqY5CFaG4ZAWBAVM+hK4sD08J4lHZh
+BhENcF6a4Q718Xp7GdhEOZ0MrANtYajRoEmDJnFQEwOV3zmOvEj5NAoOh58O9Pi1
+CkPj1WT6kYyyVdia2HWCT2c5+WiSlTHoklf/WwslkNlAluxI6ypNg7xTAlb0/IJL
+BEq19jcei5TSrEK5J7Cek9lUyAy7C3Ep2BuEwCBrs4rezMgDVffvNVIRcmHgH6OQ
+MGPrfbxMmtifB2Wz7hdTUAKJlzRzsEDYDfGVnJd4ZuWuHrN274d4KGgmtCtn4r0r
+2sqGBFHEKsrGk6FpisXfsoIsyQQP5oM2UOgAZP0gH95I6FGMCzE=
+=LYwr
 -----END PGP SIGNATURE-----
 -->

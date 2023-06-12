@@ -1,8 +1,8 @@
-# Hi, my name is **Adler Medrado** and this is my website.
+# Hi, my name is **Adler Medrado** and this is [my little](https://movie-sounds.org/action-movie-sound-clips/quotes-with-sound-clips-from-the-warriors-1979/our-turf-our-little-piece-of-turf) [piece of turf](https://www.youtube.com/watch?v=tcc2ltIjNU0).
 
 ## About me
 
-I have more than 20 years of experience in IT. Working with computers since my teenage, when I built my own BBS
+I have 20+ years of experience in IT. Working with computers since my teenage, when I built my own BBS
 using an PC/AT 386 running MS-DOS and Remote Access, moving after to the IBM OS/2 Warp and Windows 95 and started to
 learn linux at late 90s and early 00s.
 

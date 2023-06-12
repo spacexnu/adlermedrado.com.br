@@ -3,32 +3,117 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Erro incômodo com o Postgresql no Mac</h1><div><div><p><small><time>October 2, 2016</time>
-|
-1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a
-atualização para o MacOS Sierra.</p><p>O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:</p><p><img src=/posts/images/1*nKXkh2PzTW85hhl59x3-3w.png alt></p><p>WTF?</p><p>Eu costumo usar o <em>homebrew</em> para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum
-problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:</p><p><img src=/posts/images/1*aOcgI9fU746SkcSacFKqNA.png alt></p><p>Recriando os links</p><p>Mesmo assim o erro persistu, então eu removi o readline e reinstalei:</p><p><img src=/posts/images/1*mpcBc2Tu-ShIzR770ebQrg.png alt></p><p>Reinstalando …</p><p>Mas nada.:(</p><p>Tentei reinstalar forçando o <em>build from source</em>:</p><p><img src=/posts/images/1*eLE49JvI5vtL6ieIYF_eyQ.png alt></p><p>Nessa hora eu já tava ficando puto</p><p>E nada … resolvi então chutar o balde o reinstalar o PostgreSQL:</p><p><img src=/posts/images/1*n7GMinuLwIcIqldxekZb8w.png alt></p><p>Reinstalando a porra toda</p><p>E funcionou.:)</p><p><img src=/posts/images/1*qUqQk3QyIsE0YejWnjO9CA.png alt></p><p>Tcham:)</p><p>Fica a dica para quem estiver passando pelo mesmo problema que eu.</p><p>Acredito que na atualização do sistema operacional alguma lib ficou desatualizada o que gerou este problema. Em outros
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8" />
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport
+          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
+    <meta name="description" content="My corner of the web">
+    <title>Adler Medrado's little piece of turf</title>
+    <link rel="author" href="/humans.txt"/>
+    <link rel="canonical" href="https://adlermedrado.com.br"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header>
+    <nav class="navbar" role="navigation">
+        <div class="navbar_left">
+            <a href="/"><strong>Adler Medrado</strong></a>
+        </div>
+        <div class="navbar_right">
+            <a href="/posts">Posts</a>
+            <a href="/tags">Posts by Tags</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="section">
+    <article>
+        <div>
+            <h1>Erro incômodo com o Postgresql no Mac</h1>
+            <div>
+                <div>
+                    <p>
+                        <small>
+                            <time>October 2, 2016</time>
+                            |
+                            1  minute  read
+                        </small>
+                    </p>
+                </div>
+                <span class="line_break"></span>
+            </div>
+            <div class="content">
+                <p>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a
+atualização para o MacOS Sierra.</p>
+<p>O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:</p>
+<p><img src="/posts/images/1*nKXkh2PzTW85hhl59x3-3w.png" alt=""></p>
+<p>WTF?</p>
+<p>Eu costumo usar o <em>homebrew</em> para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum
+problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:</p>
+<p><img src="/posts/images/1*aOcgI9fU746SkcSacFKqNA.png" alt=""></p>
+<p>Recriando os links</p>
+<p>Mesmo assim o erro persistu, então eu removi o readline e reinstalei:</p>
+<p><img src="/posts/images/1*mpcBc2Tu-ShIzR770ebQrg.png" alt=""></p>
+<p>Reinstalando …</p>
+<p>Mas nada.:(</p>
+<p>Tentei reinstalar forçando o <em>build from source</em>:</p>
+<p><img src="/posts/images/1*eLE49JvI5vtL6ieIYF_eyQ.png" alt=""></p>
+<p>Nessa hora eu já tava ficando puto</p>
+<p>E nada … resolvi então chutar o balde o reinstalar o PostgreSQL:</p>
+<p><img src="/posts/images/1*n7GMinuLwIcIqldxekZb8w.png" alt=""></p>
+<p>Reinstalando a porra toda</p>
+<p>E funcionou.:)</p>
+<p><img src="/posts/images/1*qUqQk3QyIsE0YejWnjO9CA.png" alt=""></p>
+<p>Tcham:)</p>
+<p>Fica a dica para quem estiver passando pelo mesmo problema que eu.</p>
+<p>Acredito que na atualização do sistema operacional alguma lib ficou desatualizada o que gerou este problema. Em outros
 tempos não muito distantes, eu teria feito uma instalação limpa do sistema todo, ainda bem que hoje eu estou aprendendo
-a lidar de forma diferente com este tipo de problema.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/home-office-significa-trabalhar-de-cueca/>&#8592; Home-Office significa trabalhar de cueca?</a>
-|
-<a href=https://adlermedrado.com.br/posts/do-php-ao-python/>Do PHP ao Python &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/ | gpg --verify</em></p></div></footer></body></html><!--
+a lidar de forma diferente com este tipo de problema.</p>
+
+            </div>
+        </div>
+    </article>
+    <div>
+        <div>
+            <div>
+                
+                <a href="https://adlermedrado.com.br/posts/home-office-significa-trabalhar-de-cueca/">&#8592; Home-Office significa trabalhar de cueca?</a>
+                
+                |
+                
+                <a href="https://adlermedrado.com.br/posts/do-php-ao-python/">Do PHP ao Python &#8594;</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+</main><span class="line_break"></span>
+<span class="line_break"></span>
+<footer>
+    <div>
+        <p><small>&copy; 1996-2023 Adler Medrado</small></p>
+    </div>
+    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
+        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/ | gpg --verify</em></p></div>
+</footer></body>
+</html>
+<!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSGO78ACgkQKWCEk4dB
-O2AN8A/9FsDzONf4WqZqMhuR/i2vXhHfl2ld3Nkx/tacv3RhbSimWCAEddcm3nUr
-9YpfwxXSPLwiUA8GyOrhKNnQ5beAN1coE9yt5L4cwe2q+mPXtqtKf/e3KI4VwxLm
-VhDSAi2gLWPoAj6bnjs6WHq9Ojyu0WJlPQW5sZfgCKh7JsW5tsMwcWnOVYqrqdzr
-4Qu06WizWdiQDgSXSo98uF1Oia/5kz2RtAbdigOjawe29JkJ2p7h98C8YEnfd6R1
-YbtSG1yzf9hgl220ihClcGjBzWieETgytt4fPecsI3flh0Q7z/6y302gDh1Tm/3m
-ssdfjqCYe6dD+RapfkYeV8/1GXp1jVbaoSUmzsP/Vw0OW3ZYZv3iz9aH0kWU9RvU
-PXLTzsRDXgwivlxKx1fFhbWqhR4EtWs8+3gX0INpe8Bw5V80joD+g4ceo1apfFmg
-T1fomiSTYQQziMpjh01g033I1hES7I8Oo+x17OipuDNvcWCsoDhTVPzOEGIu8Qzj
-6oRdKkf5PmAevCQ6Uw362L2fdnP6whGCTggve1OtUkwD7WGH/OaUqXBdWG3wqqrf
-Gisfem4qK8BaXNn7r46o1wAQeptyqk/ewL7qv6lIsEVc2HjGKRI1a1nvPN0P6ZXF
-4N2Uctcv27ZhsmxPgoNE50x+Pe7NeRiOK4RAuR1IgK8zFAhrEro=
-=gf9W
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr98ACgkQKWCEk4dB
+O2Bxqg//dImSS2ZtF1SoUOf/HniyqW/8rdYY4tV54BYIvXJoxwLK6weBEp487u2v
+jT1jpqnnrXufL3j2swzAbdCP6m7U2yq48frkouZy+cHWxFd2QhgMetr6DPZTIMWN
+P5HF/hZk7Afy1uYjsZMPyj8Gs13DP4568rBQZaVuF+mErsC4UPcCzWVm6h3YDap4
+kEo6jzjployqVkIcpDiqUVyCMur7O6DHy7q1bHyUo6teS1czwiXJST2LOhNwYJQ8
+TQanQdHoJKA2V3mGUAt+vVUQ2SnPpNRXpqmW+TeGqX8dzcqyQehSBkI2fz2En9qR
+vYOFVIgcvauiFcp4QJPjRmUghnjx7ViD9LkhOF5tD3s3LyGdjfyXAiVp3ApSB7W/
+ywGzrGkdnGKfMqnR3gQc/q0wa7BkLCfilcZ8B0QIgFFhcxSsB37ad38B9br1WoG9
+t2tyv/Utcy5nZl9h373lToVGBzoep9REWZ/c8IgW0PadzZeXSoYlG3yh97FpsAi0
+9tbTz08K1cHKGfdnVsuGIsQ1rDloFQ7hBgQECQ6pB2g7z4mk8TLHQkpbL6PJrTX7
+pvbwn9WL862bFbSxhShjt5S0ENO+iJX/j+3oY1Te4KDfwY4ax/N7wsPe4dwNCRmf
+oTNFtT1MxKuntMu+bO9aKMfZpQHdar9E7VOqZ9PgiOa/ggNMV3E=
+=Ouyy
 -----END PGP SIGNATURE-----
 -->

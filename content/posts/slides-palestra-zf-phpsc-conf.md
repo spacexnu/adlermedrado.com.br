@@ -4,7 +4,7 @@ date: 2009-06-10T18:07:29-03:00
 draft: false
 tags:
   - "zend-framework"
-  - "events"
+  - "conferences"
 ---
 
 Demorei para disponibilizar o material porque após o evento minha semana em Brasília foi muito corrida e em seguida tive

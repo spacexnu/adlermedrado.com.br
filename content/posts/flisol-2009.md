@@ -3,7 +3,7 @@ title: "Flisol 2009"
 date: 2009-04-26T19:11:34-03:00
 draft: false
 tags:
-  - "events"
+  - "conferences"
 ---
 
 Ontem eu participei do FLISOL 2009 ministrando uma palestra sobre Zend Framework e foi muito legal.

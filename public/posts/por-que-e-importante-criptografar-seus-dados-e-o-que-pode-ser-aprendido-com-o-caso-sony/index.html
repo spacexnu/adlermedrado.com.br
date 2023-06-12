@@ -3,43 +3,123 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony</h1><div><div><p><small><time>December 21, 2014</time>
-|
-2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Se você não estava em uma caverna, provavelmente assistiu, leu ou ouviu sobre o caso de cracking e vazamento de dados da
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8" />
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport
+          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
+    <meta name="description" content="My corner of the web">
+    <title>Adler Medrado's little piece of turf</title>
+    <link rel="author" href="/humans.txt"/>
+    <link rel="canonical" href="https://adlermedrado.com.br"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header>
+    <nav class="navbar" role="navigation">
+        <div class="navbar_left">
+            <a href="/"><strong>Adler Medrado</strong></a>
+        </div>
+        <div class="navbar_right">
+            <a href="/posts">Posts</a>
+            <a href="/tags">Posts by Tags</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="section">
+    <article>
+        <div>
+            <h1>Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony</h1>
+            <div>
+                <div>
+                    <p>
+                        <small>
+                            <time>December 21, 2014</time>
+                            |
+                            2  minutes  read
+                        </small>
+                    </p>
+                </div>
+                <span class="line_break"></span>
+            </div>
+            <div class="content">
+                <p>Se você não estava em uma caverna, provavelmente assistiu, leu ou ouviu sobre o caso de cracking e vazamento de dados da
 Sony Pictures Entertainment, onde um grupo de crackers (provavelmente norte-coreanos) invadiram os computadores dela e
 obtiveram dados sigilosos como informações a respeito de futuros lançamentos e conversas via e-mail de executivos da
-empresa.</p><p>Basicamente, estes criminosos estão ameaçando a empresa dizendo que vazarão dados sigilosos dela ao mundo caso suas
+empresa.</p>
+<p>Basicamente, estes criminosos estão ameaçando a empresa dizendo que vazarão dados sigilosos dela ao mundo caso suas
 demandas não sejam atendidas, além de tornar públicas informações como os salários de executivos da empresa, números do
-seguro social de funcionários da empresa, incluindo celebridades.</p><p>Não vou falar muito sobre o caso em si porque uma simples busca fornece tudo com detalhes a respeito do ataque, eu quero
-apenas aproveitar a ocasião para perguntar: <strong>Será que dados sigilosos como esses estavam descriptografados?</strong></p><h4 id=parece-amadorismo>Parece amadorismo</h4><p>Eu posso estar enganado, mas eu sou livre para pensar: **Acho que eles foram amadores e deixavam tudo descriptografado
-**.</p><p>Conversando na lista do <a href=http://area31.net.br>Área 31 Hackerspace</a>, um colega fez as seguintes perguntas:</p><ul><li>Por que uma empresa bilionária usava certificados “self signed” vencidos desde 2012.</li><li>Por que uma empresa bilionária usava alguns certificados reais de empresas certificadoras que foram invadidas e os
-mesmos certificados estão revogados desde 2013 por causa das invasões.</li><li>Quem deu os nomes dos servidores e o range da rede?</li></ul><h4 id=adotar-o-uso-sistemático-de-criptografia-poderia-diminuir-os-prejuízos>Adotar o uso sistemático de criptografia poderia diminuir os prejuízos</h4><p>Eu não conheço nada da infra-estrutura deles, mas mesmo com o meu modesto jeito de ser eu arrisco a dizer que o simples
-e sistemático uso de <a href=http://pt.wikipedia.org/wiki/OpenPGP>OpenPGP</a> poderia ter evitado o estrago que essas invasões
+seguro social de funcionários da empresa, incluindo celebridades.</p>
+<p>Não vou falar muito sobre o caso em si porque uma simples busca fornece tudo com detalhes a respeito do ataque, eu quero
+apenas aproveitar a ocasião para perguntar: <strong>Será que dados sigilosos como esses estavam descriptografados?</strong></p>
+<h4 id="parece-amadorismo">Parece amadorismo</h4>
+<p>Eu posso estar enganado, mas eu sou livre para pensar: **Acho que eles foram amadores e deixavam tudo descriptografado
+**.</p>
+<p>Conversando na lista do <a href="http://area31.net.br">Área 31 Hackerspace</a>, um colega fez as seguintes perguntas:</p>
+<ul>
+<li>Por que uma empresa bilionária usava certificados “self signed” vencidos desde 2012.</li>
+<li>Por que uma empresa bilionária usava alguns certificados reais de empresas certificadoras que foram invadidas e os
+mesmos certificados estão revogados desde 2013 por causa das invasões.</li>
+<li>Quem deu os nomes dos servidores e o range da rede?</li>
+</ul>
+<h4 id="adotar-o-uso-sistemático-de-criptografia-poderia-diminuir-os-prejuízos">Adotar o uso sistemático de criptografia poderia diminuir os prejuízos</h4>
+<p>Eu não conheço nada da infra-estrutura deles, mas mesmo com o meu modesto jeito de ser eu arrisco a dizer que o simples
+e sistemático uso de <a href="http://pt.wikipedia.org/wiki/OpenPGP">OpenPGP</a> poderia ter evitado o estrago que essas invasões
 causaram, bem como eliminar muitas das ameaças e chantagens que hoje a Sony Pictures está sofrendo, sem falar no abalo
 do relacionamento entre os executivos da empresa com as celebridades que eles atacavam sem dó nos e-mails que trocavam
-entre si.</p><p>Utilizar volumes criptografados para guardar as informações sigilosas também é algo que poderia ser considerado para
-evitar vazamentos em caso de invasão.</p><h4 id=resumindo>Resumindo…</h4><p>A falta de cuidado da Sony custará caro, que este caso fique como uma lição aprendida e as empresas passem a levar a
+entre si.</p>
+<p>Utilizar volumes criptografados para guardar as informações sigilosas também é algo que poderia ser considerado para
+evitar vazamentos em caso de invasão.</p>
+<h4 id="resumindo">Resumindo…</h4>
+<p>A falta de cuidado da Sony custará caro, que este caso fique como uma lição aprendida e as empresas passem a levar a
 sério o uso da criptografia em seu dia-a-dia, não apenas as empresas grandes, mas qualquer empresa hoje em dia está
-sujeita a passar por situações complicados causadas pela incapacidade de proteger suas informações.</p><p>Eu gostaria de saber sua opinião, deixe-a nos comentários.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/>&#8592; Gerenciador de pacotes para Windows</a>
-|
-<a href=https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/>Dica: Criptografia de informações importantes &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/ | gpg --verify</em></p></div></footer></body></html><!--
+sujeita a passar por situações complicados causadas pela incapacidade de proteger suas informações.</p>
+<p>Eu gostaria de saber sua opinião, deixe-a nos comentários.</p>
+
+            </div>
+        </div>
+    </article>
+    <div>
+        <div>
+            <div>
+                
+                <a href="https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/">&#8592; Gerenciador de pacotes para Windows</a>
+                
+                |
+                
+                <a href="https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/">Dica: Criptografia de informações importantes &#8594;</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+</main><span class="line_break"></span>
+<span class="line_break"></span>
+<footer>
+    <div>
+        <p><small>&copy; 1996-2023 Adler Medrado</small></p>
+    </div>
+    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
+        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/ | gpg --verify</em></p></div>
+</footer></body>
+</html>
+<!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSGO8sACgkQKWCEk4dB
-O2DvmA/+OvUVZgm/E+fgshzlZwlWPjXNW+60Kz9HLmBj7bi+LOLPp0bhH3nWWcK/
-kHvUd+czEnWP0MTwt21lZQcKvws/J5XjLON9IFxtJp9Dmnz/Lvnm0SWY1lTPpsw5
-Zif5aqITPHR+LBDLU5lmYmVzDf3Ue1OdGTWANos+HIDaVEfUk7THzm1wD2M92NwN
-uezdPe4I9wuf/u0Aqx+asd4MqKWxQC5FUXaYO9jr37A8nTPlsCr8iNcDBWVfP6Mr
-WPr+7dY61AptqEy9Hci0IflKURvAcQQDZtUuM/QRSjTpY5hzfLAJ51YkMudNNBOS
-0XLesCXcTBo9dFRqvhDaCC0JYVLUex9jA3I9Yy4P2xb8PGscMlq7q/JUxGSMMZRF
-KEuhe4QGms8peNGPE4JUmpIPDianQ2PesL+mkg4amZwTu61VHCqWgk+CLbgczEW3
-Tq9DG7+N10VEj29qZI88r3py/AqWWcbkWqnX51x2n/Un9m4vj9jbOCSFKZ3aSix1
-SJG+WDCd4QkJOm/rWWFSqogVJ59sMPogpqEz/8vrfwzGo9U9fqg0ZwYiGwYwd7OD
-ULrB7aI5s1m67Ptp1rKLjhE+yzt4buO7bDZOc5nWgsuCpOnd3nlwZGjID40+hDdI
-TJKZFdw/87rqv4ePorpNVXzOXSPW2jIK3pT8y1JtNLZtuAyfYfI=
-=fDBV
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr+sACgkQKWCEk4dB
+O2D1cg//QnQHke5rLlHaLQOfvFPHBozojmMdtzGak0WWDaib8JDocjfbzLkIebWm
+nFkg1xaPvODiwFfjXyD+ZWX1ydvxyADvzQik9F7lvXMzttZ6IwWCJlCiHpoEAVBn
+EvTZnilM989JvNndbiJT6falj3hvtJ/8dOxS/+vLAxO8SJbupY7n5DBI5HYJO/KI
+HLZNCCtpzeGQf081HWodrSOZ0mapKYVIedsZ8/GHEfPtQylSoF7TPQ9eksEKOj+r
+wvr3cA6prLWq+V2mpjQfLp8Z8zMj9RgE5Q6pPLPm3qCRHrh+HYK2jZ0gJcn9aVh8
+XNAXcFDlbUB3Nq5JKDu2XbPWjd314rGfmZuUXYuZRRbZa7rcUAQKqZ7L6Yk2U3gY
+kC5x3eXR+fTlJET8H9Ry35gFflL87t3pQQGQS0hI+LI9NOXJQihUNCQEAyJ0e/ne
+8gkREhOgg7DUmFq/dkL+M1rNUaENSXEJVJ3DwUrovOSIeEHanHXZA0hlrXsWFEQy
+X5b4Kt4hCgx/OUdv6kmrjlFhaTdqmTNbH1ntp6cPqlMFumCnPGB5ByGdo1NeQg+U
+nYj+0Oozmxfk67q8FlyD0JbbBASpagArIDvsYwO86jDG5p52zDraZGPWsYd+UPGQ
+A6sXOwv3PKu84r0QG5VgwBk05WFtenyTwnsJth4LW7TGYc6OOk0=
+=iSAC
 -----END PGP SIGNATURE-----
 -->

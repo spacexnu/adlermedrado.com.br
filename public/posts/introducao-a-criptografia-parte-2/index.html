@@ -3,39 +3,147 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's corner of the web</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado's corner of the web</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Introdução a Criptografia — Parte 2</h1><div><div><p><small><time>December 29, 2014</time>
-|
-3 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Como eu havia prometido, continuo com a série de posts sobre criptografia, se você chegou aqui sem ter visto a parte 1,
-sugiro que comece lendo por <a href=http://blog.adlermedrado.com.br/2014/12/introducao-a-criptografia-parte-1/>aqui</a>.</p><h3 id=introdução>Introdução</h3><p>Atualmente as duas formas mais comuns de criptografia são a <strong>simétrica</strong> e<br>a <strong>assimétrica</strong>, fique tranquilo pois apesar dos nomes intimidarem são dois<br>conceitos bem simples de serem compreendidos.</p><h3 id=criptografia-simétrica>Criptografia Simétrica</h3><p>A criptografia é feita usando a mesma chave para criptografar e descriptografar a informação, similar ao que foi
-mostrado na primeira parte deste tutorial.</p><p>Uma analogia clássica usada para ilustrar esta abordagem é o da chave da casa, que é usada tanto para abrir quanto para
-trancar uma porta.</p><p>Esta forma exige menos poder computacional para criptografar e descriptografar a informação, entretanto ela é mais
-sujeita a falhas na manipulação e proteção da chave.</p><h3 id=criptografia-assimétrica>Criptografia Assimétrica</h3><p>Esta abordagem é mais segura pois envolve um par de chaves ao invés de apenas uma.<br>Este par de chaves é composto pela chave pública e pela chave privada, uma para criptografar e outra para
-descriptografar.</p><p>A chave pública pode ser disponibilizada ao público em geral, pois ela só pode ser usada para criptografar uma
-informação cujo destinatário é quem possui a chave privada que forma o par com esta pública.</p><p>Vamos imaginar a seguinte situação:</p><ul><li>José possui um par de chaves pública e privada;</li><li>Maria também possui um par de chaves pública e privada;</li><li>Ambos disponibilizaram entre si suas chaves públicas;</li></ul><p>Ficou claro que cada ator neste cenário possui um par de chaves, cada uma usada para seu propósito, criptografar e
-descriptografar.</p><p>Vamos continuar:</p><ul><li>José quer mandar uma mensagem criptografada para a Maria;</li><li>José possui a chave pública da Maria, então ele escreve sua mensagem e<br><strong>usando a chave pública dela</strong> ele a criptografa;</li><li>A partir deste ponto, nem José pode mais descriptografar esta mensagem;</li><li>José envia a mensagem criptografada para Maria através da internet (e-mail por exemplo);</li><li>Maria recebe a mensagem;</li><li>Maria usa a <strong>sua chave privada</strong> para <strong>descriptografar</strong> a mensagem;</li><li>Maria lê a mensagem original;</li></ul><p>Presumo que o exemplo ficou claro: José escreveu uma mensagem e a criptografou usando a chave pública da Maria e como
-somente a Maria possui a chave privada dela, somente ela pode descriptografar esta mensagem.</p><p>Mas e se a Maria quiser responder a mensagem para o José? Vamos continuar usando a imaginação:</p><ul><li>Maria recebeu a mensagem e deseja respondê-la e criptografá-la para José;</li><li>Maria possui a chave pública do José;</li><li>Maria escreve a mensagem e em seguida a criptografa usando a chave pública do José;</li><li>Maria envia a mensagem criptografada para o José usando a internet (via e-mail por exemplo);</li><li>José recebe a mensagem e usando a sua chave privada ele a descriptografa;</li><li>José lê a mensagem enviada por Maria;</li></ul><p>Nos dois casos, sempre o remetente utiliza a chave pública do destinatário para criptografar a informação e o
-destinatário utiliza a sua chave privada para descriptografa-la.</p><h3 id=considerações-finais>Considerações Finais</h3><p>Espero que o conceito de chaves públicas e privadas tenha ficado claro, pois na próxima parte eu ensinarei a configurar
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8" />
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport
+          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
+    <meta name="description" content="My corner of the web">
+    <title>Adler Medrado's little piece of turf</title>
+    <link rel="author" href="/humans.txt"/>
+    <link rel="canonical" href="https://adlermedrado.com.br"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header>
+    <nav class="navbar" role="navigation">
+        <div class="navbar_left">
+            <a href="/"><strong>Adler Medrado</strong></a>
+        </div>
+        <div class="navbar_right">
+            <a href="/posts">Posts</a>
+            <a href="/tags">Posts by Tags</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="section">
+    <article>
+        <div>
+            <h1>Introdução a Criptografia — Parte 2</h1>
+            <div>
+                <div>
+                    <p>
+                        <small>
+                            <time>December 29, 2014</time>
+                            |
+                            3  minutes  read
+                        </small>
+                    </p>
+                </div>
+                <span class="line_break"></span>
+            </div>
+            <div class="content">
+                <p>Como eu havia prometido, continuo com a série de posts sobre criptografia, se você chegou aqui sem ter visto a parte 1,
+sugiro que comece lendo por <a href="http://blog.adlermedrado.com.br/2014/12/introducao-a-criptografia-parte-1/">aqui</a>.</p>
+<h3 id="introdução">Introdução</h3>
+<p>Atualmente as duas formas mais comuns de criptografia são a <strong>simétrica</strong> e<br>
+a <strong>assimétrica</strong>, fique tranquilo pois apesar dos nomes intimidarem são dois<br>
+conceitos bem simples de serem compreendidos.</p>
+<h3 id="criptografia-simétrica">Criptografia Simétrica</h3>
+<p>A criptografia é feita usando a mesma chave para criptografar e descriptografar a informação, similar ao que foi
+mostrado na primeira parte deste tutorial.</p>
+<p>Uma analogia clássica usada para ilustrar esta abordagem é o da chave da casa, que é usada tanto para abrir quanto para
+trancar uma porta.</p>
+<p>Esta forma exige menos poder computacional para criptografar e descriptografar a informação, entretanto ela é mais
+sujeita a falhas na manipulação e proteção da chave.</p>
+<h3 id="criptografia-assimétrica">Criptografia Assimétrica</h3>
+<p>Esta abordagem é mais segura pois envolve um par de chaves ao invés de apenas uma.<br>
+Este par de chaves é composto pela chave pública e pela chave privada, uma para criptografar e outra para
+descriptografar.</p>
+<p>A chave pública pode ser disponibilizada ao público em geral, pois ela só pode ser usada para criptografar uma
+informação cujo destinatário é quem possui a chave privada que forma o par com esta pública.</p>
+<p>Vamos imaginar a seguinte situação:</p>
+<ul>
+<li>José possui um par de chaves pública e privada;</li>
+<li>Maria também possui um par de chaves pública e privada;</li>
+<li>Ambos disponibilizaram entre si suas chaves públicas;</li>
+</ul>
+<p>Ficou claro que cada ator neste cenário possui um par de chaves, cada uma usada para seu propósito, criptografar e
+descriptografar.</p>
+<p>Vamos continuar:</p>
+<ul>
+<li>José quer mandar uma mensagem criptografada para a Maria;</li>
+<li>José possui a chave pública da Maria, então ele escreve sua mensagem e<br>
+<strong>usando a chave pública dela</strong> ele a criptografa;</li>
+<li>A partir deste ponto, nem José pode mais descriptografar esta mensagem;</li>
+<li>José envia a mensagem criptografada para Maria através da internet (e-mail por exemplo);</li>
+<li>Maria recebe a mensagem;</li>
+<li>Maria usa a <strong>sua chave privada</strong> para <strong>descriptografar</strong> a mensagem;</li>
+<li>Maria lê a mensagem original;</li>
+</ul>
+<p>Presumo que o exemplo ficou claro: José escreveu uma mensagem e a criptografou usando a chave pública da Maria e como
+somente a Maria possui a chave privada dela, somente ela pode descriptografar esta mensagem.</p>
+<p>Mas e se a Maria quiser responder a mensagem para o José? Vamos continuar usando a imaginação:</p>
+<ul>
+<li>Maria recebeu a mensagem e deseja respondê-la e criptografá-la para José;</li>
+<li>Maria possui a chave pública do José;</li>
+<li>Maria escreve a mensagem e em seguida a criptografa usando a chave pública do José;</li>
+<li>Maria envia a mensagem criptografada para o José usando a internet (via e-mail por exemplo);</li>
+<li>José recebe a mensagem e usando a sua chave privada ele a descriptografa;</li>
+<li>José lê a mensagem enviada por Maria;</li>
+</ul>
+<p>Nos dois casos, sempre o remetente utiliza a chave pública do destinatário para criptografar a informação e o
+destinatário utiliza a sua chave privada para descriptografa-la.</p>
+<h3 id="considerações-finais">Considerações Finais</h3>
+<p>Espero que o conceito de chaves públicas e privadas tenha ficado claro, pois na próxima parte eu ensinarei a configurar
 o ambiente necessário para poder criar (manter em geral) chaves, criptografar e descriptografar arquivos e enviar
-e-mails criptografados diretamente do cliente de e-mail.</p><p>Até lá.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/>&#8592; Introdução a Criptografia — Parte 1</a>
-|
-<a href=https://adlermedrado.com.br/posts/feliz-2015/>Feliz 2015 &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/ | gpg --verify</em></p></div></footer></body></html><!--
+e-mails criptografados diretamente do cliente de e-mail.</p>
+<p>Até lá.</p>
+
+            </div>
+        </div>
+    </article>
+    <div>
+        <div>
+            <div>
+                
+                <a href="https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/">&#8592; Introdução a Criptografia — Parte 1</a>
+                
+                |
+                
+                <a href="https://adlermedrado.com.br/posts/feliz-2015/">Feliz 2015 &#8594;</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+</main><span class="line_break"></span>
+<span class="line_break"></span>
+<footer>
+    <div>
+        <p><small>&copy; 1996-2023 Adler Medrado</small></p>
+    </div>
+    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
+        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/ | gpg --verify</em></p></div>
+</footer></body>
+</html>
+<!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSGO8MACgkQKWCEk4dB
-O2D06A/9HcASWFr0+wbLKuImrU6QP9WCwK5tzlUvr/4Q8D0tg0wQQIEKu7habrkR
-/7t9O4ux/0NaXOgVTLjm4sWU2EV8Ss4NeAWA1n47CUN/oeI3IWduBGHTaroFNCCl
-1MRaZvLwDvrfWMSWzadECGXPpna3NGSIKL+Wz+FSjgO2XssIT8EstyGvsIwSEOy5
-pto0KNL/AOf6d0TYzjqtAQfOC6pxTEay0r/OKWa5YRo7XeuxymyPewbQay8YlTkL
-x2e/4XBWGjWYwhn38cIuBkUJskzpRlk5E7A/BOSgBuq7qZNy4UTGq9OrHm+H6LTg
-JDJrcXWF/7L53FhLJRl2qXh6+0MOy+VucPu3iZtAIAYC7ADBb5noPUhhyOV3mpw8
-2spbTqKKTTGHGGS5PEcpwfZdKwxLvo7ReBsnyZAxi7LNOY0TOigIzheRfpBU+r9h
-MD8ddisddwLmm/0BwOmrFXWQ7HxrMQbVOq35BOnSjuEXrxaMUaJu8ZqHHEj7luc8
-GoeJe83QhlbxqfZ1GzDcFMxWZQpmC+aP9qBOr3lK69oC05+lTtKc4ZfmYxuWhcMh
-QuitYnLel1xs5nxKwsZefI9BOjf0ZTHoOepsdzkS2kG5exsEx1nXmkh5rPlO9eHc
-Xv4jKBNyEplR+BUr8iFHg36amnUs2fnVsXaPUb67vVPlhkMzMqs=
-=Kqe7
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr+MACgkQKWCEk4dB
+O2CSdg/+KRQHlnKWvKnSAVHd3J2DtoMTCc1sR6/oU+6OwGEuNEKBsHDMoDXUmy+i
+/jZHBuEYmyVuuyZC8fraGdFIGjwyEsWhKEKhBkoVcgrbTfMaicRO/tj+FtlK34yV
+voDBtmQ95sMNXw+CCylh441T+DTCuGAMT8ruekV/4uwRBbAnyLNh/e1jeuUNfXuY
+8cQAgyDRafs/ks1Xg1O+qRH0BQoGB01hAaSlEMHgoDcraHkPIdInzaZa8j70s8mJ
+kdgNyse2252yUxODR4WAhjHdf0yM1oIrZ+dJZGUg0XboKbnMC/+Dw9CutqSwDJd1
+L8o5QaTNKHkEBtbukWWDT6a3Q2QLgEKgwqNV50lAHWS3UEJf2foGsuMK2x1LoKmu
+awAelecw9wc9+2enVo6PhU4/o6ecgtgs6oROs5xjsZPWKATKQVuoL1zRieq8RH8K
+h+HDTH0zUZW1T4fftzk8jXIomZiDGMbHsq4h5mDHoKpTmRzQgIWuIF2bAIwB/F4y
+svnksbbsjbpARzbZeAx5+KjKSsHmeecB7ig1aw/Y3U+X/njS+gF/xoG/9K+Qmr0v
+4a3guO+7de9DaEdjegqOt53GMqwqu7jZfsVPESFa0oINYdzkxa6jE/I2H8juMsma
+FklAlgBKaCGGO2J2UhzDTRgCgN3pDExp6+Gu0eK9NqSuS9klabA=
+=7Q31
 -----END PGP SIGNATURE-----
 -->

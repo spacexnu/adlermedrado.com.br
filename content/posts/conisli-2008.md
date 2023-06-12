@@ -3,7 +3,7 @@ title: "Conisli 2008"
 date: 2008-06-30T08:00:25-03:00
 draft: false
 tags:
-  - "events"
+  - "conferences"
 ---
 
 É com muito prazer que divulgo neste humilde site o evento [Conisli 2008](http://www.conisli.org/).

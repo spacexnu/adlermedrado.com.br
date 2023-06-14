@@ -29,9 +29,8 @@ de uma classe. É uma mão na roda.
 
 Para instalar estas _packages_, basta acessar as configurações do Atom e pesquisar por elas no local adequado, ou
 digitar no terminal/prompt:
-
-    apm install linter-phpmd
-    
-    apm install linter-phpcs
-    
-    apm install php-getters-setters
+```bash
+apm install linter-phpmd
+apm install linter-phpcs
+apm install php-getters-setters
+```

@@ -14,7 +14,7 @@ post aqui.
 Mas porque o mesmo título neste post? Porque ontem eu fiz o exame para a certificação de Zend Framework (ZCE ZF) e
 graças a D’us, que me deu esta oportunidade, eu passei.
 
-**Um pouco sobre o exame**
+### Um pouco sobre o exame
 
 Da mesma forma que no exame para PHP 5, no início da prova eu concordei com os termos de não expor detalhes do exame
 então não poderei expor as entranhas dele aqui, porém, eu tentarei falar alguma coisa sobre ele.
@@ -47,7 +47,7 @@ No final do exame, da mesma forma que o exame ZCE - PHP 5, não é mostrado um s
 é mostrado apenas um Congratulations se você passar ou um … bem, eu não sei o que mostra quando se reprova :-) e acho
 que ninguem quer saber né?
 
-**a preparação**
+### a preparação
 
 Vou ser sincero. Eu não estudei o tanto que gostaria por pura falta de tempo e por estar bem cansado ultimamente, então
 o que eu acho que me salvou foi a minha experiência o que me faz reforçar a dica que dou para todo mundo que me pergunta
@@ -56,14 +56,14 @@ adianta não ter experiência e achar que ler, ler e ler vai ser suficiente. Eu 
 ao certificado.
 
 Mas eu li e estudei alguma coisa nos tópicos que eu sabia que não tinha tanta experiência como por exemplo o
-Zend_Search_Lucene.
+_Zend_Search_Lucene_.
 
 Eu usei o reference guide oficial e usei o ZF Certification Study Guide que é disponibilizado gratuitamente no site da
 Zend e que ajuda o candidato a se preparar. Eu não tenho conhecimento sobre um mock exam para a certificação ZF.
 
 Eu comprei o Voucher e em menos de 15 dias após uma remarcação no site da pearsonvue eu fiz a prova.
 
-**considerações finais**
+### considerações finais
 
 Eu acho que esta certificação é mais uma forma de se diferenciar entre os demais profissionais em um mercado que está
 infelizmente prostituído e que está cada vez mais exigente.

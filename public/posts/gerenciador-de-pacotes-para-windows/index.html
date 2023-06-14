@@ -52,31 +52,24 @@ similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o <a h
 um gerenciador de pacotes similar ao apt-get no linux, só que para windows.</p>
 <p>Para instalar, basta abrir uma janela do <a href="http://technet.microsoft.com/pt-br/library/bb978526.aspx">Powershell</a> em modo
 administrador e digitar:</p>
-<pre><code>iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
-</code></pre>
-<p>Após a instalação, o comando <em>choco</em> será disponibilizado no sistema, e a partir daí diversas aplicações poderão ser
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>iex <span style="color:#f92672">((</span>new-object net.webclient<span style="color:#f92672">)</span>.DownloadString<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://chocolatey.org/install.ps1&#39;</span><span style="color:#f92672">))</span>
+</span></span></code></pre></div><p>Após a instalação, o comando <em>choco</em> será disponibilizado no sistema, e a partir daí diversas aplicações poderão ser
 instaladas (e desinstaladas se for o caso) via linha de comando.</p>
 <p>Os comandos básicos são:</p>
 <p><em>list</em></p>
-<pre><code>choco list
-</code></pre>
-<p>Exemplo: Listar todos pacotes que possuem <em>git</em> no nome</p>
-<pre><code>choco list git
-</code></pre>
-<p><em>update</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco list
+</span></span></code></pre></div><p>Exemplo: Listar todos pacotes que possuem <em>git</em> no nome</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco list git
+</span></span></code></pre></div><p><em>update</em></p>
 <p>Ex: Atualiza todos os pacotes</p>
-<pre><code>choco update
-</code></pre>
-<p>Ex: Atualiza pacote específico</p>
-<pre><code>choco update git
-</code></pre>
-<p><em>uninstall</em></p>
-<pre><code>choco uninstall git
-</code></pre>
-<p><em>help</em></p>
-<pre><code>choco /?
-</code></pre>
-<p>É isso. Mais uma <em>hidden gem</em> do mundo windows que até pouco tempo atrás eu não conhecia.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco update
+</span></span></code></pre></div><p>Ex: Atualiza pacote específico</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco update git
+</span></span></code></pre></div><p><em>uninstall</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco uninstall git
+</span></span></code></pre></div><p><em>help</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco /?
+</span></span></code></pre></div><p>É isso. Mais uma <em>hidden gem</em> do mundo windows que até pouco tempo atrás eu não conhecia.</p>
 <p>Para conhecer melhor, visite a <a href="https://github.com/chocolatey/chocolatey/wiki">documentação do projeto</a>.</p>
 
             </div>
@@ -110,18 +103,18 @@ instaladas (e desinstaladas se for o caso) via linha de comando.</p>
 <!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr+AACgkQKWCEk4dB
-O2D1FQ/+MBlqHh8B5WfTefUmickmGqTBj+90EA9ru1wZH+HXID53BQfZ13P01OvZ
-tqhdnEiLVNudQwGxecC3F8tbAVOSIuZPYuai7P+r4yV0gF8M+hRLSyR83XoSRjxY
-FuH6sXPTkSxi93HB9CgLS11qNmpAO40MvyZ4/pHHYdXuNZAdq/reNu8yLQBjhXwh
-WIQshIRHMbR4HQPgIHmlQTQjUuT+SKph19n9Y6jkftKqa2vlerGSdvM+SbXe5CpR
-IRCYNTsavgWiw8OstpsfjWqe4RPxkW/iKtDqQh9FJGZyd5Uv4TckHb5XFL/lN8N4
-p3eDaPPPd6LI08r9MJjR0hE0C7n4GeHFrIxU8E1q5m0Fvdico3JZTPd7s2A7T+Qx
-PGWazjx/bcjG6Zs1obI0G+HmVmjd8Ae/XHbo6/wYMDvgVs/i7l14VZ6vDyLld3wM
-wlZlg5J8g3CUMeAYqcrCiRrYBYsS8iKJjJF3CVXh+fdnwQ3Uzl/zCdGpTfsw7ji9
-L6DAdmmcGUmhK7iPc5bvOqwktXg9kwa6t87A4seJeYEaDdbyz6xURP7bpqwb2OrQ
-w58Cxio/4MGCifMjVuGjCUqiTWjWQFp/CpPL+cSWEwt1m3G8J23udXIdqpesS9n9
-QKR3gd5RJ8Ttv4FeRYgMWu6y/ltyPsp6ks+2aexQoCNX8byEyS8=
-=a0kr
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSJDj8ACgkQKWCEk4dB
+O2DpIg/9HfwsyrkOCSiJV9aBm6VlErr0q2qrthT9vGwoKxmE1AW3Ke5r4H92v/x9
+ErA4+98Ks3HxDi/MnNb8qRAkcYySG3iiYY9oJJfyfpKnbravm+RW+bondwJbEs+g
+lOotWN0Oe9zhjBliLHJVRvonFtFgjptjOJW1zdp8ch2SWL7p+g+xxZUVk34WmeTw
+VbX8KJMlcrHT7dQMbRzsUDhRM+fYbe9mYItPlOqkCT+u+xKriCEIWFF36JYNNwfP
+cdkKNcrHaKKXF442EfEpPV3acHwNdhet28iaTs6KhYqZ2CyWo2dWmMonTEziDcyv
+L8E5TSr2KfVTYOxGTcumrrZpvQwXzyTva4qMdUAh8+0uzirFUb0vfodzArvRKE1J
+VYHYlEtoM+MKa2oP8ZZ9mRUhsDJ5hgWHlDzgIjJ7/Mgmb50CoMTDg4V2VqMOyGWJ
+mJwIPPYMqASniwgxZxneENrcWMPg2BmfCnmQ4rpRiBl6GhWRNPYP88T3id1Hz8qn
+xa/dG0Gp0eNj7DO+H4A6SKyVoyiJTxkbqh5B3Vnow3/Mj/Co1q9sta9i/4Uw9X5i
+ZRHmGmS74z6pEV4+XtCVtNjaMpbiMJ+Fo/Xubtb0sQpXS8vwjbC9WgYOEvatgTaJ
+ur4PkLdkbX5t1gtvXniDmtazQNcztXnGgv9hkJ8o6muRPnIZ3yQ=
+=SwGg
 -----END PGP SIGNATURE-----
 -->

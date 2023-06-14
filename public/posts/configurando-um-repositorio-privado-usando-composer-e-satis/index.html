@@ -56,56 +56,51 @@ pelo <a href="https://getcomposer.org">composer</a> que utilizasse um repositór
 <p>Se ainda não o tiver feito, <a href="https://getcomposer.org/doc/00-intro.md">(aprenda como)</a>.</p>
 <h4 id="instale-o-satis">Instale o Satis</h4>
 <p>Crie um projeto usando o composer, basta rodar o seguinte comando no terminal:</p>
-<p><code>php composer.phar create-project composer/satis --stability=dev --keep-vcs</code></p>
-<h4 id="configure-o-para-prover-o-acesso-ao-seu-repositório-privado">Configure-o para prover o acesso ao seu repositório privado</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php composer.phar create-project composer/satis --stability<span style="color:#f92672">=</span>dev --keep-vcs
+</span></span></code></pre></div><h4 id="configure-o-para-prover-o-acesso-ao-seu-repositório-privado">Configure-o para prover o acesso ao seu repositório privado</h4>
 <p>A primeira coisa que deve ser feita é criar um arquivo chamado satis.json no<br>
-root do projeto que foi criado acima, segue um exemplo deste arqvivo:</p>
-<pre><code>{  
-    &quot;name&quot;: &quot;Repositório Local&quot;,  
-    &quot;homepage&quot;: &quot;http://localhost:8888&quot;,  
-    &quot;archive&quot;: {  
-            &quot;skip-dev&quot;: true  
-    },  
-    &quot;repositories&quot;: [  
-        { &quot;type&quot;: &quot;vcs&quot;, &quot;url&quot;: &quot;https://url-para-seu-repositorio-git/nome-do-seu-repositorio.git&quot; }  
-    ],  
-    &quot;require&quot;: {  
-        &quot;seu-pacote/sua-lib&quot;: &quot;\*&quot;  
-    }  
-}
-</code></pre>
-<p>Como pode ser observado acima, eu configuro com o repositório que eu quero disponibilizar, se precisar colocar mais do
-que um repositório basta adicionar woutro elemento no array <em>repositories</em>.</p>
+root do projeto que foi criado acima, segue um exemplo deste arquivo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{  
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Repositório Local&#34;</span>,  
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;homepage&#34;</span>: <span style="color:#e6db74">&#34;http://localhost:8888&#34;</span>,  
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;archive&#34;</span>: {  
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;skip-dev&#34;</span>: <span style="color:#66d9ef">true</span>  
+</span></span><span style="display:flex;"><span>    },  
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;repositories&#34;</span>: [  
+</span></span><span style="display:flex;"><span>        { <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;vcs&#34;</span>, <span style="color:#f92672">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;https://url-para-seu-repositorio-git/nome-do-seu-repositorio.git&#34;</span> }  
+</span></span><span style="display:flex;"><span>    ],  
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;require&#34;</span>: {  
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;seu-pacote/sua-lib&#34;</span>: <span style="color:#e6db74">&#34;\*&#34;</span>  
+</span></span><span style="display:flex;"><span>    }  
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Como pode ser observado acima, eu configuro com o repositório que eu quero disponibilizar, se precisar colocar mais do
+que um repositório basta adicionar outro elemento no array <em>repositories</em>.</p>
 <p>Em seguida, informe o nome do seu pacote/library e qual versão deseja usar.</p>
 <p>Acima, no atributo homepage é informado qual o endereço local que será usado para servir o projeto. Você pode usar uma
 URL diferente de localhost sem problemas.</p>
 <h4 id="faça-a-_build_-do-seu-repositório">Faça a <em>build</em> do seu repositório</h4>
 <p>Execute o comando abaixo sempre que houver mudanças no seu repositório:</p>
-<pre><code>php bin/satis build &lt;configuration file&gt; &lt;build dir&gt;
-</code></pre>
-<p>Por exemplo, eu rodei assim:</p>
-<pre><code>php bin/satis build satis.json repo
-</code></pre>
-<p>O diretório repo será usado para disponibilizar os fontes do repositório privado.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php bin/satis build &lt;configuration file&gt; &lt;build dir&gt;
+</span></span></code></pre></div><p>Por exemplo, eu rodei assim:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php bin/satis build satis.json repo
+</span></span></code></pre></div><p>O diretório repo será usado para disponibilizar os fontes do repositório privado.</p>
 <h4 id="disponibilize-o-repositório">Disponibilize o repositório</h4>
 <p>Você pode criar um virtual host apontando para o diretório <em>repo</em>, mas dependendo do caso, usar o webserver embutido no
 CLI do PHP:</p>
-<pre><code>php -S 0.0.0.0:8888 -t repo
-</code></pre>
-<p>Após rodar o comando acima (ou configurar um virtual host), acesse: <a href="http://localhost:8888"><strong>http://localhost:8888</strong></a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -S 0.0.0.0:8888 -t repo
+</span></span></code></pre></div><p>Após rodar o comando acima (ou configurar um virtual host), acesse: <a href="http://localhost:8888"><strong>http://localhost:8888</strong></a></p>
 <p>Se for mostrada uma tela com os repositórios que você configurou eles poderão ser usados adicionando no composer.json do
 seu projeto:</p>
-<pre><code>&quot;repositories&quot;: [  
-    {  
-      &quot;type&quot;: &quot;composer&quot;,  
-      &quot;url&quot;: &quot;http://localhost:8888&quot;  
-    }  
-  ],  
-  &quot;require&quot;: {  
-    &quot;seu-pacote/sua-lib&quot;: &quot;dev-master&quot;  
-  }
-</code></pre>
-<h4 id="conclusão">Conclusão</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;repositories&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> [  
+</span></span><span style="display:flex;"><span>    {  
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;composer&#34;</span>,  
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;http://localhost:8888&#34;</span>  
+</span></span><span style="display:flex;"><span>    }  
+</span></span><span style="display:flex;"><span>  ]<span style="color:#960050;background-color:#1e0010">,</span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;require&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {  
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;seu-pacote/sua-lib&#34;</span>: <span style="color:#e6db74">&#34;dev-master&#34;</span>  
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><h4 id="conclusão">Conclusão</h4>
 <p>Existem muitas outras configurações que podem ser feitas, mas essa configuração básica já ajuda na maioria das
 situações.</p>
 <p>Você conhece alguma outra maneira de lidar com uma situação como essa? Deixe seu comentário.</p>
@@ -141,18 +136,18 @@ situações.</p>
 <!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr90ACgkQKWCEk4dB
-O2CPQg//TwCqeynAaCblvg+UbDB06y/06x4fCut66CD1Zw9vaDLqH4SSWaytCUlh
-PTUsZP9Z3c3xkUAfUEIgX/txXjl4aTwmpjAty0KuxufU/5XdlFL0WxGM0N1pWxTo
-WtqTqOk46iVIvvOp0qcgyQ9TuEVjzrMuHG9vwrpT8lCEQucob4drU7Zjvfj1lk6k
-5eVqCYzKDwTI++uO9DSaMT14dl9jqOpFmItFfJjTW28WC/eZdqXDbhVUBer6cLIg
-QB55EgzpliZuzK3OsRlw58hmeUcdHHWDYyRobm3bQIAlbcZZDqb4frhT0Zj1e4IF
-fpovG87UgF9/tB2vx5vr0stTLt3FzAKqn2xLhAbMeJHPc40GT0+aG+ddY0HhTS6C
-kcR2SpufT5f6yl9WZrwPxXqdEMzGUaUnAZ67TBRpOJBMz7eQqVy1JQEvemcEUawX
-mKJZHmI21BXvtnE1zkdwFAFnNvzSpk+OzM+rDdWIDV/vLF/N45egCyajSGsL5Iao
-OyyRIc7ZVAoeQUkO44PNgQd31pSQCr5GgBA2ssYEvo7FFTb2KAbL2xZJtdDE8shn
-8Ow4ER4gnQI5zlWvT4/st41sf9Bp68VPbT78Xac0erTCS6y0AMWX61UA1dhsEl/m
-LD710oTNy8UnjNsb67bRqKqv8WPfNvCUV5iies98NAcY/Cl7Eyg=
-=Aaqg
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSJDjwACgkQKWCEk4dB
+O2DJtRAAi8an4Vfdiutnj8pB4cbT4U9RWyEzMN4GjEzoKbG0sEXNJ12ocuhM2aOD
+AcZuI+kBEAGcs1WcOtOWMO7D9+511/QL73PaYJMcz9s5a9iMGAHhSfPYAe1iKHPM
+rWe6XFzGk3ziTjYbah38NBCncKigkZw+WYHpSgZVqLomZS3DHkhu8q8Rg+w0V4uV
+EC5sv6EDwmDAWdjPujSvVN0AOOjey1M9/bJYGwEEQHSI4P4m3qswU2huiufpxvVC
+QzzQv0X1IPKIasft3HtuVhCgOwC61NWcprMO17HiMHuVUyWycF9AlstPr+4H0UoY
+P1GYFw1jhqdXmSQbUovMsH7BLziDrqwcvelSesZbh9JOplWmfiGnQ0d5MCW4Pxrr
+9mdAiDcR5aMc0xESpvZy9IO1Pv+aJQ/LQeEuQu1n1uKjqc2X1R2v+Gw3RKT2yISB
+LtJeAUVW8uyCO6/fFCoxpNJUX/k2xZE8WDHJAmoqcpv8Sjm/C7gC5nw+rzpi5nVD
+ARvEp/zJ1Vw5Czk0L+SrU3QxTCkm7FtxPYAIxgzRp5J+pcTccYbtbGtl4ZQ5IhxH
+wU/4Lmfhgd0WIgt2iBBIJnYHev7+VDr75f7qp0xs48cpl0HzHFCr9aNSE6vJwfuF
+mIiL1htUYjAyRAwGceFNb5v1n6B/Q1QKfnv77N0HEClSoiNglVs=
+=G15J
 -----END PGP SIGNATURE-----
 -->

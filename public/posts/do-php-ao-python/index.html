@@ -47,7 +47,7 @@ Hash: SHA256
                 <p>Um pouco da minha experiência na transição de PHP para Python</p>
 <p><img src="/posts/images/1*wlukTN8cgk7n2rJTOKlOkw.jpeg" alt=""></p>
 <p>Eu e o Elephant na PHP Conference Brasil 2012</p>
-<h4 id="introdução">Introdução</h4>
+<h3 id="introdução">Introdução</h3>
 <p>Em Dezembro de 2015 eu fui convidado a trabalhar no Olist e eu comecei a trabalhar efetivamente em Janeiro de 2016.
 A situação naquela época está mais ou menos
 descrita <a href="https://engineering.olist.com/o-estado-da-tecnologia-na-olist-da18af46b284">neste post</a>
@@ -64,13 +64,13 @@ super desafio.</p>
 respeito da migração podem e/ou poderão ser encontrados em outros artigos.</p>
 <p>Não é meu objetivo fazer comparações entre as duas linguagens, sei que é difícil em posts deste tipo, mas meu objetivo
 não é gerar nenhum <em>flame war,</em> e sim, relatar como está sendo a experiência desse aprendizado.</p>
-<h4 id="o-começo">O Começo</h4>
+<h3 id="o-começo">O Começo</h3>
 <p>De Janeiro a Setembro de 2016 foi um período bem difícil, o sistema era instável, cada deploy era motivo de desespero (
 era proibido deploy às sextas-feiras), qualquer alteração no sistema poderia comprometer outras partes da plataforma,
 então, realmente não era um projeto fácil de ser mantido.</p>
 <p>Aapesar de conhecer muito bem PHP e as tecnologias utilizadas no projeto confesso que não era algo trivial para mim,
 ajudar a mantê-lo.</p>
-<h4 id="alguém-falou-em-reescrever-a-plataforma-em-outra-linguagem">Alguém falou em reescrever a plataforma? Em outra linguagem?</h4>
+<h3 id="alguém-falou-em-reescrever-a-plataforma-em-outra-linguagem">Alguém falou em reescrever a plataforma? Em outra linguagem?</h3>
 <p>Me lembro da primeira vez em que escutei a sugestão de migrar a plataforma toda para Python.</p>
 <p><img src="/posts/images/1*nBXUASc3psXotxXkFl7HiQ.jpeg" alt=""></p>
 <p>Fiquei mais ou menos assim na hora (sem os machucados)</p>
@@ -80,7 +80,7 @@ tranquilizou dizendo que isso não aconteceria, mas, da mesma forma como um <em>
 minha mente a idéia de que <strong>precisaria aprender Python <em>ASAP</em></strong>.</p>
 <p>Mas o tempo foi passando e por motivos diversos eu comecei a estudar Python de verdade praticamente horas antes de
 <em>virarem a chave</em> da V1 para a V2, e me lembro da primeira reação que eu tive: “<em>Estou gostando desse negócio</em>”.</p>
-<h4 id="vamos-lá">Vamos lá</h4>
+<h3 id="vamos-lá">Vamos lá</h3>
 <p>Eu estou aprendendo Python da maneira que eu mais gosto de aprender as coisas: <strong>Praticando</strong>.</p>
 <p>Nunca vou esquecer uma vez quando conversava com o Osvaldo sobre a estratégia para eu começar a trabalhar na V2, foi
 algo mais ou menos assim:</p>
@@ -89,7 +89,7 @@ algo mais ou menos assim:</p>
 trem e vai se virar para seguir a viagem com segurança”.</p>
 </blockquote>
 <p>Como eu sou um cara que gosta de desafios, eu fiquei bem empolgado para começar.</p>
-<h4 id="a-primeira-vez-a-gente-nuncaesquece">A primeira vez a gente nunca esquece</h4>
+<h3 id="a-primeira-vez-a-gente-nunca-esquece">A primeira vez a gente nunca esquece</h3>
 <p>A minha primeira tarefa na V2 foi no dia da virada e era a de criar um importador para os códigos de rastreios dos
 correios (esses códigos são usados para rastrear as encomendas no site dos correios).</p>
 <p><em>Me senti em casa</em> pois trabalhei bastante com essa integração com os correios na V1.</p>
@@ -111,63 +111,55 @@ feitas para serem simples, pois, basicamente eu precisei:</p>
 características da plataforma me chamaram a atenção: O pip é muito mais rápido e simples de usar que
 o <a href="https://getcomposer.org/">composer</a>, o arquivo de configuração do pip é um arquivo <em>plain text,</em> o do composer é um
 JSON, e neste último aspecto, para mim é algo positivo pois eu detesto arquivos de configuração em JSON ou YAML.</p>
-<h3 id="com-o-projeto-rodando-localmente-vamos-programar">Com o projeto rodando localmente, vamos programar…</h3>
+<h2 id="com-o-projeto-rodando-localmente-vamos-programar">Com o projeto rodando localmente, vamos programar…</h2>
 <p>Tentando ser sucinto, vamos ao que interessa:</p>
-<h4 id="estrutura-declasses">Estrutura de classes</h4>
+<h3 id="estrutura-de-classes">Estrutura de classes</h3>
 <p>A primeira coisa que eu precisei criar foi uma classe de <em>Model</em> para lidar com os códigos de rastreio, perguntei ao meu
 colega:— Onde crio os models? e a resposta: No models.py</p>
 <p><a href="https://media.giphy.com/media/3o6wraGHbaesVVebjW/giphy.gif">https://media.giphy.com/media/3o6wraGHbaesVVebjW/giphy.gif</a></p>
 <p>Veja bem, eu trabalhei algum tempo com Java e muito tempo com PHP, e nessas linguagens, como em todas as outras existem
 convenções, logo eu estava acostumado a cada classe possuir um arquivo respectivo, por exemplo, em PHP as seguintes
 classes teriam um arquivo para cada:</p>
-<blockquote>
-<p>Pai.php</p>
-</blockquote>
-<blockquote>
-<p><code>class Pai { ... }</code></p>
-</blockquote>
-<blockquote>
-<p>Filho.php</p>
-</blockquote>
-<blockquote>
-<p><code>class Filho extends Pai { ... }</code></p>
-</blockquote>
-<p>Em Python, seria um único arquivo com as classes declaradas nele:</p>
-<blockquote>
-<p>models.py</p>
-</blockquote>
-<blockquote>
-<p><code>class Pai:    pass</code></p>
-</blockquote>
-<blockquote>
-<p><code>class Filho(Pai):    pass</code></p>
-</blockquote>
-<p>Na época eu perguntei a alguns amigos se isso é de fato uma regra em Python, e a resposta que tive foi a de que é
+<p><em>Pai.php</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Pai</span> {}
+</span></span></code></pre></div><p><em>Filho.php</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Filho</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Pai</span> {}
+</span></span></code></pre></div><p>Em Python, seria um único arquivo com as classes declaradas nele:</p>
+<p><em>models.py</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Pai</span>:  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pass</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Filho</span>(Pai):  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pass</span>
+</span></span></code></pre></div><p>Na época eu perguntei a alguns amigos se isso é de fato uma regra em Python, e a resposta que tive foi a de que é
 possível também criar um arquivo para cada model, mas logo percebi que isso não é comum, da mesma forma que definir
 várias classes em um único arquivo em PHP também é possível, mas também não é comum.</p>
 <p>Hoje familiarizado com esta convenção eu me sinto bem confortável, no final acho que a quantidade bem menor de arquivos
 acaba facilitando meu dia a dia.</p>
-<h4 id="herança-múltipla-traits-emixins">Herança múltipla, traits e mixins</h4>
+<h3 id="herança-múltipla-traits-e-mixins">Herança múltipla, traits e mixins</h3>
 <p>Python permite herança múltipla e PHP não, no entanto no PHP existem as traits que permitem fazer algo parecido, mas
 Python além da herança múltipla também possui mixins, ou seja, para quem não está acostumado, no começo é um pouco
 confuso entender os códigos pois a herança múltipla + mixins acabam complicando um pouco para quem não está acostumado.</p>
 <p>A minha opinião é a de que tanto em PHP como em Python, o uso de mixins/traits acabam deixando o código mais complexo do
 que deveria e eu particularmente evito usá-los.</p>
-<h4 id="debugging">Debugging</h4>
+<h3 id="debugging">Debugging</h3>
 <p>O processo de debug em PHP para mim sempre foi simples, só que agora admito que ele deveria ser ainda mais simples. <br>
 Instalar o XDebug e configurar IDE/Editor/Whatever sempre foi uma tarefa trabalhosa, nem difícil e nem chata, mas
 trabalhosa, acho que por isso que a maioria dos desenvolvedores PHP que conheço ainda usam o artifício do</p>
-<p><code>print_r();die();</code></p>
-<p>no dia-a-dia, obviamente muitos debugam com PHP e XDebug, mas não são a maioria.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">print_r</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">die</span>();
+</span></span></code></pre></div><p>no dia-a-dia, obviamente muitos debugam com PHP e XDebug, mas não são a maioria.</p>
 <p>Em Python esse processo é inerente à linguagem, basta incluir em seu código:</p>
-<p><code>import pdb; pdb.set_trace()</code></p>
-<p>ou se tiver o <em>ipdb</em> em seu arquivo de dependências:</p>
-<p><code>import ipdb; ipdb.set_trace()</code></p>
-<p>E pronto, você já tem um break point na sua aplicação e pode debuga-la a vontade pelo terminal. Se quiser debugar pela
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">import</span> <span style="color:#a6e22e">pdb</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pdb</span><span style="color:#f92672">.</span><span style="color:#a6e22e">set_trace</span>();
+</span></span></code></pre></div><p>ou se tiver o <em>ipdb</em> em seu arquivo de dependências:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">import</span> <span style="color:#a6e22e">ipdb</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ipdb</span><span style="color:#f92672">.</span><span style="color:#a6e22e">set_trace</span>();
+</span></span></code></pre></div><p>E pronto, você já tem um break point na sua aplicação e pode debuga-la a vontade pelo terminal. Se quiser debugar pela
 sua IDE/Editor/Whatever também é bem simples, na verdade nunca precisei de nenhum passo adicional de instalação de
 dependências.</p>
 <p>Fato é que hoje, desenvolvendo com Python eu não abro mão de um debugger, fiquei mal-acostumado.</p>
-<h4 id="objetos">Objetos</h4>
+<h3 id="objetos">Objetos</h3>
 <p>Em Python tudo é um objeto, então é possível sobrecarregar inclusive operadores matemáticos (<em>ex: +</em>) o que torna a
 linguagem bastante poderosa e flexível.</p>
 <p>Uma coisa que eu senti diferença, é que em Python não há a necessidade de usar modificadores de acesso <em>public,
@@ -177,28 +169,31 @@ determina que propriedades e métodos que iniciam com _ ou __ são <em>protected
 desenvolvedores a responsabilidade de lidar com isso. Atualmente PHP oferece suporte aos modificadores de acesso, mas
 até o PHP 4 era comum seguirmos uma convenção parecida.</p>
 <p>Para mim, não é problema.</p>
-<h4 id="unicode">Unicode</h4>
+<h3 id="unicode">Unicode</h3>
 <p>Python 3 já suporta Unicode por padrão, sem a necessidade de usar libs ou funções específicas para lidar com encoding.</p>
 <p>Isso facilita bastante o trabalho porque nós temos certeza que uma função que transforma uma string, não retornará uma
 string com a codificação diferente da string original.</p>
-<h4 id="list-comprehensions">List Comprehensions</h4>
+<h3 id="list-comprehensions">List Comprehensions</h3>
 <p>Este é um dos recursos que eu estou achando mais legal, pois permite criar e manipular listas (em PHP, o que mais se
 aproxima de uma lista do Python são os arrays com índices numéricos) de uma maneira simples e natural.</p>
 <p>Eu tentarei ilustrar de uma forma bem simples porque esse recurso é muito legal.</p>
 <p>Temos o seguinte código:</p>
-<p>&gt;&raquo; resultados = []<br>
-&gt;&raquo; for x in range(20):<br>
-… resultados.append(x+x)<br>
-&gt;&raquo; resultados<br>
-[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]</p>
-<p>Esse código percorre um loop de 20 elementos, começando em 0 (zero) e armazena o resultado da soma do número por ele
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>resultados <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">20</span>):  
+</span></span><span style="display:flex;"><span>    resultados<span style="color:#f92672">.</span>append(x<span style="color:#f92672">+</span>x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>resultados  
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">14</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">22</span>, <span style="color:#ae81ff">24</span>, <span style="color:#ae81ff">26</span>, <span style="color:#ae81ff">28</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">32</span>, <span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">36</span>, <span style="color:#ae81ff">38</span>]
+</span></span></code></pre></div><p>Esse código percorre um loop de 20 elementos, começando em 0 (zero) e armazena o resultado da soma do número por ele
 mesmo como um elemento da lista.</p>
 <p>Usando list comprehensions, esse código pode ser reduzido a uma única linha:</p>
-<p>resultados = [x+x for x in range(20)]<br>
-&gt;&raquo; resultados<br>
-[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]</p>
-<p>Legal né?</p>
-<h4 id="shell-interativo">Shell Interativo</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>resultados <span style="color:#f92672">=</span> [x<span style="color:#f92672">+</span>x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">20</span>)]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>resultados
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">14</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">22</span>, <span style="color:#ae81ff">24</span>, <span style="color:#ae81ff">26</span>, <span style="color:#ae81ff">28</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">32</span>, <span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">36</span>, <span style="color:#ae81ff">38</span>]
+</span></span></code></pre></div><p>Legal né?</p>
+<h3 id="shell-interativo">Shell Interativo</h3>
 <p>Outro recurso que ajuda bastante no dia-a-dia, é o shell interativo do Python (REPL), basta digitar <em>python</em> no terminal
 e pode-se testar código rapidamente.</p>
 <p>O exemplo de list comprehensions eu fiz usando o shell interativo e hoje em dia, eu uso ele até quando preciso fazer
@@ -269,9 +264,6 @@ estou aprendendo, no caso de Python) em ambas plataformas.</p>
 para mim, é um privilégio enorme.</p>
 <p>Quando comecei trabalhar no Olist eu era um Desenvolvedor Sênior PHP e agora eu me sinto um Desenvolvedor Júnior Python.</p>
 <p>E estou achando isso muito legal.</p>
-<hr>
-<p><strong>O Olist está contratando</strong>. Se você quiser fazer parte da nossa
-equipe, <a href="https://www.99jobs.com/olist">saiba mais aqui</a>.</p>
 
             </div>
         </div>
@@ -304,18 +296,18 @@ equipe, <a href="https://www.99jobs.com/olist">saiba mais aqui</a>.</p>
 <!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr94ACgkQKWCEk4dB
-O2AfHg/9H1HqlrskNbIFBH/N7WP4bFTJu9q87E31POEOGkXA8EvUoyEzhdAc5S0U
-l2MMhaoUvq/N9fbLkQpIVySzXchYUAmj5jJCg0B4CbAQ7QQmogcbO/giTUCo0gFJ
-WotC+PwYnDhhGhtpuBgwSy82TDdKJW3BFsCiWHifi9zJqxkU66N1iqrsjQObbbk1
-bGn5uCDuHzer2E+XCHbYLsIKuRljp634wZBgX28FN71bDpWZK91s89FkZp75FPvT
-aLClTaq9Y9kULqCxOprhoUwSMKAse1l5WkQZtWFy9U0iG9nLSqLE81EC4IwdGxEO
-KXSLhRbYruMu7P0SowuJxtleAuH4/qgeEag/dsfe/ThoPHNJCgHAbQ61Wwzo761/
-a72qEU+BHNawx7U0b27FQBGGbMg7ROVLVSaSxSKr+5BmGXJIoT/oKo7d3RUmzB5n
-vGMp1n5SwVBwPXh6KiSUXXvvZx6Xkr74Inp76oqeFICyeJIOmuHCIrNJF+tjBdAx
-kKDQX7qoVgEtB3OpsWollMoWc9PxVbNJ9vc6rBUWhW5ahop9xiz9RZRqOqjC3wUk
-cjOmh5lF3n7HSWs3DFbl+uvPmvLjsJO9xIYGZLF2KqO/8ehyEOMi/Lg2rm8pzp7C
-6SQU/IiBcPskAjdtZfJHrAEHfTMhHnz4x5ccblVb2yBa7ONsLj4=
-=mwTh
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSJDj0ACgkQKWCEk4dB
+O2A8Lw/+OxlVfCisHOPbNz9cDuZev09Vy+gX3J4pqrTG7mWatCsqFcSJoKMS25hT
+xjFnCWZCZfmL8f7NCV4kaT0eCezeoOoq9kL3dd8vIEFfVHt5YLR5ILJncG52i5p0
+zUJF56HZTqXs0aWlKargPpb/xjLrVC2X+Fa1lQqbRqAqHpGhiVDD6fKnL+I6QuDf
+IJ14zHHxvKA1ZZ4TFX5sy3hgc2PUBmiCtjDO0yUb7Tf6/cMUnoQPvT0gt5PeDuuo
+1n1rcbGLdrsTRHZu3vWr0JTZlMgQRXRLpRuMFwDAJy1lxx9bEdRhDhnjO8X5slOF
+5ndtPjWisQfRI5FKzIxf07npUT4WkDolDlNZWF0xAhc/M1wYsbTa7urfuEfkh3Kv
+LcaO8sfvwT2gt1/ynzy3x8QlYvH3b1ZlxiUZWtOvXWsiz/TWR4lyJZXDmLbVyukg
+EGftx6ltpTVEEXle5cmfAkAgO0I2XnTUpKeNnJff9OZv3aUhYx6h6WV6WVPMjHLC
+/uMqBr7eEAZB9fS2ozYCinxllaElghtLOsFw8qdQp0Pipi0TlnYALVYYaOR1uYtN
+8v6KkTij2tQhIKJBS5+Y92mNyBk1Df1XqqUm+iDgMWtvIp7XtYVCSH5HuiWrv8ES
+ZFpix5V1/IIyLeQ9j0ACPLz0LQp6nWTvrinrHFZe1wkziz7HhYA=
+=tjMe
 -----END PGP SIGNATURE-----
 -->

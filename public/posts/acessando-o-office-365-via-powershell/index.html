@@ -61,40 +61,34 @@ No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a um
 Powershell,<br>
 a partir daí basta se familiarizar com os cmdlets específicos para esta integração.</p>
 <p>O passo seguinte é importar o módulo MSOnline para obter acesso aos cmdlets instalados anteriormente:</p>
-<pre><code>Import-Module MSOnline
-</code></pre>
-<p>Em seguida é necessário obter as credenciais de acesso ao serviço:</p>
-<pre><code>$credenciais = Get-Credential
-</code></pre>
-<p>O comando acima irá mostrar uma tela nativa do Windows solicitando um nome de usuário e senha.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Import-Module MSOnline
+</span></span></code></pre></div><p>Em seguida é necessário obter as credenciais de acesso ao serviço:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$credenciais <span style="color:#f92672">=</span> Get-Credential
+</span></span></code></pre></div><p>O comando acima irá mostrar uma tela nativa do Windows solicitando um nome de usuário e senha.</p>
 <p>O problema desta abordagem é que se houver a necessidade de colocar este script<br>
 no agendador de tarefas ele não irá funcionar, neste caso será necessário<br>
 configura-lo para uso em modo não-interativo, conforme o código a seguir:</p>
-<pre><code>Import-Module MSOnline  
-$password = &quot;avidaebelaagenteequefodeela&quot;  
-$securePassword = $password | ConvertTo-SecureString -AsPlainText -Force  
-$UserName = &quot;username@domain&quot;  
-$Credentials = New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
-Connect-MsolService -Credential $Credentials
-</code></pre>
-<p>Desta maneira o script converterá as credenciais de acesso, que estão hardcoded,<br>
-e converterá em um objeto <em>Automation.PSCredential</em> .</p>
-<p>É importante frisar que nesta abordagem a segurança é menor, pois a senha fica<br>
-explícita no código, o que significa que ela estará exposta a qualquer um com acesso ao código.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Import-Module MSOnline  
+</span></span><span style="display:flex;"><span>$password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;avidaebelaagenteequefodeela&#34;</span>  
+</span></span><span style="display:flex;"><span>$securePassword <span style="color:#f92672">=</span> $password | ConvertTo-SecureString -AsPlainText -Force  
+</span></span><span style="display:flex;"><span>$UserName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;username@domain&#34;</span>  
+</span></span><span style="display:flex;"><span>$Credentials <span style="color:#f92672">=</span> New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
+</span></span><span style="display:flex;"><span>Connect-MsolService -Credential $Credentials
+</span></span></code></pre></div><p>Desta maneira o script converterá as credenciais de acesso, que estão hardcoded, e converterá em um objeto
+<em>Automation.PSCredential</em>.</p>
+<p>É importante frisar que nesta abordagem a segurança é menor, pois a senha fica explícita no código, o que significa que
+ela estará exposta a qualquer um com acesso ao código.</p>
 <p>Durante a transação esses dados ficam criptografados no objeto Automation.PSCredential.</p>
 <p>Pronto!</p>
 <p>Com esses passos o seu script powershell estará apto a se autenticar na nuvem do Office365.</p>
 <p>Segue agora o código completo:</p>
-<pre><code>Import-Module MSOnline  
-$password = &quot;huehuebrbr&quot;  
-$securePassword = $password | ConvertTo-SecureString -AsPlainText -Force  
-$UserName = &quot;username@domain&quot;  
-$Credentials = New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
-Connect-MsolService -Credential $Credentials
-</code></pre>
-<p>Espero ter a oportunidade de em breve poder explorar mais funcionalidades como<br>
-criar, excluir e alterar usuários, por exemplo, e também espero que este post<br>
-tenha sido útil.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Import-Module MSOnline  
+</span></span><span style="display:flex;"><span>$password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;huehuebrbr&#34;</span>  
+</span></span><span style="display:flex;"><span>$securePassword <span style="color:#f92672">=</span> $password | ConvertTo-SecureString -AsPlainText -Force  
+</span></span><span style="display:flex;"><span>$UserName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;username@domain&#34;</span>  
+</span></span><span style="display:flex;"><span>$Credentials <span style="color:#f92672">=</span> New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
+</span></span><span style="display:flex;"><span>Connect-MsolService -Credential $Credentials
+</span></span></code></pre></div><p>Espero ter a oportunidade de em breve poder explorar mais funcionalidades como criar, excluir e alterar usuários, por exemplo, e também espero que este post tenha sido útil.</p>
 
             </div>
         </div>
@@ -127,18 +121,18 @@ tenha sido útil.</p>
 <!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr9oACgkQKWCEk4dB
-O2BahA/+OnnxZ4neZiIr5NKTA+gtf33z/ZGm7LZHBrCDu5/3Z7KtYWFu6N3abFtO
-fFpMYo1Yynz49j3inMafauts+q4VNyNEcu0gK0Bm5vmHfDSF6+y/MFvbXdKiHx91
-I7Q0CaIvzYER6THYhdIwgNgjqppu5II3A5DHj8D6to+izR8Ucg34sewaQA5IUPtj
-wcwTa8s80Hz35GXjIkOKN3PMim50wyu0l53GQlQG8rYueIfhVbnY34X0wVsEzOsF
-UGSYHsKqrv6EEj0sZNPe5z5W/iEezRrvwLqChm8a6hf7c9dIe9JyH7Pgio1rQelJ
-OdM0JoZMCTv29vF4hALM2wKeGXNeKRXqjDbcpeknpsqF+zgHj6X8eQM3cSXRsZDN
-4lCz0eV6tSdp1o9oEPhufDcSr5GyPyh7J2y9ZOtUPEcD23OdYyO2gCTKmtqY9ley
-cq9OMDKltVCuJS5lfe9cgNfKXLQgWB0uvNW+jRoFoqpeVoOz662o+efE8TnGRwoY
-SCU5qJoHZbOlUStXzg8oQpM5UD++k8vlzucghSuHyqxEYhMf4p8B9vaSo+9panos
-zXEyaEO4D68L+htKRu0QzjxS4unNDyafgd2n43doG2Cz3oT6rLm7SmiLzCBZzYQX
-veQyVQWjp1qpvdEjEKdkU5/g5ZjE6IqvFd5CMeGMuOIPfIGmGCw=
-=YNjM
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSJDjkACgkQKWCEk4dB
+O2BQmg//YttgKlIPehApMcydlA/pU/x2Tkl5brIGeyIybPopBNmCboloqC6Lo0L3
+eYKnQkZoHHkDI2AVHYTKeLKWqpsXhB+cDhUTNaSqGLCTcRADY8NOw+M+WxylEbVw
+Zb6PasgrcdRLTmj0s4d05r1ORiLDS1wOwNBr7fxV0798ntksu+onIdY8iqP+9L8b
+9u3nK4uctSo2+pD7evArRtEjF/MVJMRdlkuRonAfa9x/0ABmVPaEUSGDRYulr2Ex
+0VALFRGyhW+HLzDrE+A1ny8nVh6N/K6gHtWkGkETNK4OALUxTSeoVW6hLioBHTFY
+YLHBevtgmwLkepVlZYiw59S474F6WjTLBtoe6mlqnvZ89J5eO24OACrDd4NnKhDS
+QjaKgaI8YZHRQeKZmHys9K06Aj0Hcrpks696SMG0ahFgjlt3gLMsTM9nRwtVWgRd
+7Gop4EoLjlQMNLlGwEAVJFyvEJzO77HO3Ce84khxeGQ9hfOnUoeCODNCC/JqCvmh
+xa+AAl+axGCyeiLu6XybNaq5+/FpAWd773TMAhxIk1eT+fkwM95HmTduk/zlBavV
+QkArxACwQ4cVGXfgSPi5skZ9qreXuPG46rv/MIXtNLpXjwVUIpbeYrfpjCs+aE0H
+4sX7nmxzzYyc7ekbTJYfK6I0jxfQVpYvPRbrs9nbSoR3RaVKt08=
+=+DgC
 -----END PGP SIGNATURE-----
 -->

@@ -10,10 +10,10 @@ Conforme palavras do [Andi Gutmans](http://andigutmans.blogspot.com) na lista de
 possível que neste final de semana seja liberada mais uma release de preview do framework.
 
 Andi disse em mensagem postada ontem: 
-> We are working hard to get a new tarball rolled, bug DB up, etc. We should be
+**We are working hard to get a new tarball rolled, bug DB up, etc. We should be
 getting this out the door this coming week. In the meanwhile, feel free to grab the latest version from
 SVN http://framework.zend.com/download/subversion. Also Mike has updated the manual just recently including some of the
-language translations contributed by the community (Thanks!).
+language translations contributed by the community (Thanks!).**
 
 Se tudo correr bem, neste próximo final de semana estará disponível para download esta nova release. Qualquer novidade
 eu posto aqui.

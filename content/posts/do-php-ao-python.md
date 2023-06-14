@@ -9,7 +9,7 @@ Um pouco da minha experiência na transição de PHP para Python
 
 Eu e o Elephant na PHP Conference Brasil 2012
 
-#### Introdução
+### Introdução
 
 Em Dezembro de 2015 eu fui convidado a trabalhar no Olist e eu comecei a trabalhar efetivamente em Janeiro de 2016.
 A situação naquela época está mais ou menos
@@ -35,7 +35,7 @@ respeito da migração podem e/ou poderão ser encontrados em outros artigos.
 Não é meu objetivo fazer comparações entre as duas linguagens, sei que é difícil em posts deste tipo, mas meu objetivo
 não é gerar nenhum _flame war,_ e sim, relatar como está sendo a experiência desse aprendizado.
 
-#### O Começo
+### O Começo
 
 De Janeiro a Setembro de 2016 foi um período bem difícil, o sistema era instável, cada deploy era motivo de desespero (
 era proibido deploy às sextas-feiras), qualquer alteração no sistema poderia comprometer outras partes da plataforma,
@@ -44,7 +44,7 @@ então, realmente não era um projeto fácil de ser mantido.
 Aapesar de conhecer muito bem PHP e as tecnologias utilizadas no projeto confesso que não era algo trivial para mim,
 ajudar a mantê-lo.
 
-#### Alguém falou em reescrever a plataforma? Em outra linguagem?
+### Alguém falou em reescrever a plataforma? Em outra linguagem?
 
 Me lembro da primeira vez em que escutei a sugestão de migrar a plataforma toda para Python.
 
@@ -60,7 +60,7 @@ minha mente a idéia de que **precisaria aprender Python _ASAP_**.
 Mas o tempo foi passando e por motivos diversos eu comecei a estudar Python de verdade praticamente horas antes de
 _virarem a chave_ da V1 para a V2, e me lembro da primeira reação que eu tive: “_Estou gostando desse negócio_”.
 
-#### Vamos lá
+### Vamos lá
 
 Eu estou aprendendo Python da maneira que eu mais gosto de aprender as coisas: **Praticando**.
 
@@ -72,7 +72,7 @@ algo mais ou menos assim:
 
 Como eu sou um cara que gosta de desafios, eu fiquei bem empolgado para começar.
 
-#### A primeira vez a gente nunca esquece
+### A primeira vez a gente nunca esquece
 
 A minha primeira tarefa na V2 foi no dia da virada e era a de criar um importador para os códigos de rastreios dos
 correios (esses códigos são usados para rastrear as encomendas no site dos correios).
@@ -100,11 +100,11 @@ características da plataforma me chamaram a atenção: O pip é muito mais ráp
 o [composer](https://getcomposer.org/), o arquivo de configuração do pip é um arquivo _plain text,_ o do composer é um
 JSON, e neste último aspecto, para mim é algo positivo pois eu detesto arquivos de configuração em JSON ou YAML.
 
-### Com o projeto rodando localmente, vamos programar…
+## Com o projeto rodando localmente, vamos programar…
 
 Tentando ser sucinto, vamos ao que interessa:
 
-#### Estrutura de classes
+### Estrutura de classes
 
 A primeira coisa que eu precisei criar foi uma classe de _Model_ para lidar com os códigos de rastreio, perguntei ao meu
 colega:— Onde crio os models? e a resposta: No models.py
@@ -115,24 +115,27 @@ Veja bem, eu trabalhei algum tempo com Java e muito tempo com PHP, e nessas ling
 convenções, logo eu estava acostumado a cada classe possuir um arquivo respectivo, por exemplo, em PHP as seguintes
 classes teriam um arquivo para cada:
 
-> Pai.php
+_Pai.php_
 
-> `class Pai { ... }`
+```php
+class Pai {}
+```
+_Filho.php_
 
-> Filho.php
-
-> `class Filho extends Pai { ... }`
-
+```php
+class Filho extends Pai {}
+```
 Em Python, seria um único arquivo com as classes declaradas nele:
 
-> models.py
+_models.py_
 
-> `class Pai:  
->  pass`
+```python
+class Pai:  
+    pass
 
-> `class Filho(Pai):  
->  pass`
-
+class Filho(Pai):  
+    pass
+```
 Na época eu perguntei a alguns amigos se isso é de fato uma regra em Python, e a resposta que tive foi a de que é
 possível também criar um arquivo para cada model, mas logo percebi que isso não é comum, da mesma forma que definir
 várias classes em um único arquivo em PHP também é possível, mas também não é comum.
@@ -140,7 +143,7 @@ várias classes em um único arquivo em PHP também é possível, mas também n�
 Hoje familiarizado com esta convenção eu me sinto bem confortável, no final acho que a quantidade bem menor de arquivos
 acaba facilitando meu dia a dia.
 
-#### Herança múltipla, traits e mixins
+### Herança múltipla, traits e mixins
 
 Python permite herança múltipla e PHP não, no entanto no PHP existem as traits que permitem fazer algo parecido, mas
 Python além da herança múltipla também possui mixins, ou seja, para quem não está acostumado, no começo é um pouco
@@ -149,31 +152,37 @@ confuso entender os códigos pois a herança múltipla + mixins acabam complican
 A minha opinião é a de que tanto em PHP como em Python, o uso de mixins/traits acabam deixando o código mais complexo do
 que deveria e eu particularmente evito usá-los.
 
-#### Debugging
+### Debugging
 
 O processo de debug em PHP para mim sempre foi simples, só que agora admito que ele deveria ser ainda mais simples.    
 Instalar o XDebug e configurar IDE/Editor/Whatever sempre foi uma tarefa trabalhosa, nem difícil e nem chata, mas
 trabalhosa, acho que por isso que a maioria dos desenvolvedores PHP que conheço ainda usam o artifício do
 
-`print_r();die();`
-
+```php
+print_r();
+die();
+```
 no dia-a-dia, obviamente muitos debugam com PHP e XDebug, mas não são a maioria.
 
 Em Python esse processo é inerente à linguagem, basta incluir em seu código:
 
-`import pdb; pdb.set_trace()`
-
+```php
+import pdb;
+pdb.set_trace();
+```
 ou se tiver o _ipdb_ em seu arquivo de dependências:
 
-`import ipdb; ipdb.set_trace()`
-
+```php
+import ipdb;
+ipdb.set_trace();
+```
 E pronto, você já tem um break point na sua aplicação e pode debuga-la a vontade pelo terminal. Se quiser debugar pela
 sua IDE/Editor/Whatever também é bem simples, na verdade nunca precisei de nenhum passo adicional de instalação de
 dependências.
 
 Fato é que hoje, desenvolvendo com Python eu não abro mão de um debugger, fiquei mal-acostumado.
 
-#### Objetos
+### Objetos
 
 Em Python tudo é um objeto, então é possível sobrecarregar inclusive operadores matemáticos (_ex: +_) o que torna a
 linguagem bastante poderosa e flexível.
@@ -187,14 +196,14 @@ até o PHP 4 era comum seguirmos uma convenção parecida.
 
 Para mim, não é problema.
 
-#### Unicode
+### Unicode
 
 Python 3 já suporta Unicode por padrão, sem a necessidade de usar libs ou funções específicas para lidar com encoding.
 
 Isso facilita bastante o trabalho porque nós temos certeza que uma função que transforma uma string, não retornará uma
 string com a codificação diferente da string original.
 
-#### List Comprehensions
+### List Comprehensions
 
 Este é um dos recursos que eu estou achando mais legal, pois permite criar e manipular listas (em PHP, o que mais se
 aproxima de uma lista do Python são os arrays com índices numéricos) de uma maneira simples e natural.
@@ -202,25 +211,29 @@ aproxima de uma lista do Python são os arrays com índices numéricos) de uma m
 Eu tentarei ilustrar de uma forma bem simples porque esse recurso é muito legal.
 
 Temos o seguinte código:
+```python
+resultados = []
 
-\>>> resultados = \[\]  
-\>>> for x in range(20):  
-… resultados.append(x+x)  
-\>>> resultados  
-\[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38\]
+for x in range(20):  
+    resultados.append(x+x)
 
+resultados  
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]
+```
 Esse código percorre um loop de 20 elementos, começando em 0 (zero) e armazena o resultado da soma do número por ele
 mesmo como um elemento da lista.
 
 Usando list comprehensions, esse código pode ser reduzido a uma única linha:
 
-resultados = \[x+x for x in range(20)\]  
-\>>> resultados  
-\[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38\]
+```python
+resultados = [x+x for x in range(20)]
 
+resultados
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]
+```
 Legal né?
 
-#### Shell Interativo
+### Shell Interativo
 
 Outro recurso que ajuda bastante no dia-a-dia, é o shell interativo do Python (REPL), basta digitar _python_ no terminal
 e pode-se testar código rapidamente.
@@ -317,8 +330,3 @@ para mim, é um privilégio enorme.
 Quando comecei trabalhar no Olist eu era um Desenvolvedor Sênior PHP e agora eu me sinto um Desenvolvedor Júnior Python.
 
 E estou achando isso muito legal.
-
-* * *
-
-**O Olist está contratando**. Se você quiser fazer parte da nossa
-equipe, [saiba mais aqui](https://www.99jobs.com/olist).

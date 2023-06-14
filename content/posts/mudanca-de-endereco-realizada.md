@@ -19,7 +19,7 @@ Eu pretendo iniciar em breve um tutorial sobre Zend Framework e todas as liçõe
 Eu implementei o site em cerca de duas horas, então caso encontrem algum problema, por favor me avise :D .
 
 Para implementá-lo, eu utilizei o Zend Framework e na home do site eu puxo os dados do meu feed utilizando o
-componente `Zend_Feed_Rss`, que tornou o meu trabalho muito simples. Com pouquíssimas linhas mais ou menos eu
+componente _Zend_Feed_Rss_, que tornou o meu trabalho muito simples. Com pouquíssimas linhas mais ou menos eu
 implementei esta funcionalidade.
 
 O Template eu peguei pronto, apenas o modifiquei para reaproveitar código e adequa-lo às minhas necessidades.

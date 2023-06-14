@@ -21,11 +21,10 @@ baixa e faz a instalação automaticamente, após isso prossegue com a instalaç
 parado e não avançou mais, conforme a imagem abaixo:
 
 Eu quase desisti após xingar bastante, mas então eu executei os seguintes comandos no terminal:
-
-    docker-machine rm -f dev
-
-    docker-machine create -d virtualbox dev
-
+```bash
+docker-machine rm -f dev
+docker-machine create -d virtualbox dev
+```
 E tudo passou a funcionar corretamente.
 
 Durante o período em que eu esperava a instalação finalizar, eu abri uma issue

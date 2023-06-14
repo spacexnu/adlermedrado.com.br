@@ -47,33 +47,32 @@ Hash: SHA256
                 <p>Quem está me acompanhando no twitter e tem lido meus últimos posts, sabe que criei um site e etc, porém, nos últimos
 dias meu server no dreamhost está um pouco lento e justamente no consumo dos feeds do meu blog e na requisição REST para
 minha página no Flickr o meu site tem tipo um comportamento um pouco lento. É lógico que não é culpa exclusiva do
-consumo de feed e do REST do Flickr, porém, para melhorar um pouco eu usei o componente Zend_Cache do ZF para colocar
+consumo de feed e do REST do Flickr, porém, para melhorar um pouco eu usei o componente <em>Zend_Cache</em> do ZF para colocar
 estes dois objetos em cache.</p>
 <p>Eu coloquei o cache em arquivo em disco, porquê não estou com saco pra recompilar meu PHP no Dreamhost para usar o APC,
 então a melhora na performance poderia ser ainda melhor.</p>
-<p>Um exemplo de como usar o Zend_Cache colocando objeto serializado em arquivo:</p>
-<pre><code>private function getFeed()
-{
-    $frontend = array(
-    'lifetime' =&gt; 7200, // vida do cache eh duas horas
-    'automatic_serialization' =&gt; true
-    );
-
-    $backend = array(
-        'cache_dir' =&gt; 'meu_dir' // Diretorio para colocar o cache
-    );
-
-    // getting a Zend_Cache_Core object
-    $cache = Zend_Cache::factory('Core', 'File', $frontend, $backend);
-
-    if(!$objFeed = $cache-&gt;load('feed')) {
-        $objFeed = new Zend_Feed_Rss('http://adlermedrado.com.br/blog/?feed=rss2');
-        $cache-&gt;save($objFeed, 'feed');
-    }
-    return $objFeed;
-}
-</code></pre>
-
+<p>Um exemplo de como usar o <em>Zend_Cache</em> colocando objeto serializado em arquivo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getFeed</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    $frontend <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;lifetime&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">7200</span>, <span style="color:#75715e">// vida do cache eh duas horas
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;automatic_serialization&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    $backend <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;cache_dir&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;meu_dir&#39;</span> <span style="color:#75715e">// Diretorio para colocar o cache
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// getting a Zend_Cache_Core object
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $cache <span style="color:#f92672">=</span> <span style="color:#a6e22e">Zend_Cache</span><span style="color:#f92672">::</span><span style="color:#a6e22e">factory</span>(<span style="color:#e6db74">&#39;Core&#39;</span>, <span style="color:#e6db74">&#39;File&#39;</span>, $frontend, $backend);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>$objFeed <span style="color:#f92672">=</span> $cache<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">load</span>(<span style="color:#e6db74">&#39;feed&#39;</span>)) {
+</span></span><span style="display:flex;"><span>        $objFeed <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Zend_Feed_Rss</span>(<span style="color:#e6db74">&#39;http://adlermedrado.com.br/blog/?feed=rss2&#39;</span>);
+</span></span><span style="display:flex;"><span>        $cache<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">save</span>($objFeed, <span style="color:#e6db74">&#39;feed&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> $objFeed;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
             </div>
         </div>
     </article>
@@ -105,18 +104,18 @@ então a melhora na performance poderia ser ainda melhor.</p>
 <!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr98ACgkQKWCEk4dB
-O2DfIw//doelkU4Lv/2YtshaDbWgySdQwJQoK3tBhvaK+nwdp+SYehiqjgErqjYO
-Fmb/kFRG6F7kkKjfBFHnyalB56YNr07ZtqeXz0olLxf7vR3RGuq1rdAgAtz5OuyA
-r8Fumw36m3JXEaPW6E4R0LzjxvJiq3BJ2iYhQxTyDpSHA52TwE4GdiNjawncZic0
-Y+ia0h713BGX9Ws6wxFK4a/G2ES1YkW+PtYwqXCUIxzvplN7Yd4Z5NJU46+Wtt7J
-Thj5ILt88bWMJY/ALPSrAAWZGdBc40EF0TtHgzy550Dl+dy9SpZ4+aKtF4FJFkOr
-5A361cWdsLieHEs5/O5Bd3PZXQRho3JbftLqY5CFaG4ZAWBAVM+hK4sD08J4lHZh
-BhENcF6a4Q718Xp7GdhEOZ0MrANtYajRoEmDJnFQEwOV3zmOvEj5NAoOh58O9Pi1
-CkPj1WT6kYyyVdia2HWCT2c5+WiSlTHoklf/WwslkNlAluxI6ypNg7xTAlb0/IJL
-BEq19jcei5TSrEK5J7Cek9lUyAy7C3Ep2BuEwCBrs4rezMgDVffvNVIRcmHgH6OQ
-MGPrfbxMmtifB2Wz7hdTUAKJlzRzsEDYDfGVnJd4ZuWuHrN274d4KGgmtCtn4r0r
-2sqGBFHEKsrGk6FpisXfsoIsyQQP5oM2UOgAZP0gH95I6FGMCzE=
-=LYwr
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSJDj4ACgkQKWCEk4dB
+O2BCoA//WPcJpQoGZwySOCT1I9HZ3z1f8NL6JPodoSZcm0IyPao7pR0OzOrgeSgH
+/Qjs3i9Blv0q+5jNEfypQU1n0f0WpS+MZtLtE2DRDowZVFOs0S37QDF2TTMTW35D
+QN3sPdq+c9vv8OkV0nNPJ4EXkHAYav0FoAo2Vz88Fhk3VBld+9jgV0R1+KcD0kDu
+lGNVutekidOpwR/UT0oypl8mmDbPSPPGEUFueeKZozEryehTioXeLvl4CQrIDq2J
+TdrMGfa/XsoyOf7hphW/WcDo99uOTNMElJ24YKC1/CENf6+vbDsxKDKNp1zkrSNh
+P+bZUudFusuuoDkmWcHFfeVvAwdlnxDA8UU9XszXTys5MCe5oFfNM7q2ALI0wz5l
+52pa+Y2V74VpoQo327XdM0BQxkjItqhBoD4bjKoXeITw94O6E9r4WbEiHj58mmUL
+ftysexx9tJyIUgKlN4smiYCcAUeft72VJitzsK5zQhoXoIv3ZG6qWxEmZij4C7+k
+Mb65Gnfvz7mpoWMjySNP+ha+rhmubMqRYNoW+phCFwVbrGkKHwY/ZJ/yQ3rWyZwt
+eJnzv7fyanvHUOwnLph3T/5c7UIyIp8S0ghy44zhlVGV1JE5Qua0e/fMtUBW44vf
+KGeghqeZpo/Tdicx8ilLBJn0ocwWJIVkei+g7d5j53+DUq4VCxY=
+=O0FP
 -----END PGP SIGNATURE-----
 -->

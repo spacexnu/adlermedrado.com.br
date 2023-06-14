@@ -54,8 +54,7 @@ Como faz? Após algumas pesquisas eu encontrei o projeto Satis, que pelo que pud
       <pubDate>Sun, 26 Sep 2010 20:23:35 -0300</pubDate>
       
       <guid>https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/</guid>
-      <description>Introdução
-Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e mais completa.
+      <description>Introdução Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e mais completa.
 A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas funcionalidades.
 Minha idéia é de escrever posts curtos e direto ao ponto.
 As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em nenhum outro local, apenas naquele momento específico.</description>

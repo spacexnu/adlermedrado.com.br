@@ -47,13 +47,12 @@ Hash: SHA256
                 <p>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.</p>
 <p>O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.</p>
 <p>Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
-Zend_Services_Flickr.</p>
+<strong>Zend_Services_Flickr</strong>.</p>
 <p>Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:</p>
 <p>Controller:</p>
-<pre><code>$flickr = new Zend_Service_Flickr(’MINHA_CHAVE_DO_FLICKR;
-$this-&gt;view-&gt;imgRes = $flickr-&gt;userSearch(’EMAIL_DO_USUARIO);
-</code></pre>
-<p>Na View, basta manipular o objeto <code>Zend_Services_Flickr_Resultset</code> e <code>Zend_Services_Flickr_Image</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$flickr <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Zend_Service_Flickr</span>(<span style="color:#a6e22e">’MINHA_CHAVE_DO_FLICKR</span>;
+</span></span><span style="display:flex;"><span>$this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">view</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">imgRes</span> <span style="color:#f92672">=</span> $flickr<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">userSearch</span>(<span style="color:#a6e22e">’EMAIL_DO_USUARIO</span>);
+</span></span></code></pre></div><p>Na View, basta manipular o objeto <strong>Zend_Services_Flickr_Resultset</strong> e <strong>Zend_Services_Flickr_Image</strong>.</p>
 <p>Simples demais!!!</p>
 <p>Abraço.</p>
 
@@ -88,18 +87,18 @@ $this-&gt;view-&gt;imgRes = $flickr-&gt;userSearch(’EMAIL_DO_USUARIO);
 <!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr9sACgkQKWCEk4dB
-O2Bj5w/9Fgz2OG5ikelXQqEhldjn85ZoVUJ+UIgavxW/eS+X4+7pa/UHuZ80goxS
-TZo6WFoHqB8CtKRm/FkNLEl23BmuX2r5bcPgxS9VjestMfyOKt9fgK9Kanb+RXRl
-ypH5pt3vlzgYGnayBBd3uyefy929i71bel6FkhIMpfoirNds84qD5Asbyg8rd7GE
-BrlhuqDyp4LbJ06tkGcUaHBLAhSxCXHhDDDO7CiiT2dnH7WZbxYSYYGr0I4uBf/p
-m+7q1IclOQn55dIjbWVuVa3KbOgmvDj+l3U4n19CZ3NHEnQNR1qDdyWbUTLuir8k
-jlC0bnwHWI6n+lhHvIi2j7Gey2NFojFajS0vDddMN6rMk5con2rK6vma8KU7uAWB
-AvWIVTU1J83LaSWhBOPD2fsBIm6tM0E2JR5zQRHeuZSzLaZWsZy0ihGHXYCFQ9n9
-68vWTsDkZ5KWcULS/HicrlQylC9n0hdTYwfurbPfWn2Rvf4zR7BsFkLZHa3PtLtM
-XtsmQdeqLpd6lW/OXc4aQH1MJxlB5ksvYsh0g5bSU8nQgw4rIgLzqsO6YxDWIPW/
-sONVnS9JdfIKAyPkfTMKJQRkBka9WBqtdrveQlkqNBN2Z1w+0mCWFSDj5PRhRqXx
-IoGJKYFYIzegGXABWUYb6yRVZhPmn3aIrLAMDnIp4oK/iHZTnhs=
-=QoMq
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSJDjoACgkQKWCEk4dB
+O2CFkQ//Zt4+y7TCqDXBqdqwE+/fflqimmxijBU/8RogNcoHqGPJjhNNgCs4GG4U
+ngRnmnyd5OCnXsuE4ugCXKxVG+xLV/SfKovT4Toina0DWQa6324l0wq73E4h39B5
+C8Z9iE0gpMMvN4lKyOB/qLa1y8iRxNjOi4uHrkmYPbXsO/AHs9PVccUpKJ2vHByg
+lmFX3Ktk5wmDWbm48PYy8l6Pur6GbgDTcOHc1Mb1GtBLceYWtGDJxt+9RSJm/1AA
+OWiA8Zk7/a5rcgXKqeMAGMXdmF5gLClwCkX7LY9+VnUVcApm7RLzGjwnRq4UpuGx
+6tNCtsVws36KOscyAVJODLSurh2TO8Necb2SlPQBqm/ieyGAkMS50gmciUNCXgGc
+jC3MRwUYMZiJ93Aks9X9/EmeJXfXQ32TqOY7sX249v4QJyBe/ScCMcGx2uus0aEX
+oyimsQDZEpJ6pE2NL09w9kQymByRuRov9avTx+w1g16tRtH5JQntzxn0e0wfTBt1
+F6peoqTQFbqlBSRt1cFlRGMmYgfjbjEhc8g1ij2ZiY4CqGiP/UXTqaIf4bUiftkF
+ttyXcx0iVEc/xD8pAYtVOC6ivlvHwEnf5kO1VpzUIY7Z2WvbsvLgXUeFxu81Wer7
+2l79qsr83mjBggR5xG2/nInDu4PCZvO8Flzy7d9lXzok0n4DnJ0=
+=FtbM
 -----END PGP SIGNATURE-----
 -->

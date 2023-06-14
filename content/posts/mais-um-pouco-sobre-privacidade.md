@@ -62,14 +62,14 @@ A primeira opção, que eu gosto de usar pela simplicidade é o [Whonix](https:/
 consiste em duas máquinas virtuais [Virtualbox](http://www.virtualbox.org) sendo uma um gateway baseado em TOR e a
 outra, chamada de workstation que é usada para navegar na internet. Segundo o site oficial:
 
-    Whonix is an operating system focused on anonymity, privacy and security.  
-    It’s based on the Tor anonymity network, Debian GNU/Linux and security by  
-    isolation. DNS leaks are impossible, and not even malware with root  
-    privileges can find out the user’s real IP.
+**Whonix is an operating system focused on anonymity, privacy and security.  
+It’s based on the Tor anonymity network, Debian GNU/Linux and security by  
+isolation. DNS leaks are impossible, and not even malware with root  
+privileges can find out the user’s real IP.**
 
-    Whonix consists of two parts: One solely runs Tor and acts as a gateway,  
-    which we call Whonix-Gateway. The other, which we call Whonix-Workstation,  
-    is on a completely isolated network. Only connections through Tor are possible.
+**Whonix consists of two parts: One solely runs Tor and acts as a gateway,  
+which we call Whonix-Gateway. The other, which we call Whonix-Workstation,  
+is on a completely isolated network. Only connections through Tor are possible.**
 
 Usando o whonix é garantido que a conexão passa somente pelo TOR o que garante um nível maior de privacidade, claro que
 se uma pessoa usar este aparato e acessar o Facebook e postar algo comprometedor, não adiantará nada, afinal de contas,

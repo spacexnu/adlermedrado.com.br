@@ -57,20 +57,20 @@ em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações
 a <a href="/posts/introducao-a-criptografia-parte-1">primeira</a> e
 a <a href="/posts/introducao-a-criptografia-parte-2">segunda</a> antes.</p>
 <h3 id="instalação-do-gnupghttpswwwgnupgorg">Instalação do <a href="https://www.gnupg.org/">GnuPG</a>.</h3>
-<h4 id="gnulinux">Gnu/Linux</h4>
+<h3 id="gnulinux">Gnu/Linux</h3>
 <p>Normalmente o GnuPG já vem instalado, mas certifique-se disso executando o comando em seu shell:</p>
 <p>adler@adler: ~ $ gpg — version</p>
 <p>Se o resultado não for semelhante ao exemplo abaixo, provavelmente você precisará fazer a instalação, neste caso, por
 não existir uniformidade entre os gerenciadores de pacotes das distribuições, aconselho você a procurar a documentação
 de sua distribuição:</p>
-<p>gpg ( GnuPG ) 1.4.16<br>
-Copyright ( C ) 2013 Free Software Foundation , Inc .<br>
-License GPLv3 +: GNU GPL version 3 or later &lt; http: / / gnu .org / licenses / gpl .html &gt;<br>
-This is free software: you are free to change and redistribute it .<br>
-There is NO WARRANTY , to the extent permitted by law .</p>
-<h4 id="darwin--mac-os-x">Darwin / Mac OS X</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gpg <span style="color:#f92672">(</span> GnuPG <span style="color:#f92672">)</span> 1.4.16  
+</span></span><span style="display:flex;"><span>Copyright <span style="color:#f92672">(</span> C <span style="color:#f92672">)</span> <span style="color:#ae81ff">2013</span> Free Software Foundation , Inc .  
+</span></span><span style="display:flex;"><span>License GPLv3 +: GNU GPL version <span style="color:#ae81ff">3</span> or later &lt; http: / / gnu .org / licenses / gpl .html &gt;  
+</span></span><span style="display:flex;"><span>This is free software: you are free to change and redistribute it .  
+</span></span><span style="display:flex;"><span>There is NO WARRANTY , to the extent permitted by law .
+</span></span></code></pre></div><h3 id="darwin--mac-os-x">Darwin / Mac OS X</h3>
 <p>Quando eu usava Mac eu instalava o <a href="https://gpgtools.org/">GPGTools</a> e a instalação também é bem tranquila.</p>
-<h4 id="windows">Windows</h4>
+<h3 id="windows">Windows</h3>
 <p>No Windows é necessário fazer o download do <a href="http://www.gpg4win.org/">GPG4Win</a>, eu sempre faço o download do pacote
 completo.</p>
 <p>A instalação em ambiente Windows é aquela de sempre: <em>next, next, next, finish</em>,<br>
@@ -81,7 +81,7 @@ do <a href="https://www.mozilla.org/pt-BR/thunderbird/">Thunderbird</a>, o passo
 também.</p>
 <p>É importante lembrar que existem outros clientes de e-mail que suportam o GnuPG, mas o único multiplataforma e
 open-source que conheço que seja fácil de usar é o Thunderbird.</p>
-<h4 id="instalação-do-thunderbird">Instalação do Thunderbird</h4>
+<h3 id="instalação-do-thunderbird">Instalação do Thunderbird</h3>
 <p>Eu não mostrarei os passos para fazer a instalação do Thunderbird aqui, ao invés disso siga as instruções da
 documentação oficial do Thunderbird para cada plataforma através dos links abaixo, é bem simples:</p>
 <ul>
@@ -94,7 +94,7 @@ documentação oficial do Thunderbird para cada plataforma através dos links ab
 o <a href="https://support.mozilla.org/pt-BR/kb/configuracao-automatica-de-conta">Thunderbird irá configur facilmente o seu e-mail para uso nele</a>,
 se não for o caso, a empresa que te presta serviço de e-mail poderá auxiliá-lo na configuração.</p>
 </blockquote>
-<h4 id="instalação-do-enigmail">Instalação do Enigmail</h4>
+<h3 id="instalação-do-enigmail">Instalação do Enigmail</h3>
 <p>O <a href="https://www.enigmail.net/home/index.php">Enigmail</a> é um complemento para o thunderbird que permite fazer a integração
 entre ele e o GnuPG. Com ele é possível enviar e-mails criptografamos diretamente pelo cliente de e-mail sem precisar
 fazer dois procedimentos distintos (criptografar um arquivo e posteriormente anexá-lo a um e-mail).</p>
@@ -106,7 +106,7 @@ primeira posição dos resultados com o nome: <strong>Enigmail 1.7.2</strong>, s
 clicando no botão <strong>Instalar</strong>.</p>
 <p>Quando a instalação terminar, reinicie o Thunderbird e ao reinicia-lo, quando for solicitado informe que você não quer
 usar o <em>wizard</em>.</p>
-<h4 id="criando-seu-primeiro-par-de-chaves">Criando seu primeiro par de chaves</h4>
+<h3 id="criando-seu-primeiro-par-de-chaves">Criando seu primeiro par de chaves</h3>
 <p>Agora que o ambiente está configurado, está na hora de criar seu primeiro par de chaves.</p>
 <p>Selecione o menu (o mesmo do screenshot acima) e em seguida a opção Enigmail, depois selecione a opção <strong>Gerenciamento
 de Chaves OpenPGP</strong>.</p>
@@ -139,12 +139,12 @@ chave não é mais segura.</p>
 <p>Eu mostrarei daqui a pouco que as chaves públicas podem ser enviadas para um <em>servidor de chaves</em>, neste caso quando é
 feita a revogação os servidores de chave são atualizados e esta informação é propagada para todos.</p>
 <p>Vamos continuar, confirme a criação do certificado de revogação e depois guarde-o em um local seguro.</p>
-<h4 id="enviando-as-chaves-para-um-servidor">Enviando as chaves para um servidor</h4>
+<h3 id="enviando-as-chaves-para-um-servidor">Enviando as chaves para um servidor</h3>
 <p>Como eu falei anteriormente, as chaves podem ser enviadas para servidores de chaves. Existem diversos desses servidores
 espalhados pela internet e normalmente eles fazem uma sincronização entre si, portanto basicamente se você enviar sua
 chave para um servidor, em breve ela estará replicada nos demais (pelo menos nos principais, mais famosos).</p>
 <p><strong>Somente sua chave pública vai para o servidor, a sua chave privada é responsabilidade sua protegê-la.</strong></p>
-<h4 id="mas-por-que-enviar-a-chave-pública-para-um-servidor">Mas por que enviar a chave pública para um servidor?</h4>
+<h3 id="mas-por-que-enviar-a-chave-pública-para-um-servidor">Mas por que enviar a chave pública para um servidor?</h3>
 <p>A resposta é simples: Para ficar mais fácil de você ser encontrado.</p>
 <p>Como normalmente a chave está associada a um endereço de e-mail, se alguém quiser te enviar algo criptografado mas não
 sabe qual é sua chave pública, basta essa pessoa pesquisar pelo seu e-mail em um servidor de chaves para poder
@@ -153,7 +153,7 @@ encontrá-la.</p>
 <p>Na tela de gerenciamento de chaves, clique com o botão direito em cima do seu endereço de e-mail, em seguida clique em *
 <em>Enviar chaves públicas para servidor de chaves</em>*.</p>
 <p>Pronto. ?</p>
-<h4 id="que-tal-enviar-um-e-mail-criptografado-para-testar">Que tal enviar um e-mail criptografado para testar?</h4>
+<h3 id="que-tal-enviar-um-e-mail-criptografado-para-testar">Que tal enviar um e-mail criptografado para testar?</h3>
 <p><strong>Primeiramente, importe a minha chave pública.</strong></p>
 <p>Abra a tela de gerenciamento de chaves e selecione a opção <strong>Servidor de Chaves</strong> no menu, em seguida selecione a opção
 <strong>Procurar por chaves</strong>,<br>
@@ -163,7 +163,7 @@ importância deles), ignore todas as chaves com exceção daquela que tem o ID <
 clicando em OK.</p>
 <p>Você verá que após esse procedimento o meu e-mail e as chaves associadas a ele<br>
 estarão na lista de chaves, junto com a sua.</p>
-<h4 id="enviando-o-e-mail-criptografado">Enviando o e-mail criptografado</h4>
+<h3 id="enviando-o-e-mail-criptografado">Enviando o e-mail criptografado</h3>
 <p>Agora que as chaves estão criadas e você já importou a minha para poder me enviar um e-mail, vamos testar se tudo está
 OK.</p>
 <ul>
@@ -179,7 +179,7 @@ OK.</p>
 <p>Se for mostrada uma mensagem falando sobre o formato HTML, etc., ignore-a pois é apenas um aviso que o conteúdo pode
 perder formatação após a encriptação.</p>
 <p><strong>Se tudo correr bem</strong>, eu receberei um e-mail seu e o responderei avisando que recebi OK.</p>
-<h4 id="considerações-finais">Considerações finais</h4>
+<h3 id="considerações-finais">Considerações finais</h3>
 <p>Na próxima parte eu mostrarei como criptografar arquivos e também como usar um plugin para Firefox e Google Chrome que
 permite realizar estes mesmos passos diretamente no Gmail e outros webmails.</p>
 <p>Eu espero ter sido claro, eu tentei ser o menos técnico possível mas caso tenha ficado alguma dúvida, envie um
@@ -216,18 +216,18 @@ comentário que eu tentarei ajuda-lo.</p>
 <!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr+MACgkQKWCEk4dB
-O2CVEg//eu8a7cxBmCQ1/SKdVS7bGzaq7n3I4GA20t9tGJ8iBIekXj+7ezq/M/mb
-TugP+spA5c0XgYOkcMRVl19KeaVNbHpPJNbEC4te+sIFeVVKUe2+loX0Y58F5QPB
-ZuH0ky14/DwaS0gOJwHwLRiuIbvscK9bMJFI1ww+ueO0HcwOvFmeWLJ9IscH5VAG
-LE3mF594zhpslA/HlErht4wSHWt3r/kBopiOL7tZQIfImg+RRaxntQysFaDFZxDW
-0EzEFtZRCrRU9YMOT4MU/sF9I4/jaqto09WHUGcBxcxsMPE8zFgiiojdnx0lgBwV
-+HEtLKA4jT77BF7V5dPfmJvyVFndgcuhzzSjBdL0wZ7EwHdGwFGrzEyQnx80ZRA7
-QIbgLMwD+MXfo01yuKnG4t8WtZFioq/eyK1FVIdy3KwMqKZe+ABAYvQEZTa/cnbh
-9quf9T4mF0PBXgvq9hRd1PDIH+FHDFRiFTaPt8Gl+US9NPhctcR884LP9fRnK1We
-bOfkeTYMRURYaLwwKceUlFHraCh6OpDm7weCjqkPewc8w26rWIfWXVieX8aaa75H
-YmYg2h9PlWione6eadVGtOCT8o9/Ay7h2HzYYq6bMnkU3WNgfsMyD86Hml223x9u
-G9kY8PzQukzi71Km2I+RkkDdE5e+yi+ZaFCTcploTkFABs+qovA=
-=KbEH
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSJDkIACgkQKWCEk4dB
+O2DECQ//RZVQ+96uuWxvOhz1UfAN0hStWU5FIkbgRBvuhK1OA/NyB0lv0/idan+c
+Jm/HuwbC8fRpk8U87Np4CuUuxiV7fXu15SB38FEmG1O0u9SEuzmvwEQQ1ofs/Yhg
+VLSSbJ+XKIdX8pzTgWtu1avMcpm80/8ddoOssujvUH0dkRZWA5k4pPTxTaizu9mj
+/mlUpg6loiP6KQlGxq4g11Cwi2Aq81srP4WVt/VFYzk5Lhtq92MAlOdcEKhL3cGD
+wwwJa/ao1Le18AvVPOyL7gqapkiRRliX1w/D9c9F4pXQVCADxoqn4PnXRo3dB9xS
+eAjkEc7mRxbOmogz3kvyq2nEno6kLaKmPjTxRoW6LA3xMmvVj0rY8P9VDRI9Eba0
+H1tAkFpH4TtHuUEjbU8EjkaRemprd94XLR5YsMAriI7ehsijhhdoCGQh+S8Suwgo
+24b3w6MS0HA5v7Iw9wuE1afHJ41oJcy5wGOzhSlqx6qFJUkWzd6SqJ8Tkx4NFByl
+zawOH59NjpfvEDgccT5jcq3XJEEnTKus09iEASIBZcZnw0AVUdogDi0wxWIae6la
+UMP+yTS6970yBQ1mabOAAH7LceJ+g2S2Qd/nscgyHaZsbjyie6koqGE6kTAleu5r
+Wg9g/mxyPutp0CUNcjvzs52PMXIS264OyesN6uxp9x2FSSYci2c=
+=8sH0
 -----END PGP SIGNATURE-----
 -->

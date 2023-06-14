@@ -50,7 +50,7 @@ beneficiar ao máximo de algo sem precisar fazer muito esforço.
 O mais preocupante é que se uma pessoa se orgulha de ter trabalhado e conseguido fazer bastante dinheiro (apenas um
 exemplo) ela logo é taxada de diversas coisas, principalmente se ela mostrar que é bem sucedida e tem dinheiro.
 
-    O Brasil me lembra aquele planeta quadrado dos quadrinhos antigos do Super-Homem, onde tudo é simetricamente ao contrário do que o planeta Terra é.
+**O Brasil me lembra aquele planeta quadrado dos quadrinhos antigos do Super-Homem, onde tudo é simetricamente ao contrário do que o planeta Terra é.**
 
 Aqui, bandido é um coitado (claro, ele não teve oportunidade na vida), prostituta vira ícone da mídia e a categoria
 ganha incentivo do governo para fazer curso de inglês, afinal, elas não tem essa vida por que querem, coitadinhas,

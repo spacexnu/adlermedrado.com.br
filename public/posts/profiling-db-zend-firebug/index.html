@@ -47,43 +47,40 @@ Hash: SHA256
                 <p>Se você usa o Zend Framework já percebeu que não é muito trivial obter as queries executadas no banco de dados e isso é
 algo comum no dia-a-dia de um desenvolvedor pois com elas nós podemos corrigir bugs e determinar pontos de lentidão e
 etc.</p>
-<p>O Zend Framework possui um componente chamado <code>Zend_Db_Profiler</code> que nos permite realizar o profiling dos acessos ao banco
+<p>O Zend Framework possui um componente chamado <em>Zend_Db_Profiler</em> que nos permite realizar o profiling dos acessos ao banco
 mas na minha opinião ele sozinho é muito chato de usar então eu utilizo ele em conjunto com o componente
-<code>Zend_Db_Profiler_Firebug</code> e é isso que vou mostrar a você como se faz.</p>
+<em>Zend_Db_Profiler_Firebug</em> e é isso que vou mostrar a você como se faz.</p>
 <p>Primeiramente, você deve ter os complementos do Firefox Firebug e FirePHP instalados, ou seja, só é possível usar este
 recurso com o Firefox o que não deve ser um problema pois a maioria dos desenvolvedores utilizam ele não é mesmo?</p>
 <p>Beleza, agora vamos dizer à nossa aplicação que iremos usar este recurso. O primeiro passo é abrir a conexão em nosso
 bootstrapper mais ou menos como o código abaixo.</p>
-<p>A propósito, estou levando em consideração que você já saiba usar o <code>Zend_Config_Ini</code> para guardar configurações do
+<p>A propósito, estou levando em consideração que você já saiba usar o <em>Zend_Config_Ini</em> para guardar configurações do
 sistema, entre elas, de acesso ao banco de dados.</p>
 <p>Vamos lá:</p>
-<pre><code>// Get the configuration
-$pathConfig = 'conf' . DIRECTORY_SEPARATOR;
-$config = new Zend_Config_Ini($pathConfig . 'config.ini', 'development');
-
-// Opening connection
-$db = Zend_Db::factory($config-&gt;database-&gt;adapter, $_arrDbConnection['database']);
-Zend_Registry::set('db', $db);
-Zend_Db_Table::setDefaultAdapter($db);
-</code></pre>
-<p>Com o código acima nós abrimos o arquivo de configuração, convertemos em objeto (<code>Zend_Config_Ini</code>), abrimos a conexão com
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// Get the configuration
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$pathConfig <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;conf&#39;</span> <span style="color:#f92672">.</span> <span style="color:#a6e22e">DIRECTORY_SEPARATOR</span>;
+</span></span><span style="display:flex;"><span>$config <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Zend_Config_Ini</span>($pathConfig <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;config.ini&#39;</span>, <span style="color:#e6db74">&#39;development&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Opening connection
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$db <span style="color:#f92672">=</span> <span style="color:#a6e22e">Zend_Db</span><span style="color:#f92672">::</span><span style="color:#a6e22e">factory</span>($config<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">database</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">adapter</span>, $_arrDbConnection[<span style="color:#e6db74">&#39;database&#39;</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Zend_Registry</span><span style="color:#f92672">::</span><span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;db&#39;</span>, $db);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Zend_Db_Table</span><span style="color:#f92672">::</span><span style="color:#a6e22e">setDefaultAdapter</span>($db);
+</span></span></code></pre></div><p>Com o código acima nós abrimos o arquivo de configuração, convertemos em objeto (<code>Zend_Config_Ini</code>), abrimos a conexão com
 o banco de dados e o associamos como adapter padrão às classes derivadas de Zend_Db_Table.</p>
 <p>Agora para configurarmos o profiler basta fazer o seguinte:</p>
-<pre><code>// Configuring Profiler
-$profiler = new Zend_Db_Profiler_Firebug('db-profiling');
-$profiler-&gt;setEnabled($config-&gt;firebug-&gt;profiler-&gt;enabled);
-$db-&gt;setProfiler($profiler);
-</code></pre>
-<p>Pronto.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// Configuring Profiler
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$profiler <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Zend_Db_Profiler_Firebug</span>(<span style="color:#e6db74">&#39;db-profiling&#39;</span>);
+</span></span><span style="display:flex;"><span>$profiler<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setEnabled</span>($config<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">firebug</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">profiler</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">enabled</span>);
+</span></span><span style="display:flex;"><span>$db<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setProfiler</span>($profiler);
+</span></span></code></pre></div><p>Pronto.</p>
 <p>Se você observar o código acima, poderá ver que estou determinando a configuração do Profiler no arquivo INI de
 configuração também, mas caso você não queira fazer desta forma basta passar true como parâmetro do método <code>setEnabled()</code>
 do objeto de profiler, por exemplo:</p>
-<pre><code>// Configuring Profiler
-$profiler = new Zend_Db_Profiler_Firebug('db-profiling');
-$profiler-&gt;setEnabled(true);
-$db-&gt;setProfiler($profiler);
-</code></pre>
-<p>Agora ao executar qualquer comando no banco de dados as informações serão mostradas no console do firebug. Veja o
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">// Configuring Profiler
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$profiler <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Zend_Db_Profiler_Firebug</span>(<span style="color:#e6db74">&#39;db-profiling&#39;</span>);
+</span></span><span style="display:flex;"><span>$profiler<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setEnabled</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>$db<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setProfiler</span>($profiler);
+</span></span></code></pre></div><p>Agora ao executar qualquer comando no banco de dados as informações serão mostradas no console do firebug. Veja o
 screenshot abaixo:</p>
 <p>Muito simples, não é? O que você achou? Deixe seu comentário.</p>
 
@@ -118,18 +115,18 @@ screenshot abaixo:</p>
 <!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSHr+wACgkQKWCEk4dB
-O2DVBQ//QX+Nv4Psb/ss0WcvI6m/OitHp4CqvYl9e7lCRgJjc5CRlI6DZOOUWYrB
-GQAyjULsvCVO62Ua678CwPC2Cclgnn5aENd2FO4ThbAnEBD3ZNRnJ0CLv177Qbml
-KBDMmXrLqFMQEpiS3URFdic8dXObAu7/9GmUOO37U+KpcrKgQIX1rAnRObe2yi71
-2ZQUxLx4Jz4Sve3pfhHEJJQuvAJfV+akHVTa8LP/vmER+s16Dif66tbKrCCaWyNB
-b+RasjZoA1KkAMnJZj1tLG4tXPq3B4QnFVgSFavNoW0xDwBxY75l6YFbF4j2/y77
-u/1Mu3Dqy0GhCrolOMuG4MMCAZt2UiYV55b3vYuJhdK3kGsAzY3C8EAXc9WHAfTQ
-2frorE88CicI/eLBmDgrT3P6+AgGs5Mo7R2QXkc5B2etHMTPnBgH6IH6+J8HRlfG
-Jt96McB97HflInHdxCoWuXxnf5aZFZCKzw6iCsY6w74vMjM5wgyr6WK9G0bjgUfe
-PE2hp+bQcPg9OZ7nc/tjeaLbZghzjlD4NEMy+YNfm0UZLfJ+QUWMwmzpdVOrx09Y
-6ALgB3oyhNktXCw1/l0ydvUXmmiqbUohjuAfGzYfm4QDWyxAaNjQsFLPfGEUlxKS
-rTOvDzfayRbXgWdML6WAGbHA/mz0hl4vKFfEvD6o5Zj6erv5IXU=
-=WiTG
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmSJDksACgkQKWCEk4dB
+O2AEBxAAgFnrdtql8UcGpOQqvtXUKHKROPYSw6rtCAX9p0AXGY+2VVuh/JGVogyR
+E00P/W1e8y94tC4EFWit3FqWNJKwFGzqRfa5MptYzYb6EgXui9VVQbMSCbIcYwu3
+3S0/Un+7m1dWN8xHadkgaUe2KGTpllbd3g4Vefujj56MKvvOz1qytRoYJNzsGSux
+OZdjZejzYb7P3AZn3B4BMd1W+bDiP595r1ciAezi/JuGBRgKChVc6RRmCAcYb8S8
+Dw1OTzzKG9dvlnR6zs3Y6CabShLTdHY4XRahbbGb5UAn4n3pcsbc7Uz3chHloKeq
+MpgPHXjSH8mvMoJMb99n4jk/bTGmT5V/KgDXix+2QAMfN4U14Fomrt+pyTlcx4/v
+/fEzzwc/bDYBsIMF4mCvJzfGzBzdmncDy2ewc6hwTECk77t2GHm7j2+XU3BDh5tD
+rTdLg/wIkIEeuRR1b1PtHePi9/4uBQfbdVXrIvuxvsAf2YUeyY4rPZO0wSbL8mkk
+wHRZ9RMESy807eo30L1lIUblYjWo5icf6hdyv5dVPgVCxfJsXVILH2VfB6CJic3b
+jXVGb3m2fbHJ1MDZGf4dwbSa2y05TXNRQXbBkxERoRyGaNPqKy9uO7nA2Id8d7JK
+RW2L4MSrXZ+OVxwmfQc196vhtTA+gOdAXEknVSfcvfo36hsUxIQ=
+=LEFq
 -----END PGP SIGNATURE-----
 -->

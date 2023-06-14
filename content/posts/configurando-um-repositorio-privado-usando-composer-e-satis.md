@@ -27,29 +27,31 @@ Se ainda não o tiver feito, [(aprenda como)](https://getcomposer.org/doc/00-int
 
 Crie um projeto usando o composer, basta rodar o seguinte comando no terminal:
 
-`php composer.phar create-project composer/satis --stability=dev --keep-vcs`
-
+```bash
+php composer.phar create-project composer/satis --stability=dev --keep-vcs
+```
 #### Configure-o para prover o acesso ao seu repositório privado
 
 A primeira coisa que deve ser feita é criar um arquivo chamado satis.json no  
-root do projeto que foi criado acima, segue um exemplo deste arqvivo:
+root do projeto que foi criado acima, segue um exemplo deste arquivo:
 
-    {  
-        "name": "Repositório Local",  
-        "homepage": "http://localhost:8888",  
-        "archive": {  
-                "skip-dev": true  
-        },  
-        "repositories": [  
-            { "type": "vcs", "url": "https://url-para-seu-repositorio-git/nome-do-seu-repositorio.git" }  
-        ],  
-        "require": {  
-            "seu-pacote/sua-lib": "\*"  
-        }  
-    }
-
+```json
+{  
+    "name": "Repositório Local",  
+    "homepage": "http://localhost:8888",  
+    "archive": {  
+            "skip-dev": true  
+    },  
+    "repositories": [  
+        { "type": "vcs", "url": "https://url-para-seu-repositorio-git/nome-do-seu-repositorio.git" }  
+    ],  
+    "require": {  
+        "seu-pacote/sua-lib": "\*"  
+    }  
+}
+```
 Como pode ser observado acima, eu configuro com o repositório que eu quero disponibilizar, se precisar colocar mais do
-que um repositório basta adicionar woutro elemento no array _repositories_.
+que um repositório basta adicionar outro elemento no array _repositories_.
 
 Em seguida, informe o nome do seu pacote/library e qual versão deseja usar.
 
@@ -60,12 +62,14 @@ URL diferente de localhost sem problemas.
 
 Execute o comando abaixo sempre que houver mudanças no seu repositório:
 
-    php bin/satis build <configuration file> <build dir>
-
+```bash
+php bin/satis build <configuration file> <build dir>
+```
 Por exemplo, eu rodei assim:
 
-    php bin/satis build satis.json repo
-
+```bash
+php bin/satis build satis.json repo
+```
 O diretório repo será usado para disponibilizar os fontes do repositório privado.
 
 #### Disponibilize o repositório
@@ -73,22 +77,24 @@ O diretório repo será usado para disponibilizar os fontes do repositório priv
 Você pode criar um virtual host apontando para o diretório _repo_, mas dependendo do caso, usar o webserver embutido no
 CLI do PHP:
 
-    php -S 0.0.0.0:8888 -t repo
-
+```bash
+php -S 0.0.0.0:8888 -t repo
+```
 Após rodar o comando acima (ou configurar um virtual host), acesse: [**http://localhost:8888**](http://localhost:8888)
 
 Se for mostrada uma tela com os repositórios que você configurou eles poderão ser usados adicionando no composer.json do
 seu projeto:
-
-    "repositories": [  
-        {  
-          "type": "composer",  
-          "url": "http://localhost:8888"  
-        }  
-      ],  
-      "require": {  
-        "seu-pacote/sua-lib": "dev-master"  
-      }
+```json
+"repositories": [  
+    {  
+      "type": "composer",  
+      "url": "http://localhost:8888"  
+    }  
+  ],  
+  "require": {  
+    "seu-pacote/sua-lib": "dev-master"  
+  }
+```
 
 #### Conclusão
 

@@ -28,30 +28,34 @@ a partir daí basta se familiarizar com os cmdlets específicos para esta integr
 
 O passo seguinte é importar o módulo MSOnline para obter acesso aos cmdlets instalados anteriormente:
 
-    Import-Module MSOnline
-
+```shell
+Import-Module MSOnline
+```
 Em seguida é necessário obter as credenciais de acesso ao serviço:
 
-    $credenciais = Get-Credential
-
+```bash
+$credenciais = Get-Credential
+```
 O comando acima irá mostrar uma tela nativa do Windows solicitando um nome de usuário e senha.
 
 O problema desta abordagem é que se houver a necessidade de colocar este script  
 no agendador de tarefas ele não irá funcionar, neste caso será necessário  
 configura-lo para uso em modo não-interativo, conforme o código a seguir:
 
-    Import-Module MSOnline  
-    $password = "avidaebelaagenteequefodeela"  
-    $securePassword = $password | ConvertTo-SecureString -AsPlainText -Force  
-    $UserName = "username@domain"  
-    $Credentials = New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
-    Connect-MsolService -Credential $Credentials
+```bash
+Import-Module MSOnline  
+$password = "avidaebelaagenteequefodeela"  
+$securePassword = $password | ConvertTo-SecureString -AsPlainText -Force  
+$UserName = "username@domain"  
+$Credentials = New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
+Connect-MsolService -Credential $Credentials
+```
 
-Desta maneira o script converterá as credenciais de acesso, que estão hardcoded,  
-e converterá em um objeto *Automation.PSCredential* .
+Desta maneira o script converterá as credenciais de acesso, que estão hardcoded, e converterá em um objeto
+*Automation.PSCredential*.
 
-É importante frisar que nesta abordagem a segurança é menor, pois a senha fica  
-explícita no código, o que significa que ela estará exposta a qualquer um com acesso ao código.
+É importante frisar que nesta abordagem a segurança é menor, pois a senha fica explícita no código, o que significa que
+ela estará exposta a qualquer um com acesso ao código.
 
 Durante a transação esses dados ficam criptografados no objeto Automation.PSCredential.
 
@@ -61,13 +65,12 @@ Com esses passos o seu script powershell estará apto a se autenticar na nuvem d
 
 Segue agora o código completo:
 
-    Import-Module MSOnline  
-    $password = "huehuebrbr"  
-    $securePassword = $password | ConvertTo-SecureString -AsPlainText -Force  
-    $UserName = "username@domain"  
-    $Credentials = New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
-    Connect-MsolService -Credential $Credentials
-
-Espero ter a oportunidade de em breve poder explorar mais funcionalidades como  
-criar, excluir e alterar usuários, por exemplo, e também espero que este post  
-tenha sido útil.
+```bash
+Import-Module MSOnline  
+$password = "huehuebrbr"  
+$securePassword = $password | ConvertTo-SecureString -AsPlainText -Force  
+$UserName = "username@domain"  
+$Credentials = New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
+Connect-MsolService -Credential $Credentials
+```
+Espero ter a oportunidade de em breve poder explorar mais funcionalidades como criar, excluir e alterar usuários, por exemplo, e também espero que este post tenha sido útil.

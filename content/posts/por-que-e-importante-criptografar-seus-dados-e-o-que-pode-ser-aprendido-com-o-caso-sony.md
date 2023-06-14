@@ -15,7 +15,7 @@ seguro social de funcionários da empresa, incluindo celebridades.
 Não vou falar muito sobre o caso em si porque uma simples busca fornece tudo com detalhes a respeito do ataque, eu quero
 apenas aproveitar a ocasião para perguntar: **Será que dados sigilosos como esses estavam descriptografados?**
 
-#### Parece amadorismo
+### Parece amadorismo
 
 Eu posso estar enganado, mas eu sou livre para pensar: **Acho que eles foram amadores e deixavam tudo descriptografado
 **.
@@ -27,7 +27,7 @@ Conversando na lista do [Área 31 Hackerspace](http://area31.net.br), um colega 
   mesmos certificados estão revogados desde 2013 por causa das invasões.
 - Quem deu os nomes dos servidores e o range da rede?
 
-#### Adotar o uso sistemático de criptografia poderia diminuir os prejuízos
+### Adotar o uso sistemático de criptografia poderia diminuir os prejuízos
 
 Eu não conheço nada da infra-estrutura deles, mas mesmo com o meu modesto jeito de ser eu arrisco a dizer que o simples
 e sistemático uso de [OpenPGP](http://pt.wikipedia.org/wiki/OpenPGP) poderia ter evitado o estrago que essas invasões
@@ -38,7 +38,7 @@ entre si.
 Utilizar volumes criptografados para guardar as informações sigilosas também é algo que poderia ser considerado para
 evitar vazamentos em caso de invasão.
 
-#### Resumindo…
+### Resumindo…
 
 A falta de cuidado da Sony custará caro, que este caso fique como uma lição aprendida e as empresas passem a levar a
 sério o uso da criptografia em seu dia-a-dia, não apenas as empresas grandes, mas qualquer empresa hoje em dia está

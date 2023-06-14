@@ -25,7 +25,7 @@ Na verdade eu até tentei resolver o problema do bundle do Ctags mas não conseg
 estava em formato binário e apesar de ser um bundle open-source, os fontes para este binário, _que é parte crucial do
 bundle_, estavam indisponíveis.
 
-#### Atom
+### Atom
 
 Apesar de meu primeiro contato com o Atom não ter sido agradável, eu resolvi dar uma nova chance a ele, me lembro que a
 impressão que tive quando o usei pela primeira vez era a de que ele era um _mastodonte_ de tão lento e tinha um tracking
@@ -86,7 +86,7 @@ Melhora o suporte ao Markdown do Atom.
 Além dos _packages_ que ele já tem, o visual dele é bem melhor, a quantidade de temas disponíveis é muito grande e
 sinceramente, é agradavel trabalhar usando uma ferramenta tão bonita:).
 
-#### O que eu sinto falta
+### O que eu sinto falta
 
 - rmate
 
@@ -99,7 +99,7 @@ Apesar de não estar usando mais wordpress, este era um bundle excelente que per
 mecanismos de blogging, usando somente o Textmate. Não uso mais para meu site pessoal, mas tenho clientes que usam e ele
 me quebrava um galho, mas como no exemplo anterior, eu consigo viver sem isso.
 
-#### Por que não usar o Sublime Text?
+### Por que não usar o Sublime Text?
 
 Simples, apesar se ele ser excelente, afinal é uma cópia turbinada do Textmate, ele vai, em minha opinião, sofrer do
 mesmo mal que o Textmate e pelos mesmos motivos: O desenvolvimento dele é artesanal, está na mão de poucos
@@ -114,7 +114,7 @@ usuários e tentarem reverter a situação e tornarem o projeto open-source, ser
 
 Posso estar errado, mas o cenário é o mesmo e tem todos os requisitos para que a história se repita.
 
-#### Considerações finais
+### Considerações finais
 
 O Atom ainda tem deficiências, ele é mais lento que o Sublime e Textmate, ele as vezes ainda sofre alguns crashes, mas
 pelo que tenho usado eu estou gostando e se levarmos em consideração que ele já é open-source, a comunidade dele é

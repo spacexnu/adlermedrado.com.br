@@ -536,8 +536,7 @@ Os motivos são vários, mas o principal é que quero manter a integridade do me
       <pubDate>Sun, 26 Sep 2010 20:23:35 -0300</pubDate>
       
       <guid>https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/</guid>
-      <description>Introdução
-Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e mais completa.
+      <description>Introdução Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e mais completa.
 A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas funcionalidades.
 Minha idéia é de escrever posts curtos e direto ao ponto.
 As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em nenhum outro local, apenas naquele momento específico.</description>
@@ -696,8 +695,7 @@ Zend Framework</description>
       <guid>https://adlermedrado.com.br/posts/mudancas-no-zend-loader/</guid>
       <description>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o autoload.
 Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:
-Zend_Loader::registerAutoload();
-Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não receba um notice nas versões atuais.</description>
+Zend_Loader::registerAutoload(); Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não receba um notice nas versões atuais.</description>
     </item>
     
     <item>
@@ -1019,7 +1017,13 @@ Um blog tão movimentado atrai espécimes indesejáveis e isso não foi diferent
       
       <guid>https://adlermedrado.com.br/posts/otimizando-o-firefox/</guid>
       <description>Para otimizar o firefox, siga os passos abaixo:
-1 - Abra o Firefox 2 - digite na linha do endereço : about:config 3 - Clique com o botão direito, new / boolean. 4 - Abrirá uma caixa de diálogo. 5 - Coloque o nome da propriedade: config.trim_on_minimize 6 - Escolher o valor True. Conforme o autor, o consumo de memória era 62Mb sendo reduzido para 18 MB.
+1 - Abra o Firefox
+2 - digite na linha do endereço : about:config
+3 - Clique com o botão direito, new / boolean.
+4 - Abrirá uma caixa de diálogo.
+5 - Coloque o nome da propriedade: config.trim_on_minimize
+6 - Escolher o valor True.
+Conforme o autor, o consumo de memória era 62Mb sendo reduzido para 18 MB.
 Eu vi essa dica aqui</description>
     </item>
     
@@ -1030,8 +1034,7 @@ Eu vi essa dica aqui</description>
       
       <guid>https://adlermedrado.com.br/posts/nova-release-preview-do-zf/</guid>
       <description>Conforme palavras do Andi Gutmans na lista de discussões do Zend Framework, é possível que neste final de semana seja liberada mais uma release de preview do framework.
-Andi disse em mensagem postada ontem:
-We are working hard to get a new tarball rolled, bug DB up, etc. We should be getting this out the door this coming week. In the meanwhile, feel free to grab the latest version from SVN http://framework.</description>
+Andi disse em mensagem postada ontem: We are working hard to get a new tarball rolled, bug DB up, etc. We should be getting this out the door this coming week. In the meanwhile, feel free to grab the latest version from SVN http://framework.</description>
     </item>
     
     <item>

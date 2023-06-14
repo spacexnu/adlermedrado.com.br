@@ -16,8 +16,9 @@ um gerenciador de pacotes similar ao apt-get no linux, só que para windows.
 Para instalar, basta abrir uma janela do [Powershell](http://technet.microsoft.com/pt-br/library/bb978526.aspx) em modo 
 administrador e digitar:
 
-    iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
-
+```bash
+iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
+```
 Após a instalação, o comando _choco_ será disponibilizado no sistema, e a partir daí diversas aplicações poderão ser
 instaladas (e desinstaladas se for o caso) via linha de comando.
 
@@ -25,30 +26,35 @@ Os comandos básicos são:
 
 _list_
 
-    choco list
-
+```bash
+choco list
+```
 Exemplo: Listar todos pacotes que possuem _git_ no nome
 
-    choco list git
-
+```bash
+choco list git
+```
 _update_
 
 Ex: Atualiza todos os pacotes
-
-    choco update
-
+```bash
+choco update
+```
 Ex: Atualiza pacote específico
 
-    choco update git
-
+```bash
+choco update git
+```
 _uninstall_
 
-    choco uninstall git
-
+```bash
+choco uninstall git
+```
 _help_
 
-    choco /?
-
+```bash
+choco /?
+```
 É isso. Mais uma _hidden gem_ do mundo windows que até pouco tempo atrás eu não conhecia.
 
 Para conhecer melhor, visite a [documentação do projeto](https://github.com/chocolatey/chocolatey/wiki).

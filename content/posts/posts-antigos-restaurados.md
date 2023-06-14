@@ -44,44 +44,45 @@ padronizados, mas nem todos estavam dentro do mesmo padrão. _Shame on me_, liç
 
 Eu salvei todos os arquivos HTML em um diretório chamado _old_ e os posts estavam salvos da seguinte maneira:
 
-    |\_\_\_\_old   
-    | |\_\_\_\_2010   
-    | | |\_\_\_\_04   
-    | | | |\_\_\_\_arquivos html
+```bash |\_\_\_\_old   
+| |\_\_\_\_2010   
+| | |\_\_\_\_04   
+| | | |\_\_\_\_arquivos html
+```
+<br />Não coloquei toda a árvore aqui para não ficar muito grande, mas basicamente os arquivos estavam agrupados por **ANO** e **MÊS**, então para processa-los eu precisei iterar no diretório _old_ e seus subdiretórios:
 
-Não coloquei toda a árvore aqui para não ficar muito grande, mas basicamente os arquivos estavam agrupados por **ANO** e **MÊS**, então para processa-los eu precisei iterar no diretório _old_ e seus subdiretórios:
-
-    for subdir, dirs, files in os.walk(content\_root):   
-    for file in files: if 'images' not in subdir:   
-    with open(file\_path, 'r') as content\_file:   
-
-# converte o arquivo
-
+```bash 
+for subdir, dirs, files in os.walk(content\_root):   
+for file in files: if 'images' not in subdir:   
+with open(file\_path, 'r') as content\_file:   
+```
 O diretório _old_ tem um subdiretório chamado images e eu não processei o que tinha dentro dele justamente por só conter
 imagens.
 
 O próximo passo foi fazer o parse do HTML para poder trabalhar com o texto, para isso eu usei a biblioteca
 BeautifoulSoup:
 
-    def extract\_data():   
-    content = content\_file.read()   
+```python 
+def extract_data():   
+    content = content_file.read()   
     soup = BeautifulSoup(content, "html.parser")   
-    post\_title = soup.html.body.h1.text   
-    post\_content\_data = soup.findAll('div', {'class': 'span12'})\[1\]  
-    post\_date = post\_content\_data.find('p').text.replace('Post date:', '').strip()   
-    if not post\_date:   
-    raise ValueError("Post date not found")   
-    post\_content = post\_content\_data.text.strip()   
-    post\_content = re.sub(r'Post date: (d+/d+/d+)', '', post\_content)   
-    post\_content = re.sub(r'- (d+:d+:d+)', '', post\_content)  
-    post\_slug = file.replace('.html', '')
+    post_title = soup.html.body.h1.text   
+    post_content\_data = soup.findAll('div', {'class': 'span12'})\[1\]  
+    post_date = post\_content\_data.find('p').text.replace('Post date:', '').strip()   
+    
+    if not post_date:   
+        raise ValueError("Post date not found")   
+        post_content = post\_content\_data.text.strip()   
+        post_content = re.sub(r'Post date: (d+/d+/d+)', '', post\_content)   
+        post_content = re.sub(r'- (d+:d+:d+)', '', post\_content)  
+        post_slug = file.replace('.html', '')
     
     return {   
-    'post\_title': replace\_invalid\_chars(post\_title),  
-    'post\_date': post\_date, 'post\_content':         replace\_invalid\_chars(post\_content),   
-    'post\_slug': replace\_invalid\_chars(post\_slug),   
+        'post_title': replace\_invalid\_chars(post\_title),  
+        'post_date': post\_date, 'post\_content': replace\_invalid\_chars(post\_content),   
+        'post_slug': replace\_invalid\_chars(post\_slug),   
     }
-
+```
 Esta função basicamente obtinha as informações do post que eu precisava (titulo, data, slug e conteúdo) e fazia alguns
 tratamentos nestes dados, porque eu não me lembro o motivo, mas muitos caracteres estavam incorretos.
 
@@ -91,19 +92,22 @@ função retorna um dicionário com as informações necessárias para salvar o 
 Na sequência eu uma função que criava o novo arquivo markdown, adicionava nele o conteúdo no formato do Pelican e o
 salva:
 
-    def convert\_to\_new\_post(post\_contents):   
-    info\_message = '\*\*AVISO:\*\* \_Este post é muito antigo e seu conteúdo provavelmente está defasado, '  'permanecendo
-    no meu blog apenas por motivos históricos.\_nn'   
-    new\_post\_file = f"converted/{post\_contents\['post\_slug'\]}.md"  
-    new\_post = open(new\_post\_file, 'w')   
-    new\_post.write(f"Title: {post\_contents\['post\_title'\]}n")  
-    new\_post.write(f"Date: {post\_contents\['post\_date'\]}n")  
-    new\_post.write("Author: adlern") new\_post.write("Tags: oldn")  
-    new\_post.write(f"Slug: {post\_contents\['post\_slug'\]}n")  
-    new\_post.write("Status: publishednn")   
-    new\_post.write(info\_message + post\_contents\['post\_content'\])  
-    new\_post.close()
+```python
+def convert_to_new_post(post_contents):   
+    info_message = '**AVISO:** _Este post é muito antigo e seu conteúdo provavelmente está defasado, permanecendo
+    no meu blog apenas por motivos históricos._'
 
+    new_post_file = f"converted/{post_contents\['post_slug'\]}.md"
+    
+    new_post = open(new_post_file, 'w')   
+    new_post.write(f"Title: {post_contents\['post_title'\]}")  
+    new_post.write(f"Date: {post_contents\['post_date'\]}")  
+    new_post.write("Author: adlern") new_post.write("Tags: old")  
+    new_post.write(f"Slug: {post_contents\['post_slug'\]}")  
+    new_post.write("Status: published")   
+    new_post.write(info_message + post_contents['post_content'])  
+    new_post.close()
+```
 ### Nem todos os posts foram importados
 
 No final eu descartei alguns posts pois eles eram contextualmente irrelevantes para o site, e apesar de eu não gostar de

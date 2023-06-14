@@ -84,8 +84,7 @@ Zend Framework</description>
       <guid>https://adlermedrado.com.br/posts/mudancas-no-zend-loader/</guid>
       <description>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o autoload.
 Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:
-Zend_Loader::registerAutoload();
-Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não receba um notice nas versões atuais.</description>
+Zend_Loader::registerAutoload(); Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não receba um notice nas versões atuais.</description>
     </item>
     
     <item>
@@ -159,8 +158,7 @@ Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser 
       
       <guid>https://adlermedrado.com.br/posts/nova-release-preview-do-zf/</guid>
       <description>Conforme palavras do Andi Gutmans na lista de discussões do Zend Framework, é possível que neste final de semana seja liberada mais uma release de preview do framework.
-Andi disse em mensagem postada ontem:
-We are working hard to get a new tarball rolled, bug DB up, etc. We should be getting this out the door this coming week. In the meanwhile, feel free to grab the latest version from SVN http://framework.</description>
+Andi disse em mensagem postada ontem: We are working hard to get a new tarball rolled, bug DB up, etc. We should be getting this out the door this coming week. In the meanwhile, feel free to grab the latest version from SVN http://framework.</description>
     </item>
     
   </channel>

@@ -12,9 +12,9 @@ redução do estômago”.
 Eu nunca fui muito a favor deste tipo de cirurgia, mesmo estando em uma situação de obesidade mórbida grave eu nunca
 considerei a cirurgia como uma opção, pois, eu dizia que não me mutilaria para fins estéticos.
 
-#### Sim, eu pensava nesta cirurgia apenas como algo estético.
+### Sim, eu pensava nesta cirurgia apenas como algo estético.
 
-#### Sim, minha mentalidade era de uma pessoa idiota.
+### Sim, minha mentalidade era de uma pessoa idiota.
 
 Eu decidi fazer a cirurgia quando fui ao cardiologista para realizar exames que costumo fazer periodicamente, e ele
 detectou alguns problemas que poderiam ser muito graves a longo prazo a ponto de ser necessário fazer um transplante, e
@@ -92,7 +92,7 @@ tranquilo, sem ninguém me chamando, ótimo para uma boa leitura.
 Eu praticamente não dormi, sentia umas dores incômodas, não conseguia me mexer, senti uma sede enorme e não podia beber
 água. Foi horrível.
 
-#### Mas e agora?
+### Mas e agora?
 
 A recuperação foi tranquila. Depois que recebi a alta do hospital (além do dia na UTI eu fiquei 2 dias internado), eu
 estava me sentindo tão bem que 5 dias após a cirurgia eu fui numa feira agropecuária aqui na minha cidade para dar uma

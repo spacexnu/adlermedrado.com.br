@@ -16,7 +16,7 @@ também estou preparando novidades que espero lançar em breve.
 
 ![PHP para Todos](/posts/images/0*uTs6FNMXtkqq2KrE.jpg)
 
-#### PHP para Todos
+#### PHP para Todos
 
 Escolhi esse nome pois o principal objetivo deste site é o de que ele possa ajudar muitos desenvolvedores a trilharem o
 caminho do desenvolvimento com PHP.

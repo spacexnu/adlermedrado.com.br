@@ -21,7 +21,7 @@ a [segunda](/posts/introducao-a-criptografia-parte-2) antes.
 
 ### Instalação do [GnuPG](https://www.gnupg.org/).
 
-#### Gnu/Linux
+### Gnu/Linux
 
 Normalmente o GnuPG já vem instalado, mas certifique-se disso executando o comando em seu shell:
 
@@ -31,17 +31,18 @@ Se o resultado não for semelhante ao exemplo abaixo, provavelmente você precis
 não existir uniformidade entre os gerenciadores de pacotes das distribuições, aconselho você a procurar a documentação
 de sua distribuição:
 
+```bash
 gpg ( GnuPG ) 1.4.16  
 Copyright ( C ) 2013 Free Software Foundation , Inc .  
 License GPLv3 +: GNU GPL version 3 or later < http: / / gnu .org / licenses / gpl .html >  
 This is free software: you are free to change and redistribute it .  
 There is NO WARRANTY , to the extent permitted by law .
-
-#### Darwin / Mac OS X
+```
+### Darwin / Mac OS X
 
 Quando eu usava Mac eu instalava o [GPGTools](https://gpgtools.org/) e a instalação também é bem tranquila.
 
-#### Windows
+### Windows
 
 No Windows é necessário fazer o download do [GPG4Win](http://www.gpg4win.org/), eu sempre faço o download do pacote
 completo.
@@ -58,7 +59,7 @@ também.
 É importante lembrar que existem outros clientes de e-mail que suportam o GnuPG, mas o único multiplataforma e
 open-source que conheço que seja fácil de usar é o Thunderbird.
 
-#### Instalação do Thunderbird
+### Instalação do Thunderbird
 
 Eu não mostrarei os passos para fazer a instalação do Thunderbird aqui, ao invés disso siga as instruções da
 documentação oficial do Thunderbird para cada plataforma através dos links abaixo, é bem simples:
@@ -71,7 +72,7 @@ documentação oficial do Thunderbird para cada plataforma através dos links ab
 > o [Thunderbird irá configur facilmente o seu e-mail para uso nele](https://support.mozilla.org/pt-BR/kb/configuracao-automatica-de-conta),
 > se não for o caso, a empresa que te presta serviço de e-mail poderá auxiliá-lo na configuração.
 
-#### Instalação do Enigmail
+### Instalação do Enigmail
 
 O [Enigmail](https://www.enigmail.net/home/index.php) é um complemento para o thunderbird que permite fazer a integração
 entre ele e o GnuPG. Com ele é possível enviar e-mails criptografamos diretamente pelo cliente de e-mail sem precisar
@@ -88,7 +89,7 @@ clicando no botão **Instalar**.
 Quando a instalação terminar, reinicie o Thunderbird e ao reinicia-lo, quando for solicitado informe que você não quer
 usar o _wizard_.
 
-#### Criando seu primeiro par de chaves
+### Criando seu primeiro par de chaves
 
 Agora que o ambiente está configurado, está na hora de criar seu primeiro par de chaves.
 
@@ -129,7 +130,7 @@ feita a revogação os servidores de chave são atualizados e esta informação 
 
 Vamos continuar, confirme a criação do certificado de revogação e depois guarde-o em um local seguro.
 
-#### Enviando as chaves para um servidor
+### Enviando as chaves para um servidor
 
 Como eu falei anteriormente, as chaves podem ser enviadas para servidores de chaves. Existem diversos desses servidores
 espalhados pela internet e normalmente eles fazem uma sincronização entre si, portanto basicamente se você enviar sua
@@ -137,7 +138,7 @@ chave para um servidor, em breve ela estará replicada nos demais (pelo menos no
 
 **Somente sua chave pública vai para o servidor, a sua chave privada é responsabilidade sua protegê-la.**
 
-#### Mas por que enviar a chave pública para um servidor?
+### Mas por que enviar a chave pública para um servidor?
 
 A resposta é simples: Para ficar mais fácil de você ser encontrado.
 
@@ -152,7 +153,7 @@ Na tela de gerenciamento de chaves, clique com o botão direito em cima do seu e
 
 Pronto. ?
 
-#### Que tal enviar um e-mail criptografado para testar?
+### Que tal enviar um e-mail criptografado para testar?
 
 **Primeiramente, importe a minha chave pública.**
 
@@ -166,7 +167,7 @@ clicando em OK.
 Você verá que após esse procedimento o meu e-mail e as chaves associadas a ele  
 estarão na lista de chaves, junto com a sua.
 
-#### Enviando o e-mail criptografado
+### Enviando o e-mail criptografado
 
 Agora que as chaves estão criadas e você já importou a minha para poder me enviar um e-mail, vamos testar se tudo está
 OK.
@@ -185,7 +186,7 @@ perder formatação após a encriptação.
 
 **Se tudo correr bem**, eu receberei um e-mail seu e o responderei avisando que recebi OK.
 
-#### Considerações finais
+### Considerações finais
 
 Na próxima parte eu mostrarei como criptografar arquivos e também como usar um plugin para Firefox e Google Chrome que
 permite realizar estes mesmos passos diretamente no Gmail e outros webmails.

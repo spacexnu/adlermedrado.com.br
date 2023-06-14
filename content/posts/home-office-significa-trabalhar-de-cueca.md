@@ -14,7 +14,7 @@ Bom, pode até ser que algumas pessoas trabalhem assim, mas, comigo é diferente
 experiência trabalhando com home-office. Eu gosto de ler sobre a experiência de outras pessoas em diversos aspectos e
 home-office é uma delas, então porque não falar sobre a minha e e fazer o intercâmbio de experiências?
 
-#### Como migrei para Home-Office
+### Como migrei para Home-Office
 
 Eu comecei a trabalhar em home-office alguns meses depois de me mudar de Brasília/DF para o Paraná. Naquela época eu me
 mudei para uma cidade chamada Francisco Beltrão, onde vivem os pais da minha esposa, mas a empresa em que eu trabalhava
@@ -42,7 +42,7 @@ quando era época de entregar os projetos aos clientes.
 Esse é um resumo de uma história um pouco mais comprida, mas acho que deu pra contextualizar e apontar os principais
 motivos que tornaram o trabalho remoto importante para mim.
 
-#### Aprendendo a trabalhar remotamente
+### Aprendendo a trabalhar remotamente
 
 Antes de trabalhar remotamente para esta empresa eu já tinha experimentado trabalhar de casa para uma empresa dos EUA,
 no entanto as circunstâncias eram outras pois naquele caso era um trabalho freelancer que durou uns 6 meses e eu fazia o
@@ -85,7 +85,7 @@ quintal.
 
 Meu escritório no quintal, que beleza.
 
-#### Nem tudo são flores
+### Nem tudo são flores
 
 Muita gente pensa que trabalhar remotamente é fácil, mas não é.
 
@@ -105,12 +105,12 @@ trabalhando assim eu posso afirmar que elas já podem sinalizar sua aptidão ou 
 
 Veja só:
 
-#### Você é capaz de trabalhar sem um chefe te dizendo o que fazer o tempo todo?
+### Você é capaz de trabalhar sem um chefe te dizendo o que fazer o tempo todo?
 
 Quando nós trabalhamos na empresa é muito comum ter alguém nos dizendo o tempo todo o que que nós devemos fazer. Se você
 consegue trabalhar sem ter alguém no teu cangote o tempo todo, isso é um bom sinal.
 
-#### Você possui auto-controle e sabe separar o trabalho da vida pessoal?
+### Você possui auto-controle e sabe separar o trabalho da vida pessoal?
 
 Horário de expediente não é hora de assistir televisão, receber visitas, jogar, ingerir bebidas alcoólicas, etc.
 
@@ -119,7 +119,7 @@ apesar das duas se entrelaçarem, afinal de contas tudo faz parte da sua vida, �
 pra tudo, principalmente porque trabalhando de casa é muito provável que surgirão pessoas questionando se você está
 mesmo trabalhando ou não.
 
-#### As pessoas que vivem contigo conseguem separar seu trabalho da vida pessoal?
+### As pessoas que vivem contigo conseguem separar seu trabalho da vida pessoal?
 
 No início quando comecei a trabalhar de casa, era muito comum meus filhos virem me chamar para jogar video-game, minha
 esposa me chamar pra ajudar com alguma coisa ou pedir para atender o portão quando alguém estava chamando, coisas nesse
@@ -128,18 +128,18 @@ sentido.
 Demorou um tempo para todos entenderem que enquanto eu estava trabalhando eu não poderia fazer essas coisas, se você
 acha que é difícil mudar tal comportamento, pense bem antes de trabalhar de casa, principalmente se você cobra por hora.
 
-#### Você consegue se auto-gerenciar?
+### Você consegue se auto-gerenciar?
 
 Você recebe suas demandas e precisa lidar com elas sem ter a necessidade alguém do seu lado o tempo todo. Por mais que
 existam meios de conversar com o time o tempo todo, nem sempre a pessoa estará disponível como quando ela estava do seu
 lado na época em que trabalhava presencialmente na empresa.
 
-#### Produtividade
+### Produtividade
 
 Eu me senti muito mais produtivo trabalhando de casa do que na época em que trabalhava fisicamente na empresa, mas isso
 acredito que pode variar de pessoa pra pessoa. Para mim foi ótimo pois quanto mais produtivo, melhor, certo?
 
-#### Atualmente
+### Atualmente
 
 Hoje eu moro em Guarapuava/PR e desde que vim pra cá algumas coisas mudaram, principalmente a empresa:).
 
@@ -179,7 +179,7 @@ qualquer outra máquina. Hoje estou usando bastante o docker, mas ainda não dis
 Hoje se eu precisar trabalhar em qualquer lugar que tenha internet, eu estou pronto. Se não precisar me comunicar em
 tempo real com ninguém, não preciso nem da internet naquele momento.
 
-#### Finalizando
+### Finalizando
 
 Eu considero a minha experiência com home-office bem sucedida e espero continuar trabalhando desta forma pois para mim é
 muito conveniente.

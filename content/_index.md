@@ -24,10 +24,10 @@ Below you can find more about me, if you're interested.
 
 I try to avoid social networks, but I don't always make it, so you can find me at the networks below:
 
-* [Twitter](https://twitter.com/adlermedrado")
-* [LinkedIn](https://www.linkedin.com/in/adlermedrado/">)
-* [Nostr](https://iris.to/amedrado">)
-* [Keybase](https://keybase.io/adlermedrado">)
+* [Twitter](https://twitter.com/adlermedrado)
+* [LinkedIn](https://www.linkedin.com/in/adlermedrado)
+* [Nostr](https://iris.to/amedrado)
+* [Keybase](https://keybase.io/adlermedrado)
 
 ## Contact
 

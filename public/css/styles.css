@@ -149,7 +149,7 @@ em {
     font-weight: bold;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     body {
         background: #edf4f9;
         color: #40302f;

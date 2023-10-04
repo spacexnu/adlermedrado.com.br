@@ -1,165 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>zend-framework on Adler Medrado&#39;s corner of the web</title>
-    <link>https://adlermedrado.com.br/tags/zend-framework/</link>
-    <description>Recent content in zend-framework on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 22 May 2010 10:08:21 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/zend-framework/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Zend Framework tutorial series capítulo 3</title>
-      <link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/</link>
-      <pubDate>Sat, 22 May 2010 10:08:21 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/</guid>
-      <description>Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia, vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em uma frequência maior. Espero que dê certo.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>zend-framework on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/zend-framework/</link><description>Recent content in zend-framework on Adler Medrado's corner of the web</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 22 May 2010 10:08:21 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/zend-framework/index.xml" rel="self" type="application/rss+xml"/><item><title>Zend Framework tutorial series capítulo 3</title><link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/</link><pubDate>Sat, 22 May 2010 10:08:21 -0300</pubDate><guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/</guid><description>Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia, vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em uma frequência maior. Espero que dê certo.
 Introdução
 Neste capítulo eu mostrarei um pouco do Zend_Form e algumas coisas que são possíveis de implementar usando ele.
-O Zend_Form é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando precisamos filtrar e validar dados provenientes de formulários.</description>
-    </item>
-    
-    <item>
-      <title>Zend Framework tutorial series capítulo 2</title>
-      <link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/</link>
-      <pubDate>Tue, 16 Feb 2010 21:55:16 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/</guid>
-      <description>Tudo bem?
+O Zend_Form é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando precisamos filtrar e validar dados provenientes de formulários.</description></item><item><title>Zend Framework tutorial series capítulo 2</title><link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/</link><pubDate>Tue, 16 Feb 2010 21:55:16 -0300</pubDate><guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/</guid><description>Tudo bem?
 Demorou um pouco para eu publicar este capítulo pois infelizmente eu tive alguns contratempos nas últimas semanas, mas de qualquer forma, é muito bom saber que você se interessou por esta série de tutoriais e voltou para continuar implementando um sistema de exemplo.
 Recapitulando
 No primeiro capítulo desta série eu mostrei como configurar o seu ambiente de desenvolvimento para utilizar o Zend Framework com o Zend_Tool.
-Reveja o Capítulo 1 do tutorial.</description>
-    </item>
-    
-    <item>
-      <title>Zend Framework 1.10.0 stable released</title>
-      <link>https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/</link>
-      <pubDate>Wed, 27 Jan 2010 08:06:09 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/</guid>
-      <description>Ontem eu recebi um email pela lista geral do Zend Framework que informava o lançamento da release 1.10 Stable do Zend Framework.
-Foram adicionados diversos novos recursos, entre eles, o Zend_Oauth o qual me deixou excitado e vou fazer alguns testes logo logo. Houve também o aperfeiçoamento do Zend_Tool e isso me deixou bastante animado pois tenho trabalhado com ele e gostado bastante. Hoje iniciarei os testes com ele usando no meu dia-a-dia.</description>
-    </item>
-    
-    <item>
-      <title>Zend Framework tutorial series capitulo 1</title>
-      <link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/</link>
-      <pubDate>Tue, 19 Jan 2010 18:56:50 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/</guid>
-      <description>Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os avançados.
+Reveja o Capítulo 1 do tutorial.</description></item><item><title>Zend Framework 1.10.0 stable released</title><link>https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/</link><pubDate>Wed, 27 Jan 2010 08:06:09 -0300</pubDate><guid>https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/</guid><description>Ontem eu recebi um email pela lista geral do Zend Framework que informava o lançamento da release 1.10 Stable do Zend Framework.
+Foram adicionados diversos novos recursos, entre eles, o Zend_Oauth o qual me deixou excitado e vou fazer alguns testes logo logo. Houve também o aperfeiçoamento do Zend_Tool e isso me deixou bastante animado pois tenho trabalhado com ele e gostado bastante. Hoje iniciarei os testes com ele usando no meu dia-a-dia.</description></item><item><title>Zend Framework tutorial series capitulo 1</title><link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/</link><pubDate>Tue, 19 Jan 2010 18:56:50 -0300</pubDate><guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/</guid><description>Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os avançados.
 Tentarei colocar um novo capítulo semanalmente, desta forma teremos uma janela boa para praticar o conteúdo proposto.
 Este primeiro Tutorial da série visa demonstrar a instalação e configuração do ambiente bem como criar a estrutura de diretórios de uma aplicação utilizando o Zend_Tool.
-Antes de mais nada, os pré-requisitos para continuar este tutorial são: 1- Conhecimento de PHP utilizando os conceitos de Orientação a Objetos.</description>
-    </item>
-    
-    <item>
-      <title>Profiling de banco de dados com Zend_Db_Profiler e Firebug</title>
-      <link>https://adlermedrado.com.br/posts/profiling-db-zend-firebug/</link>
-      <pubDate>Wed, 17 Jun 2009 15:54:18 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/profiling-db-zend-firebug/</guid>
-      <description>Se você usa o Zend Framework já percebeu que não é muito trivial obter as queries executadas no banco de dados e isso é algo comum no dia-a-dia de um desenvolvedor pois com elas nós podemos corrigir bugs e determinar pontos de lentidão e etc.
-O Zend Framework possui um componente chamado Zend_Db_Profiler que nos permite realizar o profiling dos acessos ao banco mas na minha opinião ele sozinho é muito chato de usar então eu utilizo ele em conjunto com o componente Zend_Db_Profiler_Firebug e é isso que vou mostrar a você como se faz.</description>
-    </item>
-    
-    <item>
-      <title>Slides da Palestra sobre Zend Framework no PHPSC Conf</title>
-      <link>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</link>
-      <pubDate>Wed, 10 Jun 2009 18:07:29 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</guid>
-      <description>Demorei para disponibilizar o material porque após o evento minha semana em Brasília foi muito corrida e em seguida tive uma viagem de trabalho para Ourinhos, interior de São Paulo.
+Antes de mais nada, os pré-requisitos para continuar este tutorial são: 1- Conhecimento de PHP utilizando os conceitos de Orientação a Objetos.</description></item><item><title>Profiling de banco de dados com Zend_Db_Profiler e Firebug</title><link>https://adlermedrado.com.br/posts/profiling-db-zend-firebug/</link><pubDate>Wed, 17 Jun 2009 15:54:18 -0300</pubDate><guid>https://adlermedrado.com.br/posts/profiling-db-zend-firebug/</guid><description>Se você usa o Zend Framework já percebeu que não é muito trivial obter as queries executadas no banco de dados e isso é algo comum no dia-a-dia de um desenvolvedor pois com elas nós podemos corrigir bugs e determinar pontos de lentidão e etc.
+O Zend Framework possui um componente chamado Zend_Db_Profiler que nos permite realizar o profiling dos acessos ao banco mas na minha opinião ele sozinho é muito chato de usar então eu utilizo ele em conjunto com o componente Zend_Db_Profiler_Firebug e é isso que vou mostrar a você como se faz.</description></item><item><title>Slides da Palestra sobre Zend Framework no PHPSC Conf</title><link>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</link><pubDate>Wed, 10 Jun 2009 18:07:29 -0300</pubDate><guid>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</guid><description>Demorei para disponibilizar o material porque após o evento minha semana em Brasília foi muito corrida e em seguida tive uma viagem de trabalho para Ourinhos, interior de São Paulo.
 Esta é a primeira vez que utilizei os serviços do slideshare e conforme eu tenha disponibilidade de tempo eu irei colocar o material mais antigo lá também.
 Abraços a todos. Enjoy!
-Zend Framework</description>
-    </item>
-    
-    <item>
-      <title>Mudanças no Zend_Loader</title>
-      <link>https://adlermedrado.com.br/posts/mudancas-no-zend-loader/</link>
-      <pubDate>Thu, 28 May 2009 19:42:10 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/mudancas-no-zend-loader/</guid>
-      <description>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o autoload.
+Zend Framework</description></item><item><title>Mudanças no Zend_Loader</title><link>https://adlermedrado.com.br/posts/mudancas-no-zend-loader/</link><pubDate>Thu, 28 May 2009 19:42:10 -0300</pubDate><guid>https://adlermedrado.com.br/posts/mudancas-no-zend-loader/</guid><description>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o autoload.
 Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:
-Zend_Loader::registerAutoload(); Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não receba um notice nas versões atuais.</description>
-    </item>
-    
-    <item>
-      <title>Treinamento de Zend Framework em Brasilia confirmado</title>
-      <link>https://adlermedrado.com.br/posts/treinamento-de-zend-framework-em-brasilia-confirmado/</link>
-      <pubDate>Mon, 04 May 2009 08:19:34 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/treinamento-de-zend-framework-em-brasilia-confirmado/</guid>
-      <description>Hoje iniciará um treinamento de Zend Framework na X25, empresa que ministro cursos de PHP em Brasília. Será a primeira turma de Zend Framework lá na X25 e estou bastante empolgado.
+Zend_Loader::registerAutoload(); Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não receba um notice nas versões atuais.</description></item><item><title>Treinamento de Zend Framework em Brasilia confirmado</title><link>https://adlermedrado.com.br/posts/treinamento-de-zend-framework-em-brasilia-confirmado/</link><pubDate>Mon, 04 May 2009 08:19:34 -0300</pubDate><guid>https://adlermedrado.com.br/posts/treinamento-de-zend-framework-em-brasilia-confirmado/</guid><description>Hoje iniciará um treinamento de Zend Framework na X25, empresa que ministro cursos de PHP em Brasília. Será a primeira turma de Zend Framework lá na X25 e estou bastante empolgado.
 Neste curso eu irei mostrar o Zend Framework desde o básico e mostrarei como criar aplicações em nível enterprise utilizando este que em minha opinião é o melhor framework para desenvolvimento PHP na atualidade.
-Ainda há tempo para se matricular, o curso será todas as segundas, quartas e sextas a noite.</description>
-    </item>
-    
-    <item>
-      <title>Chegou meu certificado ZCE-ZF</title>
-      <link>https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/</link>
-      <pubDate>Wed, 22 Apr 2009 17:56:53 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/</guid>
-      <description>A alguns dias atrás chegou pelo correio o meu certificado ZCE-ZF.
+Ainda há tempo para se matricular, o curso será todas as segundas, quartas e sextas a noite.</description></item><item><title>Chegou meu certificado ZCE-ZF</title><link>https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/</link><pubDate>Wed, 22 Apr 2009 17:56:53 -0300</pubDate><guid>https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/</guid><description>A alguns dias atrás chegou pelo correio o meu certificado ZCE-ZF.
 Eu achei ele legal e o adesivo que veio com ele também, mas ainda acho o certificado de PHP 5 mais bonito, não que o de Zend Framework seja feio mas sabe como é gosto né? Mas uma coisa bacana que tem nos dois é que eles são assinados pelo Andi Gutmans e Zeev Suraski. :-)
-Da mesma forma quando tirei certificação ZCE PHP 5 a Zend mandou um adesivo com o selo da certificação e o adesivo é bem bacana.</description>
-    </item>
-    
-    <item>
-      <title>Tutorial Zend Paginator</title>
-      <link>https://adlermedrado.com.br/posts/tutorial-zend-paginator/</link>
-      <pubDate>Sat, 28 Mar 2009 17:52:51 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/tutorial-zend-paginator/</guid>
-      <description>O Zend Framework é muito interessante mesmo nos componentes mais simples, desta vez eu irei falar sobre o componente Zend_Paginator, que é um componente que se propõe a fazer a paginação de qualquer coleção de dados de uma maneira bem simples e mostrar os dados paginados para o usuário.
+Da mesma forma quando tirei certificação ZCE PHP 5 a Zend mandou um adesivo com o selo da certificação e o adesivo é bem bacana.</description></item><item><title>Tutorial Zend Paginator</title><link>https://adlermedrado.com.br/posts/tutorial-zend-paginator/</link><pubDate>Sat, 28 Mar 2009 17:52:51 -0300</pubDate><guid>https://adlermedrado.com.br/posts/tutorial-zend-paginator/</guid><description>O Zend Framework é muito interessante mesmo nos componentes mais simples, desta vez eu irei falar sobre o componente Zend_Paginator, que é um componente que se propõe a fazer a paginação de qualquer coleção de dados de uma maneira bem simples e mostrar os dados paginados para o usuário.
 ADAPTERS
-Este componente não exige que os dados a serem paginados sejam especificamente dados provenientes de bancos de dados, ele faz a paginação de arrays, de dados relacionados a objetos Zend_Db_Select e Zend_Db_Table_Select e Iterators.</description>
-    </item>
-    
-    <item>
-      <title>Enfim Zend Certified Engineer #2</title>
-      <link>https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/</link>
-      <pubDate>Tue, 17 Mar 2009 03:51:08 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/</guid>
-      <description>Quem acompanha meu blog a mais tempo deve se lembrar de quando usei este título pela primeira vez. Foi no dia 21/09/2007, um dia após eu fazer o exame de certificação de PHP 5 da Zend (ZCE PHP 5), quem não se lembra pode ver o post aqui.
-Mas porque o mesmo título neste post? Porque ontem eu fiz o exame para a certificação de Zend Framework (ZCE ZF) e graças a D’us, que me deu esta oportunidade, eu passei.</description>
-    </item>
-    
-    <item>
-      <title>Zend_Form: Um simples tutorial</title>
-      <link>https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/</link>
-      <pubDate>Sun, 14 Sep 2008 19:55:18 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/</guid>
-      <description>Introdução
+Este componente não exige que os dados a serem paginados sejam especificamente dados provenientes de bancos de dados, ele faz a paginação de arrays, de dados relacionados a objetos Zend_Db_Select e Zend_Db_Table_Select e Iterators.</description></item><item><title>Enfim Zend Certified Engineer #2</title><link>https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/</link><pubDate>Tue, 17 Mar 2009 03:51:08 -0300</pubDate><guid>https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/</guid><description>Quem acompanha meu blog a mais tempo deve se lembrar de quando usei este título pela primeira vez. Foi no dia 21/09/2007, um dia após eu fazer o exame de certificação de PHP 5 da Zend (ZCE PHP 5), quem não se lembra pode ver o post aqui.
+Mas porque o mesmo título neste post? Porque ontem eu fiz o exame para a certificação de Zend Framework (ZCE ZF) e graças a D’us, que me deu esta oportunidade, eu passei.</description></item><item><title>Zend_Form: Um simples tutorial</title><link>https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/</link><pubDate>Sun, 14 Sep 2008 19:55:18 -0300</pubDate><guid>https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/</guid><description>Introdução
 Depois de algum tempo sem escrever algo sobre o Zend Framework, venho hoje mostrar rapidamente um exemplo de como usar o Zend_Form e de quebra vou mostrar o Zend_Translator, que pode ser usado em internacionalização.
-O Zend_Form é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade e mantendo um padrão de desenvolvimento. É possível também com o Zend_Form, a implementação de formulários com herança, ou seja, você tem um formulário genérico (ex: UsuarioForm) que pode ser utilizado para criação de outros (ex: UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão.</description>
-    </item>
-    
-    <item>
-      <title>Relacionamento entre tabelas com Zend Framework</title>
-      <link>https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/</link>
-      <pubDate>Tue, 25 Mar 2008 05:37:34 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/</guid>
-      <description>O Zend Framework possui uma camada de modelo, composta por algumas classes como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de acesso à dados, como insert, update, etc.
-Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através de métodos específicos da classe Zend_Db_Table_Row.</description>
-    </item>
-    
-    <item>
-      <title>Nova release de preview do Zend Framework neste fim de semana</title>
-      <link>https://adlermedrado.com.br/posts/nova-release-preview-do-zf/</link>
-      <pubDate>Tue, 11 Apr 2006 08:50:03 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/nova-release-preview-do-zf/</guid>
-      <description>Conforme palavras do Andi Gutmans na lista de discussões do Zend Framework, é possível que neste final de semana seja liberada mais uma release de preview do framework.
-Andi disse em mensagem postada ontem: We are working hard to get a new tarball rolled, bug DB up, etc. We should be getting this out the door this coming week. In the meanwhile, feel free to grab the latest version from SVN http://framework.</description>
-    </item>
-    
-  </channel>
-</rss>
+O Zend_Form é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade e mantendo um padrão de desenvolvimento. É possível também com o Zend_Form, a implementação de formulários com herança, ou seja, você tem um formulário genérico (ex: UsuarioForm) que pode ser utilizado para criação de outros (ex: UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão.</description></item><item><title>Relacionamento entre tabelas com Zend Framework</title><link>https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/</link><pubDate>Tue, 25 Mar 2008 05:37:34 -0300</pubDate><guid>https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/</guid><description>O Zend Framework possui uma camada de modelo, composta por algumas classes como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de acesso à dados, como insert, update, etc.
+Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através de métodos específicos da classe Zend_Db_Table_Row.</description></item><item><title>Nova release de preview do Zend Framework neste fim de semana</title><link>https://adlermedrado.com.br/posts/nova-release-preview-do-zf/</link><pubDate>Tue, 11 Apr 2006 08:50:03 -0300</pubDate><guid>https://adlermedrado.com.br/posts/nova-release-preview-do-zf/</guid><description>Conforme palavras do Andi Gutmans na lista de discussões do Zend Framework, é possível que neste final de semana seja liberada mais uma release de preview do framework.
+Andi disse em mensagem postada ontem: We are working hard to get a new tarball rolled, bug DB up, etc. We should be getting this out the door this coming week. In the meanwhile, feel free to grab the latest version from SVN http://framework.</description></item></channel></rss>

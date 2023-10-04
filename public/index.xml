@@ -1,1022 +1,170 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Adler Medrado&#39;s corner of the web</title>
-    <link>https://adlermedrado.com.br/</link>
-    <description>Recent content on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Install lxml on MacBook with Apple Silicon</title>
-      <link>https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</link>
-      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</guid>
-      <description>Today I needed to install lxml into a python project I&amp;rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:
-Building wheels for collected packages: xmlsec Building wheel for xmlsec (pyproject.toml) … error error: subprocess-exited-with-error × Building wheel for xmlsec (pyproject.toml) did not run successfully. │ exit code: 1 ╰─&amp;gt; [13 lines of output] running bdist_wheel running build running build_py creating build creating build/lib.</description>
-    </item>
-    
-    <item>
-      <title>Enabling Click and Drag on MacBook</title>
-      <link>https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</link>
-      <pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</guid>
-      <description>I&amp;rsquo;m using macOS again, and of course that I&amp;rsquo;ll forget this tip, so I&amp;rsquo;ll write this post to help me another day in the future.
-If you want to enable the click and drag option on MacBook, just go to: System Preferences → Accessibility → Pointer Control → Mouse and Trackpad → Trackpad Options → Enable Dragging.</description>
-    </item>
-    
-    <item>
-      <title>Posts antigos restaurados</title>
-      <link>https://adlermedrado.com.br/posts/posts-antigos-restaurados/</link>
-      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/posts-antigos-restaurados/</guid>
-      <description>É muito legal ser programador e participar de projetos com as mais variadas dimensões e complexidades, mas uma das coisas que eu acho mais legal em ser um programador é o fato de poder utilizar este conhecimento para automatizar tarefas e resolver problemas do cotidiano.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/</link><description>Recent content on Adler Medrado's corner of the web</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/index.xml" rel="self" type="application/rss+xml"/><item><title>Install lxml on MacBook with Apple Silicon</title><link>https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</link><pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/</guid><description>Today I needed to install lxml into a python project I&amp;rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:
+Building wheels for collected packages: xmlsec Building wheel for xmlsec (pyproject.toml) … error error: subprocess-exited-with-error × Building wheel for xmlsec (pyproject.toml) did not run successfully. │ exit code: 1 ╰─&amp;gt; [13 lines of output] running bdist_wheel running build running build_py creating build creating build/lib.</description></item><item><title>Enabling Click and Drag on MacBook</title><link>https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</link><pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/</guid><description>I&amp;rsquo;m using macOS again, and of course that I&amp;rsquo;ll forget this tip, so I&amp;rsquo;ll write this post to help me another day in the future.
+If you want to enable the click and drag option on MacBook, just go to: System Preferences → Accessibility → Pointer Control → Mouse and Trackpad → Trackpad Options → Enable Dragging.</description></item><item><title>Posts antigos restaurados</title><link>https://adlermedrado.com.br/posts/posts-antigos-restaurados/</link><pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/posts-antigos-restaurados/</guid><description>É muito legal ser programador e participar de projetos com as mais variadas dimensões e complexidades, mas uma das coisas que eu acho mais legal em ser um programador é o fato de poder utilizar este conhecimento para automatizar tarefas e resolver problemas do cotidiano.
 Resolvi escrever este post justamente porque eu automatizei uma tarefa que me tomaria algumas horas com um pequeno e simples script python.
-Eu achei legal escrever um pouco sobre isso porque pode servir de exemplo para pessoas que não trabalham com programação diariamente de que elas podem se beneficiar em conhecer um pouco e tentar otimizar tarefas repetitivas.</description>
-    </item>
-    
-    <item>
-      <title>Do PHP ao Python</title>
-      <link>https://adlermedrado.com.br/posts/do-php-ao-python/</link>
-      <pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/do-php-ao-python/</guid>
-      <description>Um pouco da minha experiência na transição de PHP para Python
+Eu achei legal escrever um pouco sobre isso porque pode servir de exemplo para pessoas que não trabalham com programação diariamente de que elas podem se beneficiar em conhecer um pouco e tentar otimizar tarefas repetitivas.</description></item><item><title>Do PHP ao Python</title><link>https://adlermedrado.com.br/posts/do-php-ao-python/</link><pubDate>Fri, 09 Jun 2017 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/do-php-ao-python/</guid><description>Um pouco da minha experiência na transição de PHP para Python
 Eu e o Elephant na PHP Conference Brasil 2012
 Introdução Em Dezembro de 2015 eu fui convidado a trabalhar no Olist e eu comecei a trabalhar efetivamente em Janeiro de 2016. A situação naquela época está mais ou menos descrita neste post do osantana.
-Era um desafio pois a equipe estava bem restrita, a plataforma era monolítica e de difícil manutenção, somado a isso o negócio do Olist em si não é algo trivial.</description>
-    </item>
-    
-    <item>
-      <title>Erro incômodo com o Postgresql no Mac</title>
-      <link>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</link>
-      <pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</guid>
-      <description>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a atualização para o MacOS Sierra.
+Era um desafio pois a equipe estava bem restrita, a plataforma era monolítica e de difícil manutenção, somado a isso o negócio do Olist em si não é algo trivial.</description></item><item><title>Erro incômodo com o Postgresql no Mac</title><link>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</link><pubDate>Sun, 02 Oct 2016 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/</guid><description>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a atualização para o MacOS Sierra.
 O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:
 WTF?
-Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:</description>
-    </item>
-    
-    <item>
-      <title>Home-Office significa trabalhar de cueca?</title>
-      <link>https://adlermedrado.com.br/posts/home-office-significa-trabalhar-de-cueca/</link>
-      <pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/home-office-significa-trabalhar-de-cueca/</guid>
-      <description>Ah, o home-office: Muita gente pensa que trabalhar nessa modalidade significa trabalhar a hora que quiser, de cueca e meias, tomando cerveja e que quando cansa pode dar uma paradinha pra ir caminhar na praia, parque ou qualquer outro ambiente agradável.
-Bom, pode até ser que algumas pessoas trabalhem assim, mas, comigo é diferente e neste artigo eu irei expor a minha experiência trabalhando com home-office. Eu gosto de ler sobre a experiência de outras pessoas em diversos aspectos e home-office é uma delas, então porque não falar sobre a minha e e fazer o intercâmbio de experiências?</description>
-    </item>
-    
-    <item>
-      <title>PHP para Todos</title>
-      <link>https://adlermedrado.com.br/posts/php-para-todos/</link>
-      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/php-para-todos/</guid>
-      <description>Resolvi colocar em prática uma idéia que deixei hibernando por um bom tempo, que era a de criar um site com conteúdo voltado a iniciantes em desenvolvimento com PHP.
-É muito fácil encontrar conteúdos de excelente qualidade que são voltados a pessoas que já possuem um nível de conhecimento maior em PHP, mas o mesmo não pode ser dito a respeito de conteúdos para iniciantes, sendo assim, eu topei o desafio e criei o PHP para Todos, estou tentando manter uma regularidade nos artigos e também estou preparando novidades que espero lançar em breve.</description>
-    </item>
-    
-    <item>
-      <title>BBS: Depois de muitos anos, um acesso</title>
-      <link>https://adlermedrado.com.br/posts/bbs-depois-de-muitos-anos-um-acesso/</link>
-      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/bbs-depois-de-muitos-anos-um-acesso/</guid>
-      <description>Hoje depois de trabalhar o dia todo e uma parte da noite, eu resolvi pesquisar se ainda existia algum BBS online.
+Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:</description></item><item><title>Home-Office significa trabalhar de cueca?</title><link>https://adlermedrado.com.br/posts/home-office-significa-trabalhar-de-cueca/</link><pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/home-office-significa-trabalhar-de-cueca/</guid><description>Ah, o home-office: Muita gente pensa que trabalhar nessa modalidade significa trabalhar a hora que quiser, de cueca e meias, tomando cerveja e que quando cansa pode dar uma paradinha pra ir caminhar na praia, parque ou qualquer outro ambiente agradável.
+Bom, pode até ser que algumas pessoas trabalhem assim, mas, comigo é diferente e neste artigo eu irei expor a minha experiência trabalhando com home-office. Eu gosto de ler sobre a experiência de outras pessoas em diversos aspectos e home-office é uma delas, então porque não falar sobre a minha e e fazer o intercâmbio de experiências?</description></item><item><title>PHP para Todos</title><link>https://adlermedrado.com.br/posts/php-para-todos/</link><pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/php-para-todos/</guid><description>Resolvi colocar em prática uma idéia que deixei hibernando por um bom tempo, que era a de criar um site com conteúdo voltado a iniciantes em desenvolvimento com PHP.
+É muito fácil encontrar conteúdos de excelente qualidade que são voltados a pessoas que já possuem um nível de conhecimento maior em PHP, mas o mesmo não pode ser dito a respeito de conteúdos para iniciantes, sendo assim, eu topei o desafio e criei o PHP para Todos, estou tentando manter uma regularidade nos artigos e também estou preparando novidades que espero lançar em breve.</description></item><item><title>BBS: Depois de muitos anos, um acesso</title><link>https://adlermedrado.com.br/posts/bbs-depois-de-muitos-anos-um-acesso/</link><pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/bbs-depois-de-muitos-anos-um-acesso/</guid><description>Hoje depois de trabalhar o dia todo e uma parte da noite, eu resolvi pesquisar se ainda existia algum BBS online.
 O interessante é que sim, existem, contudo, ao invés de usar uma linha telefônica para acessa-los, nós usamos o protocolo telnet.
-Nessas horas que eu percebo que estou ficando velho e olha que quando eu entrei naquele mundo dos BBSs já tinham os veteranos, old-school (pra não chamar de mais-velhos-ainda) que habitavam aquele universo.</description>
-    </item>
-    
-    <item>
-      <title>Bug estranho na integração do Mac OS X com o Google</title>
-      <link>https://adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</link>
-      <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</guid>
-      <description>Recentemente aconteceu uma coisa esquisita.
+Nessas horas que eu percebo que estou ficando velho e olha que quando eu entrei naquele mundo dos BBSs já tinham os veteranos, old-school (pra não chamar de mais-velhos-ainda) que habitavam aquele universo.</description></item><item><title>Bug estranho na integração do Mac OS X com o Google</title><link>https://adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</link><pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</guid><description>Recentemente aconteceu uma coisa esquisita.
 Eu tinha 3 contas do Google configuradas em meu OS X El Capitan, a integração é bem legal porque ao integrar uma conta do Google com o OS X ele já configura o Mail, o iMessage, o Calendar, o Notes e os Contatos o que facilita bastante a minha vida.
-Mas ontem todas as contas do Google que eu tinha configurado aqui, ao mesmo tempo, passaram a solicitar novamente a senha e sempre que eu tentava autenticar novamente o Internet Accounts travava conforme a tela abaixo:</description>
-    </item>
-    
-    <item>
-      <title>Palestra proferida na Faculdade Guairacá em Guarapuava/PR</title>
-      <link>https://adlermedrado.com.br/posts/palestra-proferida-na-faculdade-guairaca-em-guarapuava-pr/</link>
-      <pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/palestra-proferida-na-faculdade-guairaca-em-guarapuava-pr/</guid>
-      <description>Demorei mas postei os slides aqui em meu site.
+Mas ontem todas as contas do Google que eu tinha configurado aqui, ao mesmo tempo, passaram a solicitar novamente a senha e sempre que eu tentava autenticar novamente o Internet Accounts travava conforme a tela abaixo:</description></item><item><title>Palestra proferida na Faculdade Guairacá em Guarapuava/PR</title><link>https://adlermedrado.com.br/posts/palestra-proferida-na-faculdade-guairaca-em-guarapuava-pr/</link><pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/palestra-proferida-na-faculdade-guairaca-em-guarapuava-pr/</guid><description>Demorei mas postei os slides aqui em meu site.
 No início de Outubro/2015 eu proferi uma palestra na Faculdade Guairacá para os alunos do curso de Sistemas de Informação.
 O objetivo da palestra era passar para eles um pouco da minha experiência na área e no mercado de trabalho, eu tentei passar algumas dicas e espero que elas possam ajuda-los em suas carreiras.
-Caso haja interesse, os slides podem ser encontrados no Slideshare ou na página de Palestras aqui em meu site.</description>
-    </item>
-    
-    <item>
-      <title>Linguagens baseadas na JVM</title>
-      <link>https://adlermedrado.com.br/posts/linguagens-baseadas-na-jvm/</link>
-      <pubDate>Sun, 11 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/linguagens-baseadas-na-jvm/</guid>
-      <description>Apesar de existirem muitas críticas à linguagem Java, é um fato que a JVM (Java Virtual Machine) é uma obra-prima.
-Muitas pessoas confundem a Java Virtual Machine com a linguagem Java e tratam tudo como se fosse uma coisa só, esse é o tipo de ignorância que infelizmente é muito difundida por aí. Uma coisa é a linguagem Java ter suas deficiências (como qualquer outra linguagem tem) e receber críticas por isso e outra coisa é a plataforma e ecossistema Java.</description>
-    </item>
-    
-    <item>
-      <title>Reflexão diária</title>
-      <link>https://adlermedrado.com.br/posts/reflexao-diaria/</link>
-      <pubDate>Tue, 25 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/reflexao-diaria/</guid>
-      <description>Enquanto seu inimigo dorme quente em sua cama, você deve treinar o seu machado com muito esforço e dedicação, e quando estiver frente a frente a ele, lembre-se das noites em que ele dormia aquecido e você treinava sozinho e ao relento.
+Caso haja interesse, os slides podem ser encontrados no Slideshare ou na página de Palestras aqui em meu site.</description></item><item><title>Linguagens baseadas na JVM</title><link>https://adlermedrado.com.br/posts/linguagens-baseadas-na-jvm/</link><pubDate>Sun, 11 Oct 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/linguagens-baseadas-na-jvm/</guid><description>Apesar de existirem muitas críticas à linguagem Java, é um fato que a JVM (Java Virtual Machine) é uma obra-prima.
+Muitas pessoas confundem a Java Virtual Machine com a linguagem Java e tratam tudo como se fosse uma coisa só, esse é o tipo de ignorância que infelizmente é muito difundida por aí. Uma coisa é a linguagem Java ter suas deficiências (como qualquer outra linguagem tem) e receber críticas por isso e outra coisa é a plataforma e ecossistema Java.</description></item><item><title>Reflexão diária</title><link>https://adlermedrado.com.br/posts/reflexao-diaria/</link><pubDate>Tue, 25 Aug 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/reflexao-diaria/</guid><description>Enquanto seu inimigo dorme quente em sua cama, você deve treinar o seu machado com muito esforço e dedicação, e quando estiver frente a frente a ele, lembre-se das noites em que ele dormia aquecido e você treinava sozinho e ao relento.
 E quando finalmente o olhar nos olhos, lembre o quanto ele está atrasado diante de você na arte da guerra.
 Guam Yu
-Imagem original</description>
-    </item>
-    
-    <item>
-      <title>Magento: Crash nos pacotes de produtos</title>
-      <link>https://adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</link>
-      <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</guid>
-      <description>Esta é a primeira dica sobre Magento publicada por mim, acredito que isso se tornará algo recorrente daqui para a frente.
-Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo.</description>
-    </item>
-    
-    <item>
-      <title>Atom e PHP: Em busca da configuração perfeita</title>
-      <link>https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</link>
-      <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</guid>
-      <description>Como eu disse recentemente, eu deixei de usar o Textmate, passei a usar o Atom e recomendei alguns packages que eu estou usando e estão me ajudando diariamente.
+Imagem original</description></item><item><title>Magento: Crash nos pacotes de produtos</title><link>https://adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</link><pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</guid><description>Esta é a primeira dica sobre Magento publicada por mim, acredito que isso se tornará algo recorrente daqui para a frente.
+Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo.</description></item><item><title>Atom e PHP: Em busca da configuração perfeita</title><link>https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</link><pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</guid><description>Como eu disse recentemente, eu deixei de usar o Textmate, passei a usar o Atom e recomendei alguns packages que eu estou usando e estão me ajudando diariamente.
 Neste post eu quero mostrar mais alguns packages bem úteis para desenvolvimento PHP:
-linter-phpmd linter-phpcs php-getters-setters Os dois primeiros para funcionar precisam que tanto o PHPMD (PHP Mess Detector) e o PHP_CodeSniffer esteja instalados no ambiente e acessíveis por meio do PATH, ou seja, os comandos phpcs e phpmd devem ser acessíveis de qualquer local.</description>
-    </item>
-    
-    <item>
-      <title>Migrando para o Atom</title>
-      <link>https://adlermedrado.com.br/posts/migrando-para-o-atom/</link>
-      <pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/migrando-para-o-atom/</guid>
-      <description>Na primeira vez em que tive um Mac, um dos primeiros softwares que comprei foi o Textmate.
-Na época ele era o editor de textos predileto dos desenvolvedores e realmente ele era muito bom, tão bom que eu ainda usava ele até o início desta semana, quando eu passei a ter alguns problemas principalmente com bundles dele como o de ctags e quando eu busquei solução para eles eu percebi que muitos dos bundles que eu usava, hoje não possuem mais suporte porque os autores deixaram de usar o Textmate.</description>
-    </item>
-    
-    <item>
-      <title>Configurando um repositório privado usando Composer e Satis</title>
-      <link>https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</link>
-      <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</guid>
-      <description>Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando na Coderockr e este repositório deveria ser importado no projeto por meio do composer, talvez isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível pelo composer que utilizasse um repositório git privado.
-Como faz? Após algumas pesquisas eu encontrei o projeto Satis, que pelo que pude compreender é mantido pelos mesmos desenvolvedores que mantém o composer.</description>
-    </item>
-    
-    <item>
-      <title>Liberdade</title>
-      <link>https://adlermedrado.com.br/posts/liberdade/</link>
-      <pubDate>Sat, 13 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/liberdade/</guid>
-      <description>Eu estava refletindo hoje:
-Tiraram nosso direito de portar armas e dificultam ao extremo o direito de obte-las. Inventaram a tal lei da palmada. A patrulha dos politicamente corretos impera. Agora querem nos tirar o direito de portar facas. Querem impor quais tipos de alimentos nós podemos comer. Limitam o período em que podemos sacar dinheiro em caixas eletrônicos. Querem impor a vacinação (por exemplo, a de HPV em crianças). Proibições ridículas como a de vender somente álcool em gel, ou ao menos dificultar a venda de álcool que não seja gel.</description>
-    </item>
-    
-    <item>
-      <title>Dica: Solução de problema ao configurar Kitematic/Docker</title>
-      <link>https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/</link>
-      <pubDate>Wed, 03 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/</guid>
-      <description>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras pessoas.
+linter-phpmd linter-phpcs php-getters-setters Os dois primeiros para funcionar precisam que tanto o PHPMD (PHP Mess Detector) e o PHP_CodeSniffer esteja instalados no ambiente e acessíveis por meio do PATH, ou seja, os comandos phpcs e phpmd devem ser acessíveis de qualquer local.</description></item><item><title>Migrando para o Atom</title><link>https://adlermedrado.com.br/posts/migrando-para-o-atom/</link><pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/migrando-para-o-atom/</guid><description>Na primeira vez em que tive um Mac, um dos primeiros softwares que comprei foi o Textmate.
+Na época ele era o editor de textos predileto dos desenvolvedores e realmente ele era muito bom, tão bom que eu ainda usava ele até o início desta semana, quando eu passei a ter alguns problemas principalmente com bundles dele como o de ctags e quando eu busquei solução para eles eu percebi que muitos dos bundles que eu usava, hoje não possuem mais suporte porque os autores deixaram de usar o Textmate.</description></item><item><title>Configurando um repositório privado usando Composer e Satis</title><link>https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</link><pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</guid><description>Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando na Coderockr e este repositório deveria ser importado no projeto por meio do composer, talvez isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível pelo composer que utilizasse um repositório git privado.
+Como faz? Após algumas pesquisas eu encontrei o projeto Satis, que pelo que pude compreender é mantido pelos mesmos desenvolvedores que mantém o composer.</description></item><item><title>Liberdade</title><link>https://adlermedrado.com.br/posts/liberdade/</link><pubDate>Sat, 13 Jun 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/liberdade/</guid><description>Eu estava refletindo hoje:
+Tiraram nosso direito de portar armas e dificultam ao extremo o direito de obte-las. Inventaram a tal lei da palmada. A patrulha dos politicamente corretos impera. Agora querem nos tirar o direito de portar facas. Querem impor quais tipos de alimentos nós podemos comer. Limitam o período em que podemos sacar dinheiro em caixas eletrônicos. Querem impor a vacinação (por exemplo, a de HPV em crianças). Proibições ridículas como a de vender somente álcool em gel, ou ao menos dificultar a venda de álcool que não seja gel.</description></item><item><title>Dica: Solução de problema ao configurar Kitematic/Docker</title><link>https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/</link><pubDate>Wed, 03 Jun 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/</guid><description>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras pessoas.
 Um projeto que estou trabalhando usa o RabbitMQ e para tentar manter o meu OS X o mais higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós decidimos utilizar o Docker e um container do RabbitMQ.
-Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que precisam ser aparadas, mas no geral ele funciona bem.</description>
-    </item>
-    
-    <item>
-      <title>Segurança ou sensação de segurança?</title>
-      <link>https://adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/</link>
-      <pubDate>Wed, 03 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/</guid>
-      <description>Hoje eu contratei o serviço de uma empresa que disponibiliza um vigilante para circular de moto ou carro (depende do frio) durante a noite, todos os dias da semana para ficar de olho em relação a suspeitos na vizinhança, auxiliar e verificar se está tudo tranquilo ao sair de casa ou chegar com carro a noite, etc., principalmente porque eu sempre viajo pra visitar meus sogros, mãe e irmãs que não moram na mesma cidade que eu e isso me deixa com uma sensação melhor ao deixar minha casa sozinha.</description>
-    </item>
-    
-    <item>
-      <title>Música para trabalhar em um domingo preguiçoso</title>
-      <link>https://adlermedrado.com.br/posts/musica-para-trabalhar-em-um-domingo-preguicoso/</link>
-      <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/musica-para-trabalhar-em-um-domingo-preguicoso/</guid>
-      <description>Hoje o dia está bastante preguiçoso, frio, nublado além de ser domingo e domingo ser um dia preguiçoso por si só, mas, eu preciso trabalhar e por isso nesses casos eu costumo escutar alguma música que me mantenha acordado e hoje resolvi compartilhar a música que estou escutando e surtiu algum efeito:</description>
-    </item>
-    
-    <item>
-      <title>De volta ao mundo Apple</title>
-      <link>https://adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</link>
-      <pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</guid>
-      <description>Apesar de ter dito diversas vezes: Apple nunca mais, dois meses atrás eu voltei a usar um Mac. Até então eu tinha decidido me desfazer de todos os dispositivos Apple que eu tinha (dei meu Macbook Pro e meu iPod para minha esposa) e buscado outras alternativas como Android, Linux e Windows.
-Eu me saí muito bem durante este período, principalmente com a plataforma Windows, como pode ser visto no entanto durante este período o trabalho que eu realizava era em sua maior parte realizada na plataforma da Microsoft, então eu não sentia tantas dificuldades de adaptação eu até comecei a escrever um livro sobre isso e espero termina-lo em breve.</description>
-    </item>
-    
-    <item>
-      <title>Informação importante</title>
-      <link>https://adlermedrado.com.br/posts/informacao-importante/</link>
-      <pubDate>Fri, 27 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/informacao-importante/</guid>
-      <description>Informo a quem interessar possa que a partir do dia 28/02/2015 nenhum indivíduo, empresa ou qualquer outro tipo de instituição está autorizado(a) a utilizar minhas certificações em concorrências, licitações ou fazer qualquer outro uso delas salvo autorização minha por escrito e registrada em cartório.</description>
-    </item>
-    
-    <item>
-      <title>Sugestões para o carnaval</title>
-      <link>https://adlermedrado.com.br/posts/sugestoes-para-o-carnaval/</link>
-      <pubDate>Mon, 16 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/sugestoes-para-o-carnaval/</guid>
-      <description>Se você não vai passar o carnaval se embriagando, rebolando, copulando com a maior quantidade possível de vagabundas(ou vagabundos), agindo como se fosse um animal treinado correndo atrás de um trio elétrico ou qualquer coisa do gênero e quer relaxar ou estudar, deixo as seguintes dicas para vocês:
-Assista ao filme ALGORITHM: The Hacker Movie É um filme independente e está disponibilizado oficialmente no Youtube com legendas em PT_BR que o Crash do Área 31 Hackerspace fez.</description>
-    </item>
-    
-    <item>
-      <title>Introdução a Criptografia — Parte 3</title>
-      <link>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/</link>
-      <pubDate>Tue, 06 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/</guid>
-      <description>Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma Windows, Gnu/Linux e Darwin (Mac OS X).
+Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que precisam ser aparadas, mas no geral ele funciona bem.</description></item><item><title>Segurança ou sensação de segurança?</title><link>https://adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/</link><pubDate>Wed, 03 Jun 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/</guid><description>Hoje eu contratei o serviço de uma empresa que disponibiliza um vigilante para circular de moto ou carro (depende do frio) durante a noite, todos os dias da semana para ficar de olho em relação a suspeitos na vizinhança, auxiliar e verificar se está tudo tranquilo ao sair de casa ou chegar com carro a noite, etc., principalmente porque eu sempre viajo pra visitar meus sogros, mãe e irmãs que não moram na mesma cidade que eu e isso me deixa com uma sensação melhor ao deixar minha casa sozinha.</description></item><item><title>Música para trabalhar em um domingo preguiçoso</title><link>https://adlermedrado.com.br/posts/musica-para-trabalhar-em-um-domingo-preguicoso/</link><pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/musica-para-trabalhar-em-um-domingo-preguicoso/</guid><description>Hoje o dia está bastante preguiçoso, frio, nublado além de ser domingo e domingo ser um dia preguiçoso por si só, mas, eu preciso trabalhar e por isso nesses casos eu costumo escutar alguma música que me mantenha acordado e hoje resolvi compartilhar a música que estou escutando e surtiu algum efeito:</description></item><item><title>De volta ao mundo Apple</title><link>https://adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</link><pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</guid><description>Apesar de ter dito diversas vezes: Apple nunca mais, dois meses atrás eu voltei a usar um Mac. Até então eu tinha decidido me desfazer de todos os dispositivos Apple que eu tinha (dei meu Macbook Pro e meu iPod para minha esposa) e buscado outras alternativas como Android, Linux e Windows.
+Eu me saí muito bem durante este período, principalmente com a plataforma Windows, como pode ser visto no entanto durante este período o trabalho que eu realizava era em sua maior parte realizada na plataforma da Microsoft, então eu não sentia tantas dificuldades de adaptação eu até comecei a escrever um livro sobre isso e espero termina-lo em breve.</description></item><item><title>Informação importante</title><link>https://adlermedrado.com.br/posts/informacao-importante/</link><pubDate>Fri, 27 Feb 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/informacao-importante/</guid><description>Informo a quem interessar possa que a partir do dia 28/02/2015 nenhum indivíduo, empresa ou qualquer outro tipo de instituição está autorizado(a) a utilizar minhas certificações em concorrências, licitações ou fazer qualquer outro uso delas salvo autorização minha por escrito e registrada em cartório.</description></item><item><title>Sugestões para o carnaval</title><link>https://adlermedrado.com.br/posts/sugestoes-para-o-carnaval/</link><pubDate>Mon, 16 Feb 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/sugestoes-para-o-carnaval/</guid><description>Se você não vai passar o carnaval se embriagando, rebolando, copulando com a maior quantidade possível de vagabundas(ou vagabundos), agindo como se fosse um animal treinado correndo atrás de um trio elétrico ou qualquer coisa do gênero e quer relaxar ou estudar, deixo as seguintes dicas para vocês:
+Assista ao filme ALGORITHM: The Hacker Movie É um filme independente e está disponibilizado oficialmente no Youtube com legendas em PT_BR que o Crash do Área 31 Hackerspace fez.</description></item><item><title>Introdução a Criptografia — Parte 3</title><link>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/</link><pubDate>Tue, 06 Jan 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/</guid><description>Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma Windows, Gnu/Linux e Darwin (Mac OS X).
 Apesar de cada plataforma possuir ferramentas gráficas para a gestão das chaves, não é fácil manter uma uniformidade neste processo, então eu mostrarei como fazer esta gestão utilizando o cliente de e-mail pois assim haverá uniformidade independente da plataforma utilizada por você, leitor.
-É possível também gerenciar estas chaves através da linha de comando, no entanto meu objetivo aqui é facilitar e não complicar e eu presumo também que se você, caro leitor, possui as habilidades necessárias para usar a linha de comando em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas man pages ou similares.</description>
-    </item>
-    
-    <item>
-      <title>Feliz 2015</title>
-      <link>https://adlermedrado.com.br/posts/feliz-2015/</link>
-      <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/feliz-2015/</guid>
-      <description>É praticamente impossível chegar nesta época do ano sem refletir nas coisas que aconteceram durante o ano vigente.
+É possível também gerenciar estas chaves através da linha de comando, no entanto meu objetivo aqui é facilitar e não complicar e eu presumo também que se você, caro leitor, possui as habilidades necessárias para usar a linha de comando em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas man pages ou similares.</description></item><item><title>Feliz 2015</title><link>https://adlermedrado.com.br/posts/feliz-2015/</link><pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/feliz-2015/</guid><description>É praticamente impossível chegar nesta época do ano sem refletir nas coisas que aconteceram durante o ano vigente.
 Comparando os anos de 2013 e 2014, eu posso dizer que 2014 foi melhor pois foi um pouco menos turbulento, posso afirmar que ele está chegando ao fim com o saldo positivo e dentre tudo que aconteceu eu posso enumerar as seguintes como muito positivas:
-Fiz uma cirurgia que mudou a minha vida;; Mudei de cidade (Francisco Beltrão para Guarapuava); Depois de quase 3 anos trabalhando em home-office, voltei a trabalhar na modalidade presencial (post em breve para explicar o lado positivo disso); Atualizei meus conhecimentos em C# e Powershell; Comecei a praticar exercícios; Conheci bastante pessoas; Existem outros pontos mas estes são os que considero mais positivos e enumerar apenas estes é suficiente para acreditar que apesar de ter consciência de que 2015 será um ano difícil, com trabalho e dedicação eu tenho certeza que é possível deixar o saldo dele no positivo também, se D-us quiser.</description>
-    </item>
-    
-    <item>
-      <title>Introdução a Criptografia — Parte 2</title>
-      <link>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/</link>
-      <pubDate>Mon, 29 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/</guid>
-      <description>Como eu havia prometido, continuo com a série de posts sobre criptografia, se você chegou aqui sem ter visto a parte 1, sugiro que comece lendo por aqui.
+Fiz uma cirurgia que mudou a minha vida;; Mudei de cidade (Francisco Beltrão para Guarapuava); Depois de quase 3 anos trabalhando em home-office, voltei a trabalhar na modalidade presencial (post em breve para explicar o lado positivo disso); Atualizei meus conhecimentos em C# e Powershell; Comecei a praticar exercícios; Conheci bastante pessoas; Existem outros pontos mas estes são os que considero mais positivos e enumerar apenas estes é suficiente para acreditar que apesar de ter consciência de que 2015 será um ano difícil, com trabalho e dedicação eu tenho certeza que é possível deixar o saldo dele no positivo também, se D-us quiser.</description></item><item><title>Introdução a Criptografia — Parte 2</title><link>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/</link><pubDate>Mon, 29 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/</guid><description>Como eu havia prometido, continuo com a série de posts sobre criptografia, se você chegou aqui sem ter visto a parte 1, sugiro que comece lendo por aqui.
 Introdução Atualmente as duas formas mais comuns de criptografia são a simétrica e
 a assimétrica, fique tranquilo pois apesar dos nomes intimidarem são dois
 conceitos bem simples de serem compreendidos.
-Criptografia Simétrica A criptografia é feita usando a mesma chave para criptografar e descriptografar a informação, similar ao que foi mostrado na primeira parte deste tutorial.</description>
-    </item>
-    
-    <item>
-      <title>Introdução a Criptografia — Parte 1</title>
-      <link>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/</link>
-      <pubDate>Sun, 28 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/</guid>
-      <description>Eu gosto muito de chuva —apenas quando estou tranquila e confortavelmente em casa— e agora no momento em que escrevo este, está caindo uma chuva muito boa aqui em Guarapuava/PR, além disso está ventando bastante a ponto das janelas da minha casa ficarem vibrando, isso é muito bom para relaxar…
+Criptografia Simétrica A criptografia é feita usando a mesma chave para criptografar e descriptografar a informação, similar ao que foi mostrado na primeira parte deste tutorial.</description></item><item><title>Introdução a Criptografia — Parte 1</title><link>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/</link><pubDate>Sun, 28 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/</guid><description>Eu gosto muito de chuva —apenas quando estou tranquila e confortavelmente em casa— e agora no momento em que escrevo este, está caindo uma chuva muito boa aqui em Guarapuava/PR, além disso está ventando bastante a ponto das janelas da minha casa ficarem vibrando, isso é muito bom para relaxar…
 Eu não sei porque escrevi isso, mas tudo bem, agora vamos ao que interessa.
-Introdução O objetivo deste post é tentar mostrar o conceito básico de criptografia de uma maneira bem simples para que todos possam entender, pois o que eu desejo é que usuários comuns aka não-técnicos, saibam o que é criptografia e como fazer uso dela em seu dia-a-dia.</description>
-    </item>
-    
-    <item>
-      <title>Meu ambiente de trabalho na plataforma Windows</title>
-      <link>https://adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/</link>
-      <pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/</guid>
-      <description>A cerca de um ano e alguns meses eu tenho usado a plataforma Microsoft Windows de uma forma sistemática e eu achei interessante escrever um pouco sobre o que eu costumo usar em meu computador.
-Multimídia Eu faço uso recorrente do player desktop do Rdio para ouvir música em streaming. Este é um serviço que vale muito a pena e apesar de ver bastante gente migrando para o Spotify eu estou feliz com o Rdio pois ele me atende bem; VLC — Player de vídeo open-source com suporte à maioria dos formatos disponíveis no mercado; gPodder — Gerenciador de podcasts.</description>
-    </item>
-    
-    <item>
-      <title>Dica: Criptografia de informações importantes</title>
-      <link>https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/</link>
-      <pubDate>Mon, 22 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/</guid>
-      <description>Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você possui um cofre para garantir que itens valiosos como documentos, dinheiro, jóias, etc. fiquem seguros, pois você sabe que para abri-lo é necessário uma chave que somente você tem e um código que somente você sabe.
-Você sabe que o cofre não garante 100% de segurança contra arrombamentos mas tem consciência que ele dará muito mais trabalho para quem quiser roubar suas coisas.</description>
-    </item>
-    
-    <item>
-      <title>Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony</title>
-      <link>https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/</link>
-      <pubDate>Sun, 21 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/</guid>
-      <description>Se você não estava em uma caverna, provavelmente assistiu, leu ou ouviu sobre o caso de cracking e vazamento de dados da Sony Pictures Entertainment, onde um grupo de crackers (provavelmente norte-coreanos) invadiram os computadores dela e obtiveram dados sigilosos como informações a respeito de futuros lançamentos e conversas via e-mail de executivos da empresa.
-Basicamente, estes criminosos estão ameaçando a empresa dizendo que vazarão dados sigilosos dela ao mundo caso suas demandas não sejam atendidas, além de tornar públicas informações como os salários de executivos da empresa, números do seguro social de funcionários da empresa, incluindo celebridades.</description>
-    </item>
-    
-    <item>
-      <title>Gerenciador de pacotes para Windows</title>
-      <link>https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/</link>
-      <pubDate>Sun, 24 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/</guid>
-      <description>Não é segredo que nos últimos meses eu tenho usado Windows como a minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como ambiente de trabalho em alguns projetos.
-Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes nix eu sempre busco por alternativas similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o chocolatey, que é um gerenciador de pacotes similar ao apt-get no linux, só que para windows.</description>
-    </item>
-    
-    <item>
-      <title>Acessando o Office 365 via Powershell</title>
-      <link>https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/</link>
-      <pubDate>Sat, 26 Jul 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/</guid>
-      <description>É muito fácil acessar sua conta do Office365 usando Powershell,
+Introdução O objetivo deste post é tentar mostrar o conceito básico de criptografia de uma maneira bem simples para que todos possam entender, pois o que eu desejo é que usuários comuns aka não-técnicos, saibam o que é criptografia e como fazer uso dela em seu dia-a-dia.</description></item><item><title>Meu ambiente de trabalho na plataforma Windows</title><link>https://adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/</link><pubDate>Tue, 23 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/</guid><description>A cerca de um ano e alguns meses eu tenho usado a plataforma Microsoft Windows de uma forma sistemática e eu achei interessante escrever um pouco sobre o que eu costumo usar em meu computador.
+Multimídia Eu faço uso recorrente do player desktop do Rdio para ouvir música em streaming. Este é um serviço que vale muito a pena e apesar de ver bastante gente migrando para o Spotify eu estou feliz com o Rdio pois ele me atende bem; VLC — Player de vídeo open-source com suporte à maioria dos formatos disponíveis no mercado; gPodder — Gerenciador de podcasts.</description></item><item><title>Dica: Criptografia de informações importantes</title><link>https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/</link><pubDate>Mon, 22 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/</guid><description>Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você possui um cofre para garantir que itens valiosos como documentos, dinheiro, jóias, etc. fiquem seguros, pois você sabe que para abri-lo é necessário uma chave que somente você tem e um código que somente você sabe.
+Você sabe que o cofre não garante 100% de segurança contra arrombamentos mas tem consciência que ele dará muito mais trabalho para quem quiser roubar suas coisas.</description></item><item><title>Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony</title><link>https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/</link><pubDate>Sun, 21 Dec 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/</guid><description>Se você não estava em uma caverna, provavelmente assistiu, leu ou ouviu sobre o caso de cracking e vazamento de dados da Sony Pictures Entertainment, onde um grupo de crackers (provavelmente norte-coreanos) invadiram os computadores dela e obtiveram dados sigilosos como informações a respeito de futuros lançamentos e conversas via e-mail de executivos da empresa.
+Basicamente, estes criminosos estão ameaçando a empresa dizendo que vazarão dados sigilosos dela ao mundo caso suas demandas não sejam atendidas, além de tornar públicas informações como os salários de executivos da empresa, números do seguro social de funcionários da empresa, incluindo celebridades.</description></item><item><title>Gerenciador de pacotes para Windows</title><link>https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/</link><pubDate>Sun, 24 Aug 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/</guid><description>Não é segredo que nos últimos meses eu tenho usado Windows como a minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como ambiente de trabalho em alguns projetos.
+Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes nix eu sempre busco por alternativas similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o chocolatey, que é um gerenciador de pacotes similar ao apt-get no linux, só que para windows.</description></item><item><title>Acessando o Office 365 via Powershell</title><link>https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/</link><pubDate>Sat, 26 Jul 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/</guid><description>É muito fácil acessar sua conta do Office365 usando Powershell,
 principalmente se você precisa otimizar a administração de contas corporativas
 via script em situações onde é necessário manipular muitos usuários simultaneamente.
 Alguns exemplos de tarefas que podem ser executadas são:
 Adicionar novos usuários Remover usuários Mudar permissões etc. No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.
-O primeiro passo é instalar os Cmdlets para Office365 ao Powershell,</description>
-    </item>
-    
-    <item>
-      <title>Como subverter uma nação. Por Yuri Bezmenov</title>
-      <link>https://adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/</link>
-      <pubDate>Sat, 21 Jun 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/</guid>
-      <description>Yuri Bezmenov foi um jornalista russo que trabalhou na Ria Novosti e atuava como agente da KGB.
+O primeiro passo é instalar os Cmdlets para Office365 ao Powershell,</description></item><item><title>Como subverter uma nação. Por Yuri Bezmenov</title><link>https://adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/</link><pubDate>Sat, 21 Jun 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/</guid><description>Yuri Bezmenov foi um jornalista russo que trabalhou na Ria Novosti e atuava como agente da KGB.
 Atuando pela KGB ele era ativo na área de subversão e após alguns anos trabalhando nesta área ele manifestou descontentamento com a política soviética e então decidiu desertar para o ocidente, conseguindo asilo no Canadá.
-Ele escreveu livros e proferiu palestras que explicava as táticas usadas pela KGB afim de subverter as nações ocidentais e mostrava que ela não era apenas uma agência de espionagem, muito pelo contrário, pois apenas entre 10% a 15% dos recursos da KGB eram usados com este tipo de atividade.</description>
-    </item>
-    
-    <item>
-      <title>Configurando o Ruby no Windows</title>
-      <link>https://adlermedrado.com.br/posts/configurando-o-ruby-no-windows/</link>
-      <pubDate>Mon, 16 Jun 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/configurando-o-ruby-no-windows/</guid>
-      <description>Recentemente eu instalei o Windows no meu PC e como eu uso o octopress para gerir este blog, eu estava usando uma VM com linux como ‘plataforma de blogging’.
+Ele escreveu livros e proferiu palestras que explicava as táticas usadas pela KGB afim de subverter as nações ocidentais e mostrava que ela não era apenas uma agência de espionagem, muito pelo contrário, pois apenas entre 10% a 15% dos recursos da KGB eram usados com este tipo de atividade.</description></item><item><title>Configurando o Ruby no Windows</title><link>https://adlermedrado.com.br/posts/configurando-o-ruby-no-windows/</link><pubDate>Mon, 16 Jun 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/configurando-o-ruby-no-windows/</guid><description>Recentemente eu instalei o Windows no meu PC e como eu uso o octopress para gerir este blog, eu estava usando uma VM com linux como ‘plataforma de blogging’.
 No entanto eu acho que não faz muito sentido manter uma máquina virtual só para isso, então eu instalei o ambiente Ruby no windows para usar o octopress.
-Como eu sempre usei ruby com Mac OS X ou Linux e não tinha experiência com a configuração do ambiente Ruby na plataforma da Microsoft, eu apanhei um pouco para configurar, mas deu certo e os passos que eu executei estão listados abaixo:</description>
-    </item>
-    
-    <item>
-      <title>Minha vida após a cirurgia: Novas perspectivas</title>
-      <link>https://adlermedrado.com.br/posts/minha-vida-apos-a-cirurgia-novas-perspectivas/</link>
-      <pubDate>Sun, 11 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/minha-vida-apos-a-cirurgia-novas-perspectivas/</guid>
-      <description>Hoje fazem 2 meses e dois dias que eu fiz a gastrectomia vertical, também conhecida como sleeve gástrico que é a retirada de uma parte do estômago.
+Como eu sempre usei ruby com Mac OS X ou Linux e não tinha experiência com a configuração do ambiente Ruby na plataforma da Microsoft, eu apanhei um pouco para configurar, mas deu certo e os passos que eu executei estão listados abaixo:</description></item><item><title>Minha vida após a cirurgia: Novas perspectivas</title><link>https://adlermedrado.com.br/posts/minha-vida-apos-a-cirurgia-novas-perspectivas/</link><pubDate>Sun, 11 May 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/minha-vida-apos-a-cirurgia-novas-perspectivas/</guid><description>Hoje fazem 2 meses e dois dias que eu fiz a gastrectomia vertical, também conhecida como sleeve gástrico que é a retirada de uma parte do estômago.
 Muitos generalizam chamando qualquer cirurgia do gênero apenas como cirurgia bariátrica ou a mais popular “cirurgia de redução do estômago”.
-Eu nunca fui muito a favor deste tipo de cirurgia, mesmo estando em uma situação de obesidade mórbida grave eu nunca considerei a cirurgia como uma opção, pois, eu dizia que não me mutilaria para fins estéticos.</description>
-    </item>
-    
-    <item>
-      <title>A Segurança Das Urnas Eletrônicas</title>
-      <link>https://adlermedrado.com.br/posts/a-seguranca-das-urnas-eletronicas/</link>
-      <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/a-seguranca-das-urnas-eletronicas/</guid>
-      <description>Quem me conhece sabe que eu sempre desconfiei da segurança das urnas
+Eu nunca fui muito a favor deste tipo de cirurgia, mesmo estando em uma situação de obesidade mórbida grave eu nunca considerei a cirurgia como uma opção, pois, eu dizia que não me mutilaria para fins estéticos.</description></item><item><title>A Segurança Das Urnas Eletrônicas</title><link>https://adlermedrado.com.br/posts/a-seguranca-das-urnas-eletronicas/</link><pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/a-seguranca-das-urnas-eletronicas/</guid><description>Quem me conhece sabe que eu sempre desconfiei da segurança das urnas
 eletrônicas brasileiras, um dos fatores que me levam a ter essa postura
 é devido ao fato de o código das urnas ser fechado e não passar por
 auditorias externas.
 Outro motivo é que aqui no Brasil nada que o governo coloca as mãos
 funciona direito, vide a saúde, educação, segurança, etc., então é de
-se desconfiar que a única coisa que funciona bem seja a urna eletrônica,</description>
-    </item>
-    
-    <item>
-      <title>Flisol Francisco Beltrão 2014</title>
-      <link>https://adlermedrado.com.br/posts/flisol-francisco-beltrao-2014/</link>
-      <pubDate>Fri, 25 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/flisol-francisco-beltrao-2014/</guid>
-      <description>Amanhã eu irei proferir uma palestra sobre ReactPHP no Flisol de Francisco Beltrão.
-Se puder, prestigie o evento.</description>
-    </item>
-    
-    <item>
-      <title>OFF-TOPIC — O desarmamento e suas falácias</title>
-      <link>https://adlermedrado.com.br/posts/off-topic-o-desarmamento-e-suas-falacias/</link>
-      <pubDate>Mon, 24 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/off-topic-o-desarmamento-e-suas-falacias/</guid>
-      <description>Ontem no Jornal de Beltrão teve uma reportagem sobre os bandidos estarem invadindo casas e tal. Nesta reportagem um quadro informava sobre armas e na reportagem havia um trecho com a opinião de um delegado.
-Eu acho uma vergonha um delegado prestar um serviço de desinformação num jornal dizendo que “O cidadão que compra uma arma pode estar armando um bandido” e em seguida dizer que o cidadão “precisa tomar cuidados como reforçar a segurança de portas, janelas e evitar deixar bens à mostra”.</description>
-    </item>
-    
-    <item>
-      <title>O fim do GetOnCode();</title>
-      <link>https://adlermedrado.com.br/posts/o-fim-do-getoncode/</link>
-      <pubDate>Wed, 19 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/o-fim-do-getoncode/</guid>
-      <description>Em 2011 eu iniciei um projeto chamado Get On Code, a idéia inicial era a de publicar notícias, artigos, etc., relacionados a desenvolvimento, bem como produzir um podcast que falasse sobre o assunto.
-A idéia começou bem, com uma boa resposta dos visitantes do site e ouvintes do podcast, no entanto, com o passar do tempo eu passei a ter menos disponibilidade para continuar com o projeto e passei por diversas situações na minha vida que me atrapalharam a me dedicar a ele.</description>
-    </item>
-    
-    <item>
-      <title>Para refletir</title>
-      <link>https://adlermedrado.com.br/posts/para-refletir/</link>
-      <pubDate>Wed, 29 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/para-refletir/</guid>
-      <description>Hoje eu recebi por e-mail a seguinte foto, eu creio que ela fala por ela mesma, não é?
+se desconfiar que a única coisa que funciona bem seja a urna eletrônica,</description></item><item><title>Flisol Francisco Beltrão 2014</title><link>https://adlermedrado.com.br/posts/flisol-francisco-beltrao-2014/</link><pubDate>Fri, 25 Apr 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/flisol-francisco-beltrao-2014/</guid><description>Amanhã eu irei proferir uma palestra sobre ReactPHP no Flisol de Francisco Beltrão.
+Se puder, prestigie o evento.</description></item><item><title>OFF-TOPIC — O desarmamento e suas falácias</title><link>https://adlermedrado.com.br/posts/off-topic-o-desarmamento-e-suas-falacias/</link><pubDate>Mon, 24 Feb 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/off-topic-o-desarmamento-e-suas-falacias/</guid><description>Ontem no Jornal de Beltrão teve uma reportagem sobre os bandidos estarem invadindo casas e tal. Nesta reportagem um quadro informava sobre armas e na reportagem havia um trecho com a opinião de um delegado.
+Eu acho uma vergonha um delegado prestar um serviço de desinformação num jornal dizendo que “O cidadão que compra uma arma pode estar armando um bandido” e em seguida dizer que o cidadão “precisa tomar cuidados como reforçar a segurança de portas, janelas e evitar deixar bens à mostra”.</description></item><item><title>O fim do GetOnCode();</title><link>https://adlermedrado.com.br/posts/o-fim-do-getoncode/</link><pubDate>Wed, 19 Feb 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/o-fim-do-getoncode/</guid><description>Em 2011 eu iniciei um projeto chamado Get On Code, a idéia inicial era a de publicar notícias, artigos, etc., relacionados a desenvolvimento, bem como produzir um podcast que falasse sobre o assunto.
+A idéia começou bem, com uma boa resposta dos visitantes do site e ouvintes do podcast, no entanto, com o passar do tempo eu passei a ter menos disponibilidade para continuar com o projeto e passei por diversas situações na minha vida que me atrapalharam a me dedicar a ele.</description></item><item><title>Para refletir</title><link>https://adlermedrado.com.br/posts/para-refletir/</link><pubDate>Wed, 29 Jan 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/para-refletir/</guid><description>Hoje eu recebi por e-mail a seguinte foto, eu creio que ela fala por ela mesma, não é?
 Após observa-la por algum tempo, eu pude perceber que nossa sociedade não vive diferente dos animais retratados na imagem:
-Nós pensamos que somos livres, mas não somos. Nós pensamos que temos o direito de escolher o que é melhor para nós, mas não temos. O que nós temos é a ilusão de que somos livres, mas, na verdade o que nós somos mesmo é escravos, prisioneiros do sistema.</description>
-    </item>
-    
-    <item>
-      <title>Quer ser um bom programador? Dica #2</title>
-      <link>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-2/</link>
-      <pubDate>Wed, 22 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-2/</guid>
-      <description>Este é o segundo de uma série de posts com dicas para se tornar um bom programador.
+Nós pensamos que somos livres, mas não somos. Nós pensamos que temos o direito de escolher o que é melhor para nós, mas não temos. O que nós temos é a ilusão de que somos livres, mas, na verdade o que nós somos mesmo é escravos, prisioneiros do sistema.</description></item><item><title>Quer ser um bom programador? Dica #2</title><link>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-2/</link><pubDate>Wed, 22 Jan 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-2/</guid><description>Este é o segundo de uma série de posts com dicas para se tornar um bom programador.
 O primeiro post da série encontra-se aqui
-Dica #2: Mantenha o hábito de continuar sempre aprendendo. Conhecimento nunca é demais, principalmente com programação onde novas tecnologias despontam quase que diariamente, por isso, é importante deixar de lado qualquer ideologia, fanatismo -Muitas vezes até parecido com fanatismo religioso- e estudar coisas novas, mesmo porque estudando uma linguagem diferente daquela usada diariamente pode dar idéias de como resolver melhor certos problemas do dia-a-dia.</description>
-    </item>
-    
-    <item>
-      <title>Quer ser um bom programador? Dica #1</title>
-      <link>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-1/</link>
-      <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-1/</guid>
-      <description>Uma das primeiras dicas que dou quando alguém me pergunta o que é necessário para ser um bom programador, será também a primeira de uma série de posts que farei a respeito deste assunto.
-Dica #1: Conheça a plataforma que você usa para trabalhar. Para ilustrar a minha idéia, usarei como exemplo a linguagem PHP, mas a dica pode ser considerada para qualquer ou pelo menos a maioria das linguagens.</description>
-    </item>
-    
-    <item>
-      <title>Não execute comandos a esmo. Escreva-os.</title>
-      <link>https://adlermedrado.com.br/posts/nao-execute-comandos-a-esmo-escreva-os/</link>
-      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/nao-execute-comandos-a-esmo-escreva-os/</guid>
-      <description>Eu sempre fui um cara afobado, então sempre quando precisava executar um comando em um servidor por exemplo, eu simplesmente o executava e se alguns dias, semanas ou meses depois eu precisasse executa-lo novamente eu me pegava tentando me lembrar como que tinha feito da outra vez.
+Dica #2: Mantenha o hábito de continuar sempre aprendendo. Conhecimento nunca é demais, principalmente com programação onde novas tecnologias despontam quase que diariamente, por isso, é importante deixar de lado qualquer ideologia, fanatismo -Muitas vezes até parecido com fanatismo religioso- e estudar coisas novas, mesmo porque estudando uma linguagem diferente daquela usada diariamente pode dar idéias de como resolver melhor certos problemas do dia-a-dia.</description></item><item><title>Quer ser um bom programador? Dica #1</title><link>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-1/</link><pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/quer-ser-um-bom-programador-dica-1/</guid><description>Uma das primeiras dicas que dou quando alguém me pergunta o que é necessário para ser um bom programador, será também a primeira de uma série de posts que farei a respeito deste assunto.
+Dica #1: Conheça a plataforma que você usa para trabalhar. Para ilustrar a minha idéia, usarei como exemplo a linguagem PHP, mas a dica pode ser considerada para qualquer ou pelo menos a maioria das linguagens.</description></item><item><title>Não execute comandos a esmo. Escreva-os.</title><link>https://adlermedrado.com.br/posts/nao-execute-comandos-a-esmo-escreva-os/</link><pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/nao-execute-comandos-a-esmo-escreva-os/</guid><description>Eu sempre fui um cara afobado, então sempre quando precisava executar um comando em um servidor por exemplo, eu simplesmente o executava e se alguns dias, semanas ou meses depois eu precisasse executa-lo novamente eu me pegava tentando me lembrar como que tinha feito da outra vez.
 Quem nunca passou por isso?
 Então já tem algum tempo, eu adotei o seguinte lema:
 Não simplesmente execute comandos. Escreva-os.
-Isso mesmo: Sempre que preciso executar um comando SQL, independente de qual seja, um comando bash em um servidor ou até mesmo comandos repetitivos de backup entre outros, eu o escrevo antes, guardo o script, comando, etc.</description>
-    </item>
-    
-    <item>
-      <title>Happy New Year</title>
-      <link>https://adlermedrado.com.br/posts/happy-new-year/</link>
-      <pubDate>Tue, 31 Dec 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/happy-new-year/</guid>
-      <description>Happy New Year, folks.</description>
-    </item>
-    
-    <item>
-      <title>Porque o coitadismo é tão difundido no Brasil?</title>
-      <link>https://adlermedrado.com.br/posts/porque-o-coitadismo-e-tao-difundido-no-brasil/</link>
-      <pubDate>Mon, 16 Dec 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/porque-o-coitadismo-e-tao-difundido-no-brasil/</guid>
-      <description>Uma das coisas que eu abomino é a cultura do coitadismo que, infelizmente, está enraizado no DNA do brasileiro.
-Eu não sei o motivo desse comportamento, mas o que eu observo é que aparentemente as pessoas estão cada vez mais buscando encontrar um papel de vítima no qual ele possa se encaixar. O motivo? Não sei, talvez por nossa sociedade ser hipócrita o suficiente para valorizar quem não se esforça, quem não faz por merecer em detrimento daqueles que se esforçam para ser ou conseguir alguma coisa.</description>
-    </item>
-    
-    <item>
-      <title>Mais um pouco sobre privacidade</title>
-      <link>https://adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</link>
-      <pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</guid>
-      <description>Eu resolvi escrever este post depois de ficar pensando neste assunto por um tempo, então se você não se importa muito com a proteção da privacidade e/ou acha que quem se preocupa com isso é teórico da conspiração, pirado, louco ou qualquer coisa do gênero, fique com essa foto desse gatinho com uma cara engraçada, assim a vinda até este post não foi em vão.
-Mas se você quiser ler um resumo sobre o que penso a respeito deste assunto, é só continuar a leitura.</description>
-    </item>
-    
-    <item>
-      <title>Web Analytics e Privacidade</title>
-      <link>https://adlermedrado.com.br/posts/web-analytics-e-privacidade/</link>
-      <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/web-analytics-e-privacidade/</guid>
-      <description>Intro Recentemente, eu publiquei um post a respeito do meu novo blog, aproveitando o embalo eu estou tentando torna-lo o mais transparente possível para aqueles que o visitam, então a primeira iniciativa foi **descartar o uso do Google Analytics **.
-Rastreamento Há muito tempo, bem antes desse burburinho todo por causa da NSA que eu me preocupo com a minha privacidade na web, eu acho que comecei a me preocupar e a me interessar por esse tipo de assunto por volta de 1998 ou 1999 quando lia sobre echelon.</description>
-    </item>
-    
-    <item>
-      <title>Novo blog</title>
-      <link>https://adlermedrado.com.br/posts/novo-blog/</link>
-      <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/novo-blog/</guid>
-      <description>Olá, bem vindo ao meu novo blog. Eu estou abandonando o meu projeto dangolino, a partir desse post o meu blog voltará a ser baseado no bom e velho wordpress e tentarei enumerar os motivos logo abaixo:
+Isso mesmo: Sempre que preciso executar um comando SQL, independente de qual seja, um comando bash em um servidor ou até mesmo comandos repetitivos de backup entre outros, eu o escrevo antes, guardo o script, comando, etc.</description></item><item><title>Happy New Year</title><link>https://adlermedrado.com.br/posts/happy-new-year/</link><pubDate>Tue, 31 Dec 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/happy-new-year/</guid><description>Happy New Year, folks.</description></item><item><title>Porque o coitadismo é tão difundido no Brasil?</title><link>https://adlermedrado.com.br/posts/porque-o-coitadismo-e-tao-difundido-no-brasil/</link><pubDate>Mon, 16 Dec 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/porque-o-coitadismo-e-tao-difundido-no-brasil/</guid><description>Uma das coisas que eu abomino é a cultura do coitadismo que, infelizmente, está enraizado no DNA do brasileiro.
+Eu não sei o motivo desse comportamento, mas o que eu observo é que aparentemente as pessoas estão cada vez mais buscando encontrar um papel de vítima no qual ele possa se encaixar. O motivo? Não sei, talvez por nossa sociedade ser hipócrita o suficiente para valorizar quem não se esforça, quem não faz por merecer em detrimento daqueles que se esforçam para ser ou conseguir alguma coisa.</description></item><item><title>Mais um pouco sobre privacidade</title><link>https://adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</link><pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</guid><description>Eu resolvi escrever este post depois de ficar pensando neste assunto por um tempo, então se você não se importa muito com a proteção da privacidade e/ou acha que quem se preocupa com isso é teórico da conspiração, pirado, louco ou qualquer coisa do gênero, fique com essa foto desse gatinho com uma cara engraçada, assim a vinda até este post não foi em vão.
+Mas se você quiser ler um resumo sobre o que penso a respeito deste assunto, é só continuar a leitura.</description></item><item><title>Web Analytics e Privacidade</title><link>https://adlermedrado.com.br/posts/web-analytics-e-privacidade/</link><pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/web-analytics-e-privacidade/</guid><description>Intro Recentemente, eu publiquei um post a respeito do meu novo blog, aproveitando o embalo eu estou tentando torna-lo o mais transparente possível para aqueles que o visitam, então a primeira iniciativa foi **descartar o uso do Google Analytics **.
+Rastreamento Há muito tempo, bem antes desse burburinho todo por causa da NSA que eu me preocupo com a minha privacidade na web, eu acho que comecei a me preocupar e a me interessar por esse tipo de assunto por volta de 1998 ou 1999 quando lia sobre echelon.</description></item><item><title>Novo blog</title><link>https://adlermedrado.com.br/posts/novo-blog/</link><pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/novo-blog/</guid><description>Olá, bem vindo ao meu novo blog. Eu estou abandonando o meu projeto dangolino, a partir desse post o meu blog voltará a ser baseado no bom e velho wordpress e tentarei enumerar os motivos logo abaixo:
 Falta de tempo
-Quando eu iniciei o projeto do dangolino, eu tinha tempo disponível e queria trabalhar em algo que pudesse usar no meu dia-a-dia, objetivo este que foi atendido, pois o dangolino me serviu por mais de um ano, sem problemas e sem precisar adicionar funcionalidade alguma a ele neste período.</description>
-    </item>
-    
-    <item>
-      <title>Quase um ano de Dangolino sem precisar alterar uma linha de código</title>
-      <link>https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/</link>
-      <pubDate>Fri, 15 Mar 2013 00:09:13 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/</guid>
-      <description>Já faz algum tempo que eu postei aqui que eu estava usando o picasaweb para publicar as imagens no meu blog usando o dangolino, mas, recentemente eu pensei melhor e decidi que quero manter as imagens no meu próprio servidor.
-Os motivos são vários, mas o principal é que quero manter a integridade do meu conteúdo em único local, neste caso o meu servidor, simplesmente pela facilidade que tenho de fazer backup dele, que é muito mais fácil para mim do que manter um backup de serviços como o picasaweb ou o flickr por exemplo.</description>
-    </item>
-    
-    <item>
-      <title>Funções anônimas em PHP</title>
-      <link>https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/</link>
-      <pubDate>Sun, 26 Sep 2010 20:23:35 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/</guid>
-      <description>Introdução Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e mais completa.
+Quando eu iniciei o projeto do dangolino, eu tinha tempo disponível e queria trabalhar em algo que pudesse usar no meu dia-a-dia, objetivo este que foi atendido, pois o dangolino me serviu por mais de um ano, sem problemas e sem precisar adicionar funcionalidade alguma a ele neste período.</description></item><item><title>Quase um ano de Dangolino sem precisar alterar uma linha de código</title><link>https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/</link><pubDate>Fri, 15 Mar 2013 00:09:13 -0300</pubDate><guid>https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/</guid><description>Já faz algum tempo que eu postei aqui que eu estava usando o picasaweb para publicar as imagens no meu blog usando o dangolino, mas, recentemente eu pensei melhor e decidi que quero manter as imagens no meu próprio servidor.
+Os motivos são vários, mas o principal é que quero manter a integridade do meu conteúdo em único local, neste caso o meu servidor, simplesmente pela facilidade que tenho de fazer backup dele, que é muito mais fácil para mim do que manter um backup de serviços como o picasaweb ou o flickr por exemplo.</description></item><item><title>Funções anônimas em PHP</title><link>https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/</link><pubDate>Sun, 26 Sep 2010 20:23:35 -0300</pubDate><guid>https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/</guid><description>Introdução Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e mais completa.
 A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas funcionalidades.
 Minha idéia é de escrever posts curtos e direto ao ponto.
-As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em nenhum outro local, apenas naquele momento específico.</description>
-    </item>
-    
-    <item>
-      <title>Promoção do PHPSP te ajuda a tirar certificações Zend</title>
-      <link>https://adlermedrado.com.br/posts/promo-phpsp-ajuda-tirar-certificacao/</link>
-      <pubDate>Thu, 24 Jun 2010 23:25:35 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/promo-phpsp-ajuda-tirar-certificacao/</guid>
-      <description>O PHPSPCast traz uma promoção em conjunto com seu último podcast que é sobre certificação. Os prêmios, logicamente são vouchers pra certificação. Se você ganhar não vai precisar gastar pelo menos US$160 pra ser um certificado, nós daremos vários certificados. O melhor? Não é sorteio!
+As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em nenhum outro local, apenas naquele momento específico.</description></item><item><title>Promoção do PHPSP te ajuda a tirar certificações Zend</title><link>https://adlermedrado.com.br/posts/promo-phpsp-ajuda-tirar-certificacao/</link><pubDate>Thu, 24 Jun 2010 23:25:35 -0300</pubDate><guid>https://adlermedrado.com.br/posts/promo-phpsp-ajuda-tirar-certificacao/</guid><description>O PHPSPCast traz uma promoção em conjunto com seu último podcast que é sobre certificação. Os prêmios, logicamente são vouchers pra certificação. Se você ganhar não vai precisar gastar pelo menos US$160 pra ser um certificado, nós daremos vários certificados. O melhor? Não é sorteio!
 Responda o questionário de conhecimentos gerais de PHP. Se você acertar tudo, leva.
-E quem for acertando, vai levando até nossos vouchers acabarem. Mas são poucos!</description>
-    </item>
-    
-    <item>
-      <title>Screencast Zend Framework e Netbeans</title>
-      <link>https://adlermedrado.com.br/posts/screencast-zend-framework-e-netbeans/</link>
-      <pubDate>Sun, 13 Jun 2010 06:07:40 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/screencast-zend-framework-e-netbeans/</guid>
-      <description>Alô Rapaziada. Acabei de colocar um screencast que eu fiz hoje cedo mostrando como integrar o Zend Framework, mais precisamente o Zend_Tool com o NetBeans 6.9 RC 2.
+E quem for acertando, vai levando até nossos vouchers acabarem. Mas são poucos!</description></item><item><title>Screencast Zend Framework e Netbeans</title><link>https://adlermedrado.com.br/posts/screencast-zend-framework-e-netbeans/</link><pubDate>Sun, 13 Jun 2010 06:07:40 -0300</pubDate><guid>https://adlermedrado.com.br/posts/screencast-zend-framework-e-netbeans/</guid><description>Alô Rapaziada. Acabei de colocar um screencast que eu fiz hoje cedo mostrando como integrar o Zend Framework, mais precisamente o Zend_Tool com o NetBeans 6.9 RC 2.
 Como esse foi o primeiro screencast que fiz, perdoem-me caso ele não tenha ficado legal. Ah, alguns ruídos mais pro final do filme são meus filhos que estavam brincando por perto. :-)
 Deixem seus comentários.
-Abraço.</description>
-    </item>
-    
-    <item>
-      <title>Zend Framework tutorial series capítulo 3</title>
-      <link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/</link>
-      <pubDate>Sat, 22 May 2010 10:08:21 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/</guid>
-      <description>Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia, vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em uma frequência maior. Espero que dê certo.
+Abraço.</description></item><item><title>Zend Framework tutorial series capítulo 3</title><link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/</link><pubDate>Sat, 22 May 2010 10:08:21 -0300</pubDate><guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/</guid><description>Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia, vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em uma frequência maior. Espero que dê certo.
 Introdução
 Neste capítulo eu mostrarei um pouco do Zend_Form e algumas coisas que são possíveis de implementar usando ele.
-O Zend_Form é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando precisamos filtrar e validar dados provenientes de formulários.</description>
-    </item>
-    
-    <item>
-      <title>Atualizem suas agendas</title>
-      <link>https://adlermedrado.com.br/posts/atualizem-suas-agendas/</link>
-      <pubDate>Sun, 25 Apr 2010 20:05:41 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/atualizem-suas-agendas/</guid>
-      <description>Esse post é especial para aqueles que fazem parte da comunidade PHP brasileira e/ou estão buscando conhecer mais a linguagem.
+O Zend_Form é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando precisamos filtrar e validar dados provenientes de formulários.</description></item><item><title>Atualizem suas agendas</title><link>https://adlermedrado.com.br/posts/atualizem-suas-agendas/</link><pubDate>Sun, 25 Apr 2010 20:05:41 -0300</pubDate><guid>https://adlermedrado.com.br/posts/atualizem-suas-agendas/</guid><description>Esse post é especial para aqueles que fazem parte da comunidade PHP brasileira e/ou estão buscando conhecer mais a linguagem.
 Decidi postar aqui todos os eventos que tenho conhecimento que já foram divulgados por aí, colocando todos em um único ponto para que vocês possam analisar as datas com antecedência e começarem a se planejar.
-Este ano, seguindo a tendência do ano passado, a nossa comunidade está bem servida de eventos que nos permitem aprofundar mais o nosso conhecimento em áreas que já conhecemos e também conhecer outras que ainda não tivemos oportunidade de trabalhar, além é claro, de fazer o tão importante networking.</description>
-    </item>
-    
-    <item>
-      <title>Zend Framework tutorial series capítulo 2</title>
-      <link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/</link>
-      <pubDate>Tue, 16 Feb 2010 21:55:16 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/</guid>
-      <description>Tudo bem?
+Este ano, seguindo a tendência do ano passado, a nossa comunidade está bem servida de eventos que nos permitem aprofundar mais o nosso conhecimento em áreas que já conhecemos e também conhecer outras que ainda não tivemos oportunidade de trabalhar, além é claro, de fazer o tão importante networking.</description></item><item><title>Zend Framework tutorial series capítulo 2</title><link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/</link><pubDate>Tue, 16 Feb 2010 21:55:16 -0300</pubDate><guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/</guid><description>Tudo bem?
 Demorou um pouco para eu publicar este capítulo pois infelizmente eu tive alguns contratempos nas últimas semanas, mas de qualquer forma, é muito bom saber que você se interessou por esta série de tutoriais e voltou para continuar implementando um sistema de exemplo.
 Recapitulando
 No primeiro capítulo desta série eu mostrei como configurar o seu ambiente de desenvolvimento para utilizar o Zend Framework com o Zend_Tool.
-Reveja o Capítulo 1 do tutorial.</description>
-    </item>
-    
-    <item>
-      <title>Zend Framework 1.10.0 stable released</title>
-      <link>https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/</link>
-      <pubDate>Wed, 27 Jan 2010 08:06:09 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/</guid>
-      <description>Ontem eu recebi um email pela lista geral do Zend Framework que informava o lançamento da release 1.10 Stable do Zend Framework.
-Foram adicionados diversos novos recursos, entre eles, o Zend_Oauth o qual me deixou excitado e vou fazer alguns testes logo logo. Houve também o aperfeiçoamento do Zend_Tool e isso me deixou bastante animado pois tenho trabalhado com ele e gostado bastante. Hoje iniciarei os testes com ele usando no meu dia-a-dia.</description>
-    </item>
-    
-    <item>
-      <title>Zend Framework tutorial series capitulo 1</title>
-      <link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/</link>
-      <pubDate>Tue, 19 Jan 2010 18:56:50 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/</guid>
-      <description>Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os avançados.
+Reveja o Capítulo 1 do tutorial.</description></item><item><title>Zend Framework 1.10.0 stable released</title><link>https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/</link><pubDate>Wed, 27 Jan 2010 08:06:09 -0300</pubDate><guid>https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/</guid><description>Ontem eu recebi um email pela lista geral do Zend Framework que informava o lançamento da release 1.10 Stable do Zend Framework.
+Foram adicionados diversos novos recursos, entre eles, o Zend_Oauth o qual me deixou excitado e vou fazer alguns testes logo logo. Houve também o aperfeiçoamento do Zend_Tool e isso me deixou bastante animado pois tenho trabalhado com ele e gostado bastante. Hoje iniciarei os testes com ele usando no meu dia-a-dia.</description></item><item><title>Zend Framework tutorial series capitulo 1</title><link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/</link><pubDate>Tue, 19 Jan 2010 18:56:50 -0300</pubDate><guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/</guid><description>Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os avançados.
 Tentarei colocar um novo capítulo semanalmente, desta forma teremos uma janela boa para praticar o conteúdo proposto.
 Este primeiro Tutorial da série visa demonstrar a instalação e configuração do ambiente bem como criar a estrutura de diretórios de uma aplicação utilizando o Zend_Tool.
-Antes de mais nada, os pré-requisitos para continuar este tutorial são: 1- Conhecimento de PHP utilizando os conceitos de Orientação a Objetos.</description>
-    </item>
-    
-    <item>
-      <title>Agenda atualizada</title>
-      <link>https://adlermedrado.com.br/posts/agenda-atualizada/</link>
-      <pubDate>Tue, 04 Aug 2009 12:08:11 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/agenda-atualizada/</guid>
-      <description>Apenas para informar a quem interessar possa, minha agenda foi atualizada. Se você deseja aprender PHP ou Zend Framework e reside em Brasília ou nas proximidades, você pode aproveitar os cursos que eu ministrarei na X25 Treinamentos e Consultoria.
+Antes de mais nada, os pré-requisitos para continuar este tutorial são: 1- Conhecimento de PHP utilizando os conceitos de Orientação a Objetos.</description></item><item><title>Agenda atualizada</title><link>https://adlermedrado.com.br/posts/agenda-atualizada/</link><pubDate>Tue, 04 Aug 2009 12:08:11 -0300</pubDate><guid>https://adlermedrado.com.br/posts/agenda-atualizada/</guid><description>Apenas para informar a quem interessar possa, minha agenda foi atualizada. Se você deseja aprender PHP ou Zend Framework e reside em Brasília ou nas proximidades, você pode aproveitar os cursos que eu ministrarei na X25 Treinamentos e Consultoria.
 Confirmando novas turmas eu irei atualizar a agenda e divulgar no site.
-Abraços.</description>
-    </item>
-    
-    <item>
-      <title>Por onde anda o tio Adler</title>
-      <link>https://adlermedrado.com.br/posts/por-onde-anda-o-tio-adler/</link>
-      <pubDate>Wed, 22 Jul 2009 18:53:50 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/por-onde-anda-o-tio-adler/</guid>
-      <description>Opa. Já tem algum tempinho que não atualizo meu blog mas é por uma boa causa: Férias!
+Abraços.</description></item><item><title>Por onde anda o tio Adler</title><link>https://adlermedrado.com.br/posts/por-onde-anda-o-tio-adler/</link><pubDate>Wed, 22 Jul 2009 18:53:50 -0300</pubDate><guid>https://adlermedrado.com.br/posts/por-onde-anda-o-tio-adler/</guid><description>Opa. Já tem algum tempinho que não atualizo meu blog mas é por uma boa causa: Férias!
 Estou usando muito pouco o computador nesses dias para dar uma descansada, mas em breve voltarei a publicar bastante novidade por aqui.
-A propósito, olhei minha caixa postal hoje e reparei que estou com bastante email (+5000) para ler e responder, então caso você tenha me enviado um email e eu demore para te responder, por favor não se irrite que é por que eu deixei acumular devido às férias, porém eu vou colocar tudo em ordem assim que voltar a Brasília.</description>
-    </item>
-    
-    <item>
-      <title>Minha agenda</title>
-      <link>https://adlermedrado.com.br/posts/minha-agenda/</link>
-      <pubDate>Sat, 27 Jun 2009 11:00:16 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/minha-agenda/</guid>
-      <description>Como eu sempre recebo emails perguntando sobre datas de treinamento e/ou palestras eu resolvi aproveitar um pedaço do meu sábado para criar uma área no meu site onde eu disponibilize essas informações.
-De início eu tentei usar o Google Calendar em conjunto com a Zend_GData mas os recursos do Google se mostraram muito além do que eu pretendia aqui no meu site então fiz ‘na mão’ mesmo usando banco de dados e criando meus controllers e etc.</description>
-    </item>
-    
-    <item>
-      <title>Profiling de banco de dados com Zend_Db_Profiler e Firebug</title>
-      <link>https://adlermedrado.com.br/posts/profiling-db-zend-firebug/</link>
-      <pubDate>Wed, 17 Jun 2009 15:54:18 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/profiling-db-zend-firebug/</guid>
-      <description>Se você usa o Zend Framework já percebeu que não é muito trivial obter as queries executadas no banco de dados e isso é algo comum no dia-a-dia de um desenvolvedor pois com elas nós podemos corrigir bugs e determinar pontos de lentidão e etc.
-O Zend Framework possui um componente chamado Zend_Db_Profiler que nos permite realizar o profiling dos acessos ao banco mas na minha opinião ele sozinho é muito chato de usar então eu utilizo ele em conjunto com o componente Zend_Db_Profiler_Firebug e é isso que vou mostrar a você como se faz.</description>
-    </item>
-    
-    <item>
-      <title>Vale a pena tirar certificacoes?</title>
-      <link>https://adlermedrado.com.br/posts/vale-a-pena-tirar-certificacoes/</link>
-      <pubDate>Tue, 16 Jun 2009 18:47:01 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/vale-a-pena-tirar-certificacoes/</guid>
-      <description>Não é de hoje que este é um dos maiores questionamentos de quem trabalha na área de desenvolvimento de software principalmente entre os programadores então estou escrevendo este post para tentar expôr a minha opinião sobre o assunto.
-Eu sou meio suspeito para falar sobre isso pois possuo todas as certificações da Zend e pretendo em breve tirar uma certificação Sun Java e outra Microsoft, é isso aí, o lance é ser fluente em várias linguagens… :-)</description>
-    </item>
-    
-    <item>
-      <title>Slides da Palestra sobre Zend Framework no PHPSC Conf</title>
-      <link>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</link>
-      <pubDate>Wed, 10 Jun 2009 18:07:29 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</guid>
-      <description>Demorei para disponibilizar o material porque após o evento minha semana em Brasília foi muito corrida e em seguida tive uma viagem de trabalho para Ourinhos, interior de São Paulo.
+A propósito, olhei minha caixa postal hoje e reparei que estou com bastante email (+5000) para ler e responder, então caso você tenha me enviado um email e eu demore para te responder, por favor não se irrite que é por que eu deixei acumular devido às férias, porém eu vou colocar tudo em ordem assim que voltar a Brasília.</description></item><item><title>Minha agenda</title><link>https://adlermedrado.com.br/posts/minha-agenda/</link><pubDate>Sat, 27 Jun 2009 11:00:16 -0300</pubDate><guid>https://adlermedrado.com.br/posts/minha-agenda/</guid><description>Como eu sempre recebo emails perguntando sobre datas de treinamento e/ou palestras eu resolvi aproveitar um pedaço do meu sábado para criar uma área no meu site onde eu disponibilize essas informações.
+De início eu tentei usar o Google Calendar em conjunto com a Zend_GData mas os recursos do Google se mostraram muito além do que eu pretendia aqui no meu site então fiz ‘na mão’ mesmo usando banco de dados e criando meus controllers e etc.</description></item><item><title>Profiling de banco de dados com Zend_Db_Profiler e Firebug</title><link>https://adlermedrado.com.br/posts/profiling-db-zend-firebug/</link><pubDate>Wed, 17 Jun 2009 15:54:18 -0300</pubDate><guid>https://adlermedrado.com.br/posts/profiling-db-zend-firebug/</guid><description>Se você usa o Zend Framework já percebeu que não é muito trivial obter as queries executadas no banco de dados e isso é algo comum no dia-a-dia de um desenvolvedor pois com elas nós podemos corrigir bugs e determinar pontos de lentidão e etc.
+O Zend Framework possui um componente chamado Zend_Db_Profiler que nos permite realizar o profiling dos acessos ao banco mas na minha opinião ele sozinho é muito chato de usar então eu utilizo ele em conjunto com o componente Zend_Db_Profiler_Firebug e é isso que vou mostrar a você como se faz.</description></item><item><title>Vale a pena tirar certificacoes?</title><link>https://adlermedrado.com.br/posts/vale-a-pena-tirar-certificacoes/</link><pubDate>Tue, 16 Jun 2009 18:47:01 -0300</pubDate><guid>https://adlermedrado.com.br/posts/vale-a-pena-tirar-certificacoes/</guid><description>Não é de hoje que este é um dos maiores questionamentos de quem trabalha na área de desenvolvimento de software principalmente entre os programadores então estou escrevendo este post para tentar expôr a minha opinião sobre o assunto.
+Eu sou meio suspeito para falar sobre isso pois possuo todas as certificações da Zend e pretendo em breve tirar uma certificação Sun Java e outra Microsoft, é isso aí, o lance é ser fluente em várias linguagens… :-)</description></item><item><title>Slides da Palestra sobre Zend Framework no PHPSC Conf</title><link>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</link><pubDate>Wed, 10 Jun 2009 18:07:29 -0300</pubDate><guid>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</guid><description>Demorei para disponibilizar o material porque após o evento minha semana em Brasília foi muito corrida e em seguida tive uma viagem de trabalho para Ourinhos, interior de São Paulo.
 Esta é a primeira vez que utilizei os serviços do slideshare e conforme eu tenha disponibilidade de tempo eu irei colocar o material mais antigo lá também.
 Abraços a todos. Enjoy!
-Zend Framework</description>
-    </item>
-    
-    <item>
-      <title>Mudanças no Zend_Loader</title>
-      <link>https://adlermedrado.com.br/posts/mudancas-no-zend-loader/</link>
-      <pubDate>Thu, 28 May 2009 19:42:10 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/mudancas-no-zend-loader/</guid>
-      <description>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o autoload.
+Zend Framework</description></item><item><title>Mudanças no Zend_Loader</title><link>https://adlermedrado.com.br/posts/mudancas-no-zend-loader/</link><pubDate>Thu, 28 May 2009 19:42:10 -0300</pubDate><guid>https://adlermedrado.com.br/posts/mudancas-no-zend-loader/</guid><description>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o autoload.
 Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:
-Zend_Loader::registerAutoload(); Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não receba um notice nas versões atuais.</description>
-    </item>
-    
-    <item>
-      <title>Heróis Brasileiros esquecidos ou quase</title>
-      <link>https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/</link>
-      <pubDate>Sun, 10 May 2009 18:00:52 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/</guid>
-      <description>Este post é completamente OFF-TOPIC em relação ao que eu costumo colocar aqui, porém, não é OFF-TOPIC em relação a aquilo que eu gosto de ler e de estudar que é o assunto de DEFESA NACIONAL e história ou você acha que fico 24 horas pensando em PHP e programação? :D
-Bem, foi recentemente comemorado o DIA DA VITÓRIA da forças aliadas na Europa e o fato de não ter visto nenhuma comemração a isso em Brasília, foi para mim um ato de completa falta de patriotismo.</description>
-    </item>
-    
-    <item>
-      <title>Treinamento de Zend Framework em Brasilia confirmado</title>
-      <link>https://adlermedrado.com.br/posts/treinamento-de-zend-framework-em-brasilia-confirmado/</link>
-      <pubDate>Mon, 04 May 2009 08:19:34 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/treinamento-de-zend-framework-em-brasilia-confirmado/</guid>
-      <description>Hoje iniciará um treinamento de Zend Framework na X25, empresa que ministro cursos de PHP em Brasília. Será a primeira turma de Zend Framework lá na X25 e estou bastante empolgado.
+Zend_Loader::registerAutoload(); Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não receba um notice nas versões atuais.</description></item><item><title>Heróis Brasileiros esquecidos ou quase</title><link>https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/</link><pubDate>Sun, 10 May 2009 18:00:52 -0300</pubDate><guid>https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/</guid><description>Este post é completamente OFF-TOPIC em relação ao que eu costumo colocar aqui, porém, não é OFF-TOPIC em relação a aquilo que eu gosto de ler e de estudar que é o assunto de DEFESA NACIONAL e história ou você acha que fico 24 horas pensando em PHP e programação? :D
+Bem, foi recentemente comemorado o DIA DA VITÓRIA da forças aliadas na Europa e o fato de não ter visto nenhuma comemração a isso em Brasília, foi para mim um ato de completa falta de patriotismo.</description></item><item><title>Treinamento de Zend Framework em Brasilia confirmado</title><link>https://adlermedrado.com.br/posts/treinamento-de-zend-framework-em-brasilia-confirmado/</link><pubDate>Mon, 04 May 2009 08:19:34 -0300</pubDate><guid>https://adlermedrado.com.br/posts/treinamento-de-zend-framework-em-brasilia-confirmado/</guid><description>Hoje iniciará um treinamento de Zend Framework na X25, empresa que ministro cursos de PHP em Brasília. Será a primeira turma de Zend Framework lá na X25 e estou bastante empolgado.
 Neste curso eu irei mostrar o Zend Framework desde o básico e mostrarei como criar aplicações em nível enterprise utilizando este que em minha opinião é o melhor framework para desenvolvimento PHP na atualidade.
-Ainda há tempo para se matricular, o curso será todas as segundas, quartas e sextas a noite.</description>
-    </item>
-    
-    <item>
-      <title>Flisol 2009</title>
-      <link>https://adlermedrado.com.br/posts/flisol-2009/</link>
-      <pubDate>Sun, 26 Apr 2009 19:11:34 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/flisol-2009/</guid>
-      <description>Ontem eu participei do FLISOL 2009 ministrando uma palestra sobre Zend Framework e foi muito legal.
+Ainda há tempo para se matricular, o curso será todas as segundas, quartas e sextas a noite.</description></item><item><title>Flisol 2009</title><link>https://adlermedrado.com.br/posts/flisol-2009/</link><pubDate>Sun, 26 Apr 2009 19:11:34 -0300</pubDate><guid>https://adlermedrado.com.br/posts/flisol-2009/</guid><description>Ontem eu participei do FLISOL 2009 ministrando uma palestra sobre Zend Framework e foi muito legal.
 Sala cheia e público entusiasmado: Esse é o resumo sobre minha palestra; O material já se encontra disponível para quem interessar possa em http://adlermedrado.com.br/palestras
-O FLISOL como um todo foi bem bacana, teve muito gente e o estande do PHPDF foi bem movimentado; Distribuímos adesivos, tiramos dúvidas, divulgamos o PHP e isso não seria possível sem a participação da comunidade principalmente os amigos abaixo:</description>
-    </item>
-    
-    <item>
-      <title>Chegou meu certificado ZCE-ZF</title>
-      <link>https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/</link>
-      <pubDate>Wed, 22 Apr 2009 17:56:53 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/</guid>
-      <description>A alguns dias atrás chegou pelo correio o meu certificado ZCE-ZF.
+O FLISOL como um todo foi bem bacana, teve muito gente e o estande do PHPDF foi bem movimentado; Distribuímos adesivos, tiramos dúvidas, divulgamos o PHP e isso não seria possível sem a participação da comunidade principalmente os amigos abaixo:</description></item><item><title>Chegou meu certificado ZCE-ZF</title><link>https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/</link><pubDate>Wed, 22 Apr 2009 17:56:53 -0300</pubDate><guid>https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/</guid><description>A alguns dias atrás chegou pelo correio o meu certificado ZCE-ZF.
 Eu achei ele legal e o adesivo que veio com ele também, mas ainda acho o certificado de PHP 5 mais bonito, não que o de Zend Framework seja feio mas sabe como é gosto né? Mas uma coisa bacana que tem nos dois é que eles são assinados pelo Andi Gutmans e Zeev Suraski. :-)
-Da mesma forma quando tirei certificação ZCE PHP 5 a Zend mandou um adesivo com o selo da certificação e o adesivo é bem bacana.</description>
-    </item>
-    
-    <item>
-      <title>Tutorial Zend Paginator</title>
-      <link>https://adlermedrado.com.br/posts/tutorial-zend-paginator/</link>
-      <pubDate>Sat, 28 Mar 2009 17:52:51 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/tutorial-zend-paginator/</guid>
-      <description>O Zend Framework é muito interessante mesmo nos componentes mais simples, desta vez eu irei falar sobre o componente Zend_Paginator, que é um componente que se propõe a fazer a paginação de qualquer coleção de dados de uma maneira bem simples e mostrar os dados paginados para o usuário.
+Da mesma forma quando tirei certificação ZCE PHP 5 a Zend mandou um adesivo com o selo da certificação e o adesivo é bem bacana.</description></item><item><title>Tutorial Zend Paginator</title><link>https://adlermedrado.com.br/posts/tutorial-zend-paginator/</link><pubDate>Sat, 28 Mar 2009 17:52:51 -0300</pubDate><guid>https://adlermedrado.com.br/posts/tutorial-zend-paginator/</guid><description>O Zend Framework é muito interessante mesmo nos componentes mais simples, desta vez eu irei falar sobre o componente Zend_Paginator, que é um componente que se propõe a fazer a paginação de qualquer coleção de dados de uma maneira bem simples e mostrar os dados paginados para o usuário.
 ADAPTERS
-Este componente não exige que os dados a serem paginados sejam especificamente dados provenientes de bancos de dados, ele faz a paginação de arrays, de dados relacionados a objetos Zend_Db_Select e Zend_Db_Table_Select e Iterators.</description>
-    </item>
-    
-    <item>
-      <title>Enfim Zend Certified Engineer #2</title>
-      <link>https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/</link>
-      <pubDate>Tue, 17 Mar 2009 03:51:08 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/</guid>
-      <description>Quem acompanha meu blog a mais tempo deve se lembrar de quando usei este título pela primeira vez. Foi no dia 21/09/2007, um dia após eu fazer o exame de certificação de PHP 5 da Zend (ZCE PHP 5), quem não se lembra pode ver o post aqui.
-Mas porque o mesmo título neste post? Porque ontem eu fiz o exame para a certificação de Zend Framework (ZCE ZF) e graças a D’us, que me deu esta oportunidade, eu passei.</description>
-    </item>
-    
-    <item>
-      <title>Meu primeiro plugin para Wordpress</title>
-      <link>https://adlermedrado.com.br/posts/meu-primeiro-plugin-para-wordpress/</link>
-      <pubDate>Sun, 15 Feb 2009 19:49:58 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/meu-primeiro-plugin-para-wordpress/</guid>
-      <description>Eu sempre tive a curiosidade de saber como escrever um plugin para wordpress mas meu tempo anda escasso e eu acabei protelando por algum tempo até ontem, quando arranjei um tempinho para ver como é que era.
-Tudo começou quando eu fui olhar no meu kaluach (um ótimo software de calendário judaico) para pesquisar qual era a data correspondente a 24/02/2004 (uma data infeliz na minha vida, quem é mais chegado a mim sabe do que estou falando) no calendário judaico.</description>
-    </item>
-    
-    <item>
-      <title>Seven things that probably you may not know about me</title>
-      <link>https://adlermedrado.com.br/posts/seven-things/</link>
-      <pubDate>Sat, 03 Jan 2009 05:12:57 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/seven-things/</guid>
-      <description>This is the first time I take part a meme/tag, as it was my friend Rafael Dohms who invited me, I will not deny my participation. :-) I think it is a opportunity to tell you some things that probably you may not know about me.
-I wrote my first software using turbo pascal. Was a kind of calendar software for my BBS. I already have practice in Karate, Kung-fu and Kickboxing.</description>
-    </item>
-    
-    <item>
-      <title>Mini-curso Solidário</title>
-      <link>https://adlermedrado.com.br/posts/mini-curso-solidario/</link>
-      <pubDate>Thu, 27 Nov 2008 13:46:53 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/mini-curso-solidario/</guid>
-      <description>Sei que está bem em cima da hora mas é que as últimas semanas tem sido bastante movimentadas. Por isso peço desculpas pela demora ao postar.
-Bem, a X25, empresa a qual eu sou um dos instrutores de PHP, está organizando um evento denominado mini-cursos solidários, que consiste em mini-cursos sobre diversos assuntos, com profissionais renomados a preço módico com o intuito de ajudar as crianças carentes que enviam cartinhas ao papai noel para os correios.</description>
-    </item>
-    
-    <item>
-      <title>Zend_Form: Um simples tutorial</title>
-      <link>https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/</link>
-      <pubDate>Sun, 14 Sep 2008 19:55:18 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/</guid>
-      <description>Introdução
+Este componente não exige que os dados a serem paginados sejam especificamente dados provenientes de bancos de dados, ele faz a paginação de arrays, de dados relacionados a objetos Zend_Db_Select e Zend_Db_Table_Select e Iterators.</description></item><item><title>Enfim Zend Certified Engineer #2</title><link>https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/</link><pubDate>Tue, 17 Mar 2009 03:51:08 -0300</pubDate><guid>https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/</guid><description>Quem acompanha meu blog a mais tempo deve se lembrar de quando usei este título pela primeira vez. Foi no dia 21/09/2007, um dia após eu fazer o exame de certificação de PHP 5 da Zend (ZCE PHP 5), quem não se lembra pode ver o post aqui.
+Mas porque o mesmo título neste post? Porque ontem eu fiz o exame para a certificação de Zend Framework (ZCE ZF) e graças a D’us, que me deu esta oportunidade, eu passei.</description></item><item><title>Meu primeiro plugin para Wordpress</title><link>https://adlermedrado.com.br/posts/meu-primeiro-plugin-para-wordpress/</link><pubDate>Sun, 15 Feb 2009 19:49:58 -0300</pubDate><guid>https://adlermedrado.com.br/posts/meu-primeiro-plugin-para-wordpress/</guid><description>Eu sempre tive a curiosidade de saber como escrever um plugin para wordpress mas meu tempo anda escasso e eu acabei protelando por algum tempo até ontem, quando arranjei um tempinho para ver como é que era.
+Tudo começou quando eu fui olhar no meu kaluach (um ótimo software de calendário judaico) para pesquisar qual era a data correspondente a 24/02/2004 (uma data infeliz na minha vida, quem é mais chegado a mim sabe do que estou falando) no calendário judaico.</description></item><item><title>Seven things that probably you may not know about me</title><link>https://adlermedrado.com.br/posts/seven-things/</link><pubDate>Sat, 03 Jan 2009 05:12:57 -0300</pubDate><guid>https://adlermedrado.com.br/posts/seven-things/</guid><description>This is the first time I take part a meme/tag, as it was my friend Rafael Dohms who invited me, I will not deny my participation. :-) I think it is a opportunity to tell you some things that probably you may not know about me.
+I wrote my first software using turbo pascal. Was a kind of calendar software for my BBS. I already have practice in Karate, Kung-fu and Kickboxing.</description></item><item><title>Mini-curso Solidário</title><link>https://adlermedrado.com.br/posts/mini-curso-solidario/</link><pubDate>Thu, 27 Nov 2008 13:46:53 -0300</pubDate><guid>https://adlermedrado.com.br/posts/mini-curso-solidario/</guid><description>Sei que está bem em cima da hora mas é que as últimas semanas tem sido bastante movimentadas. Por isso peço desculpas pela demora ao postar.
+Bem, a X25, empresa a qual eu sou um dos instrutores de PHP, está organizando um evento denominado mini-cursos solidários, que consiste em mini-cursos sobre diversos assuntos, com profissionais renomados a preço módico com o intuito de ajudar as crianças carentes que enviam cartinhas ao papai noel para os correios.</description></item><item><title>Zend_Form: Um simples tutorial</title><link>https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/</link><pubDate>Sun, 14 Sep 2008 19:55:18 -0300</pubDate><guid>https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/</guid><description>Introdução
 Depois de algum tempo sem escrever algo sobre o Zend Framework, venho hoje mostrar rapidamente um exemplo de como usar o Zend_Form e de quebra vou mostrar o Zend_Translator, que pode ser usado em internacionalização.
-O Zend_Form é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade e mantendo um padrão de desenvolvimento. É possível também com o Zend_Form, a implementação de formulários com herança, ou seja, você tem um formulário genérico (ex: UsuarioForm) que pode ser utilizado para criação de outros (ex: UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão.</description>
-    </item>
-    
-    <item>
-      <title>Dia do Programador</title>
-      <link>https://adlermedrado.com.br/posts/dia-do-programador/</link>
-      <pubDate>Fri, 12 Sep 2008 19:44:01 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/dia-do-programador/</guid>
-      <description>Pois é, hoje é dia do programador, e devido à pressão diária que só nós programadores conhecemos, eu não pude elaborar nada para comemorar esta tão importante data.
-Então, faço minhas as palavras do colega Dark Flames: Parabéns a todos nós.</description>
-    </item>
-    
-    <item>
-      <title>Última aula do curso de PHP: Reloaded</title>
-      <link>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php-reloaded/</link>
-      <pubDate>Tue, 05 Aug 2008 11:32:32 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php-reloaded/</guid>
-      <description>Ontem (segunda, 04/08), foi o último dia do curso de PHP avançado e Zend Framework que ministrei para meus colegas do MDIC/Sigma.
+O Zend_Form é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade e mantendo um padrão de desenvolvimento. É possível também com o Zend_Form, a implementação de formulários com herança, ou seja, você tem um formulário genérico (ex: UsuarioForm) que pode ser utilizado para criação de outros (ex: UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão.</description></item><item><title>Dia do Programador</title><link>https://adlermedrado.com.br/posts/dia-do-programador/</link><pubDate>Fri, 12 Sep 2008 19:44:01 -0300</pubDate><guid>https://adlermedrado.com.br/posts/dia-do-programador/</guid><description>Pois é, hoje é dia do programador, e devido à pressão diária que só nós programadores conhecemos, eu não pude elaborar nada para comemorar esta tão importante data.
+Então, faço minhas as palavras do colega Dark Flames: Parabéns a todos nós.</description></item><item><title>Última aula do curso de PHP: Reloaded</title><link>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php-reloaded/</link><pubDate>Tue, 05 Aug 2008 11:32:32 -0300</pubDate><guid>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php-reloaded/</guid><description>Ontem (segunda, 04/08), foi o último dia do curso de PHP avançado e Zend Framework que ministrei para meus colegas do MDIC/Sigma.
 Foi muito legal rever esse pessoal e conhecer as pessoas que entraram lá depois que eu mudei de emprego.
 Para mim foi uma satisfação muito grande passar esses dias com esse pessoal que é nota 10.
-Um abraço e até a próxima.</description>
-    </item>
-    
-    <item>
-      <title>Conisli 2008</title>
-      <link>https://adlermedrado.com.br/posts/conisli-2008/</link>
-      <pubDate>Mon, 30 Jun 2008 08:00:25 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/conisli-2008/</guid>
-      <description>É com muito prazer que divulgo neste humilde site o evento Conisli 2008.
+Um abraço e até a próxima.</description></item><item><title>Conisli 2008</title><link>https://adlermedrado.com.br/posts/conisli-2008/</link><pubDate>Mon, 30 Jun 2008 08:00:25 -0300</pubDate><guid>https://adlermedrado.com.br/posts/conisli-2008/</guid><description>É com muito prazer que divulgo neste humilde site o evento Conisli 2008.
 O Conisli é um evento relacionado a software livre e que sempre contou com a presença da comunidade brasileira de desenvolvedores PHP.
 Este ano não será diferente e contará com a presença do ilustre Andrei Zmievski, criador do PHP-GTK e responsável pela implementação do Unicode no PHP 6, entre outros.
-É importante frisar que este evento foi realizado por membros da comunidade de desenvolvedores PHP nacional e por isso nós devemos nos esforçar para prestigia-lo.</description>
-    </item>
-    
-    <item>
-      <title>Remote Systems no PDT</title>
-      <link>https://adlermedrado.com.br/posts/remote-systems-no-pdt/</link>
-      <pubDate>Fri, 27 Jun 2008 10:30:29 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/remote-systems-no-pdt/</guid>
-      <description>Eu sempre procurei por plugins do eclipse que me permitissem acessar diretórios remotos via SSH para editar arquivos remotamente, mas todos que encontrei não funcionavam corretamente.
+É importante frisar que este evento foi realizado por membros da comunidade de desenvolvedores PHP nacional e por isso nós devemos nos esforçar para prestigia-lo.</description></item><item><title>Remote Systems no PDT</title><link>https://adlermedrado.com.br/posts/remote-systems-no-pdt/</link><pubDate>Fri, 27 Jun 2008 10:30:29 -0300</pubDate><guid>https://adlermedrado.com.br/posts/remote-systems-no-pdt/</guid><description>Eu sempre procurei por plugins do eclipse que me permitissem acessar diretórios remotos via SSH para editar arquivos remotamente, mas todos que encontrei não funcionavam corretamente.
 Hoje encontrei neste site um plugin que parece ser o mesmo usado no Zend Studio for Eclipse e é muito bom.
-[]s</description>
-    </item>
-    
-    <item>
-      <title>PHPDF: 2 Anos</title>
-      <link>https://adlermedrado.com.br/posts/phpdf-2-anos/</link>
-      <pubDate>Thu, 26 Jun 2008 17:24:39 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/phpdf-2-anos/</guid>
-      <description>Este mês é o mês de aniversário do PHPDF e para lembrar esta data eu irei reproduzir aqui o texto elaborado pelo colega Ricardo Maia e enviado para a lista de discussões do grupo.
+[]s</description></item><item><title>PHPDF: 2 Anos</title><link>https://adlermedrado.com.br/posts/phpdf-2-anos/</link><pubDate>Thu, 26 Jun 2008 17:24:39 -0300</pubDate><guid>https://adlermedrado.com.br/posts/phpdf-2-anos/</guid><description>Este mês é o mês de aniversário do PHPDF e para lembrar esta data eu irei reproduzir aqui o texto elaborado pelo colega Ricardo Maia e enviado para a lista de discussões do grupo.
 O grupo PHP-DF comemora seu 2º aniversário. E uma forma de demonstrar a evolução de nossa comunidade é através de números, então vamos lá!!!
-Nossa lista de discussão conta hoje com 346 membros, sendo que 04 deles ingressaram na última semana!</description>
-    </item>
-    
-    <item>
-      <title>Ultima aula do curso de PHP</title>
-      <link>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php/</link>
-      <pubDate>Thu, 26 Jun 2008 14:26:10 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php/</guid>
-      <description>Hoje foi a última aula da turma do curso de PHP do MDIC/Sigma que estava sendo realizada aos sábados.
+Nossa lista de discussão conta hoje com 346 membros, sendo que 04 deles ingressaram na última semana!</description></item><item><title>Ultima aula do curso de PHP</title><link>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php/</link><pubDate>Thu, 26 Jun 2008 14:26:10 -0300</pubDate><guid>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php/</guid><description>Hoje foi a última aula da turma do curso de PHP do MDIC/Sigma que estava sendo realizada aos sábados.
 Foi muito bom rever essa turma a qual tive a honra de trabalhar no MDIC e passar diversos sábados lidando o dia todo com PHP, Zend Framework, e etc.
-É sempre muito bom dar aula pra uma turma animada como essa, mas agora vou dar uma descansada por que dar aula vários sábados seguidos durante o dia todo cansa demais :-)</description>
-    </item>
-    
-    <item>
-      <title>Treinamento PHP avançado para meus colegas do MDIC/Sigma</title>
-      <link>https://adlermedrado.com.br/posts/treinamento-php-avancado-mdic-sigma/</link>
-      <pubDate>Sun, 22 Jun 2008 05:22:53 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/treinamento-php-avancado-mdic-sigma/</guid>
-      <description>Iniciou ontem o treinamento de conceitos avançados em PHP para os meus colegas da SIGMA/MDIC.
+É sempre muito bom dar aula pra uma turma animada como essa, mas agora vou dar uma descansada por que dar aula vários sábados seguidos durante o dia todo cansa demais :-)</description></item><item><title>Treinamento PHP avançado para meus colegas do MDIC/Sigma</title><link>https://adlermedrado.com.br/posts/treinamento-php-avancado-mdic-sigma/</link><pubDate>Sun, 22 Jun 2008 05:22:53 -0300</pubDate><guid>https://adlermedrado.com.br/posts/treinamento-php-avancado-mdic-sigma/</guid><description>Iniciou ontem o treinamento de conceitos avançados em PHP para os meus colegas da SIGMA/MDIC.
 A Sigma é a empresa a qual eu trabalhava até o primeiro trimestre deste ano prestando serviços no Ministério do Desenvolvimento Indústria e Comércio Exterior, desenvolvendo com PHP e Java.
-Para mim é bem legal ministrar este treinamento, porque eu vou rever muitos colegas por algum tempo e conhecer novas pessoas que entraram lá depois de mim.</description>
-    </item>
-    
-    <item>
-      <title>Vale a pena desenvolver um framework caseiro ultimamente?</title>
-      <link>https://adlermedrado.com.br/posts/vale-a-pena-framework-caseiro/</link>
-      <pubDate>Fri, 20 Jun 2008 09:03:17 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/vale-a-pena-framework-caseiro/</guid>
-      <description>É fato que atualmente os desenvolvedores PHP estão bem servidos de frameworks, mas mesmo assim, alguns desenvolvedores insistem em suas idéias caseiras. Será que isso vale a pena? Desperdiçar tempo reinventando a roda?
-Em todos estes anos que atuo com desenvolvimento eu aprendi que não se deve reinventar a roda, principalmente depois do Buzz da OO e por isso, felizmente a quase dois anos eu deixei meu framework caseiro de lado pelos seguintes motivos:</description>
-    </item>
-    
-    <item>
-      <title>Treinamento PHP5 Com Orientação a Objetos</title>
-      <link>https://adlermedrado.com.br/posts/treinamento-php5-com-orientacao-a-objetos/</link>
-      <pubDate>Thu, 19 Jun 2008 13:30:22 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/treinamento-php5-com-orientacao-a-objetos/</guid>
-      <description>Hoje iniciará um treinamento de PHP 5 com OO na X25.
+Para mim é bem legal ministrar este treinamento, porque eu vou rever muitos colegas por algum tempo e conhecer novas pessoas que entraram lá depois de mim.</description></item><item><title>Vale a pena desenvolver um framework caseiro ultimamente?</title><link>https://adlermedrado.com.br/posts/vale-a-pena-framework-caseiro/</link><pubDate>Fri, 20 Jun 2008 09:03:17 -0300</pubDate><guid>https://adlermedrado.com.br/posts/vale-a-pena-framework-caseiro/</guid><description>É fato que atualmente os desenvolvedores PHP estão bem servidos de frameworks, mas mesmo assim, alguns desenvolvedores insistem em suas idéias caseiras. Será que isso vale a pena? Desperdiçar tempo reinventando a roda?
+Em todos estes anos que atuo com desenvolvimento eu aprendi que não se deve reinventar a roda, principalmente depois do Buzz da OO e por isso, felizmente a quase dois anos eu deixei meu framework caseiro de lado pelos seguintes motivos:</description></item><item><title>Treinamento PHP5 Com Orientação a Objetos</title><link>https://adlermedrado.com.br/posts/treinamento-php5-com-orientacao-a-objetos/</link><pubDate>Thu, 19 Jun 2008 13:30:22 -0300</pubDate><guid>https://adlermedrado.com.br/posts/treinamento-php5-com-orientacao-a-objetos/</guid><description>Hoje iniciará um treinamento de PHP 5 com OO na X25.
 Este curso é bem legal pois engloba desde os conceitos mais básicos do PHP até os conceitos de OO que o PHP 5 nos proporciona.
 Publiquei o post agora em cima da hora mas ainda dá tempo caso você se interesse. Vale a pena.
 Para maiores informações: http://www.x25.com.br/curso/php_5_com_orientacao_a_objetos/342
-Abraço.</description>
-    </item>
-    
-    <item>
-      <title>Planet Adler</title>
-      <link>https://adlermedrado.com.br/posts/planet-adler/</link>
-      <pubDate>Thu, 22 May 2008 11:16:52 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/planet-adler/</guid>
-      <description>Publiquei a alguns minutos o planet adler que consiste em um espaço no meu site onde eu mostro o último post de blogs que eu considero relevantes.
+Abraço.</description></item><item><title>Planet Adler</title><link>https://adlermedrado.com.br/posts/planet-adler/</link><pubDate>Thu, 22 May 2008 11:16:52 -0300</pubDate><guid>https://adlermedrado.com.br/posts/planet-adler/</guid><description>Publiquei a alguns minutos o planet adler que consiste em um espaço no meu site onde eu mostro o último post de blogs que eu considero relevantes.
 Eu acho interessante fazer algo do gênero por alguns motivos:
-Mostro aos visitantes do meu site os posts de blogs que considero interessantes. Difundindo a informação. Divulgo a outras pessoas os posts que considero interessantes, em alguns casos, as fontes para posts do meu próprio blog.</description>
-    </item>
-    
-    <item>
-      <title>Heavy Metal pra quem gosta de história</title>
-      <link>https://adlermedrado.com.br/posts/heavy-metal-pra-quem-gosta-de-historia/</link>
-      <pubDate>Sat, 17 May 2008 08:15:28 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/heavy-metal-pra-quem-gosta-de-historia/</guid>
-      <description>Você gosta de Heavy Metal?
+Mostro aos visitantes do meu site os posts de blogs que considero interessantes. Difundindo a informação. Divulgo a outras pessoas os posts que considero interessantes, em alguns casos, as fontes para posts do meu próprio blog.</description></item><item><title>Heavy Metal pra quem gosta de história</title><link>https://adlermedrado.com.br/posts/heavy-metal-pra-quem-gosta-de-historia/</link><pubDate>Sat, 17 May 2008 08:15:28 -0300</pubDate><guid>https://adlermedrado.com.br/posts/heavy-metal-pra-quem-gosta-de-historia/</guid><description>Você gosta de Heavy Metal?
 Você gosta de História?
 Que tal unir o útil ao agradável? Há dois anos que quero fazer esse post mas não fiz sei-lá-porque. Bem, a resposta é: Sabaton.
 Eu gosto muito de counterstrike ( quem me conhece vai saber o motivo do porque eu obviamente gostaria dessa música), thundergods, metal crue, primo victoria, entre muitas outras.
 Vale a pena: www.sabaton.net
-abraços.</description>
-    </item>
-    
-    <item>
-      <title>Feed e Flickr em cache</title>
-      <link>https://adlermedrado.com.br/posts/feed-flickr-em-cache/</link>
-      <pubDate>Sat, 10 May 2008 10:10:46 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/feed-flickr-em-cache/</guid>
-      <description>Quem está me acompanhando no twitter e tem lido meus últimos posts, sabe que criei um site e etc, porém, nos últimos dias meu server no dreamhost está um pouco lento e justamente no consumo dos feeds do meu blog e na requisição REST para minha página no Flickr o meu site tem tipo um comportamento um pouco lento. É lógico que não é culpa exclusiva do consumo de feed e do REST do Flickr, porém, para melhorar um pouco eu usei o componente Zend_Cache do ZF para colocar estes dois objetos em cache.</description>
-    </item>
-    
-    <item>
-      <title>Mudança de endereço realizada</title>
-      <link>https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/</link>
-      <pubDate>Fri, 09 May 2008 09:09:05 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/</guid>
-      <description>Como havia informado anteriormente, eu mudei meu blog de endereço. O novo endereço é http://adlermedrado.com.br/blog.
+abraços.</description></item><item><title>Feed e Flickr em cache</title><link>https://adlermedrado.com.br/posts/feed-flickr-em-cache/</link><pubDate>Sat, 10 May 2008 10:10:46 -0300</pubDate><guid>https://adlermedrado.com.br/posts/feed-flickr-em-cache/</guid><description>Quem está me acompanhando no twitter e tem lido meus últimos posts, sabe que criei um site e etc, porém, nos últimos dias meu server no dreamhost está um pouco lento e justamente no consumo dos feeds do meu blog e na requisição REST para minha página no Flickr o meu site tem tipo um comportamento um pouco lento. É lógico que não é culpa exclusiva do consumo de feed e do REST do Flickr, porém, para melhorar um pouco eu usei o componente Zend_Cache do ZF para colocar estes dois objetos em cache.</description></item><item><title>Mudança de endereço realizada</title><link>https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/</link><pubDate>Fri, 09 May 2008 09:09:05 -0300</pubDate><guid>https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/</guid><description>Como havia informado anteriormente, eu mudei meu blog de endereço. O novo endereço é http://adlermedrado.com.br/blog.
 Eu criei também um site no endereço http://www.adlermedrado.com.br.
-O Objetivo dessa mudança foi principalmente separar meu blog do endereço da minha empresa e a criação do site, foi para retirar do blog alguns conteúdos que ao meu ver não cabiam nele. Dessa maneira, meu blog continuará a existir, porém como ferramenta para inclusão de conteúdo apenas.</description>
-    </item>
-    
-    <item>
-      <title>Atualizacao No Site</title>
-      <link>https://adlermedrado.com.br/posts/atualizacao-no-site/</link>
-      <pubDate>Fri, 09 May 2008 03:06:57 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/atualizacao-no-site/</guid>
-      <description>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.
+O Objetivo dessa mudança foi principalmente separar meu blog do endereço da minha empresa e a criação do site, foi para retirar do blog alguns conteúdos que ao meu ver não cabiam nele. Dessa maneira, meu blog continuará a existir, porém como ferramenta para inclusão de conteúdo apenas.</description></item><item><title>Atualizacao No Site</title><link>https://adlermedrado.com.br/posts/atualizacao-no-site/</link><pubDate>Fri, 09 May 2008 03:06:57 -0300</pubDate><guid>https://adlermedrado.com.br/posts/atualizacao-no-site/</guid><description>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.
 O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.
 Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr, Zend_Services_Flickr.
-Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:</description>
-    </item>
-    
-    <item>
-      <title>O endereço do meu blog irá mudar</title>
-      <link>https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/</link>
-      <pubDate>Wed, 07 May 2008 22:02:25 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/</guid>
-      <description>Depois de alguns anos com meu blog na URL http://neshertech.net/adler, irei movê-lo para um novo endereço.
-Esta URL (neshertech.net) eu registrei para colocar o site da minha empresa (que eu ainda estou elaborando), porém, aproveitei a infra-estrutura para hospedar o meu blog, mas essa semana eu registrei o domínio http://adlermedrado.com.br que será utilizado para colocar meu blog e um site novo que implementarei para colocar meus projetos pessoais, minhas idéias, galeria de fotos e etc.</description>
-    </item>
-    
-    <item>
-      <title>Chernobyl 22 anos</title>
-      <link>https://adlermedrado.com.br/posts/chernobyl-22-anos/</link>
-      <pubDate>Sat, 26 Apr 2008 17:02:35 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/chernobyl-22-anos/</guid>
-      <description>Hoje fazem 22 anos que ocorreu o acidente nuclear de Chernobyl, o maior acidente nuclear da história humana.
-Em 26 de Abril de 1986, o reator número 4 da usina nuclear de Chernobyl, localizado próximo da cidade de Prypiat , Ucrânia, então parte da extinta União Soviética, explodiu e liberou radioatividade em um número maior do que o das bombas de Hiroshima e Nagasaki que atingiu, além da Ucrânia, a Bielorrúsia, Escandinávia e Reino Unido.</description>
-    </item>
-    
-    <item>
-      <title>Usabilidade</title>
-      <link>https://adlermedrado.com.br/posts/usabilidade/</link>
-      <pubDate>Tue, 01 Apr 2008 11:01:40 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/usabilidade/</guid>
-      <description>Encontrei no site stuffthathappens.com a seguinte imagem que demonstra como poderíamos seguir exemplos de usabilidade que estão à disposição mas mesmo assim teimamos em não observa-los quando desenvolvemos nossos projetos.</description>
-    </item>
-    
-    <item>
-      <title>Relacionamento entre tabelas com Zend Framework</title>
-      <link>https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/</link>
-      <pubDate>Tue, 25 Mar 2008 05:37:34 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/</guid>
-      <description>O Zend Framework possui uma camada de modelo, composta por algumas classes como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de acesso à dados, como insert, update, etc.
-Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através de métodos específicos da classe Zend_Db_Table_Row.</description>
-    </item>
-    
-    <item>
-      <title>Lehitraot Guterman</title>
-      <link>https://adlermedrado.com.br/posts/lehitraot-guterman/</link>
-      <pubDate>Sun, 23 Mar 2008 08:09:12 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/lehitraot-guterman/</guid>
-      <description>Marcos Guterman é editor do estadao.com.br e ele tinha um blog no portal do estadão que era um dos mais movimentados. O blog dele normalmente tratava de questões política internacional e história normalmente relacionadas ao oriente-médio, porém, sem pender para lado algum. Em muitos casos ele trazia informações que nada tinham a ver com os conflitos que são comuns naquela região.
-Um blog tão movimentado atrai espécimes indesejáveis e isso não foi diferente no blog dele.</description>
-    </item>
-    
-    <item>
-      <title>Otimizando O Firefox</title>
-      <link>https://adlermedrado.com.br/posts/otimizando-o-firefox/</link>
-      <pubDate>Sun, 16 Apr 2006 13:21:50 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/otimizando-o-firefox/</guid>
-      <description>Para otimizar o firefox, siga os passos abaixo:
+Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:</description></item><item><title>O endereço do meu blog irá mudar</title><link>https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/</link><pubDate>Wed, 07 May 2008 22:02:25 -0300</pubDate><guid>https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/</guid><description>Depois de alguns anos com meu blog na URL http://neshertech.net/adler, irei movê-lo para um novo endereço.
+Esta URL (neshertech.net) eu registrei para colocar o site da minha empresa (que eu ainda estou elaborando), porém, aproveitei a infra-estrutura para hospedar o meu blog, mas essa semana eu registrei o domínio http://adlermedrado.com.br que será utilizado para colocar meu blog e um site novo que implementarei para colocar meus projetos pessoais, minhas idéias, galeria de fotos e etc.</description></item><item><title>Chernobyl 22 anos</title><link>https://adlermedrado.com.br/posts/chernobyl-22-anos/</link><pubDate>Sat, 26 Apr 2008 17:02:35 -0300</pubDate><guid>https://adlermedrado.com.br/posts/chernobyl-22-anos/</guid><description>Hoje fazem 22 anos que ocorreu o acidente nuclear de Chernobyl, o maior acidente nuclear da história humana.
+Em 26 de Abril de 1986, o reator número 4 da usina nuclear de Chernobyl, localizado próximo da cidade de Prypiat , Ucrânia, então parte da extinta União Soviética, explodiu e liberou radioatividade em um número maior do que o das bombas de Hiroshima e Nagasaki que atingiu, além da Ucrânia, a Bielorrúsia, Escandinávia e Reino Unido.</description></item><item><title>Usabilidade</title><link>https://adlermedrado.com.br/posts/usabilidade/</link><pubDate>Tue, 01 Apr 2008 11:01:40 -0300</pubDate><guid>https://adlermedrado.com.br/posts/usabilidade/</guid><description>Encontrei no site stuffthathappens.com a seguinte imagem que demonstra como poderíamos seguir exemplos de usabilidade que estão à disposição mas mesmo assim teimamos em não observa-los quando desenvolvemos nossos projetos.</description></item><item><title>Relacionamento entre tabelas com Zend Framework</title><link>https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/</link><pubDate>Tue, 25 Mar 2008 05:37:34 -0300</pubDate><guid>https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/</guid><description>O Zend Framework possui uma camada de modelo, composta por algumas classes como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de acesso à dados, como insert, update, etc.
+Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através de métodos específicos da classe Zend_Db_Table_Row.</description></item><item><title>Lehitraot Guterman</title><link>https://adlermedrado.com.br/posts/lehitraot-guterman/</link><pubDate>Sun, 23 Mar 2008 08:09:12 -0300</pubDate><guid>https://adlermedrado.com.br/posts/lehitraot-guterman/</guid><description>Marcos Guterman é editor do estadao.com.br e ele tinha um blog no portal do estadão que era um dos mais movimentados. O blog dele normalmente tratava de questões política internacional e história normalmente relacionadas ao oriente-médio, porém, sem pender para lado algum. Em muitos casos ele trazia informações que nada tinham a ver com os conflitos que são comuns naquela região.
+Um blog tão movimentado atrai espécimes indesejáveis e isso não foi diferente no blog dele.</description></item><item><title>Otimizando O Firefox</title><link>https://adlermedrado.com.br/posts/otimizando-o-firefox/</link><pubDate>Sun, 16 Apr 2006 13:21:50 -0300</pubDate><guid>https://adlermedrado.com.br/posts/otimizando-o-firefox/</guid><description>Para otimizar o firefox, siga os passos abaixo:
 1 - Abra o Firefox
 2 - digite na linha do endereço : about:config
 3 - Clique com o botão direito, new / boolean.
@@ -1024,29 +172,7 @@ Um blog tão movimentado atrai espécimes indesejáveis e isso não foi diferent
 5 - Coloque o nome da propriedade: config.trim_on_minimize
 6 - Escolher o valor True.
 Conforme o autor, o consumo de memória era 62Mb sendo reduzido para 18 MB.
-Eu vi essa dica aqui</description>
-    </item>
-    
-    <item>
-      <title>Nova release de preview do Zend Framework neste fim de semana</title>
-      <link>https://adlermedrado.com.br/posts/nova-release-preview-do-zf/</link>
-      <pubDate>Tue, 11 Apr 2006 08:50:03 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/nova-release-preview-do-zf/</guid>
-      <description>Conforme palavras do Andi Gutmans na lista de discussões do Zend Framework, é possível que neste final de semana seja liberada mais uma release de preview do framework.
-Andi disse em mensagem postada ontem: We are working hard to get a new tarball rolled, bug DB up, etc. We should be getting this out the door this coming week. In the meanwhile, feel free to grab the latest version from SVN http://framework.</description>
-    </item>
-    
-    <item>
-      <title>Pesquisa Interessante</title>
-      <link>https://adlermedrado.com.br/posts/pesquisa-interessante/</link>
-      <pubDate>Sat, 08 Apr 2006 10:00:49 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/pesquisa-interessante/</guid>
-      <description>Hoje eu li uma matéria bastante interessante no site do Zend Developer Zone.
+Eu vi essa dica aqui</description></item><item><title>Nova release de preview do Zend Framework neste fim de semana</title><link>https://adlermedrado.com.br/posts/nova-release-preview-do-zf/</link><pubDate>Tue, 11 Apr 2006 08:50:03 -0300</pubDate><guid>https://adlermedrado.com.br/posts/nova-release-preview-do-zf/</guid><description>Conforme palavras do Andi Gutmans na lista de discussões do Zend Framework, é possível que neste final de semana seja liberada mais uma release de preview do framework.
+Andi disse em mensagem postada ontem: We are working hard to get a new tarball rolled, bug DB up, etc. We should be getting this out the door this coming week. In the meanwhile, feel free to grab the latest version from SVN http://framework.</description></item><item><title>Pesquisa Interessante</title><link>https://adlermedrado.com.br/posts/pesquisa-interessante/</link><pubDate>Sat, 08 Apr 2006 10:00:49 -0300</pubDate><guid>https://adlermedrado.com.br/posts/pesquisa-interessante/</guid><description>Hoje eu li uma matéria bastante interessante no site do Zend Developer Zone.
 Nela o autor utilizou variantes da query de pesquisa do site TIOBE Programming Community Index para verificar até que ponto aquele indíce do Tiobe é realista.
-O Tiobe verifica em sites de pesquisa ( Google, Msn, etc ) quais as linguagens que mais aparecem em determinada pesquisa nestes engines de busca. A query utilizada pelo TIOBE (conforme mostrada em seu site ) é +&amp;quot; programming&amp;quot; -tv -channel .</description>
-    </item>
-    
-  </channel>
-</rss>
+O Tiobe verifica em sites de pesquisa ( Google, Msn, etc ) quais as linguagens que mais aparecem em determinada pesquisa nestes engines de busca. A query utilizada pelo TIOBE (conforme mostrada em seu site ) é +&amp;quot; programming&amp;quot; -tv -channel .</description></item></channel></rss>

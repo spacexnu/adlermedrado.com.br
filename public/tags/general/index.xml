@@ -1,137 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>general on Adler Medrado&#39;s corner of the web</title>
-    <link>https://adlermedrado.com.br/tags/general/</link>
-    <description>Recent content in general on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 04 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/general/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Bug estranho na integração do Mac OS X com o Google</title>
-      <link>https://adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</link>
-      <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</guid>
-      <description>Recentemente aconteceu uma coisa esquisita.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>general on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/general/</link><description>Recent content in general on Adler Medrado's corner of the web</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/general/index.xml" rel="self" type="application/rss+xml"/><item><title>Bug estranho na integração do Mac OS X com o Google</title><link>https://adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</link><pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/bug-estranho-na-integracao-do-mac-os-x-com-o-google/</guid><description>Recentemente aconteceu uma coisa esquisita.
 Eu tinha 3 contas do Google configuradas em meu OS X El Capitan, a integração é bem legal porque ao integrar uma conta do Google com o OS X ele já configura o Mail, o iMessage, o Calendar, o Notes e os Contatos o que facilita bastante a minha vida.
-Mas ontem todas as contas do Google que eu tinha configurado aqui, ao mesmo tempo, passaram a solicitar novamente a senha e sempre que eu tentava autenticar novamente o Internet Accounts travava conforme a tela abaixo:</description>
-    </item>
-    
-    <item>
-      <title>Quase um ano de Dangolino sem precisar alterar uma linha de código</title>
-      <link>https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/</link>
-      <pubDate>Fri, 15 Mar 2013 00:09:13 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/</guid>
-      <description>Já faz algum tempo que eu postei aqui que eu estava usando o picasaweb para publicar as imagens no meu blog usando o dangolino, mas, recentemente eu pensei melhor e decidi que quero manter as imagens no meu próprio servidor.
-Os motivos são vários, mas o principal é que quero manter a integridade do meu conteúdo em único local, neste caso o meu servidor, simplesmente pela facilidade que tenho de fazer backup dele, que é muito mais fácil para mim do que manter um backup de serviços como o picasaweb ou o flickr por exemplo.</description>
-    </item>
-    
-    <item>
-      <title>Agenda atualizada</title>
-      <link>https://adlermedrado.com.br/posts/agenda-atualizada/</link>
-      <pubDate>Tue, 04 Aug 2009 12:08:11 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/agenda-atualizada/</guid>
-      <description>Apenas para informar a quem interessar possa, minha agenda foi atualizada. Se você deseja aprender PHP ou Zend Framework e reside em Brasília ou nas proximidades, você pode aproveitar os cursos que eu ministrarei na X25 Treinamentos e Consultoria.
+Mas ontem todas as contas do Google que eu tinha configurado aqui, ao mesmo tempo, passaram a solicitar novamente a senha e sempre que eu tentava autenticar novamente o Internet Accounts travava conforme a tela abaixo:</description></item><item><title>Quase um ano de Dangolino sem precisar alterar uma linha de código</title><link>https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/</link><pubDate>Fri, 15 Mar 2013 00:09:13 -0300</pubDate><guid>https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/</guid><description>Já faz algum tempo que eu postei aqui que eu estava usando o picasaweb para publicar as imagens no meu blog usando o dangolino, mas, recentemente eu pensei melhor e decidi que quero manter as imagens no meu próprio servidor.
+Os motivos são vários, mas o principal é que quero manter a integridade do meu conteúdo em único local, neste caso o meu servidor, simplesmente pela facilidade que tenho de fazer backup dele, que é muito mais fácil para mim do que manter um backup de serviços como o picasaweb ou o flickr por exemplo.</description></item><item><title>Agenda atualizada</title><link>https://adlermedrado.com.br/posts/agenda-atualizada/</link><pubDate>Tue, 04 Aug 2009 12:08:11 -0300</pubDate><guid>https://adlermedrado.com.br/posts/agenda-atualizada/</guid><description>Apenas para informar a quem interessar possa, minha agenda foi atualizada. Se você deseja aprender PHP ou Zend Framework e reside em Brasília ou nas proximidades, você pode aproveitar os cursos que eu ministrarei na X25 Treinamentos e Consultoria.
 Confirmando novas turmas eu irei atualizar a agenda e divulgar no site.
-Abraços.</description>
-    </item>
-    
-    <item>
-      <title>Minha agenda</title>
-      <link>https://adlermedrado.com.br/posts/minha-agenda/</link>
-      <pubDate>Sat, 27 Jun 2009 11:00:16 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/minha-agenda/</guid>
-      <description>Como eu sempre recebo emails perguntando sobre datas de treinamento e/ou palestras eu resolvi aproveitar um pedaço do meu sábado para criar uma área no meu site onde eu disponibilize essas informações.
-De início eu tentei usar o Google Calendar em conjunto com a Zend_GData mas os recursos do Google se mostraram muito além do que eu pretendia aqui no meu site então fiz ‘na mão’ mesmo usando banco de dados e criando meus controllers e etc.</description>
-    </item>
-    
-    <item>
-      <title>Heróis Brasileiros esquecidos ou quase</title>
-      <link>https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/</link>
-      <pubDate>Sun, 10 May 2009 18:00:52 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/</guid>
-      <description>Este post é completamente OFF-TOPIC em relação ao que eu costumo colocar aqui, porém, não é OFF-TOPIC em relação a aquilo que eu gosto de ler e de estudar que é o assunto de DEFESA NACIONAL e história ou você acha que fico 24 horas pensando em PHP e programação? :D
-Bem, foi recentemente comemorado o DIA DA VITÓRIA da forças aliadas na Europa e o fato de não ter visto nenhuma comemração a isso em Brasília, foi para mim um ato de completa falta de patriotismo.</description>
-    </item>
-    
-    <item>
-      <title>Seven things that probably you may not know about me</title>
-      <link>https://adlermedrado.com.br/posts/seven-things/</link>
-      <pubDate>Sat, 03 Jan 2009 05:12:57 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/seven-things/</guid>
-      <description>This is the first time I take part a meme/tag, as it was my friend Rafael Dohms who invited me, I will not deny my participation. :-) I think it is a opportunity to tell you some things that probably you may not know about me.
-I wrote my first software using turbo pascal. Was a kind of calendar software for my BBS. I already have practice in Karate, Kung-fu and Kickboxing.</description>
-    </item>
-    
-    <item>
-      <title>Dia do Programador</title>
-      <link>https://adlermedrado.com.br/posts/dia-do-programador/</link>
-      <pubDate>Fri, 12 Sep 2008 19:44:01 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/dia-do-programador/</guid>
-      <description>Pois é, hoje é dia do programador, e devido à pressão diária que só nós programadores conhecemos, eu não pude elaborar nada para comemorar esta tão importante data.
-Então, faço minhas as palavras do colega Dark Flames: Parabéns a todos nós.</description>
-    </item>
-    
-    <item>
-      <title>Vale a pena desenvolver um framework caseiro ultimamente?</title>
-      <link>https://adlermedrado.com.br/posts/vale-a-pena-framework-caseiro/</link>
-      <pubDate>Fri, 20 Jun 2008 09:03:17 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/vale-a-pena-framework-caseiro/</guid>
-      <description>É fato que atualmente os desenvolvedores PHP estão bem servidos de frameworks, mas mesmo assim, alguns desenvolvedores insistem em suas idéias caseiras. Será que isso vale a pena? Desperdiçar tempo reinventando a roda?
-Em todos estes anos que atuo com desenvolvimento eu aprendi que não se deve reinventar a roda, principalmente depois do Buzz da OO e por isso, felizmente a quase dois anos eu deixei meu framework caseiro de lado pelos seguintes motivos:</description>
-    </item>
-    
-    <item>
-      <title>Heavy Metal pra quem gosta de história</title>
-      <link>https://adlermedrado.com.br/posts/heavy-metal-pra-quem-gosta-de-historia/</link>
-      <pubDate>Sat, 17 May 2008 08:15:28 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/heavy-metal-pra-quem-gosta-de-historia/</guid>
-      <description>Você gosta de Heavy Metal?
+Abraços.</description></item><item><title>Minha agenda</title><link>https://adlermedrado.com.br/posts/minha-agenda/</link><pubDate>Sat, 27 Jun 2009 11:00:16 -0300</pubDate><guid>https://adlermedrado.com.br/posts/minha-agenda/</guid><description>Como eu sempre recebo emails perguntando sobre datas de treinamento e/ou palestras eu resolvi aproveitar um pedaço do meu sábado para criar uma área no meu site onde eu disponibilize essas informações.
+De início eu tentei usar o Google Calendar em conjunto com a Zend_GData mas os recursos do Google se mostraram muito além do que eu pretendia aqui no meu site então fiz ‘na mão’ mesmo usando banco de dados e criando meus controllers e etc.</description></item><item><title>Heróis Brasileiros esquecidos ou quase</title><link>https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/</link><pubDate>Sun, 10 May 2009 18:00:52 -0300</pubDate><guid>https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/</guid><description>Este post é completamente OFF-TOPIC em relação ao que eu costumo colocar aqui, porém, não é OFF-TOPIC em relação a aquilo que eu gosto de ler e de estudar que é o assunto de DEFESA NACIONAL e história ou você acha que fico 24 horas pensando em PHP e programação? :D
+Bem, foi recentemente comemorado o DIA DA VITÓRIA da forças aliadas na Europa e o fato de não ter visto nenhuma comemração a isso em Brasília, foi para mim um ato de completa falta de patriotismo.</description></item><item><title>Seven things that probably you may not know about me</title><link>https://adlermedrado.com.br/posts/seven-things/</link><pubDate>Sat, 03 Jan 2009 05:12:57 -0300</pubDate><guid>https://adlermedrado.com.br/posts/seven-things/</guid><description>This is the first time I take part a meme/tag, as it was my friend Rafael Dohms who invited me, I will not deny my participation. :-) I think it is a opportunity to tell you some things that probably you may not know about me.
+I wrote my first software using turbo pascal. Was a kind of calendar software for my BBS. I already have practice in Karate, Kung-fu and Kickboxing.</description></item><item><title>Dia do Programador</title><link>https://adlermedrado.com.br/posts/dia-do-programador/</link><pubDate>Fri, 12 Sep 2008 19:44:01 -0300</pubDate><guid>https://adlermedrado.com.br/posts/dia-do-programador/</guid><description>Pois é, hoje é dia do programador, e devido à pressão diária que só nós programadores conhecemos, eu não pude elaborar nada para comemorar esta tão importante data.
+Então, faço minhas as palavras do colega Dark Flames: Parabéns a todos nós.</description></item><item><title>Vale a pena desenvolver um framework caseiro ultimamente?</title><link>https://adlermedrado.com.br/posts/vale-a-pena-framework-caseiro/</link><pubDate>Fri, 20 Jun 2008 09:03:17 -0300</pubDate><guid>https://adlermedrado.com.br/posts/vale-a-pena-framework-caseiro/</guid><description>É fato que atualmente os desenvolvedores PHP estão bem servidos de frameworks, mas mesmo assim, alguns desenvolvedores insistem em suas idéias caseiras. Será que isso vale a pena? Desperdiçar tempo reinventando a roda?
+Em todos estes anos que atuo com desenvolvimento eu aprendi que não se deve reinventar a roda, principalmente depois do Buzz da OO e por isso, felizmente a quase dois anos eu deixei meu framework caseiro de lado pelos seguintes motivos:</description></item><item><title>Heavy Metal pra quem gosta de história</title><link>https://adlermedrado.com.br/posts/heavy-metal-pra-quem-gosta-de-historia/</link><pubDate>Sat, 17 May 2008 08:15:28 -0300</pubDate><guid>https://adlermedrado.com.br/posts/heavy-metal-pra-quem-gosta-de-historia/</guid><description>Você gosta de Heavy Metal?
 Você gosta de História?
 Que tal unir o útil ao agradável? Há dois anos que quero fazer esse post mas não fiz sei-lá-porque. Bem, a resposta é: Sabaton.
 Eu gosto muito de counterstrike ( quem me conhece vai saber o motivo do porque eu obviamente gostaria dessa música), thundergods, metal crue, primo victoria, entre muitas outras.
 Vale a pena: www.sabaton.net
-abraços.</description>
-    </item>
-    
-    <item>
-      <title>Usabilidade</title>
-      <link>https://adlermedrado.com.br/posts/usabilidade/</link>
-      <pubDate>Tue, 01 Apr 2008 11:01:40 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/usabilidade/</guid>
-      <description>Encontrei no site stuffthathappens.com a seguinte imagem que demonstra como poderíamos seguir exemplos de usabilidade que estão à disposição mas mesmo assim teimamos em não observa-los quando desenvolvemos nossos projetos.</description>
-    </item>
-    
-    <item>
-      <title>Lehitraot Guterman</title>
-      <link>https://adlermedrado.com.br/posts/lehitraot-guterman/</link>
-      <pubDate>Sun, 23 Mar 2008 08:09:12 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/lehitraot-guterman/</guid>
-      <description>Marcos Guterman é editor do estadao.com.br e ele tinha um blog no portal do estadão que era um dos mais movimentados. O blog dele normalmente tratava de questões política internacional e história normalmente relacionadas ao oriente-médio, porém, sem pender para lado algum. Em muitos casos ele trazia informações que nada tinham a ver com os conflitos que são comuns naquela região.
-Um blog tão movimentado atrai espécimes indesejáveis e isso não foi diferente no blog dele.</description>
-    </item>
-    
-    <item>
-      <title>Pesquisa Interessante</title>
-      <link>https://adlermedrado.com.br/posts/pesquisa-interessante/</link>
-      <pubDate>Sat, 08 Apr 2006 10:00:49 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/pesquisa-interessante/</guid>
-      <description>Hoje eu li uma matéria bastante interessante no site do Zend Developer Zone.
+abraços.</description></item><item><title>Usabilidade</title><link>https://adlermedrado.com.br/posts/usabilidade/</link><pubDate>Tue, 01 Apr 2008 11:01:40 -0300</pubDate><guid>https://adlermedrado.com.br/posts/usabilidade/</guid><description>Encontrei no site stuffthathappens.com a seguinte imagem que demonstra como poderíamos seguir exemplos de usabilidade que estão à disposição mas mesmo assim teimamos em não observa-los quando desenvolvemos nossos projetos.</description></item><item><title>Lehitraot Guterman</title><link>https://adlermedrado.com.br/posts/lehitraot-guterman/</link><pubDate>Sun, 23 Mar 2008 08:09:12 -0300</pubDate><guid>https://adlermedrado.com.br/posts/lehitraot-guterman/</guid><description>Marcos Guterman é editor do estadao.com.br e ele tinha um blog no portal do estadão que era um dos mais movimentados. O blog dele normalmente tratava de questões política internacional e história normalmente relacionadas ao oriente-médio, porém, sem pender para lado algum. Em muitos casos ele trazia informações que nada tinham a ver com os conflitos que são comuns naquela região.
+Um blog tão movimentado atrai espécimes indesejáveis e isso não foi diferente no blog dele.</description></item><item><title>Pesquisa Interessante</title><link>https://adlermedrado.com.br/posts/pesquisa-interessante/</link><pubDate>Sat, 08 Apr 2006 10:00:49 -0300</pubDate><guid>https://adlermedrado.com.br/posts/pesquisa-interessante/</guid><description>Hoje eu li uma matéria bastante interessante no site do Zend Developer Zone.
 Nela o autor utilizou variantes da query de pesquisa do site TIOBE Programming Community Index para verificar até que ponto aquele indíce do Tiobe é realista.
-O Tiobe verifica em sites de pesquisa ( Google, Msn, etc ) quais as linguagens que mais aparecem em determinada pesquisa nestes engines de busca. A query utilizada pelo TIOBE (conforme mostrada em seu site ) é +&amp;quot; programming&amp;quot; -tv -channel .</description>
-    </item>
-    
-  </channel>
-</rss>
+O Tiobe verifica em sites de pesquisa ( Google, Msn, etc ) quais as linguagens que mais aparecem em determinada pesquisa nestes engines de busca. A query utilizada pelo TIOBE (conforme mostrada em seu site ) é +&amp;quot; programming&amp;quot; -tv -channel .</description></item></channel></rss>

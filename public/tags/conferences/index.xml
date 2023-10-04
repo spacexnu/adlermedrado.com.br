@@ -1,57 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>conferences on Adler Medrado&#39;s corner of the web</title>
-    <link>https://adlermedrado.com.br/tags/conferences/</link>
-    <description>Recent content in conferences on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 25 Apr 2010 20:05:41 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Atualizem suas agendas</title>
-      <link>https://adlermedrado.com.br/posts/atualizem-suas-agendas/</link>
-      <pubDate>Sun, 25 Apr 2010 20:05:41 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/atualizem-suas-agendas/</guid>
-      <description>Esse post é especial para aqueles que fazem parte da comunidade PHP brasileira e/ou estão buscando conhecer mais a linguagem.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>conferences on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/conferences/</link><description>Recent content in conferences on Adler Medrado's corner of the web</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 25 Apr 2010 20:05:41 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/conferences/index.xml" rel="self" type="application/rss+xml"/><item><title>Atualizem suas agendas</title><link>https://adlermedrado.com.br/posts/atualizem-suas-agendas/</link><pubDate>Sun, 25 Apr 2010 20:05:41 -0300</pubDate><guid>https://adlermedrado.com.br/posts/atualizem-suas-agendas/</guid><description>Esse post é especial para aqueles que fazem parte da comunidade PHP brasileira e/ou estão buscando conhecer mais a linguagem.
 Decidi postar aqui todos os eventos que tenho conhecimento que já foram divulgados por aí, colocando todos em um único ponto para que vocês possam analisar as datas com antecedência e começarem a se planejar.
-Este ano, seguindo a tendência do ano passado, a nossa comunidade está bem servida de eventos que nos permitem aprofundar mais o nosso conhecimento em áreas que já conhecemos e também conhecer outras que ainda não tivemos oportunidade de trabalhar, além é claro, de fazer o tão importante networking.</description>
-    </item>
-    
-    <item>
-      <title>Slides da Palestra sobre Zend Framework no PHPSC Conf</title>
-      <link>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</link>
-      <pubDate>Wed, 10 Jun 2009 18:07:29 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</guid>
-      <description>Demorei para disponibilizar o material porque após o evento minha semana em Brasília foi muito corrida e em seguida tive uma viagem de trabalho para Ourinhos, interior de São Paulo.
+Este ano, seguindo a tendência do ano passado, a nossa comunidade está bem servida de eventos que nos permitem aprofundar mais o nosso conhecimento em áreas que já conhecemos e também conhecer outras que ainda não tivemos oportunidade de trabalhar, além é claro, de fazer o tão importante networking.</description></item><item><title>Slides da Palestra sobre Zend Framework no PHPSC Conf</title><link>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</link><pubDate>Wed, 10 Jun 2009 18:07:29 -0300</pubDate><guid>https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/</guid><description>Demorei para disponibilizar o material porque após o evento minha semana em Brasília foi muito corrida e em seguida tive uma viagem de trabalho para Ourinhos, interior de São Paulo.
 Esta é a primeira vez que utilizei os serviços do slideshare e conforme eu tenha disponibilidade de tempo eu irei colocar o material mais antigo lá também.
 Abraços a todos. Enjoy!
-Zend Framework</description>
-    </item>
-    
-    <item>
-      <title>Flisol 2009</title>
-      <link>https://adlermedrado.com.br/posts/flisol-2009/</link>
-      <pubDate>Sun, 26 Apr 2009 19:11:34 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/flisol-2009/</guid>
-      <description>Ontem eu participei do FLISOL 2009 ministrando uma palestra sobre Zend Framework e foi muito legal.
+Zend Framework</description></item><item><title>Flisol 2009</title><link>https://adlermedrado.com.br/posts/flisol-2009/</link><pubDate>Sun, 26 Apr 2009 19:11:34 -0300</pubDate><guid>https://adlermedrado.com.br/posts/flisol-2009/</guid><description>Ontem eu participei do FLISOL 2009 ministrando uma palestra sobre Zend Framework e foi muito legal.
 Sala cheia e público entusiasmado: Esse é o resumo sobre minha palestra; O material já se encontra disponível para quem interessar possa em http://adlermedrado.com.br/palestras
-O FLISOL como um todo foi bem bacana, teve muito gente e o estande do PHPDF foi bem movimentado; Distribuímos adesivos, tiramos dúvidas, divulgamos o PHP e isso não seria possível sem a participação da comunidade principalmente os amigos abaixo:</description>
-    </item>
-    
-    <item>
-      <title>Conisli 2008</title>
-      <link>https://adlermedrado.com.br/posts/conisli-2008/</link>
-      <pubDate>Mon, 30 Jun 2008 08:00:25 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/conisli-2008/</guid>
-      <description>É com muito prazer que divulgo neste humilde site o evento Conisli 2008.
+O FLISOL como um todo foi bem bacana, teve muito gente e o estande do PHPDF foi bem movimentado; Distribuímos adesivos, tiramos dúvidas, divulgamos o PHP e isso não seria possível sem a participação da comunidade principalmente os amigos abaixo:</description></item><item><title>Conisli 2008</title><link>https://adlermedrado.com.br/posts/conisli-2008/</link><pubDate>Mon, 30 Jun 2008 08:00:25 -0300</pubDate><guid>https://adlermedrado.com.br/posts/conisli-2008/</guid><description>É com muito prazer que divulgo neste humilde site o evento Conisli 2008.
 O Conisli é um evento relacionado a software livre e que sempre contou com a presença da comunidade brasileira de desenvolvedores PHP.
 Este ano não será diferente e contará com a presença do ilustre Andrei Zmievski, criador do PHP-GTK e responsável pela implementação do Unicode no PHP 6, entre outros.
-É importante frisar que este evento foi realizado por membros da comunidade de desenvolvedores PHP nacional e por isso nós devemos nos esforçar para prestigia-lo.</description>
-    </item>
-    
-  </channel>
-</rss>
+É importante frisar que este evento foi realizado por membros da comunidade de desenvolvedores PHP nacional e por isso nós devemos nos esforçar para prestigia-lo.</description></item></channel></rss>

@@ -1,55 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>site on Adler Medrado&#39;s corner of the web</title>
-    <link>https://adlermedrado.com.br/tags/site/</link>
-    <description>Recent content in site on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 22 May 2008 11:16:52 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/site/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Planet Adler</title>
-      <link>https://adlermedrado.com.br/posts/planet-adler/</link>
-      <pubDate>Thu, 22 May 2008 11:16:52 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/planet-adler/</guid>
-      <description>Publiquei a alguns minutos o planet adler que consiste em um espaço no meu site onde eu mostro o último post de blogs que eu considero relevantes.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>site on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/site/</link><description>Recent content in site on Adler Medrado's corner of the web</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 22 May 2008 11:16:52 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Planet Adler</title><link>https://adlermedrado.com.br/posts/planet-adler/</link><pubDate>Thu, 22 May 2008 11:16:52 -0300</pubDate><guid>https://adlermedrado.com.br/posts/planet-adler/</guid><description>Publiquei a alguns minutos o planet adler que consiste em um espaço no meu site onde eu mostro o último post de blogs que eu considero relevantes.
 Eu acho interessante fazer algo do gênero por alguns motivos:
-Mostro aos visitantes do meu site os posts de blogs que considero interessantes. Difundindo a informação. Divulgo a outras pessoas os posts que considero interessantes, em alguns casos, as fontes para posts do meu próprio blog.</description>
-    </item>
-    
-    <item>
-      <title>Mudança de endereço realizada</title>
-      <link>https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/</link>
-      <pubDate>Fri, 09 May 2008 09:09:05 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/</guid>
-      <description>Como havia informado anteriormente, eu mudei meu blog de endereço. O novo endereço é http://adlermedrado.com.br/blog.
+Mostro aos visitantes do meu site os posts de blogs que considero interessantes. Difundindo a informação. Divulgo a outras pessoas os posts que considero interessantes, em alguns casos, as fontes para posts do meu próprio blog.</description></item><item><title>Mudança de endereço realizada</title><link>https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/</link><pubDate>Fri, 09 May 2008 09:09:05 -0300</pubDate><guid>https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/</guid><description>Como havia informado anteriormente, eu mudei meu blog de endereço. O novo endereço é http://adlermedrado.com.br/blog.
 Eu criei também um site no endereço http://www.adlermedrado.com.br.
-O Objetivo dessa mudança foi principalmente separar meu blog do endereço da minha empresa e a criação do site, foi para retirar do blog alguns conteúdos que ao meu ver não cabiam nele. Dessa maneira, meu blog continuará a existir, porém como ferramenta para inclusão de conteúdo apenas.</description>
-    </item>
-    
-    <item>
-      <title>Atualizacao No Site</title>
-      <link>https://adlermedrado.com.br/posts/atualizacao-no-site/</link>
-      <pubDate>Fri, 09 May 2008 03:06:57 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/atualizacao-no-site/</guid>
-      <description>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.
+O Objetivo dessa mudança foi principalmente separar meu blog do endereço da minha empresa e a criação do site, foi para retirar do blog alguns conteúdos que ao meu ver não cabiam nele. Dessa maneira, meu blog continuará a existir, porém como ferramenta para inclusão de conteúdo apenas.</description></item><item><title>Atualizacao No Site</title><link>https://adlermedrado.com.br/posts/atualizacao-no-site/</link><pubDate>Fri, 09 May 2008 03:06:57 -0300</pubDate><guid>https://adlermedrado.com.br/posts/atualizacao-no-site/</guid><description>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.
 O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.
 Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr, Zend_Services_Flickr.
-Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:</description>
-    </item>
-    
-    <item>
-      <title>O endereço do meu blog irá mudar</title>
-      <link>https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/</link>
-      <pubDate>Wed, 07 May 2008 22:02:25 -0300</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/</guid>
-      <description>Depois de alguns anos com meu blog na URL http://neshertech.net/adler, irei movê-lo para um novo endereço.
-Esta URL (neshertech.net) eu registrei para colocar o site da minha empresa (que eu ainda estou elaborando), porém, aproveitei a infra-estrutura para hospedar o meu blog, mas essa semana eu registrei o domínio http://adlermedrado.com.br que será utilizado para colocar meu blog e um site novo que implementarei para colocar meus projetos pessoais, minhas idéias, galeria de fotos e etc.</description>
-    </item>
-    
-  </channel>
-</rss>
+Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:</description></item><item><title>O endereço do meu blog irá mudar</title><link>https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/</link><pubDate>Wed, 07 May 2008 22:02:25 -0300</pubDate><guid>https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/</guid><description>Depois de alguns anos com meu blog na URL http://neshertech.net/adler, irei movê-lo para um novo endereço.
+Esta URL (neshertech.net) eu registrei para colocar o site da minha empresa (que eu ainda estou elaborando), porém, aproveitei a infra-estrutura para hospedar o meu blog, mas essa semana eu registrei o domínio http://adlermedrado.com.br que será utilizado para colocar meu blog e um site novo que implementarei para colocar meus projetos pessoais, minhas idéias, galeria de fotos e etc.</description></item></channel></rss>

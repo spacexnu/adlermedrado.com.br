@@ -3,111 +3,40 @@
 Hash: SHA256
 
 - -->
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport
-          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
-    <meta name="description" content="My corner of the web">
-    <title>Adler Medrado's little piece of turf</title>
-    <link rel="author" href="/humans.txt"/>
-    <link rel="canonical" href="https://adlermedrado.com.br"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header>
-    <nav class="navbar" role="navigation">
-        <div class="navbar_left">
-            <a href="/"><strong>Adler Medrado</strong></a>
-        </div>
-        <div class="navbar_right">
-            <a href="/posts">Posts</a>
-            <a href="/tags">Posts by Tags</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Dica: Solução de problema ao configurar Kitematic/Docker</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>June 3, 2015</time>
-                            |
-                            2  minutes  read
-                        </small>
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p><strong>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
-pessoas.</strong></p>
-<p>Um projeto que estou trabalhando usa o <a href="https://www.rabbitmq.com">RabbitMQ</a> e para tentar manter o meu OS X o mais
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Dica: Solução de problema ao configurar Kitematic/Docker</h1><div><div><p><small><time>June 3, 2015</time>
+|
+2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p><strong>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
+pessoas.</strong></p><p>Um projeto que estou trabalhando usa o <a href=https://www.rabbitmq.com>RabbitMQ</a> e para tentar manter o meu OS X o mais
 higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós
-decidimos utilizar o <a href="https://www.docker.com/">Docker</a> e um container do RabbitMQ.</p>
-<p>Para facilitar, existe um projeto chamado <a href="https://kitematic.com/">Kitematic</a> que auxilia na configuração do Docker e na
+decidimos utilizar o <a href=https://www.docker.com/>Docker</a> e um container do RabbitMQ.</p><p>Para facilitar, existe um projeto chamado <a href=https://kitematic.com/>Kitematic</a> que auxilia na configuração do Docker e na
 instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
-precisam ser aparadas, mas no geral ele funciona bem.</p>
-<h4 id="problema-na-instalação">Problema na instalação</h4>
-<p>Na hora em que o Kitematic é instalado ele verifica se o Virtualbox está instalado no computador, caso não esteja, ele
+precisam ser aparadas, mas no geral ele funciona bem.</p><h4 id=problema-na-instalação>Problema na instalação</h4><p>Na hora em que o Kitematic é instalado ele verifica se o Virtualbox está instalado no computador, caso não esteja, ele
 baixa e faz a instalação automaticamente, após isso prossegue com a instalação, mas quando chegou em 99% ele ficou
-parado e não avançou mais, conforme a imagem abaixo:</p>
-<p>Eu quase desisti após xingar bastante, mas então eu executei os seguintes comandos no terminal:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker-machine rm -f dev
-</span></span><span style="display:flex;"><span>docker-machine create -d virtualbox dev
-</span></span></code></pre></div><p>E tudo passou a funcionar corretamente.</p>
-<p>Durante o período em que eu esperava a instalação finalizar, eu abri uma issue
-no <a href="https://github.com/kitematic/kitematic">Github do projeto</a> e em seguida ao conseguir resolver eu postei a solução
-na <a href="https://github.com/kitematic/kitematic/issues/585">própria issue</a> e a fechei, como o projeto ainda está na fase beta
-é normal ter problemas e aparentemente os desenvolvedores já estão cientes deste.</p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="https://adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/">&#8592; Segurança ou sensação de segurança?</a>
-                
-                |
-                
-                <a href="https://adlermedrado.com.br/posts/liberdade/">Liberdade &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><span class="line_break"></span>
-<span class="line_break"></span>
-<footer>
-    <div>
-        <p><small>&copy; 1996-2023 Adler Medrado</small></p>
-    </div>
-    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
-        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/ | gpg --verify</em></p></div>
-</footer></body>
-</html>
-<!--
+parado e não avançou mais, conforme a imagem abaixo:</p><p>Eu quase desisti após xingar bastante, mas então eu executei os seguintes comandos no terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>docker-machine rm -f dev
+</span></span><span style=display:flex><span>docker-machine create -d virtualbox dev
+</span></span></code></pre></div><p>E tudo passou a funcionar corretamente.</p><p>Durante o período em que eu esperava a instalação finalizar, eu abri uma issue
+no <a href=https://github.com/kitematic/kitematic>Github do projeto</a> e em seguida ao conseguir resolver eu postei a solução
+na <a href=https://github.com/kitematic/kitematic/issues/585>própria issue</a> e a fechei, como o projeto ainda está na fase beta
+é normal ter problemas e aparentemente os desenvolvedores já estão cientes deste.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/>&#8592; Segurança ou sensação de segurança?</a>
+|
+<a href=https://adlermedrado.com.br/posts/liberdade/>Liberdade &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmUcsKEACgkQKWCEk4dB
-O2Dlbg//ejqk8a9xZCfgL40jgnV+zvRXXZTuZuKGbFa+MoicYnu9pRlh2heEatvL
-BUnz9PpjdvAZqnR3eNog4h2IgpVihbP7x4eojpjakIkKCTJdAATTNO6ycmRd6oLh
-ejkUcgd9RHsqwVGJZXmROZ8+g0faiHOKbyS0rpxZUn4pCX1ME1fsTT+Et4ki7nZ+
-2GYjYPaJqyNaejWx3rm9eCtdC0w4HZ15WcWhexBkcOM+ZLRZVJ0lKO2TVB3q1q0+
-nh0rMCLcx7JxmiScyprkJfiHeapZFgZZZ1h9wDxUKeidr50R8SdMyRp0M/pXgIWO
-OWiLu+/Z1h3inCN4Z1UpXlMKtU1paNn6aY2a0gJgAt/YVjVLYYO34CuUa9u5Z4NH
-nnEcDCxlb9dqV9cIqubGEuz3l80dkBWwAyPEsMT0M6v1HTGzSe0tQTQztIV45paf
-1LHR5cujaszy9o86O4KD3ARIOpwS1vRmqTw2VHnS7qELapxK3aUjISSyOHxVLJF0
-qkdhBjYYAfmc280e9TaA2APMppvlqowR/dR6m6JoBOz4eS5EGHPSwcnCU27eJ/VY
-Ur9bQBWv0EmZ/A2cnLpMXYGEk/4VMervOQ5fxrJel6G56/WHDDk3FHKmqgS7elxj
-VIOEQu3TUeUd5SUxJbdrWirMTUT+5o29rxEFPARDgz+Xqx/OHWg=
-=LDkx
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmUdz6AACgkQKWCEk4dB
+O2DuYw//fFIwL3qcLLKM901I1Au0v7/jVHzgRFbqsHuVt5AVEfWyGrUmJeoT5U5E
+nIIBl626l0KWxQ74y64ZwdrTLhercliZfnH3VSg8vi/5bqRyMmx4eu9RZR1R7Qto
+0UuOSXlmI2ld5RqRbEdiTd062FLYQtHG+kPJdZsmUfPPk/IkhvqbUaO1rg8Gk2Oq
+LWCaSgaSSsH+JvgVu9y2n8GMU+Pv6/VgBMXPTnBdkcfzyi9iUvoO8C8LxXQq4K/q
+Upk96Dmsp6QMKWwnhJyUKM3LRbUqXGKt4Az+EUBlNlDY3vuPom56yBfXIYAlIHcc
+wrKiCBCztnyTkdIVHCgxwzjOipEnls2Wm6lV90RwTkA7H1m5ruW+5MNrNG0lTf+p
+g3r+ov0eVFiXeLFeGO2CA5jSO0B6fuT3eLexb5x82SUotjJ/apyDEqBUz3eQh9om
+/5KBXiTf/QBlzJ6nyBaUc6ASciMxuNmVpbFH2yTUPwoz96vkz8aJfFknDlhH+cT+
+68a6T+EDFulwsh/e+nbtA26idzlEDvXTcN5qKXz0vYmVAStvK0XgAEvtGuHnW+is
+yZxuQKqLKEPQF9Sx2y08KaH0+6lOGbEgq3rxZtkcOljuxQqY4VyJGNYy0U81wleJ
+gkjaGry08BDPSmgXmgNuf+Wi5ndYIFoav6bf+iUfDT6hC+OLIJ4=
+=eYNl
 -----END PGP SIGNATURE-----
 -->

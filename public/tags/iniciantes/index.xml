@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>iniciantes on Adler Medrado&#39;s corner of the web</title>
-    <link>https://adlermedrado.com.br/tags/iniciantes/</link>
-    <description>Recent content in iniciantes on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 16 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/iniciantes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PHP para Todos</title>
-      <link>https://adlermedrado.com.br/posts/php-para-todos/</link>
-      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://adlermedrado.com.br/posts/php-para-todos/</guid>
-      <description>Resolvi colocar em prática uma idéia que deixei hibernando por um bom tempo, que era a de criar um site com conteúdo voltado a iniciantes em desenvolvimento com PHP.
-É muito fácil encontrar conteúdos de excelente qualidade que são voltados a pessoas que já possuem um nível de conhecimento maior em PHP, mas o mesmo não pode ser dito a respeito de conteúdos para iniciantes, sendo assim, eu topei o desafio e criei o PHP para Todos, estou tentando manter uma regularidade nos artigos e também estou preparando novidades que espero lançar em breve.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>iniciantes on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/iniciantes/</link><description>Recent content in iniciantes on Adler Medrado's corner of the web</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/iniciantes/index.xml" rel="self" type="application/rss+xml"/><item><title>PHP para Todos</title><link>https://adlermedrado.com.br/posts/php-para-todos/</link><pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/php-para-todos/</guid><description>Resolvi colocar em prática uma idéia que deixei hibernando por um bom tempo, que era a de criar um site com conteúdo voltado a iniciantes em desenvolvimento com PHP.
+É muito fácil encontrar conteúdos de excelente qualidade que são voltados a pessoas que já possuem um nível de conhecimento maior em PHP, mas o mesmo não pode ser dito a respeito de conteúdos para iniciantes, sendo assim, eu topei o desafio e criei o PHP para Todos, estou tentando manter uma regularidade nos artigos e também estou preparando novidades que espero lançar em breve.</description></item></channel></rss>

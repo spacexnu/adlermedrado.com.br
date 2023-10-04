@@ -3,114 +3,41 @@
 Hash: SHA256
 
 - -->
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport
-          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
-    <meta name="description" content="My corner of the web">
-    <title>Adler Medrado's little piece of turf</title>
-    <link rel="author" href="/humans.txt"/>
-    <link rel="canonical" href="https://adlermedrado.com.br"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header>
-    <nav class="navbar" role="navigation">
-        <div class="navbar_left">
-            <a href="/"><strong>Adler Medrado</strong></a>
-        </div>
-        <div class="navbar_right">
-            <a href="/posts">Posts</a>
-            <a href="/tags">Posts by Tags</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Quase um ano de Dangolino sem precisar alterar uma linha de código</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>March 15, 2013</time>
-                            |
-                            2  minutes  read
-                        </small>
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Já faz algum tempo que eu postei aqui que eu estava usando o picasaweb para publicar as imagens no meu blog usando o
-dangolino, mas, recentemente eu pensei melhor e decidi que quero manter as imagens no meu próprio servidor.</p>
-<p>Os motivos são vários, mas o principal é que quero manter a integridade do meu conteúdo em único local, neste caso o meu
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Quase um ano de Dangolino sem precisar alterar uma linha de código</h1><div><div><p><small><time>March 15, 2013</time>
+|
+2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Já faz algum tempo que eu postei aqui que eu estava usando o picasaweb para publicar as imagens no meu blog usando o
+dangolino, mas, recentemente eu pensei melhor e decidi que quero manter as imagens no meu próprio servidor.</p><p>Os motivos são vários, mas o principal é que quero manter a integridade do meu conteúdo em único local, neste caso o meu
 servidor, simplesmente pela facilidade que tenho de fazer backup dele, que é muito mais fácil para mim do que manter um
-backup de serviços como o picasaweb ou o flickr por exemplo.</p>
-<p><strong>Modificações no dangolino</strong></p>
-<p>Pois bem, eu me sentei e comecei planejar e depois a codificar algumas modificações que estavam ficando legais, minha
+backup de serviços como o picasaweb ou o flickr por exemplo.</p><p><strong>Modificações no dangolino</strong></p><p>Pois bem, eu me sentei e comecei planejar e depois a codificar algumas modificações que estavam ficando legais, minha
 idéia era a de que para cada post novo, deveria ser informado o caminho para um arquivo yaml com os caminhos dos
 arquivos que seriam anexados ao post e no ato da geração do post com o comando dangolino.rb estes arquivos seriam
 movidos a um diretório específico, os caminhos seriam mesclados no conteúdo do post e posteriormente seriam
 sincronizados com o servidor via rsync, que é a maneira a qual eu já sincronizo os arquivos do meu site com meu
-servidor.</p>
-<p><strong>Mas as modificações são desnecessárias</strong></p>
-<p>Depois de analisar bem a situação eu percebi que essa mudança poderia ser feito de uma maneira bem mais simples sem
-precisar mexer em uma única linha de código do projeto.</p>
-<p>Eu já possuo no meu site um diretório para imagens e demais arquivos anexados aos posts que foram importados do
+servidor.</p><p><strong>Mas as modificações são desnecessárias</strong></p><p>Depois de analisar bem a situação eu percebi que essa mudança poderia ser feito de uma maneira bem mais simples sem
+precisar mexer em uma única linha de código do projeto.</p><p>Eu já possuo no meu site um diretório para imagens e demais arquivos anexados aos posts que foram importados do
 wordpress quando comecei a usar o dangolino, então basta eu colocar os arquivos lá e referencia-los no conteúdo do post
-da mesma maneira que eu estava fazendo quando apontava para uma imagem no picasaweb.</p>
-<p><strong>Resumindo</strong></p>
-<p>Eu sou adepto do &lsquo;quanto mais simples, melhor&rsquo;, então eu fico feliz de ver que minha app está me atendendo mesmo quando
-os meus requisitos atuais não são mais os mesmos de quando eu a projetei a quase um ano atrás.</p>
-<p>Ela não está um primor como eu já disse em outro post anteriormente e precisa de muito refactoring, mas, mesmo assim
-está me atendendo bem.</p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/">&#8592; Funções anônimas em PHP</a>
-                
-                |
-                
-                <a href="https://adlermedrado.com.br/posts/novo-blog/">Novo blog &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><span class="line_break"></span>
-<span class="line_break"></span>
-<footer>
-    <div>
-        <p><small>&copy; 1996-2023 Adler Medrado</small></p>
-    </div>
-    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
-        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/ | gpg --verify</em></p></div>
-</footer></body>
-</html>
-<!--
+da mesma maneira que eu estava fazendo quando apontava para uma imagem no picasaweb.</p><p><strong>Resumindo</strong></p><p>Eu sou adepto do &lsquo;quanto mais simples, melhor&rsquo;, então eu fico feliz de ver que minha app está me atendendo mesmo quando
+os meus requisitos atuais não são mais os mesmos de quando eu a projetei a quase um ano atrás.</p><p>Ela não está um primor como eu já disse em outro post anteriormente e precisa de muito refactoring, mas, mesmo assim
+está me atendendo bem.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/>&#8592; Funções anônimas em PHP</a>
+|
+<a href=https://adlermedrado.com.br/posts/novo-blog/>Novo blog &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmUcsKwACgkQKWCEk4dB
-O2CWkg/+PA3+dHkd8oLOMuFQWb+zPXBNYx5lOZrs+kdEIp33/5POs4wU1u5iGG8b
-ZK5NqdrwlFnmrkFg0SjwZ5Y364d4XnWyg6dXfJSpi+i3k5uPajCBr1nNaF6g2/km
-5I4LBcqm+oImDoqa4gVpm6J8LWKuNB7gv2QdkuEd0474hrsN0UeZpmQqKTT8pyGM
-S8GhD3gpGRyhy99UTLUNMAJ2RCUQHNuevVHDexImC75CXTUKpQiJYAMXmkABJ2Vi
-MkLDCVYbpZf+E1K00P2/yRLpLGoU3R7ztDL1WdA8dFkA0HF2h9e5E9yy7udQBEeQ
-MKbA2OSTUvvcvNi7u8H9Ac7Z14+fvzdk15OL+CKRbV31TdOvsE+AiCu73YUqsZI8
-xx36ngqbAxjPH8lmezTQ/F9f1JvIsbhT+vDNIXpyicwy14dvz++XEynaXFdtEf6v
-LXNyZ5hwKuHgmgX+MYm9olLd/ApQ+h+cayKfpUWmIqjBZZ7IGrRXO7TUeqdwxmy4
-cM3c1o8jSUTR7HzAlxEdoenurirSiPGQrnKWuGmxaloVfPtYj70JkfCnqK0XDufg
-kS+Jzl9pMvAhixkc7d4z6WYbn8eSVOrsW2DbgGOVyPtdr4XYt8nlfTsXppQMdcJC
-6iHX3J0u8tJr4Mh6pGg4DaQkhLDiv5nJW0cqKBHDhjtKFS3SVko=
-=z6NX
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmUdz60ACgkQKWCEk4dB
+O2A63w/9F3Sbz8o6VJI0AS51Tq7GOii6mwgPxUfgrgrKBmBAaQWYId10V2IADRPL
+AXXu8xHdbNzhStKyb/CtlyCjxGTyKdY7fVPuSGl+uSOCzMFqLecADRWuesdCBf6P
+o4+ifTBodwkWG5MeIDGxnWg/Uot6RQzwZun/U4LhZYSN/AU/6/Av3GYtic6wnube
+Ps1z/Uq0MhEbQpyRz2jheyNsulj8hCIgfhRa0sX00TIeVxdMatPILWmI9/V4OsQq
+3uM3o3KV46YWIJXiB8y0VMylt1zy7VEQq5wsZdhVFlNuLWlzGcX+Kqhg9KJ+Fmr/
+kQPvS09cnYw/OAmz2b6oliaGlXQry2TOyCAI883OaZWvTpYLw8d7ZURjbP7YQ3Gb
+bvy699bikEiGWO3fr3Jv+Yu6K3m966ox1nJc8JJT7zmLx74ipoPw4edUOARdydx/
+3jlageNbL5hgxbT6Ci9N6F34NK3XTE97lRszNg69zu+gACi+Y1iU1Cwm5FQ5EIzN
+LbcWqsWzKY+Q9TNVOvBkj9YKUjNhwmpi5BzD6g6lFrmOFy7NaZO0P2CC//yZjoQG
+KmGTICZw7dcVcSwvj31aTMYO7HCtpwIhY8Dp7eijc61/4/DgUyS4HKvh/SC/Hgkb
+Bqmb4tszZkfKrX1Lwae+IhmKDoKFJfJkc/nTaMn3lNwro548hVI=
+=jG3i
 -----END PGP SIGNATURE-----
 -->

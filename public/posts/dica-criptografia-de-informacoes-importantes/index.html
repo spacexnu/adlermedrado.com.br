@@ -3,121 +3,46 @@
 Hash: SHA256
 
 - -->
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport
-          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
-    <meta name="description" content="My corner of the web">
-    <title>Adler Medrado's little piece of turf</title>
-    <link rel="author" href="/humans.txt"/>
-    <link rel="canonical" href="https://adlermedrado.com.br"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header>
-    <nav class="navbar" role="navigation">
-        <div class="navbar_left">
-            <a href="/"><strong>Adler Medrado</strong></a>
-        </div>
-        <div class="navbar_right">
-            <a href="/posts">Posts</a>
-            <a href="/tags">Posts by Tags</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Dica: Criptografia de informações importantes</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>December 22, 2014</time>
-                            |
-                            2  minutes  read
-                        </small>
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Dica: Criptografia de informações importantes</h1><div><div><p><small><time>December 22, 2014</time>
+|
+2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você
 possui um cofre para garantir que itens valiosos como documentos, dinheiro, jóias, etc. fiquem seguros, pois você sabe
-que para abri-lo é necessário uma chave que somente você tem e um código que somente você sabe.</p>
-<p>Você sabe que o cofre não garante 100% de segurança contra arrombamentos mas tem consciência que ele dará muito mais
-trabalho para quem quiser roubar suas coisas.</p>
-<p>Agora imagine a mesma situação só que a casa é seu computador e seus itens valiosos são arquivos digitais como
-documentos, imagens, etc.</p>
-<p>Só você tem a senha para <em>logar</em> em seu computador, mas você quer garantir que caso alguém o acesse sem autorização,
+que para abri-lo é necessário uma chave que somente você tem e um código que somente você sabe.</p><p>Você sabe que o cofre não garante 100% de segurança contra arrombamentos mas tem consciência que ele dará muito mais
+trabalho para quem quiser roubar suas coisas.</p><p>Agora imagine a mesma situação só que a casa é seu computador e seus itens valiosos são arquivos digitais como
+documentos, imagens, etc.</p><p>Só você tem a senha para <em>logar</em> em seu computador, mas você quer garantir que caso alguém o acesse sem autorização,
 estes arquivos importantes não estejam acessíveis ou na pior das hipóteses, seja muito trabalhoso para o ladrão ter
-acesso a eles.</p>
-<p><strong>Manjou?</strong></p>
-<p>Meus próximos <em>posts</em> abordarão a <a href="http://pt.wikipedia.org/wiki/Criptografia">criptografia</a>, e hoje eu pretendo mostrar
+acesso a eles.</p><p><strong>Manjou?</strong></p><p>Meus próximos <em>posts</em> abordarão a <a href=http://pt.wikipedia.org/wiki/Criptografia>criptografia</a>, e hoje eu pretendo mostrar
 de maneira bem simples uma ferramenta que auxilia na tarefa de encriptação de dados para usuários de sistemas
-operacionais Windows e Mac OS X.</p>
-<h4 id="safe">Safe</h4>
-<p><a href="www.getsafe.org">Safe</a> é uma aplicação multiplataforma baseada no projeto
-Open-Source <a href="http://en.wikipedia.org/wiki/EncFS">EncFS</a> que cria volumes que salvam todos os arquivos dentro deles de
+operacionais Windows e Mac OS X.</p><h4 id=safe>Safe</h4><p><a href=www.getsafe.org>Safe</a> é uma aplicação multiplataforma baseada no projeto
+Open-Source <a href=http://en.wikipedia.org/wiki/EncFS>EncFS</a> que cria volumes que salvam todos os arquivos dentro deles de
 forma criptografada, basicamente depois de criar uma pasta e definir uma senha a ela, você acessa esta pasta como se
 fosse uma outra unidade de disco (um pen-drive por exemplo) e os arquivos dentro desta pasta sempre que forem acessados
-sem a senha estarão encriptados impossibilitando que seu conteúdo seja interpretado.</p>
-<p>A maior vantagem em usar o Safe em vez de truecrypt (não recomendável atualmente) ou ferramentas como os contêineres de
+sem a senha estarão encriptados impossibilitando que seu conteúdo seja interpretado.</p><p>A maior vantagem em usar o Safe em vez de truecrypt (não recomendável atualmente) ou ferramentas como os contêineres de
 dados criptografados da Kaspersky é que nestes últimos o espaço alocado para armazenar os dados criptografamos será
 fixo, por exemplo, se você criar uma unidade com 10GB será criado um arquivo de 10GB independente de ter algum arquivo
 ou não criptografado nela, o Safe por sua vez, criptografa os arquivos individualmente facilitando a manipulação deles,
-como enviar para o dropbox por exemplo.</p>
-<h4 id="para-finalizar">Para finalizar</h4>
-<p>Agora não tem mais desculpas para você que usa Windows ou Mac OS X guardar dados descriptografados, a ferramenta é
-livre (<a href="https://www.gnu.org/copyleft/gpl.html">GPLv3</a>) e fácil de usar.</p>
-<p>Dê uma olhada no site do <a href="www.getsafe.org">Safe</a>, faça o download e comece a guardar suas informações com um pouco mais
-de segurança.</p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/">&#8592; Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony</a>
-                
-                |
-                
-                <a href="https://adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/">Meu ambiente de trabalho na plataforma Windows &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><span class="line_break"></span>
-<span class="line_break"></span>
-<footer>
-    <div>
-        <p><small>&copy; 1996-2023 Adler Medrado</small></p>
-    </div>
-    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
-        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/ | gpg --verify</em></p></div>
-</footer></body>
-</html>
-<!--
+como enviar para o dropbox por exemplo.</p><h4 id=para-finalizar>Para finalizar</h4><p>Agora não tem mais desculpas para você que usa Windows ou Mac OS X guardar dados descriptografados, a ferramenta é
+livre (<a href=https://www.gnu.org/copyleft/gpl.html>GPLv3</a>) e fácil de usar.</p><p>Dê uma olhada no site do <a href=www.getsafe.org>Safe</a>, faça o download e comece a guardar suas informações com um pouco mais
+de segurança.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/>&#8592; Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony</a>
+|
+<a href=https://adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/>Meu ambiente de trabalho na plataforma Windows &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmUcsKAACgkQKWCEk4dB
-O2BQSg/8CdyesMvRgDKVv9X93zR0MMs6XOe2RyJpu7GTXpCYchpbS9E5JV5q5EPY
-1+Um0iJ8ICQtsjOyBkWrUDbeRA4pwH58M1Tmlhoor5GklWoYoY/yI2h9T3VScrBW
-w0IchA+pvHyaWZt5PfBsgaV+W4ZPpSwa1/JcR1AvfbkBvqt09W9P60dzBKGfZFbb
-fQ6JXEBnjERqlSqTPSq+lm4MkDXmfp6lYgExXRZ8bpQlwqyllxLJ90nkMyakCsGP
-OEP58wO2wCvOw82GRp3MF4yHJN089sMbURYxXs4yLvY7hrZ3iRXpdyUTVyTnj/Uo
-0Lw7ekP7UZDhcBCVeEbcibcTJUf+Jcp94fw/mkBBMsacSUBA7NFtRhH0vB9DvwsD
-lJnKkzNiRvhEw3HvBYpcIj1YcPEnJHEvIMNs+813Be1xXkKsWnFDmftQ6rnhPvD+
-dO0GyYM2dgCN5u1uaOSYr4oJbbY9Q6sIFwshHi17HKrL3c3LgaQL9YwOdKuzUlVz
-0MtsAckY+r/q74kbAdl4NcmyVo8PzQ4TNEEtdlYP7FjjNtOqvnmL9l3MgSIYmXR/
-x+gkAErgzJiFUIU1SEKtHG+tWeMGSkfNCfENXTgcKOeSEtBdPy1od1Yyy7uH2Zr5
-e4zeoEvcV6mIWXo1NYq0l+9aUH/H0d97Oo0dfqKTi3P1oRqBMsI=
-=OjJC
+iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmUdz6AACgkQKWCEk4dB
+O2AgxQ//UHaVS7cqAKpI8X7n24HajBEwde2g9IV3DdcBbfWzfzPH5qfqUwxtDv69
+eqr4BLfuEk7zDJx8DxyhU1LYRIbJy2RUtYf7K1YRoV9N/Y2ccSLuIQxJXKR4CpUW
+B6F/H+Ln07AJWT1AdUJmc8c91eXNWoDDdJBgwf9LkDuhhVEKCug3VGaEXgZz1wTq
+fSBzdH4vK8+ZrNfGjELodHum1wT+/IAQ2fu8w6MQiI+auuMPZJLWo4YXZ43jCh78
+KsogYK0K5380FmWeSm8C0zWuSGxk9bVGyPsOuf5VIXUHk64jFu9SRezeTxamt+Sc
+1AHtE2cMx/I2ZwDglxlUDoVVXpa3Gz+53voiv5Je+CXC4mxwMZwyAqs57ZIRUBZX
+718fDqkxkCKsOP51qFjpM4TVJ10F6HJeC6QDt/sAZmI8g1Le6Is3/l1ewrKNkpna
+pp3KKmHEMqd0SaqDUKISXaBtdp226CMTtRj66CwPCJXujFK/PBGOEzN4PfpDO8aM
+DsK9YGNbCnWY0XkUdEjc8JJzGpzhxjsRtew4TWOYsnhLGA4WRfKiBOEq8DTYowDS
+i7u3jHHmO5jF2o9GhSVfoHOv8O98fS1yEpIITdOqXiKYL77n7+5OT//WA5TO8fgM
+b4lClPTUo6kXwlO2bWCLeV0cQM3qsAcO+deAyX09oSHg5fqWSIw=
+=/X0r
 -----END PGP SIGNATURE-----
 -->

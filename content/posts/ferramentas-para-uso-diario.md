@@ -213,7 +213,7 @@ setup nem sempre é o mesmo, por diversos motivos.
 **Outra coisa:** Eu gostaria de saber a sua opinião, quais ferramentas você usa, se concorda
 ou discorda de algo que eu disse aqui, mas infelizmente aqui nesse site você
 não poderá me dizer. Eu vou escrever um post sobre isso, mas eu reformulei esse
-site a algum tempo atrás e removi qualquer coisa que pudesse invadir a privacidade
+site a algum tempo e removi qualquer coisa que pudesse invadir a privacidade
 de quem o visitasse, então aqui você não encontrará Javascript, manipulação de cookies,
 variáveis de sessão, rastreadores das _Big Techs_, nada.
 

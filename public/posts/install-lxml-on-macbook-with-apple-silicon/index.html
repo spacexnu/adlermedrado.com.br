@@ -3,7 +3,8 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
 <a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p><img src=/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png alt="pip install error when installing lxml"></p><p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Building wheels <span style=color:#66d9ef>for</span> collected packages: xmlsec  
@@ -41,18 +42,18 @@ Hash: SHA256
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmUoGegACgkQKWCEk4dB
-O2BjpQ/9G/iG1rIuCUESaAG1EM0rB+K2L6YIALt4B+fnsWHLzGNGAZspp9Frm/iP
-hrf1HLNw0ujioIednp9KvKo/3YxnH7UwEaD8+qSEVj7+WJaV35ey1s+N7QkTV19j
-0AIB8E8tRZRhB2IsSe20aQEJcejK+1HPZjMiclvYd1h3ZrvsUfDcwI7EghoTV/b8
-AqiULFrFZFkpgm5wQCsWwSab0SvNtwxwiZahK5ox6QA3rmoMBVSu9DbC4+Vr/AOo
-uiN4Ehxf4rD+OG0GwYMSIFID0lSLkRG2Xqx62luxmyTeQuQbXgDAO9P0BsVi6fen
-eMC3zLRD/4v/h5D9OIwLSB0dFYgPlvPR2Txfop+cKxz0MTAU3e3ToxYXNiOxniSz
-sfJEr+wbV8gjnrFhmhCWuBTsWOr96pESiYkuhKLMm9kYVYyyi6b9oddmb3a5j9vF
-uqy3EgYaO8h/Q05M8wiKMEKL+6bUbgbDUfW6+KdCaBpIpQ/oyyFhVxHDy76mlPbT
-v6Q8ZMfrPsPFPwT+2AkUYcXzJaDfWp4dL6EeIQy4gXX0OjRXPoVvyRanTXPwrrar
-tF5sCIDxcT2RjcEdZYM58jyou0zN423rEy6FzXQCjjzg8D09nr7na6N4CaDD6yM/
-BCYgoQUavXcme2UAifgOKGLtmx8PTOh4u44laHObRLUfRj9d4II=
-=RBuG
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWRgRMACgkQ/2dtxSoB
+kcP4zg/9GkHzdVTdwsc0ThKGTtY+A2YD0Udhee7y+K1rrQym2dFJ7FOIN9uNXcGr
+/WmLxH1yM+PaWS1BGyWE2XmtZCC8+uvp7m3CAsqqEvaIJSaSbER3y6pITPkbIhDe
+rPEzpcO4kAVowXVFqPqoUe5YYBfTiCLeB4rbvj2OaluvThnFl3P6Sa9rTgwljs3C
+4jYb+D88OB6OPr9xecE1X7WQ9xLkLuxDBrTUXCNGQG7LIxhB7JZAWsy0e1LheSh9
+m7fuqBnL5yL9NESJ6Z03kXl+1bN5+vJ29DkVXqvjvdGS9c1RFpV5wRzCMCmJ7otK
+t1kuFsy1LkxUFbC0KAi8e7fuir3Jjd9DkR1QjtAnVzM9auJyw5hHTSQvpjJ24O+3
+VEUxHbSvcXlj3J29agqnbvAFohYua1V0yBDgTMpNwY8IQk41YM5yodbMPRfdqJUz
+aPwlL+is6GWomH5I7xRbtKj4bhODz/XMUqOLHkY0bBw77M89X3JrkNjHtb0cZFZb
+fGZYItPoqbaYlLucOsf6qeG+uG8GsrrNaqiX9ymL21dHVulSPleKOEFh03VUvAcr
+ZxfvuUa6XZtMUZH0J/y+rU/DqsgUWS+CIP/c2B/HjkNZ9j49lKCk/lmh//JWkFKe
+h6cBAPA8TH1ET/rH+vik1NteDAKFO1HsrFVyZOPe/LJVj2PBAGw=
+=oh5G
 -----END PGP SIGNATURE-----
 -->

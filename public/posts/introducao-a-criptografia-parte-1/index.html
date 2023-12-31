@@ -3,7 +3,8 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
 <a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Introdução a Criptografia — Parte 1</h1><div><div><p><small><time>December 28, 2014</time>
 |
 4 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Eu gosto muito de chuva —<em>apenas quando estou tranquila e confortavelmente em casa</em>— e agora no momento em que escrevo
@@ -36,18 +37,18 @@ descriptografar, certo?</p><p>No próximo post eu mostrarei os meios utilizados 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmUoGegACgkQKWCEk4dB
-O2B68g//ZlOWt0lLtU95rcBzpnUL2dLcpeFRrrvnY/AXJ6pxHvfNsv4svAvPbWM0
-vtwekFAXokbVNCO9aUWnSRk80gYpodRWGMPNikgG4x6tQR8612EfHF5BDYI7OQ3Y
-CT+rkUiqa9g1/rzztJhk9zzOoznVPZiP4d+zO5+RmPrxzZ+5K9EMI5mLtX6+CuK2
-muzN2FyygWglf0qwENdqvGaHu2SZ5QjKuTG46dUOMgsSiKNILPozkQPf1NSCoy1I
-ML/89A2wV+IwwbtK9cDDzMdKjetl4S5+cCZMhE9KCvtPSMTtiwkrZlt/OSvAsqx5
-Zv1nU5GjhGtJ10KvHHorXNhTs/xFgf6m8BACoqik28qwdiHoQNEnXZrxUCXa6DRt
-Gm5R3vwyVcTqEazQ175Ozkc+azPSHwR9U5+9QAEoohRww4VX0dwHw5H1qXSx6LUM
-XfxxEz7S7ZieVBlL8ThzFoJ/xLJp2AVrZAPh1uJMZau+WqNn7l0YoWzjddCAKuFe
-kL+gPzcjwmoDsR9fsCQCZJQXrCtmIyNQsU1NtxlKfQ/o+9rMDvhFTYczQkB03slC
-Hx7x5gt6XYHFkwDSP7Ql6NdrZUd+Nfayh46NrZszM3mwLO1GCd/qSbeTd5tmVM+J
-/sOj0Z26enm9JsJjfF1jFQ4fDeYOQjy9b9+Uo6EbjzI1YHLwXaQ=
-=M/N8
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWRgRMACgkQ/2dtxSoB
+kcPDOw/+NUBRfQ/J5f+2Arf3TeRsH/yAyA1rOOqBsTWr9BPuY3qNFIilFOW2KYLv
+h+t6zqV5WYHtXYsopSBN+siNOWgD2hsz3P7SZqZwJQFI/G+fqIi3KWlc1g2xiINa
+pflbcdDT+WNELXs84rfH1KqC0sBHshNL5ZlBVaf9ZpVt5smjbEK8zJtFe3n2UAv7
+7l0RdhSiZZDTjvsYGgfu3ntyJlO95xvxx0vAqTnv5XzgObqvmSLCCfdd04nuv1Jj
+BNl/raaVzA4j7Uj8rejgAVMKKsIs5iuZiSSgkT7hUxTYc0kobyuSTtZvUF6plcAg
+PxlRfWPKZ5U+iqYV87fzoC5qRMaHFfuoAHCrA88aCqUFR1bn1/8nAqzd7h1xoTk1
+Ftvs4YI5XlG6zd7PuSuaP/5rGBdx6XP9K/9+vMt0r0SLKhwC6dKpU1+zH7415dVA
+wxakxVuPMwyUMvCqZ7SqYrHO38hT8cPPuHW6bC9ScynKZ57csZcpRTA42CasgW2h
+bKom1n2464ZFM57M0sOjMVz9IrlZt0EW1H4l9OzH19kQ/NzyCGRziyKFL/T6K3d0
+XsiM5r82wFvdHoklqu9sjaANICRSDlL9/WywAab89uYPjotKexNyaoUwWyBEWNlO
+mGVIx9yvv2fckDkuQKOF/RpaItzNXIsXVkG95v41H+wPx3atUUI=
+=s4xg
 -----END PGP SIGNATURE-----
 -->

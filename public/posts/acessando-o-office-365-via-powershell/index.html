@@ -3,7 +3,8 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title><link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
 <a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Acessando o Office 365 via Powershell</h1><div><div><p><small><time>July 26, 2014</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>É muito fácil acessar sua conta do <a href=http://office.microsoft.com/en-us/>Office365</a>
@@ -31,18 +32,18 @@ ela estará exposta a qualquer um com acesso ao código.</p><p>Durante a transa�
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmUoGeAACgkQKWCEk4dB
-O2BDIQ//Ypuca2Q8CGAp1BocZt7KlvEkGchZqK1MPyrzcl5yNr3w0doL+e+xDfAC
-66E+Eh9HdrgQrhLo1aF5yznNwOSveUd/TmhEaaDmEQbdk6Od4gVC0SaAv0rg2qf9
-3PaSOBbsPaz6bsaKicWa2d74zPPFtxJX50PQN47KptRYkRiaeZoJUsRXiuf6PqSO
-Ebhw4/gWlzdeFHHCj6+LKRxcOsBr9DXekS7KfniHM1IORQ88JS2IQfam3EjzMy0R
-S9888uMkacR7rtzB24iK4fcuaAKO1uKSsJffe5sxftDtxu3AuhL7L16BwMpU9Nzf
-j8jC/Cg9P5gKnRPYros4Pmj+ReUFsghQyEYFnQ8c6bxKW+zvXevugF1xAFJeKScG
-4fJJt0TNM3MwIrH5j7B9dzqNkCjR6yUEUT7UO2l6Ybw6BzfCGOAZmmFskc2KpEXz
-de/lhB9IPpxqbpruckvengtjUBzRu6ewT971yJHJfQC36kpIwAtXf6h0JBfZ/9wd
-QnVvkWtfxHQQFn7X0XfOMSFQ7PlNSjjLzG9dWxlFZnn+MnpE9J9s4oQ8o8rhyl7l
-3QVfDTI5VMK0LoHJqN/dVQt2mUNVsHZtL63w69nlg7eNkpLml4yBW+IDQG1f0N9I
-M0b7LZn5xLBH3YHYDx5uyxPFVI7x/IvIaDvx31IV2uj6uNZEVww=
-=FM7n
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWRgQ4ACgkQ/2dtxSoB
+kcOA5Q/8C5pqkgiMvFQ7mliNOcr8GwxK+R1prW8jXAeUk/tAVffHYuplxXDVy59J
+yUdnx4F+F9y3d+c8YcsOAmJVuGCzSBWRkbdy60tJSUUMHFrm7Fkq6bvnXTZEejKp
+8Vy0JXRLv17JBQb9AT7hrsjPUU3CWq/09eE8I1TdCmMCASBiIYMyjq4cTt3/0i03
+mwGtcc+rLlt2+UL3Gz9D52AXPnScWyyl1GoZ4zihYW1xLJKLiDGDPm9nf6v9+fI/
+NDspqS45G+eHOnkSkwtbjiieVmM7ZtS8593fmCERFiXDdWgboFgEj6S19sn5EaTZ
+Vzd2Jm/+qwupS4m0kmSXPuFjTa57l9VV7CvN5pUu6zFzUAg4zESoQsHdxBK9Q/w4
+14oUvv5o9utzIepe1luicE3L1IHxhKLDkNcn9ftemgQsAUoDyOnSze04ztCuWCYb
+pXt+6k64qxxUY5uGhNbWcv+gtEfVo1akLcbp/yJnKoSg1LztKbixUkWqyZskmjTM
+ZH73oTK/U0H8MS+1LFou5pg4STKwWgncMzYTbFC66ydT1D/d+Mae9iQCIBT5Hctn
+j+sUp3UW18JdqAw+7ZXjl7mbOC5o6hGI54GBDsmjdbrKORLYUunoPSGUV3dIoQms
++wGdUfpYLD1UVF/kRorayxs0WKNa//RkucCgGvUJPDMx1l32U0g=
+=kNSK
 -----END PGP SIGNATURE-----
 -->

@@ -8,22 +8,12 @@ Hash: SHA256
 Hash: SHA256
 
 - - -->
-<!--
-- - -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- - - -->
-<!--
-- - - -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- - - - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
 <a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Acessando o Office 365 via Powershell</h1><div><div><p><small><time>July 26, 2014</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>É muito fácil acessar sua conta do <a href=http://office.microsoft.com/en-us/>Office365</a>
-usando <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a>,<br>principalmente se você precisa otimizar a administração de contas corporativas<br>via script em situações onde é necessário manipular muitos usuários simultaneamente.</p><p>Alguns exemplos de tarefas que podem ser executadas são:</p><ul><li>Adicionar novos usuários</li><li>Remover usuários</li><li>Mudar permissões</li><li>etc.</li></ul><p>No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.</p><p>O primeiro passo é <a href=http://technet.microsoft.com/en-us/library/hh974317.aspx>instalar os Cmdlets</a> para Office365 ao
+usando <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a>,<br>principalmente se você precisa otimizar a administração de contas corporativas<br>via script em situações onde é necessário manipular muitos usuários simultaneamente.</p><p>Alguns exemplos de tarefas que podem ser executadas são:</p><ul><li>Adicionar novos usuários</li><li>Remover usuários</li><li>Mudar permissões</li><li>etc.</li></ul><p><br><br>No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.</p><p>O primeiro passo é <a href=http://technet.microsoft.com/en-us/library/hh974317.aspx>instalar os Cmdlets</a> para Office365 ao
 Powershell,<br>a partir daí basta se familiarizar com os cmdlets específicos para esta integração.</p><p>O passo seguinte é importar o módulo MSOnline para obter acesso aos cmdlets instalados anteriormente:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>Import-Module MSOnline
 </span></span></code></pre></div><p>Em seguida é necessário obter as credenciais de acesso ao serviço:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$credenciais <span style=color:#f92672>=</span> Get-Credential
 </span></span></code></pre></div><p>O comando acima irá mostrar uma tela nativa do Windows solicitando um nome de usuário e senha.</p><p>O problema desta abordagem é que se houver a necessidade de colocar este script<br>no agendador de tarefas ele não irá funcionar, neste caso será necessário<br>configura-lo para uso em modo não-interativo, conforme o código a seguir:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Import-Module MSOnline  
@@ -43,76 +33,40 @@ ela estará exposta a qualquer um com acesso ao código.</p><p>Durante a transa�
 </span></span></code></pre></div><p>Espero ter a oportunidade de em breve poder explorar mais funcionalidades como criar, excluir e alterar usuários, por exemplo, e também espero que este post tenha sido útil.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/>&#8592; Como subverter uma nação. Por Yuri Bezmenov</a>
 |
 <a href=https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/>Gerenciador de pacotes para Windows &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2024 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/ | gpg --verify</em></p></div></footer></body></html><!--
-- - - -----BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWRhSQACgkQ/2dtxSoB
-kcOklw/8Cw7GOMgQlcmhWcCcyxvXsrJ+BxQlGIckNS24HWfyb3Fl1Fyne97rhJdG
-fteMuuRucYQBsHq/lTxuN6Oy9hC92IPLA7sd5MGi849naGX9SQoHkgGGs96Y2jFa
-6gpwyPTd5mT+KwQSkfApNLcImNGYgwUtBd6FEkI1u1oLJWaLjD8enx/fe/LfxMdC
-X3s8LO2epWrhe3LmB5MbNt95s9jb12SsiYTqTGueRZcuOb15evwZQ88xkkO1BCbf
-X6nsIDhDt37o1wYFf+HwKjmXcJT6e6ycQBV2PUj5zBmMT2I5nsYKW2CdnB62AklL
-UjljxhHFUNXd1P4KuGWg+mYhAQfkWuQ37UdRxkafHtcVH3fuYIzSxFRVy4G7MMB+
-37k6lkNl8ktOIz34gdsid9ThDvIrUqqOeQUu5HfjurxiqS/DORESgqJaaOp1tGTt
-M7+NoeQRWmBMBfvS8zUtx0EA27RbMlH531pwcagvasE/Nc9syibJCBLChN5QDAhT
-Q2dyD9XShh8YiNVCWV8j5R2CaphTvNUhv5TYnKzk+BJ7GVdfefIaofmdzChe5k5j
-OZxu8z+rBJ93z7IJ8tPp8TZpXLLkwGZoWuOE3eWkAnu/x5bkI9GcxpTSfnwVs0yq
-Pjuhsu2Ee0VR2NPJupHtfZ/kM9Dr0hQLpBNhk+HS6XJd5OFugoE=
-=AMQh
-- - - -----END PGP SIGNATURE-----
-- - - -->
-<!--
-- - -----BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWRjwwACgkQ/2dtxSoB
-kcOqdBAAu7GzDIGyQojWWf5xRI0MFf26EuWwPRl+coyuOXGZSIXFAVgdBZfdUFII
-uTzLJvhJD5poHgo9Hjj2tsRbmISR5H6GDduY5FFcJyqlFWGQaDWhhCSAD73tLRFQ
-BWsjpmwCc2CHWhXEG1yzHVqMVuXl6ZOACmAaElNgGlgtRjtm76ebUISNHgHgPXJj
-xIz1Sl74Z86XRJB7x8n2f7MzuGgoztCpPY9piN7LUFWsjAru88M8KvhFcHdOpWpZ
-V096oJz6AJKU5OR1JiottoBrLMNooNy3ZTWFTagE6ADuXIU0kSFr8UJ1oiYN3sXR
-1RQA4AxzDT6BLY91P7a5g2MnFlfom79JhpMum66OTRMFWBsHPbxnG+Jj8YedDMSQ
-WmtpkkoymoWAYFZ77EU4uetF9/mBStD7OQTo4n5uHsPukKvvpfVTgbxAMQxjz2Ba
-YmZISVfkpZ4xbutNiz9kchJv5qENtFfrq/6P+tLey3wJ0dzQ/4ANn6U/rEm3TxtY
-fBHUgCxy7a8uW+nBkszS5Geqh4hNTcmubPbjuHI3xeUcGQCt53j7ono8vEhqeCDF
-f+0gW7FyyvStce0t2m+zc0RJzTdXE2YkF27/Z446pfcyGgsuYlrM3AuLOyaLhVSL
-/UBX4O72Zhh6QUjq6YYokFqn48CCV2UFq9uGmkCQD7S9yuNsciQ=
-=y0fA
-- - -----END PGP SIGNATURE-----
-- - -->
-<!--
 - -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWRj+AACgkQ/2dtxSoB
-kcNDtQ//XuQG6bsPFm13xjBACkior/YhFikSIovrnWfJNC/kIIP6Vrn/E3jl/vu8
-/Z2XyxwiH8oj5SDDbQ58hj/OJeDio+cWIKePa3yXDOHy/fkookOSQEfBMyRb2C8A
-Yb+dDmQs9zbzvOt78ZR2kyBaxJ5W0I5Aoif8xJP/wkcHl5sczudd0bO3PtAeLj8i
-P/MIIvVv79BSNGMtBVngH3CjLEY7i1pI4hooRz/VywxBVemWAv09PIuH5py3e1It
-Lf+E++Xs3HTBMYFohMXWcmRJ8h8UMPVXn+EAfbOLv55W8Cz5T/bvstv72pYR7YVd
-ub7hrAT175MyTb88heREnbKXqsPboSx1O0x3TXQ6RUfLl3rO/iuGMJ5dT0N0Oo/c
-OcoYm34GENYmYVhcY6gp7jK++WT8vW0nKe3mgMY4zru0H+JIDdWwTcA7JC7TNVaD
-14UtRAYOJLmBDpytRENx2MUV+kJyTGUasp9WOB3qYKM8tPEaryNRRXqkPhGLwWHM
-FYumKf+ACqsl5m3+95DcMfaQrwyqm+chmPDf984x4PXlU4CWES0qE9K5xrNtUfsz
-7rbWkPkmRxAjM39lAUyyfow7fkbqhATIgyymSRLVs9gcQBj/qBIooCc428n1Pw9L
-Tq1ODgvQje4UlCmPIIaGRH3pEtnudIKYXuWFWX5W/eAfuz6qolA=
-=WW2r
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWa0wcACgkQ/2dtxSoB
+kcOJmA//VEwjcY9qh2+/axQI3Lndh1VT1w7GSO84jaoh5v9+Xc6Ktr7PhqfDDVQx
+Y5sOcIScR9MFieb1IDS7m+1uHLx5JDI9PiU8xv/TbJFpOhokB6eOCDaNgx0IWnPg
+9WjmS3VjDuKU7O4UPaPzmVRLybo4YofzboUbjJP2hr18X1N1Ncbd4EWmhr6Y99Ls
+IFgJ2b/XBhD5YmKi967nTeaC3BbSlIpueFNMTeGmklaivvuZRP8nw/NcxH1MD02d
+2KMkZmVrr/SBs86woQLtLanPjDjzERqsFBjRtJdaKhFpJSjjkybWNRZIo2yrammc
+QH/hWIZ6yj0dYtCxvvfqQWnDSgx+6chcxP1O6S1t/iOv6JY7lOscTziIiiBoEelS
+EAOO//lhu6VtZAbjLX34kca2A8nTpvSKCHuO0ncobyKuLUfE80IkZX4icmlLap+e
+UiDEqMJa4Ugk/f149KfnIEheV0L3RsxXpZ5fw8gGerPgZl/u2LROihGrzghccl2x
+KZTkP4UXKMj/+EMSnKY+KJawnF27NQCvIMvU7UQp7fyrdH6xrs32U8O2ceTZlrgc
+UDHp0MRZxjILE8sHDMU3IdvG9OMCUW2IY0/Rc7eIB/m3QXkoQcwhEI1gpqWaQ/CM
+/oN++aDaFxcI4KlR+GOAOsUP3MX8g9nAISG7rFCgCztYm/dWuUI=
+=03n6
 - -----END PGP SIGNATURE-----
 - -->
 <!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWRlHgACgkQ/2dtxSoB
-kcPjAA/9EZ4NYKOw3B4OHMQOB7ZTLHoWLp6xuHMr1rzWtA1JIZy4syLVOC5xhGpg
-s9GqN8sYYwjMfDYT0sXjoFWIHQ9GSn64BjXYz1X24iikXmrhLmwfFbqUvNgbSkYm
-3bdlKjcYQidN01778JKZomREyrg+pkTrYbmECmhlOZsQZc0RKfNUUM303pLCM9ou
-+NxBVkwok5Qq3EaOkGnO2PPjuqgtGKix9Mg50K6ZjUsv7RMtJPjo0Rt30G3IKTto
-GVXIEuBlPZRCsEMKJgmHhM6frKXya66/sIMvyhlDGceKZBfZMZ30FxT4FqNIhVTy
-tBm5/eR9euIEsLMxCNLcqGsg352VC/wRg2qZXvbU1x3r7UzwDQUaAbpVjSZAh9sL
-erwD43LImYYiaTzPqoIdJhiualenuxKw44PkW3h8nR/UI//TCafypg18hs4NENrN
-AL966b0VhzFUQe1WkdquYOV05XrXv580c7D0UWp5VsHeF+BnKlq4EQNdeAsoUHYP
-/tliSWG1HTsairdymqfwOOsKdbtCVr2SSM8tgo6B/p4kAC1S4W5xKfUlQf+8CHK7
-9+NGA3cfKaxokY+LQGf483AZXJNzvhX/QqW/+1ZMdY11EwmXv5ABQYn7pTiGPCAD
-PoL0lKiy4aKgz5Grijn/Jv/x8Zp8MvK5cUEz9mLAlJF9il3fwJg=
-=VSWj
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWa04oACgkQ/2dtxSoB
+kcPDaA//RDoatrbpGX5FFvJT2S4uLplLl8xdwBZGJaJJnwnT+aMSCa8B0JN8l6Fq
+FJ3/GXuH4mQJothad9GMtGKXE2eMy1hhNFGZB+ChzVWho/n/fgdyEPx658yt9qBC
+9bTE00P8rCMpu1ctR18qqv/6KPMiBAKl+0uY8WkKF7VHJJ+SmBQG379xsEuexEan
+TJwzALw2TAU8BSYElFCBcFZO4j4qFxvZoyy5aMp4p1YIXILMT5KloG+t2duldjPF
+4TDOVe9gmzhXnpg2VwNi06hF52rQfIUgT2rm5KPYcFD6aSfoacJBgkJp827waN1F
+KXAaBWZIi+w0xDY3KVkDB2c5O25qibEGHgzgYeYTCkZ9UwR5/BkhsKHCAhKsTHO3
+6jCUF1I9TaDhguJA8ynOq3aNatbEoXaC6XwSEunB6atWpEuYnrwqYDAoD1s8AbZa
+nWVFj1+0l85+HIyRHgLSXLFSLGf7w+T1FcIeTm0E/bMs0AOSmDf0Nl2+uivEcBNz
+brBSNtwH21bUI5SXvW6Y1ermZeTLBuTCw/4jFhpQNfDT0TAYyT0KkiZ2Aq1jHtsF
+kV5C+yB6Xo11j0dOwQYAaSfMQA5wz0JYnG0QtIFRY0K9yRbgbnYIPwnm2VQpLtD7
+p/dIvNHAkKKKVb66w8JUgN4UCu5XpdcOpLIZPxCBuKZQfjPt89g=
+=MchF
 -----END PGP SIGNATURE-----
 -->

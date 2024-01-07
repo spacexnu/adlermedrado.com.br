@@ -16,7 +16,7 @@ function sign_html {
   echo "Signing $temp_dir and renaming to $html"
   (
     echo '<!--'
-    gpg --clearsign --default-key 39A90E7D803B5C02D3EFEBA7FF676DC52A0191C3 --output - $temp_dir
+    gpg --clearsign --output - $temp_dir
     echo '-->'
   ) >"$html"
 

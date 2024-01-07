@@ -8,16 +8,6 @@ Hash: SHA256
 Hash: SHA256
 
 - - -->
-<!--
-- - -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- - - -->
-<!--
-- - - -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- - - - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
 <a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Posts antigos restaurados</h1><div><div><p><small><time>December 31, 2017</time>
@@ -37,7 +27,7 @@ diretório correto? <em>No way</em>.</p><p>A primeira coisa que eu fiz foi anali
 padronizados, mas nem todos estavam dentro do mesmo padrão. <em>Shame on me</em>, lição aprendida, bola pra frente.</p><p>Eu salvei todos os arquivos HTML em um diretório chamado <em>old</em> e os posts estavam salvos da seguinte maneira:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>| |<span style=color:#ae81ff>\_\_\_\_</span><span style=color:#ae81ff>2010</span>   
 </span></span><span style=display:flex><span>| | |<span style=color:#ae81ff>\_\_\_\_</span><span style=color:#ae81ff>04</span>   
 </span></span><span style=display:flex><span>| | | |<span style=color:#ae81ff>\_\_\_\_</span>arquivos html
-</span></span></code></pre></div><p>Não coloquei toda a árvore aqui para não ficar muito grande, mas basicamente os arquivos estavam agrupados por <strong>ANO</strong> e <strong>MÊS</strong>, então para processa-los eu precisei iterar no diretório <em>old</em> e seus subdiretórios:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#66d9ef>for</span> subdir, dirs, files in os.walk<span style=color:#f92672>(</span>content<span style=color:#ae81ff>\_</span>root<span style=color:#f92672>)</span>:   
+</span></span></code></pre></div><p><br>Não coloquei toda a árvore aqui para não ficar muito grande, mas basicamente os arquivos estavam agrupados por <strong>ANO</strong> e <strong>MÊS</strong>, então para processa-los eu precisei iterar no diretório <em>old</em> e seus subdiretórios:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#66d9ef>for</span> subdir, dirs, files in os.walk<span style=color:#f92672>(</span>content<span style=color:#ae81ff>\_</span>root<span style=color:#f92672>)</span>:   
 </span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> file in files: <span style=color:#66d9ef>if</span> <span style=color:#e6db74>&#39;images&#39;</span> not in subdir:   
 </span></span><span style=display:flex><span>with open<span style=color:#f92672>(</span>file<span style=color:#ae81ff>\_</span>path, <span style=color:#e6db74>&#39;r&#39;</span><span style=color:#f92672>)</span> as content<span style=color:#ae81ff>\_</span>file:   
 </span></span></code></pre></div><p>O diretório <em>old</em> tem um subdiretório chamado images e eu não processei o que tinha dentro dele justamente por só conter
@@ -84,76 +74,40 @@ certamente não seria algo agradável e eu levei algo em torno de 30 minutos par
 interessar possa.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/do-php-ao-python/>&#8592; Do PHP ao Python</a>
 |
 <a href=https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/>Enabling Click and Drag on MacBook &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><small>&copy; 1996-2023 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2024 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/posts-antigos-restaurados/ | gpg --verify</em></p></div></footer></body></html><!--
-- - - -----BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWRhS8ACgkQ/2dtxSoB
-kcM2/Q//Q15LF1hrCyIY8aghik8huPzVn/TztvsDjv1W/vcoqoi7ikPITnk2dgrZ
-2b4CUOyszVvCw9DH3GJsytfXKfE8GJJcngb8aMg4KFVUhloLZOH9nXhQacdutHNj
-SWSTFCvDGh3bAF0FNiHb0ETsmIjiTOx68c0gfXf7PYYp0G8xahSf1SuGGCxFhKWf
-5ejkayrEsyfllTXWRJRTaqXHLF8aUqed2HUA4I8KlT2U1wuvI/k/MlqAjVgHIMH+
-BxMvGsXYNE/oKj/1YTQEZM8sGdiqLY770Ze/BSkPbM1+Y35xCkbzVSbKTyKSa18M
-gh9Ul+6JqLn/feQ8VjBZ8LU5b7y/apd6WD466dls1OcQYaGmCJ+Svdca/Rl/2jdq
-r6FXxTxLm05wwQnWnDSZUk+1LXdRFCnzG35YkfNJFx1sexps+JtaFwi8wEdtogS+
-kynWegrgRNME0eBIzeEbyLHFwHTp9DI3oPIoqIjy4ck4sgoBX2RDhmoLMtIJ5eYk
-St/bAmMn0RCcf6MUuWf8rLdS9W9XEGb63HqY40YJBwCKgvnH7uKurLB7LBRtYOJh
-qoaGnQtScJVmkIIzIhVxVqr8ScoP9QRlAR8Rl4GG5ZV5aNg3BwtoaE1+PzFh3Py7
-PqIiN//0Jt7nzXErA3mc4fuvwTngBgqD1hhbA9yqUdU3dD6HFFY=
-=Ta9q
-- - - -----END PGP SIGNATURE-----
-- - - -->
-<!--
-- - -----BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWRjxcACgkQ/2dtxSoB
-kcMGSg/9GQRMhn/1XNwTOCclh7Xn9v6WRZ50uOMq2mM72oOvAKw6iw1eeLEaDPem
-Lu0xV+7SZLHuKnaoYrB+QIF3NMeQtbcFWapkKdnz6yLGFcDdv/7slRWxfBjfhp8o
-kA0wdjk5byDQhrsTpyxGY7FYUPkK+cR7qSFAUs/FYm73s+8FQsV6PDe0X4olzC9A
-Yw2jVq6t3RCsOcI/5qEw1yOoPsfeY9mtqw9+aTSqTd1/KoEVH6G/Y9S44n4mSOQI
-b9uTBc8TIDEONJw37qilO0IYbY3TE5BkyuY5lULFEJm4+s8dRB/OUbLRPezh5Ysa
-tPBehi86hYxTi6GHX3ZfDr5va5pqWwvWpee/Pnlv9xBM45kFGgg84n4HrES6QPll
-OM6cqYS4tMeceVud9VATf4nB5JgNawZpsjCtadgotnxcKtPuU8LEcHWCkRix0T07
-yWwOYz1AZVAEWE7uoAF/KQ6LsWPmbcNLYfXCIlLUxABgd+lzinfZD8Rbw+EgsZ9s
-9/3xVCmQ5u/X9xF5cAX7dAhWg4yASsIhC4rPtBo+T/Smh32PuxsrvFZDkuUL7WoN
-mb9CL8FLtrHF1gOxTyTx71pfH3TWo7BNds3QBi5ap8n7F5IZ609lmHhToWo9Qy3b
-i48hpsqoCgv6PKo8akLT2FB6gKb5lo21QgxzyAiHHnsdHMqxdMg=
-=59Sn
-- - -----END PGP SIGNATURE-----
-- - -->
-<!--
 - -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWRj+sACgkQ/2dtxSoB
-kcMZDRAAvxABRueDqE+UMIV9p7Bu/EsjACmVnhaw6K2sT8p2rVA3eNZw+o8RJomH
-JgGHFdjGKjF0JPwpxo325BQSWMlWz6EivJHv81oE2twVzWuRY47DUjUi0ODn/DTd
-jM3d3+Gf9JNPmgcsPLQri1I9HYv+pDXyRU6M0jP+Hm6vcck9X8dLbAAkqzszCB06
-JLcefG01p9xLEkVORbkap0pnp/SarFCO6wy1R4qbKxVo7SLBLm7mbg03epPAh3ck
-GQhHXf3ygD+Vx7ZHhV6JVItBz73E+Cv+IeUQxv+TuZcSjha5FB9LncUIsq/VEgAZ
-OOZj7LYjKSA3TyBgu9Li+qKjDcPy86QsVYFc+6udttpuYzR31VwR0c4PHie1YFPN
-a/lHz/bCOmd6B9jl1441+SaY0iZWcmHJiVm8vl/Y1P4+Dv55YouTAbgDJihoZlT4
-SbQE0dZewdn+bsrc0CVhc/QUdG0v/tuO0HBcppALP7kHfA3dRJoZz8gjBr5+IVJb
-MVx/JLx+scHRfUvrauH0rw2Bjhf0X7W5fRKod+7iSMhBFcbK00aiIKQ0o+3LCE8h
-e8ndFs362uD/GPFGUIwqgPDw1DDr/mG/doK/aDQyFP4d+vCQ1OiHmv+0Fy6Bdyir
-K6Lalpg6ga7+DulQRsOTsoes+dtEeL1OqeIJHBoeAT/ygFVg2mI=
-=EqEl
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWa0xYACgkQ/2dtxSoB
+kcMJZg//Qjhx7WPkdwxQJFClJmZp1o7RxuFUNkBw81I4if45tOpiirwb+kSRi8Kg
+Tp0fwfScSWn3u8WSdRgN3qb61MR3bSir/OKmPckn5h0OwFSFGxi6NxsrRA5T2V9Q
+0aJVlEC6BxY19whkgBEQQRQimjJyosWOkImv/Rf3NrcLnQ5IZP6L20jBXRNJXJ/u
+iRzbtB+bgprhkXgywhPxa4XEQtjayFb3s1uqFUgqFdYad/kJIb1Koa2TFBMCOBr1
+xH/MZqmMyTH1jFS/lv26dcIQNT1lAiLVFDqbk76vJO7MuBJROjOJmTxAXIIedAmE
+vGWvtb+lrZiaVTqB8wqM02nwRFb1aE2Uirx9jTGlCiZN8AV+0R1DQsSKBXTgqWve
+kCBCUcAWPNhOPC87Jwsbl1bzzIomoy7MqI8FTt8XG4knRqv9Y/OsWBMvp8OV4C1V
+lJwMfDapzZ2bDuu/En3QBBObJ6odX15RJwobmVjYB+1TDl0hSYvGcLKl2EdLk4/F
+Yiua0F4xmKtjnc01yMBDzBqEyey/FCVqW16SS6dQSyxsBk8CnjHqPO4q2Yt/suHU
+76l5iOzNhF6BwVKBz1v589LvEa+pcaJSVCH5WaLr45IOzZmep5bh7PDFeFMN3nhb
+rOHnfj8iFE9gQ8E+L+BPr7XlcBiNYkgCrJbH2Vbpat2ykEJ5GUs=
+=rHkH
 - -----END PGP SIGNATURE-----
 - -->
 <!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWRlIIACgkQ/2dtxSoB
-kcMcXw//RQoL69eB0RJtOanXc/kD0fagArdB1dllLfecUOd5rvPeBZ6bnCWREcNk
-FIF4BvXJXVjC8QHQ08iKWRkGASadz8gG0ZwZo6HQGv4Ihy2mfhQr+en6n5SeNomp
-gVaKnMYv3CGENajnsFkoA90gq4GGux2jUdDT+ggc2jJLlegqQ8qn1/izoZqK6HyB
-AXg7K7FjErO25fjTE5ECOik8qFEdK+m8DGHQiv+rZOHEikK2Eg/Jd/SIrz/8j0EB
-czy6mpOOkv1TFwRzXiNG27t/kaynT4U9pkmVB9GVacDWyXnTWzx/WZNObaPKKUEs
-5wPgx/kHSM2bglqJS8rxmYlVNQ7llZQpqdgB/oLD2YNnUABG3XXOvflvtkInjc2Q
-VEmgG+XpfzQKksNJRSSp5cZA4cIhtzrIUjremkE6TE2zyWdUAMzjI50TbZscRHQC
-zIuqQmn4M5b6/lkZzpaqCXPMpFzw2mz4AMWLP46cyt5MiPl2fTRzsUKcBnibvGAf
-7WLHdAHzq7bbjGGrezCnxeNI9fvawbKYeVV7JbJ+hUCHCwv7XgzfBbL82pxU+dCP
-fizRfu71at0UnvAmPOFL9BNog19dYrhwI7GSGT0l3XZpQ7hUQzUfsq9nem7EwkYF
-3lzYz3MOz4W1+otBmhiWAuB4aGVP6nkByeTU/WXBDVXfSc8uOAU=
-=tLAx
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWa05gACgkQ/2dtxSoB
+kcNGpxAAlIuwzOretf+24FJa/d0aBhKZuIxsoVgicVLggBQ+5sH+VxI/CFVd286E
+qRulNDAF4bupsDR1wtewRoKdMmQUVpYFrWcVItd5K6iQWBc5/BW/nwHMuu4L2BxE
+KCMKCXLNAeVedlq6WntDqetzcfhyq/o635xIalNTchto2KGOlkAqHkxLYyEVFs2r
+ZdQyKTSvITDi/D28fUJLjdrNh31h98gaISmbjDZLcdX21irYOp/+fdlKxEAIKany
+4R6oMcw7PxIqWyshN8ttjKKX42+iIrR1fAItUBzsJf6Oa9fol8UNP6E+NG4tvWwX
+wg1mqH5cHMe4Jj99KwfsneUKNS+kUOlUcCdpFav0hADBD/euN09onRH+MXn50piY
+UYPKbA+CrIHUBnqFPN/YW0EGxy18Q8oVziF7WtENPBtENhC+M9qE4CQXubfe4Q86
+Zgw91FHbtyhaik1u7lJInYAGnuDZmt0zcsTPqzejG0ZMFC3fhSJ9SmYHi3/DhnZ4
+bPvR5M+vEPhQ1xfof1M5ZFv05WRDZOR1aP5TAF6q/JNAw8my2U0KZPlJceky1xIg
+CJYT6x5BOphBYobjk8gbwW9fIKjlaxQi5/5J0pUa6vtymKGV2WP3vNQodokMay1e
+P9eJfyQ05bcTzWnjUOGk7fKq98LbF6tqlkglSDd/O3HjMkB2Ntk=
+=00ae
 -----END PGP SIGNATURE-----
 -->

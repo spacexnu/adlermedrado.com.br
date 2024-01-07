@@ -63,13 +63,12 @@ se elas estão assinadas com a minha chave ou não, nesse segundo caso o conteú
 Os arquivos do meu site estão assinados no próprio html, mas a assinatura poderia
 estar em um arquivo separado.
 
-Em um arquivo separado, seria algo assim: O endereço http://site.com/index.html
+Em um arquivo separado, seria algo assim: O endereço https://site.com/index.html
 teria um arquivo chamado index.asc cujo conteúdo é a assinatura criptográfica do
 arquivo index.html.
 
 Eu optei por deixar no mesmo arquivo para facilitar
 o processo de validação, mas ambas as maneiras são válidas.
-Mais a frente eu mostrarei como fica um arquivo com a assinatura em seu corpo.
 
 ## Como validar a integridade do arquivo assinado?
 
@@ -177,104 +176,6 @@ for i in public/**/*.html; do
 done
 
 ```
-
-No final, o arquivo html terá em seu corpo a assinatura dele que será usada
-para validação. Como exemplo, um arquivo html após assinado:
-
-```html
-<!--
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- -->
-<!doctype html>
-<html lang=en>
-<head>
-    <meta charset=utf-8>
-    <meta http-equiv=x-ua-compatible content="IE=edge">
-    <meta name=description content="My corner of the web">
-    <title>Adler Medrado's little piece of turf</title>
-    <link rel=author href=/humans.txt>
-    <link rel=canonical href=https://adlermedrado.com.br>
-    <link href=/css/styles.css rel=stylesheet>
-</head>
-<body>
-    <header>
-        <nav class=navbar role=navigation>
-            <div class=navbar_left>
-                <a href=/>
-                    <strong>Adler Medrado</strong>
-                </a>
-            </div>
-            <div class=navbar_right>
-                <a href=/posts>Posts</a>
-                <a href=/tags>Posts by Tags</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class=section>
-            <article>
-                <div>
-                    <h1>Install lxml on MacBook with Apple Silicon</h1>
-                    <div>
-                        <div>
-                            <p>
-                                <small>
-                                    <time>January 3, 2023</time>
-
-                                    |
-                                    1 minute read
-                                </small>
-                            </p>
-                        </div>
-                        <span class=line_break></span>
-                    </div>
-                    <div class=content>
-                        </div>
-                        <p>So to install it, on my MacBook machine with Apple
-                        Silicon and macOS Ventura, I needed to execute
-                        the following commands:</p>
-                        <p>Install some dependencies on OS level:</p>
-                        <p>Set the dependencies&rsquo; path:</p>
-                        <p>Run the pip command again:</p>
-                        <p>That&rsquo;s it.</p>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
-    <span class=line_break></span>
-    <span class=line_break></span>
-    <footer>
-        <div>
-            <p>
-                <small>&copy; 1996-2023 Adler Medrado</small>
-            </p>
-        </div>
-    </footer>
-</body>
-</html>
-<!--
------BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmUoGegACgkQKWCEk4dB
-O2BjpQ/9G/iG1rIuCUESaAG1EM0rB+K2L6YIALt4B+fnsWHLzGNGAZspp9Frm/iP
-hrf1HLNw0ujioIednp9KvKo/3YxnH7UwEaD8+qSEVj7+WJaV35ey1s+N7QkTV19j
-0AIB8E8tRZRhB2IsSe20aQEJcejK+1HPZjMiclvYd1h3ZrvsUfDcwI7EghoTV/b8
-AqiULFrFZFkpgm5wQCsWwSab0SvNtwxwiZahK5ox6QA3rmoMBVSu9DbC4+Vr/AOo
-uiN4Ehxf4rD+OG0GwYMSIFID0lSLkRG2Xqx62luxmyTeQuQbXgDAO9P0BsVi6fen
-eMC3zLRD/4v/h5D9OIwLSB0dFYgPlvPR2Txfop+cKxz0MTAU3e3ToxYXNiOxniSz
-sfJEr+wbV8gjnrFhmhCWuBTsWOr96pESiYkuhKLMm9kYVYyyi6b9oddmb3a5j9vF
-uqy3EgYaO8h/Q05M8wiKMEKL+6bUbgbDUfW6+KdCaBpIpQ/oyyFhVxHDy76mlPbT
-v6Q8ZMfrPsPFPwT+2AkUYcXzJaDfWp4dL6EeIQy4gXX0OjRXPoVvyRanTXPwrrar
-tF5sCIDxcT2RjcEdZYM58jyou0zN423rEy6FzXQCjjzg8D09nr7na6N4CaDD6yM/
-BCYgoQUavXcme2UAifgOKGLtmx8PTOh4u44laHObRLUfRj9d4II=
-=RBuG
------END PGP SIGNATURE-----
--->
-```
-
 ## Se você não usa, considere refletir sobre o assunto
 
 Gerenciar chaves não é trivial, é necessário estudar e conhecer a ferramenta e os conceitos,

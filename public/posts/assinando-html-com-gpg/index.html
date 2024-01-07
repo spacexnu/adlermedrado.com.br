@@ -3,16 +3,11 @@
 Hash: SHA256
 
 - -->
-<!--
-- -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
 <a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Assinando páginas HTML com GPG</h1><div><div><p><small><time>January 7, 2024</time>
 |
-7 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
+6 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
 muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o <a href=https://gohugo.io>Hugo</a>.</p><p>No passado eu já utilizei o <a href=https://getpelican.com>Pelican</a>, o <a href=https://jekyllrb.com>Jekyll</a> e o Dangolino, este último era uma ferramenta
 criada por mim, mas que descontinuei depois de algum tempo. Se não me engano, há posts aqui falando sobre eles.</p><h2 id=por-que-assinar-as-páginas>Por que assinar as páginas?</h2><p>Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
 criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.</p><p>Nesse caso específico, quando eu resolvi reestruturar esse site pensei em garantir que
@@ -31,11 +26,10 @@ que por sua vez também compartilham as suas e quando há uma relação de confi
 as suas chaves podem ser mutuamente assinadas o que demonstra para terceiros que as chaves são legítimas.</p><p>A minha chave pública está disponível <a href=/pub-key.asc>aqui</a> bem como no
 <a href="https://keys.openpgp.org/search?q=FF676DC52A0191C3">servidor do OpenPGP</a>.</p><p>Voltando&mldr;</p><p>No caso das assinaturas das páginas HTML do meu site, qualquer pessoa pode verificar
 se elas estão assinadas com a minha chave ou não, nesse segundo caso o conteúdo não é legítimo.</p><h2 id=assinar-o-próprio-arquivo-ou-em-um-arquivo-separado>Assinar o próprio arquivo ou em um arquivo separado?</h2><p>Os arquivos do meu site estão assinados no próprio html, mas a assinatura poderia
-estar em um arquivo separado.</p><p>Em um arquivo separado, seria algo assim: O endereço <a href=http://site.com/index.html>http://site.com/index.html</a>
+estar em um arquivo separado.</p><p>Em um arquivo separado, seria algo assim: O endereço <a href=https://site.com/index.html>https://site.com/index.html</a>
 teria um arquivo chamado index.asc cujo conteúdo é a assinatura criptográfica do
 arquivo index.html.</p><p>Eu optei por deixar no mesmo arquivo para facilitar
-o processo de validação, mas ambas as maneiras são válidas.
-Mais a frente eu mostrarei como fica um arquivo com a assinatura em seu corpo.</p><h2 id=como-validar-a-integridade-do-arquivo-assinado>Como validar a integridade do arquivo assinado?</h2><p>Primeiro a minha chave pública deve ser importada para seu gerenciador de chaves (GPG Suite por exemplo),
+o processo de validação, mas ambas as maneiras são válidas.</p><h2 id=como-validar-a-integridade-do-arquivo-assinado>Como validar a integridade do arquivo assinado?</h2><p>Primeiro a minha chave pública deve ser importada para seu gerenciador de chaves (GPG Suite por exemplo),
 depois basta fazer o download do arquivo html e usar o comando <em>verify</em> do GPG para checar a integridade.</p><p>Para validar o arquivo HTML da home do meu site, basta executar o seguindo comando no seu terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
 </span></span></code></pre></div><p>Resultado:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
 </span></span><span style=display:flex><span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -110,98 +104,6 @@ para cada arquivo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;b
 </span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i in public/**/*.html; <span style=color:#66d9ef>do</span>
 </span></span><span style=display:flex><span>  sign_html <span style=color:#e6db74>&#34;</span>$i<span style=color:#e6db74>&#34;</span>
 </span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
-</span></span></code></pre></div><p>No final, o arquivo html terá em seu corpo a assinatura dele que será usada
-para validação. Como exemplo, um arquivo html após assinado:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!--
-</span></span></span><span style=display:flex><span><span style=color:#75715e>-----BEGIN PGP SIGNED MESSAGE-----
-</span></span></span><span style=display:flex><span><span style=color:#75715e>Hash: SHA256
-</span></span></span><span style=display:flex><span><span style=color:#75715e>
-</span></span></span><span style=display:flex><span><span style=color:#75715e>- --&gt;</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>&lt;!doctype html&gt;</span>
-</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>en</span>&gt;
-</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>head</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>utf-8</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>http-equiv</span><span style=color:#f92672>=</span><span style=color:#e6db74>x-ua-compatible</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;IE=edge&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>description</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;My corner of the web&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>title</span>&gt;Adler Medrado&#39;s little piece of turf&lt;/<span style=color:#f92672>title</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>author</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/humans.txt</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>canonical</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>https://adlermedrado.com.br</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/css/styles.css</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>stylesheet</span>&gt;
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>head</span>&gt;
-</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>body</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>header</span>&gt;
-</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>nav</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>navbar</span> <span style=color:#a6e22e>role</span><span style=color:#f92672>=</span><span style=color:#e6db74>navigation</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>navbar_left</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>strong</span>&gt;Adler Medrado&lt;/<span style=color:#f92672>strong</span>&gt;
-</span></span><span style=display:flex><span>                &lt;/<span style=color:#f92672>a</span>&gt;
-</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>navbar_right</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/posts</span>&gt;Posts&lt;/<span style=color:#f92672>a</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/tags</span>&gt;Posts by Tags&lt;/<span style=color:#f92672>a</span>&gt;
-</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>nav</span>&gt;
-</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>header</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>main</span>&gt;
-</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>section</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>section</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>article</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>h1</span>&gt;Install lxml on MacBook with Apple Silicon&lt;/<span style=color:#f92672>h1</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>                        &lt;<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>                            &lt;<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                                &lt;<span style=color:#f92672>small</span>&gt;
-</span></span><span style=display:flex><span>                                    &lt;<span style=color:#f92672>time</span>&gt;January 3, 2023&lt;/<span style=color:#f92672>time</span>&gt;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>                                    |
-</span></span><span style=display:flex><span>                                    1 minute read
-</span></span><span style=display:flex><span>                                &lt;/<span style=color:#f92672>small</span>&gt;
-</span></span><span style=display:flex><span>                            &lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                        &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>                        &lt;<span style=color:#f92672>span</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>line_break</span>&gt;&lt;/<span style=color:#f92672>span</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>content</span>&gt;
-</span></span><span style=display:flex><span>                        &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>                        &lt;<span style=color:#f92672>p</span>&gt;So to install it, on my MacBook machine with Apple
-</span></span><span style=display:flex><span>                        Silicon and macOS Ventura, I needed to execute
-</span></span><span style=display:flex><span>                        the following commands:&lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                        &lt;<span style=color:#f92672>p</span>&gt;Install some dependencies on OS level:&lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                        &lt;<span style=color:#f92672>p</span>&gt;Set the dependencies&amp;rsquo; path:&lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                        &lt;<span style=color:#f92672>p</span>&gt;Run the pip command again:&lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                        &lt;<span style=color:#f92672>p</span>&gt;That&amp;rsquo;s it.&lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>                &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>article</span>&gt;
-</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>section</span>&gt;
-</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>main</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>span</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>line_break</span>&gt;&lt;/<span style=color:#f92672>span</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>span</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>line_break</span>&gt;&lt;/<span style=color:#f92672>span</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>footer</span>&gt;
-</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>small</span>&gt;&amp;copy; 1996-2023 Adler Medrado&lt;/<span style=color:#f92672>small</span>&gt;
-</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>footer</span>&gt;
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>body</span>&gt;
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
-</span></span><span style=display:flex><span><span style=color:#75715e>&lt;!--
-</span></span></span><span style=display:flex><span><span style=color:#75715e>-----BEGIN PGP SIGNATURE-----
-</span></span></span><span style=display:flex><span><span style=color:#75715e>
-</span></span></span><span style=display:flex><span><span style=color:#75715e>iQIzBAEBCAAdFiEEXZd8hNji/2MRgqvhKWCEk4dBO2AFAmUoGegACgkQKWCEk4dB
-</span></span></span><span style=display:flex><span><span style=color:#75715e>O2BjpQ/9G/iG1rIuCUESaAG1EM0rB+K2L6YIALt4B+fnsWHLzGNGAZspp9Frm/iP
-</span></span></span><span style=display:flex><span><span style=color:#75715e>hrf1HLNw0ujioIednp9KvKo/3YxnH7UwEaD8+qSEVj7+WJaV35ey1s+N7QkTV19j
-</span></span></span><span style=display:flex><span><span style=color:#75715e>0AIB8E8tRZRhB2IsSe20aQEJcejK+1HPZjMiclvYd1h3ZrvsUfDcwI7EghoTV/b8
-</span></span></span><span style=display:flex><span><span style=color:#75715e>AqiULFrFZFkpgm5wQCsWwSab0SvNtwxwiZahK5ox6QA3rmoMBVSu9DbC4+Vr/AOo
-</span></span></span><span style=display:flex><span><span style=color:#75715e>uiN4Ehxf4rD+OG0GwYMSIFID0lSLkRG2Xqx62luxmyTeQuQbXgDAO9P0BsVi6fen
-</span></span></span><span style=display:flex><span><span style=color:#75715e>eMC3zLRD/4v/h5D9OIwLSB0dFYgPlvPR2Txfop+cKxz0MTAU3e3ToxYXNiOxniSz
-</span></span></span><span style=display:flex><span><span style=color:#75715e>sfJEr+wbV8gjnrFhmhCWuBTsWOr96pESiYkuhKLMm9kYVYyyi6b9oddmb3a5j9vF
-</span></span></span><span style=display:flex><span><span style=color:#75715e>uqy3EgYaO8h/Q05M8wiKMEKL+6bUbgbDUfW6+KdCaBpIpQ/oyyFhVxHDy76mlPbT
-</span></span></span><span style=display:flex><span><span style=color:#75715e>v6Q8ZMfrPsPFPwT+2AkUYcXzJaDfWp4dL6EeIQy4gXX0OjRXPoVvyRanTXPwrrar
-</span></span></span><span style=display:flex><span><span style=color:#75715e>tF5sCIDxcT2RjcEdZYM58jyou0zN423rEy6FzXQCjjzg8D09nr7na6N4CaDD6yM/
-</span></span></span><span style=display:flex><span><span style=color:#75715e>BCYgoQUavXcme2UAifgOKGLtmx8PTOh4u44laHObRLUfRj9d4II=
-</span></span></span><span style=display:flex><span><span style=color:#75715e>=RBuG
-</span></span></span><span style=display:flex><span><span style=color:#75715e>-----END PGP SIGNATURE-----
-</span></span></span><span style=display:flex><span><span style=color:#75715e>--&gt;</span>
 </span></span></code></pre></div><h2 id=se-você-não-usa-considere-refletir-sobre-o-assunto>Se você não usa, considere refletir sobre o assunto</h2><p>Gerenciar chaves não é trivial, é necessário estudar e conhecer a ferramenta e os conceitos,
 é por isso que a maioria das pessoas só usam criptografia em casos que consideram importantes.</p><p>É por isso que eu acho projetos como o <a href=https://keybase.io>Keybase</a> interessantes,
 pois facilitam a gestão de chaves e promovem o uso da criptografia.</p><p>Se você nunca usou GPG, sugiro que comece por lá.</p><h2 id=e-daqui-pra-frente>E daqui pra frente?</h2><p>Eu abordei apenas um único ponto relacionado à criptografia, esse universo é
@@ -213,38 +115,20 @@ importancia desse tema e cheguem à mesma conclusão que eu:
 |</div></div></div></section></main><span class=line_break></span>
 <span class=line_break></span><footer><div><p><small>&copy; 1996-2024 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/assinando-html-com-gpg/ | gpg --verify</em></p></div></footer></body></html><!--
-- -----BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWa0wcACgkQ/2dtxSoB
-kcMYrw//ciBOkBnvGuoAvGIwqBOaRSPgXhRvQYrIT0OyKRbiwp1iJZC0BOLCrJOH
-MRabXWNbhU9ObsFJITVFuKZDeJXxOm0hKdcvpQoNbjCblKJURoCxf87QlSGSOpUv
-0XUYXiu1AuPvJ60+PnI6pKjr6qUqae2OPd7OEZZ+ERaT/yfutU3mQ9/4wlRTnpH2
-gCO7ys3C8jQjO0Jb4xDqCS8izHE2VEYUMasxp8SGdaa4uFUqocq07PeqJs0L4hY+
-GEuK0QxTVkogJVGyuMLOcADF7YxqXpyYAGr9/tPf2/D2Xi+8BLkazkZpGozNSouc
-BSpxQVGwEV6ApvTzlie0AduB9znqJX2BDjXEwmXtVsdxk1fA9c5htiXB4yT+1TVK
-JSptCs6+qDEE1x4UtPhGGRzz/fYZvntcJgA1SYmAIzs7Ze6sIGSkjIjJKimqStIo
-iMmf+da0eqBWA/10Y/aabgZf4/nZRTWg9Lkmi5Ytts4Vm6YsEchjIxVuju9PGCq2
-k/OdNUzlK3Avfd5Qsi+T/3n3Putb44+0fIpipeqVEq+IKfizVWa4a9Rv6by8tRI9
-ywk3Pc9Hbs1nC7o19mPbY2AV01QhmEynfnk9YyIMuPeJrOpynSyy6zsAWS96/sI1
-nWpEnXjKJpdLp0G/nth8xEY4zIO1aqZvpjkCBZdgebYN02F3Wyk=
-=nkGy
-- -----END PGP SIGNATURE-----
-- -->
-<!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWa04oACgkQ/2dtxSoB
-kcNcuxAAiYtauWc5hfShUVuzqm/TREowmbQ+e8wchjMWADStC/HzLvfJ1CSSL0ZT
-g0FwDn9ABHFaSi4bnE0YlXdp/kZBuBVAiEp/xog91HILomCZan3+qTEbCGCs8A1y
-xYwU05Rxe97QdWBMM5TIgcGAmHDOQIYCrkqRYNl/VUrN/E9nnJfEiUdpc93IEMUW
-+fnBiF4QRBotM4LLNttMMOuq/CmEg2WhCE98Q7AcKPiaqtU0ZtyNpo+iPUWTDwp8
-AN166hKZtFWYHBcCFhGkBkMsTlVRIFb2Tzj3jqtQAp3u0laYwz5dIBVemHBC/D1v
-+yZxTIBwLGBaJxwLmmCPzAe1GOFu0B0VfeM9ijXeenWUi3Ja2asTGsoht2XB6P3L
-9vHe+AATVA+2QgSoKGPuuq3iZ2ZXcgua8BTIfRqdf59rOh4GGGmqBWw4EDtWbvNj
-gCzuOXqbJSYPynG0H5hHoP+6tRMA3679oehx7nroxfngBpAEkgE9fhyGb/MkHxto
-pX1FvNJcjbe3aFYQjJVlFIk296LtvZDXCaDh9+qYws1q2xNABfAmw67WuomnnDJq
-ku1a0KztGZT/aWp36iYX3pXQtHZ80XRa6fA2M9cOUevxMFE7sGFPMxEIPzLZd6ih
-Dei2SX0tqw+JemulSOMz0gwx/v6Y2yZXRME7BO47mVSlR4ubkGo=
-=1gGK
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWa5McACgkQ/2dtxSoB
+kcNLchAAmejF6K9I4a8BfC6OnxxZZKbMidZBtU8oUvmGx/aER1akcLQ4IaCKS5Do
+KrfomoWTcCLDxlCVJNtTrSkFx78EYFURT1xQlj5kQ010X2Zf4vyZK3V2gpbGqDwY
+C7xqde0E22e4bLvMamX8VZmyrx+dXICs5qG3Fd4CFln/PKsgJDWJ46RC1U36OFH3
+z4M4JjuyDezQWhXt40m9buG+kmbqyIoQCbGVZe2S/VVPwiNBhU9G/8+n+vik/mKn
+OSMBWVAm100g/3RhQ0gdL80vPUJBPfNoKsQ3pcfglvgsEeYIvGIuPkO14yaRJvIe
+MtNyqZmXrb3y1UcSltCMFbFhWWpuHgTUImp1GJ2lOTI36huTqxi0UoCd4Xjlq6PS
+CzC5qd0BHH4CO2tj2IQt3G3n0drqrU+u+AXLu8b6J6ESByvVStBSWQo8wQd1cglO
+thPz5EtnPc2OD7zDfnw7Cj3YNY3SSQG1br9WRTIqeY0qqGKIZxlcMjNOJwbehjaE
+/Wkf81JhVgv1YW9RIPA6oYurB7V2bbJ7pZA/2ZuHoVOn74KcFe7chZhkZiQ53UTo
+GhM5kA4adc5f3SxNPVr244lJ6LWg7GXYdSTyM6rR/hLBwLDaJdktlk34cI5IcByn
+Z4/xYuJpAwcVLg3/t9xU/mupkBWrzcvQgngy03O6i4lIbFhEReQ=
+=DWUW
 -----END PGP SIGNATURE-----
 -->

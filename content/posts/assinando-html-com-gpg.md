@@ -11,8 +11,9 @@ tags:
 Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
 muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o [Hugo](https://gohugo.io).
 
-No passado eu já utilizei o [Pelican](https://getpelican.com), o [Jekyll](https://jekyllrb.com) e o Dangolino, este último era uma ferramenta
-criada por mim, mas que descontinuei depois de algum tempo. Se não me engano, há posts aqui falando sobre eles.
+No passado eu já utilizei o [Pelican](https://getpelican.com), o [Jekyll](https://jekyllrb.com) e o Dangolino,
+este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.
+Se não me engano, há posts aqui falando sobre eles.
 
 ## Por que assinar as páginas?
 
@@ -33,9 +34,9 @@ e eu quero que pelo menos o que eu postar, seja facilmente identificado como leg
 Isoladamente não vai mudar nada, mas imagina se todo mundo que publicasse
 algo em seus sites fizesse isso? Já mudaria alguma coisa, certo?
 
-E usar GPG/PGP não é trivial mas também não um bicho de sete cabeças,
-tem posts aqui que eu já abordei o assunto,fazem alguns anos e pode estar
-desatualizado, mas serve como ponto de partida se você não sabe nada sobre o assunto.
+Usar GPG/PGP não é trivial, entretanto também não um bicho de sete cabeças,
+tem posts aqui que eu já abordei o assunto, fazem alguns anos e podem estar
+desatualizados, mas serve como ponto de partida se você está começando a estudar o assunto agora.
 
 ## Como funciona uma assinatura GPG
 
@@ -64,18 +65,21 @@ Os arquivos do meu site estão assinados no próprio html, mas a assinatura pode
 estar em um arquivo separado.
 
 Em um arquivo separado, seria algo assim: O endereço https://site.com/index.html
-teria um arquivo chamado index.asc cujo conteúdo é a assinatura criptográfica do
-arquivo index.html.
+teria um endereço com um arquivo correspondente chamado https://site.com/index.asc,
+cujo conteúdo é a assinatura criptográfica do arquivo index.html.
 
 Eu optei por deixar no mesmo arquivo para facilitar
 o processo de validação, mas ambas as maneiras são válidas.
+
+Caso tenha curiosidade para ver como é o arquivo com a assinatura embutida, utilize
+a funcionalidade _Mostrar código-fonte do seu navegador_.
 
 ## Como validar a integridade do arquivo assinado?
 
 Primeiro a minha chave pública deve ser importada para seu gerenciador de chaves (GPG Suite por exemplo),
 depois basta fazer o download do arquivo html e usar o comando _verify_ do GPG para checar a integridade.
 
-Para validar o arquivo HTML da home do meu site, basta executar o seguindo comando no seu terminal:
+Para validar o arquivo HTML da home do meu site, basta executar o seguinte comando no seu terminal:
 
 ```bash
 curl https://adlermedrado.com.br/ | gpg --verify

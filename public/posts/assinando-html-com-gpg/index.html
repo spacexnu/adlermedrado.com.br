@@ -8,17 +8,18 @@ Hash: SHA256
 <a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Assinando páginas HTML com GPG</h1><div><div><p><small><time>January 7, 2024</time>
 |
 6 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
-muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o <a href=https://gohugo.io>Hugo</a>.</p><p>No passado eu já utilizei o <a href=https://getpelican.com>Pelican</a>, o <a href=https://jekyllrb.com>Jekyll</a> e o Dangolino, este último era uma ferramenta
-criada por mim, mas que descontinuei depois de algum tempo. Se não me engano, há posts aqui falando sobre eles.</p><h2 id=por-que-assinar-as-páginas>Por que assinar as páginas?</h2><p>Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
+muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o <a href=https://gohugo.io>Hugo</a>.</p><p>No passado eu já utilizei o <a href=https://getpelican.com>Pelican</a>, o <a href=https://jekyllrb.com>Jekyll</a> e o Dangolino,
+este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.
+Se não me engano, há posts aqui falando sobre eles.</p><h2 id=por-que-assinar-as-páginas>Por que assinar as páginas?</h2><p>Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
 criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.</p><p>Nesse caso específico, quando eu resolvi reestruturar esse site pensei em garantir que
 o conteúdo aqui publicado fosse de fato produzido por mim, isso evitaria uma situação
 em que uma pessoa com acesso indevido ao meu servidor alterasse conteúdo postado aqui e
 me comprometesse de alguma maneira.</p><p>Esse foi um ponto, mas atualmente com a quantidade de fake news publicadas na internet,
 bem como o uso indiscriminado de IA, é difícil saber o que é ou não confiável,
 e eu quero que pelo menos o que eu postar, seja facilmente identificado como legítimo.</p><h2 id=fazendo-isso-no-meu-site-vai-mudar-alguma-coisa>Fazendo isso no meu site, vai mudar alguma coisa?</h2><p>Isoladamente não vai mudar nada, mas imagina se todo mundo que publicasse
-algo em seus sites fizesse isso? Já mudaria alguma coisa, certo?</p><p>E usar GPG/PGP não é trivial mas também não um bicho de sete cabeças,
-tem posts aqui que eu já abordei o assunto,fazem alguns anos e pode estar
-desatualizado, mas serve como ponto de partida se você não sabe nada sobre o assunto.</p><h2 id=como-funciona-uma-assinatura-gpg>Como funciona uma assinatura GPG</h2><p><a href=https://www.gnupg.org>GPG</a> ou GNU Privacy Guard é uma implementação livre do
+algo em seus sites fizesse isso? Já mudaria alguma coisa, certo?</p><p>Usar GPG/PGP não é trivial, entretanto também não um bicho de sete cabeças,
+tem posts aqui que eu já abordei o assunto, fazem alguns anos e podem estar
+desatualizados, mas serve como ponto de partida se você está começando a estudar o assunto agora.</p><h2 id=como-funciona-uma-assinatura-gpg>Como funciona uma assinatura GPG</h2><p><a href=https://www.gnupg.org>GPG</a> ou GNU Privacy Guard é uma implementação livre do
 <a href=https://www.openpgp.org>OpenPGP</a>, que é um padrão para criptografia, descriptografia,
 assinatura, etc, baseado no PGP, desenvolvido por Phil Zimmermann.</p><p>Basicamente o GPG é uma suite de software que te permite gerir chaves criptográficas e
 criptografar e descriptografar usando as chaves geridas por ele.</p><p>Quando uma pessoa cria um par de chaves, ela pode compartilhar a chave pública com outras pessoas,
@@ -27,10 +28,11 @@ as suas chaves podem ser mutuamente assinadas o que demonstra para terceiros que
 <a href="https://keys.openpgp.org/search?q=FF676DC52A0191C3">servidor do OpenPGP</a>.</p><p>Voltando&mldr;</p><p>No caso das assinaturas das páginas HTML do meu site, qualquer pessoa pode verificar
 se elas estão assinadas com a minha chave ou não, nesse segundo caso o conteúdo não é legítimo.</p><h2 id=assinar-o-próprio-arquivo-ou-em-um-arquivo-separado>Assinar o próprio arquivo ou em um arquivo separado?</h2><p>Os arquivos do meu site estão assinados no próprio html, mas a assinatura poderia
 estar em um arquivo separado.</p><p>Em um arquivo separado, seria algo assim: O endereço <a href=https://site.com/index.html>https://site.com/index.html</a>
-teria um arquivo chamado index.asc cujo conteúdo é a assinatura criptográfica do
-arquivo index.html.</p><p>Eu optei por deixar no mesmo arquivo para facilitar
-o processo de validação, mas ambas as maneiras são válidas.</p><h2 id=como-validar-a-integridade-do-arquivo-assinado>Como validar a integridade do arquivo assinado?</h2><p>Primeiro a minha chave pública deve ser importada para seu gerenciador de chaves (GPG Suite por exemplo),
-depois basta fazer o download do arquivo html e usar o comando <em>verify</em> do GPG para checar a integridade.</p><p>Para validar o arquivo HTML da home do meu site, basta executar o seguindo comando no seu terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
+teria um endereço com um arquivo correspondente chamado <a href=https://site.com/index.asc>https://site.com/index.asc</a>,
+cujo conteúdo é a assinatura criptográfica do arquivo index.html.</p><p>Eu optei por deixar no mesmo arquivo para facilitar
+o processo de validação, mas ambas as maneiras são válidas.</p><p>Caso tenha curiosidade para ver como é o arquivo com a assinatura embutida, utilize
+a funcionalidade <em>Mostrar código-fonte do seu navegador</em>.</p><h2 id=como-validar-a-integridade-do-arquivo-assinado>Como validar a integridade do arquivo assinado?</h2><p>Primeiro a minha chave pública deve ser importada para seu gerenciador de chaves (GPG Suite por exemplo),
+depois basta fazer o download do arquivo html e usar o comando <em>verify</em> do GPG para checar a integridade.</p><p>Para validar o arquivo HTML da home do meu site, basta executar o seguinte comando no seu terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
 </span></span></code></pre></div><p>Resultado:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
 </span></span><span style=display:flex><span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 </span></span><span style=display:flex><span>                                 Dload  Upload   Total   Spent    Left  Speed
@@ -117,18 +119,18 @@ importancia desse tema e cheguem à mesma conclusão que eu:
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/assinando-html-com-gpg/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWa5McACgkQ/2dtxSoB
-kcNLchAAmejF6K9I4a8BfC6OnxxZZKbMidZBtU8oUvmGx/aER1akcLQ4IaCKS5Do
-KrfomoWTcCLDxlCVJNtTrSkFx78EYFURT1xQlj5kQ010X2Zf4vyZK3V2gpbGqDwY
-C7xqde0E22e4bLvMamX8VZmyrx+dXICs5qG3Fd4CFln/PKsgJDWJ46RC1U36OFH3
-z4M4JjuyDezQWhXt40m9buG+kmbqyIoQCbGVZe2S/VVPwiNBhU9G/8+n+vik/mKn
-OSMBWVAm100g/3RhQ0gdL80vPUJBPfNoKsQ3pcfglvgsEeYIvGIuPkO14yaRJvIe
-MtNyqZmXrb3y1UcSltCMFbFhWWpuHgTUImp1GJ2lOTI36huTqxi0UoCd4Xjlq6PS
-CzC5qd0BHH4CO2tj2IQt3G3n0drqrU+u+AXLu8b6J6ESByvVStBSWQo8wQd1cglO
-thPz5EtnPc2OD7zDfnw7Cj3YNY3SSQG1br9WRTIqeY0qqGKIZxlcMjNOJwbehjaE
-/Wkf81JhVgv1YW9RIPA6oYurB7V2bbJ7pZA/2ZuHoVOn74KcFe7chZhkZiQ53UTo
-GhM5kA4adc5f3SxNPVr244lJ6LWg7GXYdSTyM6rR/hLBwLDaJdktlk34cI5IcByn
-Z4/xYuJpAwcVLg3/t9xU/mupkBWrzcvQgngy03O6i4lIbFhEReQ=
-=DWUW
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWcSp0ACgkQ/2dtxSoB
+kcPhqxAAgo/z0+aUDR5ZKeoWVo0Ah32LqxKDJZSufMviPf95JdaADm9DVfuYqzD/
++eJy+agafVif/WMObmY6t4E+DywyiMfA1S5HfIq9QAH4QKDzTFQiCKcv2L9b1RYx
+AhFxAvtLeD5LexXTCvc1GxRh0fni0WzSWGegwWuG3o12MYFt/NYca16qLZ7YmBTd
+em12EFhqoQR9TGfzHZEPs9srvBt1F3cqvHJGtMurDfVxHzBzl4DAiZnZaneJdfZt
+HS6fosHEp2958PwW7516YxxTKhuQSi7UdCmM9SUziGcGJ+PrF11tEHNnJDFYLpGi
+0VvgyOGslvP5fr6evAjq6pCKE/H84QsTuxOyLICSstqlAJl8i0B1hruM486muaxS
+qZS9qdSwVhDLTGKVVHW+8QuEjVycsMG2FpQX4tWT4x7c/nbo4SOU5sJOnjj9fp30
+pZpJzBHQIzyGIklKXOBZUK4dCpSwrW3R/wifLfRRCvuqWXGBCqW5SnuJi96NoUfQ
+PP0TBouqbCMOqtCQ89hoLs/R2zDnLc9sh4mUqhqkM7Wx+jzB3Dz53LDNLICM+QXS
+LfMs3THXoyjMqCM59pO6U9vm0h+A0xS5Gdu8PzGtrNAycP4/8h+skaEjs4MPmOO4
+rtNnbCJ+zncyY11SPk9E0CpWEE0aqlWmZWBY94V/b6LTF+6PpzA=
+=VgwE
 -----END PGP SIGNATURE-----
 -->

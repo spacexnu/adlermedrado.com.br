@@ -16,6 +16,8 @@ as developer, techlead, architect and more.
 
 Currently I'm graduating in History at Universidade Cruzeiro do Sul.
 
+Programming is not only a skill but my passion.
+
 Below you can find more about me, if you're interested.
 
 * [Blog](https://adlermedrado.com.br/posts)

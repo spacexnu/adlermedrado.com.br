@@ -28,7 +28,7 @@ I try to avoid social networks, but I don't always make it, so you can find me a
 
 * [Twitter](https://twitter.com/adlermedrado)
 * [LinkedIn](https://www.linkedin.com/in/adlermedrado)
-* [Nostr](https://iris.to/amedrado)
+* [Nostr](https://njump.me/npub1xsnc3rn5xes7j7lv8c70nzzyqht59l9tx5pwj6azkk75trkqvmzs5ya2m5)
 
 ## Contact
 

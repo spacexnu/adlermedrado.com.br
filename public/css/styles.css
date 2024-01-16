@@ -11,7 +11,7 @@
 
 body {
     font-family: Consolas, monospace;
-    font-size: 130%;
+    font-size: 100%;
     line-height: 1.5;
     margin: 3% 5%;
     max-width: 80em;
@@ -54,6 +54,7 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: #F36D33FF;
+    font-size: 130%;
 }
 
 h2 {
@@ -61,6 +62,7 @@ h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: #aef486;
+    font-size: 120%;
 }
 
 h3 {
@@ -68,6 +70,7 @@ h3 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: #aef486;
+    font-size: 110%;
 }
 
 h4 {
@@ -75,6 +78,7 @@ h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: #aef486;
+    font-size: 100%;
 }
 
 h5 {
@@ -147,4 +151,21 @@ em {
 .navbar_right a:hover {
     text-decoration: underline;
     font-weight: bold;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #edf4f9;
+        color: #40302f;
+    }
+
+    a {
+        color: #172b73;
+        text-decoration: underline;
+    }
+
+    h1, h2 {
+        color: #40302f;
+        font-weight: bold;
+    }
 }

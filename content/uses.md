@@ -79,7 +79,8 @@ _Last update: 2024-01-15_
 * Apple Keynote
 
 ## Theme
-* [Rosé Pine](https://rosepinetheme.com/) - I use this theme everywhere I can. (iTerm, IntelliJ, Neovim, etc.)
+* Intellij - Jetbrains Dark Theme
+* iTerm2 - Dark Background
 
 ## Hardware
 * Macbook Air (M1, 2020 - 16GB RAM - 1TB Storage) - Personal

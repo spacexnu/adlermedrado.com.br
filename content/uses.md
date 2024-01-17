@@ -52,6 +52,7 @@ _Last update: 2024-01-15_
 * FastAPI
 * SQLAlchemy
 * Spring Boot
+* Docker
 
 ### Cloud
 * [iCloud](https://www.icloud.com/)
@@ -81,6 +82,7 @@ _Last update: 2024-01-15_
 ## Theme
 * Intellij - Jetbrains Dark Theme
 * iTerm2 - Dark Background
+* LunarVim - Tokyo Night
 
 ## Hardware
 * Macbook Air (M1, 2020 - 16GB RAM - 1TB Storage) - Personal

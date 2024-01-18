@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Uses"
 Description: "Here's what I use"
 layout: "staticpage"
 ---
@@ -84,7 +84,7 @@ _Last update: 2024-01-15_
 * iTerm2 - Dark Background
 * LunarVim - Tokyo Night
 
-## Hardware
+## Hardware | Gadgets
 * Macbook Air (M1, 2020 - 16GB RAM - 1TB Storage) - Personal
 * Macbook Pro (M1, 13-inch, 2020) - Work
 * iPad 9th Gen
@@ -94,4 +94,5 @@ _Last update: 2024-01-15_
 * Airpods Pro
 * [Sennheiser HD 450BT](https://www.sennheiser-hearing.com/pt-BR/p/hd-450bt/) - Wireless noise cancelling headset
 * [Nexstand K2](https://pt.aliexpress.com/item/4001234630469.html) Laptop Stand - One for each laptop I use daily (work and personal)
-
+* Apple Watch SE
+* Kindle 10th Generation

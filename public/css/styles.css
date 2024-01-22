@@ -152,20 +152,3 @@ em {
     text-decoration: underline;
     font-weight: bold;
 }
-
-@media (prefers-color-scheme: light) {
-    body {
-        background: #edf4f9;
-        color: #40302f;
-    }
-
-    a {
-        color: #172b73;
-        text-decoration: underline;
-    }
-
-    h1, h2 {
-        color: #40302f;
-        font-weight: bold;
-    }
-}

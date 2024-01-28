@@ -5,7 +5,8 @@ Hash: SHA256
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
+<a href=/now>Now</a>
+<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p><img src=/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png alt="pip install error when installing lxml"></p><p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Building wheels <span style=color:#66d9ef>for</span> collected packages: xmlsec  
 </span></span><span style=display:flex><span>Building wheel <span style=color:#66d9ef>for</span> xmlsec <span style=color:#f92672>(</span>pyproject.toml<span style=color:#f92672>)</span> … error  
@@ -42,18 +43,18 @@ Hash: SHA256
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWu1M4ACgkQ/2dtxSoB
-kcNBdg/7Bq2lDUlvFGoCb8j2aldaU8HlyyTZsxkHWlgF7SMc2kxk7IoxZ5NBWgTX
-1gpjjPHIs//bFQ6vviMoGoTy8uBuqpZIXNnQq4UIouSdhb0ssofKHpL0z62OzvI6
-0Uz3VTOW1cnciX/3cjeBsIohKKwYrklV2U7U2vQZwdCzGX2HIkDfKd1BjvqlIdpC
-nfG7PEDHff6R8bLU2eVszqsvxxQW+Ld/kH4Z81wu0JUZ3EartZplyomCFhJJ7z3h
-YfX1rt4ofUcBAXJkz7wa08w+HzNiC9s8jnYQWuI4+6SC9jl4Ef6c6tLXwuMT86II
-xKrkZtbGuhUpVSeK3pKKCFAby27j1rRZaWmi83RSQuOSELB5eYssaefJaJW3zBZx
-NzG2iX323LIUVJzgAYD5nuIEpxdDWh+c0jwGoelHlnFJn95Mz4ZDlx8WO/jmpeCO
-F13alcNeLJzfYlLMFvaZr870cPMlNyd5clgqHpxjSA4MFQZmSxiCChJSrMANnj6x
-ggWq0Qg3nVwvY+BndV8I3vCZoDGuymvE8vS1dWL00l6PY1ldOpkTVxvugzcy37gj
-OJCb8nLvUGwEh0n9KhUtnh3LtNuDKh3nkNjTui5W/nf73pCpdu3O9mV7V3hSURnj
-vvzHV63y9zIWcLdCCafdEQSvWYWlps1NmUX6HWTKgVLvloHvxLI=
-=t01u
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmW2ZVQACgkQ/2dtxSoB
+kcPxehAApFnAju6KRa8JH2CbPCJfRN4GoW8SFam/o0kjz8IkTaYqwA4Jraa81yFt
+/ZudGstw8+zGGBip4KNZiYskQf9InNTwtTA94GYlTELgnFOButwNSM1Tqo1t2YVI
+jR/AE8mJj8s+d6A52pOmz1n01EwRDHPmSDjyEc8Jtu+KC0UXvpR+vhPS9EfIM7OE
+F9YT8DP+3WbzXxrCBv2uk9tOTNx3Mq7hVLaINB9asSUxTcT535LZHd2wTQTYqv5j
+tvGx7wJ8MEZRlqs/K0sSbpxjx7btKrPR3iIWIr8HRcDU/XLHL+zAlNbzfiesYc0G
+2DzSvObiiVfmv77F29IyzCvkZBoPwyXkk9Ah88n0SMkTJ5d5LNYFubpn9UFEotKe
+UL70hupBJ8M2m6z2XISu+0P82kNYQH6iQ0l+YHZkkjguKHGmeE14KxWnEfUMgRLJ
+gDKe7KcTlaoGxX3hSosf1iDvV5Kl9+vI8U4al07d78C5KTUVPa2cRY7ES3oeRMCn
+w3odyrfT0O39vqS4A/ToPiDJUNa61Ck9AhLhEoVcg87bgttF8AMYWaL99abjAxdb
+ZXql1EawqInPxFJ6rOQ2keGGbI69FdpM83yERt/Aq8RVtPDlDujwP/7JYpV6LwKf
+LUqRSpKjo4fsNKvhN5L8fuEKb0+l0idlEhrOfKppju6orqsnzPE=
+=AggH
 -----END PGP SIGNATURE-----
 -->

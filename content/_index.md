@@ -24,6 +24,8 @@ Below you can find more about me, if you're interested.
 
 * [What do I use?](https://adlermedrado.com.br/uses/)
 
+* [What I'm doing now](https://adlermedrado.com.br/now/)
+
 ## Social
 
 I try to avoid social networks, but I don't always make it, so you can find me at the networks below:

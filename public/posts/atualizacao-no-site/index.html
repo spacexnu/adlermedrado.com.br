@@ -5,7 +5,8 @@ Hash: SHA256
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Atualizacao No Site</h1><div><div><p><small><time>May 9, 2008</time>
+<a href=/now>Now</a>
+<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Atualizacao No Site</h1><div><div><p><small><time>May 9, 2008</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.</p><p>O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.</p><p>Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
 <strong>Zend_Services_Flickr</strong>.</p><p>Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:</p><p>Controller:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span>$flickr <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Zend_Service_Flickr</span>(<span style=color:#a6e22e>’MINHA_CHAVE_DO_FLICKR</span>;
@@ -17,18 +18,18 @@ Hash: SHA256
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/atualizacao-no-site/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWu1MkACgkQ/2dtxSoB
-kcONxw//TKmNvdY71lE0zPjIPYjMdy3MZIWFPG+CoyoBJ4U9x+TuaCA2MYYihHi5
-Byq+K8T1TKiRbaX5kgae8A79tRh5mLwO2WAc4/svj2+NqO8W1rupnUoaMwwNhTvv
-VJdaAYJraK582y6cY2nZD2k4bZrV6occvXpV8I1dlSopDwS089TZWzZvzzXjgrg/
-aVEt+4GZNqQzuJ7PVWrlttqNjL8s4cw5NR7cjCKCsUdeeOMoJJHaRCXvE1zrX+c/
-tzYMI3rKuY2yILbg/6JhxzA7O2ucFyTlLwoIpFQRlbXLoGdGjQ4Zk+To0ULzRUmt
-rVL6q90HiISculSw1nW1IPREZye/HAsTWsIVHcvHLfV018LNUaQgmLcu9SfkTAf5
-vroVoQIu3ItJh2DVLY3A6CPGOLbje5UBoZp6hGqcB//hympMhaUUXPq0s1rSzWCW
-Ge8KlZs8fz6PgYx5Zh1jo6s6EHSH8KzHNmGKaoXbYb9MhPbk5bCkdQu6DkRKr3q8
-KRtO5kbcK/LPkEDSk0U5o0Znj5S3fATkry3aEbHZpe8hz/dyXNZHxDI5d88UdSI0
-v3RI7IVzCm2gO/foMH1GkPyFs/QmMmlrW+svcDRxYUSApSHFR7l8nLVD54PviQk6
-o9Qi5YjBC5nwWcOzWl/GZds/XAdwgcqdvuomHlm0JwJMCPtLym0=
-=Qpbn
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmW2ZVAACgkQ/2dtxSoB
+kcMMEQ//cMTVkODPRbm9vJ/n/iWCmTNVOWxtikzPeR95s00EjnDCHiV8y97dmWIk
++UVnx2FW9ug0voFxZKnOxktf7i7fH+e+tZ0xPLCYKTb7AWuaBTci9Zv5Xvk6k7aS
+X/UsCEqFr4fWQIVLxZABwjPi45lrnfqfKC80praQdSvA4QZX8V2BYNR4Lu5cyViR
+VUEAYu3x2q57RfvnV+p3GzvsS/qBxChZ2f6Z1VilM4jlZB4bF2dBVZ7mCYQDG2vN
+3/agFtSFOKS1aGvF19rLOkaKIr/pArJ7Al2mY+DCWHH2jugkTn13egDk1lyzQOpH
+cVXtvO+pQLh7zV0y5NouIgN9S2t8JzDw4Y4JizePkCoLiZEEaOxgLFloXW8wVuir
+uAl2549QbPbbkzFNHPByFc5TfCk1sgf2ndHALCEKSEbwtmZfSEQLmf2Y4W/af0eG
+sITJSCNWgzrplhA7IXBNb20VJ3kkPXsp9gXTLh/p+U9H1e5u+Suk1mDZm+ecJz6H
+vLZbA4qSa0JUfv1FezrQOkhET/U9Ay/M0de48PX8j34yHwOQhVedPHTz9NR8qWFs
+JBYR0gozyGmyJ1XY0Fw+9vH3OvhVDHmNJMU9PneArzRy3dQgmhcY1HtmESgC7xr7
+xCoHqk1bTN5aRZIAwyKB7DpZIiUVUwBxhVHs/uBkNyx3j1tpEIw=
+=RCM2
 -----END PGP SIGNATURE-----
 -->

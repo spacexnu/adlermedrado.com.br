@@ -5,7 +5,8 @@ Hash: SHA256
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Acessando o Office 365 via Powershell</h1><div><div><p><small><time>July 26, 2014</time>
+<a href=/now>Now</a>
+<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Acessando o Office 365 via Powershell</h1><div><div><p><small><time>July 26, 2014</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>É muito fácil acessar sua conta do <a href=http://office.microsoft.com/en-us/>Office365</a>
 usando <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a>,<br>principalmente se você precisa otimizar a administração de contas corporativas<br>via script em situações onde é necessário manipular muitos usuários simultaneamente.</p><p>Alguns exemplos de tarefas que podem ser executadas são:</p><ul><li>Adicionar novos usuários</li><li>Remover usuários</li><li>Mudar permissões</li><li>etc.</li></ul><p><br><br>No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.</p><p>O primeiro passo é <a href=http://technet.microsoft.com/en-us/library/hh974317.aspx>instalar os Cmdlets</a> para Office365 ao
@@ -32,18 +33,18 @@ ela estará exposta a qualquer um com acesso ao código.</p><p>Durante a transa�
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWu1MkACgkQ/2dtxSoB
-kcP7FhAAh/C2qDya2/SoO5Gq7An+AzfgiSUXDvVJBcpqbw+SRUgVpcA+2m2BDUlL
-S2dCYVWS7oTCRBqd9kkoYi8wqwDkoOXSk6iSB0iGLgkZ0UhL70DJpp7/seAgfCRV
-rp6mjVeiLkmqPQSpebYXExThQyKkuFhXohciT6TkgVH+HnwLtlZ8xD4BMxzU8X/C
-lRZ6/sx++IyI+hr/lTvShvm7ldEsrLW3v4xZ+TyItHGHOdlRBIyN6Jtdm7RHXD0I
-1+WvBkkR6EgrYwX1PpNF9N5trlRldqN39VaIBDXta+lrcbpQ96eo/rnqsIEnilqD
-/5s9OftSUoeaUGv8eEL7SBgQE+FpSJgFxxXqkoJ2NtRnTXT0tkQLK66QeS+7ZbJw
-pZPaWQlTZzFbqtmW171lqlyV1USDz6nvFCc4UiLiQSPN/ZUP1b1Rojmi8IqFCGfM
-3WS27ArR1YBASvR80v1r4PNZfqB8knPyA6e7u2ZcMjswJw5cjqf1APF8gPmWx0N5
-mh/Kvzw/7TaRzykMvZdm+KcMzaWSoQoCkMNp+TwSBZuN2Eff28nl5esjzQ9lvP6P
-JIuCb8A00/zJbIJgqWid512JfydYEEaRK6/GiABC+9f4sNsTi5QcQXldEnVAmMPx
-sxa7Fvc17JsfXMkgB+o5UZ9af7dfSzKeRgYhGw6FQiUWj2IdvsM=
-=U/PF
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmW2ZVAACgkQ/2dtxSoB
+kcN9gg//dQZIpwJPlf4o9ueZyJuwc40RGcuTM0lfRmUheoFA/lC1iAgaI+oto7g1
+6JBzqEie5jiVAmNryeI7ul+tafGlxRM+hqkrXHWmc2x6ikqUgJlQ2UQ2UhE2hGV2
+E6n8OQTzhQXfUBN+5Hy5EEXRyk5WFOZJG34mvddC1sGRkr/pLjNr6ZS2Lz4wY9u9
+ofvlvvZrUx8g/E+M/vEtqXTPpoGud+w32tIt4rbyZURLCcmRC+106q57XVPhTXHF
+yNpQZi2YdHYnRx2ALTfqeT+glIhjMzYEGYdFA8txkBOK1qcB9EnKXnNz34ufvNlm
+GBowvgRR1rc7rBcg+q+P8rutgi+HFK4hzNkUwJ9YVNGJCK4W+ALyfo/9Lzi7AIVr
+GlKHN/GLoKncXHPL/djnyjjvbmOMPLK84Fm+nA6goE7goPzxwqXoTfisIsanH0rt
+SQLjr47a1unenWPLnKkydlafjaQ8uprGRRTVaHX40YFNRxapfDmGCe6Ncg60P0c8
+npfaikQwS6pCDN5XwwQwOk9gNtWkXR2YH7NPbs71nDfWpvT+yICJVzTxRMaxxUtv
+pZAvE3UYpdSc2PEOTBdLVPgAlTDBwIDI4aL+WHII5Zz6gBLY3CUIiIOFDwcMZSFg
+1dw3nDP8v/RRLBiMYTwaMPO6kIyLWeEqdh99t32m6i3kKNbO+Sc=
+=xs2Z
 -----END PGP SIGNATURE-----
 -->

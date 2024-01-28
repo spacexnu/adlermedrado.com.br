@@ -5,7 +5,8 @@ Hash: SHA256
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Erro incômodo com o Postgresql no Mac</h1><div><div><p><small><time>October 2, 2016</time>
+<a href=/now>Now</a>
+<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Erro incômodo com o Postgresql no Mac</h1><div><div><p><small><time>October 2, 2016</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a
 atualização para o MacOS Sierra.</p><p>O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:</p><p><img src=/posts/images/1*nKXkh2PzTW85hhl59x3-3w.png alt></p><p>WTF?</p><p>Eu costumo usar o <em>homebrew</em> para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum
@@ -18,18 +19,18 @@ a lidar de forma diferente com este tipo de problema.</p></div></div></article><
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWu1MwACgkQ/2dtxSoB
-kcPCZBAAhSThlVTxdt60JTB+z/x01R9GOyMrN2K2lZqH0UQQP69P9ErWs3ebUZ+s
-jYtIWNhf6bi04idGUpZnD3FECtx6hZtVjwOSc9UcgsUBYAygQibUVEkxiOn7jfUv
-lGvCMGkeMMIr737pqKwFsjUQcMAjGooiKdvuE7Ik1/OaQzYfYWsbgGaxhVfBAzUb
-ffjzMrMPgnlAs691IVCyifMl/Afm5iPhd9imIB9Ia8fItHA4QHCWj78snGoqObXW
-hCPAuC+yiwLsDNJFQGo9JkJJlvZDMG3AF//Djf1IoQmvU/oJMonyGiRxzantymSJ
-FHeBse7jZAJSh63peJzgg04ggSo27y9HFYa0A4Xoi034lnQ3EftRCFSCl/QCt/gO
-DZHhV/gJnujtuQCI+cAfUBU1Pw+fbNChfeKynVx75I38yK9wI9Pr7cmVIYhKjiBb
-FdKvTDGeMvL7cCaVqg5dYeL7UR89hSSDxcW4zLw+rda5Dmankrp+PN7k13/l3j6c
-Xs5p1Bjde41hkm1vf5crzEiWtw3RtE0RwLfMzS21PTs18XN9A94sjRtn60RvYVru
-L9FJwK8Nyw305e82G121JjQtfOZm4Rof2ZpiFCHkW6lnBrbvMmauDTuNlQcpjVJp
-t+MF04q6cxPqKqT6MaKNPNCDZlg7447/vstjA2iuvxgmbFkmuQ0=
-=sQGe
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmW2ZVMACgkQ/2dtxSoB
+kcOgcg/+IUesQgdaCr1tDV6tFJQneNkDzgWjM6sXZsBOCOWlJm80GTtVXPlb+IV7
+SjIQt6AbGtQpPqZT4ZNFwkUVLnV7QlI6GtJB/cJp1pPFPii+tYn6NYVLX2I9stDn
+CHzbngoS+SMg8foEFWRSUgLA0QrGITv1y5nM21Sr/7H2nmDP7ec2Vc4ziKCaMZZh
+1xY0HsrBNXvKWesZ1ic//HDC4CjIRW+9SUOr5/vAXgLkDLOWEOQQ8WbR43pdfJEb
+3n5OlGHO7AX3mT0y84JXmnulPA9QBdMNnyCgq21ueic2fmvo8PMoEQUYKp4Pq9ck
+f9x6RZx8qs8WFToERp9sc8W+asQP492ltuN60y91yGSF9X4OZuJdAZpPl0jFKidj
+GYGOZqzAxTQk+0kma8M9A+zmobY8nVpXY+NuibaHLNDpoGy7kD11QIb62vJ53v3P
+zXfHmvjXcU5lQ0NtjF966uPzr0ici24Vt8jQzpj416rpHcvWsxwRlW76lQ53jUh9
+q4BjBJgLMKGbA6uQfUAHfVwnZipjLedtE/4GjdtvazoNlPaT+1iP1rLfHqWZ/Kse
+9LyHCngJFhOpeMnT2Diw+ZoYN+Wz+gxYNYHOvI8sZdubGqxG/1F3ICudDx8vEoQy
+s73h0y+h0qy3K3gK9oKtPg7gLpq0r6ssxGQetwz+IFDVWXaXhSc=
+=7Ix7
 -----END PGP SIGNATURE-----
 -->

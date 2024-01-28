@@ -5,7 +5,8 @@ Hash: SHA256
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/tags>Posts by Tags</a></div></nav></header><main><section class=section><article><div><h1>Mudanças no Zend_Loader</h1><div><div><p><small><time>May 28, 2009</time>
+<a href=/now>Now</a>
+<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Mudanças no Zend_Loader</h1><div><div><p><small><time>May 28, 2009</time>
 |
 3 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
 autoload.</p><p>Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span><span style=color:#a6e22e>Zend_Loader</span><span style=color:#f92672>::</span><span style=color:#a6e22e>registerAutoload</span>();
@@ -37,18 +38,18 @@ locais diferentes do bootstrapper como por exemplo num controller.</p><p>Espero 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/mudancas-no-zend-loader/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmWu1NAACgkQ/2dtxSoB
-kcNIMQ/+MiqZHm3rBu2IqQecQF/ZvTVpXarZ+i/4gQW8fPR8ppTskZt9S8fWN4iA
-qaQdp55KxT0BH4c1ux6jVVNYbxOHTOP/NobzKWsppczy3Kmqk644sEANoWQFpnST
-oKnRFUuRsQVXBHh1EeiW6OuW7L+l1jdRPHYsYnplbTE10oeGeDmdlfXOGezBZhWq
-uRNnA9vgZTmNVoN0j9trhJEsADOZG6Ldc9IsA/PyhrgciTPS0DlBK6vADrlJdOKA
-klNwgx+rzrcMSO0j2Skc0i/vdO8noNMPP5uVi9CkS+wdVtcI/UcGeuRZhNvRvWYQ
-S/jwszgho+qU+Sy+zIAz0bVn6G3IbwtL+5cz097FvsGs/N7i7soOwgowQVLdHf5d
-imF+6qYwLGwTRDCmw6I51N0WM2nvlfZWdjgJ59+0aL5VX8Pe4GgokYaOOX5ZNJRL
-SrfynB6gIWEJCeCoLCUsNdLMrXXDE9O6kM/s+kRh5a1xjR+PiABz8Pq92veKaLz5
-0E8Ecjzyhi1DtG8lr2pGwN452VXvfcaKaLWK45CiaqCZR9yRBUpY8itTLVWdVveu
-yOgSb6HkJK5Op2tY/JUNs0Ph8OsPncEWk/QfNvsv8zsROlkXA5Fos6KZUFc8gy6T
-fPpXqx0at74hi1k9VuXitPBb+96M7hvkf9q8GUVkqjhC7vARALs=
-=IoxL
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmW2ZVcACgkQ/2dtxSoB
+kcP1+Q//WRpV5/Zb7vrwPtO8Ojpz1WhTfVTPWmq++ts9Bv+UrBAWyjJFBA996E6t
+M2skxBa8ZCYfhCJ5TiVrPLz1orIepWxzDqr177E04VXPCVDcHSBRbIKTvTNz/XoF
+4+pCyUA5VbFkKMUJhZD/h4PQN2AQoFshBXtQZBsMh2qc/8Hg+rcsQFvVndyYBG8p
+CV6LONrwRsYNSfRTxOAX00H5Wu1VnodweKreajPTf2bkLJULtdalz/syepOX0tlF
+cP2pKRurckhQCIxV/T82Iea47cWKyWUWc/rQPG9hBr5P2HyJ0YzaL+FHjceFDTty
+IJ0IXlKvqkPr1FdYvESlGsV5DRMhdcY1klQy3NgGzm1Tu/ReaI+tMyt6Km23Q8yQ
+jc4rTRiM+wPECM6C4A6X9R2jJIBdpbCJ/weLICX341Zi8XbCmpcn9nyiXzylTbU2
+YqBXhOGn0Wn6ylfwwUGamlI98SjFsk8vQDhoXM5PnWf5snbyub5qGFELN1ZJrZt4
+WcaI6zEsFxopGefREOc2rTQe7qD1N69tOnigkbpr/V2w2H1FB87YDKxLKDdlvyvB
+ojbE/gpJjMsV32qQiI83V5bjYADJWO7w1150MggXmrt29d97y/h+ARECGPFpFEjG
+nYiWPyV5guhDHGCO9Fj5QFi9dtPH7VN5tsOqcKE5fZ4avEHQAuA=
+=/MYQ
 -----END PGP SIGNATURE-----
 -->

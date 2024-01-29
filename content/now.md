@@ -4,7 +4,7 @@ Description: "What I'm doing now"
 layout: "staticpage"
 ---
 
-# What I'm doing now?
+# What I'm doing now
 
 This is a [now page](https://nownownow.com), and if you have your own site, [you should make one](https://nownownow.com), too.
 

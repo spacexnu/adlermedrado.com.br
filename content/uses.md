@@ -10,23 +10,23 @@ If you were wondering what I'm currently using, then you're in the right place.
 This page is a living document that I update from time to time.
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-_Last update: 2024-01-15_
+_Last update: 2024-02-03_
 
 
 ## Software
 
 ### Productivity
 * [Alfred](https://www.alfredapp.com/) with Powerpack
-* [1Password](https://1password.com)
+* ~~[1Password](https://1password.com)~~ iCloud Keychain
 * [iTerm2](https://iterm2.com)
 * [tmux](https://github.com/tmux/tmux/wiki)
 * [Bash](https://www.gnu.org/software/bash/)
-* [Firefox](https://firefox.com)
+* [Firefox](https://firefox.com) Mostly for Nostr-related stuff
 * [Apple Safari](https://www.apple.com/br/safari/)
 * Apple Mail
 * Apple Notes
-* [JetbrainsMono](https://www.jetbrains.com/lp/mono/) (Nerd Fonts on terminal)
-* [Starship](https://starship.rs/) - Cross-shell prompt 
+* [JetbrainsMono](https://www.jetbrains.com/lp/mono/) - Nerd Fonts on terminal
+* [Starship](https://starship.rs/) - Cross-shell prompt
 
 ### Audio and Video editors/broadcasters
 * Apple GarageBand
@@ -39,12 +39,14 @@ _Last update: 2024-01-15_
 * No JS, No Trackers, No Analytics, Nothing that can violate visitor's privacy.
 
 ### Development 
-* [Intellij Idea Ultimate](https://www.jetbrains.com/idea/)
-* [LunarVim](https://www.lunarvim.org/)
+* [Intellij Idea Ultimate](https://www.jetbrains.com/idea/) - Probably will stop using it when I get it properly configured to use Java
+* [LunarVim](https://www.lunarvim.org/) - Each day I'm using less
+* Emacs - With my own [custom configuration](https://github.com/adlermedrado/dot-files/blob/master/emacs/init.el)
 * [Github](https://github.com)
 * Python
 * Java
 * Golang
+* PHP - rarely, but...
 * Javascript
 * PostgreSQL
 * MySQL
@@ -61,7 +63,7 @@ _Last update: 2024-01-15_
 
 ### Music Streaming
 * Apple Music
-* Spotify
+* Spotify - My children are not used to Apple Music, so I have to pay for Spotify too, then I use it to listen to music that only are available there
 * Youtube Premium / Youtube Music
 
 ### Security and Privacy

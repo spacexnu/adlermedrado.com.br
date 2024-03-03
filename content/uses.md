@@ -10,8 +10,7 @@ If you were wondering what I'm currently using, then you're in the right place.
 This page is a living document that I update from time to time.
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-_Last update: 2024-02-03_
-
+_Last update: 2024-03-02_
 
 ## Software
 
@@ -39,9 +38,8 @@ _Last update: 2024-02-03_
 * No JS, No Trackers, No Analytics, Nothing that can violate visitor's privacy.
 
 ### Development 
-* [Intellij Idea Ultimate](https://www.jetbrains.com/idea/) - Probably will stop using it when I get it properly configured to use Java
+* [Intellij Idea Ultimate](https://www.jetbrains.com/idea/)
 * [LunarVim](https://www.lunarvim.org/) - Each day I'm using less
-* Emacs - With my own [custom configuration](https://github.com/adlermedrado/dot-files/blob/master/emacs/init.el)
 * [Github](https://github.com)
 * Python
 * Java

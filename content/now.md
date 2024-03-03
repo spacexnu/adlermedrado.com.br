@@ -8,6 +8,8 @@ layout: "staticpage"
 
 This is a [now page](https://nownownow.com), and if you have your own site, [you should make one](https://nownownow.com), too.
 
+_Updated at: 2024-03-02_
+
 ## Life
 I need to improve quality of life, so I'm trying to:
 
@@ -36,7 +38,4 @@ Last months I'm working on a critical project, mostly using:
 I'm also doing a hard work add monitoring and observality to the services that my team is responsible, at this moment i'm using New Relic.
 
 # Work and Life
-
 * Remote work, work anywhere
-
-Updated at: 2024-03-02

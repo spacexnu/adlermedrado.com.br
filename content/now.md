@@ -20,7 +20,7 @@ I need to improve quality of life, so I'm trying to:
 * Training Krav Maga
 * Meditating
 * Spending time with my wife and children
-* Stop drinking alcohol (53 days, today)
+* Stop drinking alcohol (62 days, today)
 * Playing World of Warcraft with my son
 * Reading Ghost in the Wires: My Adventures as the World’s Most Wanted Hacker - Kevin Mitnick
 * Listening to a lot of musics from different styles, like A Tribe Called Quest, Souls of Mischief, Satyricon, Exxotica and Metallica, among others.

@@ -30,6 +30,7 @@ Last months I'm working on a critical project, mostly using:
 * Spring Boot
 * Python
 * Django
+* FastAPI
 * Rest
 
 I'm also doing a hard work add monitoring and observality to the services that my team is responsible, at this moment i'm using New Relic.
@@ -37,7 +38,5 @@ I'm also doing a hard work add monitoring and observality to the services that m
 # Work and Life
 
 * Remote work, work anywhere
-* Studying Emacs
-* Back to study Clojure and Common Lisp
 
-Updated at: 2024-02-22
+Updated at: 2024-03-02

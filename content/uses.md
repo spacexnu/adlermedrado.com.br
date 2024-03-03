@@ -16,7 +16,7 @@ _Last update: 2024-02-03_
 ## Software
 
 ### Productivity
-* [Alfred](https://www.alfredapp.com/) with Powerpack
+* ~~[Alfred](https://www.alfredapp.com/) with Powerpack~~ Spotlight + Apple Shortcuts
 * ~~[1Password](https://1password.com)~~ iCloud Keychain
 * [iTerm2](https://iterm2.com)
 * [tmux](https://github.com/tmux/tmux/wiki)
@@ -83,17 +83,17 @@ _Last update: 2024-02-03_
 
 ## Theme
 * Intellij - Jetbrains Dark Theme
-* iTerm2 - Dark Background
-* LunarVim - Tokyo Night
+* iTerm2 - AtomOne Light Theme
+* LunarVim - Tokyo Night Day Theme
 
 ## Hardware | Gadgets
 * Macbook Air (M1, 2020 - 16GB RAM - 1TB Storage) - Personal
 * Macbook Pro (M1, 13-inch, 2020) - Work
 * iPad 9th Gen
-* iPhone 14
+* iPhone 14 (256GB Storage)
 * [Logitech Keyboard K380](https://www.logitech.com/en-us/products/keyboards/k380-multi-device.920-009600.html)
 * [Logitech Mouse MX Anywhere 3](https://www.logitech.com/en-us/products/mice/mx-anywhere-3-mac.910-005899.html)
-* Airpods Pro
+* Airpods Pro 2nd gen.
 * [Sennheiser HD 450BT](https://www.sennheiser-hearing.com/pt-BR/p/hd-450bt/) - Wireless noise cancelling headset
 * [Nexstand K2](https://pt.aliexpress.com/item/4001234630469.html) Laptop Stand - One for each laptop I use daily (work and personal)
 * Apple Watch SE

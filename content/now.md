@@ -8,7 +8,7 @@ layout: "staticpage"
 
 This is a [now page](https://nownownow.com), and if you have your own site, [you should make one](https://nownownow.com), too.
 
-_Updated at: 2024-03-02_
+_Updated at: 2024-03-14_
 
 ## Life
 I need to improve quality of life, so I'm trying to:
@@ -20,10 +20,11 @@ I need to improve quality of life, so I'm trying to:
 * Training Krav Maga
 * Meditating
 * Spending time with my wife and children
-* Stop drinking alcohol (62 days, today)
+* Stop drinking alcohol (74 days, today)
 * Playing World of Warcraft with my son
+* Playing The Division 2 on XBox
 * Reading Ghost in the Wires: My Adventures as the World’s Most Wanted Hacker - Kevin Mitnick
-* Listening to a lot of musics from different styles, like A Tribe Called Quest, Souls of Mischief, Satyricon, Exxotica and Metallica, among others.
+* Listening to a lot of fusion jazz these days.
 
 ## Work
 Last months I'm working on a critical project, mostly using:

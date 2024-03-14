@@ -10,7 +10,7 @@ If you were wondering what I'm currently using, then you're in the right place.
 This page is a living document that I update from time to time.
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-_Last update: 2024-03-02_
+_Last update: 2024-03-14_
 
 ## Software
 
@@ -24,6 +24,7 @@ _Last update: 2024-03-02_
 * [Apple Safari](https://www.apple.com/br/safari/)
 * Apple Mail
 * Apple Notes
+* Apple Podcasts
 * [JetbrainsMono](https://www.jetbrains.com/lp/mono/) - Nerd Fonts on terminal
 * [Starship](https://starship.rs/) - Cross-shell prompt
 
@@ -39,12 +40,13 @@ _Last update: 2024-03-02_
 
 ### Development 
 * [Intellij Idea Ultimate](https://www.jetbrains.com/idea/)
-* [LunarVim](https://www.lunarvim.org/) - Each day I'm using less
+* [LunarVim](https://www.lunarvim.org/)
 * [Github](https://github.com)
+* [Gitlab](https://gitlab.com)
 * Python
 * Java
 * Golang
-* PHP - rarely, but...
+* PHP - rarely
 * Javascript
 * PostgreSQL
 * MySQL
@@ -80,7 +82,7 @@ _Last update: 2024-03-02_
 * Apple Keynote
 
 ## Theme
-* Intellij - Jetbrains Dark Theme
+* Intellij - Jetbrains macOS Light
 * iTerm2 - AtomOne Light Theme
 * LunarVim - Tokyo Night Day Theme
 

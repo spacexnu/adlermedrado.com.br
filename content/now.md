@@ -20,7 +20,7 @@ I need to improve quality of life, so I'm trying to:
 * Training Krav Maga
 * Meditating
 * Spending time with my wife and children
-* Stop drinking alcohol (74 days, today)
+* Stop drinking alcohol (87 days, today)
 * Playing World of Warcraft with my son
 * Playing The Division 2 on XBox
 * Reading Ghost in the Wires: My Adventures as the World’s Most Wanted Hacker - Kevin Mitnick
@@ -36,7 +36,7 @@ Last months I'm working on a critical project, mostly using:
 * FastAPI
 * Rest
 
-I'm also doing a hard work add monitoring and observality to the services that my team is responsible, at this moment i'm using New Relic.
+I'm also doing a hard work add monitoring and observability to the services that my team is responsible, at this moment i'm using New Relic.
 
 # Work and Life
 * Remote work, work anywhere

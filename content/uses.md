@@ -10,13 +10,13 @@ If you were wondering what I'm currently using, then you're in the right place.
 This page is a living document that I update from time to time.
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-_Last update: 2024-03-14_
+_Last update: 2024-04-23_
 
 ## Software
 
 ### Productivity
-* ~~[Alfred](https://www.alfredapp.com/) with Powerpack~~ Spotlight + Apple Shortcuts
-* ~~[1Password](https://1password.com)~~ iCloud Keychain
+* Spotlight + Apple Shortcuts
+* [1Password](https://1password.com)
 * [iTerm2](https://iterm2.com)
 * [tmux](https://github.com/tmux/tmux/wiki)
 * [Bash](https://www.gnu.org/software/bash/)
@@ -82,9 +82,9 @@ _Last update: 2024-03-14_
 * Apple Keynote
 
 ## Theme
-* Intellij - Jetbrains macOS Light
-* iTerm2 - AtomOne Light Theme
-* LunarVim - Tokyo Night Day Theme
+* Intellij - Jetbrains Dark Theme
+* iTerm2 - City Lights Theme
+* LunarVim - Tokyo Night Theme
 
 ## Hardware | Gadgets
 * Macbook Air (M1, 2020 - 16GB RAM - 1TB Storage) - Personal

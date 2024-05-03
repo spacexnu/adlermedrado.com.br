@@ -16,6 +16,6 @@ clear-sign:
 	./clearsign_html.sh
 
 deploy:
-	rsync -rvhe ssh --progress --delete ./public/ root@64.227.102.201:/var/www/adlermedrado.com.br
+	rsync -rvhe ssh --progress --delete ./public/ xablau
 
 .PHONY: serve build sign

@@ -8,7 +8,7 @@ Hash: SHA256
 <a href=/now>Now</a>
 <a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo with Touch ID on macOS</h1><div><div><p><small><time>June 5, 2024</time>
 |
-1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.</p><p>Locate the <em>file /etc/pam.d/sudo_local.template</em> and make a copy as shown in the example below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.</p><p>Locate the <em>file /etc/pam.d/sudo_local.template</em> and make a copy as shown in the example below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Then edit the file and remove the # character from the beginning of line 3, it should look like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span># sudo_local: local config file which survives system update and is included for sudo
 </span></span><span style=display:flex><span># uncomment following line to enable Touch ID for sudo
 </span></span><span style=display:flex><span>auth sufficient pam_tid.so
@@ -18,18 +18,18 @@ Hash: SHA256
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmZg9zYACgkQ/2dtxSoB
-kcMkBg/+J86NpOsPt6BtAVP4HuT4BrILwkBhsoETjhvlys7CU/Njz51n3iyJ/DUe
-QISpPEBvWQr/YMR+6+TmRFx7UUcCHL/wOJTJxUhF1URZ9qeFwJ95JnMt3KsPTVTt
-kW8oGHuqrMs2zuqlg1PzTqHKyQ9hkk/TjJOXXq1DzyLlE0sZ17ikJOcr6SAZE6Oy
-qxKJtY7Tdt8bFMj/PQX1geXKXhZ0LPyU3UDCjqGGUO8TpQFJhBFIEloI+bEHzRBt
-kVSPa0q112ZLzetfHpu/A0Bhnxk3VPu1Rs+aJzEXGRhgIZwA604N7RnBOCCwIyd3
-9AT/2gpESrdli7Ycax1z06ELI3V4eyCI91pctp2+NJzHmPuPDoRuSWRrXORfYCRU
-mdJB28cQwKLtPbuXYkPe2uFR8hHiYJRd4OypakFD4V990a5R0CXHOJzjoThRpXpj
-GKE+BkU7o5RVQN2wl6XGVzmb/7LnKx2t+/0rBGn421TqUTyIwoonKzGBIlNpg8xM
-3YMAbYSUghfIYvWJi05tS3p8aCFBhaJEK1F5xxlZ9Vz98oR1j6Z3ax8vLBTXk9mR
-4jpBfnlS0K+ZE4h3xNa33m5BYCelFHOE27dWWVI9zQnLHf4s2vCef8wsPJoUITnR
-h00MuUqRyepiykpmgRTtGo/t0HjCLDeqpxQSNbSCHQpy8naJVTQ=
-=Ci3n
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmZg+DMACgkQ/2dtxSoB
+kcOBig/+NutsYpDursf3IakDX7Ba48amJviEJVyOezSj4JUCzQntz8qIaZqhUnEx
+0BGuX2/RyXdHb52FgJEgBWHTbXAzXtRFV2ws+PtmuJv84fOSht3T9lWrhlZlQ1wO
+g7UM+9sLEucdSKCbkZFrxR0MZooMsx5/vdaegAUyGokabrxgc1NKrFRvnwmf5nIN
+HHmkpaeslG1QR3Ki8Y1Pe37tJicI848pT18SeAW2/sZZdRyLQLu1XDGTAl1qvIcd
+p19duNdx54Xjhpyr3LyUMGkW8arie9qVyICmtVLGMTOcjFb9E6/H0rFtBX+hHWYX
+8n91P1Cfiopdcz9d2bmA+m87zCkNmbZpwoJaDJa4UrYNBjMP77rWryNfp2Ojwl1/
+/Qe1oKn//020uVYrUXuEvKKb4dU3LvwqVBvRI2Hce2Q3JpXNByOAbX02Th39AsMz
+QOwHquGI1AiuURHM+bC8xAjoW0Qb9BhbvUQ9/l3Jj842Eo9jA+g3IGUkgIA+wGmF
+5R5PMnEmVfVdD6CM35zXoaFl8+oHeeiiHuJDXIhltJKDM4IkYcjMkKW/fpRvjEeF
+iXqOrVoxTctEwwUIpIQb8lu1mHlN4S5xG7ITfUliqw/CfGZkACMzE3iLHdvK07xc
+hjLCFYAX5QId4N2xrA6AUWzs3EWKDCkgMMpbsbFKT8Kpa/ILaek=
+=ZhVQ
 -----END PGP SIGNATURE-----
 -->

@@ -12,7 +12,7 @@ Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is ver
 Locate the _file /etc/pam.d/sudo_local.template_ and make a copy as shown in the example below:
 
 ```bash
-sudo /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 ```
 
 Then edit the file and remove the # character from the beginning of line 3, it should look like this:

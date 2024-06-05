@@ -1,0 +1,35 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Adler Medrado's little piece of turf</title>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/now>Now</a>
+<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo with Touch ID on macOS</h1><div><div><p><small><time>June 5, 2024</time>
+|
+1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.</p><p>Locate the <em>file /etc/pam.d/sudo_local.template</em> and make a copy as shown in the example below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+</span></span></code></pre></div><p>Then edit the file and remove the # character from the beginning of line 3, it should look like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span># sudo_local: local config file which survives system update and is included for sudo
+</span></span><span style=display:flex><span># uncomment following line to enable Touch ID for sudo
+</span></span><span style=display:flex><span>auth sufficient pam_tid.so
+</span></span></code></pre></div><p>As I use sudo a lot, this configuration is very convenient for me.</p><p>I hope this tip is useful to you.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/assinando-html-com-gpg/>&#8592; Assinando páginas HTML com GPG</a>
+|</div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><small>&copy; 1996-2024 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmZg9zYACgkQ/2dtxSoB
+kcMkBg/+J86NpOsPt6BtAVP4HuT4BrILwkBhsoETjhvlys7CU/Njz51n3iyJ/DUe
+QISpPEBvWQr/YMR+6+TmRFx7UUcCHL/wOJTJxUhF1URZ9qeFwJ95JnMt3KsPTVTt
+kW8oGHuqrMs2zuqlg1PzTqHKyQ9hkk/TjJOXXq1DzyLlE0sZ17ikJOcr6SAZE6Oy
+qxKJtY7Tdt8bFMj/PQX1geXKXhZ0LPyU3UDCjqGGUO8TpQFJhBFIEloI+bEHzRBt
+kVSPa0q112ZLzetfHpu/A0Bhnxk3VPu1Rs+aJzEXGRhgIZwA604N7RnBOCCwIyd3
+9AT/2gpESrdli7Ycax1z06ELI3V4eyCI91pctp2+NJzHmPuPDoRuSWRrXORfYCRU
+mdJB28cQwKLtPbuXYkPe2uFR8hHiYJRd4OypakFD4V990a5R0CXHOJzjoThRpXpj
+GKE+BkU7o5RVQN2wl6XGVzmb/7LnKx2t+/0rBGn421TqUTyIwoonKzGBIlNpg8xM
+3YMAbYSUghfIYvWJi05tS3p8aCFBhaJEK1F5xxlZ9Vz98oR1j6Z3ax8vLBTXk9mR
+4jpBfnlS0K+ZE4h3xNa33m5BYCelFHOE27dWWVI9zQnLHf4s2vCef8wsPJoUITnR
+h00MuUqRyepiykpmgRTtGo/t0HjCLDeqpxQSNbSCHQpy8naJVTQ=
+=Ci3n
+-----END PGP SIGNATURE-----
+-->

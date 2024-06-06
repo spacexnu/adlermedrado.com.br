@@ -25,4 +25,4 @@ auth sufficient pam_tid.so
 
 As I use sudo a lot, this configuration is very convenient for me.
 
-I hope this tip is useful to you.
+I hope that this tip will be of some use to you.

@@ -1,3 +1,9 @@
+---
+title: "About Adler"
+Description: "Adler Medrado's little piece of turf"
+layout: "staticpage"
+---
+
 # Hi, my name is **Adler Medrado** and this is [my little](https://movie-sounds.org/action-movie-sound-clips/quotes-with-sound-clips-from-the-warriors-1979/our-turf-our-little-piece-of-turf) [piece of turf](https://www.youtube.com/watch?v=tcc2ltIjNU0).
 
 ## About me

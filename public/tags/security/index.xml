@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Security on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/security/</link>
-    <description>Recent content in Security on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 21 Feb 2010 19:08:14 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>GPG no MacOS X Snow Leopard</title>
-      <link>http://localhost:1313/posts/gpg-no-macosx-snow-leopard/</link>
-      <pubDate>Sun, 21 Feb 2010 19:08:14 -0300</pubDate>
-      <guid>http://localhost:1313/posts/gpg-no-macosx-snow-leopard/</guid>
-      <description>Desde que comprei meu mac e instalei o Snow Leopard no ano passado, eu busquei alguma forma de instalar o GPG integrado ao cliente de email &amp;ldquo;Mail&amp;rdquo; que vem com o Mac OS X, mas estava complicado porque a versão do Mail que vem com o Snow Leopard não suporta o GPGMail que é um bundle para o Mail que permite que esta integração seja feita.&#xA;Hoje, senti necessidade novamente em criptografar meus emails utilizando GPG e por isso fui atrás de uma solução para o problema supracitado e desta vez eu encontrei um tutorial bacana que me permitiu fazer esta integração.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Security on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/security/</link><description>Recent content in Security on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 05 Jun 2024 20:03:28 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Sudo with Touch ID on macOS</title><link>https://adlermedrado.com.br/posts/sudo-touch-id/</link><pubDate>Wed, 05 Jun 2024 20:03:28 -0300</pubDate><guid>https://adlermedrado.com.br/posts/sudo-touch-id/</guid><description>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.
+Locate the file /etc/pam.d/sudo_local.template and make a copy as shown in the example below:
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local Then edit the file and remove the # character from the beginning of line 3, it should look like this:
+# sudo_local: local config file which survives system update and is included for sudo # uncomment following line to enable Touch ID for sudo auth sufficient pam_tid.</description></item></channel></rss>

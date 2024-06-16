@@ -8,28 +8,30 @@ Hash: SHA256
 <a href=/now>Now</a>
 <a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo with Touch ID on macOS</h1><div><div><p><small><time>June 5, 2024</time>
 |
-1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.</p><p>Locate the <em>file /etc/pam.d/sudo_local.template</em> and make a copy as shown in the example below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.</p><p>Locate the <em>file /etc/pam.d/sudo_local.template</em> and make a copy as shown in the example below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Then edit the file and remove the # character from the beginning of line 3, it should look like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span># sudo_local: local config file which survives system update and is included for sudo
 </span></span><span style=display:flex><span># uncomment following line to enable Touch ID for sudo
 </span></span><span style=display:flex><span>auth sufficient pam_tid.so
-</span></span></code></pre></div><p>As I use sudo a lot, this configuration is very convenient for me.</p><p>I hope that this tip will be of some use to you.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/assinando-html-com-gpg/>&#8592; Assinando páginas HTML com GPG</a>
-|</div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2024 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+</span></span></code></pre></div><h3 id=detailed-steps-to-edit-the-file>Detailed Steps to Edit the File</h3><p>To edit the file, use a text editor like nano or vim. For example, with nano:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo nano /etc/pam.d/sudo_local
+</span></span></code></pre></div><p>Make the necessary changes and save the file (Ctrl+O, Enter, Ctrl+X in nano).</p><h3 id=benefits-of-using-touch-id-with-sudo>Benefits of Using Touch ID with sudo</h3><ul><li>Convenience: Touch ID eliminates the need to repeatedly type your password, making the process faster and easier.</li><li>Security: Touch ID adds an extra layer of security, ensuring only authorized users can execute sudo commands.</li></ul><h3 id=troubleshooting-common-issues>Troubleshooting Common Issues</h3><p><strong>Touch ID Not Working:</strong></p><ul><li>Check if the /etc/pam.d/sudo_local file is configured correctly.</li><li>Ensure your macOS is updated and Touch ID is set up in system preferences.</li></ul><h3 id=macos-versions>macOS Versions</h3><p>This configuration has been tested on macOS Sonoma but may work on other recent macOS versions. Check your system documentation for confirmation.</p><h3 id=security-considerations>Security Considerations</h3><p>Using Touch ID for sudo is generally safe and convenient. However, ensure your Touch ID is correctly configured and that only authorized users have access to your Mac.</p><p>As I use sudo a lot, this configuration is very convenient for me.</p><p>I hope that this tip will be of some use to you.</p><p><em>Updated: June 16, 2024</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/assinando-html-com-gpg/>&#8592; Assinando páginas HTML com GPG</a>
+|
+<a href=https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/>Sudo com Touch ID no macOS &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2024 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmZo+6MACgkQ/2dtxSoB
-kcP6Dw/9Hgrdd6LPIsuye1vxTjhRC4OZMqosdVP1b9n5ZbYiymJWj1nChbaTvSAK
-HCgTiRrxhQgE9f2tOBUuoBTbzIiIiw3zMrQFqjRfikgdh+KpVMCxzczT16muvNp8
-A4UnOhOtLYPqIrmJjnYQvTLu2L7Y07qUKCj3/olcfNIRWNkml+HZiC+Vc6PN+dZT
-ihHhP7dSGIbl5AmDZKSjK37639TA+++drEggj8CL+fX2tUTdBi6iUgOzfHDdFtiD
-hFTYOP5vznDIDyxBm3xML5hknFdLfHMZFShLJa/NYG393pDyVFz4Ujs6ucsaZXMC
-6/CAILH3GalThP3VEn+xxw2wyQU9TxsI2xvvNzjIkEkPbHIvL7HhKc6FzQcrCeBb
-R5oVP5xZlxLj7HAmi8txgITb00XoKxXScMBBfgZh0PyIPKYvumsvCTDLUnCs1Y5/
-QIH1o5MHc8S6cKNcbWssRzFWDYBY0b1jleUNa8huM6WlaCzxJO6hQQLSSp8BoOoq
-E7+0/x44JpyLqC3HrzVyat4t1vQDue16YMhSX6O5cM/q/tXHS7xsD6D/+AOiip9F
-qiNGdbgeuvWbfsxPYdDyzWM19+FEciz6iyMCAzR+2N/3ZQnkVNuMjuZt3wOxSyQF
-U4Vf42dt2C/Lu658o2W+kGu2gyIRJxGWxu71jGdLGAuAcATngJE=
-=RKA1
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmZu3RIACgkQ/2dtxSoB
+kcNtSxAAnc3o29t7pBfXF5mxIOJ+VODcJbiprr/osqGTA1Nn9JJTi2KXdRX4dP3W
+04U+Tvd64gAVtauXqh9k4C0POVIu5i8xhWLgsiOC7eO43MQ+VOOfBksKtXqZjblF
+U9BdxQCPzXsYw4+oKWtMUv2iSRmvwP9MQcJ3gSESK3RkuzrchRc2h0ZApEBsZB7I
+0lQDyNK9t3Mht7U79yPmNef02Cw/50RZefi+RxKivQOAZ9sdCw396SqJ6RjWrOCW
+A9IX1VYxFN/lgQCk00AnwyJYnI9csarX0Oa0Uks44ZWBbLMN340xF1WR3CE/xF67
+BR3sVJH9urYTvd2QotPSwpATqrN8bfS8O0oHPcvSR/MM8OmHXHGDWQlTruFG5wzX
+QWg35XLPZZsel3O6bFJ2ERC/02+Cd0aOKqOE3seooRt51+13XhSkPfu2X0TSu8XT
+DVpV2Dg+UYi5SC0M8tGagmJ+XJS+g19m4FS65xre4DtAfNeLHq3fXhPqj4T0mikn
+b9ca4CexE099Ai3bDeNd9a22mXNYvV30ev/jD36ccM31y/ywzDd3GtMd359l4HU/
+s5eK0JHrTL3NrBPtUzZ4rgpWaVDE3E6SbNCzto76/qYlHnW6Pshq8YLofcHQS9H6
+iqHgOpq94Mo04wM/+5U+UrKcMdE0kCXddqrQSq7iJQgDQ9lq5I4=
+=NlYx
 -----END PGP SIGNATURE-----
 -->

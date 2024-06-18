@@ -14,24 +14,24 @@ Hash: SHA256
 </span></span><span style=display:flex><span>auth sufficient pam_tid.so
 </span></span></code></pre></div><h4 id=passos-detalhados-para-editar-o-arquivo>Passos detalhados para editar o arquivo</h4><p>Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo nano /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Faça as alterações necessárias e salve o arquivo (Ctrl+O, Enter, Ctrl+X no nano).</p><h2 id=benefícios-do-uso-do-touch-id-com-sudo>Benefícios do uso do Touch ID com sudo</h2><ul><li>Conveniência: Utilizar o Touch ID elimina a necessidade de digitar sua senha repetidamente, tornando o processo mais rápido e fácil.</li><li>Segurança: O Touch ID adiciona uma camada extra de segurança, garantindo que apenas usuários autorizados possam executar comandos sudo.</li></ul><h3 id=solução-de-problemas-comuns>Solução de problemas comuns</h3><p><strong>Touch ID não funciona:</strong></p><ul><li>Verifique se o arquivo /etc/pam.d/sudo_local está configurado corretamente.</li><li>Certifique-se de que o seu macOS está atualizado e que o Touch ID está configurado nas preferências do sistema.</li></ul><h3 id=versões-do-macos>Versões do macOS</h3><p>Esta configuração foi testada no macOS Sonoma, mas também pode funcionar em outras versões recentes do macOS. Verifique a documentação do seu sistema para confirmar.</p><h3 id=considerações-de-segurança>Considerações de segurança</h3><p>Usar o Touch ID para sudo é geralmente seguro e conveniente. No entanto, é importante garantir que o seu Touch ID esteja configurado corretamente e que apenas usuários autorizados tenham acesso ao seu Mac.</p><p>Como uso muito o sudo, essa configuração é muito conveniente para mim.
-Espero que essa dica seja útil para você.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/sudo-touch-id/>&#8592; Sudo with Touch ID on macOS</a>
+Espero que essa dica seja útil para você.</p><h3 id=vídeo-sobre-o-tema-no-youtube>Vídeo sobre o tema, no Youtube</h3><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/FQ0UaBYwkJvkalDd?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p><em>Atualizado: 18 de Junho de 2024</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/sudo-touch-id/>&#8592; Sudo with Touch ID on macOS</a>
 |</div></div></div></section></main><span class=line_break></span>
 <span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2024 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmZu3RIACgkQ/2dtxSoB
-kcO5iBAAv9roVQ7H/risrEsflIAKgnH+Cyb2WVjAPK9s9qiHCqGC46NN77In6YAf
-xhIF/+jO7f5dC14eDPT93cRmMBT2WgcSqqrttavW9E5i3rwlmiIqzmEi/qxiLfXJ
-WwTV3PPcL7XDM36TG+DhsG98HArM5/+KqmCOuTBpJiTSstdUkhhm+m+dRoQcrS2u
-q05czbDp/NQKc77NYlNsugE51fYIuNL4KK4HuPcrFb2tzuP4QhwodGz2F8wd9nfC
-k7v//AErKDaQSioS6wY5AhCOjOxBRKHv+3GZlAOddUJ5JBCoTa8mcB7u7l9ayiUf
-AVI3dRHUhYC0SsoTeuBDlVZbXqv0+JPwjuk+/K5OLf+P8Wbri3foSIV9Hsw/yAQE
-MBgf5EGLoGCfY3P6eS1gLpNWzT9N95yPlQ2vX9Iiw8CtM8ADfBdbvR7BYSien1uB
-oDMfhFKy9FxS8HHusZwUbFs3QGkklTIxrFhIOIa3PtE+DUi1caLq5p6P/R8U6xx0
-S6o87ByFctZbtRmfK10IyAkW8cZFE//PUUopdhFRWBZJvvvWqPSE73uDkBzQw+4L
-FSl8f3M7xJwLsQ4cCMWXYKWx1GQNZS+qD3ImMZFFJNm6gokraFBtU2IF+Kqm9zz0
-g5DkusH4lf5BXyb9U0CsgZQx1JjMHNx0z6w0Hk60dEOrKgv9Lb8=
-=r5Nt
+iQIzBAEBCAAdFiEEOakOfYA7XALT7+un/2dtxSoBkcMFAmZyFSsACgkQ/2dtxSoB
+kcMEpA/+NqibXJ+EMEjKeMCAt+QNAs8w7PwP6I62oBmIs6rIu9QjBavfU1oFXWBr
+lW/k1DBCN/JxycXPcLpXEBPBQ5Lys9wjnnXTNMZ1v5pq/cQdrV07zQy8dvXyAL9j
+NERnw7IV9NMsGXqMKF4nwgeFPWCJi8XX6lTT0kTo2fORoMilQ6qqLwFaZ5PsVG7r
+vVZPd+9B5HxmXe51JTgDDj1BUCMb5KytXSdd+N4jssNlw3u7asNOeJZ1yI2D91S3
+xlbH9HV+CO8y+05rN60vn50o0fVLFYiggakAeYrY8ddBMNFWbigYJDG5hSPcPMPL
+U+xghUy3Y1VlRZuOi6jCXy/JbT0XIDZxc4cuS3avnCasQ0aBRhyoCL/uA0pph/Kl
+Wj8T97m3fxcCeNo/Ci9joolQvAAK6ab8dfL5X+bOEElNf/3VSxv8QjVVzLFHBKwY
+XR5PA1hDK40vSHd24JAXPv35TLBGDzA17YEuwYaDEZFsavGSNNRJ9gxU//uyEX6X
+nedDXV2ibCHz7fmGsDReVCGRJXsNo3acvW/47Hy+3jzxUJg5PYuI5VsHGLy5ybbp
+d+Ub3FYZUJ2nTuIV7u3cmZeJ+bJRY2NTg0dULoz5yj6el/AzlGO97t3w5HG2LU3F
+AR5GpungLxGNv90PWt15yx2PLIRI+qTHkMdLEp0i6ThYfdYKZCM=
+=zaJu
 -----END PGP SIGNATURE-----
 -->

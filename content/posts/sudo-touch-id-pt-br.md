@@ -52,3 +52,8 @@ Usar o Touch ID para sudo é geralmente seguro e conveniente. No entanto, é imp
 
 Como uso muito o sudo, essa configuração é muito conveniente para mim.
 Espero que essa dica seja útil para você.
+
+### Vídeo sobre o tema, no Youtube
+{{<youtube FQ0UaBYwkJvkalDd>}}
+
+_Atualizado: 18 de Junho de 2024_

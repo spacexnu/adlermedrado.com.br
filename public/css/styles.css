@@ -1,12 +1,22 @@
-/*site css*/
+/* Variáveis CSS para cores */
+:root {
+    --color-bg: #0d0d0d;
+    --color-text: #e0e0e0;
+    --color-primary: #00ffff;
+    --color-secondary: #ff0099;
+    --color-accent: #ff33cc;
+    --color-dark: #1a1a1a;
+    --glow-color-primary: rgba(0, 255, 255, 0.7);
+    --glow-color-secondary: rgba(255, 0, 153, 0.7);
+}
 
-* {
+/* Reset CSS */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
 }
 
 body {
@@ -15,8 +25,8 @@ body {
     line-height: 1.5;
     margin: 3% 5%;
     max-width: 80em;
-    background: #303030;
-    color: #c2c2c1;
+    background: var(--color-bg);
+    color: var(--color-text);
 }
 
 ul {
@@ -25,74 +35,62 @@ ul {
     margin-bottom: 1rem;
 }
 
+ul > li {
+    position: relative;
+    padding-left: 1rem;
+}
+
 ul > li:before {
     content: "-";
     position: absolute;
-    margin-left: -1.1rem;
-}
-
-ul > li:after {
-    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+    text-shadow: 0 0 8px var(--glow-color-secondary);
 }
 
 a {
     text-decoration: none;
-    color: #00ad22
+    color: var(--color-primary);
+    text-shadow: 0 0 8px var(--glow-color-primary);
+}
+
+a:hover {
+    color: var(--color-secondary);
+    text-shadow: 0 0 8px var(--glow-color-secondary);
 }
 
 small {
-    color: #86f48f;
+    color: var(--color-accent);
     font-size: 80%;
+    text-shadow: 0 0 5px var(--glow-color-secondary);
 }
 
 p {
-    margin-bottom: .75rem
+    margin-bottom: .75rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-secondary);
+    text-shadow: 0 0 8px var(--glow-color-secondary);
 }
 
 h1 {
-    line-height: 100%;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #F36D33FF;
     font-size: 130%;
 }
 
 h2 {
-    line-height: 100%;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #aef486;
     font-size: 120%;
 }
 
 h3 {
-    line-height: 100%;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #aef486;
     font-size: 110%;
 }
 
 h4 {
-    line-height: 100%;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #aef486;
     font-size: 100%;
-}
-
-h5 {
-    line-height: 100%;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #aef486;
-}
-
-h6 {
-    line-height: 100%;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #aef486;
 }
 
 strong {
@@ -100,8 +98,9 @@ strong {
 }
 
 .post_metadata {
-    color: #86f48f;
+    color: var(--color-accent);
     font-size: 40%;
+    text-shadow: 0 0 5px var(--glow-color-secondary);
 }
 
 .highlight::after {
@@ -114,13 +113,20 @@ em {
 }
 
 pre {
-    display: block; padding: 10px; overflow: scroll
+    display: block;
+    padding: 10px;
+    overflow: auto;
+    background: var(--color-dark);
+    color: var(--color-text);
 }
 
 .error_not_found {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
+    background: var(--color-secondary);
+    color: var(--color-bg);
+    box-shadow: 0 0 10px var(--glow-color-secondary);
 }
 
 .error_not_found p {
@@ -138,6 +144,8 @@ pre {
     justify-content: space-between;
     height: 25px;
     padding: 0;
+    background: var(--color-dark);
+    color: var(--color-text);
 }
 
 .navbar_right {
@@ -148,11 +156,15 @@ pre {
     text-decoration: none;
     font-size: 14px;
     margin-right: 10px;
-    color: #86f48f;
+    color: var(--color-primary);
     transition: all 100ms;
+    text-shadow: 0 0 8px var(--glow-color-primary);
 }
 
 .navbar_right a:hover {
     text-decoration: underline;
     font-weight: bold;
+    color: var(--color-secondary);
+    text-shadow: 0 0 8px var(--glow-color-secondary);
 }
+

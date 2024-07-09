@@ -4,62 +4,32 @@ Description: "Adler Medrado's little piece of turf"
 layout: "staticpage"
 ---
 
-# Hi, my name is **Adler Medrado** and this is [my little](https://movie-sounds.org/action-movie-sound-clips/quotes-with-sound-clips-from-the-warriors-1979/our-turf-our-little-piece-of-turf) [piece of turf](https://www.youtube.com/watch?v=tcc2ltIjNU0).
+# Tech Enthusiast and Problem Solver
 
-## About me
+Welcome to my website!
 
-I have 20+ years of experience in IT. Working with computers since my teenage, when I built my own BBS
-using an PC/AT 386 running MS-DOS and Remote Access, moving after to the IBM OS/2 Warp and Windows 95 and started to
-learn linux at late 90s and early 00s.
+I’m Adler Medrado, an IT professional with over 20 years of experience. 
 
-My motto is: If I don't know it, I can learn it. I'm a self-taught, I like to study and develop my own
-solutions.
+My journey began in my teens, building a BBS on an old PC/AT 386. I've worked with various systems, from MS-DOS to Linux.
 
-I'm a problem solver who likes the challenging atmosphere of the startups, also like to work with smart people.
+I thrive in startup environments and enjoy collaborating with talented people. My expertise spans multiple industries, including finance, e-commerce, and healthcare.
 
-I have experience across the financial, internet, e-commerce, government, healthcare and crypto industries working
-as developer, techlead, architect and more.
+Currently, I'm pursuing a degree in History. If you’d like to connect, check out my blog or contact me via email for a secure conversation.
 
-Currently I'm graduating in History at Universidade Cruzeiro do Sul.
+## Find out more about me and my work:
+- [Blog](https://adlermedrado.com.br/posts)
+- [What I Use](https://adlermedrado.com.br/posts/)
+- [Current Projects](https://adlermedrado.com.br/now/)
 
-Programming is not only a skill but my passion.
+## Social Media:
+- [Twitter](https://adlermedrado.com.br/posts)
+- [LinkedIn](https://adlermedrado.com.br/posts)
+- [Nostr](https://adlermedrado.com.br/posts)
 
-Below you can find more about me, if you're interested.
+## Contact:
+- Email: adler@adlermedrado.com.br (PGP encrypted for privacy)
+- IRC: Occasionally on tilde.team’s channels
 
-* [Blog](https://adlermedrado.com.br/posts)
+I’m active in communities like sdf.org and tilde.team. Visit my pages there for more details.
 
-* [What do I use?](https://adlermedrado.com.br/uses/)
-
-* [What I'm doing now](https://adlermedrado.com.br/now/)
-
-## Social
-
-I try to avoid social networks, but I don't always make it, so you can find me at the networks below:
-
-* [Twitter](https://twitter.com/adlermedrado)
-* [LinkedIn](https://www.linkedin.com/in/adlermedrado)
-* [Nostr](https://nosta.me/nprofile1qqsrgfug3e6rvc0f00kru08e3pzqt46zlj4n2qhfdw3tt0293mqxd3gpz3mhxue69uhhyetvv9ujuerpd46hxtnfduq3vamnwvaz7tmjv4kxz7fwwpexjmtpdshxuet5594hcu)
-
-## Contact
-
-I have accounts in some instant messaging services and we can't trust if they protect our privacy, so if you want to
-talk to me privately, I think that an PGP encrypted email is the safest way.
-
-### Email
-
-* <adler@adlermedrado.com.br>
-* GPG [Public Key](/pub-key.asc)
-
-### IRC
-
-Eventually I'm online at tilde.team's IRC channels.
-
-* [tilde.team's IRC](https://tilde.team/wiki/irc)
-
-## Communities
-
-I like communities like sdf.org (Public Access UNIX System) and tilde.team (Tildeverse), so you can find me there too.
-
-* [My page at SDF.org](http://amedrado.sdf.org)
-* [My page at tilde.team](https://tilde.team/~amedrado/)
-
+All content on this site is PGP signed for authenticity.

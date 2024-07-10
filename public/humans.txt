@@ -6,7 +6,7 @@
 	From:Sao Paulo, SP, Brasil
 
 /* SITE */
-	Last update: 2024/07/09 12:36 GMT-3
+	Last update: 2024/07/10 19:47 GMT-3
 	Language: Brazilian Portuguese / English
 	Standards: HTML5, CSS3
 	IDE: Intellij, Vim

@@ -18,7 +18,7 @@ Currently, I'm pursuing a degree in History. If you’d like to connect, check o
 
 ## Find out more about me and my work:
 - [Blog](https://adlermedrado.com.br/posts)
-- [What I Use](https://adlermedrado.com.br/posts/)
+- [What I Use](https://adlermedrado.com.br/uses/)
 - [Current Projects](https://adlermedrado.com.br/now/)
 
 ## Social Media:

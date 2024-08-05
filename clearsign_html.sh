@@ -1,51 +1,49 @@
 #!/usr/bin/env bash
 
-shopt -s globstar
-
 # Signs an HTML file by appending a PGP signature.
 # Args:
 #   $1: Path to the HTML file to sign.
 function sign_html {
   local html_file="$1"
-  local temp_dir
+  local temp_file
 
-  temp_dir=$(mktemp -d /tmp/pgp-html-XXXXXX)
-  if [[ ! -d "$temp_dir" ]]; then
-    echo "Failed to create temporary directory" >&2
+  temp_file=$(mktemp /tmp/pgp-html-XXXXXX.html)
+  if [[ ! -f "$temp_file" ]]; then
+    echo "Failed to create temporary file" >&2
     return 1
   fi
 
-  echo "Copying file $html_file to $temp_dir in order to be signed"
+  echo "Preparing file $html_file for signing"
   {
     echo '-->'
     cat "$html_file"
     echo '<!--'
-  } > "$temp_dir/file.html"
+  } > "$temp_file"
 
   if [[ $? -ne 0 ]]; then
     echo "Failed to prepare file for signing" >&2
-    rm -rf "$temp_dir"
+    rm -f "$temp_file"
     return 1
   fi
 
-  echo "Signing $temp_dir/file.html and renaming to $html_file"
+  echo "Signing $temp_file and updating $html_file"
   {
     echo '<!--'
-    gpg --clearsign --output - "$temp_dir/file.html"
+    gpg --clearsign --output - "$temp_file"
     echo '-->'
   } > "$html_file"
 
   if [[ $? -ne 0 ]]; then
     echo "Failed to sign the file" >&2
-    rm -rf "$temp_dir"
+    rm -f "$temp_file"
     return 1
   fi
 
-  echo "Cleaning up temporary files..."
-  rm -rf "$temp_dir"
+  echo "Cleaning up temporary file..."
+  rm -f "$temp_file"
 }
 
 # Process all HTML files in the public directory and its subdirectories.
-for html_file in public/**/*.html; do
+find public -type f -name "*.html" | while IFS= read -r html_file; do
   sign_html "$html_file"
 done

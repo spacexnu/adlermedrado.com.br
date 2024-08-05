@@ -27,7 +27,7 @@ Currently, I'm pursuing a degree in History. If you’d like to connect, check o
 - [Nostr](https://adlermedrado.com.br/posts)
 
 ## Contact:
-- Email: adler@adlermedrado.com.br (PGP encrypted for privacy)
+- Email: adler@adlermedrado.com.br (PGP/GPG encrypted for privacy) ([GPG Key](/pub-key.asc))
 - IRC: Occasionally on tilde.team’s channels
 
 I’m active in communities like sdf.org and tilde.team. Visit my pages there for more details.

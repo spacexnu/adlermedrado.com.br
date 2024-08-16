@@ -22,9 +22,9 @@ Currently, I'm pursuing a degree in History. If you’d like to connect, check o
 - [Current Projects](https://adlermedrado.com.br/now/)
 
 ## Social Media:
-- [Twitter](https://adlermedrado.com.br/posts)
-- [LinkedIn](https://adlermedrado.com.br/posts)
-- [Nostr](https://adlermedrado.com.br/posts)
+- [Twitter](https://x.com/adlermedrado)
+- [LinkedIn](https://linkedin.com/in/adlermedrado)
+- [Nostr](https://app.coracle.social/people/nprofile1qy2hwumn8ghj7un9d3shjtnyv9kh2uewd9hj7qgwwaehxw309ahx7uewd3hkctcqyq6z0zywwsmxr6tmaslre7vggszawshu4v6s96tt526m63vwcpnv2dwppj9)
 
 ## Contact:
 - Email: adler@adlermedrado.com.br (PGP/GPG encrypted for privacy) ([GPG Key](/pub-key.asc))

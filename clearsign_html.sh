@@ -7,19 +7,18 @@ function sign_html {
   local html_file="$1"
   local temp_file
 
-  # Create a temporary file
   temp_file=$(mktemp /tmp/pgp-html-XXXXXX.html)
-  if [[ $? -ne 0 ]]; then
+  if [[ ! -f "$temp_file" ]]; then
     echo "Failed to create temporary file" >&2
     return 1
   fi
 
   echo "Preparing file $html_file for signing"
   {
-    echo '<!--'
-    cat "$html_file"
     echo '-->'
-  } > "$temp_file"
+    cat "$html_file"
+    echo '<!--'
+  } >"$temp_file"
 
   if [[ $? -ne 0 ]]; then
     echo "Failed to prepare file for signing" >&2
@@ -32,7 +31,7 @@ function sign_html {
     echo '<!--'
     gpg --clearsign --output - "$temp_file"
     echo '-->'
-  } > "$html_file"
+  } >"$html_file"
 
   if [[ $? -ne 0 ]]; then
     echo "Failed to sign the file" >&2
@@ -48,3 +47,4 @@ function sign_html {
 find public -type f -name "*.html" | while IFS= read -r html_file; do
   sign_html "$html_file"
 done
+

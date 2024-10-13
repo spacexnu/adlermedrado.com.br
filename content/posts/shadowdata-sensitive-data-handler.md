@@ -19,7 +19,7 @@ Currently, it can:
 
 In the coming days, I will add a few more basic features and continue to update the project regularly.
 
-    If you’re interested in checking out the tool, it can be found on [Github](https://github.com/adlermedrado/ShadowData). I’d be delighted to receive feedback and suggestions, and of course, code contributions are welcome.
+If you’re interested in checking out the tool, it can be found on [Github](https://github.com/adlermedrado/ShadowData). I’d be delighted to receive feedback and suggestions, and of course, code contributions are welcome.
 
 That’s all for now.
 

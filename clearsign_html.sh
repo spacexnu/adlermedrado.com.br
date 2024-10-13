@@ -7,17 +7,18 @@ function sign_html {
   local html_file="$1"
   local temp_file
 
+  # Create a temporary file
   temp_file=$(mktemp /tmp/pgp-html-XXXXXX.html)
-  if [[ ! -f "$temp_file" ]]; then
+  if [[ $? -ne 0 ]]; then
     echo "Failed to create temporary file" >&2
     return 1
   fi
 
   echo "Preparing file $html_file for signing"
   {
-    echo '-->'
-    cat "$html_file"
     echo '<!--'
+    cat "$html_file"
+    echo '-->'
   } > "$temp_file"
 
   if [[ $? -ne 0 ]]; then

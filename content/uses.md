@@ -10,7 +10,7 @@ If you were wondering what I'm currently using, then you're in the right place.
 This page is a living document that I update from time to time.
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-_Last update: 2024-07-10_
+_Last update: 2024-10-12_
 
 ## Software
 
@@ -21,7 +21,7 @@ _Last update: 2024-07-10_
 * Terminal emulator
 * Password Manager
 * Alfred + Apple Shortcuts
-* IntelliJ IDEA 
+* Jetbrains Tools (Intellij, PyCharm, WebStorm, Datagrip, Goland) 
 * Neovim
  
 ### This website

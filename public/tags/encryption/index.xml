@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/gpg-no-macosx-snow-leopard/</link>
       <pubDate>Sun, 21 Feb 2010 19:08:14 -0300</pubDate>
       <guid>http://localhost:1313/posts/gpg-no-macosx-snow-leopard/</guid>
-      <description>Desde que comprei meu mac e instalei o Snow Leopard no ano passado, eu busquei alguma forma de instalar o GPG integrado ao cliente de email &amp;ldquo;Mail&amp;rdquo; que vem com o Mac OS X, mas estava complicado porque a versão do Mail que vem com o Snow Leopard não suporta o GPGMail que é um bundle para o Mail que permite que esta integração seja feita.&#xA;Hoje, senti necessidade novamente em criptografar meus emails utilizando GPG e por isso fui atrás de uma solução para o problema supracitado e desta vez eu encontrei um tutorial bacana que me permitiu fazer esta integração.</description>
+      <description>&lt;p&gt;Desde que comprei meu mac e instalei o Snow Leopard no ano passado, eu busquei alguma forma de instalar o GPG integrado&#xA;ao cliente de email &amp;ldquo;Mail&amp;rdquo; que vem com o Mac OS X, mas estava complicado porque a versão do Mail que vem com o Snow&#xA;Leopard não suporta o GPGMail que é um bundle para o Mail que permite que esta integração seja feita.&lt;/p&gt;&#xA;&lt;p&gt;Hoje, senti necessidade novamente em criptografar meus emails utilizando GPG e por isso fui atrás de uma solução para o&#xA;problema supracitado e desta vez eu encontrei um tutorial bacana que me permitiu fazer esta integração.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

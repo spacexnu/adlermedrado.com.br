@@ -14,6 +14,8 @@ Currently, it can:
 
 * Anonymize Brazilian personal data (CPF, CNPJ)
 * Anonymize U.S. Social Security Numbers (SSN)
+* Anonymize emails addresses
+* Anonymize phone numbers
 * Anonymize IPv4 and transform text more easily through substitutions
 * Detect Sensitive Personal Information (PII) using a Natural Language Processing (NLP) tool
 

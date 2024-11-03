@@ -2,13 +2,15 @@ baseURL = "https://adlermedrado.com.br/"
 languageCode = "en"
 title = "Adler Medrado's corner of the web"
 theme = "dark-flat"
-paginate = 20
+
+[pagination]
+  pagerSize = 20
 
 [params]
-categories = ["development", "infosec", "mac"]
+  categories = ["development", "infosec", "mac"]
 
 [taxonomies]
-category = "tags"
+  category = "tags"
 
 [markup]
     defaultMarkdownHandler = 'goldmark'

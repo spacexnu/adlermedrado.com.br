@@ -2,6 +2,10 @@
 title: "Shadowdata Sensitive Data Handler Python Library"
 date: 2024-10-12T21:23:34-03:00
 draft: false
+tags:
+  - "gpg"
+  - "security"
+  - "encryption"
 ---
 
 I am deeply concerned about how to handle sensitive data in the projects I work on. Nowadays, there are laws in various countries addressing this issue, and the topic becomes increasingly important as time goes on.

@@ -2,6 +2,10 @@
 title: "Shadowdata Updates"
 date: 2024-10-13T15:53:53-03:00
 draft: false
+tags:
+  - "gpg"
+  - "security"
+  - "encryption"
 ---
 
 Yesterday, [I published a blog](https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/) post introducing my new open-source project, ShadowData.

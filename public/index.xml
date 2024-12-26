@@ -405,11 +405,8 @@ final do filme são meus filhos que estavam brincando por perto. :-)&lt;/p>
 &lt;p>Deixem seus comentários.&lt;/p>
 &lt;p>Abraço.&lt;/p>
 
-
- 
  &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/O0g6ARlDlys?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
- >&lt;/iframe>
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/O0g6ARlDlys?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div></description></item><item><title>Zend Framework tutorial series capítulo 3</title><link>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/</link><pubDate>Sat, 22 May 2010 10:08:21 -0300</pubDate><guid>https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/</guid><description>&lt;p>Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia,
 vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em
 uma frequência maior. Espero que dê certo.&lt;/p>
@@ -680,17 +677,18 @@ nestes engines de busca. A query utilizada pelo TIOBE (conforme mostrada em seu 
 &lt;p>If you were wondering what I&amp;rsquo;m currently using, then you&amp;rsquo;re in the right place.
 This page is a living document that I update from time to time.
 Inspired by Wes Bos’ &lt;a href="https://uses.tech">uses.tech&lt;/a> project.&lt;/p>
-&lt;p>&lt;em>Last update: 2024-10-12&lt;/em>&lt;/p>
+&lt;p>&lt;em>Last update: 2024-12-26&lt;/em>&lt;/p>
 &lt;h2 id="software">Software&lt;/h2>
 &lt;h3 id="productivity">Productivity&lt;/h3>
 &lt;ul>
 &lt;li>Browser&lt;/li>
 &lt;li>Email Client&lt;/li>
 &lt;li>Notes app&lt;/li>
-&lt;li>Terminal emulator&lt;/li>
+&lt;li>iTerm2 for Terminal emulator&lt;/li>
+&lt;li>Moved from ZSH to Fish Shell recently and I&amp;rsquo;m really liking.&lt;/li>
 &lt;li>Password Manager&lt;/li>
 &lt;li>Alfred + Apple Shortcuts&lt;/li>
-&lt;li>Jetbrains Tools (Intellij, PyCharm, WebStorm, Datagrip, Goland)&lt;/li>
+&lt;li>IntelliJ IDEA Ultimate&lt;/li>
 &lt;li>Neovim&lt;/li>
 &lt;/ul>
 &lt;h3 id="this-website">This website&lt;/h3>

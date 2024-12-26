@@ -14,25 +14,25 @@ Hash: SHA256
 </span></span><span style=display:flex><span>auth sufficient pam_tid.so
 </span></span></code></pre></div><h4 id=passos-detalhados-para-editar-o-arquivo>Passos detalhados para editar o arquivo</h4><p>Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo nano /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Faça as alterações necessárias e salve o arquivo (Ctrl+O, Enter, Ctrl+X no nano).</p><h2 id=benefícios-do-uso-do-touch-id-com-sudo>Benefícios do uso do Touch ID com sudo</h2><ul><li>Conveniência: Utilizar o Touch ID elimina a necessidade de digitar sua senha repetidamente, tornando o processo mais rápido e fácil.</li><li>Segurança: O Touch ID adiciona uma camada extra de segurança, garantindo que apenas usuários autorizados possam executar comandos sudo.</li></ul><h3 id=solução-de-problemas-comuns>Solução de problemas comuns</h3><p><strong>Touch ID não funciona:</strong></p><ul><li>Verifique se o arquivo /etc/pam.d/sudo_local está configurado corretamente.</li><li>Certifique-se de que o seu macOS está atualizado e que o Touch ID está configurado nas preferências do sistema.</li></ul><h3 id=versões-do-macos>Versões do macOS</h3><p>Esta configuração foi testada no macOS Sonoma, mas também pode funcionar em outras versões recentes do macOS. Verifique a documentação do seu sistema para confirmar.</p><h3 id=considerações-de-segurança>Considerações de segurança</h3><p>Usar o Touch ID para sudo é geralmente seguro e conveniente. No entanto, é importante garantir que o seu Touch ID esteja configurado corretamente e que apenas usuários autorizados tenham acesso ao seu Mac.</p><p>Como uso muito o sudo, essa configuração é muito conveniente para mim.
-Espero que essa dica seja útil para você.</p><h3 id=vídeo-sobre-o-tema-no-youtube>Vídeo sobre o tema, no Youtube</h3><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/FQ0UaBYwkJvkalDd?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p><em>Atualizado: 18 de Junho de 2024</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/sudo-touch-id/>&#8592; Sudo with Touch ID on macOS</a>
+Espero que essa dica seja útil para você.</p><h3 id=vídeo-sobre-o-tema-no-youtube>Vídeo sobre o tema, no Youtube</h3><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/FQ0UaBYwkJvkalDd?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p><em>Atualizado: 18 de Junho de 2024</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/sudo-touch-id/>&#8592; Sudo with Touch ID on macOS</a>
 |
 <a href=https://adlermedrado.com.br/posts/privacidade-5-passos-essenciais/>Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais &#8594;</a></div></div></div></section></main><span class=line_break></span>
 <span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2024 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmcniDYACgkQbV8aePHc
-Nh1+9Q/8CttalDX7HO1y5mz2XNi7kEf+F0i/ntNjfLn53bRuqroNpERazKyBK2FJ
-1FZP7KqoccU4mkD202QBY6YdrZsXUkVVbUgdJYkn+sRKUT7Y2I86DLrk77Qwxns3
-J5h28ridvWHpdLZzbGi81umAlDkP2XtleZWoPVyCR44dbfdePcT4KH2Bc1wzw2pr
-PLI+CaSxLCtHjYjsTPOpZt6K+z6YkXJZUnZ8bz5h8v6xvBYEisEANGnPBIDoCZeV
-kejYO7BGr4xwIADrV61ImiQ6eKAqYEPI+tKbks7GIvNgwFY09L7MhfjqBEWAINVk
-FVQMNVQEwisqCfuwRWmdM5Sn4m+NW5QDefNY05n6GakYl3Zs41wo8aqe3YOWg2Zh
-f+zrwEc6O9U73JevSrnkRWWezgrXgiCYxnGMsdFO9tJsuyKiWv3lXoo99V1fE5wY
-PBZa+SOJCOxGudxLnTOUDT+WH/+D+6R0dJCtXeG7aNlMakEhj6T709/W7SUyYEjs
-UaCAdHQSLBqX/k3sEb4LusmMs4iLKCWL0DVF3rlLVQOHtTR1ptjtkhfhnpPQhIVF
-DFE+JRhbeMNnKJ69DwusY5PcsBQTpq8nq6J4uid5BoM4torRx7/kiA2rou2eSRvg
-TAaNn89BXov0qwtouUJxGy6u2EznvxCYo0qHgKyxdWGxb28l0fk=
-=iE0g
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmdttp8ACgkQbV8aePHc
+Nh3m7BAAq2sU8zlnXojo2Ek1RoJ4FOWGF+qet7Ir9JEH3lClmST5ISBni470Tu6g
+oMi2jsGpNlQoDN5fARtKWZuK8nrB63ziEkP4DYIqML3jol9nGyGIwfRePXFqWDtO
+799iKBPtZQYuro7Sch73o8Ro/SkCDlex7inWBS1uI7Q07VJ+37gGcdsjkMt7NRVQ
+6kQ6hj+AVghPyGI6BhnD8lDFmj7jan3OFaYlWVejfSlYbM106qRSkd+CYD0TRGEm
+4KmfYnFrITSkx1Yko5XPQO2/o+4D4ARruhigCAWq8t7i+xb0RXZqMFEOn8owrp7C
+4OTSDo8UsEoRm6RtMsCJRSWAX1h0LQqFU5QHHvj48SL+yRtsw85idJGYiQXTLx+1
+1Fs+Bp/1/aN8qiUW9BsNX7jcZFjg9aIrHtlGSkq543SssEgiQxoAPpMh6j3xTO9c
+yr+tyhiBWq3BRSLFQw78eoihmevZq4M2i1lDDhCTOTm1IvsWdT7SF7TSNbRiY5UW
+9qqEOWYSwWyrfCR8ap8+HanDMdeiI/yGd6xjWlgGFZAveXZvUv5u3dzsnJ+3m8Dh
+6jWjaOe6mc0k0ZYTDOK3F2UWqRQQ35Ggj4gi5q0WB409TeQQWCos8BrGvoZddQIV
+gETJG8yrpimFnAov89C9QvLHTzi6/cki6A3bVo7whj7B1jRCRBo=
+=YlpJ
 -----END PGP SIGNATURE-----
 -->

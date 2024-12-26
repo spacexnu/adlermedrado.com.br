@@ -10,7 +10,7 @@ If you were wondering what I'm currently using, then you're in the right place.
 This page is a living document that I update from time to time.
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-_Last update: 2024-10-12_
+_Last update: 2024-12-26_
 
 ## Software
 
@@ -18,10 +18,11 @@ _Last update: 2024-10-12_
 * Browser
 * Email Client
 * Notes app
-* Terminal emulator
+* iTerm2 for Terminal emulator
+* Moved from ZSH to Fish Shell recently and I'm really liking.
 * Password Manager
 * Alfred + Apple Shortcuts
-* Jetbrains Tools (Intellij, PyCharm, WebStorm, Datagrip, Goland) 
+* IntelliJ IDEA Ultimate  
 * Neovim
  
 ### This website

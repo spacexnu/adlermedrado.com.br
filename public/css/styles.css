@@ -1,7 +1,7 @@
 /* Variáveis CSS para cores */
 :root {
-    --color-bg: #0d0d0d;
     --color-text: #b3b3b3;
+    --color-bg: #0d0d0d;
     --color-primary: #00ffff;
     --color-secondary: #ff0099;
     --color-accent: #ff33cc;

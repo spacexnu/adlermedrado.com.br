@@ -36,8 +36,8 @@ _Last update: 2024-12-26_
 * Python
 * Java
 * Golang
-* PHP - rarely
-* Javascript
+* PHP
+* JavaScript
 * PostgreSQL
 * MySQL
 * Django

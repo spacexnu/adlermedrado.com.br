@@ -27,6 +27,19 @@ body {
     max-width: 80em;
     background: var(--color-bg);
     color: var(--color-text);
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('circuit-pattern.svg') repeat;
+    opacity: 0.1;
+    z-index: -1;
 }
 
 ul {
@@ -52,11 +65,29 @@ a {
     text-decoration: none;
     color: var(--color-primary);
     text-shadow: 0 0 8px var(--glow-color-primary);
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+    animation: color-cycle 5s infinite;
 }
 
 a:hover {
     color: var(--color-secondary);
-    text-shadow: 0 0 8px var(--glow-color-secondary);
+    text-shadow: 0 0 15px var(--glow-color-secondary), 0 0 30px var(--color-secondary);
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        text-shadow: 0 0 8px var(--glow-color-primary);
+    }
+    to {
+        text-shadow: 0 0 15px var(--glow-color-primary);
+    }
+}
+
+@keyframes color-cycle {
+    0% { color: var(--color-primary); }
+    50% { color: var(--color-secondary); }
+    100% { color: var(--color-accent); }
 }
 
 small {
@@ -74,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: var(--color-secondary);
-    text-shadow: 0 0 8px var(--glow-color-secondary);
+    text-shadow: 0 0 15px var(--glow-color-secondary), 0 0 30px var(--color-secondary);
 }
 
 h1 {
@@ -127,6 +158,9 @@ pre {
     background: var(--color-secondary);
     color: var(--color-bg);
     box-shadow: 0 0 10px var(--glow-color-secondary);
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
 }
 
 .error_not_found p {
@@ -144,8 +178,9 @@ pre {
     justify-content: space-between;
     height: 25px;
     padding: 0;
-    background: var(--color-dark);
+    background: linear-gradient(90deg, var(--color-dark), var(--color-secondary));
     color: var(--color-text);
+    box-shadow: 0 0 10px var(--glow-color-secondary);
 }
 
 .navbar_right {
@@ -157,14 +192,15 @@ pre {
     font-size: 14px;
     margin-right: 10px;
     color: var(--color-primary);
-    transition: all 100ms;
     text-shadow: 0 0 8px var(--glow-color-primary);
+    transition: all 100ms;
 }
 
 .navbar_right a:hover {
     text-decoration: underline;
     font-weight: bold;
     color: var(--color-secondary);
-    text-shadow: 0 0 8px var(--glow-color-secondary);
+    text-shadow: 0 0 15px var(--glow-color-secondary), 0 0 30px var(--color-secondary);
 }
+
 

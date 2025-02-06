@@ -75,3 +75,5 @@ This project was created **as a learning experiment**, combining **automation, A
 **I know I could use tools like [n8n](https://n8n.io) or [Make](https://www.make.com/en) to automate this, but I'm a coder, and coders love to code. :)**
 
 Since this is an **open-source project**, contributions are welcome! You can customize, improve, or extend its functionality as needed. Feel free to explore, use, or contribute!
+
+[Go and check out on GitHub](https://github.com/adlermedrado/job_finder)!

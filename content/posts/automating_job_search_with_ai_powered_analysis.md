@@ -7,6 +7,8 @@ tags:
   - "open-source"
 ---
 
+<img src="/images/header-job-search.png" alt="Job Finder" width="100%" height="auto"></img>
+
 Hey everyone! I just wanted to share a new pet project I've been working on.
 
 I built **Job Finder** to automate job searches, analyze descriptions using AI, and filter the best opportunities based on personal criteria.

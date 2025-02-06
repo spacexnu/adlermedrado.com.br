@@ -47,7 +47,7 @@ _Last update: 2024-12-27_
 * Docker
 
 ### Security and Privacy
-* GPG _39A9 0E7D 803B 5C02 D3EF  EBA7 FF67 6DC5 2A01 91C3_
+* GPG _07D7 0FDB CC44 6C19 CA43  02CE 6D5F 1A78 F1DC 361D_
 * Antivirus
 * VPN
 * TOR Browser

@@ -7,8 +7,6 @@ tags:
   - "open-source"
 ---
 
-# Job Finder – Automating Job Search with AI-Powered Analysis
-
 Hey everyone! I just wanted to share a new pet project I've been working on.
 
 I built **Job Finder** to automate job searches, analyze descriptions using AI, and filter the best opportunities based on personal criteria.

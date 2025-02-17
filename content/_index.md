@@ -30,6 +30,7 @@ Currently, I'm pursuing a degree in History. If you’d like to connect, check o
 
 ## My current opensource project
 - [ShadowData](https://github.com/adlermedrado/ShadowData)
+- [Job Finder](https://github.com/adlermedrado/job_finder)
 
 ## Contact:
 - Email: adler@adlermedrado.com.br (PGP/GPG encrypted for privacy) ([GPG Key](/pub-key.asc))

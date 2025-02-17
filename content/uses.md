@@ -10,7 +10,7 @@ If you were wondering what I'm currently using, then you're in the right place.
 This page is a living document that I update from time to time.
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-_Last update: 2024-12-27_
+_Last update: 2025-02-17_
 
 ## Software
 
@@ -24,6 +24,7 @@ _Last update: 2024-12-27_
 * Alfred + Apple Shortcuts
 * IntelliJ IDEA Ultimate  
 * Neovim
+* Trying to get used to VSCode
  
 ### This website
 * [Hugo](https://gohugo.io) 

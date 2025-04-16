@@ -1,3 +1,4 @@
 /.idea/
 resources/*
 .DS_Store
+.vscode

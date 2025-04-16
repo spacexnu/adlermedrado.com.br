@@ -28,7 +28,7 @@ pelo <a href=https://getcomposer.org>composer</a> que utilizasse um repositório
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><p>Como pode ser observado acima, eu configuro com o repositório que eu quero disponibilizar, se precisar colocar mais do
 que um repositório basta adicionar outro elemento no array <em>repositories</em>.</p><p>Em seguida, informe o nome do seu pacote/library e qual versão deseja usar.</p><p>Acima, no atributo homepage é informado qual o endereço local que será usado para servir o projeto. Você pode usar uma
-URL diferente de localhost sem problemas.</p><h4 id=faça-a-_build_-do-seu-repositório>Faça a <em>build</em> do seu repositório</h4><p>Execute o comando abaixo sempre que houver mudanças no seu repositório:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>php bin/satis build &lt;configuration file&gt; &lt;build dir&gt;
+URL diferente de localhost sem problemas.</p><h4 id=faça-a-build-do-seu-repositório>Faça a <em>build</em> do seu repositório</h4><p>Execute o comando abaixo sempre que houver mudanças no seu repositório:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>php bin/satis build &lt;configuration file&gt; &lt;build dir&gt;
 </span></span></code></pre></div><p>Por exemplo, eu rodei assim:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>php bin/satis build satis.json repo
 </span></span></code></pre></div><p>O diretório repo será usado para disponibilizar os fontes do repositório privado.</p><h4 id=disponibilize-o-repositório>Disponibilize o repositório</h4><p>Você pode criar um virtual host apontando para o diretório <em>repo</em>, mas dependendo do caso, usar o webserver embutido no
 CLI do PHP:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>php -S 0.0.0.0:8888 -t repo
@@ -50,18 +50,18 @@ situações.</p><p>Você conhece alguma outra maneira de lidar com uma situaçã
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmezhxQACgkQbV8aePHc
-Nh27oA//fotOBUmVD92s2OLtKwyqOavQUd8Ik9X2UwlwTTm1dXXhCh/Ud1S88RjK
-cLGUadaUcVagXsk1dbXHT5pm7gJD/jtzultCs8YUyQAG0zmBFpf1ikC6d0h3DrRu
-sAMeNsBhWWVrkswGmDrcWmySPwGeZL0ada0DOWJM1mrJX91m2o1/no00T0R+S4Ws
-wmyo9021GpUQrTkYLWzpcFBz96tf09us15emBT6/nM2aJoi++SA8gBVnMKfnFnKE
-BPOzdCHdnFWJLK+ukOVZWf/CsWyS0b931vdx6LT97JghJgj+gl+5FmPG2uyEuVaM
-nwJN8a80NbRuR4vLJSb46bwuIVkSbUcBJJg/fKXBwAmubPKVLFotHtCWN87xjQIP
-t07BJ40piEWQ6O2bAg0fjHCGzViCghxhmX//e3uA+Nk7oTBU7EqprZ+5FZ/d8idJ
-f9lt92HRt/hrZvYUhnz1Gm+p4o/MjnycmdYTBCFg0m9oaLdIwUo6Z4b14CQOigy6
-DwjYlwo88rem8H3ryZv1ALn3tZnzMjODxO37E8W+YZtZCyVH75yjpKadlenOMrKS
-3uY19EmOr7JeQk2VeSeHiScr3A+Z8VuhQYzDc+wMdSCYqAKzJpHQrM15KnEzWL4m
-emAgIPF/WsP7qkL1uq7ooaY5iF0VOPG66r+nvg1y6eyT3xPw+bU=
-=Vunu
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmf/C5UACgkQbV8aePHc
+Nh1a9A/+PUnHithjYH31QW9TWpDQvNZVHBarHo61kxQC4tjzWUhjY/DLl6oxcMYr
+TNqCcynmuqEWgYiWZAkV4knIDiaphfHnrWc1d67Jp8M+1+yHOBc/zihcb0toLPkm
+YvGYC9haT7DIsZCSiIWTpqg8vKCu4+c3Tz1bp8qEzOVhxEGUrAbDdMS0eRx50vg2
+znUjNFr3nJRYrZLM/NyTGDs15Dexv6nwDT6t7IbJMpFI7al0eXek7b6aX0Z6KvDu
+KKl4Wo2P1YZuvAUcOoVmlmrojgatrEVouwvCkPzmmZXPoJY7tLJIqlEums3vjXeP
+y5uPYshOMvWYfjvv3DbyySoz7qez8mtgO2XjBFf0TjeIqSEQTu7a1BV36eQeXhY2
+h/bRSe3see8sUXa5jWLWq3BPRC3DybqQUFQ+ji6r31JqcPL1Xc24pQKQTXMayISB
+rGOsKklqSxD76JzqYWkIsc9e9qAq62B0VAHwQnsLsAh/0+/v+ftR01lhrFlBCRkJ
+rnCFxsoWCSM45LxSLstUU6v/sfT6mR4rnxcFZcP2+w1KzzCWaTaK2gJ+MEb6JHgy
+TwdbhqXbmcgOd3dHYXt4i/SPJoGoohwMmz3idMVVL769xVwSxr1pXjQMNS1/8wMI
+G06KqxEDzpA/cuiLwu/G3gx/ck0ou6PpzvPDXpLU939eNajAbIw=
+=TtHB
 -----END PGP SIGNATURE-----
 -->

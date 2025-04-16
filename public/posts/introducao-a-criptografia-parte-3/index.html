@@ -15,7 +15,7 @@ independente da plataforma utilizada por você, leitor.<br>É possível também 
 complicar e eu presumo também que se você, caro leitor, possui as habilidades necessárias para usar a linha de comando
 em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas <em>man pages</em> ou similares.</p><h3 id=importante>Importante</h3><p>Se você chegou primeiro nesta parte da série, eu recomendo que leia
 a <a href=/posts/introducao-a-criptografia-parte-1>primeira</a> e
-a <a href=/posts/introducao-a-criptografia-parte-2>segunda</a> antes.</p><h3 id=instalação-do-gnupghttpswwwgnupgorg>Instalação do <a href=https://www.gnupg.org/>GnuPG</a>.</h3><h3 id=gnulinux>Gnu/Linux</h3><p>Normalmente o GnuPG já vem instalado, mas certifique-se disso executando o comando em seu shell:</p><p>adler@adler: ~ $ gpg — version</p><p>Se o resultado não for semelhante ao exemplo abaixo, provavelmente você precisará fazer a instalação, neste caso, por
+a <a href=/posts/introducao-a-criptografia-parte-2>segunda</a> antes.</p><h3 id=instalação-do-gnupg>Instalação do <a href=https://www.gnupg.org/>GnuPG</a>.</h3><h3 id=gnulinux>Gnu/Linux</h3><p>Normalmente o GnuPG já vem instalado, mas certifique-se disso executando o comando em seu shell:</p><p>adler@adler: ~ $ gpg — version</p><p>Se o resultado não for semelhante ao exemplo abaixo, provavelmente você precisará fazer a instalação, neste caso, por
 não existir uniformidade entre os gerenciadores de pacotes das distribuições, aconselho você a procurar a documentação
 de sua distribuição:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>gpg <span style=color:#f92672>(</span> GnuPG <span style=color:#f92672>)</span> 1.4.16  
 </span></span><span style=display:flex><span>Copyright <span style=color:#f92672>(</span> C <span style=color:#f92672>)</span> <span style=color:#ae81ff>2013</span> Free Software Foundation , Inc .  
@@ -65,18 +65,18 @@ comentário que eu tentarei ajuda-lo.</p></div></div></article><div><div><div><a
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmezhyIACgkQbV8aePHc
-Nh2rTQ/9FKWeO6BnAmAouTw+p9yJaN3bFMs8zUTDsArEfxdP+XcZ03zJBWwiHk2r
-kiQFqaNVnNn4s8cfgS3GGxVIuYquWgNcLZj+NbiILSgdmJnf3LEk+ij+pZXVIftj
-ibodQOQDcYEsBz+kp38Rwo1M+QUzVAeyyHdijnrWCOoI1g/MWj/f0J1smHZJyWG2
-B+RXQXmCqRmz+rK6eKvD6Jeyszqi3LoBxoPiLgY06z/B7Pits4SQ1uUnRGWGGfAM
-Zr1is0k2Tw2UoiKo3tB7zXdB8/k7CRw2RY8CVqf8KVxgZDZq+IDuvIOrYTlbya/7
-OCFgAZOP4ZdyAdq6WEUlLs6OIB21EwHB9r1wqP64d7+9SpSIaONluxrxO/+U5B8z
-KZbo4kWngHD8OYMLSRAwp4ThTlDTI+OtU14TLpfrKvR9FetyJBZk7EojlNmjYH09
-fQcAnf7I1A7vk49+IMRbF0jSr7YA85OsTRELhd+os8WBYk3eo8IwmZJiu+UfENpJ
-Zukwp3ccfHLviR535i3KKFFl0l452YEd2R1YgGeBYqj/CvfBVCmasskyFLiFb2vt
-QZfYncPpYCAw75U3TnnIff/c/DmfsYIvzDWcy6fuHlDWufOGZpQQh4aBcdqv43jR
-pj+9VaqPUEo69Ft3kk6SukPARywoNGwVmwLZkm6ZWqKLhFuhgRA=
-=mwK+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmf/C58ACgkQbV8aePHc
+Nh1dmRAAzTspJunLBL4gWdNdBuj2BRaMpF20MYPufBfLmLecF/NfkLjYHjtr+dUv
+sqS0JIdDlAsm/5BvbXmf48mkFDfCQDwz4spcEeWiijj9FlmAEH+SqEjnZA+7DXht
+N5jDXG57ZVyD09A1Z5VPUbmVWWj2YZicvCglM3aNQD8tT5saUdre16YHPZiqyJdh
+Q1iBLPhL15RyApgVliNJpqf4MI0Hhd6QUicNRPp3woBWU+K1cnD6Yc0Nvi5kIrqM
+gl0m+pRcehFvpnDB9NwJrEO7BbAhNJp+2QjtvsskuTiLirOJpkB1UR+mBxi1d4sm
+izb8cVgWBlptGnuWuBAFdSvERBDfay+GLUwJXZKHAh0pNmkaZxTFwwRlbnLRwZzX
+HG3I6pRexNfi/Rqeh7/bg8lzN/aAjq92k4eOGBmXkr9Mfl4PoVqP5eiKLkrfVm3q
++QjGXzYWwGz7ucr1ijMQ5qqpigT+yrpQG7okWt393OJj28+15uBbGiwZ86mwQ00m
+IQF53NvA0yHwbAkH0TgMpAkEm13QBDA7YyzlxF0pW68ctGQFkcv3KEa0d/eF4fjr
+HxA3YWkx63zNUFti+bDjtZPFPrfLr9yXawJurUurUOyBNyWB/g8VjZjHFF3mn19X
+W4OyPgYvlxw/yQau4TXIctJ54HYHgsvLqrqhpMlWSrypEqHXQig=
+=9H6V
 -----END PGP SIGNATURE-----
 -->

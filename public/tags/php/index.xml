@@ -1,64 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Php on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/php/</link><description>Recent content in Php on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 16 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/php/index.xml" rel="self" type="application/rss+xml"/><item><title>PHP para Todos</title><link>https://adlermedrado.com.br/posts/php-para-todos/</link><pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/php-para-todos/</guid><description>&lt;p>Resolvi colocar em prática uma idéia que deixei hibernando por um bom tempo, que era a de criar um site com conteúdo
-voltado a iniciantes em desenvolvimento com PHP.&lt;/p>
-&lt;p>É muito fácil encontrar conteúdos de excelente qualidade que são voltados a pessoas que já possuem um nível de
-conhecimento maior em PHP, mas o mesmo não pode ser dito a respeito de conteúdos para iniciantes, sendo assim, eu topei
-o desafio e criei o &lt;a href="http://phpparatodos.com.br">PHP para Todos&lt;/a>, estou tentando manter uma regularidade nos artigos e
-também estou preparando novidades que espero lançar em breve.&lt;/p></description></item><item><title>Magento: Crash nos pacotes de produtos</title><link>https://adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</link><pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/</guid><description>&lt;p>Esta é a primeira dica sobre &lt;a href="http://magento.com" title="Magento Official Website">Magento&lt;/a> publicada por mim, acredito que
-isso se tornará algo recorrente daqui para a frente.&lt;/p>
-&lt;p>Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na
-hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto
-as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo.&lt;/p></description></item><item><title>Atom e PHP: Em busca da configuração perfeita</title><link>https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</link><pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</guid><description>&lt;p>Como eu
-disse &lt;a href="http://blog.adlermedrado.com.br/2015/07/31/migrando-para-o-atom.html" title="Migrando para o Atom">recentemente&lt;/a>, eu
-deixei de usar o Textmate, passei a usar o &lt;a href="https://atom.io">Atom&lt;/a> e recomendei alguns &lt;em>packages&lt;/em> que eu estou usando e
-estão me ajudando diariamente.&lt;/p>
-&lt;p>Neste post eu quero mostrar mais alguns &lt;em>packages&lt;/em> bem úteis para desenvolvimento PHP:&lt;/p>
-&lt;ul>
-&lt;li>linter-phpmd&lt;/li>
-&lt;li>linter-phpcs&lt;/li>
-&lt;li>php-getters-setters&lt;/li>
-&lt;/ul>
-&lt;p>Os dois primeiros para funcionar precisam que tanto o PHPMD (PHP Mess Detector) e o PHP_CodeSniffer esteja instalados
-no ambiente e acessíveis por meio do PATH, ou seja, os comandos phpcs e phpmd devem ser acessíveis de qualquer local.&lt;/p></description></item><item><title>Configurando um repositório privado usando Composer e Satis</title><link>https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</link><pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</guid><description>&lt;p>Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando
-na &lt;a href="http://coderockr.com">Coderockr&lt;/a> e este repositório deveria ser importado no projeto por meio do composer, talvez
-isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível
-pelo &lt;a href="https://getcomposer.org">composer&lt;/a> que utilizasse um repositório git privado.&lt;/p>
-&lt;h4 id="como-faz">Como faz?&lt;/h4>
-&lt;p>Após algumas pesquisas eu encontrei o projeto &lt;a href="https://github.com/composer/satis">Satis&lt;/a>, que pelo que pude compreender
-é mantido pelos mesmos desenvolvedores que mantém o composer.&lt;/p></description></item><item><title>Funções anônimas em PHP</title><link>https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/</link><pubDate>Sun, 26 Sep 2010 20:23:35 -0300</pubDate><guid>https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/</guid><description>&lt;h3 id="introdução">Introdução&lt;/h3>
-&lt;p>Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e
-mais completa.&lt;/p>
-&lt;p>A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas
-funcionalidades.&lt;/p>
-&lt;p>Minha idéia é de escrever posts curtos e direto ao ponto.&lt;/p>
-&lt;p>As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que
-elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em
-nenhum outro local, apenas naquele momento específico.&lt;/p></description></item><item><title>Promoção do PHPSP te ajuda a tirar certificações Zend</title><link>https://adlermedrado.com.br/posts/promo-phpsp-ajuda-tirar-certificacao/</link><pubDate>Thu, 24 Jun 2010 23:25:35 -0300</pubDate><guid>https://adlermedrado.com.br/posts/promo-phpsp-ajuda-tirar-certificacao/</guid><description>&lt;p>O PHPSPCast traz uma promoção em conjunto com seu último podcast que é
-sobre certificação. Os prêmios, logicamente são vouchers pra
-certificação. Se você ganhar não vai precisar gastar pelo menos US$160
-pra ser um certificado, nós daremos vários certificados. O melhor? Não
-é sorteio!&lt;/p>
-&lt;p>Responda o questionário de conhecimentos gerais de PHP. Se você acertar tudo, leva.&lt;/p>
-&lt;p>E quem for acertando, vai levando até nossos vouchers acabarem. Mas são poucos!!! São 2 vounchers de ZCE e dois
-vouchers de ZCF !&lt;/p></description></item><item><title>Vale a pena tirar certificacoes?</title><link>https://adlermedrado.com.br/posts/vale-a-pena-tirar-certificacoes/</link><pubDate>Tue, 16 Jun 2009 18:47:01 -0300</pubDate><guid>https://adlermedrado.com.br/posts/vale-a-pena-tirar-certificacoes/</guid><description>&lt;p>Não é de hoje que este é um dos maiores questionamentos de quem trabalha na área de desenvolvimento de software
-principalmente entre os programadores então estou escrevendo este post para tentar expôr a minha opinião sobre o
-assunto.&lt;/p>
-&lt;p>Eu sou meio suspeito para falar sobre isso pois possuo todas as certificações da Zend e pretendo em breve tirar uma
-certificação Sun Java e outra Microsoft, é isso aí, o lance é ser fluente em várias linguagens… :-)&lt;/p></description></item><item><title>Última aula do curso de PHP: Reloaded</title><link>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php-reloaded/</link><pubDate>Tue, 05 Aug 2008 11:32:32 -0300</pubDate><guid>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php-reloaded/</guid><description>&lt;p>Ontem (segunda, 04/08), foi o último dia do curso de PHP avançado e Zend Framework que ministrei para meus colegas do
-MDIC/Sigma.&lt;/p>
-&lt;p>Foi muito legal rever esse pessoal e conhecer as pessoas que entraram lá depois que eu mudei de emprego.&lt;/p>
-&lt;p>Para mim foi uma satisfação muito grande passar esses dias com esse pessoal que é nota 10.&lt;/p>
-&lt;p>Um abraço e até a próxima.&lt;/p></description></item><item><title>Ultima aula do curso de PHP</title><link>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php/</link><pubDate>Thu, 26 Jun 2008 14:26:10 -0300</pubDate><guid>https://adlermedrado.com.br/posts/ultima-aula-do-curso-de-php/</guid><description>&lt;p>Hoje foi a última aula da turma do curso de PHP do MDIC/Sigma que estava sendo realizada aos sábados.&lt;/p>
-&lt;p>Foi muito bom rever essa turma a qual tive a honra de trabalhar no MDIC e passar diversos sábados lidando o dia todo com
-PHP, Zend Framework, e etc.&lt;/p>
-&lt;p>É sempre muito bom dar aula pra uma turma animada como essa, mas agora vou dar uma descansada por que dar aula vários
-sábados seguidos durante o dia todo cansa demais :-)&lt;/p></description></item><item><title>Treinamento PHP avançado para meus colegas do MDIC/Sigma</title><link>https://adlermedrado.com.br/posts/treinamento-php-avancado-mdic-sigma/</link><pubDate>Sun, 22 Jun 2008 05:22:53 -0300</pubDate><guid>https://adlermedrado.com.br/posts/treinamento-php-avancado-mdic-sigma/</guid><description>&lt;p>Iniciou ontem o treinamento de conceitos avançados em PHP para os meus colegas da SIGMA/MDIC.&lt;/p>
-&lt;p>A Sigma é a empresa a qual eu trabalhava até o primeiro trimestre deste ano prestando serviços no Ministério do
-Desenvolvimento Indústria e Comércio Exterior, desenvolvendo com PHP e Java.&lt;/p>
-&lt;p>Para mim é bem legal ministrar este treinamento, porque eu vou rever muitos colegas por algum tempo e conhecer novas
-pessoas que entraram lá depois de mim.&lt;/p></description></item><item><title>Treinamento PHP5 Com Orientação a Objetos</title><link>https://adlermedrado.com.br/posts/treinamento-php5-com-orientacao-a-objetos/</link><pubDate>Thu, 19 Jun 2008 13:30:22 -0300</pubDate><guid>https://adlermedrado.com.br/posts/treinamento-php5-com-orientacao-a-objetos/</guid><description>&lt;p>Hoje iniciará um treinamento de PHP 5 com OO na X25.&lt;/p>
-&lt;p>Este curso é bem legal pois engloba desde os conceitos mais básicos do PHP até os conceitos de OO que o PHP 5 nos
-proporciona.&lt;/p>
-&lt;p>Publiquei o post agora em cima da hora mas ainda dá tempo caso você se interesse. Vale a pena.&lt;/p>
-&lt;p>Para maiores
-informações: &lt;a href="http://www.x25.com.br/curso/php_5_com_orientacao_a_objetos/342">http://www.x25.com.br/curso/php_5_com_orientacao_a_objetos/342&lt;/a>&lt;/p>
-&lt;p>Abraço.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on Adler Medrado&#39;s corner of the web</title>
+    <link>http://localhost:1313/tags/php/</link>
+    <description>Recent content in Php on Adler Medrado&#39;s corner of the web</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP para Todos</title>
+      <link>http://localhost:1313/posts/php-para-todos/</link>
+      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/php-para-todos/</guid>
+      <description>&lt;p&gt;Resolvi colocar em prática uma idéia que deixei hibernando por um bom tempo, que era a de criar um site com conteúdo&#xA;voltado a iniciantes em desenvolvimento com PHP.&lt;/p&gt;&#xA;&lt;p&gt;É muito fácil encontrar conteúdos de excelente qualidade que são voltados a pessoas que já possuem um nível de&#xA;conhecimento maior em PHP, mas o mesmo não pode ser dito a respeito de conteúdos para iniciantes, sendo assim, eu topei&#xA;o desafio e criei o &lt;a href=&#34;http://phpparatodos.com.br&#34;&gt;PHP para Todos&lt;/a&gt;, estou tentando manter uma regularidade nos artigos e&#xA;também estou preparando novidades que espero lançar em breve.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Magento: Crash nos pacotes de produtos</title>
+      <link>http://localhost:1313/posts/magento-crash-nos-pacotes-de-produtos/</link>
+      <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/magento-crash-nos-pacotes-de-produtos/</guid>
+      <description>&lt;p&gt;Esta é a primeira dica sobre &lt;a href=&#34;http://magento.com&#34; title=&#34;Magento Official Website&#34;&gt;Magento&lt;/a&gt; publicada por mim, acredito que&#xA;isso se tornará algo recorrente daqui para a frente.&lt;/p&gt;&#xA;&lt;p&gt;Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na&#xA;hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto&#xA;as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Atom e PHP: Em busca da configuração perfeita</title>
+      <link>http://localhost:1313/posts/atom-e-php-em-busca-da-configuracao-perfeita/</link>
+      <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/atom-e-php-em-busca-da-configuracao-perfeita/</guid>
+      <description>&lt;p&gt;Como eu&#xA;disse &lt;a href=&#34;http://blog.adlermedrado.com.br/2015/07/31/migrando-para-o-atom.html&#34; title=&#34;Migrando para o Atom&#34;&gt;recentemente&lt;/a&gt;, eu&#xA;deixei de usar o Textmate, passei a usar o &lt;a href=&#34;https://atom.io&#34;&gt;Atom&lt;/a&gt; e recomendei alguns &lt;em&gt;packages&lt;/em&gt; que eu estou usando e&#xA;estão me ajudando diariamente.&lt;/p&gt;&#xA;&lt;p&gt;Neste post eu quero mostrar mais alguns &lt;em&gt;packages&lt;/em&gt; bem úteis para desenvolvimento PHP:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;linter-phpmd&lt;/li&gt;&#xA;&lt;li&gt;linter-phpcs&lt;/li&gt;&#xA;&lt;li&gt;php-getters-setters&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Os dois primeiros para funcionar precisam que tanto o PHPMD (PHP Mess Detector) e o PHP_CodeSniffer esteja instalados&#xA;no ambiente e acessíveis por meio do PATH, ou seja, os comandos phpcs e phpmd devem ser acessíveis de qualquer local.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Configurando um repositório privado usando Composer e Satis</title>
+      <link>http://localhost:1313/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</link>
+      <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</guid>
+      <description>&lt;p&gt;Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando&#xA;na &lt;a href=&#34;http://coderockr.com&#34;&gt;Coderockr&lt;/a&gt; e este repositório deveria ser importado no projeto por meio do composer, talvez&#xA;isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível&#xA;pelo &lt;a href=&#34;https://getcomposer.org&#34;&gt;composer&lt;/a&gt; que utilizasse um repositório git privado.&lt;/p&gt;&#xA;&lt;h4 id=&#34;como-faz&#34;&gt;Como faz?&lt;/h4&gt;&#xA;&lt;p&gt;Após algumas pesquisas eu encontrei o projeto &lt;a href=&#34;https://github.com/composer/satis&#34;&gt;Satis&lt;/a&gt;, que pelo que pude compreender&#xA;é mantido pelos mesmos desenvolvedores que mantém o composer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Funções anônimas em PHP</title>
+      <link>http://localhost:1313/posts/funcoes-anonimas-em-php/</link>
+      <pubDate>Sun, 26 Sep 2010 20:23:35 -0300</pubDate>
+      <guid>http://localhost:1313/posts/funcoes-anonimas-em-php/</guid>
+      <description>&lt;h3 id=&#34;introdução&#34;&gt;Introdução&lt;/h3&gt;&#xA;&lt;p&gt;Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e&#xA;mais completa.&lt;/p&gt;&#xA;&lt;p&gt;A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas&#xA;funcionalidades.&lt;/p&gt;&#xA;&lt;p&gt;Minha idéia é de escrever posts curtos e direto ao ponto.&lt;/p&gt;&#xA;&lt;p&gt;As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que&#xA;elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em&#xA;nenhum outro local, apenas naquele momento específico.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Promoção do PHPSP te ajuda a tirar certificações Zend</title>
+      <link>http://localhost:1313/posts/promo-phpsp-ajuda-tirar-certificacao/</link>
+      <pubDate>Thu, 24 Jun 2010 23:25:35 -0300</pubDate>
+      <guid>http://localhost:1313/posts/promo-phpsp-ajuda-tirar-certificacao/</guid>
+      <description>&lt;p&gt;O PHPSPCast traz uma promoção em conjunto com seu último podcast que é&#xA;sobre certificação. Os prêmios, logicamente são vouchers pra&#xA;certificação. Se você ganhar não vai precisar gastar pelo menos US$160&#xA;pra ser um certificado, nós daremos vários certificados. O melhor? Não&#xA;é sorteio!&lt;/p&gt;&#xA;&lt;p&gt;Responda o questionário de conhecimentos gerais de PHP. Se você acertar tudo, leva.&lt;/p&gt;&#xA;&lt;p&gt;E quem for acertando, vai levando até nossos vouchers acabarem. Mas são poucos!!! São 2 vounchers de ZCE e dois&#xA;vouchers de ZCF !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vale a pena tirar certificacoes?</title>
+      <link>http://localhost:1313/posts/vale-a-pena-tirar-certificacoes/</link>
+      <pubDate>Tue, 16 Jun 2009 18:47:01 -0300</pubDate>
+      <guid>http://localhost:1313/posts/vale-a-pena-tirar-certificacoes/</guid>
+      <description>&lt;p&gt;Não é de hoje que este é um dos maiores questionamentos de quem trabalha na área de desenvolvimento de software&#xA;principalmente entre os programadores então estou escrevendo este post para tentar expôr a minha opinião sobre o&#xA;assunto.&lt;/p&gt;&#xA;&lt;p&gt;Eu sou meio suspeito para falar sobre isso pois possuo todas as certificações da Zend e pretendo em breve tirar uma&#xA;certificação Sun Java e outra Microsoft, é isso aí, o lance é ser fluente em várias linguagens… :-)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Última aula do curso de PHP: Reloaded</title>
+      <link>http://localhost:1313/posts/ultima-aula-do-curso-de-php-reloaded/</link>
+      <pubDate>Tue, 05 Aug 2008 11:32:32 -0300</pubDate>
+      <guid>http://localhost:1313/posts/ultima-aula-do-curso-de-php-reloaded/</guid>
+      <description>&lt;p&gt;Ontem (segunda, 04/08), foi o último dia do curso de PHP avançado e Zend Framework que ministrei para meus colegas do&#xA;MDIC/Sigma.&lt;/p&gt;&#xA;&lt;p&gt;Foi muito legal rever esse pessoal e conhecer as pessoas que entraram lá depois que eu mudei de emprego.&lt;/p&gt;&#xA;&lt;p&gt;Para mim foi uma satisfação muito grande passar esses dias com esse pessoal que é nota 10.&lt;/p&gt;&#xA;&lt;p&gt;Um abraço e até a próxima.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ultima aula do curso de PHP</title>
+      <link>http://localhost:1313/posts/ultima-aula-do-curso-de-php/</link>
+      <pubDate>Thu, 26 Jun 2008 14:26:10 -0300</pubDate>
+      <guid>http://localhost:1313/posts/ultima-aula-do-curso-de-php/</guid>
+      <description>&lt;p&gt;Hoje foi a última aula da turma do curso de PHP do MDIC/Sigma que estava sendo realizada aos sábados.&lt;/p&gt;&#xA;&lt;p&gt;Foi muito bom rever essa turma a qual tive a honra de trabalhar no MDIC e passar diversos sábados lidando o dia todo com&#xA;PHP, Zend Framework, e etc.&lt;/p&gt;&#xA;&lt;p&gt;É sempre muito bom dar aula pra uma turma animada como essa, mas agora vou dar uma descansada por que dar aula vários&#xA;sábados seguidos durante o dia todo cansa demais :-)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Treinamento PHP avançado para meus colegas do MDIC/Sigma</title>
+      <link>http://localhost:1313/posts/treinamento-php-avancado-mdic-sigma/</link>
+      <pubDate>Sun, 22 Jun 2008 05:22:53 -0300</pubDate>
+      <guid>http://localhost:1313/posts/treinamento-php-avancado-mdic-sigma/</guid>
+      <description>&lt;p&gt;Iniciou ontem o treinamento de conceitos avançados em PHP para os meus colegas da SIGMA/MDIC.&lt;/p&gt;&#xA;&lt;p&gt;A Sigma é a empresa a qual eu trabalhava até o primeiro trimestre deste ano prestando serviços no Ministério do&#xA;Desenvolvimento Indústria e Comércio Exterior, desenvolvendo com PHP e Java.&lt;/p&gt;&#xA;&lt;p&gt;Para mim é bem legal ministrar este treinamento, porque eu vou rever muitos colegas por algum tempo e conhecer novas&#xA;pessoas que entraram lá depois de mim.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Treinamento PHP5 Com Orientação a Objetos</title>
+      <link>http://localhost:1313/posts/treinamento-php5-com-orientacao-a-objetos/</link>
+      <pubDate>Thu, 19 Jun 2008 13:30:22 -0300</pubDate>
+      <guid>http://localhost:1313/posts/treinamento-php5-com-orientacao-a-objetos/</guid>
+      <description>&lt;p&gt;Hoje iniciará um treinamento de PHP 5 com OO na X25.&lt;/p&gt;&#xA;&lt;p&gt;Este curso é bem legal pois engloba desde os conceitos mais básicos do PHP até os conceitos de OO que o PHP 5 nos&#xA;proporciona.&lt;/p&gt;&#xA;&lt;p&gt;Publiquei o post agora em cima da hora mas ainda dá tempo caso você se interesse. Vale a pena.&lt;/p&gt;&#xA;&lt;p&gt;Para maiores&#xA;informações: &lt;a href=&#34;http://www.x25.com.br/curso/php_5_com_orientacao_a_objetos/342&#34;&gt;http://www.x25.com.br/curso/php_5_com_orientacao_a_objetos/342&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Abraço.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

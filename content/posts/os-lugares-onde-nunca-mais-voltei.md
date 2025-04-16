@@ -3,9 +3,9 @@ title: "Os lugares onde nunca mais voltei, mas que ainda me habitam"
 date: 2025-04-15
 draft: false
 tags: 
-    - "reflexão" 
+    - "reflexao" 
     - "nostalgia" 
-    - "solidão"
+    - "solidao"
     - "crescimento"
 ---
 

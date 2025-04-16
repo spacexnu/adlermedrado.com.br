@@ -1,100 +1,170 @@
-<!--
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Funções anônimas em PHP</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Funções anônimas em PHP</h1><div><div><p><small><time>September 26, 2010</time>
-|
-3 minutes read</small></p></div><span class=line_break></span></div><div class=content><h3 id=introdução>Introdução</h3><p>Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e
-mais completa.</p><p>A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas
-funcionalidades.</p><p>Minha idéia é de escrever posts curtos e direto ao ponto.</p><p>As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport
+          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
+    <meta name="description" content="My corner of the web">
+    <title>Funções anônimas em PHP</title>
+    <link rel="author" href="/humans.txt"/>
+    <link rel="canonical" href="https://adlermedrado.com.br"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header>
+    <nav class="navbar" role="navigation">
+        <div class="navbar_left">
+            <a href="/" class="h-card" rel="me"><strong>Adler Medrado</strong></a>
+        </div>
+        <div class="navbar_right">
+            <a href="/posts">Posts</a>
+	    <a href="/now">Now</a>
+            <a href="/tags">Tags</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="section">
+    <article>
+        <div>
+            <h1>Funções anônimas em PHP</h1>
+            <div>
+                <div>
+                    <p>
+                        <small>
+                            <time>September 26, 2010</time>
+                            |
+                            3  minutes  read
+                        </small>
+                    </p>
+                </div>
+                <span class="line_break"></span>
+            </div>
+            <div class="content">
+                <h3 id="introdução">Introdução</h3>
+<p>Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e
+mais completa.</p>
+<p>A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas
+funcionalidades.</p>
+<p>Minha idéia é de escrever posts curtos e direto ao ponto.</p>
+<p>As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que
 elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em
-nenhum outro local, apenas naquele momento específico.</p><h3 id=como-eu-uso-isso>Como eu uso isso?</h3><p>Normalmente quando escrevemos uma função, nós declaramos o nome dela e assim sabemos como identifica-la na hora em que
-precisamos usa-la.</p><p>Exemplo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span><span style=color:#f92672>&lt;?</span><span style=color:#a6e22e>php</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>funcaoExemplo</span>($parametro1, $parametro2) {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;Faça alguma coisa com o </span><span style=color:#e6db74>$parametro1</span><span style=color:#e6db74> e com o </span><span style=color:#e6db74>$parametro2</span><span style=color:#e6db74>&#34;</span>;
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span><span style=color:#66d9ef>echo</span> <span style=color:#a6e22e>funcaoExemplo</span>(<span style=color:#e6db74>&#39;Hello&#39;</span>,<span style=color:#e6db74>&#39;World&#39;</span>);
-</span></span><span style=display:flex><span><span style=color:#75715e>?&gt;</span><span style=color:#960050;background-color:#1e0010>
+nenhum outro local, apenas naquele momento específico.</p>
+<h3 id="como-eu-uso-isso">Como eu uso isso?</h3>
+<p>Normalmente quando escrevemos uma função, nós declaramos o nome dela e assim sabemos como identifica-la na hora em que
+precisamos usa-la.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">funcaoExemplo</span>($parametro1, $parametro2) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Faça alguma coisa com o </span><span style="color:#e6db74">$parametro1</span><span style="color:#e6db74"> e com o </span><span style="color:#e6db74">$parametro2</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">funcaoExemplo</span>(<span style="color:#e6db74">&#39;Hello&#39;</span>,<span style="color:#e6db74">&#39;World&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
 </span></span></span></code></pre></div><p>O exemplo acima demonstra a maneira convencional que declaramos e usamos as funções em PHP, abaixo eu mostrarei alguns
-exemplos de uso das funções anônimas.</p><p>O próximo exemplo é a declaração e uso de uma função semelhante à declarada no exemplo anterior, porém, na forma de
-função anônima:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span><span style=color:#f92672>&lt;?</span><span style=color:#a6e22e>php</span>
-</span></span><span style=display:flex><span>$funcaoExemplo <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span>($parametro1, $parametro2) {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;Faça alguma coisa com o </span><span style=color:#e6db74>$parametro1</span><span style=color:#e6db74> e com o </span><span style=color:#e6db74>$parametro2</span><span style=color:#e6db74>&#34;</span>;
-</span></span><span style=display:flex><span>};
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>echo</span> $funcaoExemplo(<span style=color:#e6db74>&#39;Hello&#39;</span>,<span style=color:#e6db74>&#39;Função Anônima&#39;</span>);
-</span></span><span style=display:flex><span><span style=color:#75715e>?&gt;</span><span style=color:#960050;background-color:#1e0010>
-</span></span></span></code></pre></div><p>Como você pôde observar, a função não recebe um nome quando é declarada e sim ela é atribuída a uma variável comum PHP.</p><p>Nós podemos utilizar nestas funções as variáveis declaradas fora de seu escopo, para isso nós devemos importar as
-variáveis por meio do comando use. Exemplo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span><span style=color:#f92672>&lt;?</span><span style=color:#a6e22e>php</span>
-</span></span><span style=display:flex><span>$nome <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Adler&#39;</span>;
-</span></span><span style=display:flex><span>$sobrenome <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Brediks&#39;</span>;
-</span></span><span style=display:flex><span>$mostraMeuNome <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span>() <span style=color:#66d9ef>use</span> ($nome, $sobrenome) {
-</span></span><span style=display:flex><span>    $sobrenome <span style=color:#f92672>.=</span> <span style=color:#e6db74>&#39; Medrado&#39;</span>;
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>echo</span> <span style=color:#e6db74>&#34;Seu nome é: </span><span style=color:#e6db74>$nome</span><span style=color:#e6db74> </span><span style=color:#e6db74>$sobrenome</span><span style=color:#e6db74>&#34;</span>;
-</span></span><span style=display:flex><span>};
-</span></span><span style=display:flex><span>$mostraMeuNome();
-</span></span><span style=display:flex><span><span style=color:#75715e>?&gt;</span><span style=color:#960050;background-color:#1e0010>
-</span></span></span></code></pre></div><p>É possível usar variáveis passadas como referência. O exemplo anterior será modificado para ilustrar a funcionalidade:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span><span style=color:#f92672>&lt;?</span><span style=color:#a6e22e>php</span>
-</span></span><span style=display:flex><span>$nome <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Adler&#39;</span>;
-</span></span><span style=display:flex><span>$sobrenome <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Brediks&#39;</span>;
-</span></span><span style=display:flex><span>$mostraMeuNome <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span>() <span style=color:#66d9ef>use</span> ($nome, <span style=color:#f92672>&amp;</span>$sobrenome) {
-</span></span><span style=display:flex><span>    $sobrenome <span style=color:#f92672>.=</span> <span style=color:#e6db74>&#39; Medrado&#39;</span>;
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>echo</span> <span style=color:#e6db74>&#34;Seu nome é: </span><span style=color:#e6db74>$nome</span><span style=color:#e6db74> </span><span style=color:#e6db74>$sobrenome</span><span style=color:#e6db74>&#34;</span>;
-</span></span><span style=display:flex><span>};
-</span></span><span style=display:flex><span><span style=color:#66d9ef>echo</span> <span style=color:#e6db74>&#39;&lt;br&gt;&#39;</span>;
-</span></span><span style=display:flex><span>$mostraMeuNome();
-</span></span><span style=display:flex><span><span style=color:#66d9ef>echo</span> <span style=color:#e6db74>&#39;&lt;br&gt;&#39;</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>echo</span> $sobrenome;
-</span></span><span style=display:flex><span><span style=color:#75715e>?&gt;</span><span style=color:#960050;background-color:#1e0010>
-</span></span></span></code></pre></div><p>Faça o teste e veja que se o operador de referência(&) for removido, a variável $sobrenome não é modificada fora do
-escopo da função.</p><p>As closures podem ser muito bem aproveitadas em conjunto com funções nativas do PHP que necessitam de uma função de
-callback, como a função array_map que será a função usada em meu exemplo. Veja:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span><span style=color:#f92672>&lt;?</span><span style=color:#a6e22e>php</span>
-</span></span><span style=display:flex><span>$arrExemploMap <span style=color:#f92672>=</span> <span style=color:#66d9ef>array</span>(<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>,<span style=color:#ae81ff>4</span>,<span style=color:#ae81ff>5</span>,<span style=color:#ae81ff>6</span>,<span style=color:#ae81ff>7</span>,<span style=color:#ae81ff>8</span>,<span style=color:#ae81ff>9</span>,<span style=color:#ae81ff>10</span>);
-</span></span><span style=display:flex><span>$ret <span style=color:#f92672>=</span> <span style=color:#a6e22e>array_map</span>(<span style=color:#66d9ef>function</span>($v) {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> $v <span style=color:#f92672>*</span> $v;
-</span></span><span style=display:flex><span>}, $arrExemploMap);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#a6e22e>var_dump</span>($ret);
-</span></span><span style=display:flex><span><span style=color:#75715e>?&gt;</span><span style=color:#960050;background-color:#1e0010>
+exemplos de uso das funções anônimas.</p>
+<p>O próximo exemplo é a declaração e uso de uma função semelhante à declarada no exemplo anterior, porém, na forma de
+função anônima:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>$funcaoExemplo <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>($parametro1, $parametro2) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Faça alguma coisa com o </span><span style="color:#e6db74">$parametro1</span><span style="color:#e6db74"> e com o </span><span style="color:#e6db74">$parametro2</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> $funcaoExemplo(<span style="color:#e6db74">&#39;Hello&#39;</span>,<span style="color:#e6db74">&#39;Função Anônima&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Como você pôde observar, a função não recebe um nome quando é declarada e sim ela é atribuída a uma variável comum PHP.</p>
+<p>Nós podemos utilizar nestas funções as variáveis declaradas fora de seu escopo, para isso nós devemos importar as
+variáveis por meio do comando use. Exemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>$nome <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Adler&#39;</span>;
+</span></span><span style="display:flex;"><span>$sobrenome <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Brediks&#39;</span>;
+</span></span><span style="display:flex;"><span>$mostraMeuNome <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() <span style="color:#66d9ef">use</span> ($nome, $sobrenome) {
+</span></span><span style="display:flex;"><span>    $sobrenome <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39; Medrado&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;Seu nome é: </span><span style="color:#e6db74">$nome</span><span style="color:#e6db74"> </span><span style="color:#e6db74">$sobrenome</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>$mostraMeuNome();
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>É possível usar variáveis passadas como referência. O exemplo anterior será modificado para ilustrar a funcionalidade:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>$nome <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Adler&#39;</span>;
+</span></span><span style="display:flex;"><span>$sobrenome <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Brediks&#39;</span>;
+</span></span><span style="display:flex;"><span>$mostraMeuNome <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() <span style="color:#66d9ef">use</span> ($nome, <span style="color:#f92672">&amp;</span>$sobrenome) {
+</span></span><span style="display:flex;"><span>    $sobrenome <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#39; Medrado&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;Seu nome é: </span><span style="color:#e6db74">$nome</span><span style="color:#e6db74"> </span><span style="color:#e6db74">$sobrenome</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;br&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>$mostraMeuNome();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;&lt;br&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> $sobrenome;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Faça o teste e veja que se o operador de referência(&amp;) for removido, a variável $sobrenome não é modificada fora do
+escopo da função.</p>
+<p>As closures podem ser muito bem aproveitadas em conjunto com funções nativas do PHP que necessitam de uma função de
+callback, como a função array_map que será a função usada em meu exemplo. Veja:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>$arrExemploMap <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">10</span>);
+</span></span><span style="display:flex;"><span>$ret <span style="color:#f92672">=</span> <span style="color:#a6e22e">array_map</span>(<span style="color:#66d9ef">function</span>($v) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> $v <span style="color:#f92672">*</span> $v;
+</span></span><span style="display:flex;"><span>}, $arrExemploMap);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">var_dump</span>($ret);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
 </span></span></span></code></pre></div><p>O código acima exemplifica o que falei anteriormente a respeito de declarar funções que não serão usadas em mais nenhum
-lugar.</p><h3 id=usando-isso-em-objetos>Usando isso em objetos</h3><p>Esta funcionalidade também pode ser usada no paradigma POO e o conceito é exatamente o mesmo, basta preparar o seu
-método para receber uma função desta como parâmetro. Exemplo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span><span style=color:#f92672>&lt;?</span><span style=color:#a6e22e>php</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Lambida</span> {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>hello</span>($param1, $callback) {
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>echo</span> <span style=color:#e6db74>&#39;Esse é o valor do $param1: &#39;</span> <span style=color:#f92672>.</span> $param1 <span style=color:#f92672>.</span> <span style=color:#e6db74>&#39;&lt;br /&gt;&#39;</span>;
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>echo</span> $callback();
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>$lambida <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Lambida</span>();
-</span></span><span style=display:flex><span>$lambida<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>hello</span>(<span style=color:#e6db74>&#39;Eu amo muito tudo isso&#39;</span>, <span style=color:#66d9ef>function</span>() {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#39;Eu sou o retorno da funcao de callback&#39;</span>; }
-</span></span><span style=display:flex><span>);
-</span></span><span style=display:flex><span><span style=color:#75715e>?&gt;</span><span style=color:#960050;background-color:#1e0010>
-</span></span></span></code></pre></div><h3 id=conclusão>Conclusão</h3><p>Este é mais um recurso que o PHP oferece para torna-lo mais ágil e eficiente.</p><p>Os exemplos que eu apresentei já servem como ponto de partida para estudos mais aprofundados e eu espero que ele tenha
-sido útil para você.</p><p>Se você já usou este recurso em situações diferentes das que eu apresentei, deixe seu comentário.</p><p>Abraços.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/promo-phpsp-ajuda-tirar-certificacao/>&#8592; Promoção do PHPSP te ajuda a tirar certificações Zend</a>
-|
-<a href=https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/>Quase um ano de Dangolino sem precisar alterar uma linha de código &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/ | gpg --verify</em></p></div></footer></body></html><!--
------BEGIN PGP SIGNATURE-----
+lugar.</p>
+<h3 id="usando-isso-em-objetos">Usando isso em objetos</h3>
+<p>Esta funcionalidade também pode ser usada no paradigma POO e o conceito é exatamente o mesmo, basta preparar o seu
+método para receber uma função desta como parâmetro. Exemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Lambida</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">hello</span>($param1, $callback) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;Esse é o valor do $param1: &#39;</span> <span style="color:#f92672">.</span> $param1 <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;&lt;br /&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">echo</span> $callback();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$lambida <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Lambida</span>();
+</span></span><span style="display:flex;"><span>$lambida<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">hello</span>(<span style="color:#e6db74">&#39;Eu amo muito tudo isso&#39;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Eu sou o retorno da funcao de callback&#39;</span>; }
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="conclusão">Conclusão</h3>
+<p>Este é mais um recurso que o PHP oferece para torna-lo mais ágil e eficiente.</p>
+<p>Os exemplos que eu apresentei já servem como ponto de partida para estudos mais aprofundados e eu espero que ele tenha
+sido útil para você.</p>
+<p>Se você já usou este recurso em situações diferentes das que eu apresentei, deixe seu comentário.</p>
+<p>Abraços.</p>
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmf/C5EACgkQbV8aePHc
-Nh09cw//dwt6dbsmbXrcl5lHufVlnU+oBfNV/8+0GDI7GvT1xg3crg+yFueSwl1r
-+qzs+dn9+Wa+L6Vs6hyLg2LEeDEAKKUN0oiZtq7BTRfuBzS5dB/9HgZSLQ3IMTCx
-8BOzk5I9KUhkCQBCyeWTtVwHCOSGmz2akgFh8nN3zQfd4KkRLmp1R39dZKWF0Wo5
-luZKLXoVd26EdcxWk5U/sJI04KUJKDCrsgBBGY/INH9a6zOXGL9H8fsMtJx7l1uM
-u9z7q0o6Pr0+Akx/yS2ylfEyPGQh3XnBTFuE5kEIoWXf/Kch+QYXXh4t1IP0sB0O
-6bte8hDMJj1kWnNujBe1ShEETMc3lhc3xvEAEA9IVK38HzSHhLUzonu83IidYb0Y
-vFCxBXCtx3QjX++TJz7sxPlpxhtNSFdG/4buCvvLNfFJtWXQsOrpb2PQzQwocuwK
-782iHJKjL81dbvGvgsnN36+QHPoNkbOc7SVPBAqlVfugYxN3gnMVZQegWe18/c6v
-5OFvzQ/RZ85qXWDYNfpWojyYsSMvzIbAlEMc1/Kw7pkVRetLuDezclf5XlpEHZay
-jg3v65EaiATzwSkYyUPiSscJYdSosPeVFukPvi210Tjg3SHvYCIJRkSly8FOBnq+
-J+PUZS+EBz/9DEHj8Qa2GGBPaQngOGiYBwYfDYFByNEFLD/LNWc=
-=RTkr
------END PGP SIGNATURE-----
--->
+            </div>
+        </div>
+    </article>
+    <div>
+        <div>
+            <div>
+                
+                <a href="http://localhost:1313/posts/promo-phpsp-ajuda-tirar-certificacao/">&#8592; Promoção do PHPSP te ajuda a tirar certificações Zend</a>
+                
+                |
+                
+                <a href="http://localhost:1313/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/">Quase um ano de Dangolino sem precisar alterar uma linha de código &#8594;</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+</main><span class="line_break"></span>
+<span class="line_break"></span>
+<footer>
+    <div>
+        <p><br />
+          <small>
+                <em>Privacy policy: this website employs no tracking.</em>
+          </small>
+        </p>
+    </div>
+    <div>
+        <p><small>&copy; 1996-2025 Adler Medrado</small></p>
+    </div>
+    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
+        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl http://localhost:1313/posts/funcoes-anonimas-em-php/ | gpg --verify</em></p></div>
+</footer>
+</body>
+</html>

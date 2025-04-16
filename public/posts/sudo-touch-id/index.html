@@ -1,37 +1,108 @@
-<!--
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport
+          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
+    <meta name="description" content="My corner of the web">
+    <title>Sudo with Touch ID on macOS</title>
+    <link rel="author" href="/humans.txt"/>
+    <link rel="canonical" href="https://adlermedrado.com.br"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header>
+    <nav class="navbar" role="navigation">
+        <div class="navbar_left">
+            <a href="/" class="h-card" rel="me"><strong>Adler Medrado</strong></a>
+        </div>
+        <div class="navbar_right">
+            <a href="/posts">Posts</a>
+	    <a href="/now">Now</a>
+            <a href="/tags">Tags</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="section">
+    <article>
+        <div>
+            <h1>Sudo with Touch ID on macOS</h1>
+            <div>
+                <div>
+                    <p>
+                        <small>
+                            <time>June 5, 2024</time>
+                            |
+                            2  minutes  read
+                        </small>
+                    </p>
+                </div>
+                <span class="line_break"></span>
+            </div>
+            <div class="content">
+                <p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.</p>
+<p>Locate the <em>file /etc/pam.d/sudo_local.template</em> and make a copy as shown in the example below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+</span></span></code></pre></div><p>Then edit the file and remove the # character from the beginning of line 3, it should look like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span># sudo_local: local config file which survives system update and is included for sudo
+</span></span><span style="display:flex;"><span># uncomment following line to enable Touch ID for sudo
+</span></span><span style="display:flex;"><span>auth sufficient pam_tid.so
+</span></span></code></pre></div><h3 id="detailed-steps-to-edit-the-file">Detailed Steps to Edit the File</h3>
+<p>To edit the file, use a text editor like nano or vim. For example, with nano:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/pam.d/sudo_local
+</span></span></code></pre></div><p>Make the necessary changes and save the file (Ctrl+O, Enter, Ctrl+X in nano).</p>
+<h3 id="benefits-of-using-touch-id-with-sudo">Benefits of Using Touch ID with sudo</h3>
+<ul>
+<li>Convenience: Touch ID eliminates the need to repeatedly type your password, making the process faster and easier.</li>
+<li>Security: Touch ID adds an extra layer of security, ensuring only authorized users can execute sudo commands.</li>
+</ul>
+<h3 id="troubleshooting-common-issues">Troubleshooting Common Issues</h3>
+<p><strong>Touch ID Not Working:</strong></p>
+<ul>
+<li>Check if the /etc/pam.d/sudo_local file is configured correctly.</li>
+<li>Ensure your macOS is updated and Touch ID is set up in system preferences.</li>
+</ul>
+<h3 id="macos-versions">macOS Versions</h3>
+<p>This configuration has been tested on macOS Sonoma but may work on other recent macOS versions. Check your system documentation for confirmation.</p>
+<h3 id="security-considerations">Security Considerations</h3>
+<p>Using Touch ID for sudo is generally safe and convenient. However, ensure your Touch ID is correctly configured and that only authorized users have access to your Mac.</p>
+<p>As I use sudo a lot, this configuration is very convenient for me.</p>
+<p>I hope that this tip will be of some use to you.</p>
+<p><em>Updated: June 16, 2024</em></p>
 
-- -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Sudo with Touch ID on macOS</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo with Touch ID on macOS</h1><div><div><p><small><time>June 5, 2024</time>
-|
-2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.</p><p>Locate the <em>file /etc/pam.d/sudo_local.template</em> and make a copy as shown in the example below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
-</span></span></code></pre></div><p>Then edit the file and remove the # character from the beginning of line 3, it should look like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span># sudo_local: local config file which survives system update and is included for sudo
-</span></span><span style=display:flex><span># uncomment following line to enable Touch ID for sudo
-</span></span><span style=display:flex><span>auth sufficient pam_tid.so
-</span></span></code></pre></div><h3 id=detailed-steps-to-edit-the-file>Detailed Steps to Edit the File</h3><p>To edit the file, use a text editor like nano or vim. For example, with nano:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo nano /etc/pam.d/sudo_local
-</span></span></code></pre></div><p>Make the necessary changes and save the file (Ctrl+O, Enter, Ctrl+X in nano).</p><h3 id=benefits-of-using-touch-id-with-sudo>Benefits of Using Touch ID with sudo</h3><ul><li>Convenience: Touch ID eliminates the need to repeatedly type your password, making the process faster and easier.</li><li>Security: Touch ID adds an extra layer of security, ensuring only authorized users can execute sudo commands.</li></ul><h3 id=troubleshooting-common-issues>Troubleshooting Common Issues</h3><p><strong>Touch ID Not Working:</strong></p><ul><li>Check if the /etc/pam.d/sudo_local file is configured correctly.</li><li>Ensure your macOS is updated and Touch ID is set up in system preferences.</li></ul><h3 id=macos-versions>macOS Versions</h3><p>This configuration has been tested on macOS Sonoma but may work on other recent macOS versions. Check your system documentation for confirmation.</p><h3 id=security-considerations>Security Considerations</h3><p>Using Touch ID for sudo is generally safe and convenient. However, ensure your Touch ID is correctly configured and that only authorized users have access to your Mac.</p><p>As I use sudo a lot, this configuration is very convenient for me.</p><p>I hope that this tip will be of some use to you.</p><p><em>Updated: June 16, 2024</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/assinando-html-com-gpg/>&#8592; Assinando páginas HTML com GPG</a>
-|
-<a href=https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/>Sudo com Touch ID no macOS &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id/ | gpg --verify</em></p></div></footer></body></html><!--
------BEGIN PGP SIGNATURE-----
+            </div>
+        </div>
+    </article>
+    <div>
+        <div>
+            <div>
+                
+                <a href="http://localhost:1313/posts/assinando-html-com-gpg/">&#8592; Assinando páginas HTML com GPG</a>
+                
+                |
+                
+                <a href="http://localhost:1313/posts/sudo-touch-id-pt-br/">Sudo com Touch ID no macOS &#8594;</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmf/C5cACgkQbV8aePHc
-Nh0BlhAAhjBIlK7ine6JAw7TrhiPQIfxyaFUYrYcsAohAOZGm/BJ9BPDqBcnCEUZ
-VN+evGH6D6C/ATlU0x+r9VrILScfZ0Aj919cMdotfU0cSy9G9RgKYHcMFLyAopOk
-CDZYhIceRUCgArnf8hYZH4C31A3hd4p9EZexSN74zNXtV0QU2OiTGDvWJV7ra/hF
-U0JDLV8im36iyat1goDobi6+ElFT+/PxATVsg05rX+8PUBHvHf49qN+9ojmlRfnd
-EOHQLBBIAIoQx833Ov4ZrSlHBZ4N8vwC3TzsLBlCmb3PvkialAlU8BH2h3Qrv1Pw
-4K5y0tdrQme8bQB71F0r7F6HhCTf0IIiz3NpA8Xt6Ye8Fxc7hVglKjjEQU2zXzUN
-yYuZpzTcbYt6O4haatWw7J1enzg5z8IYtQebU9+LhddkKOOQr/HFA3IDxwijBh2F
-cw84zHijDPyFK4oYY5C/W1prkA9ZM9TehkKUw4KTuc1zss4tqcQ+wX83g7HG303e
-uVaApUlI64tpznAJS7ZJkOfAEhFw6e5HF1nbb4HSongpR03qFrC/jwN7bWnxk+nd
-xU1w/txGD9bzZv72G092rYuk+0fK7fcTn+mSwaXDIn9yeT1rYB8SFQ6zqctR7HXo
-NSK3xOqS6sPDd5kmiKD+NlZXpB7YfudprOQ+TpX/1XgjnUYLNcU=
-=u0Ih
------END PGP SIGNATURE-----
--->
+</main><span class="line_break"></span>
+<span class="line_break"></span>
+<footer>
+    <div>
+        <p><br />
+          <small>
+                <em>Privacy policy: this website employs no tracking.</em>
+          </small>
+        </p>
+    </div>
+    <div>
+        <p><small>&copy; 1996-2025 Adler Medrado</small></p>
+    </div>
+    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
+        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl http://localhost:1313/posts/sudo-touch-id/ | gpg --verify</em></p></div>
+</footer>
+</body>
+</html>

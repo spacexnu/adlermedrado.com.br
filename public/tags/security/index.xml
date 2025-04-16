@@ -1,20 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Security on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/security/</link><description>Recent content in Security on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 13 Oct 2024 15:53:53 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Shadowdata Updates</title><link>https://adlermedrado.com.br/posts/shadowdata-updates/</link><pubDate>Sun, 13 Oct 2024 15:53:53 -0300</pubDate><guid>https://adlermedrado.com.br/posts/shadowdata-updates/</guid><description>&lt;p>Yesterday, &lt;a href="https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/">I published a blog&lt;/a> post introducing my new open-source project, ShadowData.&lt;/p>
-&lt;p>This post is just to inform anyone interested that I have made some updates today.&lt;/p>
-&lt;p>New Features Added to the Project:&lt;/p>
-&lt;ul>
-&lt;li>Email address anonymization&lt;/li>
-&lt;li>Phone number anonymization&lt;/li>
-&lt;li>Symmetric cryptography for encryption and decryption&lt;/li>
-&lt;li>Minor improvements to tests and code quality&lt;/li>
-&lt;/ul>
-&lt;p>You can look the code at the &lt;a href="https://github.com/adlermedrado/ShadowData/">Github repository&lt;/a>.&lt;/p>
-&lt;p>See you.&lt;/p></description></item><item><title>Shadowdata Sensitive Data Handler Python Library</title><link>https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/</link><pubDate>Sat, 12 Oct 2024 21:23:34 -0300</pubDate><guid>https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/</guid><description>&lt;p>I am deeply concerned about how to handle sensitive data in the projects I work on. Nowadays, there are laws in various countries addressing this issue, and the topic becomes increasingly important as time goes on.&lt;/p>
-&lt;p>Therefore, I decided to create a Python library that can help me deal with scenarios where it is necessary to process data to prevent any individual from being identified if the information is accessed. The library also handles data transformations, encryption, and the detection of sensitive personal data.&lt;/p></description></item><item><title>Sudo with Touch ID on macOS</title><link>https://adlermedrado.com.br/posts/sudo-touch-id/</link><pubDate>Wed, 05 Jun 2024 20:03:28 -0300</pubDate><guid>https://adlermedrado.com.br/posts/sudo-touch-id/</guid><description>&lt;p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.&lt;/p>
-&lt;p>Locate the &lt;em>file /etc/pam.d/sudo_local.template&lt;/em> and make a copy as shown in the example below:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then edit the file and remove the # character from the beginning of line 3, it should look like this:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span># sudo_local: local config file which survives system update and is included for sudo
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span># uncomment following line to enable Touch ID for sudo
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>auth sufficient pam_tid.so
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="detailed-steps-to-edit-the-file">Detailed Steps to Edit the File&lt;/h3>
-&lt;p>To edit the file, use a text editor like nano or vim. For example, with nano:&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Adler Medrado&#39;s corner of the web</title>
+    <link>http://localhost:1313/tags/security/</link>
+    <description>Recent content in Security on Adler Medrado&#39;s corner of the web</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Oct 2024 15:53:53 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shadowdata Updates</title>
+      <link>http://localhost:1313/posts/shadowdata-updates/</link>
+      <pubDate>Sun, 13 Oct 2024 15:53:53 -0300</pubDate>
+      <guid>http://localhost:1313/posts/shadowdata-updates/</guid>
+      <description>&lt;p&gt;Yesterday, &lt;a href=&#34;https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/&#34;&gt;I published a blog&lt;/a&gt; post introducing my new open-source project, ShadowData.&lt;/p&gt;&#xA;&lt;p&gt;This post is just to inform anyone interested that I have made some updates today.&lt;/p&gt;&#xA;&lt;p&gt;New Features Added to the Project:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Email address anonymization&lt;/li&gt;&#xA;&lt;li&gt;Phone number anonymization&lt;/li&gt;&#xA;&lt;li&gt;Symmetric cryptography for encryption and decryption&lt;/li&gt;&#xA;&lt;li&gt;Minor improvements to tests and code quality&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You can look the code at the &lt;a href=&#34;https://github.com/adlermedrado/ShadowData/&#34;&gt;Github repository&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;See you.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shadowdata Sensitive Data Handler Python Library</title>
+      <link>http://localhost:1313/posts/shadowdata-sensitive-data-handler/</link>
+      <pubDate>Sat, 12 Oct 2024 21:23:34 -0300</pubDate>
+      <guid>http://localhost:1313/posts/shadowdata-sensitive-data-handler/</guid>
+      <description>&lt;p&gt;I am deeply concerned about how to handle sensitive data in the projects I work on. Nowadays, there are laws in various countries addressing this issue, and the topic becomes increasingly important as time goes on.&lt;/p&gt;&#xA;&lt;p&gt;Therefore, I decided to create a Python library that can help me deal with scenarios where it is necessary to process data to prevent any individual from being identified if the information is accessed. The library also handles data transformations, encryption, and the detection of sensitive personal data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sudo with Touch ID on macOS</title>
+      <link>http://localhost:1313/posts/sudo-touch-id/</link>
+      <pubDate>Wed, 05 Jun 2024 20:03:28 -0300</pubDate>
+      <guid>http://localhost:1313/posts/sudo-touch-id/</guid>
+      <description>&lt;p&gt;Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.&lt;/p&gt;&#xA;&lt;p&gt;Locate the &lt;em&gt;file /etc/pam.d/sudo_local.template&lt;/em&gt; and make a copy as shown in the example below:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then edit the file and remove the # character from the beginning of line 3, it should look like this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# sudo_local: local config file which survives system update and is included for sudo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# uncomment following line to enable Touch ID for sudo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;auth sufficient pam_tid.so&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;detailed-steps-to-edit-the-file&#34;&gt;Detailed Steps to Edit the File&lt;/h3&gt;&#xA;&lt;p&gt;To edit the file, use a text editor like nano or vim. For example, with nano:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GPG no MacOS X Snow Leopard</title>
+      <link>http://localhost:1313/posts/gpg-no-macosx-snow-leopard/</link>
+      <pubDate>Sun, 21 Feb 2010 19:08:14 -0300</pubDate>
+      <guid>http://localhost:1313/posts/gpg-no-macosx-snow-leopard/</guid>
+      <description>&lt;p&gt;Desde que comprei meu mac e instalei o Snow Leopard no ano passado, eu busquei alguma forma de instalar o GPG integrado&#xA;ao cliente de email &amp;ldquo;Mail&amp;rdquo; que vem com o Mac OS X, mas estava complicado porque a versão do Mail que vem com o Snow&#xA;Leopard não suporta o GPGMail que é um bundle para o Mail que permite que esta integração seja feita.&lt;/p&gt;&#xA;&lt;p&gt;Hoje, senti necessidade novamente em criptografar meus emails utilizando GPG e por isso fui atrás de uma solução para o&#xA;problema supracitado e desta vez eu encontrei um tutorial bacana que me permitiu fazer esta integração.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

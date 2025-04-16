@@ -21,6 +21,7 @@ That’s how I ended up writing a fun parody—or at least that was my intention
 The lyrics are below. For those interested, here’s a link to the original song on [YouTube](https://www.youtube.com/watch?v=zYdYoID-25k).
 
 ---
+
 ```
 I’ve been programming code for 30 years,
 From BASIC to Python, I’ve fought all the gears.
@@ -92,4 +93,4 @@ Now AI and Monero are the flags in my bag.
 ```
 <br />
 I hope you liked it. :D
-<br /><br />
+<br />

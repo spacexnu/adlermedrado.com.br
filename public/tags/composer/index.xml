@@ -1,7 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Composer on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/composer/</link><description>Recent content in Composer on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 21 Jun 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/composer/index.xml" rel="self" type="application/rss+xml"/><item><title>Configurando um repositório privado usando Composer e Satis</title><link>https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</link><pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</guid><description>&lt;p>Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando
-na &lt;a href="http://coderockr.com">Coderockr&lt;/a> e este repositório deveria ser importado no projeto por meio do composer, talvez
-isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível
-pelo &lt;a href="https://getcomposer.org">composer&lt;/a> que utilizasse um repositório git privado.&lt;/p>
-&lt;h4 id="como-faz">Como faz?&lt;/h4>
-&lt;p>Após algumas pesquisas eu encontrei o projeto &lt;a href="https://github.com/composer/satis">Satis&lt;/a>, que pelo que pude compreender
-é mantido pelos mesmos desenvolvedores que mantém o composer.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Composer on Adler Medrado&#39;s corner of the web</title>
+    <link>http://localhost:1313/tags/composer/</link>
+    <description>Recent content in Composer on Adler Medrado&#39;s corner of the web</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/composer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configurando um repositório privado usando Composer e Satis</title>
+      <link>http://localhost:1313/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</link>
+      <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/configurando-um-repositorio-privado-usando-composer-e-satis/</guid>
+      <description>&lt;p&gt;Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando&#xA;na &lt;a href=&#34;http://coderockr.com&#34;&gt;Coderockr&lt;/a&gt; e este repositório deveria ser importado no projeto por meio do composer, talvez&#xA;isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível&#xA;pelo &lt;a href=&#34;https://getcomposer.org&#34;&gt;composer&lt;/a&gt; que utilizasse um repositório git privado.&lt;/p&gt;&#xA;&lt;h4 id=&#34;como-faz&#34;&gt;Como faz?&lt;/h4&gt;&#xA;&lt;p&gt;Após algumas pesquisas eu encontrei o projeto &lt;a href=&#34;https://github.com/composer/satis&#34;&gt;Satis&lt;/a&gt;, que pelo que pude compreender&#xA;é mantido pelos mesmos desenvolvedores que mantém o composer.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

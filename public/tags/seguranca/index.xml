@@ -1,23 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seguranca on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/seguranca/</link><description>Recent content in Seguranca on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 16 Jun 2024 09:12:42 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/seguranca/index.xml" rel="self" type="application/rss+xml"/><item><title>Sudo com Touch ID no macOS</title><link>https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/</link><pubDate>Sun, 16 Jun 2024 09:12:42 -0300</pubDate><guid>https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/</guid><description>&lt;p>Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.&lt;/p>
-&lt;p>Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele deve ficar assim:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># sudo_local: arquivo de configuração local que sobrevive a atualizações do sistema e é incluído para sudo&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># descomente a linha a seguir para habilitar o Touch ID para sudo&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>auth sufficient pam_tid.so
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="passos-detalhados-para-editar-o-arquivo">Passos detalhados para editar o arquivo&lt;/h4>
-&lt;p>Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:&lt;/p></description></item><item><title>Assinando páginas HTML com GPG</title><link>https://adlermedrado.com.br/posts/assinando-html-com-gpg/</link><pubDate>Sun, 07 Jan 2024 11:44:54 -0300</pubDate><guid>https://adlermedrado.com.br/posts/assinando-html-com-gpg/</guid><description>&lt;p>Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
-muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o &lt;a href="https://gohugo.io">Hugo&lt;/a>.&lt;/p>
-&lt;p>No passado eu já utilizei o &lt;a href="https://getpelican.com">Pelican&lt;/a>, o &lt;a href="https://jekyllrb.com">Jekyll&lt;/a> e o Dangolino,
-este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.
-Se não me engano, há posts aqui falando sobre eles.&lt;/p>
-&lt;h2 id="por-que-assinar-as-páginas">Por que assinar as páginas?&lt;/h2>
-&lt;p>Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
-criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.&lt;/p></description></item><item><title>A Segurança Das Urnas Eletrônicas</title><link>https://adlermedrado.com.br/posts/a-seguranca-das-urnas-eletronicas/</link><pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/a-seguranca-das-urnas-eletronicas/</guid><description>&lt;p>Quem me conhece sabe que eu sempre desconfiei da segurança das urnas&lt;br>
-eletrônicas brasileiras, um dos fatores que me levam a ter essa postura&lt;br>
-é devido ao fato de o código das urnas ser fechado e não passar por&lt;br>
-auditorias externas.&lt;/p>
-&lt;p>Outro motivo é que aqui no Brasil nada que o governo coloca as mãos&lt;br>
-funciona direito, vide a saúde, educação, segurança, etc., então é de&lt;br>
-se desconfiar que a única coisa que funciona bem seja a urna eletrônica,&lt;br>
-algo tão vital para a manutenção da democracia.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seguranca on Adler Medrado&#39;s corner of the web</title>
+    <link>http://localhost:1313/tags/seguranca/</link>
+    <description>Recent content in Seguranca on Adler Medrado&#39;s corner of the web</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jun 2024 09:12:42 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/seguranca/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sudo com Touch ID no macOS</title>
+      <link>http://localhost:1313/posts/sudo-touch-id-pt-br/</link>
+      <pubDate>Sun, 16 Jun 2024 09:12:42 -0300</pubDate>
+      <guid>http://localhost:1313/posts/sudo-touch-id-pt-br/</guid>
+      <description>&lt;p&gt;Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.&lt;/p&gt;&#xA;&lt;p&gt;Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele deve ficar assim:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# sudo_local: arquivo de configuração local que sobrevive a atualizações do sistema e é incluído para sudo&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# descomente a linha a seguir para habilitar o Touch ID para sudo&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;auth sufficient pam_tid.so&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;passos-detalhados-para-editar-o-arquivo&#34;&gt;Passos detalhados para editar o arquivo&lt;/h4&gt;&#xA;&lt;p&gt;Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assinando páginas HTML com GPG</title>
+      <link>http://localhost:1313/posts/assinando-html-com-gpg/</link>
+      <pubDate>Sun, 07 Jan 2024 11:44:54 -0300</pubDate>
+      <guid>http://localhost:1313/posts/assinando-html-com-gpg/</guid>
+      <description>&lt;p&gt;Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava&#xA;muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;No passado eu já utilizei o &lt;a href=&#34;https://getpelican.com&#34;&gt;Pelican&lt;/a&gt;, o &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; e o Dangolino,&#xA;este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.&#xA;Se não me engano, há posts aqui falando sobre eles.&lt;/p&gt;&#xA;&lt;h2 id=&#34;por-que-assinar-as-páginas&#34;&gt;Por que assinar as páginas?&lt;/h2&gt;&#xA;&lt;p&gt;Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem&#xA;criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Segurança Das Urnas Eletrônicas</title>
+      <link>http://localhost:1313/posts/a-seguranca-das-urnas-eletronicas/</link>
+      <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/a-seguranca-das-urnas-eletronicas/</guid>
+      <description>&lt;p&gt;Quem me conhece sabe que eu sempre desconfiei da segurança das urnas&lt;br&gt;&#xA;eletrônicas brasileiras, um dos fatores que me levam a ter essa postura&lt;br&gt;&#xA;é devido ao fato de o código das urnas ser fechado e não passar por&lt;br&gt;&#xA;auditorias externas.&lt;/p&gt;&#xA;&lt;p&gt;Outro motivo é que aqui no Brasil nada que o governo coloca as mãos&lt;br&gt;&#xA;funciona direito, vide a saúde, educação, segurança, etc., então é de&lt;br&gt;&#xA;se desconfiar que a única coisa que funciona bem seja a urna eletrônica,&lt;br&gt;&#xA;algo tão vital para a manutenção da democracia.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

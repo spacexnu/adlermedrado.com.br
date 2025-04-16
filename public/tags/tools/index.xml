@@ -1,6 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/tools/</link><description>Recent content in Tools on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 12 Oct 2023 10:44:28 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Ferramentas para uso diário</title><link>https://adlermedrado.com.br/posts/ferramentas-para-uso-diario/</link><pubDate>Thu, 12 Oct 2023 10:44:28 -0300</pubDate><guid>https://adlermedrado.com.br/posts/ferramentas-para-uso-diario/</guid><description>&lt;p>Eventualmente me perguntam o que eu costumo usar no computador em meu dia-a-dia,
-então decidi escrever esse post, assim registro o que uso atualmente afim de
-poder comparar com o que estarei usando no futuro.&lt;/p>
-&lt;p>Eu sou uma pessoa de hábitos simples, então diferente de muita gente que escreve
-posts como esse, eu não tenho fogo no rabo e saio usando tudo que vejo pela
-frente, sendo assim, segue a lista.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Adler Medrado&#39;s corner of the web</title>
+    <link>http://localhost:1313/tags/tools/</link>
+    <description>Recent content in Tools on Adler Medrado&#39;s corner of the web</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Oct 2023 10:44:28 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ferramentas para uso diário</title>
+      <link>http://localhost:1313/posts/ferramentas-para-uso-diario/</link>
+      <pubDate>Thu, 12 Oct 2023 10:44:28 -0300</pubDate>
+      <guid>http://localhost:1313/posts/ferramentas-para-uso-diario/</guid>
+      <description>&lt;p&gt;Eventualmente me perguntam o que eu costumo usar no computador em meu dia-a-dia,&#xA;então decidi escrever esse post, assim registro o que uso atualmente afim de&#xA;poder comparar com o que estarei usando no futuro.&lt;/p&gt;&#xA;&lt;p&gt;Eu sou uma pessoa de hábitos simples, então diferente de muita gente que escreve&#xA;posts como esse, eu não tenho fogo no rabo e saio usando tudo que vejo pela&#xA;frente, sendo assim, segue a lista.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

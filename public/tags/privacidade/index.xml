@@ -1,12 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Privacidade on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/privacidade/</link><description>Recent content in Privacidade on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 05 Aug 2024 21:19:41 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/privacidade/index.xml" rel="self" type="application/rss+xml"/><item><title>Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais</title><link>https://adlermedrado.com.br/posts/privacidade-5-passos-essenciais/</link><pubDate>Mon, 05 Aug 2024 21:19:41 -0300</pubDate><guid>https://adlermedrado.com.br/posts/privacidade-5-passos-essenciais/</guid><description>&lt;h3 id="introdução-à-privacidade-na-internet-cinco-primeiros-passos-essenciais">Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais&lt;/h3>
-&lt;img alt="Privacidade" height="60%" src="https://adlermedrado.com.br/posts/images/privacidade.jpg" title="Privacidade" width="60%"/>
-&lt;p>Vivemos em uma era onde a internet está profundamente enraizada em nossas vidas diárias. Seja para trabalho, lazer ou comunicação, estamos constantemente conectados. No entanto, essa conexão contínua vem com um preço: nossa privacidade. Em um mundo onde dados são o novo ouro, proteger nossa informação pessoal tornou-se crucial. Aqui estão cinco primeiros passos essenciais para garantir sua privacidade online.&lt;/p>
-&lt;h4 id="1-use-um-navegador-focado-em-privacidade">1. Use um Navegador Focado em Privacidade&lt;/h4>
-&lt;p>A maioria dos navegadores populares coleta uma quantidade significativa de dados sobre seus usuários. Para minimizar essa coleta, considere usar navegadores focados em privacidade, como o Brave ou o Tor Browser. O Brave bloqueia rastreadores automaticamente e o Tor Browser anonimiza seu tráfego, tornando mais difícil para terceiros rastrearem suas atividades online.&lt;/p></description></item><item><title>Mais um pouco sobre privacidade</title><link>https://adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</link><pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</guid><description>&lt;p>Eu resolvi escrever este post depois de ficar pensando neste assunto por um tempo, então se você não se importa muito
-com a proteção da privacidade e/ou acha que quem se preocupa com isso é teórico da conspiração, pirado, louco ou
-qualquer coisa do gênero, fique com essa foto desse gatinho com uma cara engraçada, assim a vinda até este post não foi
-em vão.&lt;/p>
-&lt;h4 id="mas-se-você-quiser-ler-um-resumo-sobre-o-que-penso-a-respeito-deste-assunto-é-só-continuar-a-leitura">Mas se você quiser ler um resumo sobre o que penso a respeito deste assunto, é só continuar a leitura.&lt;/h4>
-&lt;p>Nós estamos vivendo na era da informação, sendo assim quem possui o domínio sobre a informação possui o poder. Não é a
-toa que os governos estão tentando de uma forma ou de outra tomar o controle de tudo que trafega na internet para
-censurar e vigiar seus cidadãos.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacidade on Adler Medrado&#39;s corner of the web</title>
+    <link>http://localhost:1313/tags/privacidade/</link>
+    <description>Recent content in Privacidade on Adler Medrado&#39;s corner of the web</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 05 Aug 2024 21:19:41 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/privacidade/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais</title>
+      <link>http://localhost:1313/posts/privacidade-5-passos-essenciais/</link>
+      <pubDate>Mon, 05 Aug 2024 21:19:41 -0300</pubDate>
+      <guid>http://localhost:1313/posts/privacidade-5-passos-essenciais/</guid>
+      <description>&lt;h3 id=&#34;introdução-à-privacidade-na-internet-cinco-primeiros-passos-essenciais&#34;&gt;Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais&lt;/h3&gt;&#xA;&lt;img alt=&#34;Privacidade&#34; height=&#34;60%&#34; src=&#34;http://localhost:1313/posts/images/privacidade.jpg&#34; title=&#34;Privacidade&#34; width=&#34;60%&#34;/&gt;&#xA;&lt;p&gt;Vivemos em uma era onde a internet está profundamente enraizada em nossas vidas diárias. Seja para trabalho, lazer ou comunicação, estamos constantemente conectados. No entanto, essa conexão contínua vem com um preço: nossa privacidade. Em um mundo onde dados são o novo ouro, proteger nossa informação pessoal tornou-se crucial. Aqui estão cinco primeiros passos essenciais para garantir sua privacidade online.&lt;/p&gt;&#xA;&lt;h4 id=&#34;1-use-um-navegador-focado-em-privacidade&#34;&gt;1. Use um Navegador Focado em Privacidade&lt;/h4&gt;&#xA;&lt;p&gt;A maioria dos navegadores populares coleta uma quantidade significativa de dados sobre seus usuários. Para minimizar essa coleta, considere usar navegadores focados em privacidade, como o Brave ou o Tor Browser. O Brave bloqueia rastreadores automaticamente e o Tor Browser anonimiza seu tráfego, tornando mais difícil para terceiros rastrearem suas atividades online.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mais um pouco sobre privacidade</title>
+      <link>http://localhost:1313/posts/mais-um-pouco-sobre-privacidade/</link>
+      <pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/mais-um-pouco-sobre-privacidade/</guid>
+      <description>&lt;p&gt;Eu resolvi escrever este post depois de ficar pensando neste assunto por um tempo, então se você não se importa muito&#xA;com a proteção da privacidade e/ou acha que quem se preocupa com isso é teórico da conspiração, pirado, louco ou&#xA;qualquer coisa do gênero, fique com essa foto desse gatinho com uma cara engraçada, assim a vinda até este post não foi&#xA;em vão.&lt;/p&gt;&#xA;&lt;h4 id=&#34;mas-se-você-quiser-ler-um-resumo-sobre-o-que-penso-a-respeito-deste-assunto-é-só-continuar-a-leitura&#34;&gt;Mas se você quiser ler um resumo sobre o que penso a respeito deste assunto, é só continuar a leitura.&lt;/h4&gt;&#xA;&lt;p&gt;Nós estamos vivendo na era da informação, sendo assim quem possui o domínio sobre a informação possui o poder. Não é a&#xA;toa que os governos estão tentando de uma forma ou de outra tomar o controle de tudo que trafega na internet para&#xA;censurar e vigiar seus cidadãos.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,44 +1,99 @@
-<!--
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Dica: Solução de problema ao configurar Kitematic/Docker</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Dica: Solução de problema ao configurar Kitematic/Docker</h1><div><div><p><small><time>June 3, 2015</time>
-|
-2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p><strong>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
-pessoas.</strong></p><p>Um projeto que estou trabalhando usa o <a href=https://www.rabbitmq.com>RabbitMQ</a> e para tentar manter o meu OS X o mais
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport
+          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
+    <meta name="description" content="My corner of the web">
+    <title>Dica: Solução de problema ao configurar Kitematic/Docker</title>
+    <link rel="author" href="/humans.txt"/>
+    <link rel="canonical" href="https://adlermedrado.com.br"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header>
+    <nav class="navbar" role="navigation">
+        <div class="navbar_left">
+            <a href="/" class="h-card" rel="me"><strong>Adler Medrado</strong></a>
+        </div>
+        <div class="navbar_right">
+            <a href="/posts">Posts</a>
+	    <a href="/now">Now</a>
+            <a href="/tags">Tags</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="section">
+    <article>
+        <div>
+            <h1>Dica: Solução de problema ao configurar Kitematic/Docker</h1>
+            <div>
+                <div>
+                    <p>
+                        <small>
+                            <time>June 3, 2015</time>
+                            |
+                            2  minutes  read
+                        </small>
+                    </p>
+                </div>
+                <span class="line_break"></span>
+            </div>
+            <div class="content">
+                <p><strong>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
+pessoas.</strong></p>
+<p>Um projeto que estou trabalhando usa o <a href="https://www.rabbitmq.com">RabbitMQ</a> e para tentar manter o meu OS X o mais
 higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós
-decidimos utilizar o <a href=https://www.docker.com/>Docker</a> e um container do RabbitMQ.</p><p>Para facilitar, existe um projeto chamado <a href=https://kitematic.com/>Kitematic</a> que auxilia na configuração do Docker e na
+decidimos utilizar o <a href="https://www.docker.com/">Docker</a> e um container do RabbitMQ.</p>
+<p>Para facilitar, existe um projeto chamado <a href="https://kitematic.com/">Kitematic</a> que auxilia na configuração do Docker e na
 instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
-precisam ser aparadas, mas no geral ele funciona bem.</p><h4 id=problema-na-instalação>Problema na instalação</h4><p>Na hora em que o Kitematic é instalado ele verifica se o Virtualbox está instalado no computador, caso não esteja, ele
+precisam ser aparadas, mas no geral ele funciona bem.</p>
+<h4 id="problema-na-instalação">Problema na instalação</h4>
+<p>Na hora em que o Kitematic é instalado ele verifica se o Virtualbox está instalado no computador, caso não esteja, ele
 baixa e faz a instalação automaticamente, após isso prossegue com a instalação, mas quando chegou em 99% ele ficou
-parado e não avançou mais, conforme a imagem abaixo:</p><p>Eu quase desisti após xingar bastante, mas então eu executei os seguintes comandos no terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>docker-machine rm -f dev
-</span></span><span style=display:flex><span>docker-machine create -d virtualbox dev
-</span></span></code></pre></div><p>E tudo passou a funcionar corretamente.</p><p>Durante o período em que eu esperava a instalação finalizar, eu abri uma issue
-no <a href=https://github.com/kitematic/kitematic>Github do projeto</a> e em seguida ao conseguir resolver eu postei a solução
-na <a href=https://github.com/kitematic/kitematic/issues/585>própria issue</a> e a fechei, como o projeto ainda está na fase beta
-é normal ter problemas e aparentemente os desenvolvedores já estão cientes deste.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/>&#8592; Segurança ou sensação de segurança?</a>
-|
-<a href=https://adlermedrado.com.br/posts/liberdade/>Liberdade &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/ | gpg --verify</em></p></div></footer></body></html><!--
------BEGIN PGP SIGNATURE-----
+parado e não avançou mais, conforme a imagem abaixo:</p>
+<p>Eu quase desisti após xingar bastante, mas então eu executei os seguintes comandos no terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker-machine rm -f dev
+</span></span><span style="display:flex;"><span>docker-machine create -d virtualbox dev
+</span></span></code></pre></div><p>E tudo passou a funcionar corretamente.</p>
+<p>Durante o período em que eu esperava a instalação finalizar, eu abri uma issue
+no <a href="https://github.com/kitematic/kitematic">Github do projeto</a> e em seguida ao conseguir resolver eu postei a solução
+na <a href="https://github.com/kitematic/kitematic/issues/585">própria issue</a> e a fechei, como o projeto ainda está na fase beta
+é normal ter problemas e aparentemente os desenvolvedores já estão cientes deste.</p>
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmf/C5cACgkQbV8aePHc
-Nh3sOxAAu3i/hkkB7wjNdFwWV/G9t9PlTQJrDghinEyuzhbZ5ybAiDahL6qMqT8L
-jH5HlY5e7XfNQSzh9wfp1mDLOIeeODDVj7hyAHWJ0wWbOSAj3AFr7B9wnzbLcwB+
-eU212d7111WEJ2UoyT5kaLkCkod3FGLsDWmdGYASQuRMb7BZP5zKdlHlD/7329iL
-fbTPbdshGNf2xLyLATIMma/p5oMjdMkhtBkvVT8Cy8n81AXqTKGz1HBj0KZqxTX4
-pWF58CldtrOdBpOHUbKUkto6yrHn1TPL1CCSVM4oHzqpgqm4oaBqa9Du7zMFcAcB
-4PxCKQH4TL6Q69rDLAxEnqV6aQLSIMfh+SQLobRXn4lzVnoaZh2ZXNc6Eu+VrZcZ
-7wapZFQSBHJfYGd5TgG8+wxgeyFG0OsO6juDvJR9dzdNuGzelu/gBMUBzJt+yZ+T
-SQia07miuvUJCdsGOLpZ2DX75UTwg3Vr6Rv6D+ymGsKyRqyCX3r5kjN55l8H0zaw
-OJ4RWHlkxQtZqMdg5VRnYwzXzx1+qIRZWEUibAMwie7BHATBhMhRPvryZvKGl6K2
-+uY4MwlOmImGwXTNY7Gp4Em9LtrYvEerff9+rVO7OAWcn7n01r0uOkwY8HYcGvHh
-QMxWB5kOsXSfuV05F1Zk+Ok+nAMmm22Tgk2aQecrIEdH3/HZd2k=
-=4K8Z
------END PGP SIGNATURE-----
--->
+            </div>
+        </div>
+    </article>
+    <div>
+        <div>
+            <div>
+                
+                <a href="http://localhost:1313/posts/seguranca-ou-sensacao-de-seguranca/">&#8592; Segurança ou sensação de segurança?</a>
+                
+                |
+                
+                <a href="http://localhost:1313/posts/liberdade/">Liberdade &#8594;</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+</main><span class="line_break"></span>
+<span class="line_break"></span>
+<footer>
+    <div>
+        <p><br />
+          <small>
+                <em>Privacy policy: this website employs no tracking.</em>
+          </small>
+        </p>
+    </div>
+    <div>
+        <p><small>&copy; 1996-2025 Adler Medrado</small></p>
+    </div>
+    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
+        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl http://localhost:1313/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/ | gpg --verify</em></p></div>
+</footer>
+</body>
+</html>

@@ -4,38 +4,46 @@ Description: "Adler Medrado's little piece of turf"
 layout: "staticpage"
 ---
 
-# Tech Enthusiast and Problem Solver
+# ⚡️ About Me
 
-Welcome to my website!
+👾 I’m Adler Medrado — also known as `spacexnu`.
 
-I’m Adler Medrado, an IT professional with over 20 years of experience. 
+Software Engineer with 20+ years writing code, defending systems, and staying ahead of hype.
 
-My journey began in my teens, building a BBS on an old PC/AT 386. I've worked with various systems, from MS-DOS to Linux.
+My journey began on a BBS I built in the 90s on a PC/AT 386 running MS-DOS. That mindset still drives everything I do: build it yourself, understand every layer, stay sovereign.
 
-I thrive in startup environments and enjoy collaborating with talented people. My expertise spans multiple industries, including finance, e-commerce, and healthcare.
+I've architected and deployed systems across finance, e-commerce, and healthcare — always with security, privacy, and performance in mind.
 
-Currently, I'm pursuing a degree in History. If you’d like to connect, check out my blog or contact me via email for a secure conversation.
+Currently working on AI-powered log analysis, NLP-based data extraction, and decentralized, censorship-resistant tools.
 
-## Find out more about me and my work:
-- [Blog](https://adlermedrado.com.br/posts)
-- [What I Use](https://adlermedrado.com.br/uses/)
-- [Current Projects](https://adlermedrado.com.br/now/)
+All while finishing a History degree and staying deeply embedded in hacker culture.
 
-## Social Media:
-- <a href="https://www.youtube.com/@adlermedrado" rel="me">Youtube</a>
-- <a href="https://x.com/adlermedrado" rel="me">Twitter</a>
-- <a href="https://linkedin.com/in/adlermedrado" rel="me">LinkedIn</a>
-- <a href="https://github.com/adlermedrado" rel="me">GitHub</a>
-- <a href="https://app.coracle.social/people/nprofile1qy2hwumn8ghj7un9d3shjtnyv9kh2uewd9hj7qgwwaehxw309ahx7uewd3hkctcqyq6z0zywwsmxr6tmaslre7vggszawshu4v6s96tt526m63vwcpnv2dwppj9" rel="me">Nostr</a>
+---
 
-## My current opensource project
-- [ShadowData](https://github.com/adlermedrado/ShadowData)
-- [Job Finder](https://github.com/adlermedrado/job_finder)
+## 🛠️ Projects
 
-## Contact:
-- Email: adler@adlermedrado.com.br (PGP/GPG encrypted for privacy) ([GPG Key](/pub-key.asc))
-- IRC: Occasionally on tilde.team’s channels
+- [ShadowData](https://github.com/spacexnu/ShadowData) – NLP for sensitive data detection
+- [log-analyzer](https://github.com/spacexnu/log-analyzer) – Real-time attack detection from logs
+- [job_finder](https://github.com/spacexnu/job_finder) – CLI tool for scraping tech jobs
 
-I’m active in communities like sdf.org and tilde.team. Visit my pages there for more details.
+---
 
-All content on this site is PGP signed for authenticity.
+## 💾 I’m active on
+
+- [GitHub](https://github.com/spacexnu)
+- [LinkedIn](https://linkedin.com/in/adlermedrado)
+- [Twitter/X](https://x.com/spacexnu)
+- [Nostr](https://nostr.build/u/spacexnu)
+- [Tilde.team](https://tilde.team) & [SDF](https://sdf.org)
+
+---
+
+## 📧 Contact
+
+- Email: [adler@adlermedrado.com.br](mailto:adler@adlermedrado.com.br)
+- GPG: `07D7 0FDB CC44 6C19 CA43 02CE 6D5F 1A78 F1DC 361D`
+- IRC: sometimes on `#tilde`
+
+---
+
+🔏 All blog posts are GPG signed. If it isn’t signed, it isn’t mine.

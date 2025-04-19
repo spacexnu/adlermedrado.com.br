@@ -1,33 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Certification on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/certification/</link>
-    <description>Recent content in Certification on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 16 Jun 2009 18:47:01 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/certification/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Vale a pena tirar certificacoes?</title>
-      <link>http://localhost:1313/posts/vale-a-pena-tirar-certificacoes/</link>
-      <pubDate>Tue, 16 Jun 2009 18:47:01 -0300</pubDate>
-      <guid>http://localhost:1313/posts/vale-a-pena-tirar-certificacoes/</guid>
-      <description>&lt;p&gt;Não é de hoje que este é um dos maiores questionamentos de quem trabalha na área de desenvolvimento de software&#xA;principalmente entre os programadores então estou escrevendo este post para tentar expôr a minha opinião sobre o&#xA;assunto.&lt;/p&gt;&#xA;&lt;p&gt;Eu sou meio suspeito para falar sobre isso pois possuo todas as certificações da Zend e pretendo em breve tirar uma&#xA;certificação Sun Java e outra Microsoft, é isso aí, o lance é ser fluente em várias linguagens… :-)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Chegou meu certificado ZCE-ZF</title>
-      <link>http://localhost:1313/posts/chegou-meu-certificado-zce-zf/</link>
-      <pubDate>Wed, 22 Apr 2009 17:56:53 -0300</pubDate>
-      <guid>http://localhost:1313/posts/chegou-meu-certificado-zce-zf/</guid>
-      <description>&lt;p&gt;A alguns dias atrás chegou pelo correio o meu certificado ZCE-ZF.&lt;/p&gt;&#xA;&lt;p&gt;Eu achei ele legal e o adesivo que veio com ele também, mas ainda acho o certificado de PHP 5 mais bonito, não que o de&#xA;Zend Framework seja feio mas sabe como é gosto né? Mas uma coisa bacana que tem nos dois é que eles são assinados pelo&#xA;Andi Gutmans e Zeev Suraski. :-)&lt;/p&gt;&#xA;&lt;p&gt;Da mesma forma quando tirei certificação ZCE PHP 5 a Zend mandou um adesivo com o selo da certificação e o adesivo é bem&#xA;bacana.&#xA;Os adesivos do selo da certificação PHP são maiores (eu tenho dois, o mais antigo e o mais novo) do que o do Zend&#xA;Framework e por serem tão grandes eu ainda não achei um bom lugar para fixa-los. O do ZF não deixa de ser grande mas é&#xA;menor do que os outros.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Enfim Zend Certified Engineer #2</title>
-      <link>http://localhost:1313/posts/enfim-zend-certified-engineer-2/</link>
-      <pubDate>Tue, 17 Mar 2009 03:51:08 -0300</pubDate>
-      <guid>http://localhost:1313/posts/enfim-zend-certified-engineer-2/</guid>
-      <description>&lt;p&gt;Quem acompanha meu blog a mais tempo deve se lembrar de quando usei este título pela primeira vez. Foi no dia&#xA;21/09/2007, um dia após eu fazer o exame de certificação de PHP 5 da Zend (ZCE PHP 5), quem não se lembra pode ver o&#xA;post aqui.&lt;/p&gt;&#xA;&lt;p&gt;Mas porque o mesmo título neste post? Porque ontem eu fiz o exame para a certificação de Zend Framework (ZCE ZF) e&#xA;graças a D’us, que me deu esta oportunidade, eu passei.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Certification on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/certification/</link><description>Recent content in Certification on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 16 Jun 2009 18:47:01 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/certification/index.xml" rel="self" type="application/rss+xml"/><item><title>Vale a pena tirar certificacoes?</title><link>https://adlermedrado.com.br/posts/vale-a-pena-tirar-certificacoes/</link><pubDate>Tue, 16 Jun 2009 18:47:01 -0300</pubDate><guid>https://adlermedrado.com.br/posts/vale-a-pena-tirar-certificacoes/</guid><description>&lt;p>Não é de hoje que este é um dos maiores questionamentos de quem trabalha na área de desenvolvimento de software
+principalmente entre os programadores então estou escrevendo este post para tentar expôr a minha opinião sobre o
+assunto.&lt;/p>
+&lt;p>Eu sou meio suspeito para falar sobre isso pois possuo todas as certificações da Zend e pretendo em breve tirar uma
+certificação Sun Java e outra Microsoft, é isso aí, o lance é ser fluente em várias linguagens… :-)&lt;/p></description></item><item><title>Chegou meu certificado ZCE-ZF</title><link>https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/</link><pubDate>Wed, 22 Apr 2009 17:56:53 -0300</pubDate><guid>https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/</guid><description>&lt;p>A alguns dias atrás chegou pelo correio o meu certificado ZCE-ZF.&lt;/p>
+&lt;p>Eu achei ele legal e o adesivo que veio com ele também, mas ainda acho o certificado de PHP 5 mais bonito, não que o de
+Zend Framework seja feio mas sabe como é gosto né? Mas uma coisa bacana que tem nos dois é que eles são assinados pelo
+Andi Gutmans e Zeev Suraski. :-)&lt;/p>
+&lt;p>Da mesma forma quando tirei certificação ZCE PHP 5 a Zend mandou um adesivo com o selo da certificação e o adesivo é bem
+bacana.
+Os adesivos do selo da certificação PHP são maiores (eu tenho dois, o mais antigo e o mais novo) do que o do Zend
+Framework e por serem tão grandes eu ainda não achei um bom lugar para fixa-los. O do ZF não deixa de ser grande mas é
+menor do que os outros.&lt;/p></description></item><item><title>Enfim Zend Certified Engineer #2</title><link>https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/</link><pubDate>Tue, 17 Mar 2009 03:51:08 -0300</pubDate><guid>https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/</guid><description>&lt;p>Quem acompanha meu blog a mais tempo deve se lembrar de quando usei este título pela primeira vez. Foi no dia
+21/09/2007, um dia após eu fazer o exame de certificação de PHP 5 da Zend (ZCE PHP 5), quem não se lembra pode ver o
+post aqui.&lt;/p>
+&lt;p>Mas porque o mesmo título neste post? Porque ontem eu fiz o exame para a certificação de Zend Framework (ZCE ZF) e
+graças a D’us, que me deu esta oportunidade, eu passei.&lt;/p></description></item></channel></rss>

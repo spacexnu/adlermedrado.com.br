@@ -1,33 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Gpg on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/gpg/</link>
-    <description>Recent content in Gpg on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 13 Oct 2024 15:53:53 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/gpg/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Shadowdata Updates</title>
-      <link>http://localhost:1313/posts/shadowdata-updates/</link>
-      <pubDate>Sun, 13 Oct 2024 15:53:53 -0300</pubDate>
-      <guid>http://localhost:1313/posts/shadowdata-updates/</guid>
-      <description>&lt;p&gt;Yesterday, &lt;a href=&#34;https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/&#34;&gt;I published a blog&lt;/a&gt; post introducing my new open-source project, ShadowData.&lt;/p&gt;&#xA;&lt;p&gt;This post is just to inform anyone interested that I have made some updates today.&lt;/p&gt;&#xA;&lt;p&gt;New Features Added to the Project:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Email address anonymization&lt;/li&gt;&#xA;&lt;li&gt;Phone number anonymization&lt;/li&gt;&#xA;&lt;li&gt;Symmetric cryptography for encryption and decryption&lt;/li&gt;&#xA;&lt;li&gt;Minor improvements to tests and code quality&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You can look the code at the &lt;a href=&#34;https://github.com/adlermedrado/ShadowData/&#34;&gt;Github repository&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;See you.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Shadowdata Sensitive Data Handler Python Library</title>
-      <link>http://localhost:1313/posts/shadowdata-sensitive-data-handler/</link>
-      <pubDate>Sat, 12 Oct 2024 21:23:34 -0300</pubDate>
-      <guid>http://localhost:1313/posts/shadowdata-sensitive-data-handler/</guid>
-      <description>&lt;p&gt;I am deeply concerned about how to handle sensitive data in the projects I work on. Nowadays, there are laws in various countries addressing this issue, and the topic becomes increasingly important as time goes on.&lt;/p&gt;&#xA;&lt;p&gt;Therefore, I decided to create a Python library that can help me deal with scenarios where it is necessary to process data to prevent any individual from being identified if the information is accessed. The library also handles data transformations, encryption, and the detection of sensitive personal data.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Assinando páginas HTML com GPG</title>
-      <link>http://localhost:1313/posts/assinando-html-com-gpg/</link>
-      <pubDate>Sun, 07 Jan 2024 11:44:54 -0300</pubDate>
-      <guid>http://localhost:1313/posts/assinando-html-com-gpg/</guid>
-      <description>&lt;p&gt;Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava&#xA;muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;No passado eu já utilizei o &lt;a href=&#34;https://getpelican.com&#34;&gt;Pelican&lt;/a&gt;, o &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; e o Dangolino,&#xA;este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.&#xA;Se não me engano, há posts aqui falando sobre eles.&lt;/p&gt;&#xA;&lt;h2 id=&#34;por-que-assinar-as-páginas&#34;&gt;Por que assinar as páginas?&lt;/h2&gt;&#xA;&lt;p&gt;Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem&#xA;criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gpg on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/gpg/</link><description>Recent content in Gpg on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 13 Oct 2024 15:53:53 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/gpg/index.xml" rel="self" type="application/rss+xml"/><item><title>Shadowdata Updates</title><link>https://adlermedrado.com.br/posts/shadowdata-updates/</link><pubDate>Sun, 13 Oct 2024 15:53:53 -0300</pubDate><guid>https://adlermedrado.com.br/posts/shadowdata-updates/</guid><description>&lt;p>Yesterday, &lt;a href="https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/">I published a blog&lt;/a> post introducing my new open-source project, ShadowData.&lt;/p>
+&lt;p>This post is just to inform anyone interested that I have made some updates today.&lt;/p>
+&lt;p>New Features Added to the Project:&lt;/p>
+&lt;ul>
+&lt;li>Email address anonymization&lt;/li>
+&lt;li>Phone number anonymization&lt;/li>
+&lt;li>Symmetric cryptography for encryption and decryption&lt;/li>
+&lt;li>Minor improvements to tests and code quality&lt;/li>
+&lt;/ul>
+&lt;p>You can look the code at the &lt;a href="https://github.com/adlermedrado/ShadowData/">Github repository&lt;/a>.&lt;/p>
+&lt;p>See you.&lt;/p></description></item><item><title>Shadowdata Sensitive Data Handler Python Library</title><link>https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/</link><pubDate>Sat, 12 Oct 2024 21:23:34 -0300</pubDate><guid>https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/</guid><description>&lt;p>I am deeply concerned about how to handle sensitive data in the projects I work on. Nowadays, there are laws in various countries addressing this issue, and the topic becomes increasingly important as time goes on.&lt;/p>
+&lt;p>Therefore, I decided to create a Python library that can help me deal with scenarios where it is necessary to process data to prevent any individual from being identified if the information is accessed. The library also handles data transformations, encryption, and the detection of sensitive personal data.&lt;/p></description></item><item><title>Assinando páginas HTML com GPG</title><link>https://adlermedrado.com.br/posts/assinando-html-com-gpg/</link><pubDate>Sun, 07 Jan 2024 11:44:54 -0300</pubDate><guid>https://adlermedrado.com.br/posts/assinando-html-com-gpg/</guid><description>&lt;p>Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
+muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o &lt;a href="https://gohugo.io">Hugo&lt;/a>.&lt;/p>
+&lt;p>No passado eu já utilizei o &lt;a href="https://getpelican.com">Pelican&lt;/a>, o &lt;a href="https://jekyllrb.com">Jekyll&lt;/a> e o Dangolino,
+este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.
+Se não me engano, há posts aqui falando sobre eles.&lt;/p>
+&lt;h2 id="por-que-assinar-as-páginas">Por que assinar as páginas?&lt;/h2>
+&lt;p>Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
+criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.&lt;/p></description></item></channel></rss>

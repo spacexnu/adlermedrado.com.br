@@ -1,19 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Wordpress on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/wordpress/</link>
-    <description>Recent content in Wordpress on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 15 Feb 2009 19:49:58 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Meu primeiro plugin para Wordpress</title>
-      <link>http://localhost:1313/posts/meu-primeiro-plugin-para-wordpress/</link>
-      <pubDate>Sun, 15 Feb 2009 19:49:58 -0300</pubDate>
-      <guid>http://localhost:1313/posts/meu-primeiro-plugin-para-wordpress/</guid>
-      <description>&lt;p&gt;Eu sempre tive a curiosidade de saber como escrever um plugin para wordpress mas meu tempo anda escasso e eu acabei&#xA;protelando por algum tempo até ontem, quando arranjei um tempinho para ver como é que era.&lt;/p&gt;&#xA;&lt;p&gt;Tudo começou quando eu fui olhar no meu kaluach (um ótimo software de calendário judaico) para pesquisar qual era a data&#xA;correspondente a 24/02/2004 (uma data infeliz na minha vida, quem é mais chegado a mim sabe do que estou falando) no&#xA;calendário judaico. Nessa hora me dei conta de que eu poderia escrever um plugin para o WP que mostrasse as datas do&#xA;post no formato gregoriano, judaico transliterado e em caracteres do idioma hebraico. Como eu já tinha escrito um script&#xA;a uns 4 anos atrás que fazia quase isso tudo, eu apenas o adaptei para mostrar a data em caracteres hebraicos e o joguei&#xA;dentro da estrutura de plugin do wordpress.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wordpress on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/wordpress/</link><description>Recent content in Wordpress on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 15 Feb 2009 19:49:58 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/wordpress/index.xml" rel="self" type="application/rss+xml"/><item><title>Meu primeiro plugin para Wordpress</title><link>https://adlermedrado.com.br/posts/meu-primeiro-plugin-para-wordpress/</link><pubDate>Sun, 15 Feb 2009 19:49:58 -0300</pubDate><guid>https://adlermedrado.com.br/posts/meu-primeiro-plugin-para-wordpress/</guid><description>&lt;p>Eu sempre tive a curiosidade de saber como escrever um plugin para wordpress mas meu tempo anda escasso e eu acabei
+protelando por algum tempo até ontem, quando arranjei um tempinho para ver como é que era.&lt;/p>
+&lt;p>Tudo começou quando eu fui olhar no meu kaluach (um ótimo software de calendário judaico) para pesquisar qual era a data
+correspondente a 24/02/2004 (uma data infeliz na minha vida, quem é mais chegado a mim sabe do que estou falando) no
+calendário judaico. Nessa hora me dei conta de que eu poderia escrever um plugin para o WP que mostrasse as datas do
+post no formato gregoriano, judaico transliterado e em caracteres do idioma hebraico. Como eu já tinha escrito um script
+a uns 4 anos atrás que fazia quase isso tudo, eu apenas o adaptei para mostrar a data em caracteres hebraicos e o joguei
+dentro da estrutura de plugin do wordpress.&lt;/p></description></item></channel></rss>

@@ -1,114 +1,60 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport
-          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
-    <meta name="description" content="My corner of the web">
-    <title>Install lxml on MacBook with Apple Silicon</title>
-    <link rel="author" href="/humans.txt"/>
-    <link rel="canonical" href="https://adlermedrado.com.br"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header>
-    <nav class="navbar" role="navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me"><strong>Adler Medrado</strong></a>
-        </div>
-        <div class="navbar_right">
-            <a href="/posts">Posts</a>
-	    <a href="/now">Now</a>
-            <a href="/tags">Tags</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Install lxml on MacBook with Apple Silicon</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>January 3, 2023</time>
-                            |
-                            1  minute  read
-                        </small>
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p><img src="/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png" alt="pip install error when installing lxml"></p>
-<p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Building wheels <span style="color:#66d9ef">for</span> collected packages: xmlsec  
-</span></span><span style="display:flex;"><span>Building wheel <span style="color:#66d9ef">for</span> xmlsec <span style="color:#f92672">(</span>pyproject.toml<span style="color:#f92672">)</span> … error  
-</span></span><span style="display:flex;"><span>error: subprocess-exited-with-error  
-</span></span><span style="display:flex;"><span>× Building wheel <span style="color:#66d9ef">for</span> xmlsec <span style="color:#f92672">(</span>pyproject.toml<span style="color:#f92672">)</span> did not run successfully.  
-</span></span><span style="display:flex;"><span>│ exit code: <span style="color:#ae81ff">1</span>  
-</span></span><span style="display:flex;"><span>╰─&gt; <span style="color:#f92672">[</span><span style="color:#ae81ff">13</span> lines of output<span style="color:#f92672">]</span>  
-</span></span><span style="display:flex;"><span>running bdist_wheel  
-</span></span><span style="display:flex;"><span>running build  
-</span></span><span style="display:flex;"><span>running build_py  
-</span></span><span style="display:flex;"><span>creating build  
-</span></span><span style="display:flex;"><span>creating build/lib.macosx-13.0-arm64-cpython-310  
-</span></span><span style="display:flex;"><span>creating build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style="display:flex;"><span>copying src/xmlsec/py.typed -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style="display:flex;"><span>copying src/xmlsec/tree.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style="display:flex;"><span>copying src/xmlsec/**init**.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style="display:flex;"><span>copying src/xmlsec/constants.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style="display:flex;"><span>copying src/xmlsec/template.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style="display:flex;"><span>running build_ext  
-</span></span><span style="display:flex;"><span>error: xmlsec1 is not installed or not in path.  
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>end of output<span style="color:#f92672">]</span>  
-</span></span><span style="display:flex;"><span>note: This error originates from a subprocess, and is likely not a problem with pip.  
-</span></span><span style="display:flex;"><span>ERROR: Failed building wheel <span style="color:#66d9ef">for</span> xmlsec  
-</span></span><span style="display:flex;"><span>Failed to build xmlsec  
-</span></span><span style="display:flex;"><span>ERROR: Could not build wheels <span style="color:#66d9ef">for</span> xmlsec, which is required to install pyproject.toml-based projects
-</span></span></code></pre></div><p>So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I needed to execute the following commands:</p>
-<p>Install some dependencies on OS level:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install libxml2 libxmlsec1 pkg-config
-</span></span></code></pre></div><p>Set the dependencies&rsquo; path:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export LDFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-L/opt/homebrew/opt/libxml2/lib&#34;</span>  
-</span></span><span style="display:flex;"><span>export CPPFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-I/opt/homebrew/opt/libxml2/include&#34;</span>
-</span></span></code></pre></div><p>Run the pip command again:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install lxml
-</span></span></code></pre></div><p>That&rsquo;s it.</p>
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
 
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/enabling-click-and-drag-on-macbook/">&#8592; Enabling Click and Drag on MacBook</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/ferramentas-para-uso-diario/">Ferramentas para uso diário &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
+- -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Install lxml on MacBook with Apple Silicon</title>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/now>Now</a>
+<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
+|
+1 minute read</small></p></div><span class=line_break></span></div><div class=content><p><img src=/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png alt="pip install error when installing lxml"></p><p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Building wheels <span style=color:#66d9ef>for</span> collected packages: xmlsec  
+</span></span><span style=display:flex><span>Building wheel <span style=color:#66d9ef>for</span> xmlsec <span style=color:#f92672>(</span>pyproject.toml<span style=color:#f92672>)</span> … error  
+</span></span><span style=display:flex><span>error: subprocess-exited-with-error  
+</span></span><span style=display:flex><span>× Building wheel <span style=color:#66d9ef>for</span> xmlsec <span style=color:#f92672>(</span>pyproject.toml<span style=color:#f92672>)</span> did not run successfully.  
+</span></span><span style=display:flex><span>│ exit code: <span style=color:#ae81ff>1</span>  
+</span></span><span style=display:flex><span>╰─&gt; <span style=color:#f92672>[</span><span style=color:#ae81ff>13</span> lines of output<span style=color:#f92672>]</span>  
+</span></span><span style=display:flex><span>running bdist_wheel  
+</span></span><span style=display:flex><span>running build  
+</span></span><span style=display:flex><span>running build_py  
+</span></span><span style=display:flex><span>creating build  
+</span></span><span style=display:flex><span>creating build/lib.macosx-13.0-arm64-cpython-310  
+</span></span><span style=display:flex><span>creating build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style=display:flex><span>copying src/xmlsec/py.typed -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style=display:flex><span>copying src/xmlsec/tree.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style=display:flex><span>copying src/xmlsec/**init**.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style=display:flex><span>copying src/xmlsec/constants.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style=display:flex><span>copying src/xmlsec/template.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style=display:flex><span>running build_ext  
+</span></span><span style=display:flex><span>error: xmlsec1 is not installed or not in path.  
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>end of output<span style=color:#f92672>]</span>  
+</span></span><span style=display:flex><span>note: This error originates from a subprocess, and is likely not a problem with pip.  
+</span></span><span style=display:flex><span>ERROR: Failed building wheel <span style=color:#66d9ef>for</span> xmlsec  
+</span></span><span style=display:flex><span>Failed to build xmlsec  
+</span></span><span style=display:flex><span>ERROR: Could not build wheels <span style=color:#66d9ef>for</span> xmlsec, which is required to install pyproject.toml-based projects
+</span></span></code></pre></div><p>So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I needed to execute the following commands:</p><p>Install some dependencies on OS level:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>brew install libxml2 libxmlsec1 pkg-config
+</span></span></code></pre></div><p>Set the dependencies&rsquo; path:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>export LDFLAGS<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;-L/opt/homebrew/opt/libxml2/lib&#34;</span>  
+</span></span><span style=display:flex><span>export CPPFLAGS<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;-I/opt/homebrew/opt/libxml2/include&#34;</span>
+</span></span></code></pre></div><p>Run the pip command again:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>pip install lxml
+</span></span></code></pre></div><p>That&rsquo;s it.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/>&#8592; Enabling Click and Drag on MacBook</a>
+|
+<a href=https://adlermedrado.com.br/posts/ferramentas-para-uso-diario/>Ferramentas para uso diário &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
 
-</main><span class="line_break"></span>
-<span class="line_break"></span>
-<footer>
-    <div>
-        <p><br />
-          <small>
-                <em>Privacy policy: this website employs no tracking.</em>
-          </small>
-        </p>
-    </div>
-    <div>
-        <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-    </div>
-    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
-        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl http://localhost:1313/posts/install-lxml-on-macbook-with-apple-silicon/ | gpg --verify</em></p></div>
-</footer>
-</body>
-</html>
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgC7IIACgkQbV8aePHc
+Nh3NwBAAwKIuCG3YbMYo3F+vbVXGGcDZ8yuB9Zj/YrCtRQpi5xgjtZ1pnoYM9U3L
+tv7uRv1rKjEta8s331ltHJlaY5xqFjJ8xGS0VFat0vcAoDLe3Uml1+8PEm4ClWNt
+Y/rTpDhF+dAhG0OHi4R6mN/2XvpxlzKL4iiB4VJzRR2lJqceq7aErPh4mi9Hy20v
+DZkH2kLvnoCfvIQZteJHvhsyzr/m+Bvjm6EY+0G7CQvGu2WJdT9XsbosU0VHpPGb
+ANUsdF3FotgRpUn2JMSFrj22S+dPf4wErsswHH0NCYlzNhufsKiFZLTFaWp/bM6f
+BKDL664XWyiMqddDFWW3LOw0+s1fFaPenSq8v3bPM8c69tgXKuFZl0eOqp/YToUJ
+eFNygab4JLqBt36pQAka2C7qywlxl8MDMWJqfWXvAFSdoYkcrMZBruyHaMcN8pRF
+9O680uwtJECi+rw2WJFUqM88JuWD7iv2oad3H9WIphkHHEy8HbKkQO1wNab6drEF
+f6MxioH0Ht8yDCF6unjqGNKs4P7y5FtjcVkHZn5D4INywnBcHEKHN9wLjOyMGUgU
+ZC8LKO/IM9qqpkI46QM6O7URcZj74vjzIWgtJnFNoknUrRUITIPdueVllWoc502S
+sU8fcuXXhwXkGfe2hFaf36lnBp/wzYksRKLZZC0ZvBzwsv9XcAo=
+=c19F
+-----END PGP SIGNATURE-----
+-->

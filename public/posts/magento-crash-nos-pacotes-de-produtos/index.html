@@ -1,90 +1,39 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport
-          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
-    <meta name="description" content="My corner of the web">
-    <title>Magento: Crash nos pacotes de produtos</title>
-    <link rel="author" href="/humans.txt"/>
-    <link rel="canonical" href="https://adlermedrado.com.br"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header>
-    <nav class="navbar" role="navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me"><strong>Adler Medrado</strong></a>
-        </div>
-        <div class="navbar_right">
-            <a href="/posts">Posts</a>
-	    <a href="/now">Now</a>
-            <a href="/tags">Tags</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Magento: Crash nos pacotes de produtos</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>August 12, 2015</time>
-                            |
-                            1  minute  read
-                        </small>
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Esta é a primeira dica sobre <a href="http://magento.com" title="Magento Official Website">Magento</a> publicada por mim, acredito que
-isso se tornará algo recorrente daqui para a frente.</p>
-<p>Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Magento: Crash nos pacotes de produtos</title>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/now>Now</a>
+<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Magento: Crash nos pacotes de produtos</h1><div><div><p><small><time>August 12, 2015</time>
+|
+1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Esta é a primeira dica sobre <a href=http://magento.com title="Magento Official Website">Magento</a> publicada por mim, acredito que
+isso se tornará algo recorrente daqui para a frente.</p><p>Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na
 hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto
-as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo.</p>
-<p>Depois de gastar um tempinho debugando o problema (read the freaking logs), percebi que isso se dava pelo fato de a tela
+as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo.</p><p>Depois de gastar um tempinho debugando o problema (read the freaking logs), percebi que isso se dava pelo fato de a tela
 onde os produtos virtuais são associados ao pacote possuir muitos campos de formulário (por produto) e somando uma
 quantidade grande de produtos, ocorria um erro causado pela limitação padrão determinada pela
-diretiva <a href="http://php.net/manual/en/info.configuration.php#ini.max-input-vars" title="Diretiva max_input_vars">max_input_vars</a>
-do <a href="http://www.php.net" title="PHP Oficial Website">PHP</a>.</p>
-<p>Para resolver o problema, bastou aumentar o valor desta diretiva e <em>voilá</em>, tudo voltou a funcionar como esperado.</p>
+diretiva <a href=http://php.net/manual/en/info.configuration.php#ini.max-input-vars title="Diretiva max_input_vars">max_input_vars</a>
+do <a href=http://www.php.net title="PHP Oficial Website">PHP</a>.</p><p>Para resolver o problema, bastou aumentar o valor desta diretiva e <em>voilá</em>, tudo voltou a funcionar como esperado.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/>&#8592; Atom e PHP: Em busca da configuração perfeita</a>
+|
+<a href=https://adlermedrado.com.br/posts/reflexao-diaria/>Reflexão diária &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/magento-crash-nos-pacotes-de-produtos/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
 
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/atom-e-php-em-busca-da-configuracao-perfeita/">&#8592; Atom e PHP: Em busca da configuração perfeita</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/reflexao-diaria/">Reflexão diária &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><span class="line_break"></span>
-<span class="line_break"></span>
-<footer>
-    <div>
-        <p><br />
-          <small>
-                <em>Privacy policy: this website employs no tracking.</em>
-          </small>
-        </p>
-    </div>
-    <div>
-        <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-    </div>
-    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
-        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl http://localhost:1313/posts/magento-crash-nos-pacotes-de-produtos/ | gpg --verify</em></p></div>
-</footer>
-</body>
-</html>
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgC7IoACgkQbV8aePHc
+Nh2Z9RAA0agQnOtIw7M+f+LWDoN9CSFGCpcYVqLweYqUa/qQMtQmaMeqpHsVcfLu
+nXd3nQaKQs4znRjLQnyA/XlqGzsfMXBLbtAMVF+ZiWKPjJHF6NRgFfc3N+naI/K3
+zagrxenr9T1oK52R0YS4he7GN9bZkr3njvlAvkO5SLEiQinMT5TlbaoKt//5dOqV
+eKetYgTmvABzVLgEV/Vj7thS0R5Ht2KZ+0mmogSFhsLrYgK2E297QsnObi0xdwZg
+DKtWYKQiTi/xy+rd08xMdUU2OaXfS36b29bwsLMiaaAAH0EcO4k/YolrfcujIdii
+rDutNNUHREXWS3W0cbA/yd4/La83t6o4UNbf4ye9BPC+Oo/k/ykwYhbbSlyE0dc0
+s+KSdSdmqmIdioLh79buTeysb2fjvdIpH69tmbr7kPZX1erVdCR/XzaECtGudurM
+77IgmVdmdgYbLJzais6PgGu9WFZXsAucByMwubzGZt9m0slDUwSo3+yDsQ1CuzH9
+6yixuZ7M5V+x+kqXRErJXh2DV9AVPXWN1Z6q9OhFNwXfUyyscww5EGm5hGYeknUz
+OrfpRFDBPHhu4rELEaOAmeyan8MD4dIjqEC6R0SA90ZGeIxVr15uH/H8gB2sqqYp
+KsKH8p2YxDbO8FruPlQXnuEBQ93aaX+6hjwsmwRS42brj9pBfvo=
+=yp8H
+-----END PGP SIGNATURE-----
+-->

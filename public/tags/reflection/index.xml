@@ -1,19 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Reflection on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/reflection/</link>
-    <description>Recent content in Reflection on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Places I Never Returned To, But Still Live in Me</title>
-      <link>http://localhost:1313/posts/the-places-i-never-returned-to/</link>
-      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/the-places-i-never-returned-to/</guid>
-      <description>&lt;p&gt;There are places I never stepped in again, but they still live in me.&lt;br&gt;&#xA;Dark rooms lit by the cold glow of a CRT monitor.&lt;br&gt;&#xA;The light of the modem blinking like a lighthouse in the silent dawn.&lt;br&gt;&#xA;No one around. Just me and some band screaming things I barely understood — but deeply felt.&lt;/p&gt;&#xA;&lt;p&gt;It wasn’t sadness. It was solitude.&lt;br&gt;&#xA;But it was mine. Tamed, familiar.&lt;br&gt;&#xA;I learned to talk to it when the rest of the world only wanted noise.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reflection on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/reflection/</link><description>Recent content in Reflection on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/reflection/index.xml" rel="self" type="application/rss+xml"/><item><title>The Places I Never Returned To, But Still Live in Me</title><link>https://adlermedrado.com.br/posts/the-places-i-never-returned-to/</link><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/the-places-i-never-returned-to/</guid><description>&lt;p>There are places I never stepped in again, but they still live in me.&lt;br>
+Dark rooms lit by the cold glow of a CRT monitor.&lt;br>
+The light of the modem blinking like a lighthouse in the silent dawn.&lt;br>
+No one around. Just me and some band screaming things I barely understood — but deeply felt.&lt;/p>
+&lt;p>It wasn’t sadness. It was solitude.&lt;br>
+But it was mine. Tamed, familiar.&lt;br>
+I learned to talk to it when the rest of the world only wanted noise.&lt;/p></description></item></channel></rss>

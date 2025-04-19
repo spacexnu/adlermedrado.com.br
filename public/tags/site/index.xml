@@ -1,47 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Site on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/site/</link>
-    <description>Recent content in Site on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 07 Jan 2024 11:44:54 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/site/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Assinando páginas HTML com GPG</title>
-      <link>http://localhost:1313/posts/assinando-html-com-gpg/</link>
-      <pubDate>Sun, 07 Jan 2024 11:44:54 -0300</pubDate>
-      <guid>http://localhost:1313/posts/assinando-html-com-gpg/</guid>
-      <description>&lt;p&gt;Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava&#xA;muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;No passado eu já utilizei o &lt;a href=&#34;https://getpelican.com&#34;&gt;Pelican&lt;/a&gt;, o &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; e o Dangolino,&#xA;este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.&#xA;Se não me engano, há posts aqui falando sobre eles.&lt;/p&gt;&#xA;&lt;h2 id=&#34;por-que-assinar-as-páginas&#34;&gt;Por que assinar as páginas?&lt;/h2&gt;&#xA;&lt;p&gt;Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem&#xA;criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Planet Adler</title>
-      <link>http://localhost:1313/posts/planet-adler/</link>
-      <pubDate>Thu, 22 May 2008 11:16:52 -0300</pubDate>
-      <guid>http://localhost:1313/posts/planet-adler/</guid>
-      <description>&lt;p&gt;Publiquei a alguns minutos o planet adler que consiste em um espaço no meu site onde eu mostro o último post de blogs&#xA;que eu considero relevantes.&lt;/p&gt;&#xA;&lt;p&gt;Eu acho interessante fazer algo do gênero por alguns motivos:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mostro aos visitantes do meu site os posts de blogs que considero interessantes. Difundindo a informação.&lt;/li&gt;&#xA;&lt;li&gt;Divulgo a outras pessoas os posts que considero interessantes, em alguns casos, as fontes para posts do meu próprio&#xA;blog.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Espero que você goste deste novo espaço e caso deseje que seu blog seja listado no meu blogroll, me envie um e-mail para&#xA;adlermedrado arroba gmail ponto com.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Mudança de endereço realizada</title>
-      <link>http://localhost:1313/posts/mudanca-de-endereco-realizada/</link>
-      <pubDate>Fri, 09 May 2008 09:09:05 -0300</pubDate>
-      <guid>http://localhost:1313/posts/mudanca-de-endereco-realizada/</guid>
-      <description>&lt;p&gt;Como havia informado anteriormente, eu mudei meu blog de endereço. O novo endereço é &lt;a href=&#34;http://adlermedrado.com.br/blog&#34;&gt;http://adlermedrado.com.br/blog&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Eu criei também um site no endereço &lt;a href=&#34;http://www.adlermedrado.com.br&#34;&gt;http://www.adlermedrado.com.br&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;O Objetivo dessa mudança foi principalmente separar&#xA;meu blog do endereço da minha empresa e a criação do site, foi para retirar do blog alguns conteúdos que ao meu ver não&#xA;cabiam nele. Dessa maneira, meu blog continuará a existir, porém como ferramenta para inclusão de conteúdo apenas.&lt;/p&gt;&#xA;&lt;p&gt;Eu pretendo iniciar em breve um tutorial sobre Zend Framework e todas as lições serão inclusas no blog.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Atualizacao No Site</title>
-      <link>http://localhost:1313/posts/atualizacao-no-site/</link>
-      <pubDate>Fri, 09 May 2008 03:06:57 -0300</pubDate>
-      <guid>http://localhost:1313/posts/atualizacao-no-site/</guid>
-      <description>&lt;p&gt;Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.&lt;/p&gt;&#xA;&lt;p&gt;O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.&lt;/p&gt;&#xA;&lt;p&gt;Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,&#xA;&lt;strong&gt;Zend_Services_Flickr&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>O endereço do meu blog irá mudar</title>
-      <link>http://localhost:1313/posts/o-endereco-do-meu-blog-ira-mudar/</link>
-      <pubDate>Wed, 07 May 2008 22:02:25 -0300</pubDate>
-      <guid>http://localhost:1313/posts/o-endereco-do-meu-blog-ira-mudar/</guid>
-      <description>&lt;p&gt;Depois de alguns anos com meu blog na URL &lt;a href=&#34;http://neshertech.net/adler&#34;&gt;http://neshertech.net/adler&lt;/a&gt;, irei movê-lo para um novo endereço.&lt;/p&gt;&#xA;&lt;p&gt;Esta URL (neshertech.net) eu registrei para colocar o site da minha empresa (que eu ainda estou elaborando), porém,&#xA;aproveitei a infra-estrutura para hospedar o meu blog, mas essa semana eu registrei o domínio &lt;a href=&#34;http://adlermedrado.com.br&#34;&gt;http://adlermedrado.com.br&lt;/a&gt;&#xA;que será utilizado para colocar meu blog e um site novo que implementarei para colocar meus projetos pessoais, minhas&#xA;idéias, galeria de fotos e etc. Dessa forma, irei separar o meu projeto pessoal do meu projeto profissional.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Site on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/site/</link><description>Recent content in Site on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 07 Jan 2024 11:44:54 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/site/index.xml" rel="self" type="application/rss+xml"/><item><title>Assinando páginas HTML com GPG</title><link>https://adlermedrado.com.br/posts/assinando-html-com-gpg/</link><pubDate>Sun, 07 Jan 2024 11:44:54 -0300</pubDate><guid>https://adlermedrado.com.br/posts/assinando-html-com-gpg/</guid><description>&lt;p>Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
+muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o &lt;a href="https://gohugo.io">Hugo&lt;/a>.&lt;/p>
+&lt;p>No passado eu já utilizei o &lt;a href="https://getpelican.com">Pelican&lt;/a>, o &lt;a href="https://jekyllrb.com">Jekyll&lt;/a> e o Dangolino,
+este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.
+Se não me engano, há posts aqui falando sobre eles.&lt;/p>
+&lt;h2 id="por-que-assinar-as-páginas">Por que assinar as páginas?&lt;/h2>
+&lt;p>Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
+criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.&lt;/p></description></item><item><title>Planet Adler</title><link>https://adlermedrado.com.br/posts/planet-adler/</link><pubDate>Thu, 22 May 2008 11:16:52 -0300</pubDate><guid>https://adlermedrado.com.br/posts/planet-adler/</guid><description>&lt;p>Publiquei a alguns minutos o planet adler que consiste em um espaço no meu site onde eu mostro o último post de blogs
+que eu considero relevantes.&lt;/p>
+&lt;p>Eu acho interessante fazer algo do gênero por alguns motivos:&lt;/p>
+&lt;ul>
+&lt;li>Mostro aos visitantes do meu site os posts de blogs que considero interessantes. Difundindo a informação.&lt;/li>
+&lt;li>Divulgo a outras pessoas os posts que considero interessantes, em alguns casos, as fontes para posts do meu próprio
+blog.&lt;/li>
+&lt;/ul>
+&lt;p>Espero que você goste deste novo espaço e caso deseje que seu blog seja listado no meu blogroll, me envie um e-mail para
+adlermedrado arroba gmail ponto com.&lt;/p></description></item><item><title>Mudança de endereço realizada</title><link>https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/</link><pubDate>Fri, 09 May 2008 09:09:05 -0300</pubDate><guid>https://adlermedrado.com.br/posts/mudanca-de-endereco-realizada/</guid><description>&lt;p>Como havia informado anteriormente, eu mudei meu blog de endereço. O novo endereço é &lt;a href="http://adlermedrado.com.br/blog">http://adlermedrado.com.br/blog&lt;/a>.&lt;/p>
+&lt;p>Eu criei também um site no endereço &lt;a href="http://www.adlermedrado.com.br">http://www.adlermedrado.com.br&lt;/a>.&lt;/p>
+&lt;p>O Objetivo dessa mudança foi principalmente separar
+meu blog do endereço da minha empresa e a criação do site, foi para retirar do blog alguns conteúdos que ao meu ver não
+cabiam nele. Dessa maneira, meu blog continuará a existir, porém como ferramenta para inclusão de conteúdo apenas.&lt;/p>
+&lt;p>Eu pretendo iniciar em breve um tutorial sobre Zend Framework e todas as lições serão inclusas no blog.&lt;/p></description></item><item><title>Atualizacao No Site</title><link>https://adlermedrado.com.br/posts/atualizacao-no-site/</link><pubDate>Fri, 09 May 2008 03:06:57 -0300</pubDate><guid>https://adlermedrado.com.br/posts/atualizacao-no-site/</guid><description>&lt;p>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.&lt;/p>
+&lt;p>O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.&lt;/p>
+&lt;p>Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
+&lt;strong>Zend_Services_Flickr&lt;/strong>.&lt;/p>
+&lt;p>Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:&lt;/p></description></item><item><title>O endereço do meu blog irá mudar</title><link>https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/</link><pubDate>Wed, 07 May 2008 22:02:25 -0300</pubDate><guid>https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/</guid><description>&lt;p>Depois de alguns anos com meu blog na URL &lt;a href="http://neshertech.net/adler">http://neshertech.net/adler&lt;/a>, irei movê-lo para um novo endereço.&lt;/p>
+&lt;p>Esta URL (neshertech.net) eu registrei para colocar o site da minha empresa (que eu ainda estou elaborando), porém,
+aproveitei a infra-estrutura para hospedar o meu blog, mas essa semana eu registrei o domínio &lt;a href="http://adlermedrado.com.br">http://adlermedrado.com.br&lt;/a>
+que será utilizado para colocar meu blog e um site novo que implementarei para colocar meus projetos pessoais, minhas
+idéias, galeria de fotos e etc. Dessa forma, irei separar o meu projeto pessoal do meu projeto profissional.&lt;/p></description></item></channel></rss>

@@ -1,140 +1,32 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport
-          content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
-    <meta name="description" content="My corner of the web">
-    <title>Job Finder - Automating job search with AI powered analysis</title>
-    <link rel="author" href="/humans.txt"/>
-    <link rel="canonical" href="https://adlermedrado.com.br"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header>
-    <nav class="navbar" role="navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me"><strong>Adler Medrado</strong></a>
-        </div>
-        <div class="navbar_right">
-            <a href="/posts">Posts</a>
-	    <a href="/now">Now</a>
-            <a href="/tags">Tags</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Job Finder - Automating job search with AI powered analysis</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>February 6, 2025</time>
-                            |
-                            3  minutes  read
-                        </small>
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p><img src="/images/header-job-search.png" alt="Job Finder" width="100%" height="auto"></img></p>
-<p>Hey everyone! I just wanted to share a new pet project I&rsquo;ve been working on.</p>
-<p>I built <strong>Job Finder</strong> to automate job searches, analyze descriptions using AI, and filter the best opportunities based on personal criteria.</p>
-<p><strong>Job Finder</strong> is an <strong>open-source</strong> project designed to <strong>automate job searching, analyze job descriptions using AI, and filter opportunities based on predefined criteria</strong>. Initially developed as a personal study project, it demonstrates the integration of <strong>automation, AI, and data processing</strong>, but can also be useful for others looking to streamline job searches.</p>
-<hr>
-<h2 id="how-it-works">How It Works</h2>
-<h3 id="1---automated-scraping">1 - Automated Scraping</h3>
-<p>The system <strong>automatically scrapes job postings</strong> from multiple sources, including <strong>GitHub Issues</strong> and other job boards. These sources can be extended as needed.</p>
-<h3 id="2---data-processing--optimization">2 - Data Processing &amp; Optimization</h3>
-<p>Before being analyzed, job descriptions undergo a <strong>sanitization process using spaCy</strong> to <strong>reduce token consumption</strong> when interacting with OpenAI’s API. This step removes:</p>
-<ul>
-<li><strong>Emails, phone numbers, and addresses</strong> (to avoid irrelevant token usage)</li>
-<li><strong>Special characters, formatting issues, and excessive whitespace</strong></li>
-<li><strong>Common stopwords</strong> that do not contribute to job analysis</li>
-</ul>
-<p>By optimizing job descriptions before submission, the system significantly <strong>reduces costs and improves response accuracy</strong> from the AI.</p>
-<h3 id="3---ai-powered-analysis">3 - AI-Powered Analysis</h3>
-<p>Once cleaned, job descriptions are sent to <strong>OpenAI’s API</strong>, where they are evaluated based on key criteria:</p>
-<ul>
-<li><strong>Seniority Level</strong> – Only <strong>Senior-level or higher</strong> roles are considered.</li>
-<li><strong>Technology Stack</strong> – Jobs must include <strong>specific technologies</strong> (e.g., Python, Java, PHP).</li>
-<li><strong>Remote Work</strong> – The job must be <strong>fully remote</strong> to be marked as a match.</li>
-</ul>
-<p>These criteria determine if a job <strong>fully matches, partially matches, or does not match</strong> the user’s preferences.</p>
-<h3 id="4---classification--filtering">4 - Classification &amp; Filtering</h3>
-<p>After AI processing, each job is categorized as:</p>
-<ul>
-<li>✔ <strong>Fully Matches</strong> – Meets all criteria (senior-level, required tech stack, fully remote)</li>
-<li>✔ <strong>Partially Matches</strong> – Meets some but not all conditions</li>
-<li>✔ <strong>Does Not Match</strong> – Does not meet essential requirements</li>
-</ul>
-<p>Filtered results are <strong>stored in the database</strong> and can be retrieved for review.</p>
-<hr>
-<h2 id="customization--future-enhancements">Customization &amp; Future Enhancements</h2>
-<p>The criteria used for filtering <strong>can be modified</strong>, but currently, changes must be made directly in the <strong>codebase</strong>. However, a <strong>configuration panel via Django Admin</strong> is planned in the <strong>roadmap</strong> to allow users to define criteria dynamically <strong>without modifying the code</strong>.</p>
-<p>Future updates aim to introduce:</p>
-<ul>
-<li><strong>Support for additional job sources</strong> (LinkedIn, Indeed, etc.)</li>
-<li><strong>More AI providers</strong> beyond OpenAI</li>
-<li><strong>Customizable job filtering via Django Admin</strong></li>
-<li><strong>Enhanced AI-driven ranking based on job relevance</strong></li>
-<li><strong>Web-based dashboard for job visualization</strong></li>
-</ul>
-<hr>
-<h2 id="tech-stack--architecture">Tech Stack &amp; Architecture</h2>
-<ul>
-<li><strong>Backend:</strong> Built with <strong>Django</strong>, using Django ORM for database management.</li>
-<li><strong>Task Queue:</strong> Uses <strong>Celery</strong> for background job processing.</li>
-<li><strong>Job Scheduling:</strong> Managed via <strong>Celery Beat</strong>, allowing automated job scraping at scheduled intervals.</li>
-<li><strong>Database:</strong> PostgreSQL (recommended) or SQLite (for local development).</li>
-<li><strong>Message Broker:</strong> Uses <strong>Redis</strong> to handle Celery tasks efficiently.</li>
-<li><strong>AI Processing:</strong> Integrates <strong>OpenAI API</strong> for job description analysis.</li>
-<li><strong>Data Sanitization:</strong> Utilizes <strong>spaCy</strong> to preprocess and clean job descriptions before AI submission.</li>
-<li><strong>Docker Support:</strong> Provides an optional <strong>Docker Compose setup</strong> for running PostgreSQL and Redis.</li>
-</ul>
-<hr>
-<h2 id="why-this-project">Why This Project?</h2>
-<p>This project was created <strong>as a learning experiment</strong>, combining <strong>automation, AI integration, and efficient data processing</strong>. However, it has real-world applications and can be <strong>useful for anyone looking to automate and refine job searches</strong> with AI-powered filtering.</p>
-<p><strong>I know I could use tools like <a href="https://n8n.io">n8n</a> or <a href="https://www.make.com/en">Make</a> to automate this, but I&rsquo;m a coder, and coders love to code. :)</strong></p>
-<p>Since this is an <strong>open-source project</strong>, contributions are welcome! You can customize, improve, or extend its functionality as needed. Feel free to explore, use, or contribute!</p>
-<p><a href="https://github.com/adlermedrado/job_finder">Go and check out on GitHub</a>!</p>
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
 
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/aproveita-daqui-pra-frente-e-so-porrada/">&#8592; Aproveita, daqui pra frente é só porrada</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/the-places-i-never-returned-to/">The Places I Never Returned To, But Still Live in Me &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
+- -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Job Finder - Automating job search with AI powered analysis</title>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
+<a href=/now>Now</a>
+<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Job Finder - Automating job search with AI powered analysis</h1><div><div><p><small><time>February 6, 2025</time>
+|
+3 minutes read</small></p></div><span class=line_break></span></div><div class=content><p><img src=/images/header-job-search.png alt="Job Finder" width=100% height=auto></img></p><p>Hey everyone! I just wanted to share a new pet project I&rsquo;ve been working on.</p><p>I built <strong>Job Finder</strong> to automate job searches, analyze descriptions using AI, and filter the best opportunities based on personal criteria.</p><p><strong>Job Finder</strong> is an <strong>open-source</strong> project designed to <strong>automate job searching, analyze job descriptions using AI, and filter opportunities based on predefined criteria</strong>. Initially developed as a personal study project, it demonstrates the integration of <strong>automation, AI, and data processing</strong>, but can also be useful for others looking to streamline job searches.</p><hr><h2 id=how-it-works>How It Works</h2><h3 id=1---automated-scraping>1 - Automated Scraping</h3><p>The system <strong>automatically scrapes job postings</strong> from multiple sources, including <strong>GitHub Issues</strong> and other job boards. These sources can be extended as needed.</p><h3 id=2---data-processing--optimization>2 - Data Processing & Optimization</h3><p>Before being analyzed, job descriptions undergo a <strong>sanitization process using spaCy</strong> to <strong>reduce token consumption</strong> when interacting with OpenAI’s API. This step removes:</p><ul><li><strong>Emails, phone numbers, and addresses</strong> (to avoid irrelevant token usage)</li><li><strong>Special characters, formatting issues, and excessive whitespace</strong></li><li><strong>Common stopwords</strong> that do not contribute to job analysis</li></ul><p>By optimizing job descriptions before submission, the system significantly <strong>reduces costs and improves response accuracy</strong> from the AI.</p><h3 id=3---ai-powered-analysis>3 - AI-Powered Analysis</h3><p>Once cleaned, job descriptions are sent to <strong>OpenAI’s API</strong>, where they are evaluated based on key criteria:</p><ul><li><strong>Seniority Level</strong> – Only <strong>Senior-level or higher</strong> roles are considered.</li><li><strong>Technology Stack</strong> – Jobs must include <strong>specific technologies</strong> (e.g., Python, Java, PHP).</li><li><strong>Remote Work</strong> – The job must be <strong>fully remote</strong> to be marked as a match.</li></ul><p>These criteria determine if a job <strong>fully matches, partially matches, or does not match</strong> the user’s preferences.</p><h3 id=4---classification--filtering>4 - Classification & Filtering</h3><p>After AI processing, each job is categorized as:</p><ul><li>✔ <strong>Fully Matches</strong> – Meets all criteria (senior-level, required tech stack, fully remote)</li><li>✔ <strong>Partially Matches</strong> – Meets some but not all conditions</li><li>✔ <strong>Does Not Match</strong> – Does not meet essential requirements</li></ul><p>Filtered results are <strong>stored in the database</strong> and can be retrieved for review.</p><hr><h2 id=customization--future-enhancements>Customization & Future Enhancements</h2><p>The criteria used for filtering <strong>can be modified</strong>, but currently, changes must be made directly in the <strong>codebase</strong>. However, a <strong>configuration panel via Django Admin</strong> is planned in the <strong>roadmap</strong> to allow users to define criteria dynamically <strong>without modifying the code</strong>.</p><p>Future updates aim to introduce:</p><ul><li><strong>Support for additional job sources</strong> (LinkedIn, Indeed, etc.)</li><li><strong>More AI providers</strong> beyond OpenAI</li><li><strong>Customizable job filtering via Django Admin</strong></li><li><strong>Enhanced AI-driven ranking based on job relevance</strong></li><li><strong>Web-based dashboard for job visualization</strong></li></ul><hr><h2 id=tech-stack--architecture>Tech Stack & Architecture</h2><ul><li><strong>Backend:</strong> Built with <strong>Django</strong>, using Django ORM for database management.</li><li><strong>Task Queue:</strong> Uses <strong>Celery</strong> for background job processing.</li><li><strong>Job Scheduling:</strong> Managed via <strong>Celery Beat</strong>, allowing automated job scraping at scheduled intervals.</li><li><strong>Database:</strong> PostgreSQL (recommended) or SQLite (for local development).</li><li><strong>Message Broker:</strong> Uses <strong>Redis</strong> to handle Celery tasks efficiently.</li><li><strong>AI Processing:</strong> Integrates <strong>OpenAI API</strong> for job description analysis.</li><li><strong>Data Sanitization:</strong> Utilizes <strong>spaCy</strong> to preprocess and clean job descriptions before AI submission.</li><li><strong>Docker Support:</strong> Provides an optional <strong>Docker Compose setup</strong> for running PostgreSQL and Redis.</li></ul><hr><h2 id=why-this-project>Why This Project?</h2><p>This project was created <strong>as a learning experiment</strong>, combining <strong>automation, AI integration, and efficient data processing</strong>. However, it has real-world applications and can be <strong>useful for anyone looking to automate and refine job searches</strong> with AI-powered filtering.</p><p><strong>I know I could use tools like <a href=https://n8n.io>n8n</a> or <a href=https://www.make.com/en>Make</a> to automate this, but I&rsquo;m a coder, and coders love to code. :)</strong></p><p>Since this is an <strong>open-source project</strong>, contributions are welcome! You can customize, improve, or extend its functionality as needed. Feel free to explore, use, or contribute!</p><p><a href=https://github.com/adlermedrado/job_finder>Go and check out on GitHub</a>!</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/aproveita-daqui-pra-frente-e-so-porrada/>&#8592; Aproveita, daqui pra frente é só porrada</a>
+|
+<a href=https://adlermedrado.com.br/posts/the-places-i-never-returned-to/>The Places I Never Returned To, But Still Live in Me &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/automating_job_search_with_ai_powered_analysis/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
 
-</main><span class="line_break"></span>
-<span class="line_break"></span>
-<footer>
-    <div>
-        <p><br />
-          <small>
-                <em>Privacy policy: this website employs no tracking.</em>
-          </small>
-        </p>
-    </div>
-    <div>
-        <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-    </div>
-    <div class="gpg_signed_info"><p>All pages on this website are PGP signed.
-        Import my <a href="/pub-key.asc">public key</a> and check with <em>curl http://localhost:1313/posts/automating_job_search_with_ai_powered_analysis/ | gpg --verify</em></p></div>
-</footer>
-</body>
-</html>
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgC7I0ACgkQbV8aePHc
+Nh03uA/+I2eyOGx1gF5gKgNsynyY9A55XBoJ3pnJ8rQ0mURjU6PqiVo9pqmbpjkr
+410tKjp457g9qlRBSJEPiIfWTGxPvywW08nEplegiOEYicqfPKWcNwAQ9CThKCE6
+qSrg8ihZMV2TAs0VypuqoTKUIzq5++zfid0fwBNbh8UUeL7Q3k3ZhLFuIbeUlmOx
+QJOBKC3sKihSE5mIQY6PLbvxTMYFZAeZWctYjByzVvoZ6vaDtGsdcCzlkde0YEBk
+IEmDPH0RCiMSxQa7hg+MvA60N+W2xcr/GYs4IBN0dPxAsIlOZ8fcqKeX6xXF1IEb
+xdd7t1M0EVuAgb58RnItp/I5C71CmwtEiEFYY79KkKN1rEgcZl2DMdjWMyp7MdB6
+zYiLZIW4BWoJnGYYiLqQal3Lpe2Hmkvs4cEMQS9I2G+6p0x3xQB62l+2rtPg1DMl
+OCnir76g9schDAUB/+/oGulpvu83eOoNSNZrvhThDADqdSUfXnYtJ68osPyi8cdT
+6bCBXhMlphWN+x4aBTG2tsFH58QjAUxEk04NteO84aH91tE6SpZoxEuoN0iTlWxS
+27kEKsRx/1k2QK8GobxKTCz1rXkAU02NX9UNam0q0mUkYe/8MLTdhlM7s+u3Nq/Q
+6xxdBuCxJLDvRTz3hWbzq9SY+Q/bHgO1BHJMURMt7vt9+3pZS9U=
+=riXS
+-----END PGP SIGNATURE-----
+-->

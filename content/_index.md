@@ -45,5 +45,5 @@ All while finishing a History degree and staying deeply embedded in hacker cultu
 - IRC: sometimes on `#tilde`
 
 ---
-
+<br />
 🔏 All blog posts are GPG signed. If it isn’t signed, it isn’t mine.

@@ -3,7 +3,17 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Zend Framework tutorial series capítulo 2</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Zend Framework tutorial series capítulo 2"><meta property="og:description" content="Tudo bem?
+Demorou um pouco para eu publicar este capítulo pois infelizmente eu tive alguns contratempos nas últimas semanas, mas
+de qualquer forma, é muito bom saber que você se interessou por esta série de tutoriais e voltou para continuar
+implementando um sistema de exemplo.
+Recapitulando
+No primeiro capítulo desta série eu mostrei como configurar o seu ambiente de desenvolvimento para utilizar o Zend
+Framework com o Zend_Tool.
+Reveja o Capítulo 1 do tutorial.
+Uma observação importante: Eu estou utilizando a versão 1.10 do Zend Framework. Certifique-se que você também esteja
+utilizando esta mesma versão para melhor aproveitamento do tutorial. Mantenha sua estrutura atualizada, ok?
+Model, View, Controller"><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Zend Framework tutorial series capítulo 2</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -161,18 +171,18 @@ Caso você deseje participar deste grupo basta inscrever-se em: <a href=http://g
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUPIACgkQbV8aePHc
-Nh1Bjg/+P49EnJjMttYlmh0vJ37NwIWeIXHYr00G5JmhAppWaF98Ch6E93ZX23K8
-/cYwd+70Ap0/mQDJHBeihiNLe3gd7QW+4W1/Uy+MRtJqXlQAQODlZgHVG/7biMsN
-vl2Dkv3lCJofvxPccQUUCqoDqd7uDuART+iagEbPNWdwdpxnAe0HCc2UgspxCp66
-P78jMjuCWXi2Mwsdxn3LQdxwSKTCEYM1ZdlbkiBlETTYiDiImmu7DFB3RdlPtTrV
-+U4+RKrSR79QCa2DIrww2FLNiTCsaavHvPPVpZVZc+mZJAhkaWjTmbM23E7AW+XL
-ybxELGohsV2fITIU2P48gZs8Kxe9suX+WNYk8c5IVCth1LmYzWNVD3wxzn5Qhgme
-XOh37vzWIFNsLn9XDfOrqs3HjRJmGdxLjYFbtcW6RX24JcqN+UVUPNJzkfgDEmcx
-7hdKan2J/3k6JfpQ6f2BK/iHTszUlGI3JxEDnB+Ey2AJ7JiykQbeD1OVV9lDXo6p
-97OPZ3+G7GBjBz+xsZCEVawcQzx4/8GrC1wtstFk2c+h7k6zOwzzGJGeosOnnSn9
-jM80ONFBiosZ1WH/ximvbSBjHeQuInz9/GLJm8UvEuA4zrgjKvZKgQI2g2TZpt98
-5lJt2hkj/qPZxv1Cypb2/w+GLwPh3YRUPNyUqtGw8Wn0/eVvkm0=
-=8qTW
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY6MACgkQbV8aePHc
+Nh2z+w/+OA3bb6eRl0YUETlM8yvBUGB5Wtr59oyeczkvD6/Z5WF6VDbygkLKlbDB
+REQD1PHN8FHcBOHY02kklNvddTJO6p76AiVdMHc9wBSF6V76FWwVdQTFEwm6Abja
+35R1fTlQpDNHduBx3HBkv+O5K2D6pXSYIcaj44K3ubuzI4a8P+fg7KW13sa0SaRy
+2tRkFK8lCcx3EuMN3REsFhViETyCBJ+9ZTT/joWbV2mZUZpVChFTriEEh4gs+r7z
+UI7XG0wZ7ZtItXPrZvRI/cxJWjxM9Ph5DigwGWGXs1im3DShVKipbafnrtfbwPEe
+9+9Js3tu9CKP7T3TYEMgIBEXP1R3L1kjxYDAh5SUKfb+cjHJAMb+grY/XHmsn3mk
+84CJDFiNndVJU0mSrZBLPXvMC2fpDovWrgRk4kMqRiKsUonZyVSOLq7Am6KcYvAy
+n5IrDcyI4cq1ioOx3tOTssvidyj7SylzMO56nQq6cj0iGMFLXmvjfoy76Hn3Sw+o
++Quo0QGgCneywqUD+6IhkqX2AgKxQKO/jQRxefqBJ1GE4eLjrojZVJEXCnweiXI4
+ON8ZpOFcQt07NkqWj9N+pU4+BSSFhWzq/BhVLt0Q6uZZhbdysXIcjE/hfKiJ/5XH
+RPTexd2xC+JN/wUDSoYdiJJsp/zFUGSo5X9tsqoQzexrRz2ViRA=
+=AxsJ
 -----END PGP SIGNATURE-----
 -->

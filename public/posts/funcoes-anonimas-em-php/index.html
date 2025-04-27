@@ -3,7 +3,15 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Funções anônimas em PHP</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Funções anônimas em PHP"><meta property="og:description" content="Introdução
+Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e
+mais completa.
+A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas
+funcionalidades.
+Minha idéia é de escrever posts curtos e direto ao ponto.
+As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que
+elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em
+nenhum outro local, apenas naquele momento específico."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Funções anônimas em PHP</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -84,18 +92,18 @@ sido útil para você.</p><p>Se você já usou este recurso em situações difer
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOEACgkQbV8aePHc
-Nh3M6g/+Mv844RhP0rwXPZkFk9XDp/sdjOg9jkfjDkR6bHAWQUIdEITa7Sdlsb6R
-envsHlPU4366vvzBt5bBt47IkMTQxkaOnYOMoY7+DiPlJv+K1QJOdD06o5q4CWpN
-ZmeAYAkkU5busZybXClHBJ+KsutuTiMkoUIFf6g0t8wcNIeItAt2LmmVw/Dg6VbD
-jNbt/I4n/4FwQHiGjnSNKiVhDZxBGtVmJiSX99EhNfya9V5kYOL3EC5teBqvmAMj
-KbK+1vUTIAmKcIj4iy+Vs/qs7wmrVK3hJZCoHigGOJ3U5Ij+a3GL8xbsfuUzcc0/
-n9QZMaVJC0mDXH7zhRNdcBamPfZ5FjXFlv4UtFyjMwcVU3WF4StwlbwQm+RT+QmL
-YcvREH48gXD3BHvnAqrGYzeDmPuPq1MOzqOYtqFkjU2ahgZcTmBRURd2EYimfPKF
-n0tRVIq0nuC4m5Kh8WiiZWmmGTSrLkBq0sglwNKfgFN6ORvoWP9wnvFkGOP0pPG1
-0n4fsZqFwnXQG7cuSaB0sHdFIfRYhT4ig2F9xSXR164Hbn2UrzNIzTxc7RDBvVKq
-Ry47F3HCk3mg0DXlSVFAMTScQGMxmiu36FUYngLZb74oHfBGg3mUEfN0TwacHOn9
-cf8uFdhuLVmuNK6RHrnRYo0cT3dFTULZSGy99hbtuD/FWowWyRc=
-=gosR
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY5IACgkQbV8aePHc
+Nh1GhA/+Js55QaNT+Zv06rt7JLirLnv21OR0SFnWkPI13MnwkrA0/Ro2d2hEQXLr
+GLhSjotnq5fXDGjf5+EZngibbMEndA+5Lu5il0BlU8sLTh+x0Ez4rkY1paoqgZjb
+Q02UFGszRPSCpacgeNz4ib5OfwNYox+9iEBdChIyvaZZdvEeLjjwopmDT1rsVxIP
+sIIgJrgaE/9PhSQFcSZL3KWBNZP6hEiEiJ8DyDVRYAFPNxAlz52fcolAYTRrObDJ
+YZkmD5lzAQ8Ult95Ee1WZDRyoHyvf6zD7l7teR4UYcL+COCk0AYxuqAGyLYlxZqW
+LeODaMk61pHJ2qu7wSIujK7knpey4+QWblL6ivmr4E9T4js0/bldvFruZfZiMv83
+Fmvsu+zavX1P9+sOaHb84t2UbpMXPGhhSuBLXa63NRef7zwJd+GZvEnadqhexx4P
+e65hY69Mdi8Uua7AiaS51VxDOYHnJo4I2zT1fUqiFJwnU0b8KtyWY8pfPRx2xrLl
+BfcR9y/ujf6gxESYkcNskTp5SNL/xfi/AAAboAIyPHiVgpfH5Tq+UqSvd2dSdRVN
+K0QIEfWGbaiO9Z+gcq8gDv+9Ze5qgXkIXtuEZ+BEQ5Vw+SBrMk/Km1zBacb2+NsO
+7jQ+lwtHnPm26Xi8lOZNqkCC07z4X9xz3STP418FE1u1URICSfo=
+=fD/n
 -----END PGP SIGNATURE-----
 -->

@@ -3,7 +3,15 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Sudo com Touch ID no macOS</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Sudo com Touch ID no macOS"><meta property="og:description" content="Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.
+Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele deve ficar assim:
+# sudo_local: arquivo de configuração local que sobrevive a atualizações do sistema e é incluído para sudo
+# descomente a linha a seguir para habilitar o Touch ID para sudo
+auth sufficient pam_tid.so
+Passos detalhados para editar o arquivo
+Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:"><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Sudo com Touch ID no macOS</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -22,18 +30,18 @@ Espero que essa dica seja útil para você.</p><h3 id=vídeo-sobre-o-tema-no-you
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUPMACgkQbV8aePHc
-Nh1h6g/+JrA5ds2zG2We3jk7UuCVT/2Zf6HLM1z1qCYkf+0hhadxM+fRQjsWPlLu
-Gd1nq+uEKE4C4RcF9xObRIL4yUc8+hZkzQCTlFDGP407uimBPB9Yf8IQ0uIzQISu
-uMDGlcUF97xb8ZOgSkU8KiMCAbJuKvYgTFVsNNnFk9Oq72Top/YSy1dACMvCONw2
-CZsloA9xFFG4AIprUKG60lX/2yXUoNBHMlHYsh+FLGBoOWmHRlblOuLBulRUMF5e
-DHO1QkBddAOrhFBZTmnOGu714hwb12I9v+zvycRspat8DPATl42JOXmH+SnOr2a/
-1J2gcW23eST7Paz4ZNooyW3xEBWrtesle0hrJrKC26DtjBAPYp57H4+d+KX9/DWk
-kPxvGlaH98D2zAj5CD5a8rdnb3y3SXtBERB4N58U6fdp4734l3syg1vlNCujW8fa
-cnAWB797ff1m7D7i8kqXAzopYuGc0hdw13tg5ziCTA5LfbeoFzssgS2cQ8Skb5hv
-qLuoIqLHR+jI1U3IFGUAMg8tXl8hUlzBGdbLNj3yu2cp2odK9a4XQkHU/JF5r8r/
-jJ9WiXVqEc1s2QN8shHrnaAv01/QWBqcWWbVUP5AzVNWCSOQTsx8atx9d6wPiHYO
-+m9vxRWtwXc9xgNuDt/CW1vGI1KtmMRwaFtSdDrw5kE2hiHu1Gw=
-=5ZLn
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY6UACgkQbV8aePHc
+Nh1FcQ/+O5TafGHpzvfu0UNw11iG5USb0Uec2rhoHumr5sCPlscmg8gvtIvNBrj9
+7T4yS97GQkw8u0/79YDsXtfV7PaEyHUkFoTW7RvxTgFZ3jnnT8/D1BiHLTDvGge7
+S8xtQbvyCRJwEQ2XY0t6LPH7fAKFCpKzM3D1oWnPMmalsWwk32PqgvfaB8pXU4OQ
+6Li7AfjyIw/NY36TCz/8r6x6IKHJWoRsvptnoE5a2CtpJnzizbyX3R67+X0eEPtn
+fxROmZy8vtFC6tz7vzj42yVARugQlank6yYKxHmc9oHQU5lwyOcY9+ZzJWLtzx7w
+iGznfg7Yxf0yUsAK2n7Kl5zppaturBUP/C1LJblXXBrsy6S5TXMuD+970cWQStAR
+wqZHN+jBVV0x3yqQFVlu2MFOPSODVOPdUYNa65lTboCGNimI1UrCa8P/dK2EnNk7
+6RCsm+Gxhl9PpHSkGeTDJOQskEyEzeqeXS2Yobpif30sLWghjwIDTqc5Ew3dpZFz
+/vYIbfzAZUiNG3i7ALPXUxMtCTlir78j7cqsFWkzNGWXHb3QKisNWdZNcWYiRjGl
+oVFMTR29cIk3rSg09JBaiEroeEf6YKGrROBM4RPE3Bt8qq2NGU4rrkrxN3cyQS7n
+bx/fureJ/04bYKJ+ymPsfuBPIQPXhhiORKHc0TmCj8F0QgOgR98=
+=NnOD
 -----END PGP SIGNATURE-----
 -->

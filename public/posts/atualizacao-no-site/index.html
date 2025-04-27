@@ -3,7 +3,11 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Atualizacao No Site</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Atualizacao No Site"><meta property="og:description" content="Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.
+O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.
+Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
+Zend_Services_Flickr.
+Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:"><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/atualizacao-no-site/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Atualizacao No Site</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -19,18 +23,18 @@ Hash: SHA256
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/atualizacao-no-site/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOQACgkQbV8aePHc
-Nh2iNQ/9Fza+hrkSnLja+VxLi1ETSpo03ZPHsyukE8Iqji2eTdXtVLwa/+49orrO
-W/ee2sx3CoC2WaXa1Tu58Ayyu25LGFY1W7pUZdnznNqS7OoQ5MgU3wtHQBxWahFy
-zcEp9uPsvnZa6kLmrzqekdCv0R8mziqCmZarvdAnZyevZB7H+ywFxTXh79JTCmRl
-uRc7GtFdf+0L4IiibZQKe+om3PjnbxjDdts4ixB5uWVTg6/Z7Ii3PryBpoeYWeVn
-bLJieAY1QUn1TI/R4nZIQmxyJotEyeEQD0v0vUCadLSgx5wyxmiLA2yyM++lKAsN
-jdkUcsDI3xBUjsmPwbAlcR6Dx74Wl1sJPRUMG3DrMZqLMNajAZisLuND2GUs69eP
-8NwipI53HCSflAytFMOKsvC0kZeFCAbVhtIowERu0czrC5pGirf8C6xQg3Lr+h78
-bajmUh4/xW6y7FDLXAvU9fYCm1vVGjtqEok4rpNazuDBSEzHKHHQHnoTBZM7RE+M
-kYdlwMhxR/x2bJ3IocxunwgePqTWsdU7CRnMawrPpfnRuU77gh9+CPPhVVWXigyw
-3KPonj9oUvhojmX+7Bg3r6y3VwVtm/DLiu7rPqmN9rLWKi/QBqepdJTbbSbCNnYK
-uCBAToRpQazy/v4Qp1SyxDpQB0SwqihpKeDUfribOseaJTJwI0I=
-=2kif
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY5UACgkQbV8aePHc
+Nh2g5hAAg+OixobkLufKaW/Ji3RqRcVkPqbvWS0IfFSrvfchQ2hixLCY1LvWzHXy
+AWjiMhUeEWLoXrIFuWqQAPcVSGNNtY/XwsKkGmY2ziCqK/5SjT70/FspKgSRc7ld
+1W7OrTaHHaL2tlUE/6eNJH7exEBE/qw2Za7j68FWfpRUp9oAgq4qcoJcMLESnBhD
+QWrNob3NWHw69ZA4pnw2xZu2ut0FhK5yT/e3lOw7JwOq9Ft7EM1Df6itAYf3QPGt
+7VKv2ydHvjMDDEPHimdmmVO4qIjX7QJs9yOB1Q7m4hx3d3ak8Z0KoLd7j+IzKlMb
+1XEDt0moQry6G9gJF03k0tr9AvJ4O6ueoGa/RkZgNSzFwfWnvQreA17mgPdR3oTx
+hDkUmd5jnlaegajFJ+OeLXAn/25v6OyncQt2AJuqjWZ8qYw48Mgc4e63Yd3SJaWs
+9/tBdsfgbjXJd+beuyz9In8w5tln291AnmQCR8S0arviXxCWBXDmyATrXZytIIMM
+iQiZoDkjuVjztY0Xzg6uz714R0rkcA+SM0DkJKoyXOPdeW3a0z1RlA+fTE9+W4rm
+pNqTm5vEKwvn6icQZ5dDAmrpu+azmKkveToYnPf8gOxZzvh0c3rwlv2XBTt+NpON
+ale1vg4Gnlls3e2a8syA4Qx72UNC6ElwsXG/NobRe6Tan/tmS5E=
+=FGkd
 -----END PGP SIGNATURE-----
 -->

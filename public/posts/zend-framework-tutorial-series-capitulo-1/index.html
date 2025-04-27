@@ -3,7 +3,15 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Zend Framework tutorial series capitulo 1</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Zend Framework tutorial series capitulo 1"><meta property="og:description" content="Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os
+avançados.
+Tentarei colocar um novo capítulo semanalmente, desta forma teremos uma janela boa para praticar o conteúdo proposto.
+Este primeiro Tutorial da série visa demonstrar a instalação e configuração do ambiente bem como criar a estrutura de
+diretórios de uma aplicação utilizando o Zend_Tool.
+Antes de mais nada, os pré-requisitos para continuar este tutorial são:
+1- Conhecimento de PHP utilizando os conceitos de Orientação a Objetos.
+2- Configuração do ambiente (Apache, PHP, etc).
+3- Domínio do Sistema Operacional que está utilizando."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Zend Framework tutorial series capitulo 1</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -73,18 +81,18 @@ Não esqueça de dar seu feedback, ele é muito importante para os próximos cap
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOoACgkQbV8aePHc
-Nh1iVhAAwwArK9BLFHWJiVG6k/cvkJn31oZaIlkEoSyK3ossLPk67/JbJe7bAbPT
-7YJXKjVK9+p/qmQoKf2CrelrCNwv9P6/ihs7r298VFJJHKTEjOOe5nSmGY26DPzm
-6Dhz86uX/US7X15Os91U+Sfd9GS4z7aBZuQkMka7QjXpWgR2GfqUUWacadQoRj6G
-MLArmII0K4eJ4YjfA4TJqNgRxR7lvl58QuOIDJxllI5GtTt7vPI1SW2MmBxgOYIu
-Mq/40g0xSgSg/Z/pjivJjx657hmsAjsH3ThVfdVq/rGZlGAV4YFtLaRquR71zkxm
-Hpj6l5dYQV072IRiZdqUwYGN6eG9f72tvZVIPKgRdUyX8NoJrOXWt3IMzE/ZXOfs
-SNOPWmsO5+sUktPuOKuQw6ZGbEegCmxObZ+e3MPbrHvlv7flq6joXptt4y763RHQ
-63Ctkd9ldAPTmQcABW5Zs9XeFZzMEZj+r4x9mYY9d7REy7IaWMX2FFmFDo7rcWp8
-fyur64Y/1YB+4GS4aiR92wtPmBzrzMcu3GyTEv5ojmpqRrBxdT4VUcvMsAPO4THv
-uTq7Snz+2Y1KPX0OQ0DeWrhYFrtskPx6DfraiK9x2D6D8QqIk8ShBQS/sdbhDyLC
-KNOyizEAbWoQTeq+6I5h2EFpXtHG9buEmDBHMgG1vWuqWwgjO/c=
-=vnaw
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY5oACgkQbV8aePHc
+Nh1xkhAAvjGcvLJOF2OtpbfTbzO/Ulv/9jKKEW4K9DW93FyT7UhqVrDD7Luqomhm
+dvBkEbmW8+aW96YL15CcDZRkS/xo3+zN0iFm1glsJsZT1XhvWKM+JSy2sTpP+5aF
+zAc314T58W93+6wpMSiSIEmQMKvQIul6HET8XCgcWK89kr7YzU8MzpQM48RfJmtw
+uX+a3m9UCUH09pkn+MXVh+FR8E34yf3Tber4GAh5INeQwJTFPaNV9Lur/vxqzFvl
+vuoXmvr4AF3zYrYaW+ivKULELNJQs1aqP4k5lNNQgHDp1UQjmYZ8yp7ONXq+TeEA
+IXEAVbnhDHlSp/Fprmz4vX78BAoA3WR2KaTFXcnjxhP3mNfHRqF+OwNortvQFSBS
+JzvvA6pxpwmOIabFcxRP3kZIc0LnaqamMBoHAdsuwZlWHq5wW2uva6zI91ZjIZ8I
+aRBp7UFTR8sG6aYzZoPSIy/Q1i9KsWDDsFH/Ez0/FxCtHpsBjsM2a6HxP+mMg39Q
+ozcE15dC6wHn9Ry2CtC9yqQlAaM+/g2Fim2kOOiF3Jm76EPHC55R0yIe4hiu8qn6
+XZzRwrGCknkyjc75mwMmVwretupcRf4XjramOyAs0i2YZhOEUP8FtTA2wJ+rUIcl
+eRVt9WRjJZ5s6W/o64/D3XPl3Ru/+f3VmSM1WujiR/TuVYUDKsw=
+=4OEe
 -----END PGP SIGNATURE-----
 -->

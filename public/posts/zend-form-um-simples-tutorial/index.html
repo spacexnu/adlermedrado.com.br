@@ -3,7 +3,13 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Zend_Form: Um simples tutorial</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Zend_Form: Um simples tutorial"><meta property="og:description" content="Introdução
+Depois de algum tempo sem escrever algo sobre o Zend Framework, venho hoje mostrar rapidamente um exemplo de como usar
+o Zend_Form e de quebra vou mostrar o Zend_Translator, que pode ser usado em internacionalização.
+O Zend_Form é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade
+e mantendo um padrão de desenvolvimento. É possível também com o Zend_Form, a implementação de formulários com
+herança, ou seja, você tem um formulário genérico (ex: UsuarioForm) que pode ser utilizado para criação de outros (ex:
+UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Zend_Form: Um simples tutorial</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -147,18 +153,18 @@ $this-&gt;setTranslator($translate);
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOYACgkQbV8aePHc
-Nh2pFg//XrP7ZVO9qCFvYThex+J2LcWKe+oEvbSYVKInYxDn9kmYI3FcBlogVfjk
-GU453+7cnhKBD8XFSaiqmGSnzdtK6ncjIf6WC9EnTJvuP05AWnD1vJs+eHFLz6PU
-loLeJSIBM0ZeGkLlqg6itIQBrIMThSAz8KPerccpH9Qtk7WKBHpKXXpkBBID7CLK
-EyVtgAYHW5k1d1raYqkpYBR+sPYBi84z974G7bC2bOHgh89oYI0TkEmxPGTB8jhb
-Mtms7Iu5OP10/5WCB7MUEKiewyMtzMQtSRyoGjaH15XLvL2kaDlj0RkkwQMERE4z
-Pt1rhSlgCxmnPw9znJU8H6jxzIK+0Ya5B0vqwWO+ySNKI5VOlr/FBDeAYPkDFH3M
-HMpkI7ienO96PFNYcKhQM/YX9gKM+eJqRk5Dxc8seVUIyzN/wH7Husj+hiAOzHLN
-4NgxHk2Sh2p0jAStT3ZpbRtnN5xyTAJwqIlmZXTl+yKfKETwyUkiDmTRB6e9Oj77
-vKyjKXDv45mFeCR39wo1G212vCIX2mBPILTUCzb6LLnw5Nh2sCBlSMivzLHlYZRu
-AI8CYDD5AJVEFnogmJ9jGipZXO76GvhgqdLxiHC99fp6/xmAsyedo6J7mWvwcXWY
-/n5xtoE4egcsTJV2XcvmT4CnxPSX0LlB9UhkVG+I/HF2ac1bq/E=
-=49Tc
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY5YACgkQbV8aePHc
+Nh1Suw/8DrMjIcPfpH7dnVr6JyWdTZLlH6nrhEcXFcKiGxbIjomk+xbuSJTF4KzS
+g2Hj2pWEwepkQ9zpAbqgt8ZUapMf1E23t4o9rijvn/elJlhZKNyEVIrf1laQdiPz
+niKKuzOCBgrz1xgEjyA5Aqh5O9JS/5+idbFWVBTcHlqmpK0WNOTHt8hRY5p4/RfI
+5Ow49hu9WBDxSHVWtKj+pMXaPn20V9m+WbiTpPlt9Azad5xmRQDackasXb21OGdi
+Y+K00h11zgdhPq8w/rdOzG3VOLXWx6ozXcepHzsPZEirYIX8Zu/PAEu5eziBDChv
+9MdjGpP4Oqm1vfvouRNjyuyHG7Yx8zKUsMOrlLPXuzxODpXZtXfWqoLHmWtWU3Oj
+khqRiVYc7HDnyB+ViYMk5tAv6UvQheZNuGworOAWqkAYJLDUjBsTGatE0weogEaC
+xAjnKAHAfpK8TlZh1TfFabe2tR83H+TYB/8X+uOxQaW1RhhobK+c5rg9vsBAgnrA
+EWW6tOY4bTJrOSeeLEaCNGhC1AcQhzjx596A/M+ftAkC17p/cZWXl1rvxOca6RO9
+7a5kOwKsiozL7EQJEE2WGcM9MApwZO3IXm1EV3aCjOh3sDUanb6fJbwOlcTS7sB1
+Z3AcPmcp2bg5I4Of9R9plxYY9Krw/J3XYdXGvm69dmBH92vA5os=
+=1hZn
 -----END PGP SIGNATURE-----
 -->

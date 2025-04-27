@@ -3,7 +3,14 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Dica: Solução de problema ao configurar Kitematic/Docker</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Dica: Solução de problema ao configurar Kitematic/Docker"><meta property="og:description" content="Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
+pessoas.
+Um projeto que estou trabalhando usa o RabbitMQ e para tentar manter o meu OS X o mais
+higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós
+decidimos utilizar o Docker e um container do RabbitMQ.
+Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na
+instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
+precisam ser aparadas, mas no geral ele funciona bem."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Dica: Solução de problema ao configurar Kitematic/Docker</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -28,18 +35,18 @@ na <a href=https://github.com/kitematic/kitematic/issues/585>própria issue</a> 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOgACgkQbV8aePHc
-Nh1KuA//TcPOJ/ew4ITFzC/BfVwiWQTtAWWXw74Oc93bLe4yMczyYT4PlJLuPRGC
-Sym0Yav2lWmhnkfKh1vLf+NuCRiMMfk5Rze3HJmF2ABWx7sfzabFQB5+oI2vBLuZ
-G7e2D5DxbWSUXvRZTGX4TEmDdWPktLZy3IV3Seg/Su1gEgYizuAmkpQUNA8xvc1O
-Y50qFEIXZcCQbq+0WBTIXYqmp6g47zd9Lm/2G56nWDB3PrvLGA4/FGWM9dsBOqnV
-kaJz4YJ9w0tAe8EIJjQunU2vNy7brodYBVxaJDD7XvPFgkIHILbWjRXzX6xwU4CS
-+zrbdwqz1LNpf1PjzFZO0ffXml1mbSZz6gfIDWW2GxYUSsp9QDFqEU60Z0NoMVoH
-XaWkYgqC0Hba/M6TlGhuARdIxKqROnewlzl9nyjHVoW3EuIwWTtJ+WjGSF1zS7jC
-RgGmEKHVTWR/IsxWnPt2SnSWlp0sFUNjScE8ZYn47Ww5DIT9Rq7yapi2OxYgdG6s
-vz3f4eToco3erB3fCuMQ2orhrbMSHdGAkXN/K8ooBlOUKvLnPucztajWX1TWRvTg
-s731NKIMO8pXuKp9nKsPSs7tsvC+V7UT3nT7fAN5Wv6wgvvKoYr7Bu0n+H9KN9Pu
-CmbQgNlQ1swlG/etUCcLZ7UU0a+/P/phmXx9FuUzPH5QSS5n6Kc=
-=JXdU
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY5kACgkQbV8aePHc
+Nh2O5BAArByVyj/mx0fGKEApZ/zjCI68yCx6ZURMDgw0VLhnQHfVaPR9xRTzYD6T
+Scg6leKamvzGvbZWZXGEt7bET8iBz1mLXWQ9tpvEq+Hnvy9rwQkfnb8T9vH/A6Wq
+rA9aldlZv6oDcktgNN5tHmwMXFiaUSNwP2rzAjTYsN7Rn96xdz+PpEGfDtd2lvCy
+n3z3q8M9PZCoia+bo3MoHUHe9p/FxHuAi50SMvCcdgcnyB9xfGxL1r+v2gbaWz0p
+HVC/vPPankVb38lbwXt8K3BJwS9I1gORpyOiZukGbt8N2o4XQBDcKhRUnITjHN6g
+78SR65ti0ZvaXmYi+jUGexmEbq9nfPIQoccdTg9ZZF3zyO85N9+JFilC3BC370EL
+NcjAQLCFW4CGkULbhe1Wq4+3qz2NfQ4+LZz5V2XKXelWBMuJFD3sP354S3PrrBDe
+P8x/xlEJ1PloCC76hvFGuXk7LBmTlRFNAvwlBpYF7HaecUtcie1wxVEOIScI/xif
+Xv9NDUBLYcRpNII4/yEZKT/f5KVOMIOgCMNzCnM5FyCgPO9NPGDGYyxcmE/Y56Wh
+GEhrtlmv/P/0JQMNJ6bWOAhk1VYEhVjUQKuoTFwY6X4VE1gYBXc4qqulcJOYHR/f
+MH8zdHaFWa6pShWfTDF45FdBa+QZKWG0XwZoUjCYEhyeMXZ/N3o=
+=EnU3
 -----END PGP SIGNATURE-----
 -->

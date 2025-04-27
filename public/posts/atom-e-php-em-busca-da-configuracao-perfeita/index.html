@@ -3,7 +3,18 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Atom e PHP: Em busca da configuração perfeita</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Atom e PHP: Em busca da configuração perfeita"><meta property="og:description" content="Como eu
+disse recentemente, eu
+deixei de usar o Textmate, passei a usar o Atom e recomendei alguns packages que eu estou usando e
+estão me ajudando diariamente.
+Neste post eu quero mostrar mais alguns packages bem úteis para desenvolvimento PHP:
+
+linter-phpmd
+linter-phpcs
+php-getters-setters
+
+Os dois primeiros para funcionar precisam que tanto o PHPMD (PHP Mess Detector) e o PHP_CodeSniffer esteja instalados
+no ambiente e acessíveis por meio do PATH, ou seja, os comandos phpcs e phpmd devem ser acessíveis de qualquer local."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Atom e PHP: Em busca da configuração perfeita</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -26,18 +37,18 @@ digitar no terminal/prompt:</p><div class=highlight><pre tabindex=0 style=color:
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOUACgkQbV8aePHc
-Nh1R2g//cGs+6iLqIYljRPe47kXX1GLQexA73cN5Pwrepoo74mDj8kR9S5wjToeU
-QK0lkT1MQ1iHfCknXapAIvZIcXFuHCWGlYCqkoHIe0ypOpPbBUt/8ka3E/0rSW6V
-d4GoYtANSBK1OnPbPXOlOxxE1fcoPv9jSnUGY5QQphTjEM9qIdcSaQCINFB4fLDZ
-VyWp3r/AdYQskbI0DOLTBTQkmOjHZyevDEq/IzvT48DJcHN2dtSuPpWYNv443ovN
-cO9CM32hW4PQ/Xrns3BgaeqRfzW1OQ+50W95db6FrgBKs4WMmbrser/zeg8yXk7l
-Miuo4B1Q8eorc9xqlJsl6JEB/OSYI8oUbJOEkeJnkPhQxZP6NH8zFe/dhSQmID7O
-3qfZgelEawL1akGgd25PBC7I3s0Nt5ngBSDdQ7rKBJWVzhI94l8mzcws4z8JX6ZX
-rDR+yDTrM4RlhlrZjsvK7A1B7sinwiG0WEEz5Yn9nd/jIJZvEksAk1nT9l1MJ6uR
-sEFjbPVKD6nV09oB7xmRIHquGJk59OO1cjw10+Dt9oEr/bj3Hvj6oCJq8EDE2Duy
-l7/xq4uKMaLD7z/VvfWf4dzhQ60p1/9AYJe6FHIFa8kDRkYtOdz12JUQpyGjDask
-94zNiAHWg19rccEi3HuHY1hfpxXmPhJmVY1PAOflFtiyNIbTPrM=
-=VkR0
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY5YACgkQbV8aePHc
+Nh3U1xAAxH3c6vLcWaE+NNEsFKiubttEttVjHnQQSdrYf9PdvrqkfnyfXluH7F8L
+GRAtdWwPSxHJyf7sERqTJY34Wk/grjgH/smSsfzYA7TwNKC2PHfxY9lUEYpXZ2/o
+Rg8zykwRVSa7+ulpI24tbn4Rf/WMsc+oE7rjXYiwTlBFOj6u15+gYMOpwEVvbFz3
+kgADytkN1zfyujwZyTeKuAOhV4C95aSWp5rk7CzV3SmTakzd5+RNbDOliXP3hKCt
+oCcePSiFgVY94fLUm09TIMqx3UO5dQWl+Lu7UA8X9ub37YTIkPfZzZ6JVfJdtWfM
+mfxpLNR4Ec2oQlDnbosOqSccmbRhlmjsmUgW10mTbohxjmXXK4iX+Yee5l9CP5Ac
+TTrqV4JQicFn4ANGbxWcKhuUV8xdGxIsSXkj70lm/G+u2T6mwvcOqpvaqdTa/DBK
+oPX6u0FbkwjFZvU6DKSJGhG749c/Zfk41VZ/HG2anUvVDCeInvirGhX9Gdoes7Yy
+0qUL6qrMRNe4GZ5+U4+rg0E/Z42b8jKLlprpOcfhwOQLaZEwDrihsdt06HX++fca
+swIgysjttsKOAihAzs3XK4lc3PvuArF4GD2KbcDsvYbi62p9sskgb33H4W0E6kFs
+QvQNEmI3MxFazv64BypAMU9BpxqE5k1juBlhoBczU7n3763gUb0=
+=zU6f
 -----END PGP SIGNATURE-----
 -->

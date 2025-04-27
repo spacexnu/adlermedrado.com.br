@@ -3,7 +3,14 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Mudanças no Zend_Loader</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Mudanças no Zend_Loader"><meta property="og:description" content="Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
+autoload.
+Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:
+Zend_Loader::registerAutoload();
+Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no
+pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está
+deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não
+receba um notice nas versões atuais."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/mudancas-no-zend-loader/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Mudanças no Zend_Loader</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -39,18 +46,18 @@ locais diferentes do bootstrapper como por exemplo num controller.</p><p>Espero 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/mudancas-no-zend-loader/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUO0ACgkQbV8aePHc
-Nh12TBAAor6Rg/SyP4gKJxR+kD3+45LQTTu+z3JUXU8b8YgMHPrN13zB027J+GEq
-JcatqHOVx4QSxj1cS8N6Zmx6Myn0tlSpgQhRJl8Rdk0ZivPqCYLB0BPef9inspZe
-aB9e2OgG0ClivkqI5QhGcmUY621Zx5gvh3cLbSOI7S5ZqSULKzwvHHvwLCdVe422
-zl+ybzQGwxwG877SvooL6+4RJoXJ2CLY78GluQESsaFIx0kEQL+WSGI/mws3UG1D
-cKax5r2QOsRERLeQQsqA+r+IQFVOHrDsNIwILaRjPzwDatesOZv4/FPaAR4/oEda
-qk1DSjddCbbHmhqK1VDGIZUChmmvYOp6bv5MJT1i2ILfyN6s1miVF5xOTDE577E6
-UDHfRho8p4TDCzVm53ECYVACsqgp+4hppB1qw/PDRGnHnyox9OGR4a2y3Tlb65ug
-VCFNLHYWTBas8mvr2jMGEX1ntACoE54c2x0m+aaSA0YszUc1yd4F9P9pv/c/RZCk
-qFh2kADBOj/pSApQ8KK5vQNGGF6ympGQD+zMNfqu3ID3TaZM5FmkYIV3SnLY8X21
-CDYUnx6Agve6zRJHKUh/5yl/6B78UENNudiWkKtEXIErU3Onc0G+MQClz5CiOaME
-1GHjPsBgvZ/iZ9HzNUSzY36NvGGylqYQQxI68HyqOyU01ze8apw=
-=Eul7
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY54ACgkQbV8aePHc
+Nh2y8w/+NQ6PseROpXEvZO2XkyRucjiGhJrkmYikplhBiG1emu1XSwbfctmq9Ua1
++eQi1sth96Tdzg8PEMlpqZEJmj7Y3W4KILulHI/Mjs1k5ZguZBe6YozysasQhTjP
++m+yn4wx0Bpa5c2iAuoC0pMm1hXSTurDa12q5JDNoYyT5qQdQOz4Gus20b1FvvCz
+x2J/GU82u099r1uc/GAzd8LZzV+g1arnz1LuzhRdW36s/0k/+SOBCwH8poU0hyTG
+mu9WGDPyhi4wd/1GYu4+BnE140hca1sfTGUfDdzf+TQHDATe7SqjwtsZipGFeTGm
+h2S6lomdCBH5xc780UF4S2zaoH6jOxYjUq0uCLmWCa/rcFEOe/Ayr+wTUNATzROU
+eH8+XaB/ZS6AWvrDqaEjz5AOfT+OvaaECPy5X5YoerThSHuhMGl2OXLn92v3yf2T
+gZ278+zgBsrWXCxR4W/3xAZzmsolhBdOKs3Z0Uv53HVYj7QEyH4xKrSpZ6yi0ObR
+bkwkQ/GKkYNt9dVzD3TPuqFS4GVVW/+mHHBPXFq1bhg/nRvULOns3mrgu0jXzJ9Y
+oss9y8i1Wj0Aca2H8fDkObX8vNGU3VPvuLn99D4Ca0KuIaz2jckHKzRVWE4Fthka
+qjDTzhF+hp/OiPQQ4oztuRRnSV/OfGGtlazP0NgHKEXC9iYEXxQ=
+=oT8+
 -----END PGP SIGNATURE-----
 -->

@@ -3,7 +3,15 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Introdução a Criptografia — Parte 2</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Introdução a Criptografia — Parte 2"><meta property="og:description" content="Como eu havia prometido, continuo com a série de posts sobre criptografia, se você chegou aqui sem ter visto a parte 1,
+sugiro que comece lendo por aqui.
+Introdução
+Atualmente as duas formas mais comuns de criptografia são a simétrica e
+a assimétrica, fique tranquilo pois apesar dos nomes intimidarem são dois
+conceitos bem simples de serem compreendidos.
+Criptografia Simétrica
+A criptografia é feita usando a mesma chave para criptografar e descriptografar a informação, similar ao que foi
+mostrado na primeira parte deste tutorial."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Introdução a Criptografia — Parte 2</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -27,18 +35,18 @@ e-mails criptografados diretamente do cliente de e-mail.</p><p>Até lá.</p></di
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUPIACgkQbV8aePHc
-Nh2e7BAAzRS1eMA5K66YFrGhLwHdRKf4osEldt0q8tfUzEE/176KAiVU4S56CIqq
-hyTLdLQ+DXJ8O8MhnYqlcuLr72svkme850qN8ZFZdwOItScEA0cfWSYDhbiOZqFD
-ZPdQFgXLAUr2OpK/TVvk+VdY3nDFzaVnPFfpnS+oVPidjycV1m9p8KSkVYhcnvmv
-Wv/jx4S5/5cNklxRxCONAVeqMblVOWrxD4axT/zBiN4uO3KnQTK3v5tr/FNe/ivE
-5ybniG79s9mAsjuTLXJQgItUPbwM+nNDkuavtDvSWaR8AldkpViwM2WSFswzcNaf
-C9D2cHgimfO5Ag4/hUDpxTvhs+KQ9V2gAEQeqSO4SWR6+ioWvKpf22BPcJq2nXOs
-rJx+VFSdkL+0qN+4wqHIYIqgLCzOW3ZGUKy7dzanaJ1TcEWxJ2RJ3mw1tTCuNUrS
-BUmqxiaP57wK2Xd9IUQGqRu0F0lGwpjvY1tJC1uKZuS9srGsUXjnyV6O+CmDKEl6
-789zYWdsswExENcdtGVZMoVR3M9g63VbyLbHJ+hDDuBfxla3N+k1LMmPO2PTEK0E
-eZQsTVwwNTSjzESJlh1d8EDNQvckGF3i75nZgikMZtBRRvxCcX0H2nzy5d7nCktQ
-zP/dWYmYEQIMX8o9r0nUsd0WCim6C3KVdgHK3fHXH1Z8MyBeAaI=
-=gl7c
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY6MACgkQbV8aePHc
+Nh3nOw/7BOkfKUed/IkKfD1LpHLlwjiX1Xl2Ro23wdyUQ1KFuFOKfEfBfLYciYhi
+ZCNKNLw2K4jxU/0cSrWlDTadmFdx2oT/Oyy/EDpzmSpHN25a64nKoxDeVfPDEmEJ
+ox7b5Z31BSHJoUmSAUSpxPQN4z1MrThCzC9ptWB53vwzcMRyK1IHOL9FAZHGYYAG
+RW+JDTyPTfSCrfIQTUQtCvIt4WQ3iHcU2Xo4Yt9Glmr2pX360GgF3k9aizWyVuN/
+vvEF6JTDLk7eqcF9qGgv9e7CSRigc/fxHyhn0njK8XNPm2rTOLjC/7r2c7K5YZhN
+n/8NSBStufpgIcmMyxztBClw/aLy97SNxanQsKXT7xUJT+z5TUXo0tJsjfBedREA
+mv3fm1fwLxoh237XnoUINoOSBdGNTJ1fT+dKCxx2dZaCruU6lyTX8gtfKM3cDh9+
+Xac4ok/xW6suhxgUaJN/adthXJ/m2x6MmcGaA3bcY468G/eAdTwpUvUnW1lvyg75
+CVclwbQg6b0B4atvJAGM3uw04qV/Jwq63K5px3FJvR3BNVCMwbraxO/6kxaEncdk
+V/gPd4k6KoXdZ0A492GqZqBcX+QiGWEWJ/scON/KOx0VxLzYeFK6zp77RlBX11d4
+AWKCwi8aXrdgY0uVVLdDg0NtrlyzhnIL5oLEjHHHGzDm9uN0W0A=
+=UFFz
 -----END PGP SIGNATURE-----
 -->

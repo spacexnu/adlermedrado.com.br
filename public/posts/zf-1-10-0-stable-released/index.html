@@ -3,7 +3,11 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Zend Framework 1.10.0 stable released</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Zend Framework 1.10.0 stable released"><meta property="og:description" content="Ontem eu recebi um email pela lista geral do Zend Framework que informava o lançamento da release 1.10 Stable do Zend
+Framework.
+Foram adicionados diversos novos recursos, entre eles, o Zend_Oauth o qual me deixou excitado e vou fazer alguns testes
+logo logo. Houve também o aperfeiçoamento do Zend_Tool e isso me deixou bastante animado pois tenho trabalhado com ele e
+gostado bastante. Hoje iniciarei os testes com ele usando no meu dia-a-dia."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Zend Framework 1.10.0 stable released</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -20,18 +24,18 @@ aqui: <a href=http://n4.nabble.com/Zend-Framework-1-10-0-STABLE-Released-td13120
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUPMACgkQbV8aePHc
-Nh0AbBAAsobFlggynAfKarXs/awTewhuYjrYHbsPSEGtKFaxrMx2iCmCkrCTCWIe
-L1cTf70todPij3ZMD8ZzM5Bb2LEmZ4f7DFPwz19vIGjxxLC+onL92DHV5DZjJ8qq
-AzZAvz8e/W+ixWUNMueIgVQB1A7V1iM2omCRms51JZVCKmq5lqnoVC9m2m0rGP2f
-uwQUDE4MsQVy/L7U38eWHG2JC4JhoQ0vb+lmWKngWA3JGamdImW7+q1S3CCdNxlE
-NrulRkg1GhjsEXMZNwHGEZ708RvsIWQbHOmSVYVYhnQ5zb3M3+LiqsT7eS01y/n6
-wjyZo2DTrQO7UW+7cBuAPw9N4uYafNcvrwo+FRUYNw4XcLgfgwbHHSYpfXYsS7V9
-gwH0KlSUWKHLmNNS0ntM9lnGhHDjhaaXOi0uMCHR++XfCpRmpxcQ02klgRkGqtpg
-RxL4qWlJz/I7jIsY6blKXrEnNbrnrsZuHTQ1k6q/L2FXN0LgAEs0Nzy7q/uw5aNJ
-OBLoDEdfsaG/tbr8uZj+jeV5EA/1VVFntbeqAmcgJK73dsEcyOoAOcQuULQeGzTA
-RuaSPY7UpnG+DcySzbQNcHUi3Jwtmc3l03QhssMpIkc09GWzoefubSXNw0FkUfET
-dwa7mbOcvAsrV2erdWheowLYxUOzMeIGGKyvNKGtS6b/FMLEDAU=
-=yiXj
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY6QACgkQbV8aePHc
+Nh24cQ//er7eWzC/UlhzevgdKpDSs/RNYQhR3v6uC1gFkTWyUXllwcTroj5U7Mid
+uWeueiL1zQ/KnDr1SyyKSySYsgZnk1Y3/O3vBaBATgq/qBeekIqOCnah5gMcjAvM
+ObJSJxBWc+MdTaqAL7cfzo8q+HDLq94wOz+kFZvXlkQJWcHAmEo+x4CKS8HzUhKI
+/3APfVsJeQgyoozvcYMcJ1IixbdsU8I6L/wqPOenrZvo8hoyVwOnnvKHyuwsAxNu
+Fgf9LqoXb8asgGWPViGyJrE5GTuq2hbdy2BJ6GBHZzMsdrH9qAvIX/dkfQ/E1sKF
+aveN7Usw9EjYhZbii8/MNt28EcXmBIawgtZt0tB6gTR9dGJ5n6QhTdoHco6ax8tC
+jRBl2/NHrI3HW7QGxLauaAsG4n766J89YkZQ8ft27XKLbc6KfrzzReumq7HlPDsK
+Sr3/9j8CM1ahJKVDPBHF8vrxvsxIdvLxu5sNlriRujAnGdyfkZfnNQ5WPJJdXCYz
+pW7dqMniNnY89LVOfLEwmRHWf3biJuZK9QTy9EweDJJ9cOYg4IdUdxs9J82jZRfU
+LqELTlrnzm83n6LgFKpxSfTPe0v6uwXm+IXyM43ODmo0CY1a8mJvATIG8MgQ2R0k
+8UEF4SPsDqijDJfpULU6B3dT/Z5hVw8WQSjRlaKJIzu+9rO/MBc=
+=clD5
 -----END PGP SIGNATURE-----
 -->

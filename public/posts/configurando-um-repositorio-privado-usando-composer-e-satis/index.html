@@ -3,7 +3,13 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Configurando um repositório privado usando Composer e Satis</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Configurando um repositório privado usando Composer e Satis"><meta property="og:description" content="Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando
+na Coderockr e este repositório deveria ser importado no projeto por meio do composer, talvez
+isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível
+pelo composer que utilizasse um repositório git privado.
+Como faz?
+Após algumas pesquisas eu encontrei o projeto Satis, que pelo que pude compreender
+é mantido pelos mesmos desenvolvedores que mantém o composer."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Configurando um repositório privado usando Composer e Satis</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -51,18 +57,18 @@ situações.</p><p>Você conhece alguma outra maneira de lidar com uma situaçã
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOYACgkQbV8aePHc
-Nh1VUA/8C2Zfd2RYx3iKI8kyMwJ0w1GcXDNmxrQvY8dbGDhwBdT5IEUuDw4Kxrml
-9K4vG9RKofFeMQJxZpAJcDCLuC0vGn9BrcClvErtCrRzY4bi/H5xrqz+nCFwJHOG
-gGEwRg/ajOZBKqa48KOzxX/2dY4+dvYVbfi8m1Ls3icVjLXF7wPz8Cy9nM56xdrE
-8GEzIWnVEYr9QHyk8gaesNX+i9Znb44UGlLKwzMB0SJWljyhZ66lhv3pir7LKbXj
-ic52REaRjEocYtaB6TvJkMXzgNJ9mQF5mCtmfdYNozcA1/z8hULi2nOZKoeMxti8
-eiiKpBGy+9DGkgkKfvUE9xA7LYlOTcXFw4kZit/reS34sZChp3WaKEwISklB2umM
-UR6M/vngJCTNhC+bPAKS7759Z2RKy+Lg+AsbBM1M26k3RZMPf7EYyOhfWZTwOUFa
-sImiCtA2RjSRegbHQ0yZWe60pEg2nrHCOBZ13Vm8sX6TqR6nljhX5d2TawIu/Kn/
-dJHePIAaLIdtzFf1vqTrXNCSQ9F6yp6i9DlSuow+i44wKTofJoHB0bpCgEeO7aGv
-t3BuNgla5f++PZtUI4MvfiXdBN0lIhAQ71vOceAQh9Lhir30/JVMJlIopFKNVYr/
-noTwUEmsM+Y0iDGJRiyCiRgXDSTgkEulgnKDXoHWj8G5UhWPHBQ=
-=PLBV
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY5YACgkQbV8aePHc
+Nh2rEg//TwjQYoTeZ/8Faa6nLEYcaMqqCA+aSj3Jjih7G+SaxvP1yIYJ6YPLHorR
+mJjQI8WmMc150134X8ShGwYdOKOKP4GqV8RzkaBLpf2jPQsG2r1Uht1KOTr4zi4P
+AjWV/gOdiNS1KuAOAQj2bp9j0534NgJNNJWd1qLjWZKWQ6F6F6gCSR3LTAGUZ3a/
+WstkY3/hM5AOg9gXO+yl0R6PusflkfDNDWhsogU+9F/ksTHFKH9jQD7eZJhTp0ZI
+nvjobWHIcUlT5TVyynP9FsExpnGZo7SsKCuCkGeNb95p6CH68MJWx7Zn+M0UxeqO
+PTKcOQJf9GPo/m1AY9n8szpcNxWuqyOhqs0MEFbZDh5pz2jcC4UV2YuJkqVq3uT+
+LarsXdnrY6TITnV90sqDme162By2EnaJMwvFYC6ZXMVfMOahjd+hwluyH1xuecxw
+qb/1BpEcD5D+yJx7/e7bJ751RSHvhRW/brIbZHeuPAp73X9QCVwjGhE5nCbw2D3U
+bBTdq1sOoiCNLIk5prApodM5wR7tArRs/OXv8DYbEaZ3xpNA1tx1ytPK3AKg0m0I
+irOX40bNoquqmQQQNtHYWd/2BfSCVdX0JGf0bHFbvEVHCt7Dq43UhJ9diMBJUH4Q
+RtbaJ8ylk1emFRPgFTgZ9DLXwkSjWWvv51jELy5yy25Ef3guuC0=
+=TMa3
 -----END PGP SIGNATURE-----
 -->

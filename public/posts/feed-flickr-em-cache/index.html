@@ -3,7 +3,11 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Feed e Flickr em cache</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Feed e Flickr em cache"><meta property="og:description" content="Quem está me acompanhando no twitter e tem lido meus últimos posts, sabe que criei um site e etc, porém, nos últimos
+dias meu server no dreamhost está um pouco lento e justamente no consumo dos feeds do meu blog e na requisição REST para
+minha página no Flickr o meu site tem tipo um comportamento um pouco lento. É lógico que não é culpa exclusiva do
+consumo de feed e do REST do Flickr, porém, para melhorar um pouco eu usei o componente Zend_Cache do ZF para colocar
+estes dois objetos em cache."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/feed-flickr-em-cache/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Feed e Flickr em cache</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -41,18 +45,18 @@ então a melhora na performance poderia ser ainda melhor.</p><p>Um exemplo de co
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/feed-flickr-em-cache/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOUACgkQbV8aePHc
-Nh3y0w//QzuaU/VsqQqBwW7DhUm2bJZecRxN+5EAYm6ye/RvrEr5Bvrj1maFC+ed
-4SbznTHeY078tgfy0u7l5LYVUWtf4CCiBN2esAGr6jexBCWqlurdU/lmrUCRL+/Q
-rlatiQ+nu3PLPwUJSAfQfcrvXSYgHNxuuWGhxfQM0iIAfV1lWo/e6i9YjfX8fpj3
-TH/+DK4NWjF7ktHfU6MdWdfnbonuZTnoTI7Yz4eKJhDvjYGuuk1W2ui39W8Jn8G3
-wCDMPLBBHIkGIu9QxsRQuG+RT4to5ZmfUZ0fiyD/UnTWrJvqx8RcjiohwDmRoR00
-pZ8q0LSV5GLhiIq1aSq8duESxqdNksj87qKCb0TCMKNPahGyPJtkuUcOVfSmKoZ8
-1BPCYgXPvQJ78j8dxP0t/PrcTYndUSDmC8pq1gGsF5c/KvpQsb/kxIG+oS2MIZXM
-wNf2zyK/YhTDD0wYf7k5BZJC3zfq91TWSv4YTUiRuD5JQ2Xqgcxk6Al6MCDFcPc7
-YXRqTjGR0GHdpFWu7vuMNQ7f9EEJeDYV5lZJUzwhiYL+uKhO2+CatXk0RnoareXj
-+KeYrw7Tk6FOs5haClKeyenaI9GYaLSeI9vMYk3zejc881bqdfXqBqqaGUwZoZvf
-gdgwmnnicRceIEPLxp4ZGtwUkOTpmm/cbZZgiRfaTCJHt8pmlK0=
-=Fmdg
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY5YACgkQbV8aePHc
+Nh2BGRAAm30yu+UM2F1Par800rF+xpwJtMVWVbeLXXV0l32CnyIggK1bz6u0tZVk
+GjmPz/0mpn29RlPpCYWyi1tlHeMGQzirQLGxrNHJCxEdUvEFC2Q8x4aXboSqlIvT
++0D5H7gDDtprVbBoF3lR37SCh8cJD9tQe6SstypUHNPyqvTFZ0tBklKYN0G4GtMM
+16TqTJK4MLZlnwffwINdzuHAL96BWmYZYy7vCKeqrtGnJlQ7VAfaeqUDJR2cZEGi
+WYnISI7jeBQxtIj+E3Ai81JNQAjsWgNWwDtMx5zkRA65WO+FoJrzn8AmvtI8diXH
+/Qt+iTlGVU6lOKWpXI/OnImvX35yE4jAYKLvPkhbJsr1NRFCX6Dala4r9wHvZLK9
++X1D/jNAkQh3hl0RTDDZEhMnqZtyZeJwB7bRP01uJLyW7q8bu55QTLivbciQ+gU+
+ENmRpmtFF25nKguI0+o8JvD3Ooy1pvtjIXFcOYPzCq6UF4uN9oGogiCVIBtMb3hO
+KUnJjbhSU2SF7gVRiFUSM3QEcR948wCRM1AZZLYnrfhxgCpqMQ2Qhpq9ErI9v+oe
+XEwuuy25jYg2nQVaZ0iZrteQUXO/8E26yXGdnT+zbi28RilizeqjzXDnzB5b+ZZd
+kCWq5GxBsEcPzBu/S6+ujEE43+c0dicMunaMmQ/JXzx7GjvdEGU=
+=YcSq
 -----END PGP SIGNATURE-----
 -->

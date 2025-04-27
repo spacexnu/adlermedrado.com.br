@@ -3,7 +3,22 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Understanding when to use stream() vs forEach() in Java</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Understanding when to use stream() vs forEach() in Java"><meta property="og:description" content='In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.
+stream()
+Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:
+
+Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.
+Chained processing: Apply multiple operations in a single chain.
+Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.
+Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.
+
+Example:
+List<String> names = Arrays.asList("Maria", "José", "João");
+List<String> filteredNames = names.stream()
+.filter(name -> name.startsWith("J"))
+.map(String::toUpperCase)
+.collect(Collectors.toList());
+The results will be a new list only with the names started with J in uppercase.'><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/stream-vs-foreach-in-java/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Understanding when to use stream() vs forEach() in Java</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -23,18 +38,18 @@ Hash: SHA256
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/stream-vs-foreach-in-java/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUO4ACgkQbV8aePHc
-Nh0dXRAAm3kAT9f2vkUGrrA3A0/ms/JFMkyAvqlmyTJUbYgSl7r6vDlVbVmCbczz
-fRLyryBiCYUfXSajoGhvwfUv3wJ+toDVMJ17lVcvV2tuqiYYaJioYhH25Oe7prGC
-25M3fVUbgkvClVlx7IrIgRVqQmkP6dFjZ42YH/FIk7MeFoioHOoy+J7g1ow/J0Ak
-yLay45E6kpNzFH0qvZMAbZtWdCBCV6kvjUJFjRl8Jdw3OIR47MRVjI+cYeSKRuiu
-JDgX73fdlkxY4Jkw98B+Nx8sJP/8tBd3FYaZP5Z6rE313H3/m58EFCcmrf2vuKWF
-0muDB3qGvOSLCHTWCXvDahgsBzDATdg/6u//mLvaGbnlBSBgXE90hrrtYjL9iHKE
-1f5eqChxC0QApNQc9PPx9p3DcgOI2MqnKH85iNZAD/h4xzRj9dxT9YCw7OxpM7UH
-7sMnVucaumxdoWIiO/dppE1JFqMAe4zcI+qiLdJlaoWTJCjHUIiLrAm2TzWp3gwX
-3Fa8r/Ny+JVqvke17mxcIDxq0O4yw6BrFL8ZXMhIkq7UP0Q3iMRn9S8wcMyeXhD0
-mRPkK66vQhCMjwV43pba/DVMld7po+JeWz+SAmTKaUPR87cFWa0fq+R7qGvOU9jJ
-BBiUUJMs/n0KtKfOOxa12sEIFaKsjHeWR7wW+ieD1tSxVvoA+mE=
-=YXGh
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY54ACgkQbV8aePHc
+Nh0mhhAAjfZhVLU9Mulk73T7rM4SannMHAE9F3DhC9vqKN6D20oe3/FTzbiCBBcW
+6MHhbWqIKHRq4q2G/TvstPz2jurpxt4zpDaU9HOYUtRiA0Yb7Xlhkfeg6ueB6wOc
+gawCidTS20pgOYv/JXqrejN8TdE3Mr96W1SpbMV/g2pLgxgRnZTcGQC9vREVifMu
+tz0jcJkZX0nJzXIGGskNCW3fBS2DMswmUh4ut758qulXAUaVqcuDB4azFKCw48FG
+xbMxEkFE/XvS3gdnJK6BIuNFVMQG16NsHklgILCLoXhJKJFFf4OL3YSZ29OJWMv3
+cnOSoO+Pl8mchzjZU3BqWGwukjCWXL6sGKste/DDBzpMI8cYrP9VKEh1wAof8QKU
+nSak//3PTycuw0c5BdrMyI0WnUmSvSz58pcLKQSZqNu/RevBXXp5TwFRIpWZYnL4
+LGyw4QPxFFmr/+p15AyvWeWQIHW3mcLjYFPqV0Uy+oRcE1G0wh+spXN32QSTP3c7
+e+aOz2ObTsAOTNV+7VZaajCue4A2Dq99qZBriq58p5JU8RybgUCZY1vfUxLkd1bb
+1Lj75o1OIp6zMDTk7DDBq8R4KY9uYit2yXOEt4oA6NiiEMHwkQ9BVPFY+gduLgPB
+YO5DMEAXNTcnakY91pRZTGdVubXAtJ5O3Sb+TGC+Df9AymEUf9I=
+=t4nq
 -----END PGP SIGNATURE-----
 -->

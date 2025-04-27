@@ -3,7 +3,12 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Profiling de banco de dados com Zend_Db_Profiler e Firebug</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Profiling de banco de dados com Zend_Db_Profiler e Firebug"><meta property="og:description" content="Se você usa o Zend Framework já percebeu que não é muito trivial obter as queries executadas no banco de dados e isso é
+algo comum no dia-a-dia de um desenvolvedor pois com elas nós podemos corrigir bugs e determinar pontos de lentidão e
+etc.
+O Zend Framework possui um componente chamado Zend_Db_Profiler que nos permite realizar o profiling dos acessos ao banco
+mas na minha opinião ele sozinho é muito chato de usar então eu utilizo ele em conjunto com o componente
+Zend_Db_Profiler_Firebug e é isso que vou mostrar a você como se faz."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/profiling-db-zend-firebug/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Profiling de banco de dados com Zend_Db_Profiler e Firebug</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -43,18 +48,18 @@ screenshot abaixo:</p><p>Muito simples, não é? O que você achou? Deixe seu co
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/profiling-db-zend-firebug/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUO4ACgkQbV8aePHc
-Nh3V7hAAvsSB6yQq7I94u5kAkmZKsY1mlfdHnQHDrdxD+ajg4zISaXcuVphjTcho
-J18G5p1ANGrUjKjansawPcj2U9f2S/RJ1zfGj3CSE5f/l2gSEmG+p4WWlrTyeGzb
-8EBAvtxLM5PAAQfh7xpkPzJDcJ2/+GQ/4iuWTMJIaWETz7wKrmOG7kYeYz+RwpUk
-7o8hG3qWhHnj69LKFhD41UjPli1J521ZbvSgG0ch+jZHIfbx6f65k6cf9hLwsJSd
-bXgwEtUwBdSxMXeNKiO8Epzc8by9V58izMpprdih4VFOO0ou3FCFC3Esm9nsQJDd
-a7PpCJG22KiCLca0W5NKnXmkIIbWfuJ3hMqKQ3ehr7h1TILL9bIAR8hIUnZk7UZU
-6jQBYcMAKJaG2lwUcETRHHmHh1Pw+0g0ukTT492nMpCKRHSkQcV8/qiKoqImevFT
-f3YbLnii8RvmunU48T/L9bgshYrYp3yKFhm+xoO9QgpsLd94AB9au2bctjNh+yiz
-bP+EevTUDvEVIpgphHCEsmz9TDrOmXqbgIwcx0ApLyc1GH2OYq9B0rAFv25Yn8Xl
-z1/WdYORt/3vVMoqwRpne2Q0nNx7VbNZOJK0bw1dcbevBdPIeLyzOYMdcMm7s6fq
-egBzoO8vdEsCZdjRNztiiPylJ8nbeI549HXJAUmN/m5IHB9JatE=
-=ypXs
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY58ACgkQbV8aePHc
+Nh0tRg//QY0EnsmmWc+2Sj2YxZcsy7IMsm4aYXhZAoyx3W7VuGgUjuXNDiHW/TOw
+Ljq2pI7g3niatxh8zWGk5vqCggSsg12335x0DbySg26xMXSd9+m9mS2Cx2lTYUX9
+RffteDr+sHbDYFjwJ2VRrf16j+yGC/sBDxTumnRc01vIlp40QnBv1pkAqsyAZCw9
+osT75cPjWlgtBxn4eBwLCH+ROs61okUAN2YxwH3j7D6Lig6galMQb6e1fB36hwIT
+qSjE8HTzhswkXhzYDYmfQzyY/YpRZKLXNPTFXNyncfwDS47EZrugm5CI49SbLPfC
+rMWyIxqzbX74ZgApVmaRUkdKHcIHaNxzYiRoydNIYJDZsgClAx2xbAqrIEp0IaiA
+vtLSLKpcDtZCG+SD8G1B6ldKCFzAdMIsZmiG0r+7fUIHC8AyiHqqfRt4qUscRf1p
+LEkaexx/W7IV7mEkpQ7NqlAMVO60X6H3xrK6g/zm6tdd+N58SoB8KvgsQknqzZqu
+4DPgNocytHuKEcGzOr+NYYSrre2igxY9QkbxPom+mIeWUb/eHvokI3+/P7jk4Dnj
+LsHISzYbhRxNa5ZICP5DhqnZ4yNIR5i8XXcr/YzcqgeiK/2NxlZFk4B9UksSyXKI
+06GfNIugaYjt8nrL9rR6xrVsXzWe6xahc9fIEYvJtR9Howj8LIk=
+=UJ0E
 -----END PGP SIGNATURE-----
 -->

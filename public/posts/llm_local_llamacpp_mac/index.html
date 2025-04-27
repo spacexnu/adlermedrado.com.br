@@ -3,7 +3,8 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS"><meta property="og:description" content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
+I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -28,18 +29,18 @@ Add voice. Add vision. Build like it’s 1999 again — but with 2025 firepower.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUO8ACgkQbV8aePHc
-Nh0N1g/+PV9vGMjfTHCFKKh2K7vnP1Jq7s4Q2lgK8E6FYqKyUhq993dZGOxyqpmv
-ojSuye3zV5GFeJ36JLDb2WN0VYPRUe+0RV/GKtxzyMQOv4WFvjmGFjIhQPln76Gr
-oyCwI8O5r0v8T612pDwNlZ8YTStC18FV6zMl57SfyM0fs9RqV3dkgYp9ZkEyvxX+
-AC3+5N2UssiIjaL+QmefrU7/hRoCvSU7JBIdcfvQu2bNhLTZKES2XOpVgDOk56gG
-8Hc2h9DNiG9kY7Hd/fkEj1iV3jMiJ0398eeyb6GDQR0QP8EMlv88o1nRAutSTMEH
-PWvFFJl9cK2i32HP7wQDmdVPn+Y9zqSdY8Tpvg1Ot8pXL/zQSfJQrIGmYaYbs5So
-ikuyddi/PmZ0dIaRaSKYXZyT3nbmo+yZVkAUstfYZYvJHnmCWvdPiSvOAAfI9k+G
-WcuCM7qvP/K2oKSLxXwEvVRD3k760QDnG5oEA1zMO8/97Rfg94xnbqpW3c/5S8go
-oef97gP9OpTP+XuKMNfG+eNt8iOO18K1jNF7Sfok361W9pNhQEhZ/k3XDGxLNd9Z
-TOMtRjNBfJS/lARPn3nKTqnJal1eEqpiaD9Lv5lBWKGYByf3Z3i6enMcrOZqM9XT
-bgQJuXnADnHmh5OXm7/IlXbU3MauCU2Ld3CpyJWQwR5oH/0jk4A=
-=0wOj
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY6AACgkQbV8aePHc
+Nh2TKxAAk4o/W17BLh0KJoP2ukRj5QCo87emw2i6TEpPjKrnwPNehyfwDIe+A1tZ
+Yymsz8pWrrIaEmujM0OxRteD67QwPX+Ay48TR1Xqt0AtX/GgCRAYuGLtZE3QTkLh
+a9hAkzHXy30060RBa4w35LIcEz3HIQq38WHFWXLYC37eByC0L3TYzvwLdQyeDXWP
+5z8rOoMJTDeCe8qZqDoTXqvSnv1u6o+ucLtJUILTYt/6giYGsL9dv3NR5un7KOZr
+c6H4ZK5UjKELTCBHJvxhvw6nKwqLQKJamxV7u8AwIi7tWGrenXRLrCC2OjUeLJ33
+sKFbydOAdMAc2huGA0tKxiMfqUr/ZZWlH6x+cKCyZVlyiWBG9RnwAtlgPMGXnyNx
+siqskNdaO2CVUnyMA918h2Arj9gsENl8csbIXd2klUjl4C7+WJsbMYJMnoPWyCLd
+qwSDbN8XxCOBDQYqTpStK8JzG7JBrzEWckNcXvh3xqhwD1uyqwXtGB1G9jpOWk8j
+gwcGFf+Ex5UUsCqxcdfmy69OEARsiSz5EcI4hq8Xrr/+66An3sGxfryCTL6cUhfM
+3NwB+hZgaP4Cxqei8+NJk98pwMIMS1n1qv83Q1IvCTGsO1VPG4jY5u8LMOtVWmbc
+SeGwgBBm6zipPUpkuFcxi9XaD9XK/XrfvceSryja1UEktleiBBI=
+=cPQT
 -----END PGP SIGNATURE-----
 -->

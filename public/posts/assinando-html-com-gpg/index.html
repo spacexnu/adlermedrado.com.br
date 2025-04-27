@@ -3,7 +3,14 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Assinando páginas HTML com GPG</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Assinando páginas HTML com GPG"><meta property="og:description" content="Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
+muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o Hugo.
+No passado eu já utilizei o Pelican, o Jekyll e o Dangolino,
+este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.
+Se não me engano, há posts aqui falando sobre eles.
+Por que assinar as páginas?
+Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
+criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/assinando-html-com-gpg/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Assinando páginas HTML com GPG</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -122,18 +129,18 @@ importancia desse tema e cheguem à mesma conclusão que eu:
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/assinando-html-com-gpg/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOYACgkQbV8aePHc
-Nh0F1xAAyw5w5eVMDb0dbltgpnwZlzzjkL+8I6JLLZp4QFAyYXwN13ZWfF3Q3aqj
-ACEZ86DPQ6VdBAg2JR/vQL+BRqSiiqQmqBNdxLzqndO1qkMxUOhrsd9vqCHEXcYF
-kR18pFHWaIfEIHwM0xIACibKN1tzzVOKetSNpZGXQ6NIfybTRV5d1Tq6ABRzvmLa
-iZNLEZZ83QOTWwOytsT5AomEHQzBdC0ViOHvHNVe4rSaFc+HLajyYi8Phl7GxPLO
-W5raZsetHn00wTbN+voE28DwPUzMc+z+kDL8HK9gzZLojgK+0VJv/n3uBCWi4aV3
-4/4I2/bqy0qtpYVuZnON85Dv6zVt8nmkRqwlXU0TW3S8kgFMSqG/JbQRsa56dTvp
-y0DX0Fj0KtFOJPEUw81qukEyKcTjCAFh0KwidKb+QYnjAsBZ38vZ+sbOEWRIanq4
-cNI9T9N5H6EB/KuI31ky+SZuiv9Nbrw6UYsV4tvulKcS5ZbckHCyibXjRTYoftQK
-u5TjTuSD8JTAqLs2gyvmB/tNdoFxxbL8lHTarkHdq6uObhyo2WBvPjft8rN9G7v+
-SNhx1S8swmqXRatRxtUxywmdzPMxieYbFX+NzAfHAbBKqRDH5rPfXQdiiD9iJAXg
-QtsG/wyA6Df+qLa9DkMrmIGHBGovrP1XXVnoRGqpJhPm+0TKZXI=
-=sO+Z
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY5cACgkQbV8aePHc
+Nh0DLw//euCC12Wf6qVFIeM/ZS2QYo9EL975Y6W91ZDDqTd1gNy8uBsjgl69JaIn
+gy8T5h7jbw7ev/52AA5prxflQ00YYN64WqQpFO89Xzv0P84scmYiBvXAHA1hCt7J
+YDgO3SZKTTs+QZUZ9GJBIH0CQzcb6mvGbPe7kyv3KzTwpnzWCzLcUhgFR5NxBhOn
+UnPlvq5y9dUNcVNW9FSBbXSnvRxFIOrdv/N86eFD8sbZDVUAvxYsQIAH99UtEb/V
+WBPq3D6ummeM0/L9Z+BBYY+69bnG5eoEiYvqUsHL76zf0nFWFyTM75uRNEcABE0E
+7QFFZYM5v06+G+q+nQUTEZBKfhqqsQADovdD8r3vnsr4vQzyDkWI3zsKvixxjWS5
+bjENA7ESerj9e/pEecLvrrQlZHGoLSBL32dXkJZxuFzcOA/rr37VO9GDkU2LNCe5
+MGszzQnJ9JuZYqt6+gxV+CFKueezcBZfLGltI2CEHfb3bvbjqkYrsWfNjFbUP8YI
+tpfcTAeqLWHFWp3Frw4V76QbA12K4euA5sHKoa0gYTlyaBDO5oqoUkcUz4GxT7g0
+8njsXTc8t83UV7NGWa9IVuLP+Ue16z72GKv/vHab1qJUrwIGFU6i5zNXR4qvEEkl
+/THGJhI79/o/6B5bDdLn6U0HKrw9di5YnXcpfkcZLeUgmItV3P4=
+=V6yD
 -----END PGP SIGNATURE-----
 -->

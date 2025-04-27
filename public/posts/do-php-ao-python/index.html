@@ -3,7 +3,16 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Do PHP ao Python</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Do PHP ao Python"><meta property="og:description" content="Um pouco da minha experiência na transição de PHP para Python
+
+Eu e o Elephant na PHP Conference Brasil 2012
+Introdução
+Em Dezembro de 2015 eu fui convidado a trabalhar no Olist e eu comecei a trabalhar efetivamente em Janeiro de 2016.
+A situação naquela época está mais ou menos
+descrita neste post
+do osantana.
+Era um desafio pois a equipe estava bem restrita, a plataforma era monolítica e de difícil manutenção, somado a isso o
+negócio do Olist em si não é algo trivial."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/do-php-ao-python/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Do PHP ao Python</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -98,18 +107,18 @@ para mim, é um privilégio enorme.</p><p>Quando comecei trabalhar no Olist eu e
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/do-php-ao-python/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUPIACgkQbV8aePHc
-Nh1KDw/9Edq5ql2X0Kt1/OsceuFqP6yUpe+5/T1NhEHFwBmoO3oXLdOft5/fYbDA
-B0xARZqTpG+3M8EPGzHW9DY4kVvRsjmaRJUrMEN42fIbXOIn7VhS6iTSJEUXQ5w0
-PLBdfGUzT+i0TNZ3gmDM0dfM9mJBHLegXC2DvCOZdADdD53PELiTU37bccGeraLr
-7dEXTbeLrtx8+yBfNWsVray/36olP4k9G4I3Ag/47xBH6Swuq27ayYq/4x2gmSGW
-SSjPusooBumS72xV1oqWoiuS/AS3j8PPE+MEnuyfcmpTFTsqBPEsm1xrljFrEtDM
-aGF3/LVf/EFDbiLldB8S42HkqHkZOWvd8qVE7i6rnbTYgT7h7zzN/AzI1OPrivKm
-8IKgksMQOMvwi7ISMiSRRHHRR9gGjw+rLqWaUZm+pK49E/ZGkmPHtgedZDi55Lj2
-r/cSLufhWd/ujRRnz3hLvtH3CR/02cB7FwO9++kfFzmZ7Cbr/J5nhCk4Z0YP6Bjz
-0WEW1ejeD5dW6g5t268b9EWXXhjqJZRd9nXVgmYTgnW1RjY39KN5aRo6Mz49l+Li
-3yHUTzY2Qj/oyYhLUOoaICSePzE4Gbyq+mSw34yo4HYFbEZcVSiZkguNIjButxtD
-pRXW5yQnPdLJZ0vSu1k0LQ6whmdl1CNkl0Vw13D7MOxXFViqbF0=
-=A4s4
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY6MACgkQbV8aePHc
+Nh1pEhAAvzqkNi3J0g8kcnkXZtFguruj+it76q0ngYk7d2pyqobrtM/bPcl1iqy+
+qWMR8sHxw5Sdkv0XVsR8ouD7or2ICWTBTcvKsk5yPyLH9YprjpdvLze29CIO3qtc
+eS7IXmnlPduWKoDZ1lWeSlX5Y41SAZ/0exLGdi39Og6gHAH9IXeZWLq9DsesnZot
+aTt9iJohGpH09O2OmPT4pWdX+Yq46VN6tMuuscY7yy4J59lXSAuHcCgx7Om1HF7T
+TTa16eJQmfYPHaFBOsJiYa4pWMkHRxvcksJO6snD5Ipv7rZzuXOMcU0PzY/AxePd
+bzdG5qdUi+FLV7HQqh+RZjv1ByVTVU2qAeC4I+6hU4ftF+eQsqGsoAEx00XM1Bnf
+t2ys3VpfS/80LvY+tZhKbLICUK9DfugxaOO263LdKrUXLV1RDChigd1M6p0iilGa
+5nVNtQ2KpLj0j6ZajlslPHhD8eWxLXA1njCcaqCIhJlTaeMpo3+eD+G43QnEz0PS
+8K7wXbeQExaAFVUbBUP9j9odsf1asMqXOA11e62tgKYvOmixEXrRQZ5pFfsBms+7
+jA7FYQ53sNqJbo1m9NCBSwy2meJqBTApxKoBNeiSiNWyokYpV4LQsGvaICDaKlN9
+YtWmS5t8SCmnrzyWvU1trNPMnOoGMHH8vo9MG2tR2RLJtAV1rbk=
+=tbCs
 -----END PGP SIGNATURE-----
 -->

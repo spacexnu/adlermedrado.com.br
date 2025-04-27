@@ -3,7 +3,12 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Gerenciador de pacotes para Windows</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Gerenciador de pacotes para Windows"><meta property="og:description" content="Não é segredo que nos últimos meses eu tenho usado Windows como a
+minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como
+ambiente de trabalho em alguns projetos.
+Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes nix eu sempre busco por alternativas
+similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o chocolatey, que é
+um gerenciador de pacotes similar ao apt-get no linux, só que para windows."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Gerenciador de pacotes para Windows</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -29,18 +34,18 @@ instaladas (e desinstaladas se for o caso) via linha de comando.</p><p>Os comand
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUO8ACgkQbV8aePHc
-Nh2fzxAAzye9Qk735IvTuWWpAgIOULgcPhbRre7jzhhjmRXUmCV7cte2Esj5VErs
-5lj+hBZFpR+wqxFxQDwJ+nwmIsRNinKkMe4dO4dw9gH2pgooyWnUB9lmvhILPFP4
-Md6g7iVt0UhnCf7tETSPyKwlVwrWx4mpFVGWCnJs/WV6G6BVY10Q8k4Y8AMLdp8j
-wxK9yMvu8z/dazvNKl11FTKu9UCO2Hm56Jv0++ZMygjveJWJRCrEeiFFfVbLLmWq
-OpCBIFs7M+shqNSIimIQ8TgnfmEkklto7Fb4QCRu1PgU8OHyZ5waDhNIp+i0GP4F
-rODFpkI9Wpf/t7O3pcGTdkHVO0Lzr63iTD72tVRuaSXfk5VCJQFLUU7H/Bs2Bvkq
-LXiLLyZH/cKHCvjXGTwteVSwKX+h43yAs98Y153ieiJuuusE/gG6joP3o7WPN1a6
-pPNjDNUfMbHXDZSEH17YGbF0sVQ6w9QV23/CfxHgCY5Z7XyD/MrkljDq8G+FtS7f
-TsPmFpkBkhTHzZ1NhqnzgwdqhD/FxZl7osKNNpj0fXKcq9ZDlcjvs4wieAlRlko4
-rs1kZ75M6xRgpuumyy8itTyXPAasyjbefAByq1qaAGON7buZLVYoeRq4Lxk/pfVz
-bIZ/GN28Kb5QOjpIo6/BErIzMEftNxvYzknfPqD+c2ZYsWLo+S4=
-=ujC+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY6AACgkQbV8aePHc
+Nh2WfQ/8C+CjE186gyY0OjLs2WvxEieg2MAHEuidmtwshqiAutSe2s7LYFKBvypB
+2wpUXzSPMQODQwn97ptbbM7tiS0Vb+ftoSDZEIt1Riip3ZmcWbh4EvHhjpV50r7M
+9XmuRdJa52UTPAdXkO05QTYxiNVXDCFhzuX8YGPp8cKiPiqaIfKlEd3eQVACX3ec
+ORsBEku3D31g1TeW7sww6LTopaBdIa99chB/VXEqJBsiZQ9B1Yq9eNavB8ALB9/3
+JfXtOequT/pXvYiw2fNyq+qAokGs8CaYinpm/FIkL8FdNAW/sk3yWlV173UJdRMR
+V6Nls43hdZpCFblO6pJB9nd3+jPxxyIv812P0brvWCXt9LSox3QGKNavh2L3P3MI
+ov9EFPUtyY6pVBs+ceIFye+nHr1i/xL5dKwXqW+NEqelLn3Y5+2JXe3Nsq2fcHnA
+lbBkA3LO6fe+ZRgIbvQ+KtYG7jOClcmkOQDkJOKVSpswGFqtx2YcmjjqO6OywBN1
+6wL5kw0x7qwEdAkVBPNNx9N9vdx+PRHp25x8U1M93KmC4qo9su3MIi2w0bHczMpn
+wwFjcDV07e27E2NEoY0lsW+IqX6Tbh/8qEGaDn+F8w044P8Zq62/NP8jHdXcBmwe
+v0ujcULRP8QUFeOcu075r51kYdLT83TYq7dOPZm4//M1ubCtNts=
+=kYfM
 -----END PGP SIGNATURE-----
 -->

@@ -3,7 +3,14 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Introdução a Criptografia — Parte 1</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Introdução a Criptografia — Parte 1"><meta property="og:description" content="Eu gosto muito de chuva —apenas quando estou tranquila e confortavelmente em casa— e agora no momento em que escrevo
+este, está caindo uma chuva muito boa aqui em Guarapuava/PR, além disso está
+ventando bastante a ponto das janelas da minha casa ficarem vibrando, isso é muito bom para relaxar…
+Eu não sei porque escrevi isso, mas tudo bem, agora vamos ao que interessa.
+Introdução
+O objetivo deste post é tentar mostrar o conceito básico de criptografia de uma maneira bem simples para que todos
+possam entender, pois o que eu desejo é que usuários comuns aka não-técnicos, saibam o que é criptografia e como fazer
+uso dela em seu dia-a-dia."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Introdução a Criptografia — Parte 1</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -39,18 +46,18 @@ descriptografar, certo?</p><p>No próximo post eu mostrarei os meios utilizados 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOkACgkQbV8aePHc
-Nh15BA/+Or3X9DriNQ8z78JeKTMLSiz2Al/iR5v3lJiW0la9B/3fTdencOBm4JAk
-v32uaw+o11ySauK7wkDv+YBRd4CJ9qVdM2axNx+2XxTqedhpm5ZcBapCXw4UQWwj
-CWwTF9duujjFUiOqIe7oKQYuR+bBBM8Q+DAPSKImX9G2zplgvF+5dPqjdeCMq4MQ
-zB9iJlfNL6pW3gC7XGPzSFKW9GlUoUY1kOWJ7BxYBc1WUZua8dzrDf1ydCMUwL5H
-jLQAGSJc61bNVVt4qAoz1NH2lslTSW3Mvq5tFV0kSVYVAPgKbDL17gG2Txeoikgy
-bka8DI3f2vZBDCKsujgn7wM07UqgMUV46BNaN36Zl9FCbK0F/0Z6pm8PCMRHkgb5
-UmX/6VMD71L4KBpTfgBWnhPoNFDOrGIRpATsWWTtxIFyumc4hTGs0bdu5aNAnG/x
-wZJIa39DpZHWGmOl8hEsFn9iqkY0H8lCP6KVCxb2wyjab0QrJxrGr/ehlZtotGtC
-iBDf0DvJzbN1XJaJvXm4fL0T4oBkknegiPw+ucshAbVsI+tfRwsAUB+A4xqN2qLl
-LOW3OcGETmQH715XLZaErRO76sHfCIpNy8eDgXUwjDwz2DuzIwh0YpAdQSgQ6jxA
-0RxvTHLe78m1dr0Zfe6AS6TUx14LN+suPQYh5iN/dkT4xIwz2yw=
-=9SsF
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY5kACgkQbV8aePHc
+Nh2wxA/8D9vy62mPq6FveqlOMqS6ojhyq60TZxb+SCAXR+oVHG/OF4I+goFDfTKk
+SGtiXDxnbcRWutF2+OY8S6YMksqEbxgTo2dLiHMhc8CVr2iYdrjGSyiZdr8no4Y7
+xcQ2IPYNuH9NvVlsNHZ0w9FiPFtJbnLY84FXzQJQV08QdWF68/42Rd9+PoHPbfpK
+NFcqOzX4jQD5V4OSRF8h42nRbv1YZ+uf6niET0dSwmbf1zzwMYz8LzBTQtTSStf/
+kWgOTugLaIL/l+tREjkJcSk1OYcXcSpj8dMw9EsvMJ89psGjBgJgyiQpPR0J94fF
+oq9jQ6EuoBIOYwHfulUPJ1YVnyUHf4Ix7L3V/yTmthU3qwYWmSPfheSZRxID7dtu
+xT9deNkuZEImzl6nG/vb4gky7NUAScuc5jCLcv6KKPNzwctK2cnyfvcsEf3SYiDL
+9tm16w59Rc4xo4wN98kPXFLqVTaot6fkjuyYjRkmWdx4TRnw13HjbfKKQHzg3Pus
+OQbmOzE8dVgTu4FjOOdKQzeba7wwPM/RhnwqLSLDvzYsQOa/HKPIUFZss8I9rspG
+7zEQskinA1jSwf7E4Tj4g9xuSEwuLRjumYqrkJ2Zlk0mxfCm3T3cpk6yBe/8pFlw
+ftDoge8wBl9xnDw1u5E5N3FBYgDeMHDJbP3d4VvSH5pY/RhkbWg=
+=Uyoa
 -----END PGP SIGNATURE-----
 -->

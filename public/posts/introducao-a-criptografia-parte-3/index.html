@@ -3,7 +3,14 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Introdução a Criptografia — Parte 3</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Introdução a Criptografia — Parte 3"><meta property="og:description" content="Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma
+Windows, Gnu/Linux e Darwin (Mac OS X).
+Apesar de cada plataforma possuir ferramentas gráficas para a gestão das chaves, não é fácil manter uma uniformidade
+neste processo, então eu mostrarei como fazer esta gestão utilizando o cliente de e-mail pois assim haverá uniformidade
+independente da plataforma utilizada por você, leitor.
+É possível também gerenciar estas chaves através da linha de comando, no entanto meu objetivo aqui é facilitar e não
+complicar e eu presumo também que se você, caro leitor, possui as habilidades necessárias para usar a linha de comando
+em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas man pages ou similares."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Introdução a Criptografia — Parte 3</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -66,18 +73,18 @@ comentário que eu tentarei ajuda-lo.</p></div></div></article><div><div><div><a
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUPAACgkQbV8aePHc
-Nh2AGw//RpVO3+osIMhgFvBJrzua2LMUaBH/+38Cke++mPz6e7fPCZgrtJ0jRRFx
-rgTKkMMNSK0xwjyLZIuBgLXT6IxXBz8Mt9OuJvZLnO8hMwMyw4W27ZtGCePM2TqE
-Ibxaq4+b3n8tRJjl393xarfCFQgpYBzIfqPzkjliAcWIY1pZ0qeO8YRND4iD+kKe
-mPgi3RKjjYRI2MH/TILRNsLLxnH6htzO41Z46dtjSO/YpPV9tghyGUC/kIUBHFAY
-7W3eflnX/1AnRapGIkSPiH5jWgwCeXJqZBUR8L7Ytrl/uy4e0pdAI9Ra3+gtZm/V
-MfHFl/8QwWc48lAYLmzgjxds9FrlGxCFEG1ZYtJpwQFm1/stM1uJJ0DDUH+U40e4
-X0G+kUcWSJXaFz4mXCqQd4RAhl82leA6z2byHzT5s8uHLjGw1LTqPZHERrqDLlpi
-p86TmQLx6fqP8sAdCpd7vJobf+ndnxMUY85u4S31Y1wNa5cEmaCLfAuNna0NrJ9Y
-qJK4eQKP235VzufHyO+uYv0VS6XRhRWwIqOBxtGnFYJW9ayCxgjrYeLHepO3wRDj
-inQI0hd0Oc6PjRRvpNp5e+e3hQXTy6IEIx2FGCYj391rObiPQ0q9Dysmvt+X7dJA
-1uoZLei5zVHzqD05FXQqX5x/BONnzRK5EuubTa6wABVYXVkUcM8=
-=Vw4m
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY6EACgkQbV8aePHc
+Nh0U2w//UTjeCK2JJpGWTC5YoJSFgRtxyi4jZ+EgdourMQpD1VsvWzOlHtnLmHBw
+MnnBDq8vX+RYQ9/SE6jQaRqOiVTKuJswAN21p9SNEzHhx7dk4dPWJ9zI15shlQGL
++M783/uhLxdwfhmmyNCTYdQ2B18UBL5t7foEtzBjf4FDA5AYwHLEG8JCi37uHNKs
+7Xma7bWzNovVa/olnuzheQcGtzlVrPQ6s+gRulyVirY7SNPdHEH20HcM5ZN2ciOk
+WEzMC9npn/0kiHoaItRAUAqcaj7AReV2cNU+QNQe6khlRTRQthD1yiD0yXPiwcnP
+r9OPaxBAr0p2I39P2gNh0/VXkIkxv+E/tiZoctWlj8AhKcSqyEe+Rtzgd7YUafqp
+F5S9LjICmA78mFOsOX1ut64WWT9WcdJ9jEAqJSenFc2obLJO0JXajS5tgJGUQiy6
+4ksbQ7RPataWqSJEtwOrwnaxh730BVhavQZi7gX/pfY0RRIrVY4IaEeXtP6/lKQL
+J4t34d70BL18+3JgLIe2CAIDN+3+jT4OMdHIvbB/28a7KxZ1zojdTv6x9oCy2rmn
+YgvnaswmbPgXCchzSVSAEp31rgJty6FzUTMxxI/WOuOQUiLjA/wH+LqiCj1X5MIp
+rUUGqMpo+axC/3sYf0CB3NuyE9SB4rmVr/JLkf1HFY7ldAu0y+I=
+=ISK4
 -----END PGP SIGNATURE-----
 -->

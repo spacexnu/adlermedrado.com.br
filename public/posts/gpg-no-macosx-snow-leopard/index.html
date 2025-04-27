@@ -3,18 +3,24 @@
 Hash: SHA256
 
 - -->
-<!--
-- -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- - -->
 <!DOCTYPE html>
 <html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
     <meta http-equiv=X-UA-Compatible content="IE=edge">
     <meta name=viewport
           content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1">
-    <meta name="description" content="My corner of the web">
+    
+<meta property="og:title" content="GPG no MacOS X Snow Leopard">
+<meta property="og:description" content="Desde que comprei meu mac e instalei o Snow Leopard no ano passado, eu busquei alguma forma de instalar o GPG integrado
+ao cliente de email &ldquo;Mail&rdquo; que vem com o Mac OS X, mas estava complicado porque a versão do Mail que vem com o Snow
+Leopard não suporta o GPGMail que é um bundle para o Mail que permite que esta integração seja feita.
+Hoje, senti necessidade novamente em criptografar meus emails utilizando GPG e por isso fui atrás de uma solução para o
+problema supracitado e desta vez eu encontrei um tutorial bacana que me permitiu fazer esta integração.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/posts/gpg-no-macosx-snow-leopard/">
+
+<meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png">
+
     <title>GPG no MacOS X Snow Leopard</title>
     <link rel="author" href="/humans.txt"/>
     <link rel="canonical" href="https://adlermedrado.com.br"/>
@@ -99,38 +105,20 @@ URL: <del><a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x70
 </body>
 </html>
 <!--
-- -----BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUI4ACgkQbV8aePHc
-Nh1uBw//W9u4N4m6LPcOCFuiMjaq7ZuCJsRctZTkjfdpLnMv7E2KxH2SK9eAdJM2
-SgRLNwkMlW7hBGLRWv+5oEtbfkxloXuKYNUPm2MFsNmDcGeM6X08W0ptLN6AM9Bc
-Dhc5nWg7DIoNlqFW4oyYpbvsNO/gbOAXU9K1vQBMpynR/6KQ82XSsKTHzfhhyibS
-bEIbXSDspXv71k7od21DZF5JF3olDSgdOeaHZ5DvF6zDvxS2/nasjjYRUVweL+YB
-/RQw+1c6Med/rKJGZLyAKwVxV61G4QXfyPnJbw22FMKC5UdZ4ubkmAUjM1/KxPzn
-fh4KOj1nKKBSma1k2feygZ25r6DYFUGOacP6iIyz3NGNpMgGYfzHkDdPNfud+wd6
-z7BPRDh5BFiIZsdfvWoVQbN0B07o4Cr/nRWnBid9Q2nZmG+7qpwHy9VE95QZZwDW
-qaF533LHpjDDiwLuV3zzMhri6O0EOcAXAUs0UPSc/C3SEROQXwsaCHTbWoT+5DT/
-uODEkmTqxF2R5+uO6PxoPwDZauwN5/0TABzuwQURvWJlM0bTgpFT/3gqo9my2fE5
-mvTfde7O4BWEqE2WYy5eyOXtpiczN7bJILd9xxDH73Ng8mqwzuUDkgEfPQQwMYUt
-qjhse8YApbjXqWnEvGqb5+8GsRZ/xXD12gP+TqrHsv8NPArJ0bI=
-=zpMq
-- -----END PGP SIGNATURE-----
-- -->
-<!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUPAACgkQbV8aePHc
-Nh3tVBAAve9CwZPRNf2f6OGFj/oyq/7P2REf0Z9mS4bpjCc7kAQWwTbFkI98ETOz
-xvjGdbyuMb3Sg8DL0rf525dJQw95VTsm0A0AdmgDXSi/RG+k+LSlFvrxRq4shB68
-/yizj9LcKDYQcF/wb/Mqvkhx/7fuTvVnVe3+42UU9/t7IorVeR1hhMOs8Laqn69V
-DtBOS3YQSR+WVkoqZHUwQkfDTKW+TTT7E4NNJ3iD3hfTQv65563fWasKUS2BxIWM
-edjae45GJB3ggCfXr0QzSNmBwyyYMPu6tq8Y9+4Say5ISrbbEVcAyiEnjBM6+Uyf
-ClLlWo1lQpFdYBFww8zGgXa+4wPPs2CLXO/HM7nxrRdHMr1raB6VeVWURDVqOtr7
-x4HN95XE+3fX8uMTMkuIwqnx6eeVSGlN62O6sCfUyUjiOo3ky7y1eVbQBQwzX3zE
-Y+XZhe4dghNgwRPFM7YcgTaZsitabnlfi8wHGQjXvtgczKrl94ZG3PJ523qCZynZ
-6OtAy3AA7fcXb8fOYr0wxg07MPV8Br9VDH7SNn29B/JenkrF1diW22UrdQ86Wal4
-QoJkQZuQ7zZAxEB9Eb4LFNC3wubzhjF6M7Wg2UgE8SlPsXk0mNuK8A6lCEfrp6/j
-6THxqKF1VQXNvTpX8Wl2M2ZJQ/xZdCuMmo/V7Cnsb6GWLVQpVoM=
-=BKg1
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY6EACgkQbV8aePHc
+Nh0vuw/8C+x2nj2ftoxhHzBdR8ZRxGTg2aOC8DqEej18jbKiR0VWbSoTErfk2/xP
+U8bW1QSYv2a95tu2CPZx0429hTJ2McK1F8HYg8c6Vxrrg0vhhJRPmGbP+hU9DoY2
+nZ5EpWPmCFA9Xxt+kU6AiRlu6Q3KrTodQAdv1Emuh5zDjaHZNcNXQNlzEwVVxIYR
+1aYFscvicC2BP8rIE3heE2RwddYKbZV0BzT2FG3kA9Gg7VL2pxvzXSrlCAaW4UI0
+hTwXQDK/fMzyye8nL9UJFKId97u6k9Cze7B55VhDKkheKcMQ4gsU8M5nWRDDvIpB
+yQxyopf2W0S+GpEQoNNNuuWIEkIUu24HnlosH1b8speG5IYlcU+2wspTjByQoAui
+JTEDNtEkjYTGc9tHog2ZzUMq59/S9OV2P4elvbfkPeIyXUUDXiK5oKmZ9nqaunGZ
+IFULZeP8V0lqWNokgoK6j/feZ1sIYzPLWq4MFNKG8WS1jm4EZW3ubAp+AM8YDUZ2
+sXr5vgxMPSv+obhfWyT2pWdzaCuQdozM6vhPsR5M96R++8+kAPQhZEyZIyS35WfT
+h4T3k4qh2zkr1OHHNgdmXpHASzQJaoA0i7DLmWtGT9VgRgzV0anjCZQe4L88RR82
+fGwcQwB73roAhmivsOSfVKY/uYfV3ChZyEnPZXQEpRfNvyzlCkQ=
+=/oJM
 -----END PGP SIGNATURE-----
 -->

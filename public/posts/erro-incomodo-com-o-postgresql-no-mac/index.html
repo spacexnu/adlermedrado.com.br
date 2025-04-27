@@ -3,7 +3,13 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Erro incômodo com o Postgresql no Mac</title>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Erro incômodo com o Postgresql no Mac"><meta property="og:description" content="Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a
+atualização para o MacOS Sierra.
+O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:
+
+WTF?
+Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum
+problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:"><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Erro incômodo com o Postgresql no Mac</title>
 <link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
@@ -20,18 +26,18 @@ a lidar de forma diferente com este tipo de problema.</p></div></div></article><
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/erro-incomodo-com-o-postgresql-no-mac/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOsACgkQbV8aePHc
-Nh2B5g//XpNWuxvYkLQExMqMevfCJEX2xOi7VlrW7YF+mMn08gEvF8FP6/I7wMt7
-1f8TWpZ4TlJMC1SpgxK0wFjDATlWy+JXSiDyvVbKjbSMsxVUC+8xpRs8PLJG+msp
-q1cyBLe7qjZ1ma+gr9SkwxTTcjOHyET0VMBpvjChjgvoO1QJxvbokKRXxzQoNuhC
-8QaKfcDysruAVxsbhog8ilgMi162LWnn0lUpIiowDZ5BfAh8+U041y4gQs4UERou
-9yAJK4Gg/LAwNAeT/pqZ1U2dKZivJHlhNrWsUViWmyKG/Un13WNk0OwZRTb2Nq4E
-qa86z3LpukPz/WxgSeUC2YEsH1QFBL/+qCknQeOjdzXFSnrCpOB+E/hJZ1VfHC2y
-SW27OPXvujMmh3C/oAURm68Yw4VQiyAlRlhpPROG+ESB/xzy0dtVF6JH+1ZEge8o
-K3oijaBcPrCwcBjiKcToKNgkQLyLGOqGcF/coSnH5XPcdWBg73D+2hastgjxZNg4
-gJEQi1eVXuXKI3YOybiLl3rMWhsYhremoG6xrhY1ZKwY1E0fdG+usLI+NLsYALRO
-f/xKBLBfT/1EFqBjEnPjpYsaCQNKEnLN+hy18ugy5rvP3NKWR2aLYrO0/wzg3erv
-rGF4cWAPxlnZnMt3cgd8UMuUaVvD7ysJV852dMUDBAN5CroCdCM=
-=JQAQ
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOY5wACgkQbV8aePHc
+Nh2ZEBAAiFaxuGwNjoJeSxtL3a7m4M+o/tUcIt1PkVInoNMTLyr7b8//EjK8KnMm
+7js+kzYnhLZebcj5VIniQuDL58QwR2llc5UTDYrYTYPE9mwgGpeHLGqWxPHJOLl6
+0HkugjDNpqu138DlXDBOdmnjV3FEvRwRFuJVYhRgfSzfJNqqRC57AUFO6tZ1Bme6
+2MjQdqtIACiQwXYanayG+y+e8tmpiZLmKVO8vw0/ux3ZRfiO/lkItI3qDtwfD1FP
+3rtBR1h5rRkb2cw/BwOTz8YRxabXwf17br6DdLiQH3uWiHySmJU6Rptd/2XNBGW4
+PDUAIMEhL2qWnNlNcoV4IqrFAgIcepKDzYtkMMJbspAUBl09usZIqk2UEHOYXNwD
+wTT5JnXzxo+z6Wx+7V0LozFXvgbn2B0Z2XAdaEsWa0jvidDsYO37N/p+6Mtkwn6W
+sqtnX//PXgU8xg/l5laMU5T4go9KzeHmlf1rvQ4Nc7u+k/8inCaQHBtc+XKYf24x
+jxcDmnphJzGaDJar/fWlnKNKMUg81vSKL1pTVzt5ETc9w3MBpKky2GA+uovUGjp4
+bqrzQxkgyJRonrRFDR6QwSIUDQ08iYoawZD55JEhXvK+ghw1Vm+Cje+k39B8FejT
+vt+mwLTQ4/bh5qQHBwIhqUA7JGcRo6/KHFZCvsD8VbxguIdW1Hw=
+=fRpM
 -----END PGP SIGNATURE-----
 -->

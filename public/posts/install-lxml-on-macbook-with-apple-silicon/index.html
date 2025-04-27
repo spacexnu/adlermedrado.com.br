@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Install lxml on MacBook with Apple Silicon</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p><img src=/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png alt="pip install error when installing lxml"></p><p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Building wheels <span style=color:#66d9ef>for</span> collected packages: xmlsec  
 </span></span><span style=display:flex><span>Building wheel <span style=color:#66d9ef>for</span> xmlsec <span style=color:#f92672>(</span>pyproject.toml<span style=color:#f92672>)</span> … error  
@@ -43,18 +44,18 @@ Hash: SHA256
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5EACgkQbV8aePHc
-Nh2Jug//dFbewL0yhgBTYbYHSiyHhRMazkiQNcs6BXQG66+z/42NJVmoIKPZ73yI
-ok+ULxX9pKZkPpiBF/wFOeZhkZ/zh76axm1m6Hv9KLcWB3fNADsqgtgJtUvXELCv
-Q01UjFl+hDLIpvT36Y2iotSG4Gyt06vTY2SYBhB/knQHMWDjMTdJ2QP27Q9fC1K5
-SRF3CpYRP+oJ/5dW5EBlRQSMIrFuKMW2rfnRE5yWfQWOp5/iaL8FR/CyVF8bclzm
-zMaivBfIFMyE9vy+F4y1khBPUHNF2Skk5QWJ972+Ta+TtK3es7bv2Wdt+XXvbzYh
-sJuRUZSAqHOyzrg0viGhYsB07deR1Peg4kJ8gWssb+gx/svHrtUTK2YMIEs/vcIR
-JkZ05Hjm3DnbDqedlfYn6rM1wcSToOckYKweu0Gk7/CxKFXcC7jceC8GC0SbkMg2
-CsglrsqFdlqytN6ajQyY5qhmUKfaNrqWfeKhlZBwNju5Wu/CLuHEPYQlIomLRxpz
-X5kR9sm9SGt6toRz0v7NnQn3UKFK/CDP1Q0XD5WjNV6oflCQw+tuJnnjWthnpfEL
-ABhoQXzEXwpGLLcQWrWMBZy4s2ORBviDltvGUNh8xAUJjkeMhZ7xbHAt1C5iGx4N
-iY4iRAGOSITPW/NkAxtGrQK5kbcckMps/uegKaDiVM7CP28h4eM=
-=LtAe
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOYACgkQbV8aePHc
+Nh03FA/+K9NpGTpf91FOnPz9sN5nN49BeIhZy71O0NytHrwmDFw61NrlCd+KlxBG
+2qOWrofm0O/0DOP/8O6luzV0vroZSI3P+yIkji0K/Y8Q50V7/88NEPbLulUo2VLh
+GlYOlKyWhJzafntOGFEhFnWRuggPE2ucSplaYw0PP5Q5MWRsTUUoXwf5yNx0oxfj
+p+tT03lAYAeJ9u3oZyazTvPk2HB1vHE44+vqq9zorOM2lAjNG9eXxXxpPdR6bcuI
+cRHhz/XsqMVp7vknoH6n2pS9SNBQ899HMTkWA7uAjTcJh6iE+fQQ0Qp3lyJb0n44
+YRwsF6aZbcY7bLqxix629bR7wo6JVIFKpSEWMJYSpnPf7d4pj3+qr4aQzB2CXAwP
+tvEQDZpmawf9ijnGqpN3XOGYAwdgy5s4uhEuaJ32WvVbLj2a7FU8ciy9/yjnFNJ8
+H5S2qk7fb1c3oTuzaW6YP+qMBZ9rK+y0014aFVFOVTktj3FhVjZLrNeOagNwDJjk
+fkmIfuKq2G9Noex4hhawU58bHY8WyrerH1paLlQUjb9gH06Dg+/+A89GUR56jIzm
+vVv93oj/EIF3yjkplSvwU/iec8xPuXExA7kG6Jq8A4EX7piNuGQ4NQyocXKwbFJY
+KwsyxS6UTCg+vmZodEFQXywqJPNVzmUv1GTG6lWvT3enhIBdIpw=
+=dniN
 -----END PGP SIGNATURE-----
 -->

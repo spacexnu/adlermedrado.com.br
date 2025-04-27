@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Shadowdata Sensitive Data Handler Python Library</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Shadowdata Sensitive Data Handler Python Library</h1><div><div><p><small><time>October 12, 2024</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Shadowdata Sensitive Data Handler Python Library</h1><div><div><p><small><time>October 12, 2024</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>I am deeply concerned about how to handle sensitive data in the projects I work on. Nowadays, there are laws in various countries addressing this issue, and the topic becomes increasingly important as time goes on.</p><p>Therefore, I decided to create a Python library that can help me deal with scenarios where it is necessary to process data to prevent any individual from being identified if the information is accessed. The library also handles data transformations, encryption, and the detection of sensitive personal data.</p><p>Today, I released the first minimally usable version. There’s still a lot of work ahead, but the project is already taking shape.</p><p>Currently, it can:</p><ul><li>Anonymize Brazilian personal data (CPF, CNPJ)</li><li>Anonymize U.S. Social Security Numbers (SSN)</li><li>Anonymize emails addresses</li><li>Anonymize phone numbers</li><li>Anonymize IPv4 and transform text more easily through substitutions</li><li>Detect Sensitive Personal Information (PII) using a Natural Language Processing (NLP) tool</li></ul><p>In the coming days, I will add a few more basic features and continue to update the project regularly.</p><p>If you’re interested in checking out the tool, it can be found on <a href=https://github.com/adlermedrado/ShadowData>Github</a>. I’d be delighted to receive feedback and suggestions, and of course, code contributions are welcome.</p><p>That’s all for now.</p><p>See you soon.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/privacy-5-initial-steps/>&#8592; Introduction to Internet Privacy: Five Essential First Steps</a>
 |
@@ -15,18 +16,18 @@ Hash: SHA256
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5gACgkQbV8aePHc
-Nh3Avw/+NfXZ3fuKR/lV/vJuleglOf2VId5DPP74VRLlZMGSyfaZDoj+W/TE0Q4N
-ZEuM2Iw+NbYx01dy2ek3/tfcFL7yeHt/gtwpxpZJXN/aqij3Ez0yea5kgJfJM0Kb
-H5AUA5JdSfCYc/mRwMfh2HWudYOx5xbiU57Gj5kihStBmzPZXZbBDUq6mAjLO4sp
-Et6SKXMEQkpfAMvhEIbKe3jgbC76UQ0Xu1Q9PNvJ3QVz6mnPJpWBGaRtQ+LZAd5h
-oqQ/3FcT3JOK1BVZKe0L+IFBVL2k4lvZhFrRLVLn+D+O2HQZCScIUBm82XDJBaEP
-M1vlLJDJcPEqUxCzXnO6urx0GKf+eoer+zw2Smljy90ykaygFP49Yx071LhhQ78Z
-2Ihu1scAFGW4qCprn6bTJuc8wnkX7D0mOPkxMXiIbLK5nw0OT80J2ljuHOrLNQCv
-A75qVQWhf+o8vVWWDT2S3ea2qeqeCKQYuyxTLWtBcMIRyLdq7qt6V9UHPYkR+Pxe
-2H/VpsDJL90XpU8AC90lR0dYj76w+xvFuRRP+oI3jmzAwmG3a3I45zTAH57qmyPH
-n1QHi8hoJ8TAdv5LqHifYvMUHmzL43hC6e3Qdv7J9NYhRMIl7ZzZ3Yf6hFf747bj
-uGl2NoSUIELSA/4W0SH0QxeA6Szoi1VJQQ+MCjUhDp6Tn/+Unhs=
-=vwYY
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUO4ACgkQbV8aePHc
+Nh2v9w//R9Ae2PtfSIl8kCi0PRFA/mLvqhKkcZ3a5+chfwoyiEKJJRwZRJIy8zva
+lbJqIS6txOXzFFxr+ZGTNRYSYJd1nerjK8QGGQsRN8QDKlB5WLi5yjzmis7sBH4D
+pA/ZudtexrjrEdqxhn32+LtUVX4A/UpVGoTW421GwiZvxzmlORX0dds7n6J735lV
+2CunPIY/itYSkmA1Jvug1ZqsdwQNix0zi1urjNdeW5k679D5i1TTfqSS0wgLs7kI
+3P0ghSvy9MKpd/WrfnsE2zBCV8Y+/gDZRpb0jejggl1rYlV6Sgb52/+QrYAPwcf/
+I/L5P1Y80jXFsDOlwTvjXYvKCh57A6sEfsIbsXXQr5Xs4W8kKRx+cQvwAXFDnuap
+PnGRxUaiqMQ2SR3xvMZA0hf8eB3rHauQwScoBznC+lxpqJrDDOC0FyWMZx2Ks27S
+MbiVXmHMy3MSXpuVwN1tP6/fivmqqNSGGGigM0TQCJwGmngE3ZWw5qffUM+E/9fr
+ji/aJWSxHy7DbGjs2rYqfTs045DjwkIUPLZXrG7Uv0D6FFBWQuR1W+WJn4IdOplx
+Nrey1mDns1vq+mpTc/P4aG4+FDJp2vhvufGtA4/W8mvRFF/BlA7zEBttNHTxK+Vd
+bla9dWmliormCRY9d6S0TvEQXUNNLD/o04N+aL9XcyLmNVR5NjE=
+=C9YS
 -----END PGP SIGNATURE-----
 -->

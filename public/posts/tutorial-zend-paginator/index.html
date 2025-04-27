@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Tutorial Zend Paginator</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Tutorial Zend Paginator</h1><div><div><p><small><time>March 28, 2009</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Tutorial Zend Paginator</h1><div><div><p><small><time>March 28, 2009</time>
 |
 5 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>O Zend Framework é muito interessante mesmo nos componentes mais simples, desta vez eu irei falar sobre o componente
 Zend_Paginator, que é um componente que se propõe a fazer a paginação de qualquer coleção de dados de uma maneira bem
@@ -113,18 +114,18 @@ negócio da aplicação e não em estrutura.</p><p>Deixe seu comentário sobre e
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/tutorial-zend-paginator/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj40ACgkQbV8aePHc
-Nh2jtA//ZFvlG7Sw5ToVlU7OVU5jjDYY4GJHvGIOwfv2UYluIFJiRdHRENlIxanF
-nF6JoLps5zH6/V7CYHxfVcbprp8yBu9L89cySkPh0uxDaHUsw6Thw1nyPT+tgjjN
-iRRlsFU38dCuUVlyJ8bVRSXdncKSaf+967VIv4VcM0N6Jn84lsdq6/HtwkDQv70L
-BTT81Aq0gmNtxsXT8N01eXtyXZwcv1jowsc6UNmXJalmwafIPA8tcs7O+QNXaxSR
-9rIe1CmnWWKEC4OGkExalqr7kor8YWkpDLu24vLPJF63sF18pExrC5H53RFBt2SN
-VNQNW1FqFCn6slXZiSn7MJiAftg0kwNn5V6QTtSLIlPmeE50ypbLHcWlmN52tjmt
-Qf/uDnmGAVF7iLuNMpynV8hd181qdZkDqE9c6iMTwHM0SsA+rhz0feFtJrjOKqoP
-m0fGGxp/qSIxkzp5S5CM+gEHHBCzkYcD5y/zVeMDuA7Ba/kIATIxxySWOUEgzR+s
-ZrWD2e363Aa7pGDbnvukmnrzUwmZcTs+4G9yp+UupqznDcdjX0oawCH4SLya3RbK
-sX/AORRtB0AEmU5vPvnxou1FEgFF2k7fNBG+hNL1OjQRdYBAVefAYrReOPO4NByv
-Al1Wag2VkqhQk1h8imgizG5ZtC88SS622yRxu80v67dx8SKXt3E=
-=S0MD
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOMACgkQbV8aePHc
+Nh35aBAAhAvtscmEXRpqh0mUWZosfDQ5DTOGHTTrEFqgrerSR1vKzEP6jjg/J5as
+EcJnsnimsMDklA7MYm36KgdbTGShNaIV2Tdh3Qi+wWkq0oNef+iAcMtsfBStPd30
+7mOvOUOdCddF/x05qgQGTCkPUaPC1xskS6yz/Y+IxP7YpFe0H8+QPwaTPRhaYmO4
+9AwFE0XTRvXeEnFTvS359Idm08c8TrceKcFvaCvLT2Bf14XDWL4nI2V/ODxJy4Zl
+Jd6mZMUf20j2P5K1oLYHLdsQy1hMj55UvVEA2AM7FFK83eiYXqVoS24HSOUQJppM
+6xoMoPntp0LcDTULZbod10Ke2e5zGya4M6WIKe3SYiWLfo6/CSSnOKzNN9jihGO2
+vTuVIO1PCbJxLyvUBPbdOZSno1QAZi8iOKq5Migq4LoJbflRXoc6Iynu+0d7oiuI
+oZvCjUPKdEcoJr77cmxbY5SgREGx+MNLbiFJM2TZxMGutSzUpirp/cVQ7Kj1KrxH
+/VBOfJ7/RyJW3quqAbU3R78IZpib3BdHwSoTfeZMlmA6EXDNgyJOSOhAw/y3hwyl
+CO4DV8MRuG6OOAG7xogaNU7qb5wtj+oC8IWlkEVcuseczlF5Q08/9l+m45/5pd+T
+S6KbULlG+YRNbBI4fL2q6Eeh+oSUsBKV/nhnB035ZDMqIz5XcMg=
+=w7DM
 -----END PGP SIGNATURE-----
 -->

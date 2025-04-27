@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Mudanças no Zend_Loader</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Mudanças no Zend_Loader</h1><div><div><p><small><time>May 28, 2009</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Mudanças no Zend_Loader</h1><div><div><p><small><time>May 28, 2009</time>
 |
 3 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
 autoload.</p><p>Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span><span style=color:#a6e22e>Zend_Loader</span><span style=color:#f92672>::</span><span style=color:#a6e22e>registerAutoload</span>();
@@ -38,18 +39,18 @@ locais diferentes do bootstrapper como por exemplo num controller.</p><p>Espero 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/mudancas-no-zend-loader/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5gACgkQbV8aePHc
-Nh18LhAAnQQkQDuatFM6yOLlG6tg9Iu6mB7GdFX5fIkOoPrWeGe9YccqFxvnoZSQ
-rg1QEmqSMB93j5SnD+800Rd5ez67JRSJGW7TCYRin5bv7ZiaeVfdL0l3XDE58nSV
-iggtgyAgd42RrghixV2hINkDV3fk/foXWXI3lpZILjyNj/D+QlM1+ffZySKraRfD
-Ky27CU93yfQQfZTYurUaVSvkOs9VtT9mlwLU4OnLyj6rLK5e3/yQdwn3U+TN1p5N
-9T5HEMWyMQXzz5o2Kb0j2lHphGsNTL1Br2wm6na6x9nkV/r+7/3UmSLce92rR1TK
-ua/fxO9XJUhu5XlqGvF0wrGtSp70x/wUHqLXtlyj/IgFqx1BwSe33WbOBKqm0V4b
-26RnhP0gCEL3ysxQ+obcbRUCLANTEgU0lAXy56v1aYwmo9xg09PHU8g0ocmX1nuT
-lgGaYLI4CYVvAWmbb5nG/w6WzESQ1KS3kuNxijV1CTp6iiz/zPgHK9BA1pcZ2EE7
-0TlkMH3K5p6N27vuRaJK3o6dna5L9M+ZJ1/fxj1W86964yWHjKRV7MrGXST3jjL0
-KXo7HON/wONX/OalRa0CByON0oO9hs60qAHQjheJdbRNRDQ+e+/31vPipzkGFQFI
-OgyNoLyLVyvH/tV8LxFnz7gtEKzn+7ShJ+31Noif0Rs3RsSfjfM=
-=i8kP
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUO0ACgkQbV8aePHc
+Nh12TBAAor6Rg/SyP4gKJxR+kD3+45LQTTu+z3JUXU8b8YgMHPrN13zB027J+GEq
+JcatqHOVx4QSxj1cS8N6Zmx6Myn0tlSpgQhRJl8Rdk0ZivPqCYLB0BPef9inspZe
+aB9e2OgG0ClivkqI5QhGcmUY621Zx5gvh3cLbSOI7S5ZqSULKzwvHHvwLCdVe422
+zl+ybzQGwxwG877SvooL6+4RJoXJ2CLY78GluQESsaFIx0kEQL+WSGI/mws3UG1D
+cKax5r2QOsRERLeQQsqA+r+IQFVOHrDsNIwILaRjPzwDatesOZv4/FPaAR4/oEda
+qk1DSjddCbbHmhqK1VDGIZUChmmvYOp6bv5MJT1i2ILfyN6s1miVF5xOTDE577E6
+UDHfRho8p4TDCzVm53ECYVACsqgp+4hppB1qw/PDRGnHnyox9OGR4a2y3Tlb65ug
+VCFNLHYWTBas8mvr2jMGEX1ntACoE54c2x0m+aaSA0YszUc1yd4F9P9pv/c/RZCk
+qFh2kADBOj/pSApQ8KK5vQNGGF6ympGQD+zMNfqu3ID3TaZM5FmkYIV3SnLY8X21
+CDYUnx6Agve6zRJHKUh/5yl/6B78UENNudiWkKtEXIErU3Onc0G+MQClz5CiOaME
+1GHjPsBgvZ/iZ9HzNUSzY36NvGGylqYQQxI68HyqOyU01ze8apw=
+=Eul7
 -----END PGP SIGNATURE-----
 -->

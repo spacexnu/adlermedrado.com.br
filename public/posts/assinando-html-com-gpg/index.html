@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Assinando páginas HTML com GPG</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Assinando páginas HTML com GPG</h1><div><div><p><small><time>January 7, 2024</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Assinando páginas HTML com GPG</h1><div><div><p><small><time>January 7, 2024</time>
 |
 6 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
 muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o <a href=https://gohugo.io>Hugo</a>.</p><p>No passado eu já utilizei o <a href=https://getpelican.com>Pelican</a>, o <a href=https://jekyllrb.com>Jekyll</a> e o Dangolino,
@@ -121,18 +122,18 @@ importancia desse tema e cheguem à mesma conclusão que eu:
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/assinando-html-com-gpg/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5AACgkQbV8aePHc
-Nh3KpRAAiLFojFc+a037vMEHvLNSWFFaPVigE34HopnMYVKEtGcUkW4Y1muw5eQv
-1wi7/yrbJnd3uej8E18EKeOeIQpgfYF5bi38xtDVKM1RCaNjrKxzUgQvEMjyIYqq
-z6Dhm7hmNIOOuAj/VdLKJ36A/JscRpuDzNvS7lSlrJFg5/2OQuXShiVwuNkSq9oM
-+d8wUXHa5uIsp/KuWV1u/OQJ0lrQ4jzN4lgrxW5fVNFRHQCuV2lvGyz4fclh5TY4
-F86pCWUF/pfz/c9yQTE7htsYLpZAJ1AgRur6oXSm56CAICfYDnZHyK5DuvVsaekC
-dOx13Q3pAzQz0nvzOcQBipr2JIUMfcJGMgLMLxZ/PaFHVsNLGJo34PBU32q7r/pK
-wLkqaUBeeQia2D1MaD51L7F9uHwuykVe6KXBnGlRUXSY/dKMckjGo4r3EccDJpf3
-cZD8t+N/TvoEsB2Xh/yzmH70e5yFMEhu4cU90T8b/bvhT7rMOzNrx/stqlug6PYW
-giQpS8zIcwawiKMrDB0pJpMQ4NifiHfXXOjJmcvtEpP+C+qTeh1sR9QdDJzgWoid
-xuLTivcfpr4+D8Nr+xrViga8DgqR+vXCTkRwsA8DFJ1WKMUkNGYRu220wPBmliFp
-oUdVz5zbWLQE8edOoz9NbUZ6wq+Yf5/TH+wyXM5pgWVXQ2vrNws=
-=kYqe
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOYACgkQbV8aePHc
+Nh0F1xAAyw5w5eVMDb0dbltgpnwZlzzjkL+8I6JLLZp4QFAyYXwN13ZWfF3Q3aqj
+ACEZ86DPQ6VdBAg2JR/vQL+BRqSiiqQmqBNdxLzqndO1qkMxUOhrsd9vqCHEXcYF
+kR18pFHWaIfEIHwM0xIACibKN1tzzVOKetSNpZGXQ6NIfybTRV5d1Tq6ABRzvmLa
+iZNLEZZ83QOTWwOytsT5AomEHQzBdC0ViOHvHNVe4rSaFc+HLajyYi8Phl7GxPLO
+W5raZsetHn00wTbN+voE28DwPUzMc+z+kDL8HK9gzZLojgK+0VJv/n3uBCWi4aV3
+4/4I2/bqy0qtpYVuZnON85Dv6zVt8nmkRqwlXU0TW3S8kgFMSqG/JbQRsa56dTvp
+y0DX0Fj0KtFOJPEUw81qukEyKcTjCAFh0KwidKb+QYnjAsBZ38vZ+sbOEWRIanq4
+cNI9T9N5H6EB/KuI31ky+SZuiv9Nbrw6UYsV4tvulKcS5ZbckHCyibXjRTYoftQK
+u5TjTuSD8JTAqLs2gyvmB/tNdoFxxbL8lHTarkHdq6uObhyo2WBvPjft8rN9G7v+
+SNhx1S8swmqXRatRxtUxywmdzPMxieYbFX+NzAfHAbBKqRDH5rPfXQdiiD9iJAXg
+QtsG/wyA6Df+qLa9DkMrmIGHBGovrP1XXVnoRGqpJhPm+0TKZXI=
+=sO+Z
 -----END PGP SIGNATURE-----
 -->

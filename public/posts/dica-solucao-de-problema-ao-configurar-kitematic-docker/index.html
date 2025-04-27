@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Dica: Solução de problema ao configurar Kitematic/Docker</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Dica: Solução de problema ao configurar Kitematic/Docker</h1><div><div><p><small><time>June 3, 2015</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Dica: Solução de problema ao configurar Kitematic/Docker</h1><div><div><p><small><time>June 3, 2015</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p><strong>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
 pessoas.</strong></p><p>Um projeto que estou trabalhando usa o <a href=https://www.rabbitmq.com>RabbitMQ</a> e para tentar manter o meu OS X o mais
@@ -27,18 +28,18 @@ na <a href=https://github.com/kitematic/kitematic/issues/585>própria issue</a> 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5IACgkQbV8aePHc
-Nh3MChAAjLPi9Kk+CZxhmvdCY3yoqmICsELPpzTEoOQfx/8bSXHtsWcoLTQf8Cmg
-3YVWNbiTStcESeXU9sTQhStZPRbID08+qjxKf5vUzHhyJri9kO8wDfpl9IOULKD9
-vcncIcVXTyFbya9DjkXUh97+QJ74HLQ6tHEfg5C3A9cRYg7UXntQVTsevUS/BWWk
-9n/r1w80D1bszlhYbWdP+lJpDPfWzS6b3QxDvA9LzX7deDkEjQOeaVMSGw8oThCn
-cfkdR4eGnAbc3Jm5XZunUY9t7rdcKkFkDtpnMuBbehis1ouikke8ef1IzNGXRnh6
-QQlZKDmtrcAd3JDtmft3JUPgJ9hrFiHOY/kDs4Y4e9JMD23u1CVifX/hIm8WEzSW
-Iok3IVRyCWUciY5XRXMVonIbGRpqsnCIT68V2BkfAXFEdp7zC2o5ov14XGVjwyXT
-MnnjU/6qflNL7axJCdEL1cADO0mosqIWY8WiBeTngHg+bBamdt7MN/oV4dTDz6/i
-Ptlr/JPMoL6UljrZKiRRiWLNL/oNoT7twqYwT4uasTAbxCVMJ9dJO/RtEq9AVrPW
-KXbXKmG0uhrjPLWmdwXSjNFBFcDyK3EF152clMO4Dun4C4MrY4qKtf0GQuBgCIH0
-l53lD/6zAwPQpVBDyJTIaulmFg9O8k36uo25bVwgJaN+TZ9da8o=
-=447V
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOgACgkQbV8aePHc
+Nh1KuA//TcPOJ/ew4ITFzC/BfVwiWQTtAWWXw74Oc93bLe4yMczyYT4PlJLuPRGC
+Sym0Yav2lWmhnkfKh1vLf+NuCRiMMfk5Rze3HJmF2ABWx7sfzabFQB5+oI2vBLuZ
+G7e2D5DxbWSUXvRZTGX4TEmDdWPktLZy3IV3Seg/Su1gEgYizuAmkpQUNA8xvc1O
+Y50qFEIXZcCQbq+0WBTIXYqmp6g47zd9Lm/2G56nWDB3PrvLGA4/FGWM9dsBOqnV
+kaJz4YJ9w0tAe8EIJjQunU2vNy7brodYBVxaJDD7XvPFgkIHILbWjRXzX6xwU4CS
++zrbdwqz1LNpf1PjzFZO0ffXml1mbSZz6gfIDWW2GxYUSsp9QDFqEU60Z0NoMVoH
+XaWkYgqC0Hba/M6TlGhuARdIxKqROnewlzl9nyjHVoW3EuIwWTtJ+WjGSF1zS7jC
+RgGmEKHVTWR/IsxWnPt2SnSWlp0sFUNjScE8ZYn47Ww5DIT9Rq7yapi2OxYgdG6s
+vz3f4eToco3erB3fCuMQ2orhrbMSHdGAkXN/K8ooBlOUKvLnPucztajWX1TWRvTg
+s731NKIMO8pXuKp9nKsPSs7tsvC+V7UT3nT7fAN5Wv6wgvvKoYr7Bu0n+H9KN9Pu
+CmbQgNlQ1swlG/etUCcLZ7UU0a+/P/phmXx9FuUzPH5QSS5n6Kc=
+=JXdU
 -----END PGP SIGNATURE-----
 -->

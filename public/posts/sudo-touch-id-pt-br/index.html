@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Sudo com Touch ID no macOS</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo com Touch ID no macOS</h1><div><div><p><small><time>June 16, 2024</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo com Touch ID no macOS</h1><div><div><p><small><time>June 16, 2024</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.</p><p>Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele deve ficar assim:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># sudo_local: arquivo de configuração local que sobrevive a atualizações do sistema e é incluído para sudo</span>
@@ -14,25 +15,25 @@ Hash: SHA256
 </span></span><span style=display:flex><span>auth sufficient pam_tid.so
 </span></span></code></pre></div><h4 id=passos-detalhados-para-editar-o-arquivo>Passos detalhados para editar o arquivo</h4><p>Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo nano /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Faça as alterações necessárias e salve o arquivo (Ctrl+O, Enter, Ctrl+X no nano).</p><h2 id=benefícios-do-uso-do-touch-id-com-sudo>Benefícios do uso do Touch ID com sudo</h2><ul><li>Conveniência: Utilizar o Touch ID elimina a necessidade de digitar sua senha repetidamente, tornando o processo mais rápido e fácil.</li><li>Segurança: O Touch ID adiciona uma camada extra de segurança, garantindo que apenas usuários autorizados possam executar comandos sudo.</li></ul><h3 id=solução-de-problemas-comuns>Solução de problemas comuns</h3><p><strong>Touch ID não funciona:</strong></p><ul><li>Verifique se o arquivo /etc/pam.d/sudo_local está configurado corretamente.</li><li>Certifique-se de que o seu macOS está atualizado e que o Touch ID está configurado nas preferências do sistema.</li></ul><h3 id=versões-do-macos>Versões do macOS</h3><p>Esta configuração foi testada no macOS Sonoma, mas também pode funcionar em outras versões recentes do macOS. Verifique a documentação do seu sistema para confirmar.</p><h3 id=considerações-de-segurança>Considerações de segurança</h3><p>Usar o Touch ID para sudo é geralmente seguro e conveniente. No entanto, é importante garantir que o seu Touch ID esteja configurado corretamente e que apenas usuários autorizados tenham acesso ao seu Mac.</p><p>Como uso muito o sudo, essa configuração é muito conveniente para mim.
-Espero que essa dica seja útil para você.</p><h3 id=vídeo-sobre-o-tema-no-youtube>Vídeo sobre o tema, no Youtube</h3><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/FQ0UaBYwkJvkalDd?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p><em>Atualizado: 18 de Junho de 2024</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/sudo-touch-id/>&#8592; Sudo with Touch ID on macOS</a>
+Espero que essa dica seja útil para você.</p><h3 id=vídeo-sobre-o-tema-no-youtube>Vídeo sobre o tema, no Youtube</h3><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/FQ0UaBYwkJvkalDd?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p><em>Atualizado: 18 de Junho de 2024</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/sudo-touch-id/>&#8592; Sudo with Touch ID on macOS</a>
 |
 <a href=https://adlermedrado.com.br/posts/privacidade-5-passos-essenciais/>Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais &#8594;</a></div></div></div></section></main><span class=line_break></span>
 <span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj54ACgkQbV8aePHc
-Nh0fORAAhgob5AWDo9YnSbSACVj21R1xr4TCxITe8yXj4BmJBwEKM1372VgK5shs
-jp2SM2DZ9GJcJpCtrT8fgVeb0mMc/oUdIAPKrPQKpiYDVNBfihWZfL80tndFKk11
-/IChdFu4NFgc7u2y7jgyXd+rNtGEzXTDjPqW0f693by187F/HbQX/vDI43WMilbu
-LZZxKxmkJK9C+xSb3vR/zq6xBTkQprtarMx4iePLETvgd3JOTwJz1F/cI9Cx5Bsr
-ijqYI6Lm8M2nDZYr5ziUrdkU1HmNEjO5YBpzl+dNRQqOkf+PG9F8GK9nEbX4zt8+
-ek8Zi76/SaOX8aIzze6KQEni0Paxnpe7eRVw17o9RaALxRnQCpnPHiuA3aArALqV
-dAhS+JU//J3dhG6f2DyFVx/yae+ecgIVQlEoUM2lZ+KebXSQgA/0d78Ys2wvXtjh
-TNVZWA/iKfe6CPdRKxOwKUx/MDhmWE/0xSTecXExkyOBJ+xUlXm9UP/RRw64yB6F
-gKgddLeEnKMlpMT1iBLu54dv7CDGnCsHJOB/y5kr7TfF+vOMnV7OZVdeR8Vpkegf
-eXFr3M+6IazUMJAcv+qwBWPDf9GIz3Tvp25xO9IqT+vpNPFTqYTxJZc66zs1rZtm
-G4vj9IE91M7lnvecqm0atd2UNfQXaoAPhI584jCxmcEIbgn3UZ4=
-=ICGA
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUPMACgkQbV8aePHc
+Nh1h6g/+JrA5ds2zG2We3jk7UuCVT/2Zf6HLM1z1qCYkf+0hhadxM+fRQjsWPlLu
+Gd1nq+uEKE4C4RcF9xObRIL4yUc8+hZkzQCTlFDGP407uimBPB9Yf8IQ0uIzQISu
+uMDGlcUF97xb8ZOgSkU8KiMCAbJuKvYgTFVsNNnFk9Oq72Top/YSy1dACMvCONw2
+CZsloA9xFFG4AIprUKG60lX/2yXUoNBHMlHYsh+FLGBoOWmHRlblOuLBulRUMF5e
+DHO1QkBddAOrhFBZTmnOGu714hwb12I9v+zvycRspat8DPATl42JOXmH+SnOr2a/
+1J2gcW23eST7Paz4ZNooyW3xEBWrtesle0hrJrKC26DtjBAPYp57H4+d+KX9/DWk
+kPxvGlaH98D2zAj5CD5a8rdnb3y3SXtBERB4N58U6fdp4734l3syg1vlNCujW8fa
+cnAWB797ff1m7D7i8kqXAzopYuGc0hdw13tg5ziCTA5LfbeoFzssgS2cQ8Skb5hv
+qLuoIqLHR+jI1U3IFGUAMg8tXl8hUlzBGdbLNj3yu2cp2odK9a4XQkHU/JF5r8r/
+jJ9WiXVqEc1s2QN8shHrnaAv01/QWBqcWWbVUP5AzVNWCSOQTsx8atx9d6wPiHYO
++m9vxRWtwXc9xgNuDt/CW1vGI1KtmMRwaFtSdDrw5kE2hiHu1Gw=
+=5ZLn
 -----END PGP SIGNATURE-----
 -->

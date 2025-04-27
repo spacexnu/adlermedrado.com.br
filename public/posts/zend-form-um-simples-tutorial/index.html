@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Zend_Form: Um simples tutorial</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Zend_Form: Um simples tutorial</h1><div><div><p><small><time>September 14, 2008</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Zend_Form: Um simples tutorial</h1><div><div><p><small><time>September 14, 2008</time>
 |
 6 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Introdução</p><p>Depois de algum tempo sem escrever algo sobre o Zend Framework, venho hoje mostrar rapidamente um exemplo de como usar
 o <code>Zend_Form</code> e de quebra vou mostrar o <code>Zend_Translator</code>, que pode ser usado em internacionalização.</p><p>O <code>Zend_Form</code> é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade
@@ -146,18 +147,18 @@ $this-&gt;setTranslator($translate);
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5AACgkQbV8aePHc
-Nh17sQ/+JNfFafr8768J63Fxq042GXHgRy+Gap07ohJ8Tr8W1nMAc4QIiUi6D3JQ
-CIxRVL5Y+VubNdxx4Nja7w85vFVs+G8KnKkyaUMPGLDiyJ1+wxfEk5r5sL19bKZk
-+ZrbdSaStRXuLoa3qZ4BSCDbjZuZnXkBeINJHgVZq+LNOMK+1fTrZ5gbJF18tF90
-uZ7Zrj50bk/XNAjN9e6JrvsoA2Ghd44F5PBOtJQxdnqTiF7ctkF97JQnQaUHuIwn
-udYGGP7QsB+cKKQyN8/z0rKVONOzdRrsMYU9O8HzvlevmXeseuMwrSIuDhj442LT
-fQ79ddIajGvf2S8fFMzxOz1kuaRVuBv0n3rG8S/ZGUpPKckZFVhaXJ8pqo31lZra
-Rf3TRleZTeMTJynegyfFcUVQDYyo4CqPhO85vVOGnmwWuyoocua7mgk0CtKQuc5/
-+QFvSM6MKLsPHNU21CGJz0oO0Jm5u2qMoEirkvnmAHIU2bWOszNwKM7HDG130VS6
-cXg0SLC+9QbbSek843S/bhdYpKblSoJPtv1Mk+4VPPy5sdzYU0RXicUQ/hqvsZCE
-/FxMm2bJ5P/E28MMUb//4n10b8VBVEI8tmbrHo2ByyG/ZAHlVworWbraFPqDMsbC
-p3gRdhTf6HfayHdM1beoDtbRuQDTMeEXEorlAskA3HETCWcKcWk=
-=nSee
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOYACgkQbV8aePHc
+Nh2pFg//XrP7ZVO9qCFvYThex+J2LcWKe+oEvbSYVKInYxDn9kmYI3FcBlogVfjk
+GU453+7cnhKBD8XFSaiqmGSnzdtK6ncjIf6WC9EnTJvuP05AWnD1vJs+eHFLz6PU
+loLeJSIBM0ZeGkLlqg6itIQBrIMThSAz8KPerccpH9Qtk7WKBHpKXXpkBBID7CLK
+EyVtgAYHW5k1d1raYqkpYBR+sPYBi84z974G7bC2bOHgh89oYI0TkEmxPGTB8jhb
+Mtms7Iu5OP10/5WCB7MUEKiewyMtzMQtSRyoGjaH15XLvL2kaDlj0RkkwQMERE4z
+Pt1rhSlgCxmnPw9znJU8H6jxzIK+0Ya5B0vqwWO+ySNKI5VOlr/FBDeAYPkDFH3M
+HMpkI7ienO96PFNYcKhQM/YX9gKM+eJqRk5Dxc8seVUIyzN/wH7Husj+hiAOzHLN
+4NgxHk2Sh2p0jAStT3ZpbRtnN5xyTAJwqIlmZXTl+yKfKETwyUkiDmTRB6e9Oj77
+vKyjKXDv45mFeCR39wo1G212vCIX2mBPILTUCzb6LLnw5Nh2sCBlSMivzLHlYZRu
+AI8CYDD5AJVEFnogmJ9jGipZXO76GvhgqdLxiHC99fp6/xmAsyedo6J7mWvwcXWY
+/n5xtoE4egcsTJV2XcvmT4CnxPSX0LlB9UhkVG+I/HF2ac1bq/E=
+=49Tc
 -----END PGP SIGNATURE-----
 -->

@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Acessando o Office 365 via Powershell</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Acessando o Office 365 via Powershell</h1><div><div><p><small><time>July 26, 2014</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Acessando o Office 365 via Powershell</h1><div><div><p><small><time>July 26, 2014</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>É muito fácil acessar sua conta do <a href=http://office.microsoft.com/en-us/>Office365</a>
 usando <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a>,<br>principalmente se você precisa otimizar a administração de contas corporativas<br>via script em situações onde é necessário manipular muitos usuários simultaneamente.</p><p>Alguns exemplos de tarefas que podem ser executadas são:</p><ul><li>Adicionar novos usuários</li><li>Remover usuários</li><li>Mudar permissões</li><li>etc.</li></ul><p><br><br>No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.</p><p>O primeiro passo é <a href=http://technet.microsoft.com/en-us/library/hh974317.aspx>instalar os Cmdlets</a> para Office365 ao
@@ -33,18 +34,18 @@ ela estará exposta a qualquer um com acesso ao código.</p><p>Durante a transa�
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5oACgkQbV8aePHc
-Nh2CUg//dNvQT9haLpH7wdedM2BKeVaIJOfBdh+U9wNecrUi44/utkJh4bcshB/R
-nE6/PmPZYl0xZ2BtKQhFenF08m/9FxZwX0ImY2uVe5oKBZKV5KuZPEqg78QYHuRV
-Slk5aurTts8yo7mFc/mc2ozfd4BBnv/i7OmdYQDNDsfIgX8BWj5k1Rzd2ITx1WdN
-zZ5JrY/mxKwhGgB/Cradb6ygVcBR89SP4Go/tJx3Kr5Dt+idTRtnjwZ4e8EI2Qxy
-c51gpJE23p3bEXMM0/dn8QFgeYYuPNqb7IsFU+19Gq9tm5gmjnrEXeMLv9OnVwJQ
-NMTnMcXozX951lCWM5d0do305POiMpMnDWhncE02Yq6G/iY1YEAXIxtchtfrkBnc
-p4a1mmX5bNv6FXG45pmLLqe3pYQNzzJxRvlBP4j63+5GlQryY9O24ocat9y353A7
-YNcuWi3QttbDTcmXz1fWwXFOQdEVMNCXQN2BJtWrNKBMjA3e+ah6wBw34m6nvlbs
-qcmiZ0Z7QJUjc1aru75/xu2msOdHFU/mwt0SeNRJcOIJHeo11o9vn8DFD9P1nFDJ
-ZpRL9zV8NW0e/0tTZPHlBNj91P6ON8P/6kZkBdjQjQny+S4BupFb/QNLXbVYh8bX
-DdCj4VFA5GadU6UdSaq0+4kXeNbPoNXC7fLtW4eBSiRJhPMGVCs=
-=fMuu
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUO8ACgkQbV8aePHc
+Nh1IgRAAvUV7IfV7ndTSki/+QGK+P5/F8d0hKSJ+4PUZiwt73UBJ64JbHuhp6HVx
+bmmrCHWio8clNhgQCqKdm/CVu+Nn/+3OW4S1klKJpP3Qlbr6vijmzB3e6wQZ9hgX
+549iJTHeFOCsWcdzK/wDANmJt8tJ+ldEkkubc8ONND2h9K8QIgOcdTKCLFurpvO8
+mm+ICBcD+E78BpIDELwVhBGhdGvNrOlOLjj/KAUyQQUE8zwpPe845cicKEDjq2Bk
+dTVWg8G2QJi6ZLxOVRAJ2iEpw9El/VvqbHHGTrkausatNaTgcSOByaHIaUQBY8uf
+WzU0PdU+d7cbAweShzu9XWVZN50Afu9DAMU3GkOAYFz6iuyqC6d3xa+G19b2yU7g
+btak667ArlV/KH9S4LDgbVvuC6ZkR4Fd5GZGglg5h4OiHwVw0e6rphhq01e9lcoG
+uD9nEKPfJ1SxRdU7nOH4u7fW64wc2kOGr1OwuDrpqAHIu0UsdITUs2hEU5dAy9V4
+roOjkr8lmEVEVZQtiShkEm5VGH44KrKvRmB26/O8TVwSunBhZx0vmCGKm5ro+aFn
+1+buIWH1/M69qcr/a27d8DV/bPpgLH0ZNN8/YdeH+9Uoq7j3wYs3fUjXL5cDLlcM
+u4QeZGpj9QYKsv7h9phxWeoDdChY+za29e7sLoahYBXkt9V/xwE=
+=i2N7
 -----END PGP SIGNATURE-----
 -->

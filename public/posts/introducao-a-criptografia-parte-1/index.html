@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Introdução a Criptografia — Parte 1</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Introdução a Criptografia — Parte 1</h1><div><div><p><small><time>December 28, 2014</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Introdução a Criptografia — Parte 1</h1><div><div><p><small><time>December 28, 2014</time>
 |
 4 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Eu gosto muito de chuva —<em>apenas quando estou tranquila e confortavelmente em casa</em>— e agora no momento em que escrevo
 este, está caindo uma chuva muito boa aqui em <a href=http://pt.wikipedia.org/wiki/Guarapuava>Guarapuava/PR</a>, além disso está
@@ -38,18 +39,18 @@ descriptografar, certo?</p><p>No próximo post eu mostrarei os meios utilizados 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5MACgkQbV8aePHc
-Nh0AQxAAneGzU4jLqZ8HQ6G8KyuwRLupW/Ekx5crQGBZIAf1ndMSAC4Zm3VcOVGo
-DmGrxFKk2jRFZp2zyTXaGdFi67ECS2G721dIQ4B3ylpZPKWEC9so0hS/VAQmlngO
-WuYMwuUH2GR1t5A5N6g7YAd61HJAdedtN8s0kPZh2ZpydHBQKPAXYXInGzX904Ov
-mYKlkkkBFAEj0+fclRpi9+faUDiIhCEXvYflJ0lBX7pHR1RDdZfNn8WwpFagWTRU
-t0wn/ZDsw+9Js4Mj26RpoALa5PCbqeXsUWxIiAz1ez03iO2+HTsrzZq4LAnBGJvw
-wDVyomFpx5isfW1de2DNS6/WKxNtX7em0lX6ORR2WLg3r3dE50PrYynkwntGVh4B
-qCS8BPdcc+Fu7j3A/0SnLnbkbv8BQnrgcCZ7SreX0NoLkcNnU6ON93yjiSGIetcg
-3nRRznMjN8qyDVbIKBHIMovc/75Metd19kP7rTXVZ4gpGTLk+uEedh/rwEullw2j
-Pu9CVOTbtKiVaYjLrTMCfX0/+2vZusXLwTrUOMHxOfbr9MlVLgCrHWF99bHWkV0R
-N+dvAqR2abFxRMuUUm4CLgc507CIr7FrYf7+94Dit/s3EFexFkt0CEQ5Lj/H3bx5
-rm+m82FidepWTW6FZZcyLrJiLNpKQYVc7UpaKXbYbTpqx0EfTZ8=
-=yWAB
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOkACgkQbV8aePHc
+Nh15BA/+Or3X9DriNQ8z78JeKTMLSiz2Al/iR5v3lJiW0la9B/3fTdencOBm4JAk
+v32uaw+o11ySauK7wkDv+YBRd4CJ9qVdM2axNx+2XxTqedhpm5ZcBapCXw4UQWwj
+CWwTF9duujjFUiOqIe7oKQYuR+bBBM8Q+DAPSKImX9G2zplgvF+5dPqjdeCMq4MQ
+zB9iJlfNL6pW3gC7XGPzSFKW9GlUoUY1kOWJ7BxYBc1WUZua8dzrDf1ydCMUwL5H
+jLQAGSJc61bNVVt4qAoz1NH2lslTSW3Mvq5tFV0kSVYVAPgKbDL17gG2Txeoikgy
+bka8DI3f2vZBDCKsujgn7wM07UqgMUV46BNaN36Zl9FCbK0F/0Z6pm8PCMRHkgb5
+UmX/6VMD71L4KBpTfgBWnhPoNFDOrGIRpATsWWTtxIFyumc4hTGs0bdu5aNAnG/x
+wZJIa39DpZHWGmOl8hEsFn9iqkY0H8lCP6KVCxb2wyjab0QrJxrGr/ehlZtotGtC
+iBDf0DvJzbN1XJaJvXm4fL0T4oBkknegiPw+ucshAbVsI+tfRwsAUB+A4xqN2qLl
+LOW3OcGETmQH715XLZaErRO76sHfCIpNy8eDgXUwjDwz2DuzIwh0YpAdQSgQ6jxA
+0RxvTHLe78m1dr0Zfe6AS6TUx14LN+suPQYh5iN/dkT4xIwz2yw=
+=9SsF
 -----END PGP SIGNATURE-----
 -->

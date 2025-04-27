@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Understanding when to use stream() vs forEach() in Java</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Understanding when to use stream() vs forEach() in Java</h1><div><div><p><small><time>November 3, 2024</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Understanding when to use stream() vs forEach() in Java</h1><div><div><p><small><time>November 3, 2024</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.</p><h2 id=stream>stream()</h2><p>Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:</p><ul><li>Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.</li><li>Chained processing: Apply multiple operations in a single chain.</li><li>Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.</li><li>Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.</li></ul><h4 id=example>Example:</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> names <span style=color:#f92672>=</span> Arrays.<span style=color:#a6e22e>asList</span>(<span style=color:#e6db74>&#34;Maria&#34;</span>, <span style=color:#e6db74>&#34;José&#34;</span>, <span style=color:#e6db74>&#34;João&#34;</span>);
 </span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> filteredNames <span style=color:#f92672>=</span> names.<span style=color:#a6e22e>stream</span>()
@@ -22,18 +23,18 @@ Hash: SHA256
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/stream-vs-foreach-in-java/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5gACgkQbV8aePHc
-Nh1hrhAAxYrTF2i2phH/SS1Xgzz1Rq2XkIFoSXedZk6GzlF7v143QWiHi94P4I01
-acp99yuup2q+Chb1ZtXw5p4gwrwP7s4onNUV7nZfKNjJrIWk3rApqCUVDfihodLc
-psf4eBI7e6YFBd24YOwI6aMzBtet8WV2kr7wC5Ug28vi76vAUYgBEaSZhotu83ko
-4neWfcUr5E6ePqjmzHi48e0nQzH00h1hncT3CYXq/zw7+OiPjxsagsylgjr/erAV
-LHy3VnwNXi5B4z+/EsfR4Vrgm07PtgBLTKCs/j3qX7PnnCrqqDpHmzni9vkvNZVh
-PNt53kC3ajWq4bJat1KpP4NUhANwj6jZA+i2Wu8HQZNtbrlvwed9nbb/6H4psAxe
-oPrbdxi9Oq4INiw5/xYzk+NV42sk9unexC67lgq/W6KIKRaMma1Nk5wCDmMBf1/3
-3BK/AyfFW7k6jPOxQRJ7mrBwT9OanQSvFzkDiULR2D7m7WBxBGqq2kVtwVz6Akgh
-dYeSQ8kBQPapr4Sy/yebB+/Jkif2xwsBhmaoL4yA8daly2CqSaDD59kVgRZgAgFP
-28acT9MN8i0fKXknDjcdf+Fqi2GjW3qHv2rJf6e7MPC046gpDOlAEpdMxYdlfwjR
-Yc/3s8qe2xjdBodhulhudCD6Pu3ACjauYxwxMZRtRp1LPdBtQaA=
-=as7V
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUO4ACgkQbV8aePHc
+Nh0dXRAAm3kAT9f2vkUGrrA3A0/ms/JFMkyAvqlmyTJUbYgSl7r6vDlVbVmCbczz
+fRLyryBiCYUfXSajoGhvwfUv3wJ+toDVMJ17lVcvV2tuqiYYaJioYhH25Oe7prGC
+25M3fVUbgkvClVlx7IrIgRVqQmkP6dFjZ42YH/FIk7MeFoioHOoy+J7g1ow/J0Ak
+yLay45E6kpNzFH0qvZMAbZtWdCBCV6kvjUJFjRl8Jdw3OIR47MRVjI+cYeSKRuiu
+JDgX73fdlkxY4Jkw98B+Nx8sJP/8tBd3FYaZP5Z6rE313H3/m58EFCcmrf2vuKWF
+0muDB3qGvOSLCHTWCXvDahgsBzDATdg/6u//mLvaGbnlBSBgXE90hrrtYjL9iHKE
+1f5eqChxC0QApNQc9PPx9p3DcgOI2MqnKH85iNZAD/h4xzRj9dxT9YCw7OxpM7UH
+7sMnVucaumxdoWIiO/dppE1JFqMAe4zcI+qiLdJlaoWTJCjHUIiLrAm2TzWp3gwX
+3Fa8r/Ny+JVqvke17mxcIDxq0O4yw6BrFL8ZXMhIkq7UP0Q3iMRn9S8wcMyeXhD0
+mRPkK66vQhCMjwV43pba/DVMld7po+JeWz+SAmTKaUPR87cFWa0fq+R7qGvOU9jJ
+BBiUUJMs/n0KtKfOOxa12sEIFaKsjHeWR7wW+ieD1tSxVvoA+mE=
+=YXGh
 -----END PGP SIGNATURE-----
 -->

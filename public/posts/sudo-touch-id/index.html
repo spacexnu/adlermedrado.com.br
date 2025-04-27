@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Sudo with Touch ID on macOS</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo with Touch ID on macOS</h1><div><div><p><small><time>June 5, 2024</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo with Touch ID on macOS</h1><div><div><p><small><time>June 5, 2024</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.</p><p>Locate the <em>file /etc/pam.d/sudo_local.template</em> and make a copy as shown in the example below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Then edit the file and remove the # character from the beginning of line 3, it should look like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span># sudo_local: local config file which survives system update and is included for sudo
@@ -20,18 +21,18 @@ Hash: SHA256
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5MACgkQbV8aePHc
-Nh3kfw/9FY7m15tD+RQwjBNMdEfu3tGLoxq+vP6zh/UT2Q+vtYzXdSMzgSaFJT8r
-Wnvz/5lGuNXhNCDX+2uIUvqesCqqzdXigLjkTYu4l/XmDR2T1P051XuoQIQJGu1V
-YUxMoCgSAe0BF1lA5uHJn3Hpm8ba0/E9FUj3NKJf0QejKUE9jLyk37SV+8VGllKD
-xIE3sFjkRJr4CWteo24OyQSvwztj48JPz8ajHMH+453NMQ03je7wzT3o+l6VKjzs
-hjC+HHjm6b7Pz3hxyDov3xl/jOddlj+0PDk72ox/cUqzSPccGfokGnfgguHWyrub
-vJrx3nsXelTyQyihYxODWVNEvsXJAi7tI/hShdiRnG0qGMTwe+k8yMTyNIONGC4y
-CWWC8RmOgyeSftvPeLao4Av9ijxgClH91UogWhVuX4rDlqSiMfB3mSRxAxPZAxMB
-kMzm66tvqxHag4F+fTk3ozpwh7LsokSqQcBTVxqsiyNC0PLBQAd2Hv1LbVfm6moH
-BzraM7weN9jtyvOeIOnycaFdBll1Agh5JkConx9poI51++QuBBCZKIhH3xfEShjT
-c7YIgG5EAWHm4YiIUoJ8CpZ1a9gMxP2gwsEjPFAqJ1c2gVONqkFpGexhiHHf89Je
-RDe3Bt6jKogOPbku4xilSNsQ58veCvnkzzOIqigEo3eMVqZW/jQ=
-=Hluo
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOgACgkQbV8aePHc
+Nh07fhAAtT11NKwMx48r2f2AEGWLTDEeqvMYyhWrE5i/YWH9qIP0lnvpCUiA8eDX
+pH0cAQZa7wZ+29TrKk8vn1PylPLSsCAOhlvIUBRfiBc5UK3DTalCzGS9XgN3c8u+
+E27TdY1obSGyy6sfxIBpjvcmtb2VCkzxTe3RtayDphPajRxbnLdwdr3xh7CUbsEj
+XynVJsLyPOWtNy7p3y5fbmw0HQooiE9aA6FgtYwUlbp1RlXbefl1sAqMBDRgjy9i
+U9vPZwwWDzDi62GMQquNzv0+9Hy+nbY4ASVxhxFuRhHvdLOQwma5nCT2/+rJr+J6
+iyE35oyYJgjqOqI4Vxt9QFTM8UGev0y6SMja4t1ipabTPICSY5xOiwNcbNC+W/H8
+8uxKjXwcu0VqToFHKAhYDkuW8CGFnwM4yF3aTL8BHzTs7B7QvO2WFGKOzkbG7XFA
+Ch8HNx4LihdMqteNVSGiwojAe8e9SdwvASZORy9bKeV6UGIcvjCTBZJXBA+HObOu
+hIhafYcgcVtaS3bHDk6we1Sec9PAh8uZ7GoG0FUWNOqf3Zi0sjyKzyq1nQHrJ1rD
+hqvPXW8oNyH7ciqWBuo6+IKcAqK0mgJ0YiY8/XX5t1OOdqCagQNJ9YSOeJ9gvnDd
+KhGJrHpVlgyd8YJN1e8jGzTpgDfx7w8vZSmVf3CfKiMnconL6HE=
+=ZoG/
 -----END PGP SIGNATURE-----
 -->

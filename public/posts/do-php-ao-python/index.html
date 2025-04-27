@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Do PHP ao Python</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Do PHP ao Python</h1><div><div><p><small><time>June 9, 2017</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Do PHP ao Python</h1><div><div><p><small><time>June 9, 2017</time>
 |
 11 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Um pouco da minha experiência na transição de PHP para Python</p><p><img src=/posts/images/1*wlukTN8cgk7n2rJTOKlOkw.jpeg alt></p><p>Eu e o Elephant na PHP Conference Brasil 2012</p><h3 id=introdução>Introdução</h3><p>Em Dezembro de 2015 eu fui convidado a trabalhar no Olist e eu comecei a trabalhar efetivamente em Janeiro de 2016.
 A situação naquela época está mais ou menos
@@ -97,18 +98,18 @@ para mim, é um privilégio enorme.</p><p>Quando comecei trabalhar no Olist eu e
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/do-php-ao-python/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5wACgkQbV8aePHc
-Nh1BEQ//T42yswfl0Yeyz9R8XfaBhKu3kHdd8CBjKWlI5zAHtFhPcE+eB8CrTK2K
-l9Hqc5bzU7hK7stGrOT0d6Yq5965mebQo4QpRX3nJlQ5gwlbCljIEA14ZMa1WKqL
-eyP6K7tLKgKzKKUx9s2dc2xjA68jcIZHujOVKlKV42nnmVY+imHfMRHLVl75HWjo
-K/2PQjQgjOcci+fjebifO1BIlaBpKBihrCl5ZG2/UaNza79DfuPoiNy8ODEiGnnA
-AJAclW5OZ/D+ZcytPQdKNi/tI8W70/CgBv5sqLWWqOmg8rXm15eAW2qP09jLKIJM
-Q/YlI9+6k9XgaESLFJVOw9m7vxlGHRf3FH7MVnoJkqnexSbmAijzWvwGq8DG7BCx
-RZfB0VQksY9VNe3UIpX3MEuuVppukiB95po8Uw1HvrBhxP+YK3tNPNKuZ82Uv1pn
-l7gh8T7oFMTe+EwRGxy9f3v92dEHoD+DdmR1e3i5Kn2DGZ54mfTeeba4VowQrfVf
-degHAMciSjgaNjEMDZxsEGFUEML/EL6chtYZxgB8ca1LH33J10MadW6aqcL2asOV
-baRsRx3LptSamZk4nuUrlPQUBiMkNjaY8C5WyeUptxS5+fEkZXPHtRMw6Umh4NS5
-TwWs1/NuXq4Ju78byS1Vf3jRJMiMJK0MjrxQGyNCG2bZFjhQ0qo=
-=Wpad
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUPIACgkQbV8aePHc
+Nh1KDw/9Edq5ql2X0Kt1/OsceuFqP6yUpe+5/T1NhEHFwBmoO3oXLdOft5/fYbDA
+B0xARZqTpG+3M8EPGzHW9DY4kVvRsjmaRJUrMEN42fIbXOIn7VhS6iTSJEUXQ5w0
+PLBdfGUzT+i0TNZ3gmDM0dfM9mJBHLegXC2DvCOZdADdD53PELiTU37bccGeraLr
+7dEXTbeLrtx8+yBfNWsVray/36olP4k9G4I3Ag/47xBH6Swuq27ayYq/4x2gmSGW
+SSjPusooBumS72xV1oqWoiuS/AS3j8PPE+MEnuyfcmpTFTsqBPEsm1xrljFrEtDM
+aGF3/LVf/EFDbiLldB8S42HkqHkZOWvd8qVE7i6rnbTYgT7h7zzN/AzI1OPrivKm
+8IKgksMQOMvwi7ISMiSRRHHRR9gGjw+rLqWaUZm+pK49E/ZGkmPHtgedZDi55Lj2
+r/cSLufhWd/ujRRnz3hLvtH3CR/02cB7FwO9++kfFzmZ7Cbr/J5nhCk4Z0YP6Bjz
+0WEW1ejeD5dW6g5t268b9EWXXhjqJZRd9nXVgmYTgnW1RjY39KN5aRo6Mz49l+Li
+3yHUTzY2Qj/oyYhLUOoaICSePzE4Gbyq+mSw34yo4HYFbEZcVSiZkguNIjButxtD
+pRXW5yQnPdLJZ0vSu1k0LQ6whmdl1CNkl0Vw13D7MOxXFViqbF0=
+=A4s4
 -----END PGP SIGNATURE-----
 -->

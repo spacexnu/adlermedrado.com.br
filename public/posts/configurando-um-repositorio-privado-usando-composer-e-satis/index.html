@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Configurando um repositório privado usando Composer e Satis</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Configurando um repositório privado usando Composer e Satis</h1><div><div><p><small><time>June 21, 2015</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Configurando um repositório privado usando Composer e Satis</h1><div><div><p><small><time>June 21, 2015</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando
 na <a href=http://coderockr.com>Coderockr</a> e este repositório deveria ser importado no projeto por meio do composer, talvez
@@ -50,18 +51,18 @@ situações.</p><p>Você conhece alguma outra maneira de lidar com uma situaçã
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5AACgkQbV8aePHc
-Nh0qdg/8DYaAnnkQwuRtf2q1+IZEVa4si1E6vP6ZswaZUTjcpHeDP/aXsHu1ON9G
-HVRXc+FQdqWE1l/daCr1YnoHvPUDwhHQ1bpEEZWFCUqE910LDoeYAkk9/HoQ+I6i
-s8T/aPCRBPImyAtygmBGOQui0PTLVQwBm1paLduZ1cat5sYHtiTApv3USgKPgOaG
-4JvDd4pXT4gARhDGux7+yp8fHK29pm0ld+6rGgTHqaNP+7WO8VmUvD4mqZBWeQbw
-J2tceSMBVDpaf6txYCE5sM+wiRvYPbRnEIpgrQDEPzmOBsXG2g6Fz4Ioxl5EyJxP
-NU4ycagfQH4uKeylI5Us965S100CfzRDjFSOMIomqIkK9VxUZo6Kk9SLEKae83C4
-x+Ijj53D1kjHZESl7qhL37Pr/aIGhe0RY/bXzNXFLitir71H98HxG+ylweEVCONS
-4m2g1SOzgmRkjYl+dBaQox4gMnoEX3AoAmuRFEsZO/YOeahH0GtAHNiwpHk2YtJk
-JMZHCLFuRBs5ST3SsYOIjhWzMN9slpW8+z1xLj3pJcTZsZikZ+PhidmAFkK7sWdN
-Q9ac4NLS/QXGkPNHjI2naLuy+QIcNSINF+g7h1FEYpuFUMZBbilvWX0ElcyMEYdb
-0k6iQuuCcnh5IMr/xknO+aG14Gfx6N5TF9SfptVTAz1Izti+1D4=
-=vcRE
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOYACgkQbV8aePHc
+Nh1VUA/8C2Zfd2RYx3iKI8kyMwJ0w1GcXDNmxrQvY8dbGDhwBdT5IEUuDw4Kxrml
+9K4vG9RKofFeMQJxZpAJcDCLuC0vGn9BrcClvErtCrRzY4bi/H5xrqz+nCFwJHOG
+gGEwRg/ajOZBKqa48KOzxX/2dY4+dvYVbfi8m1Ls3icVjLXF7wPz8Cy9nM56xdrE
+8GEzIWnVEYr9QHyk8gaesNX+i9Znb44UGlLKwzMB0SJWljyhZ66lhv3pir7LKbXj
+ic52REaRjEocYtaB6TvJkMXzgNJ9mQF5mCtmfdYNozcA1/z8hULi2nOZKoeMxti8
+eiiKpBGy+9DGkgkKfvUE9xA7LYlOTcXFw4kZit/reS34sZChp3WaKEwISklB2umM
+UR6M/vngJCTNhC+bPAKS7759Z2RKy+Lg+AsbBM1M26k3RZMPf7EYyOhfWZTwOUFa
+sImiCtA2RjSRegbHQ0yZWe60pEg2nrHCOBZ13Vm8sX6TqR6nljhX5d2TawIu/Kn/
+dJHePIAaLIdtzFf1vqTrXNCSQ9F6yp6i9DlSuow+i44wKTofJoHB0bpCgEeO7aGv
+t3BuNgla5f++PZtUI4MvfiXdBN0lIhAQ71vOceAQh9Lhir30/JVMJlIopFKNVYr/
+noTwUEmsM+Y0iDGJRiyCiRgXDSTgkEulgnKDXoHWj8G5UhWPHBQ=
+=PLBV
 -----END PGP SIGNATURE-----
 -->

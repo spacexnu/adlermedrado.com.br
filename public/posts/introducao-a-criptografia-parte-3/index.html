@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Introdução a Criptografia — Parte 3</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Introdução a Criptografia — Parte 3</h1><div><div><p><small><time>January 6, 2015</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Introdução a Criptografia — Parte 3</h1><div><div><p><small><time>January 6, 2015</time>
 |
 8 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma
 Windows, Gnu/Linux e Darwin (Mac OS X).</p><p>Apesar de cada plataforma possuir ferramentas gráficas para a gestão das chaves, não é fácil manter uma uniformidade
@@ -65,18 +66,18 @@ comentário que eu tentarei ajuda-lo.</p></div></div></article><div><div><div><a
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj5sACgkQbV8aePHc
-Nh2oFhAAj7cTefM7SS4r5im4fJ3VOR+iOTP1NIn7bLr0r9pH3CgpyrdQpMu8jPLa
-6ndXljhAVbAQY+iVC0TUJv1fldA/0yW/Cr4UmB1LN3ReGLDFZ+nLDaDUsOpF2FZx
-2O1KXzOLVA9sIlRZD0wRBb/VmvoSs6cUHgqOnaMbAUGSZaUS82TKPLimbqPgFah0
-kWhnorCEAI0sRNI0+yRVdb8KSYbr7xME9EqPtrXAILlV81N3nGADTsBJXEQi22Dl
-nft4XARTd4cjpM8HjiQiYt0mSZY22UZWhi5qLjMIFfXPSo8b+8AISVW3n4JG8rUF
-n6O/CuSzngxNSrilWgp3lQ753lIqPaqaaUNKkMtM/4tKil6skuPzMhJkkfcik97e
-f863cNCi+rretK+Utl615a+7H1Qz0wMEcf84x2woCvyDAPWQNvT5YUeoKTqKjubs
-UhRbUumOA3rnB4/hKQjKU/BGo8MU0jJD/H0Xxs6eFYgiMXYam/K+Oz0fU+Xy6xpC
-WCZEK3v4U+7+5JS2pI9Sokwf70ZpQNRG9piqqTjmu9VzPhtW2mEOm6hlT7EF1p3t
-FgqfZTCM+6JWOqtkj1h6gYuwKjsHzTt/Aa/vj3OFiVUbYsyNxGRBgGO7VNnvI/x9
-S3dkD/WjdA1yeZMSbH3bk9kuDtBI4Or6HtLDxUFJYygj8bwhFRU=
-=lfcF
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUPAACgkQbV8aePHc
+Nh2AGw//RpVO3+osIMhgFvBJrzua2LMUaBH/+38Cke++mPz6e7fPCZgrtJ0jRRFx
+rgTKkMMNSK0xwjyLZIuBgLXT6IxXBz8Mt9OuJvZLnO8hMwMyw4W27ZtGCePM2TqE
+Ibxaq4+b3n8tRJjl393xarfCFQgpYBzIfqPzkjliAcWIY1pZ0qeO8YRND4iD+kKe
+mPgi3RKjjYRI2MH/TILRNsLLxnH6htzO41Z46dtjSO/YpPV9tghyGUC/kIUBHFAY
+7W3eflnX/1AnRapGIkSPiH5jWgwCeXJqZBUR8L7Ytrl/uy4e0pdAI9Ra3+gtZm/V
+MfHFl/8QwWc48lAYLmzgjxds9FrlGxCFEG1ZYtJpwQFm1/stM1uJJ0DDUH+U40e4
+X0G+kUcWSJXaFz4mXCqQd4RAhl82leA6z2byHzT5s8uHLjGw1LTqPZHERrqDLlpi
+p86TmQLx6fqP8sAdCpd7vJobf+ndnxMUY85u4S31Y1wNa5cEmaCLfAuNna0NrJ9Y
+qJK4eQKP235VzufHyO+uYv0VS6XRhRWwIqOBxtGnFYJW9ayCxgjrYeLHepO3wRDj
+inQI0hd0Oc6PjRRvpNp5e+e3hQXTy6IEIx2FGCYj391rObiPQ0q9Dysmvt+X7dJA
+1uoZLei5zVHzqD05FXQqX5x/BONnzRK5EuubTa6wABVYXVkUcM8=
+=Vw4m
 -----END PGP SIGNATURE-----
 -->

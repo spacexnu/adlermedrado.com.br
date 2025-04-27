@@ -1,237 +1,231 @@
-/* Variáveis CSS para cores */
-:root {
-    --color-text: #b3b3b3;
-    --color-bg: #0d0d0d;
-    --color-primary: #00ffff;
-    --color-secondary: #ff0099;
-    --color-accent: #ff33cc;
-    --color-dark: #1a1a1a;
-    --glow-color-primary: rgba(0, 255, 255, 0.7);
-    --glow-color-secondary: rgba(255, 0, 153, 0.7);
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
-/* Reset CSS */
-*,
-*::before,
-*::after {
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Consolas, monospace;
-    font-size: 100%;
-    line-height: 1.5;
-    margin: 3% 5%;
-    max-width: 80em;
-    background: var(--color-bg);
-    color: var(--color-text);
-    position: relative;
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('circuit-pattern.svg') repeat;
-    opacity: 0.1;
-    z-index: -1;
-}
-
-ul {
-    list-style-type: none;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-}
-
-ul > li {
-    position: relative;
-    padding-left: 1rem;
-}
-
-ul > li:before {
-    content: "-";
-    position: absolute;
-    left: 0;
-    color: var(--color-secondary);
-    text-shadow: 0 0 8px var(--glow-color-secondary);
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-primary);
-    text-shadow: 0 0 8px var(--glow-color-primary);
-    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
-    animation: color-cycle 5s infinite;
-}
-
-a:hover {
-    color: var(--color-secondary);
-    text-shadow: 0 0 15px var(--glow-color-secondary), 0 0 30px var(--color-secondary);
-    animation: pulse 1s infinite alternate;
-}
-
-@keyframes pulse {
-    from {
-        text-shadow: 0 0 8px var(--glow-color-primary);
-    }
-    to {
-        text-shadow: 0 0 15px var(--glow-color-primary);
-    }
-}
-
-@keyframes color-cycle {
-    0% { color: var(--color-primary); }
-    50% { color: var(--color-secondary); }
-    100% { color: var(--color-accent); }
-}
-
-small {
-    color: var(--color-accent);
-    font-size: 80%;
-    text-shadow: 0 0 5px var(--glow-color-secondary);
-}
-
-p {
-    margin-bottom: .75rem;
+    font-family: 'Fira Code', 'Roboto Mono', 'Courier New', monospace;
+    background-color: #121212;
+    color: #d0d0d0;
+    line-height: 1.8;
+    font-size: 18px;
+    /* Leve textura hacker/cypherpunk elegante */
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: pulseBackground 10s infinite, backgroundGlitch 7s infinite;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    line-height: 1;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: var(--color-secondary);
-    text-shadow: 0 0 15px var(--glow-color-secondary), 0 0 30px var(--color-secondary);
+    color: #00ffc3;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-shadow: 0 0 6px rgba(0, 255, 195, 0.6);
 }
 
-h1 {
-    font-size: 130%;
+a {
+    color: #00b3ff;
+    text-decoration: none;
+    border-bottom: 1px dashed #00b3ff;
+    transition: all 0.3s ease;
 }
 
-h2 {
-    font-size: 120%;
+a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
 }
 
-h3 {
-    font-size: 110%;
+p {
+    margin-bottom: 1.5em;
 }
 
-h4 {
-    font-size: 100%;
+button, .button {
+    background-color: transparent;
+    border: 1px solid #00ffc3;
+    color: #00ffc3;
+    padding: 12px 24px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    color: #00ffc3;
+    text-shadow: 0 0 3px rgba(0, 255, 195, 0.8);
 }
 
-strong {
-    font-weight: 800;
+button:hover, .button:hover {
+    background-color: #00ffc3;
+    color: #0a0a0a;
+    box-shadow: 0 0 8px rgba(0, 255, 195, 0.7);
 }
 
-.post_metadata {
-    color: var(--color-accent);
-    font-size: 40%;
-    text-shadow: 0 0 5px var(--glow-color-secondary);
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 30px;
 }
 
-.highlight::after {
-    content: "\a";
-    white-space: pre;
+pre, code {
+    background-color: #2a2a2a;
+    color: #00ffc3;
+    padding: 12px 16px;
+    border-radius: 5px;
+    font-family: 'Fira Code', monospace;
+    overflow-x: auto;
+    font-size: 16px;
 }
 
-em {
-    font-style: italic;
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #00ffc3, transparent);
+    margin: 2em 0;
 }
 
-pre {
-    display: block;
-    padding: 10px;
-    overflow: auto;
-    background: var(--color-dark);
-    color: var(--color-text);
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
 }
 
-.error_not_found {
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    background: var(--color-secondary);
-    color: var(--color-bg);
-    box-shadow: 0 0 10px var(--glow-color-secondary);
-    border: 2px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+@keyframes pulseBackground {
+    0% {
+        background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.015) 0%, transparent 70%);
+    }
+    50% {
+        background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
+    }
+    100% {
+        background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.015) 0%, transparent 70%);
+    }
 }
 
-.error_not_found p {
-    font: normal bold 1.2rem Consolas, monospace;
-    text-align: center;
+
+
+@keyframes glitch {
+    0% { transform: none; }
+    20% { transform: skew(-10deg); }
+    40% { transform: skew(10deg); }
+    60% { transform: skew(-10deg); }
+    80% { transform: skew(10deg); }
+    100% { transform: none; }
 }
 
-.gpg_signed_info p {
-    font-size: x-small;
+a:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    animation: glitch 0.4s linear;
 }
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 25px;
-    padding: 0;
-    background: linear-gradient(90deg, var(--color-dark), var(--color-secondary));
-    color: var(--color-text);
-    box-shadow: 0 0 10px var(--glow-color-secondary);
-}
-
+/* --- navbar_right cypherpunk menu --- */
 .navbar_right {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
 }
 
 .navbar_right a {
-    text-decoration: none;
-    font-size: 14px;
-    margin-right: 10px;
-    color: var(--color-accent);
-    text-shadow: 0 0 4px var(--glow-color-primary);
-    transition: all 100ms;
+    color: #00ffc3;
+    text-transform: lowercase;
+    border: none;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 .navbar_right a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    color: var(--color-secondary);
-    text-shadow: 0 0 8px var(--glow-color-secondary);
+    color: #ffffff;
 }
 
+.navbar_right a:not(:last-child)::after {
+    content: "|";
+    color: #00ffc3;
+    opacity: 0.5;
+    margin-left: 10px;
+}
+
+
+@keyframes navbarBoot {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    20% {
+        opacity: 0.6;
+    }
+    40% {
+        opacity: 0.2;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar_right_animated {
+    animation: navbarBoot 1s ease-out;
+}
+
+@keyframes backgroundGlitch {
+    0% {
+        background-position: center;
+        background-size: cover;
+    }
+    25% {
+        background-position: 48% 52%;
+        background-size: 102%;
+    }
+    50% {
+        background-position: 52% 48%;
+        background-size: 98%;
+    }
+    75% {
+        background-position: 50% 50%;
+        background-size: 101%;
+    }
+    100% {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+/* --- Markdown Table Styling --- */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1rem 0;
-    background: var(--color-dark);
-    box-shadow: 0 0 10px var(--glow-color-secondary);
+    margin: 2em 0;
+    font-family: 'Fira Code', monospace;
+}
+
+th, td {
+    border: 1px solid #00ffc3;
+    padding: 10px;
+    text-align: left;
+    color: #d0d0d0;
 }
 
 th {
-    background: linear-gradient(90deg, var(--color-dark), var(--color-secondary));
-    color: var(--color-text);
-    text-shadow: 0 0 8px var(--glow-color-primary);
-    padding: 0.75rem;
-    text-align: left;
-    border: 1px solid var(--color-secondary);
+    background-color: #1a1a1a;
+    color: #00ffc3;
 }
 
-td {
-    padding: 0.75rem;
-    border: 1px solid var(--color-secondary);
-    color: var(--color-text);
+.cursor-blink {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: 300;
+    color: #00ffc3;
+    animation: blink 1s step-start infinite;
 }
 
-tr:hover {
-    background: rgba(255, 0, 153, 0.1);
-    transition: background 0.3s ease;
-}
-
-/* Estilo zebrado para linhas alternadas */
-tr:nth-child(even) {
-    background: rgba(26, 26, 26, 0.5);
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }

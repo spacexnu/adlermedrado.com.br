@@ -4,9 +4,10 @@ Hash: SHA256
 
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Funções anônimas em PHP</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado</strong></a></div><div class=navbar_right><a href=/posts>Posts</a>
-<a href=/now>Now</a>
-<a href=/tags>Tags</a></div></nav></header><main><section class=section><article><div><h1>Funções anônimas em PHP</h1><div><div><p><small><time>September 26, 2010</time>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Funções anônimas em PHP</h1><div><div><p><small><time>September 26, 2010</time>
 |
 3 minutes read</small></p></div><span class=line_break></span></div><div class=content><h3 id=introdução>Introdução</h3><p>Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e
 mais completa.</p><p>A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas
@@ -83,18 +84,18 @@ sido útil para você.</p><p>Se você já usou este recurso em situações difer
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgKj4wACgkQbV8aePHc
-Nh0dqxAAky+3YU2+DJoNjPY2gW4aLEx66yrieqNxT92fVkDLF/4vlBQuNIOkuU7b
-pVneP7CPvoyzr4XmY6LbmHwFIHlG9TWd1m6bZQalykElC2grM4gXNLtPoowSucu3
-V68OxnWlPSd8mDcNvRk7smQDeHD4RmI8CuI2cmzYF77rnts3Oq5HTIaQPoEcm6Br
-hI/fid6tJuwJ4lOTeypSQ1FA6WanUvUME9q8EIHTQZx+vA4lIoPYfJTkFfzo2fR6
-7SFqN7Yu3SK3TAFyA53QeEqpb97COqyti4iIPCQQOu1FLVM/9rFkdwDAV1jKfhiZ
-JQSHiRqCZD6JegnCaSfUtR7lJ4Z3jDREkQkzMmQtjmU5iVRUUsaCg2ZBCJjNJcDM
-I89sEBms84MHWc5ZeUkD0TnFeH9cy1kPVEIuaVXHnsXftIxYlud69VuOlzrvCM0Y
-2QoMfUYW8thiWkhJEFwFETXvmBvbMNKidjtLU4RDxojn/38SLZlOHVda/Ef3KTxT
-XOBmrer1NdNRaaWGoFqizISqcKDtkYcf8znjhiQi0qA1eE/joq2LJ4MsCw1lDVqg
-rVZW+vQG+Tw4wEYOKioX9VAybmuY+3rMgcjri6Q5jn0lCsjnpHhb7UIn0LDcm5Fj
-4MEb5l4VKNgBZWSwzwKNUlSzPynZqNLEoxnba6qdukehikEYxJo=
-=Xk2D
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOEACgkQbV8aePHc
+Nh3M6g/+Mv844RhP0rwXPZkFk9XDp/sdjOg9jkfjDkR6bHAWQUIdEITa7Sdlsb6R
+envsHlPU4366vvzBt5bBt47IkMTQxkaOnYOMoY7+DiPlJv+K1QJOdD06o5q4CWpN
+ZmeAYAkkU5busZybXClHBJ+KsutuTiMkoUIFf6g0t8wcNIeItAt2LmmVw/Dg6VbD
+jNbt/I4n/4FwQHiGjnSNKiVhDZxBGtVmJiSX99EhNfya9V5kYOL3EC5teBqvmAMj
+KbK+1vUTIAmKcIj4iy+Vs/qs7wmrVK3hJZCoHigGOJ3U5Ij+a3GL8xbsfuUzcc0/
+n9QZMaVJC0mDXH7zhRNdcBamPfZ5FjXFlv4UtFyjMwcVU3WF4StwlbwQm+RT+QmL
+YcvREH48gXD3BHvnAqrGYzeDmPuPq1MOzqOYtqFkjU2ahgZcTmBRURd2EYimfPKF
+n0tRVIq0nuC4m5Kh8WiiZWmmGTSrLkBq0sglwNKfgFN6ORvoWP9wnvFkGOP0pPG1
+0n4fsZqFwnXQG7cuSaB0sHdFIfRYhT4ig2F9xSXR164Hbn2UrzNIzTxc7RDBvVKq
+Ry47F3HCk3mg0DXlSVFAMTScQGMxmiu36FUYngLZb74oHfBGg3mUEfN0TwacHOn9
+cf8uFdhuLVmuNK6RHrnRYo0cT3dFTULZSGy99hbtuD/FWowWyRc=
+=gosR
 -----END PGP SIGNATURE-----
 -->

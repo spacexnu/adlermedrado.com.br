@@ -1,0 +1,36 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Why You Should Start Using GPG Now</title>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Why You Should Start Using GPG Now</h1><div><div><p><small><time>April 27, 2025</time>
+|
+2 minutes read</small></p></div><span class=line_break></span></div><div class=content><h1 id=why-you-should-start-using-gpg-now>Why You Should Start Using GPG Now</h1><p>If you&rsquo;re not using GPG to sign or encrypt your files and messages yet, it&rsquo;s time to reconsider. It&rsquo;s not just about looking like a 90s movie hacker — it&rsquo;s about protecting your communication and digital identity in an increasingly hostile world.</p><h2 id=-what-is-gpg>🔐 What is GPG?</h2><p>GPG (GNU Privacy Guard) is a free implementation of the OpenPGP standard. It allows you to create cryptographic key pairs to digitally sign files and messages, as well as encrypt them to ensure confidentiality. It&rsquo;s an essential tool for anyone serious about digital security.</p><h2 id=-why-use-it>🧠 Why Use It?</h2><ul><li><strong>Digital Signature</strong>: Proves that you are the author of a file or message (Like every page on this site is signed, for example).</li><li><strong>Encryption</strong>: Ensures that only the intended recipient can read the content.</li><li><strong>Control</strong>: You manage your own keys, without relying on third parties.</li><li><strong>Trust</strong>: Establishes a web of trust among users.</li></ul><h2 id=-key-backup>💾 Key Backup</h2><p>Losing your private key means losing access to everything encrypted or signed with it. To prevent this, make regular backups:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>gpg --export-secret-keys --armor &gt; private-key.asc
+</span></span><span style=display:flex><span>gpg --export --armor &gt; public-key.asc
+</span></span><span style=display:flex><span>gpg --export-ownertrust &gt; trust.txt
+</span></span></code></pre></div><p>Store these files in a secure, preferably offline location. Also, consider using tools like <code>paperkey</code> for physical backups.</p><h2 id=-quantum-computing-a-real-threat>⚠️ Quantum Computing: A Real Threat</h2><p>Quantum computing is advancing rapidly and poses a significant threat to current encryption algorithms like RSA and DSA. It&rsquo;s estimated that in 10 to 20 years, quantum computers could break these encryptions, compromising the security of sensitive data.</p><p>To mitigate this risk, NIST is developing post-quantum cryptography standards. GnuPG is keeping pace with these developments and plans to incorporate support for post-quantum algorithms, such as ML-KEM (Kyber) and ML-DSA (Dilithium), in future versions. (<a href="https://datatracker.ietf.org/doc/draft-ietf-openpgp-pqc/?utm_source=chatgpt.com">source</a>)</p><h2 id=-start-now>🚀 Start Now</h2><p>The best way to prepare for the future is to start now. Install GPG, generate your keys, and integrate encryption into your daily workflow. Digital security is an ongoing journey, and every step counts.</p><hr><p><em>Note: This post serves as a reminder to myself and anyone concerned with digital security. Don&rsquo;t wait until it&rsquo;s too late to protect your information.</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/>&#8592; Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</a>
+|
+<a href=https://adlermedrado.com.br/posts/gpg-intro-pt/>Por que você deveria começar a usar GPG agora &#8594;</a></div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/gpg-intro-en/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUOwACgkQbV8aePHc
+Nh2hmBAAp20vGoT5kcdkDxxDoKYDKkOA35khhzCiZOjmNkB8gz6HuZZm+6b3iDr4
+LMyEFc+OCkStkK//vrcWBwCFx2vZUj97Y+msPV3sde2oUaJZYkFfzKCOh/gn+rEA
+HtYIwxFLOQ0UbFLcAkv0tBvtRwuTok0vDtN59J2wWfJD3ExU8JCim4lK905M4IAI
+INk7SmGOcHIbmQyv7889I2nahRu8h0wZkG/VggXbVwAzMaPGRY365whbBqRu4ysn
+ri6SNThxu0x0LUnpTlgwReDjNznnlj0FYf9g4PbIPyUTKyQh4YIbvcCFiBuclgYw
+bKKZ9jEvd8P3T5zLjwFfkcMClQoi3eO8WoMJSrN35KIuPdqTVcATqZV0bOQEdaHu
+nxzUSzA8eMmWvIdit8Qwk1EWavO5WZb9XQxJ/Itnlr7mlnHaX05zsGd/eoz7fsmi
+rlQ8sB8NivEcgEqTwzZYuuK+W+Zakp7BJnCSgO6c7C1DGRVZhzpaaV63nEQOn9/3
+70w2nfe6oFFZR2jOOOVikKKLf+Xah3+RvjMLCGNRaURXpBLVSXWyVsefjjtfzOT4
+C+QykPWXSkRKpQDW+QN6mlf9v8cJD/lFgEBH+KKFGHLC/NhrTizJB9fnEOOw5e/O
+ga6MuYzODwc+bOa3oTjcDToY7Cix0kII7Fsh/b+Q4fUQENAnUt8=
+=WnSj
+-----END PGP SIGNATURE-----
+-->

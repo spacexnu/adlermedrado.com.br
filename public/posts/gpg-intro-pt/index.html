@@ -1,0 +1,35 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta name=description content="My corner of the web"><title>Por que você deveria começar a usar GPG agora</title>
+<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Por que você deveria começar a usar GPG agora</h1><div><div><p><small><time>April 27, 2025</time>
+|
+2 minutes read</small></p></div><span class=line_break></span></div><div class=content><h1 id=por-que-você-deveria-começar-a-usar-gpg-agora>Por que você deveria começar a usar GPG agora</h1><p>Se você ainda não utiliza GPG para assinar ou criptografar seus arquivos e mensagens, está na hora de repensar isso. Não é apenas sobre parecer um hacker de filme dos anos 90 — é sobre proteger sua comunicação e identidade digital em um mundo cada vez mais hostil.</p><h2 id=-o-que-é-gpg>🔐 O que é GPG?</h2><p>GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele permite que você crie pares de chaves criptográficas para assinar digitalmente arquivos e mensagens, além de criptografá-los para garantir confidencialidade. É uma ferramenta essencial para quem leva a sério a segurança digital.</p><h2 id=-por-que-usar>🧠 Por que usar?</h2><ul><li><strong>Assinatura digital</strong>: Prova que você é o autor de um arquivo ou mensagem (Como todas as página desse site são assinadas, por exemplo).</li><li><strong>Criptografia</strong>: Garante que apenas o destinatário pretendido possa ler o conteúdo.</li><li><strong>Controle</strong>: Você gerencia suas próprias chaves, sem depender de terceiros.</li><li><strong>Confiança</strong>: Estabelece uma rede de confiança entre usuários.</li></ul><h2 id=-backup-de-chaves>💾 Backup de Chaves</h2><p>Perder sua chave privada significa perder o acesso a tudo que foi criptografado ou assinado com ela. Para evitar isso, faça backups regulares:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>gpg --export-secret-keys --armor &gt; chave-privada.asc
+</span></span><span style=display:flex><span>gpg --export --armor &gt; chave-publica.asc
+</span></span><span style=display:flex><span>gpg --export-ownertrust &gt; trust.txt
+</span></span></code></pre></div><p>Armazene esses arquivos em um local seguro, preferencialmente offline. Considere também o uso de ferramentas como o <code>paperkey</code> para backups físicos.</p><h2 id=-computação-quântica-uma-ameaça-real>⚠️ Computação Quântica: Uma Ameaça Real</h2><p>A computação quântica está avançando rapidamente e representa uma ameaça significativa aos algoritmos de criptografia atuais, como RSA e DSA. Estima-se que, em 10 a 20 anos, computadores quânticos possam quebrar essas criptografias, comprometendo a segurança de dados sensíveis.</p><p>Para mitigar esse risco, o NIST está desenvolvendo padrões de criptografia resistentes à computação quântica. O GnuPG está acompanhando essas evoluções e planeja incorporar suporte a algoritmos pós-quânticos, como ML-KEM (Kyber) e ML-DSA (Dilithium), em futuras versões. (<a href="https://datatracker.ietf.org/doc/draft-ietf-openpgp-pqc/?utm_source=chatgpt.com">fonte</a>)</p><h2 id=-comece-agora>🚀 Comece Agora</h2><p>A melhor maneira de se preparar para o futuro é começar agora. Instale o GPG, gere suas chaves e integre a criptografia em seu fluxo de trabalho diário. A segurança digital é uma jornada contínua, e cada passo conta.</p><hr><p><em>Nota: Este post é um lembrete para mim mesmo e para qualquer um que se preocupe com segurança digital. Não espere até ser tarde demais para proteger suas informações.</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/gpg-intro-en/>&#8592; Why You Should Start Using GPG Now</a>
+|</div></div></div></section></main><span class=line_break></span>
+<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/gpg-intro-pt/ | gpg --verify</em></p></div></footer></body></html><!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgOUPAACgkQbV8aePHc
+Nh06yhAAnZ2iAOS8soxq7+yQSL5SfKPIm5BYitHx+MpFDAbsiFyJX18lI2/lZeNJ
+kPbY3SORU6BP1DEHuHxI6d1FbC88ua8kkv+8vps93d5WLNvjn5Ui/z8q72TJdsnE
+lAGceQfKwr4ADYQeiNXVxSNOv34GY9GwDkm4pgsASWkro4TZr+Gq/IUx/tGs4AEt
+H6n9zbuLbYVGwgsDitaCUhqTbEC7d6CUay5eJxPfg38Cuo3qTD+qIKgxkNBwxJw5
+dMmaktOLqT+9i8rtMEffJQJ5Hs0bHPO7wuBawlDZAF6+Mcv9mo2KvHmyNsMul6Ei
+/XccZXSnnQJyH7d0E6/uv9AjollLjD83s2GBCiPrCP2lucFIz/2fMKWnJYv9QLco
+DOsypnZpZ2T2jh17YFf0RlZDXSpjpV/TxpWkzpjM8yuIWWLmUXHGjbFuk7LxkdaC
+80TCGus24o5fOArns9jE2xIElOdvqE8ZRPj8KhuOcDCTMEjIerri+pWo7etMaD4U
+d2IuKPxNqDFFSl/EHxgVaJ9viOq7scmqP7j/9z1CU8Ls3M0erkPA+LBApk0TX4N+
+LOxDn5Xhv/pcISlq0hnAC3z75K0k0YcHVLtLVZgrfUibjXvw+JkjRuXxL1qrKmoS
+pM1ZKd31wCXwC6jonC4I9djDyfRedOV+ZBSuTCjFQAM2jiXCPO0=
+=ninC
+-----END PGP SIGNATURE-----
+-->

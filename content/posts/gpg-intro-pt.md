@@ -14,22 +14,14 @@ GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele per
 
 ## 🧠 Por que usar?
 
-- **Assinatura digital**: Prova que você é o autor de um arquivo ou mensagem (Como todas as página desse site são assinadas, por exemplo).
+- **Assinatura digital**: Prova que você é o autor de um arquivo ou mensagem (Como todas as páginas desse site são assinadas, por exemplo).
 - **Criptografia**: Garante que apenas o destinatário pretendido possa ler o conteúdo.
 - **Controle**: Você gerencia suas próprias chaves, sem depender de terceiros.
 - **Confiança**: Estabelece uma rede de confiança entre usuários.
 
 ## 💾 Backup de Chaves
 
-Perder sua chave privada significa perder o acesso a tudo que foi criptografado ou assinado com ela. Para evitar isso, faça backups regulares:
-
-```bash
-gpg --export-secret-keys --armor > chave-privada.asc
-gpg --export --armor > chave-publica.asc
-gpg --export-ownertrust > trust.txt
-```
-
-Armazene esses arquivos em um local seguro, preferencialmente offline. Considere também o uso de ferramentas como o `paperkey` para backups físicos.
+Perder sua chave privada significa perder o acesso a tudo que foi criptografado ou assinado com ela. Para evitar isso, faça backups regulares e armazene-os em local seguro.
 
 ## ⚠️ Computação Quântica: Uma Ameaça Real
 
@@ -39,7 +31,79 @@ Para mitigar esse risco, o NIST está desenvolvendo padrões de criptografia res
 
 ## 🚀 Comece Agora
 
-A melhor maneira de se preparar para o futuro é começar agora. Instale o GPG, gere suas chaves e integre a criptografia em seu fluxo de trabalho diário. A segurança digital é uma jornada contínua, e cada passo conta.
+A melhor maneira de se preparar para o futuro é começar agora. Instale o GPG, gere suas chaves e integre a criptografia no seu fluxo de trabalho diário. Segurança digital é uma jornada contínua, e cada passo conta.
+
+---
+
+# 📜 Comandos Úteis do GPG
+
+## 🔹 Backup de Chaves
+
+- Exportar a chave privada:
+
+```bash
+gpg --export-secret-keys --armor > chave-privada.asc
+```
+
+- Exportar a chave pública:
+
+```bash
+gpg --export --armor > chave-publica.asc
+```
+
+- Exportar as configurações de confiança:
+
+```bash
+gpg --export-ownertrust > trust.txt
+```
+
+## 🔹 Gerenciamento de Chaves
+
+- Editar uma chave existente:
+
+```bash
+gpg --edit-key seu@email.com
+```
+
+- Gerar um certificado de revogação:
+
+```bash
+gpg --gen-revoke seu@email.com
+```
+
+- Importar uma chave pública recebida:
+
+```bash
+gpg --import chave-publica.asc
+```
+
+## 🔹 Servidores de Chaves
+
+- Enviar uma chave para um servidor:
+
+```bash
+gpg --keyserver keyserver.ubuntu.com --send-keys <ID_da_Chave>
+```
+
+- Buscar uma chave em um servidor:
+
+```bash
+gpg --keyserver keyserver.ubuntu.com --recv-keys <ID_da_Chave>
+```
+
+## 🔹 Criptografia de Arquivos e Diretórios
+
+- Criptografar um diretório inteiro:
+
+```bash
+tar cz folder/ | gpg --encrypt --recipient seu@email.com > folder.tar.gz.gpg
+```
+
+- Decriptografar o diretório:
+
+```bash
+gpg --decrypt folder.tar.gz.gpg | tar xz
+```
 
 ---
 

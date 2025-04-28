@@ -3,13 +3,23 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Configurando o Ruby no Windows"><meta property="og:description" content="Recentemente eu instalei o Windows no meu PC e como eu uso o octopress para gerir este blog, eu
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Configurando o Ruby no Windows"><meta property="og:description" content="Recentemente eu instalei o Windows no meu PC e como eu uso o octopress para gerir este blog, eu
 estava usando uma VM com linux como ‘plataforma de blogging’.
 No entanto eu acho que não faz muito sentido manter uma máquina virtual só para isso, então eu instalei o ambiente Ruby
 no windows para usar o octopress.
 Como eu sempre usei ruby com Mac OS X ou Linux e não tinha experiência com a configuração do ambiente Ruby na plataforma
-da Microsoft, eu apanhei um pouco para configurar, mas deu certo e os passos que eu executei estão listados abaixo:"><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/configurando-o-ruby-no-windows/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Configurando o Ruby no Windows</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+da Microsoft, eu apanhei um pouco para configurar, mas deu certo e os passos que eu executei estão listados abaixo:"><meta property="og:url" content="https://adlermedrado.com.br/posts/configurando-o-ruby-no-windows/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Configurando o Ruby no Windows"><meta name=twitter:description content="Recentemente eu instalei o Windows no meu PC e como eu uso o octopress para gerir este blog, eu
+estava usando uma VM com linux como ‘plataforma de blogging’.
+No entanto eu acho que não faz muito sentido manter uma máquina virtual só para isso, então eu instalei o ambiente Ruby
+no windows para usar o octopress.
+Como eu sempre usei ruby com Mac OS X ou Linux e não tinha experiência com a configuração do ambiente Ruby na plataforma
+da Microsoft, eu apanhei um pouco para configurar, mas deu certo e os passos que eu executei estão listados abaixo:"><meta name=twitter:image content="/images/default-og-image.png"><title>Configurando o Ruby no Windows</title>
+<meta name=description content="Recentemente eu instalei o Windows no meu PC e como eu uso o octopress para gerir este blog, eu
+estava usando uma VM com linux como ‘plataforma de blogging’.
+No entanto eu acho que não faz muito sentido manter uma máquina virtual só para isso, então eu instalei o ambiente Ruby
+no windows para usar o octopress.
+Como eu sempre usei ruby com Mac OS X ou Linux e não tinha experiência com a configuração do ambiente Ruby na plataforma
+da Microsoft, eu apanhei um pouco para configurar, mas deu certo e os passos que eu executei estão listados abaixo:"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/configurando-o-ruby-no-windows/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Configurando o Ruby no Windows</h1><div><div><p><small><time>June 16, 2014</time>
@@ -23,22 +33,22 @@ o <a href=http://octopress.org/>Octopress</a>, eu preciso de algumas extensões 
 ‘cidadã de segunda classe’ no mundo ruby.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/minha-vida-apos-a-cirurgia-novas-perspectivas/>&#8592; Minha vida após a cirurgia: Novas perspectivas</a>
 |
 <a href=https://adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/>Como subverter uma nação. Por Yuri Bezmenov &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/configurando-o-ruby-no-windows/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0pcACgkQbV8aePHc
-Nh0YPg//XvB151DQQxHwBZ/h5CJS1LYR0iz0Ocph+RqaAxzhEe6LDl/n/ou/26II
-UCNOYloPL82W2xI6sP4UtoxtZXCfmvDAo9VCEQhKZ2i602MYWPBcuDg1hGcAak/3
-Epu1BHMNJcmyYsxNsvxl8bUbZQHKWQFZH21KDfTM3BRCDA3dwtrSuJm7FAyMwZk0
-QC5ZEsfPkKI10nhI5GFgqlD/aOMJGmrRldKGUGiNhkoQWOFlEFYwZpigFhwz7++O
-dNL5HMYuESezIi+wdF2fOIC/jNotFPk3AZ4WtJtvYY5urafSLjej+i6UvynxkQQr
-92MdySu0bA39sp/wnir7BCvQB77HVm6OrhSgI8K+xcFoT5zgYGbAnhkDoM3+4k+K
-CJIGuc1owFU2lSkROxUdIaTaYmccZKB20xbbjzRrMVKAV5E1Mnlk2WFL/KY+4gW9
-0ZcLsm4ykX8GWLEQocjXL/QABmSmVSzLkY/SRKm2x3WkXnTAxbfq4jHBdt8aflfK
-tn6HyJxNg/Fmdvi+7PhLsp3NYZfjwZht5TpnfyEIPRXVieAZ1eqHAR/gYBhHsJrA
-L1sBaOu9ptcaVAzQPruK96pannkMVZI3jubQFQTKMvijHLaW9N/hOu7R0++0ubBi
-ejAu2Cnp/xYjQyWMkkvqPvf+kLgTnUW6bhIuE2EfzqCVp+wLf+A=
-=cTn+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5E0ACgkQbV8aePHc
+Nh0QfhAAzr9KSPGK6ZeXDdu8RHYTXkbNNZ1q9l0M9rzdzKLg3giYVv1cH/KHBPYO
+7IcQaw9xXMNl7Gjp2yu3ZOiUePQTswzCf6YqnUWqcVJqaTYE9LYtm3pJ8EBwkTEl
+i0ZIbwU23N/+RzttF4I5cf0qNIlCzo0KlJueS34UsRc+QSLYQX803k56B3xIgBXw
+OebHAB7FmU9mo3Q29KbfrNPnXR8TRquHM1e4+NK+r04ixQFrqCpwZB1wECy4qD8S
+//cKL7DlahAiDbrjzSYlM/sXiLjLs0B3PeuWJKrHK2LKC1w+9KhqAv6iY+4hTgdn
+AOAX/QDyoXY+0Fxuslv6Qfre5eifwF3wtbr/0lEQZB5Gj5/85Bxo9v/hiDTU7QTE
+fGzL6Qu27P7Ow5LSbArfohHRHNB/jY+P0U0nXti2T3uPPYeU/nAPSey9InAz2UM7
+9smfW+3qlJJhjjdZ01QPYFfOqg1nNYdxa1cdtgrTLf5zIZ86XieIz0wplRRghMiN
+60hMbV5zVmCc9npP6vnSY9R+aJs0Hh/hK59+WaOgOHcUD8eh8D8TEV1TzubScCV0
+POtBRj1K7pZ+97oTsoop7zk/pOGiMpr1NrPMyRs4bYlGWo6PxZNnV/N92mXnlUl5
+nEtq8s1RJn0eGmH/JkpAkTJkBf0XjJxx0g8xxFW0ebw4P4CaZ0k=
+=eGhb
 -----END PGP SIGNATURE-----
 -->

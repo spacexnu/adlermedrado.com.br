@@ -3,14 +3,26 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Configurando um repositório privado usando Composer e Satis"><meta property="og:description" content="Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Configurando um repositório privado usando Composer e Satis"><meta property="og:description" content="Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando
 na Coderockr e este repositório deveria ser importado no projeto por meio do composer, talvez
 isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível
 pelo composer que utilizasse um repositório git privado.
 Como faz?
 Após algumas pesquisas eu encontrei o projeto Satis, que pelo que pude compreender
-é mantido pelos mesmos desenvolvedores que mantém o composer."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Configurando um repositório privado usando Composer e Satis</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+é mantido pelos mesmos desenvolvedores que mantém o composer."><meta property="og:url" content="https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Configurando um repositório privado usando Composer e Satis"><meta name=twitter:description content="Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando
+na Coderockr e este repositório deveria ser importado no projeto por meio do composer, talvez
+isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível
+pelo composer que utilizasse um repositório git privado.
+Como faz?
+Após algumas pesquisas eu encontrei o projeto Satis, que pelo que pude compreender
+é mantido pelos mesmos desenvolvedores que mantém o composer."><meta name=twitter:image content="/images/default-og-image.png"><title>Configurando um repositório privado usando Composer e Satis</title>
+<meta name=description content="Recentemente eu precisei incluir um repositório do Git cujo acesso é privado em um projeto que estou trabalhando
+na Coderockr e este repositório deveria ser importado no projeto por meio do composer, talvez
+isso não seja novidade para você, mas, para mim é pelo fato de eu nunca ter precisado criar um ambiente acessível
+pelo composer que utilizasse um repositório git privado.
+Como faz?
+Após algumas pesquisas eu encontrei o projeto Satis, que pelo que pude compreender
+é mantido pelos mesmos desenvolvedores que mantém o composer."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Configurando um repositório privado usando Composer e Satis</h1><div><div><p><small><time>June 21, 2015</time>
@@ -53,22 +65,22 @@ seu projeto:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;backgro
 situações.</p><p>Você conhece alguma outra maneira de lidar com uma situação como essa? Deixe seu comentário.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/liberdade/>&#8592; Liberdade</a>
 |
 <a href=https://adlermedrado.com.br/posts/migrando-para-o-atom/>Migrando para o Atom &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/configurando-um-repositorio-privado-usando-composer-e-satis/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0pMACgkQbV8aePHc
-Nh3e6Q/+PQ+v5+DBqaULzbOdtGKdEyjloJRVI/+fAERF10F8upX3vA6sqxDobpMj
-asijdq6Y7bHhfAWKVYMYa/LM8/nHsn2T5uUhc5NHwQEUeiyzTHI8zyRRsqkY9QG9
-s1NRNAw8S+zACjyxr2P9dVL+3Nyp5bf9GIHIpc81jQopqCGKnoWhdhP1g9RI1BEz
-jTop/IQ7sEQ7IVUb3hOnyNxDtfs7YH0Gd9DDIj9eddqsQ1BcONIEOmrdRDH6ThdC
-4v85qqxk5DF9OWyKKvipgOl3XtV6x57hRFWNQ6QIe3RtDhSjVDmV0mvgveJy/sjX
-fLMSUQLn3ax0419TzuG110jGxI1BiW7Ra7pNR8gzhSRmc8rQ99kSGlxtVpCc+tY0
-VUmevD7Y0n4NQmpesfo4xYTpNELtei7K21qejgOavaCeIplceWgKkaAUaQBMwB4n
-SKUzBGoCDTWtrbeWOTaynAtOJpUG640/ob2b/NNY4BKsq3s4ThEwRS8MNDd84AVm
-hCXM3towOvzusblGp2Y45Z7CC2NF9svJi5cRFsZWseOGKOke1BakX+5v8xe1ToZ/
-0eVSZjpCI8/GooNWcR5ltuWImEKk0U3QJAPTkoptEk4rs7xyWCR9zG3uUgEAr00W
-TlerJ5JBeJMIJo/6Cwdda6uGQb1zwMtfCCNCwkZipXtkM+IO4ok=
-=1Nda
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5EoACgkQbV8aePHc
+Nh3nahAAo3AJsvu74TOj9rqNDyIvPFnOssNMUeEUiRgpKQ7C8522AXhG80v/ANO9
+tQuKJ3h1K6mHn3+g/z4lgaJpIhN08YMk8rgk+ggCA4lFVaSUUBwgqI0lx+0UjK3o
++vwe8EFZK0deG113ZbehpbG+EIpOPLiWGrTPczNPs52NWM7unS2dtU/HNxc36F+X
+TnBtGJdTYQlbByGgxg+K3Sh3i3uX/GLYBODZ6gxHk8Yh+v3x0H4eb0kEuMpNiFVT
+fEhoquCEFWKotVI1yydpeXmhYxvaJSLODyJzjQTexjuIzcbssREVnTaHZukfxdUh
+keORiGJWZ4UVk4tYhcLBi4IrAdXpt0xWZbewxX8CTpLydiTXs8aX+3czAfK8yGpw
+zTdavjIq+UKJx6L3ZrwNkz5xfWUennx4AJzFqnKLwHvYQx7TK0qcKfBQClzEa7/E
+liHUWiKlcFy/60Nth+I6cgVBMDs5p+yd5Fj8/6VOr7psRm0b+HWTWA1vhezGz0lH
+lGAqgEmHYuSwSMZrHOg6ES1OnNBNyfjq2BVLncPMfwIALc/Tq/PV3G2NiDlOFJ9v
+CoOy2Moh8z3vbTz4ScjoE9y64DRtmRwnxhq6NUGKbX8F97mzFEQ7pnrlQJMiUxbz
+zysQP2tVMDELBBqQbX0UbXVrJoOZmtmqIuiy50rZqOCVfwXSrHo=
+=yiL9
 -----END PGP SIGNATURE-----
 -->

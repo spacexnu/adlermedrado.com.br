@@ -3,7 +3,7 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Funções anônimas em PHP"><meta property="og:description" content="Introdução
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Funções anônimas em PHP"><meta property="og:description" content="Introdução
 Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e
 mais completa.
 A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas
@@ -11,8 +11,24 @@ funcionalidades.
 Minha idéia é de escrever posts curtos e direto ao ponto.
 As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que
 elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em
-nenhum outro local, apenas naquele momento específico."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Funções anônimas em PHP</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+nenhum outro local, apenas naquele momento específico."><meta property="og:url" content="https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Funções anônimas em PHP"><meta name=twitter:description content="Introdução
+Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e
+mais completa.
+A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas
+funcionalidades.
+Minha idéia é de escrever posts curtos e direto ao ponto.
+As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que
+elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em
+nenhum outro local, apenas naquele momento específico."><meta name=twitter:image content="/images/default-og-image.png"><title>Funções anônimas em PHP</title>
+<meta name=description content="Introdução
+Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e
+mais completa.
+A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas
+funcionalidades.
+Minha idéia é de escrever posts curtos e direto ao ponto.
+As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que
+elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em
+nenhum outro local, apenas naquele momento específico."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Funções anônimas em PHP</h1><div><div><p><small><time>September 26, 2010</time>
@@ -88,22 +104,22 @@ método para receber uma função desta como parâmetro. Exemplo:</p><div class=
 sido útil para você.</p><p>Se você já usou este recurso em situações diferentes das que eu apresentei, deixe seu comentário.</p><p>Abraços.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/promo-phpsp-ajuda-tirar-certificacao/>&#8592; Promoção do PHPSP te ajuda a tirar certificações Zend</a>
 |
 <a href=https://adlermedrado.com.br/posts/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-codigo/>Quase um ano de Dangolino sem precisar alterar uma linha de código &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0o4ACgkQbV8aePHc
-Nh2rLQ/9Hzx9w4D7Brjkxt/gQ8I7M8Hk5IA/BhzLLdYRw4uZsmFTR/iEKCHoeyUt
-ce6WXtNLoq1hukLwm4si2lEgCw8K9LCFpLGpyQpEQeps6hiVNVMVFarHYJ0tZFbL
-BZ2+V5x1rAzvbbnXCPscKA88lN/MnaJ0mYyzpDn/K6gqj8aNaTHHtc1U3sOepQTr
-khJPCk2KM5f40Z4tV805adda5pHhR5x/MN47FRx8PjZkOFF58szZejD4koXm1iC3
-JQoV1KlRR2TABeazJhzK8X23Pic7u8iRn/xXVu3OJQd6yOuq7RUI4/k7lwNuHwva
-97MScD5b2e8MULMNsfl9rY8UUu8iVfLyfZq2Kltb7vKDKO5cuMHEu4oTfYq6vKFy
-6Y0L/YSVEKjqCDTzDk6jfeT3ZxEKshgGxv3iD2XXk9OlBhV+riF34F2AS013FXfn
-f4sEd7DHpCQivlHrNnHskKC6k97UbUcVgzTBGGsG/NVHYlHPghqvrX1T/RPTYr0S
-ClFHzrSWbdRJ3PlyRIGj3qcyN2VrPGbLPYI2lXIrj15BYrZR6U1PFiyc0ld1Jc0n
-BbIs4gxZWlw68Zy3ix2D0XSLx9cuVVkO5Go3KIXBOXAJNJAvYUfF5MSe/scI4ZlH
-MhuNrPB8lrgyOWR8vT75zLxB1T4Eed92zNfV0zpMf+Nd2syofkA=
-=0gFy
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5EQACgkQbV8aePHc
+Nh2H2g/+LtgHHs5dYXtkjl/50x72mxGRLyMgGkWzxUXRaTMf13ntj9HBakJKCfZv
+4xFh51AJWhEaEc/Y3vz7Pw9alSaP9/DT6zND9WRDtgM9oqR+IqdwxDoOlXCgSNVr
+gI3I6oyuYblkPTlCnpWH0Y74a0dz259rBChGy/7FvWOiFP0E3fPAVDE2f/zPyu/y
+HiKlbpOhnzwRwMeBDIMzw3GA0vK0SOitWcDTJch7DuJGwolbrylH8yPZQw950uNG
+21q6Fk1oMei6UV2tyVKIC5YHnF2TynHz7cg1nhdCumEnbekaFQg/z8lBhEHd+R7v
+/iWhlM4+k6MaXUBHj95tW55cJ0KWjxBt6lxT/pOYYdv4VYh0u4SWqkrXTh7qfv4Y
+2ZnGWuY8LjmxixubCbhYiHOGnuEbyu+lxbF89jUj1KdeSK5+yXz1+26zen5k+KNl
+sy1OLSve8cG9nG2H+o0Qe8z5KIpKjEAObSHtqGQGgq01OlPoB3GWwvrNM9FLseb4
+LPqKi2yNXpy372C2TsLY2JCZUQAA2tcpdCtxv+coGEk6NiCCY8Z3xKXc2UZxCd3X
+3wguH+0wJUxEaypnqmP4+TICMEdTt1TotppAiRvPFPLqEUjBCpgcTSrE2qZ619P9
+CQcqMhQ0qbeof63pXz5TSIKllap+1Wybodr89d+nnIM0i9oIIO4=
+=Fdvq
 -----END PGP SIGNATURE-----
 -->

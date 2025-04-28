@@ -3,15 +3,29 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Mudanças no Zend_Loader"><meta property="og:description" content="Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Mudanças no Zend_Loader"><meta property="og:description" content="Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
 autoload.
 Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:
 Zend_Loader::registerAutoload();
 Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no
 pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está
 deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não
-receba um notice nas versões atuais."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/mudancas-no-zend-loader/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Mudanças no Zend_Loader</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+receba um notice nas versões atuais."><meta property="og:url" content="https://adlermedrado.com.br/posts/mudancas-no-zend-loader/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Mudanças no Zend_Loader"><meta name=twitter:description content="Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
+autoload.
+Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:
+Zend_Loader::registerAutoload();
+Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no
+pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está
+deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não
+receba um notice nas versões atuais."><meta name=twitter:image content="/images/default-og-image.png"><title>Mudanças no Zend_Loader</title>
+<meta name=description content="Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
+autoload.
+Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:
+Zend_Loader::registerAutoload();
+Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no
+pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está
+deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não
+receba um notice nas versões atuais."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/mudancas-no-zend-loader/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Mudanças no Zend_Loader</h1><div><div><p><small><time>May 28, 2009</time>
@@ -42,22 +56,22 @@ todos os namespaces registrados, excluir um determinado namespace do autoloader 
 locais diferentes do bootstrapper como por exemplo num controller.</p><p>Espero que gostem da dica.</p><p>Abraços.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/herois-brasileiros-esquecidos-ou-quase/>&#8592; Heróis Brasileiros esquecidos ou quase</a>
 |
 <a href=https://adlermedrado.com.br/posts/slides-palestra-zf-phpsc-conf/>Slides da Palestra sobre Zend Framework no PHPSC Conf &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/mudancas-no-zend-loader/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0pwACgkQbV8aePHc
-Nh05lw//Y2IsIiP1E+JgnHduJdrD+doN2B6Vn8DayoLssVR39RcIPVkmmRLSpMnI
-OAJDwQ+Sgr+4ImYaYLe+aAxbLmNXLMUTOgIJFPfMa/LKPesyLPQ9+yhrXaOJmw8z
-x96dv/jgKWUzD6F9bUJYOUzDUoHCFP2kIblPGPUQNd/oUXYYVGXk7sxlVu5QWym8
-DKoHETg1dcCB/8MbG6QSAmPHJmUwQz1fGjqSjNflEkYc36c4u0P8o1UEsTcGXx3o
-yp2HWotlkY0yStLoBSEtSItwGhsFcDmzOLqF8u+EDoR4lXpq5jXR88Mv/4V9epWz
-4H587DT4N4q8PGLq0UKmvqjKzw2byTZKiCgwXfEkxVHd0nxA1iuNDwWt3ZaJzlgx
-3y/6gvz70VdezMO8u2vMpa5tmWa51SuSLihDAaHdz3jfx1Hd5SyXliAS0rfPzLan
-rWf4T8ANzicXaW47UdzNdgTZVKASt+A08KrISe3AtLqmMUI/sVe8htHeFANg1YnA
-sEjTIQWuwno+dOXuxfINNUp1wWA1xV1NvPamysct5cDTr8WeYMHJkJLh9izjn65v
-pfKnhZBmEmxXxvHcjoiTUdjsQikvL5cSoyifzssGPWktfcdD1JI6KTDrPvPFSXoM
-WnFLUrdalnDib3gtI8oIfqObldpjmkXLKpIW5pYJTX0wCnMf6mg=
-=a4vQ
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5FMACgkQbV8aePHc
+Nh3NWBAAoDgBV3y+Y/2UvtsQB4XAamKK5nAWEUk3rOLuV4VK3A4YswUWW7GIFUOP
+RLKrhMXiV8KLsp6+7+ICOSMHPo6oyhed69aJIx7SDgNdQ2imxnXM4yS0XyCvO+qo
+9Vsg0CpnZ5hxSbc2zPQbbbFiFN1ubi107kdgamLhunBr01ZbZkWJU4iRTUojGWk5
+Iy1eUcyMpMm7X3Cjxi1t7iZ0NE7V4LFt6CPPhWRTCptggQgfdE6Zzxs5QQt4Wt70
+djBq2zVMYq9e7gVmFRhBsQdNydLUSC3udEuHPxzNgOoaC3Wyy8vXiU/VMMhDqLbw
+Mzw56PHuhOAx64Impuw1NWgmezul+hL42lYZplErQDW9dI5PD5YHKsWP9O9yRFF/
+IhBRCPAlvR5KwkDaII1PlBx2EMU2D2jWCharRIrao3XOliY/lEgvf6m/D0pFaqDK
+ezQy6FuvitMfXbPulQ9qehNk7XOtVrrdNXkjsLdngr4qnShA+Nh/RnjO39h4XuL5
+jyKUHxcW1t7ymxiuj4CGdgAlTwTsf6nksX/WsG3sQ9L42yOpF+fBJeqTi1BbD9oI
+1ZnqVEFm38y5btv4OmN4PcZFueLqEC5vLzf3FpevTtWbsS9I7j1n5ZmhrBgIDiNy
+dfJqlj1LSx+h6O/75KyCHkzk2LMbhsif6bW65D9ZEqwAftRPA+s=
+=96XQ
 -----END PGP SIGNATURE-----
 -->

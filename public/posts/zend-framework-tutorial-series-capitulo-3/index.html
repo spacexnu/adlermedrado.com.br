@@ -3,14 +3,26 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Zend Framework tutorial series capítulo 3"><meta property="og:description" content="Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia,
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Zend Framework tutorial series capítulo 3"><meta property="og:description" content="Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia,
 vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em
 uma frequência maior. Espero que dê certo.
 Introdução
 Neste capítulo eu mostrarei um pouco do Zend_Form e algumas coisas que são possíveis de implementar usando ele.
 O Zend_Form é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando
-precisamos filtrar e validar dados provenientes de formulários."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Zend Framework tutorial series capítulo 3</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+precisamos filtrar e validar dados provenientes de formulários."><meta property="og:url" content="https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Zend Framework tutorial series capítulo 3"><meta name=twitter:description content="Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia,
+vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em
+uma frequência maior. Espero que dê certo.
+Introdução
+Neste capítulo eu mostrarei um pouco do Zend_Form e algumas coisas que são possíveis de implementar usando ele.
+O Zend_Form é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando
+precisamos filtrar e validar dados provenientes de formulários."><meta name=twitter:image content="/images/default-og-image.png"><title>Zend Framework tutorial series capítulo 3</title>
+<meta name=description content="Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia,
+vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em
+uma frequência maior. Espero que dê certo.
+Introdução
+Neste capítulo eu mostrarei um pouco do Zend_Form e algumas coisas que são possíveis de implementar usando ele.
+O Zend_Form é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando
+precisamos filtrar e validar dados provenientes de formulários."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Zend Framework tutorial series capítulo 3</h1><div><div><p><small><time>May 22, 2010</time>
@@ -127,22 +139,22 @@ poder encaixar outras funcionalidades como Subform.</p><p>Espero que você tenha
 Ah, os fontes encontram-se no github.</p><p>Abraço.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/atualizem-suas-agendas/>&#8592; Atualizem suas agendas</a>
 |
 <a href=https://adlermedrado.com.br/posts/screencast-zend-framework-e-netbeans/>Screencast Zend Framework e Netbeans &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0qIACgkQbV8aePHc
-Nh2VBRAAuniFvbBnKV8kYPbxAsW12H8En82zOXNcyo1LSSGDUnYmq6fENtUMQaMj
-+swwLsUcQ+5GBBRUWUEmWx3EDb3tFrm7XPMglVYfE0Pm3xhjDt/QUTFpeiGInk27
-UxJW+EKWkUQ2XVFo1xnJHfGW0GDkFJWKXtNdJHurb0xTH6avbp3F7S8P0s9KMaOi
-rORsKeBGM34fojmIKvWcNG3xnk7PBXmwdF0JffaRpAtQLi721FOQ3poCEfccqVUI
-IhLD/aimizLnRn7O5xc/d948M0wGZOiqPob5yn69jLb1ueJT9cvBzQKm1Ui5p2Oz
-I0/8nY3i28oktmRMyT1skNq4c+Ld1g4GpcqWlmLMrcH33A+2dIr72Vs5sVp52Lfl
-O0KUlGB9BYDu2QqHaONV6N42oBFifqbMKc2O2jSZAe3AiAur9zT0tqzZxjZAEufz
-a9LtBmqCXdWL7IxVVm0FkbMCNA19ES8y2f4VNZsZxjZXpesgUt3cc13UzxfA+uO9
-aE/hMeZQKrSW6zbnjayZILjBlHXJPX3bAvPtx7712vRS7zeYMOh2tVNd78fimHRr
-RsZ3k9EJqpJKiQVJFeJbVkDIuotP7dyNds3Fis7OoDxEDasx3xpj7/0l1j1p1e7T
-s/JLmLVSUrIXkrY0WKT2L4WlRuqWyWg247wTn08pqN8/wOVNBXw=
-=f9C6
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5FkACgkQbV8aePHc
+Nh3gZhAAloXixd4yw3QJzoFZq2/mqnmVAa+JuXRtsgocme1So0NY5ZuriF/AxewJ
+sT8HhqMp5YjYvHQkvINywr4Amou5YN5yDXZlsFbFdBhNjMS9ExtwUaxpNgmSSokp
+kB6SsaFXCJ2+QewnOGlv1bDO9W+7LlBDL+7k/FAndg4JdoqZhXKMZ6VbWhKn/I9I
+MpuAJScSiThkplQrT7tlXCKwsNuQ4JahLM/vFvJeWXhh7whUsYB8vGMu4rmABgBX
++SbNIA7Y0j6IfNR7OTEWuQixyTUQP+5a28WO7fI3VAOVQBqPMHC38wiVbZYZiKFp
+wtQmDu2ddjiey92Ch/ymg8BvfXHNYnZDOpI6IERMPARqfJHGAzrrj1zTEPqfm459
+LLMhZkJ96ryw1UbVhmPD3dbciy07MTyLr907bdkXxMXeRz84cxTSPHagvGdQlqXS
+oOrMY+TPbHEt31L6UrohVVRDcOJBQwKVjuP5j5nTg0cqLA1/ucVCWR0M6xcjiplf
+ylMjH5b+sewyMDuIKC0PRQVFmJK4NoVBvE4wnRetiP/msyXpitC8tKTwYLtNue5z
+VB7UBinfnW7a2U7rS3xW15idQMz9ImD7SJ4MhVo6aGvbBDXNVBgBIulgOy+IlK/U
+8hbsp7vzx6f8RRTC0txEGYGG2CiVKdKoDFgbZvOVq8NfWPa/1Ms=
+=7LWS
 -----END PGP SIGNATURE-----
 -->

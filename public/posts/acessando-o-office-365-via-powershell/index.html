@@ -3,7 +3,7 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Acessando o Office 365 via Powershell"><meta property="og:description" content="É muito fácil acessar sua conta do Office365
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Acessando o Office 365 via Powershell"><meta property="og:description" content="É muito fácil acessar sua conta do Office365
 usando Powershell,
 principalmente se você precisa otimizar a administração de contas corporativas
 via script em situações onde é necessário manipular muitos usuários simultaneamente.
@@ -15,8 +15,32 @@ Mudar permissões
 etc.
 
 
-No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Acessando o Office 365 via Powershell</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365."><meta property="og:url" content="https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Acessando o Office 365 via Powershell"><meta name=twitter:description content="É muito fácil acessar sua conta do Office365
+usando Powershell,
+principalmente se você precisa otimizar a administração de contas corporativas
+via script em situações onde é necessário manipular muitos usuários simultaneamente.
+Alguns exemplos de tarefas que podem ser executadas são:
+
+Adicionar novos usuários
+Remover usuários
+Mudar permissões
+etc.
+
+
+No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365."><meta name=twitter:image content="/images/default-og-image.png"><title>Acessando o Office 365 via Powershell</title>
+<meta name=description content="É muito fácil acessar sua conta do Office365
+usando Powershell,
+principalmente se você precisa otimizar a administração de contas corporativas
+via script em situações onde é necessário manipular muitos usuários simultaneamente.
+Alguns exemplos de tarefas que podem ser executadas são:
+
+Adicionar novos usuários
+Remover usuários
+Mudar permissões
+etc.
+
+
+No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Acessando o Office 365 via Powershell</h1><div><div><p><small><time>July 26, 2014</time>
@@ -42,22 +66,22 @@ ela estará exposta a qualquer um com acesso ao código.</p><p>Durante a transa�
 </span></span></code></pre></div><p>Espero ter a oportunidade de em breve poder explorar mais funcionalidades como criar, excluir e alterar usuários, por exemplo, e também espero que este post tenha sido útil.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/>&#8592; Como subverter uma nação. Por Yuri Bezmenov</a>
 |
 <a href=https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/>Gerenciador de pacotes para Windows &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0p4ACgkQbV8aePHc
-Nh0Agg//TEsGOID4X4knOIqbyRYUf8ykijSimsQqlHOHstH679LUQ917FZMAHDr5
-1fOvuB1aSgS0GOAHI/u1umCX/7HYeD5llneciElT6y9BhrzyxXvE3uGBwRSZTBoy
-/Hi4XvFkeM+CAx1/ekbmIrXqpacmeKEWlsQDVUANIWuGLW8RbNzI9PuJpkplMKuS
-mfRFRzKnl/IeOPrleosplbenLKYDHSYJLW31o6geiZwV59pWedBhRoiD0rl3BQcN
-5FHKuklF2xRhew+XjFkGw2MPNRZvu3MXIKOoaToQhwfFdQEVlTF8fe8zIXJN+Utf
-RC2tBIUSqyYX2DYg23x03JmbOW3Kv5YzL2KTVjQJtmfm93HvyI7koxkslbe622V6
-Y+WqYPUSSlDAHk/gKShR8q1+TUuY8dkApaVIO+Kv1OG0aA0yekOdBwkwI964diYA
-miynZuBY1fmecV9msZ16/xOUCeTiztU2wVuS4+wZCW+6PSzKiZBr64ku0b8SbVpw
-LJJzx3/ecX7wFb1/NDBEb7POuL0hkHb7lN09QZCHJJQQj/epZZzzav6JqXbUAu/d
-nEdSjUtqJFuP50GOv2XWUd4odPMrqn14fJ4EKzRxADTd0Nmj9UlI7lI9QMx0ZCy0
-JSc/wW28rj+ksdBAKQVS/bhpzIYtkve5b7SD9sPS2cP76+ZEEKo=
-=YGaA
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5FUACgkQbV8aePHc
+Nh1KJA//YKnMO28d2DhL0HeGMFMt4Ge17ZvnIzmaYsvwMJp2KYXG6z1nHgexsdAF
+uqNorSjMWrJSH8mB65KQ218ts6PLIZh4KPbjF2psBFXfOz+xpU0vMbIVCMW7nDqi
+fMiEtNzNQHZLPtzd78c5Krcp9oK0PD8syus/tbxLx0qzsUOIRb9nzkE/7vKJhVrm
+KSlzifxmqaUPifeAUI7sA+slk1RnbfcmwqcJi0sxFvKYQGrSGgVuZpt+gu+3L+ch
+TaWCSSIpW1Qi2xO4AYdWyQnc8+Tmf5PtIITT6QhmpD6G/wu3nRUqMnY0s6c+iYtk
+dcNdau0GnTIQBXb5O0azVkn35d+xHyeHdyxIc9xKjere1OlujuXLRwN9XFjwf/Zd
+MW3OeSxRkwPcl5hioLGAWuUp8ZOsO+aoBJkGt0GwD3qQpLxXv7MYf2BCoI0EM1n4
+KYuI+7bRcSE3Mks8MDO/Pn71RXOrTKRS2yxEj8CCT/nq5II7HyYwOifXZJSFhGA3
+p1R2gd1VtSucw6BYJnP7hUBlcl6ETuQ5qX/AU3y1W1YefdEbLq/30upYYir1ro7y
+PdPTr+RPP8LGiwWEudTvvCGU/JHqtxzDjeHdTYReoqAPoVC9ugXNr9ZOMbw20S/E
+9X0Q6Hrk74HrL7VcW+JF0Ilmq4HlJQKisJOdQhEGXQRFTNTlUlE=
+=M2QB
 -----END PGP SIGNATURE-----
 -->

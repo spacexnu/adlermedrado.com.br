@@ -3,14 +3,26 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Relacionamento entre tabelas com Zend Framework"><meta property="og:description" content="O Zend Framework possui uma camada de modelo, composta por algumas classes
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Relacionamento entre tabelas com Zend Framework"><meta property="og:description" content="O Zend Framework possui uma camada de modelo, composta por algumas classes
 como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa
 uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de
 acesso à dados, como insert, update, etc.
 Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
 tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
-de métodos específicos da classe Zend_Db_Table_Row."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Relacionamento entre tabelas com Zend Framework</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+de métodos específicos da classe Zend_Db_Table_Row."><meta property="og:url" content="https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Relacionamento entre tabelas com Zend Framework"><meta name=twitter:description content="O Zend Framework possui uma camada de modelo, composta por algumas classes
+como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa
+uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de
+acesso à dados, como insert, update, etc.
+Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
+tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
+de métodos específicos da classe Zend_Db_Table_Row."><meta name=twitter:image content="/images/default-og-image.png"><title>Relacionamento entre tabelas com Zend Framework</title>
+<meta name=description content="O Zend Framework possui uma camada de modelo, composta por algumas classes
+como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa
+uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de
+acesso à dados, como insert, update, etc.
+Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
+tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
+de métodos específicos da classe Zend_Db_Table_Row."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Relacionamento entre tabelas com Zend Framework</h1><div><div><p><small><time>March 25, 2008</time>
@@ -117,22 +129,22 @@ comentário.</p><p>Eu estou pensando em fazer uma série de artigos simples e di
 básico até o mais avançado. Então, espero começar na próxima semana.</p><p>abraço.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/lehitraot-guterman/>&#8592; Lehitraot Guterman</a>
 |
 <a href=https://adlermedrado.com.br/posts/usabilidade/>Usabilidade &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0pUACgkQbV8aePHc
-Nh2V4Q//WPPwaioMHm/8zuIo9js5/Z2TjJbtHcQGYnZ5kGa3/jOIlYuH5aN3gApE
-GM7DxS2G7k2zaDv7jtKYQkFJYcdI1E3w1Fs08v25SHFKN1iyi9IKOeKL21BKEm1X
-5TTRr6jbdC4NJ+DeUlh4ftdn7hW4ywaFCsRpLUhRdkC4aiCGKWiRIlhNzWMpM7Qf
-Q1cJelOUn2InV1Xm4Bx/tP/OoR8f8krlyW3LQilnZiR6Yk6xJUDHqs6c0wQVrcDR
-EZltJ3VOgwwPoL01t0cAeRmI4q2C70jfG7NcWtXySM+2j4HG5H6094iESwJB6He1
-GjZMgCga0vP/syv5knjKzuje5n1a+bjFZqh76aE6KkSAF+o2Sm551/32ID9l3+8g
-37KsJ3sC+aZXpYJspOYbO5kYtktqoP9D3AlHhozxTm41Em90wnK+hGJU4MQKe5XC
-eym2TotH9FKlTLfCgspaD4mI2kpqp5MoXSwDCKm7YAKFW8k5uIyOdHNjf5XrIzYg
-rDqByRX9kJq/krt63kAUazDb2z7r8A8U+JfvG6N91hw4CWlkx7UE30UgB1jjaZcj
-R2XnmLNfvyfP5ksYueJHh/XprtZwkHcIFmUPM25NsnZ99/rSfG0armW00RbU/Que
-q2yOU8tCBqQy+ePRC1tKWY1E/Db60df5VwXUqKmA2gYeEIdrElU=
-=KGdc
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5EwACgkQbV8aePHc
+Nh0sJRAApBrtSCha9f3d74T80EtdQx3YMFQUuSL7PxMVY5Y4GspdFxKw44eyq9jt
+s7lhHsPk/O6Ha9dquR+RxzxlauDelzpJT/hSmM2MDfQLY5PcF++x/h7f22+5/pkk
+TKBPe947op8DLSC6e18aAJ3ts6IA/RmE9sxqvJxNDqerHmvZvoCB9l2C2n6vcVbH
+/3ySm4yWcw+z4Qupwu/WJLo4mzkgpbdKpMN99hr9CP+p9+LA12+S1VxfvT5ns5k5
+mTTFWaXp+lJwp9E1olOqO37E/1ffqiGB2PJq44XUkndLQBUOx5/GBRSJdIiq3V7W
+1Yo4iFBsTFIoh9OH0PMOCdFfAnnlxP4/N2g6zuEkaccuP4W9QqBlNsAsMriBUr/4
+YBl8bb9l3jEDj3WRK8LWDz5TKZvS3tNb3nyN7z7XRNXsj1rkRsMm+JXyI8fzb9fV
+1+HKvZnB/Uj9Zby3cGwO9ti8rsusJGWjCDxXuenW1nT/FuhatkQeqvqtQkcwJStw
+1ptozkRB8VNsLzYfvo9CsxarfmOFWtpyIQzHPzSMGaods5WxG0Lw2V8IBSnuucGM
+25aVYSAoYwv3Gtp/gE2AipaY54ON4im0DmeOvo9QP0qIspbjhaD7gY/Yy6t+38rY
+d4UPkFSt0xUPqV65aTANLGbyMuqYLm+c+/Hz+H7EIa7v7L6D6ZM=
+=yrWw
 -----END PGP SIGNATURE-----
 -->

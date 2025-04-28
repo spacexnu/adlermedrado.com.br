@@ -3,13 +3,23 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Profiling de banco de dados com Zend_Db_Profiler e Firebug"><meta property="og:description" content="Se você usa o Zend Framework já percebeu que não é muito trivial obter as queries executadas no banco de dados e isso é
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Profiling de banco de dados com Zend_Db_Profiler e Firebug"><meta property="og:description" content="Se você usa o Zend Framework já percebeu que não é muito trivial obter as queries executadas no banco de dados e isso é
 algo comum no dia-a-dia de um desenvolvedor pois com elas nós podemos corrigir bugs e determinar pontos de lentidão e
 etc.
 O Zend Framework possui um componente chamado Zend_Db_Profiler que nos permite realizar o profiling dos acessos ao banco
 mas na minha opinião ele sozinho é muito chato de usar então eu utilizo ele em conjunto com o componente
-Zend_Db_Profiler_Firebug e é isso que vou mostrar a você como se faz."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/profiling-db-zend-firebug/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Profiling de banco de dados com Zend_Db_Profiler e Firebug</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+Zend_Db_Profiler_Firebug e é isso que vou mostrar a você como se faz."><meta property="og:url" content="https://adlermedrado.com.br/posts/profiling-db-zend-firebug/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Profiling de banco de dados com Zend_Db_Profiler e Firebug"><meta name=twitter:description content="Se você usa o Zend Framework já percebeu que não é muito trivial obter as queries executadas no banco de dados e isso é
+algo comum no dia-a-dia de um desenvolvedor pois com elas nós podemos corrigir bugs e determinar pontos de lentidão e
+etc.
+O Zend Framework possui um componente chamado Zend_Db_Profiler que nos permite realizar o profiling dos acessos ao banco
+mas na minha opinião ele sozinho é muito chato de usar então eu utilizo ele em conjunto com o componente
+Zend_Db_Profiler_Firebug e é isso que vou mostrar a você como se faz."><meta name=twitter:image content="/images/default-og-image.png"><title>Profiling de banco de dados com Zend_Db_Profiler e Firebug</title>
+<meta name=description content="Se você usa o Zend Framework já percebeu que não é muito trivial obter as queries executadas no banco de dados e isso é
+algo comum no dia-a-dia de um desenvolvedor pois com elas nós podemos corrigir bugs e determinar pontos de lentidão e
+etc.
+O Zend Framework possui um componente chamado Zend_Db_Profiler que nos permite realizar o profiling dos acessos ao banco
+mas na minha opinião ele sozinho é muito chato de usar então eu utilizo ele em conjunto com o componente
+Zend_Db_Profiler_Firebug e é isso que vou mostrar a você como se faz."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/profiling-db-zend-firebug/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Profiling de banco de dados com Zend_Db_Profiler e Firebug</h1><div><div><p><small><time>June 17, 2009</time>
@@ -44,22 +54,22 @@ do objeto de profiler, por exemplo:</p><div class=highlight><pre tabindex=0 styl
 screenshot abaixo:</p><p>Muito simples, não é? O que você achou? Deixe seu comentário.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/vale-a-pena-tirar-certificacoes/>&#8592; Vale a pena tirar certificacoes?</a>
 |
 <a href=https://adlermedrado.com.br/posts/minha-agenda/>Minha agenda &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/profiling-db-zend-firebug/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0p0ACgkQbV8aePHc
-Nh1jjQ/9E9Ev641o0IZLzIsfGa4Hr4dbtTJp1QSuPQpBnW4h26ayvP8YB/Abliox
-sgTluc3NHeO7/F2Mx3wcfcbJrJa3RTxCn9QU2KdVpdgIQqXPIMt/IH3GKcW6HWy5
-Zh8Y71X8SwW/bBmPQVgP8Qt4FEnFIzZKnV9tZvUMqDsdEcPh6Fuon+VnOQAwc47x
-2VDRd+Vf1X/0BJoZuurI21hMQasolf5WMcpY1rSxkzkvfNZr6Nh/Rl5rl1MkM1/v
-i2fNkU5/GJBtumZ9MDg/C6Hyh78ILvtr9mD75gY3C/UZI10UbnYrEZkiMR2RQLM1
-F2qi6215kRTdP2xQJ7cvQgiCBqMPeSbVsvO4hdnFblmCPl3KikuR7ca+LL5z02tt
-e374Q/iwdKMzk31jAazJOxMCJxG5kIJKrG+mMk+ZX3At1j2lxdZNORw4ptPF9rIB
-xsojvGv3DG6EKFoZ0/tTMj4ur1Iknfa6GxEWwmI0NJQnTYayGQkkVOyUBhpe/j2b
-ogSiIzigF3721hXdycmEtv7SlHHqvw5VmyU/HSTvsf/p02pcG4fwyQYqNOH27/F0
-JqILzPttvdsYz9+5BEonLoeas59tm+Db4aYBGWAh4yJDPqfL0zHLJT2qN2cDYWk+
-3D4mSYNtFwDpbUTmAxLXcfM2fuQZDiG3kHBejhfqO5oXjHzUPUE=
-=til7
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5FQACgkQbV8aePHc
+Nh27tw//YzRwnd9FM8UpllXxvXuzGq7noXogkS6E6mPmgcIj5ZPxzhRlQUFDaWl8
+E+VOTCgHqW82l+u+61vGNMPHYjHhSBjWsCnkLfRRWMnV7xcYdLy8yw+G9GCWeKNt
+68ES0Wv+856n4lWZXrbXgAt6xHnV+a76doAL8jDJ+g74zWfLutaXVGQg+WQ3SdLf
+CUkOkCRPqJcjKYo6+mR35acIYmH0mFw1aOynCOidRwbcpkncVQFoJ6+5UhwsI4NO
+NlGHI2lzMJK3QBD15fRhLNxbJzu1hmFu5WgdP43aIkwI65kskxamOz1ErUQkWz3W
+SRFZHjv4zRdx5qXPvzUmGcad4TGmh/3qBWFQGyk4kKn1KLPYPkFJit6dWTdOnL57
+bZ96aF+SQsdQDiLe6gX0zv1Vy9xbz74QZCl1kZvvGH+UpcCwX4/4crF7lsd1RyPF
+ncgn28FQi3VLDsTUlHxUxKaIj3ETHzkz5y28cqu2Jc09IXGRGnMx7UfPM55emv4U
+/yB+5AsNr7yEiYyiCHYx6eb7e/Qh2Z7mkmgxHMRNwr+MeM+dnMyFThl/uKzMDd2o
+rnAt9EemxxglYmJEAZK8mFZ4XExqQkJR/pJ8S+VFgj+jXUrhOqfIAX8s4c6Jb4MI
+m1BR1zOKnahrmyXuC3A+qJMN9Nam3mn7T06eZx3vS4KebE0CBr8=
+=hseq
 -----END PGP SIGNATURE-----
 -->

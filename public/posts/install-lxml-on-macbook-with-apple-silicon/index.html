@@ -3,7 +3,7 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Install lxml on MacBook with Apple Silicon"><meta property="og:description" content="
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Install lxml on MacBook with Apple Silicon"><meta property="og:description" content="
 Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:
 Building wheels for collected packages: xmlsec  
 Building wheel for xmlsec (pyproject.toml) … error  
@@ -29,8 +29,60 @@ note: This error originates from a subprocess, and is likely not a problem with 
 ERROR: Failed building wheel for xmlsec  
 Failed to build xmlsec  
 ERROR: Could not build wheels for xmlsec, which is required to install pyproject.toml-based projects
-So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I needed to execute the following commands:"><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Install lxml on MacBook with Apple Silicon</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I needed to execute the following commands:"><meta property="og:url" content="https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Install lxml on MacBook with Apple Silicon"><meta name=twitter:description content="
+Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:
+Building wheels for collected packages: xmlsec  
+Building wheel for xmlsec (pyproject.toml) … error  
+error: subprocess-exited-with-error  
+× Building wheel for xmlsec (pyproject.toml) did not run successfully.  
+│ exit code: 1  
+╰─> [13 lines of output]  
+running bdist_wheel  
+running build  
+running build_py  
+creating build  
+creating build/lib.macosx-13.0-arm64-cpython-310  
+creating build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+copying src/xmlsec/py.typed -> build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+copying src/xmlsec/tree.pyi -> build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+copying src/xmlsec/**init**.pyi -> build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+copying src/xmlsec/constants.pyi -> build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+copying src/xmlsec/template.pyi -> build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+running build_ext  
+error: xmlsec1 is not installed or not in path.  
+[end of output]  
+note: This error originates from a subprocess, and is likely not a problem with pip.  
+ERROR: Failed building wheel for xmlsec  
+Failed to build xmlsec  
+ERROR: Could not build wheels for xmlsec, which is required to install pyproject.toml-based projects
+So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I needed to execute the following commands:"><meta name=twitter:image content="/images/default-og-image.png"><title>Install lxml on MacBook with Apple Silicon</title>
+<meta name=description content="
+Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:
+Building wheels for collected packages: xmlsec  
+Building wheel for xmlsec (pyproject.toml) … error  
+error: subprocess-exited-with-error  
+× Building wheel for xmlsec (pyproject.toml) did not run successfully.  
+│ exit code: 1  
+╰─> [13 lines of output]  
+running bdist_wheel  
+running build  
+running build_py  
+creating build  
+creating build/lib.macosx-13.0-arm64-cpython-310  
+creating build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+copying src/xmlsec/py.typed -> build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+copying src/xmlsec/tree.pyi -> build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+copying src/xmlsec/**init**.pyi -> build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+copying src/xmlsec/constants.pyi -> build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+copying src/xmlsec/template.pyi -> build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+running build_ext  
+error: xmlsec1 is not installed or not in path.  
+[end of output]  
+note: This error originates from a subprocess, and is likely not a problem with pip.  
+ERROR: Failed building wheel for xmlsec  
+Failed to build xmlsec  
+ERROR: Could not build wheels for xmlsec, which is required to install pyproject.toml-based projects
+So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I needed to execute the following commands:"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
@@ -66,22 +118,22 @@ So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I 
 </span></span></code></pre></div><p>That&rsquo;s it.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/enabling-click-and-drag-on-macbook/>&#8592; Enabling Click and Drag on MacBook</a>
 |
 <a href=https://adlermedrado.com.br/posts/ferramentas-para-uso-diario/>Ferramentas para uso diário &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0pQACgkQbV8aePHc
-Nh0TuA/+II5xIpRmABfEHOU/4aU/OsRR8q1N8biHXzlAmGmJWYXI7w9mcHFNra2y
-/gU9BAEU3LhfivAW1PjtPGjP01hDXdSvotWzml4/cZepaeRFfxihpmgu/XXsI3Gd
-47wYaUckCLdPmnUbFJ1eGQUAx4V6cgnjeNQH14f/sINHGx4SFedUGADA1p+W5yD9
-gubLJnNin4nHuIp4OqY0mCg8YKi6UOe5kcT5BJONxk9NcR1HvX7mtvR8kjDjtNR4
-4S8BsvFvXNxtnAB2kjHY+o5NPUMUfpkoRZ078gCEb2XPV3dZwcnt8XqTkg0ewmA6
-KpIj3D91Z+XMFInNBON31YxnGB5JMrPbLJNshMivklzUxI5GIK1Km+yvE54+KnCk
-6VfAjlQ1KEqxcqnmXoZHfqQCiqPHSwszvVlw5pCXPMHgYBqZUeaKdHwwBuOQnu3m
-6TFZjbOl6S8Qa0zk4VyqvxJIz2S03b20sI0w5EQDwhiHPLlgRnLF/sVY/ZPinBCZ
-K0SavhTp3ZW716+GCxeNPEpBf7B7pAusSK7dl+hpJSB/ehbfFiHXypWZeto1N3cg
-VV0q5FJzh06lV5QPGRP/MQVrGmPqDa4DrHj15H9NwCJG0WAGnDjOf4NRQNnj1XrS
-z1P8H1jjfjXs4edzWy0uMLxh7DR0BkXnmNVMPg6Us3ePRnStkF8=
-=GIUm
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5EoACgkQbV8aePHc
+Nh1NTQ//WaZa5aawUjyQ86xinpgtZEoKa4Zkpp/8jBidXoh04teGT6qDo4zrlodq
+bOhEjqW6fNrDQNPRY8ia0AWRmgkyChgs5kSKaG6w5mBniMXncRsimPPx+ta5pnqD
+YBoAwNR5jETimXTF4D20Wbe1AzcnWcBl0nplKvMfBOnQHCaPaNYXovk22IUPwoGm
++CD3N6yePv8CWhtaY1zWYLsvicCuHnsoByHRWkojjS6AdFIJjUWqFwqYwdsWG/nQ
+l3P7SRM58SK5HMa/kDYQcJ+oMu48m61IUezPABvSD3b9FYEsYl8gnozaWRCgMden
+wHd78ULUcWFr6oFCP/anMV+0dmberapbTsj0FwbmSQzFXhabWxGA2+M1Vh7kUTpK
+Sxdog0r90D4P9jZbbUG2bT1HrNLB/enrQ6ye/WVYDoErigeYqnknUOP7eub334e8
+rl5VNHlkP24bDGmpVV8JdJQBbpE40P2hBAVwZV4gsCLRgEduE88OrvIe8wqG51Vv
+fcJb6RC3qKGJe0DL6OTHZNYKI3lB7kjWJGMJiiBG05l1hU7C0qHrBox70W3GPGr3
+LwViBIwWypvSJAXLqCHKeWAqoQtqBT1zSZSqAX93buZGGz36DZ9gmSoGEgnl9btx
+v1AUaDmgYvKI8Qfva/F96MUge4RygCIcx4RrVLLoRBdKCxzh6kE=
+=rvuA
 -----END PGP SIGNATURE-----
 -->

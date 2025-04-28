@@ -3,14 +3,26 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Tutorial Zend Paginator"><meta property="og:description" content="O Zend Framework é muito interessante mesmo nos componentes mais simples, desta vez eu irei falar sobre o componente
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Tutorial Zend Paginator"><meta property="og:description" content="O Zend Framework é muito interessante mesmo nos componentes mais simples, desta vez eu irei falar sobre o componente
 Zend_Paginator, que é um componente que se propõe a fazer a paginação de qualquer coleção de dados de uma maneira bem
 simples e mostrar os dados paginados para o usuário.
 ADAPTERS
 Este componente não exige que os dados a serem paginados sejam especificamente dados provenientes de bancos de dados,
 ele faz a paginação de arrays, de dados relacionados a objetos Zend_Db_Select e Zend_Db_Table_Select e Iterators. Hoje
-iremos nos ater ao uso dos Adapters Array e DbTableSelect."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/tutorial-zend-paginator/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Tutorial Zend Paginator</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+iremos nos ater ao uso dos Adapters Array e DbTableSelect."><meta property="og:url" content="https://adlermedrado.com.br/posts/tutorial-zend-paginator/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Tutorial Zend Paginator"><meta name=twitter:description content="O Zend Framework é muito interessante mesmo nos componentes mais simples, desta vez eu irei falar sobre o componente
+Zend_Paginator, que é um componente que se propõe a fazer a paginação de qualquer coleção de dados de uma maneira bem
+simples e mostrar os dados paginados para o usuário.
+ADAPTERS
+Este componente não exige que os dados a serem paginados sejam especificamente dados provenientes de bancos de dados,
+ele faz a paginação de arrays, de dados relacionados a objetos Zend_Db_Select e Zend_Db_Table_Select e Iterators. Hoje
+iremos nos ater ao uso dos Adapters Array e DbTableSelect."><meta name=twitter:image content="/images/default-og-image.png"><title>Tutorial Zend Paginator</title>
+<meta name=description content="O Zend Framework é muito interessante mesmo nos componentes mais simples, desta vez eu irei falar sobre o componente
+Zend_Paginator, que é um componente que se propõe a fazer a paginação de qualquer coleção de dados de uma maneira bem
+simples e mostrar os dados paginados para o usuário.
+ADAPTERS
+Este componente não exige que os dados a serem paginados sejam especificamente dados provenientes de bancos de dados,
+ele faz a paginação de arrays, de dados relacionados a objetos Zend_Db_Select e Zend_Db_Table_Select e Iterators. Hoje
+iremos nos ater ao uso dos Adapters Array e DbTableSelect."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/tutorial-zend-paginator/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Tutorial Zend Paginator</h1><div><div><p><small><time>March 28, 2009</time>
@@ -116,22 +128,22 @@ coisa chata e se já temos um componente pronto nós podemos utilizar nossa cria
 negócio da aplicação e não em estrutura.</p><p>Deixe seu comentário sobre este artigo.</p><p>Até o próximo.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/enfim-zend-certified-engineer-2/>&#8592; Enfim Zend Certified Engineer #2</a>
 |
 <a href=https://adlermedrado.com.br/posts/chegou-meu-certificado-zce-zf/>Chegou meu certificado ZCE-ZF &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/tutorial-zend-paginator/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0o8ACgkQbV8aePHc
-Nh3LJRAAyihi7wTgDgIG5I7/RSngCFMo9av8F2sjao5M45rkRV2jnlTPE/+L26lN
-h12780NzoOm8B1ZzY3HeXZDrkbDDjMmdqGGXZb8oItnA2thVwcDckOBQrdL0YwKD
-cpEggF577oPYKqwoIdJoPFiba2em+DmvaZooLPcwBK+pABc/CO0UNqa/EZ77RryP
-wrmhKKPcdXJbG7xGK6LSqRQgXCBaDaICXSu4cHwSjijjrWJzqZd1oPZu6v/H8rfl
-2AmBj29ILXCF2ozmEjgYt7A/oUiVPtdWo88zdzaibjck4J9tuY/hp17hLBKG3vvf
-btSg/3ERigcXxtgVjqWZxkdq+29qqtrM3QoASGHcVBdvprs7NUmD5shD9OLYq4N1
-378Jq0Xe4V83l/hRyLNo3TDyx6+9GY+Lk4T9duUO9YBKhtyoN/296YqSwe09YD6K
-/JhQDpmfs7nm9wUtYmcfm5mzjG3oUH0gHG6dtWG0k8nPqkE0tXjweEHhdFqF7/uu
-eCZ1PkXjaw2S60R0eQYKT+z9FRBC6/BJvau8uhFsBRG9yKEq8Q9GGgdSYrVsUXlE
-AaSG3ax1sIdBp4hBaPww0G8xqpaETE3xm8f4DIb7GTBhRVETIDQ4s54oPAF6oymf
-JhjjWmDo8SEqICGAwOS8fERRsLJ06OEU/DHonmbvBFXcMG5HmqU=
-=6ht+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5EYACgkQbV8aePHc
+Nh24VA//WHGmekpdzvrmlrTEGxe6ly5eqmpJ6U8o4jzjk9zRh3jNf9F43KLodPUq
+TVYmg7CM8KkiJQweb4hRPU1WlORG7mMK/Wb8gNitSO8pANCDo/lDjmDkTHLAkAO8
+f9pprZ6sqzIdjGAs+kzZFNjPD7iVkmwso8JKnxDK8ROtb21r99Ge1viRQbHTtx+8
+owE+ONGvyZCecKZiXtJkgZOtRrFghLkmXrkP0JPzyBvyLz9iQ1NfEH9Ky5brHnWz
+oeK5kzh0UEXl8t4pM9TB17skSTg80pnNsTeqJpKOyT9IM216IiNXqg+f7nHn9eTs
+sLBlyI0jQalVqJgHGu0YkEcMML1lsZkkFUaysQawUNnZrM93iUpu2h56/9WbFH0L
+yeJilIOrPi0b10EP+VLzl4K1fFe7nsMMDaIQpLlc/FH1h7JgMfzQ7QoM7Kojr02R
+UFbOIg4IRGG//uONexPwvo06Y10SExFmJgSM+4GDUyd7pJKjXpMXnw3FPEJSIwjc
+kmgQJ+fekeWtoUxYiL5Nj3KJQbjW0kOSr2i71Q+rtfdV29ywIdiUdtb4mPjWmiQ+
+3QKV7/y25gcJ5mOdE9VMLsbWPzMkBub5oNk+VdDekEGN0bduQuUovncsZIRuvw0N
+fOiRe0lH5HrNhg6aZb4NDoShfZUw0AC225zWYG7F9vM0WTc46Gw=
+=YXKP
 -----END PGP SIGNATURE-----
 -->

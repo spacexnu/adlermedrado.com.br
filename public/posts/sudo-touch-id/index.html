@@ -3,7 +3,7 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Sudo with Touch ID on macOS"><meta property="og:description" content="Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Sudo with Touch ID on macOS"><meta property="og:description" content="Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.
 Locate the file /etc/pam.d/sudo_local.template and make a copy as shown in the example below:
 sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 Then edit the file and remove the # character from the beginning of line 3, it should look like this:
@@ -11,8 +11,24 @@ Then edit the file and remove the # character from the beginning of line 3, it s
 # uncomment following line to enable Touch ID for sudo
 auth sufficient pam_tid.so
 Detailed Steps to Edit the File
-To edit the file, use a text editor like nano or vim. For example, with nano:"><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/sudo-touch-id/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Sudo with Touch ID on macOS</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+To edit the file, use a text editor like nano or vim. For example, with nano:"><meta property="og:url" content="https://adlermedrado.com.br/posts/sudo-touch-id/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Sudo with Touch ID on macOS"><meta name=twitter:description content="Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.
+Locate the file /etc/pam.d/sudo_local.template and make a copy as shown in the example below:
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+Then edit the file and remove the # character from the beginning of line 3, it should look like this:
+# sudo_local: local config file which survives system update and is included for sudo
+# uncomment following line to enable Touch ID for sudo
+auth sufficient pam_tid.so
+Detailed Steps to Edit the File
+To edit the file, use a text editor like nano or vim. For example, with nano:"><meta name=twitter:image content="/images/default-og-image.png"><title>Sudo with Touch ID on macOS</title>
+<meta name=description content="Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.
+Locate the file /etc/pam.d/sudo_local.template and make a copy as shown in the example below:
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+Then edit the file and remove the # character from the beginning of line 3, it should look like this:
+# sudo_local: local config file which survives system update and is included for sudo
+# uncomment following line to enable Touch ID for sudo
+auth sufficient pam_tid.so
+Detailed Steps to Edit the File
+To edit the file, use a text editor like nano or vim. For example, with nano:"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/sudo-touch-id/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo with Touch ID on macOS</h1><div><div><p><small><time>June 5, 2024</time>
@@ -25,22 +41,22 @@ To edit the file, use a text editor like nano or vim. For example, with nano:"><
 </span></span></code></pre></div><p>Make the necessary changes and save the file (Ctrl+O, Enter, Ctrl+X in nano).</p><h3 id=benefits-of-using-touch-id-with-sudo>Benefits of Using Touch ID with sudo</h3><ul><li>Convenience: Touch ID eliminates the need to repeatedly type your password, making the process faster and easier.</li><li>Security: Touch ID adds an extra layer of security, ensuring only authorized users can execute sudo commands.</li></ul><h3 id=troubleshooting-common-issues>Troubleshooting Common Issues</h3><p><strong>Touch ID Not Working:</strong></p><ul><li>Check if the /etc/pam.d/sudo_local file is configured correctly.</li><li>Ensure your macOS is updated and Touch ID is set up in system preferences.</li></ul><h3 id=macos-versions>macOS Versions</h3><p>This configuration has been tested on macOS Sonoma but may work on other recent macOS versions. Check your system documentation for confirmation.</p><h3 id=security-considerations>Security Considerations</h3><p>Using Touch ID for sudo is generally safe and convenient. However, ensure your Touch ID is correctly configured and that only authorized users have access to your Mac.</p><p>As I use sudo a lot, this configuration is very convenient for me.</p><p>I hope that this tip will be of some use to you.</p><p><em>Updated: June 16, 2024</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/assinando-html-com-gpg/>&#8592; Assinando páginas HTML com GPG</a>
 |
 <a href=https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/>Sudo com Touch ID no macOS &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0pYACgkQbV8aePHc
-Nh0mkA//cN/72Zf9FQzyuii9vd1edonFVQaQ8il1ZVDMb48twWOQW9//BdxHbleL
-Q5u5QbenYqCSsDRpYrHnfNE81qoxWYHXXm6aTkLZD7lLuwY59kxBIYGXOcC/KOi/
-vNAHXqK41E61YBCF7jHVid7pHFOSM2uZ8iInVFvdkdNvY8M2WEYFgzV89WU4PrHk
-KbSSE325xxmeCGZrjKvo5fGEpXEeeu2a2gO01VUY+HMdpWH7gpHoO0z1irrFU8Di
-AO/1lKJ/8ZIaRfP4kboSeUcUGubIC5m060l8XHeoGpmVClOtRJmMDYYP/JJryEUH
-1WrJJKzhsmljp62D8jySzdWttnlC4XicaoGkfm9CWdsbJKMMRfbF138/NKCA7xJY
-uIxo/JDlW/w2xfBtnGaLq8ofRLj7fowqhT2xL/5fuzJ9Fe6GhHRm94NtqqigEHQS
-bd3isQCN6wTMJ0oK6hNRLpHBx5PgnGOwfo/6a59qxD6gYXj6h59NmLxId40rPns2
-YuyxmqsHqttVxuR5RR7FhOnB1Kt+u14ngRGdeHBr1VMLB6a5eBypn9WNqPC5ZNMp
-oKMcWFORpw1Q3p+a0nr9YtLvv/fIbeZ8AakEUbwnMK1JL1FEmItC/VcIJxbPIJU0
-bQiQXqRFr1dUBuqRQ1qvJ/Wnelu18snHFSLeOdq4XB1qeA6C7Vc=
-=1gXA
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5E0ACgkQbV8aePHc
+Nh3Hjw/+Oylt8OWpaEmjLYVykuOoVi9p3ydpEbPT7xivYVmxczGb2CZ3FqquGZ7a
+hFNV2qSGauPyWajJUJvK5uXhnfiWKEaG1CksXuP0NG2KgQoELja+z4AXkh6788cE
+59mpMEoAS7kxcDSbtdbHll5cOTiq2I+DlqPDqa+2bx0lTV3wIU5bY6BtM76OeEpH
+/1y7C87iVgJPOLBey4TiS4kxufBd9rc80Hp2yIj9poZQi/+by+rAat7HpLA0rkjo
+s3KpADf6V1rLvjBp4SnDN8qsH0NGT9/v11ppge1l7Q1LiyJUAH4KQdZ38V52ovyW
+xgtWWida2NNpVjJEUXf+FlPP7RkoHPLS2T//bodOBMoRkMnvk6pkv/QsIYYWj3ob
+YSzFj1Z1GJb5FGmrt+d+UMy6r1VyPTkRXAFzIjOl3fDShXxtuRWqa0Z9nUxV+pZr
+7tYcyQ8lNRQWCOqp5kOjBBQBtCFTOyYstiBLUsXdmDZBwmElOwCVdO/9cFXU6J0C
+m/4MZcmWkQITwRh704Ny/5tUNtBTY8WrfgnyN86jQ+PtmCEmpIgTE5zH292bPlx0
+BjbgBbcwLIBj+FY6Si0BTpHQss+FeHOCJCNqlqahWeEZ0ac8U1jJmFsjfvRTFY4F
+LT6Ws8FxySV/YkDjArkCnWkqDbuT5LfpJv6R8fdyAaSAQKVEdxY=
+=0en0
 -----END PGP SIGNATURE-----
 -->

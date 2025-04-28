@@ -3,9 +3,11 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS"><meta property="og:description" content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
-I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS"><meta property="og:description" content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
+I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta property="og:url" content="https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS"><meta name=twitter:description content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
+I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta name=twitter:image content="/images/default-og-image.png"><title>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</title>
+<meta name=description content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
+I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</h1><div><div><p><small><time>April 21, 2025</time>
@@ -25,22 +27,22 @@ I put this guide together because I wanted LLMs running locally, even with limit
 Add voice. Add vision. Build like it’s 1999 again — but with 2025 firepower.<p>Welcome to the resistance.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/os-lugares-onde-nunca-mais-voltei/>&#8592; Os lugares onde nunca mais voltei, mas que ainda me habitam</a>
 |
 <a href=https://adlermedrado.com.br/posts/gpg-intro-en/>Why You Should Start Using GPG Now &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0p4ACgkQbV8aePHc
-Nh3Y3w//dZVGTNYns6j+m02ZlzUTr1/tE8xQE0ezqOBnFXNgSyDMSLClVCkdLYAQ
-oo4+g2pdrQ3S3e2W1GMjgZReqKGa82aKVtWvTQx05w8iruk1D7wXMe4Y+5NeyvEW
-yxXpYusxlX0vIYRIIOb5W3u/+7T3OIv1XeLLL5MetuLA7viCcwl0ychCbWM6sN9w
-5ylui7d2fPKASyuMYC8pgk5Q7XbQW+fY7Diacyd9WymM8HZhUIZTqYmMtVyGHjOj
-0u3rSXN9ogRk7rvM9JSxrUBCVZPNTyyqzi6uQs0Bn6nJhKlXpdmcrbNDs1x50ER1
-5PQ98LOj91lD87l+FyLFHxro0anTqINa5O5dZydE0A0WtcuuEB4apqMNUVVX4/V8
-SMJ/vzhXLQg8km4GxsTBs+zYKDxWQNLcpc/SCZjm4CigSfWqI9x8saCMo+iq8D8f
-LcROuNQQs8X2mhLpXQ+ghfXpO61OUdYz57RmG286xBU3+S46zmC1FA0SXkCRtWi7
-l/06KQYxpGy9BskWmItuLRsbbeOlvuQYN5F3re5XVLJICKPL1hUaDckBkRNNWV8g
-PIrBC8xnMMVro/oNJojP8NAOi2+fAqeUeuvfSEHHMwEdjNPbJDigaial6/YepaGw
-uXILJeSRJbH9JZzAQbj0T/vkQFBuINN9x+7o4zEKVcxmYkvfd5g=
-=ry3J
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5FUACgkQbV8aePHc
+Nh38eg/+JM0XimFXVzhudw0hNgrCYx/p5jbrJIQ3iTjliC/Yg4W3w0HtOPQLvW7G
+K1xCbiLk+nINZqIL08AudRKr9meAl8M/rLFylZ0Kuplc3CvNwpGq3L/qsBly5Dgo
+pwEuJH50iBkzI1uegEs8E3o8lr67LSnOfyfnsR42fjCfoAefx4jHQCGHId9Nkf1M
+h/l1et9b1pSMf089PhLX+qoC3Iw/XJsyv1fTVhj3UBh6UOu34EiGiMuoHDwu0tuu
+2D7IgNMlQOgRdKOFtDIenP0flrLaTOrcZQbNayeXRURahgF33Gp7bXVuKaB16odz
+nncSdgOdwNALPmXWIA56TxEOU/am6mB4tXQQ88xm2VBBmzAwowhVFDIvHOYhEllE
+wBvlp/07PiBQtZBVEkoIet3EvMSPHm8g2HV7ugSI6zAmB3Amp1Be0n9olGF1WpNQ
+dh1EPv4+WZ7HNjKyqvohoV+3yatr0A4sS1gqvnBtb/fN7IRYDgpURLTfR6ffkNp6
+yLu8YcrFgWsEG6lwViRhvaerWEx4pV9ATKybhR8zelAXowCJj8qVXlMUAucFfxiX
+6qsAbu8vzeZ/oCEGO7BbMthQQRZ7LCz7grnTaoRtJ425Ev0aX18w663pYDZijym3
+SIEqJedTdDKZ1tRiwswG8ZtS2pVhULT7FoZ9PGQ0LU00ALoUXvw=
+=Hwet
 -----END PGP SIGNATURE-----
 -->

@@ -11,8 +11,10 @@ body, html {
     background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
     background-repeat: no-repeat;
     background-size: cover;
-    animation: pulseBackground 10s infinite, backgroundGlitch 7s infinite;
+    /* animação removida do body */
 }
+
+/* Removed unused .background-glitch class */
 
 h1, h2, h3, h4, h5, h6 {
     color: #00ffc3;
@@ -49,7 +51,6 @@ button, .button {
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     border-radius: 4px;
     font-family: 'Fira Code', monospace;
-    color: #00ffc3;
     text-shadow: 0 0 3px rgba(0, 255, 195, 0.8);
 }
 
@@ -73,19 +74,43 @@ button:hover, .button:hover {
 }
 
 .navbar_left {
-    padding-left: 50px;
-    padding-right: 50px;
     box-sizing: border-box;
+    padding-left: 50px;
 }
 
-pre, code {
-    background-color: #2a2a2a;
+pre {
+    background-color: #121212;
     color: #00ffc3;
-    padding: 12px 16px;
-    border-radius: 5px;
-    font-family: 'Fira Code', monospace;
+    padding: 20px 24px;
+    border-radius: 6px;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
     overflow-x: auto;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    word-break: break-word;
+    box-sizing: border-box;
+    background-image: none;
+    animation: none;
+    min-height: 1em;
+    text-shadow: none;
+    position: relative;
+    z-index: 2;
+}
+
+pre code {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    display: block;
+    overflow: auto;
+}
+
+p code, li code, h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    background-color: #1a1a1a;
 }
 
 hr {
@@ -121,6 +146,7 @@ hr {
         align-items: flex-start;
         gap: 10px;
         padding-top: 20px;
+        animation: navbarBoot 1s ease-out;
     }
 
     .navbar_right a {
@@ -169,12 +195,16 @@ hr {
 a:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     animation: glitch 0.4s linear;
 }
-/* --- navbar_right cypherpunk menu --- */
+
 .navbar_right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    animation: navbarBoot 1s ease-out;
 }
 
 .navbar_right a {
@@ -220,10 +250,6 @@ a:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.navbar_right_animated {
-    animation: navbarBoot 1s ease-out;
 }
 
 @keyframes backgroundGlitch {
@@ -282,4 +308,18 @@ th {
     50% {
         opacity: 0;
     }
+}
+/* --- Glitch Zone Styling --- */
+.glitch-zone {
+    position: relative;
+    background-color: #121212;
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: pulseBackground 10s infinite, backgroundGlitch 7s infinite;
+    z-index: 1;
+}
+
+.navbar_left, .navbar_right {
+    background-color: #121212;
 }

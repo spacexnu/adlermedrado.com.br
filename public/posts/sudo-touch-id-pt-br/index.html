@@ -3,7 +3,7 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Sudo com Touch ID no macOS"><meta property="og:description" content="Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Sudo com Touch ID no macOS"><meta property="og:description" content="Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.
 Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:
 sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele deve ficar assim:
@@ -11,8 +11,24 @@ Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele de
 # descomente a linha a seguir para habilitar o Touch ID para sudo
 auth sufficient pam_tid.so
 Passos detalhados para editar o arquivo
-Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:"><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Sudo com Touch ID no macOS</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:"><meta property="og:url" content="https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Sudo com Touch ID no macOS"><meta name=twitter:description content="Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.
+Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele deve ficar assim:
+# sudo_local: arquivo de configuração local que sobrevive a atualizações do sistema e é incluído para sudo
+# descomente a linha a seguir para habilitar o Touch ID para sudo
+auth sufficient pam_tid.so
+Passos detalhados para editar o arquivo
+Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:"><meta name=twitter:image content="/images/default-og-image.png"><title>Sudo com Touch ID no macOS</title>
+<meta name=description content="Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.
+Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele deve ficar assim:
+# sudo_local: arquivo de configuração local que sobrevive a atualizações do sistema e é incluído para sudo
+# descomente a linha a seguir para habilitar o Touch ID para sudo
+auth sufficient pam_tid.so
+Passos detalhados para editar o arquivo
+Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo com Touch ID no macOS</h1><div><div><p><small><time>June 16, 2024</time>
@@ -26,22 +42,22 @@ Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com
 Espero que essa dica seja útil para você.</p><h3 id=vídeo-sobre-o-tema-no-youtube>Vídeo sobre o tema, no Youtube</h3><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/FQ0UaBYwkJvkalDd?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p><em>Atualizado: 18 de Junho de 2024</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/sudo-touch-id/>&#8592; Sudo with Touch ID on macOS</a>
 |
 <a href=https://adlermedrado.com.br/posts/privacidade-5-passos-essenciais/>Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0qQACgkQbV8aePHc
-Nh21Sg//fPnlc/5Rnb0vUXg/q84eOhqqth+3vjZUU5S8fx6LIMQXbYvnbtf2Kroq
-6rCpAQs+RVi7uXo7XdffzzkQr3btKl7WUjdUbx130s4c2VMwzkaIS6EZtnGSemSB
-P9t1TFb3DgskgsPv+LCTJqxXH78pkWlN+v0laETngNvZieEASH822/3rKPjoaKa7
-0RYHPR9tLp9po/LkuuXDF7V/X4qfpP6EJqjMigV9L2yiRuLXqcWuYG2SCcpvqD8a
-kszIH6s914bi2lBaSN2sJd42NBY1jTP78RdiE3fl9TAaIIZyJtgP4bpZZEu1ZOGt
-LVjauNCDx2aCfNfRM5oiZm8W9JS3mOAorr3b2LmQnFG8wBF69raqBXTxiuzVEGPK
-YEnz/TZofTKLXK9YiPyc8aPFL70bF6Keb6Tc9J+zeH6SeN4zyUTROKWXBkWGzH0I
-ds6hBepaciAOcbbgiIHReLo+Qo13D7k39a+1rD/YSZZoVvb4PS4y/yKkYqRVFlJS
-wKfDO1n4UwYGQkSVxlUYGkMH9UhLrUXcJOEDuWITvhU62ss4sb9yYz9P/jMGNbcA
-xeol43qG8YM4q00Xv9N1Ew1fmS9KOjCUtoLXgI7X/iLU9JY3jnsIlzgpmNMlF8jB
-3YY5CdUSi+V1i+H/o1Y3uSIvmtVp3mPIFao+AFiWVuAF81k6vBw=
-=O1q4
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5FoACgkQbV8aePHc
+Nh0mQxAAo8AbqYFlWItSU4d6zXa23Y9ypshSUz6yCi5x1AOoEInkXmzgaECvcbFI
+40syZQR9VbTfW+5J72roJNFHAw3uj1YliOhzmC0CK/vfYkr78bA7rZFmBum4F4Pr
+WuJoxslesnTjXVWIGUOMKMzSkh1qtOPsxw/6PiOqbrSqC88kITP917IhKKLYnciu
+eo1RlzvoT/2u/EGT4SCXIXkOXLmFcoy3IZp5eAcSBGCZynDGIyKqFF2rIeRGsEPc
+GtKqBY639+8FYRhTQw1on3iKNWkf3UQp+x/lsLUOv893ytL3d7PwXCjlWk70da5N
+LHvEKRhuYDbUkgNN20wyOlkLrJQcHFauRyKthoAOHtXuuSsGvgkTJm7Vong5Gdg/
+SzYSTvmgijJYLOAQsUsRTrvYfwPh8oe8TslDV8bhnSljB9y7xWYEHw+8gx4OYKFJ
+ogsp5ous6tt+z6WTPMg7exZSUrGIMmElkp28H+y/iTAhjn4r7EOw8RZ6sG7bsi4C
+HgffrX88TJCq1HLMu7yVro3PeC4cji1yktaFe41kgze61ciE59fiMW/bq0dlx0vF
+Tui3GjYSMES5qjvyeHGBYcBJc0iykXT//i9ycrOf6+/ZOnQzQp6D0a85XNPg0aSj
+OaujT1vyfh0D2IrhESBCfz1Z5vrYvTn8jR1xKDybmDf8G9TIJuI=
+=SroI
 -----END PGP SIGNATURE-----
 -->

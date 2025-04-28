@@ -3,7 +3,7 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="shrink-to-fit=no,width=device-width,height=device-height,initial-scale=1,user-scalable=1"><meta property="og:title" content="Understanding when to use stream() vs forEach() in Java"><meta property="og:description" content='In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Understanding when to use stream() vs forEach() in Java"><meta property="og:description" content='In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.
 stream()
 Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:
 
@@ -18,8 +18,38 @@ List<String> filteredNames = names.stream()
 .filter(name -> name.startsWith("J"))
 .map(String::toUpperCase)
 .collect(Collectors.toList());
-The results will be a new list only with the names started with J in uppercase.'><meta property="og:type" content="article"><meta property="og:url" content="https://adlermedrado.com.br/posts/stream-vs-foreach-in-java/"><meta property="og:image" content="https://adlermedrado.com.br/images/default-og-image.png"><title>Understanding when to use stream() vs forEach() in Java</title>
-<link rel=author href=/humans.txt><link rel=canonical href=https://adlermedrado.com.br><link href=/css/styles.css rel=stylesheet></head><body><header><nav class=navbar role=navigation><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+The results will be a new list only with the names started with J in uppercase.'><meta property="og:url" content="https://adlermedrado.com.br/posts/stream-vs-foreach-in-java/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Understanding when to use stream() vs forEach() in Java"><meta name=twitter:description content='In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.
+stream()
+Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:
+
+Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.
+Chained processing: Apply multiple operations in a single chain.
+Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.
+Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.
+
+Example:
+List<String> names = Arrays.asList("Maria", "José", "João");
+List<String> filteredNames = names.stream()
+.filter(name -> name.startsWith("J"))
+.map(String::toUpperCase)
+.collect(Collectors.toList());
+The results will be a new list only with the names started with J in uppercase.'><meta name=twitter:image content="/images/default-og-image.png"><title>Understanding when to use stream() vs forEach() in Java</title>
+<meta name=description content='In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.
+stream()
+Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:
+
+Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.
+Chained processing: Apply multiple operations in a single chain.
+Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.
+Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.
+
+Example:
+List<String> names = Arrays.asList("Maria", "José", "João");
+List<String> filteredNames = names.stream()
+.filter(name -> name.startsWith("J"))
+.map(String::toUpperCase)
+.collect(Collectors.toList());
+The results will be a new list only with the names started with J in uppercase.'><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/stream-vs-foreach-in-java/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a>
 <a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Understanding when to use stream() vs forEach() in Java</h1><div><div><p><small><time>November 3, 2024</time>
@@ -34,22 +64,22 @@ The results will be a new list only with the names started with J in uppercase.'
 </span></span></code></pre></div><p>This code snippet will only print all items on the list.</p><h2 id=final-thoughts>Final Thoughts</h2><ul><li>Use Stream() for complex transformations, parallel processing, or immutability.</li><li>Use ForEach() for simple, direct operations.</li></ul><p>These two options complement each other, enabling Java developers to work with collections efficiently.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/shadowdata-updates/>&#8592; Shadowdata Updates</a>
 |
 <a href=https://adlermedrado.com.br/posts/boat-gig-parody/>From BBS to Blockchain: A Boat Gig Parody for Old-School Nerds &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/stream-vs-foreach-in-java/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO0pwACgkQbV8aePHc
-Nh0+CRAAmeG0UHhvfvfM3k+i+IZy1unPJtdlpx8kL6xtYEBxHLQmwMcK02C8Z/oY
-95KdiJrkr36j79Sf/DVQv5p6LnBsc7sqyALQrfbpsEnqiiOfs6Hr5M2MRjfJg+Bu
-RkpCu22+TRCuy8g9VOPaq/kCSPqPd2cAFSE5Yt0P37nNcuzurlcT8U2HhU4edlsi
-JupwxBVx2KUZ3BdtJj3FBn99MvaFWFF5CebZVmRq84auyHZFtmcZ2xSmBt8DXRLQ
-FeK5XbQxquYofQmQKFkO/Vr6Mko75QN2p5EFhdBgCeAUfLttsFb7pkGrHfHGe9Cr
-/9SbJfzkZ29G7+8gJN2uKKWx07fY29PL6KgDx9cToN4oHwbWUOHMXbdsnaw9/G6h
-M20lgfq0sRmsyFSNpzSOqYKvUEbQw6yGvWsxGE5H0g205Q0I/Mx5el+Ie20utDYw
-YL3ryZXECSN5ixNqB/MW4CNwjulAEfp7m8UKfiZYcGbX+8iPdP7mOORpDecDCpve
-QgFdEq+EmAIVfl981XjeZG1ROcPNVsprf7wUWdlz9StXLlIXCfmSVbw66jHRSOAa
-D7r+ToaQLT4e4nJ+Y55BccnoR2HTO9Te2ZAeFO6HGkFdN8InCgyFypb+WtXnVmTt
-stbsVNkEhqiBs6tGBBE2SWD3w8qFgtSX7vOuK339amD/jGn6wPw=
-=D+Zg
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgO5FMACgkQbV8aePHc
+Nh0CBQ//cLUUFqSvMn2s6dZD6hhX6TSDZHxejgPBxHFHQ+1xkHJ2XuDZMkinV4Dd
+tfs0wD+7AAsPnCRFWCNk/1GCdO8ZMGcsIVs/6U3sbIxa11Py8JwVBapyBMngnNAP
+Nn2abFdxNg4y+Rbu9txurLtuLZI+i/loJlV3xYUPd6tRtMo9Sxnx083WuEgarPa1
+4g597PeKQgGcVIVOkFqsXj34V/apsD111+0zRLEu3T4l25NATuVHPokuCZ9PI5JE
+/7DQIk87yD5p+tUMqNoJAXV4+3CLiTUIAPsUpP/hsfgZkfvEhhNwDoFgfo9B/Xk/
+WRhkhCIXlw7/hlp/lqHVHwSRgfl6VRoc/qpwwklPkF2EihSSslu1Ph2CRi710vv1
+EMH9Ce60wcBNbwiTRlaKaK3TnHflOVlKhALKi00RCn+gTjdBoBLp9L3nUFtFByJb
+/MddEqs3c4wGOzfdEeCLIZYrHFY8g9OxVksU5Bw2UaOmVIHbuIlKR7KDD30/NCZ6
+KPa+m6shoDqcnzEanrzILAq+lORaOqTmD5SCBL4p/O+i2YR2LDIO/RrstM4SjmH+
+pBIEspE0vsbeq9LE+DTomntHTN9JyWBp9EqJD63FvDJtih/gRElIfCqaeqpItI9S
+wKmmvFiDES3uRBqZCM+BPxHmq5ytGAIjThU2Pmi6Zogl1Cn+haQ=
+=7VmC
 -----END PGP SIGNATURE-----
 -->

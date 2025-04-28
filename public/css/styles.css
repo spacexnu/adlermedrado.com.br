@@ -8,7 +8,6 @@ body, html {
     color: #d0d0d0;
     line-height: 1.8;
     font-size: 18px;
-    /* Leve textura hacker/cypherpunk elegante */
     background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +62,20 @@ button:hover, .button:hover {
 .container {
     max-width: 1100px;
     margin: auto;
-    padding: 40px 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container, .navbar_right, main, footer {
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.navbar_left {
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
 }
 
 pre, code {
@@ -83,9 +95,51 @@ hr {
     margin: 2em 0;
 }
 
+@media (max-width: 1024px) {
+    body {
+        font-size: 17px;
+    }
+
+    .container, .navbar_right, .navbar_left, main, footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 16px;
+    }
+
+    .container, .navbar_right, .navbar_left, main, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar_right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    .navbar_right a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container, .navbar_right, .navbar_left, main, footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar_right a {
+        font-size: 14px;
     }
 }
 
@@ -201,7 +255,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 2em 0;
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
 }
 
 th, td {

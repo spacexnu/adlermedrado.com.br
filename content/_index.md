@@ -6,7 +6,7 @@ layout: "staticpage"
 
 # ⚡️ About Me
 
-👾 I’m Adler Medrado — also known as `spacexnu`.
+👾 I’m Adler Medrado — also known as __spacexnu__.
 
 Software Engineer with 20+ years writing code, defending systems, and staying ahead of hype.
 
@@ -41,8 +41,8 @@ All while finishing a History degree and staying deeply embedded in hacker cultu
 ## 📧 Contact
 
 - Email: [adler@adlermedrado.com.br](mailto:adler@adlermedrado.com.br)
-- GPG: `07D7 0FDB CC44 6C19 CA43 02CE 6D5F 1A78 F1DC 361D`
-- IRC: sometimes on `#tilde`
+- GPG: __07D7 0FDB CC44 6C19 CA43 02CE 6D5F 1A78 F1DC 361D__
+- IRC: sometimes on __#tilde__
 
 ---
 <br />

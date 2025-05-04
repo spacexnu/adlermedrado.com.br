@@ -18,7 +18,7 @@ else
   exit 1
 fi
 
-echo "🚀  Subindo pro Cloudflare Pages…"
+echo "🚀  Uploading to Cloudflare Pages…"
 wrangler pages deploy "$BUILD_DIR" \
   --project-name "$PAGES_PROJECT" \
   --branch master

@@ -27,7 +27,7 @@ We already sign emails, source code, and software packages.
 Imagine a video call cryptographically signed with the speaker’s GPG key.
 Even if the face looks convincing, if the signature doesn’t verify, you know something’s off.
 
-I sign every HTML page on my personal website with my GPG key. Not because I’m paranoid — but because **I believe security should be a mindset.**
+I sign every HTML page on my [personal website](https://adlermedrado.com.br) with my GPG key. Not because I’m paranoid — but because **I believe security should be a mindset.**
 
 **Don’t trust. Verify.**
 

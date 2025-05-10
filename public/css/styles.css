@@ -11,10 +11,7 @@ body, html {
     background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
     background-repeat: no-repeat;
     background-size: cover;
-    /* animação removida do body */
 }
-
-/* Removed unused .background-glitch class */
 
 h1, h2, h3, h4, h5, h6 {
     color: #00ffc3;
@@ -322,4 +319,8 @@ th {
 
 .navbar_left, .navbar_right {
     background-color: #121212;
+}
+
+.gpg_signed_info {
+    font-size: 10px;
 }

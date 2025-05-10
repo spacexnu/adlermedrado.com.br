@@ -29,23 +29,24 @@ GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele per
 </span></span></code></pre></div><h2 id=-criptografia-de-arquivos-e-diretórios>🔹 Criptografia de Arquivos e Diretórios</h2><ul><li>Criptografar um diretório inteiro:</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>tar cz folder/ | gpg --encrypt --recipient seu@email.com &gt; folder.tar.gz.gpg
 </span></span></code></pre></div><ul><li>Decriptografar o diretório:</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>gpg --decrypt folder.tar.gz.gpg | tar xz
 </span></span></code></pre></div><hr><p><em>Nota: Este post é um lembrete para mim mesmo e para qualquer um que se preocupe com segurança digital. Não espere até ser tarde demais para proteger suas informações.</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/gpg-intro-en/>&#8592; Why You Should Start Using GPG Now</a>
-|</div></div></div></section></main><span class=line_break></span>
+|
+<a href=https://adlermedrado.com.br/posts/deepfakes_temporeal/>Deepfakes em tempo real: e se "ver para crer" já não valer mais nada? &#8594;</a></div></div></div></section></main><span class=line_break></span>
 <span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/gpg-intro-pt/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgXyJsACgkQbV8aePHc
-Nh2JgxAAgM0S+0ghb11oNcBL0XC3maudW2F2eNoEbxxe/JqBeabwN7bV+i8jqFvS
-0vsXBOXle+QgkLLjSemPpcoBu5JHaMZFvlnqNtp/NS2iW00+B7MDenkWsSDSTOw+
-f55DZ1wz1FfdgveNmpD91JTmbE3IjfJOJghBSwuLi7V8sQwRVm+Y2NNuQjPRgNdX
-hvuILL4ByjHMByrOPY0cmNl4Bp7JS6LWcb3Y9hY8DHmwyRFWAj102u9IQT5DNzD4
-FBERhA7gnfGIeXaU9a5LZCjRedQw4UvO7TwQOS9pQKOt83V1EXGEBQTi2iNPgnJq
-DP9ipVIceIzXDux46MhSw42JgjelR4HHNYsqtcW5E0JmGJzpYPGUg5CY6N5qafp4
-d5kQamvuoK0OKYoS8ow7VgUFsblun0QiAhO1dyBW8VRAWDT8b+K9lHnRo/40wi8o
-BsMd1GW67lrgDfr/jOtteoq85FhaiKrCxM5gwoM0NzWWry1wvuTxqLCRjHaxPU9C
-ezYnGIbp4pwEUKyxbSQV6I2fIZcQzp+XKo6m1fbJ5RuFJ5NtoNrLHwXgSKQsAENR
-OqQNFxqjaEVJsXpgoNWdKjYXVdpurLKt+KU17ajzp2n4ivI03xaKujQBmvr+8XCj
-/vYk8cLlTQF8IedQb0Ci1NNvu+fn3y5aZOUFAV0ud2h+qm6bjGY=
-=6HAy
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgfYxQACgkQbV8aePHc
+Nh3zHg/9HxvSEv1fftptrYR+ztnCBCB0bDCtiMKP3LdhoS/WI15BdCcf+peQVHo1
+TcLilxR5XmHa9mCOehiEN6stLQlv5YfxrI7W56mpf6BezI/7zQ+5Uox16b8tI3yq
+nbp3FrsxTRVECJnm4CcvZA+mWVEet0OCe9iiJIdlhVH8k4wb8XW8L8zy6Q1ySvFz
+Cun7mtrJfLFStwDDTSJFZ7mD8XMsnM1yK3zPFcPEVQUSl8VDPn2hYQjEIeI/TevU
+l9bTbpuMyHIoFAlO5c4C8nAQ61fqI97tOimTCuQBH2p4aSocBUtxmaBm0D129eHS
+/V3Ln+3xmJUEHQlZfwNB7c3qnwZPrXt48uTZif0VmyAzdP5tclqnK7xE/lkiECEm
+zFcuWPCQswfUaA/Xwk5o7Mddu3u7UfQmbTd78VxR+kNGXoinNvUtg0f/PsCB/mWe
+Q2+A5kxEGW+Asrttk6amGLZfEGjK/CPCZjMM2ZtJR9XDNCiwRbuXoVHQzmGCGF88
+K+uZF97T3Gg6Nz6Vzhpvq2ea+pyh2YhUTIcIx5XJci8iJeUqYKQQqgQuK52FQGyV
+adgTJap7tprOpCZH4ko46KYidEN3bTAZhmWnElAWStxSVrwaQf7i2N/QZm3JhOhg
+SolIigKP8eawAjJoviJlhlc9r9Fabls+yh+CoJXLMa5T7pnd+rQ=
+=QR2C
 -----END PGP SIGNATURE-----
 -->

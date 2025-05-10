@@ -19,7 +19,7 @@ For years, I’ve been saying: we should **encrypt everything** — files, messa
 
 **We need to start signing everything.**
 
-Digital signatures ensure authenticity. They prove that something really came from who claims to have sent it — and hasn’t been tampered with.
+Digital signatures ensure authenticity. They prove that something really came from who claims to have sent it and hasn’t been tampered with.
 
 We already sign emails, source code, and software packages.
 **Why not apply the same principle to real-time streams?**

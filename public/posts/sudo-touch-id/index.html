@@ -29,9 +29,9 @@ Then edit the file and remove the # character from the beginning of line 3, it s
 auth sufficient pam_tid.so
 Detailed Steps to Edit the File
 To edit the file, use a text editor like nano or vim. For example, with nano:"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/sudo-touch-id/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo with Touch ID on macOS</h1><div><div><p><small><time>June 5, 2024</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Sudo with Touch ID on macOS</h1><div><div><p><small><time>June 5, 2024</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.</p><p>Locate the <em>file /etc/pam.d/sudo_local.template</em> and make a copy as shown in the example below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Then edit the file and remove the # character from the beginning of line 3, it should look like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span># sudo_local: local config file which survives system update and is included for sudo
@@ -45,18 +45,18 @@ To edit the file, use a text editor like nano or vim. For example, with nano:"><
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9xwACgkQbV8aePHc
-Nh0ZXw//Z/6dFJe1cWITHI+vwlgsUf4K78GTSnmU9celrrJvNjmztKfIhnmjCUsE
-Ni0Pxrde3KgURD2AQ9Kvb/Uu74EZngIESPX8htt/DuOvYraUAXUCLglowhY2H+TS
-aLgFevxPefdCwiU99WKEW6qwWUEjnSZStcRGPHu0ZL7V+0jPCQ5XJZlw7P888EWJ
-qw+f1owr8ln1yg6Y34P3YMOa/jEfK8NsfVwQSQCisaWfLr4LO7oJpveBIF+crUsW
-8Rvg23OyYloXh3UhflF49oqXTb3uG4nCuoA/X4shUGE646avx7D2iGBZmTntaenr
-jdh8O76isZZFJkEBpgKhxijN7PeHOrEI6TrMPD8kD5CY8/V1S/7ReM74dNK2sdy1
-4PBn8NbR4eJFBcCj6bYqffRIeHzzVQtDX1A8Z0t3A7Kb1u2IlHbCTfjhFVZ128ey
-idAkA57tpWMYwCaQWZXNyz8R5rWGn1A8vpJYHKS6hNrNNl76MtaEeZllUOPdLcl7
-qG+Z3exnLZjAlPgkbBMk0HGKLTxGmTGQGa/9U0v9+EgVX8uP+9f2GLgSv227etxA
-ZRM6VdBabBOYx9pQKg72f7X4bxlr555raKaqBoagMQBOAwAVQKyaMbwFNep+NE1r
-npNtArxuQsj+4cAFrL26MVqrJiN9VFEU8PGlP0PtsEKGi2cAoQM=
-=sXaA
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzQACgkQbV8aePHc
+Nh0YLA//Tsln6p+oB1txsgD0Vu0UfWCtClZy7nq7PRUf1uNJMtl59az3ZGtD5Hd/
+w9j52wgiaVswZ7AW7D/ID6tW3vXccgMOLaDi50TlZIlxIdwjHfdmp9Au+6uueZrQ
+eKMytVR14HH2UF4Ccvl/dS2pslSO5PhLDcT9y7f+R4chWw7WybSQESj+pVVhlHg2
+hHL80abfdAQl2uAzLJB6ifBbFUEDSwyODZD8pr1J6uePUHMLbgCKO9rbSImG/g91
+LtsbIj6zDazTI3Rlkl68L8eHdjVbNuu8SW6u2SoNhr/Jo4hLh7DdZ0c4FYe5TLky
+TXIhbLViDOGc1OzOLlNvkHrG6dhLL4G4gTKwCtMGxf+BtpkCojpQJptC+fT6IaPu
+LRWQxdmzWZFmOE3rQ/pqfwSF3eJ25YJ7hTqNPFSwUad5TBGXY8+UHiLWn1drElk5
+uO0UFOsBVjgwBo+eWIHXkob6vWBGWPeurkTM/jmFTA3Y1cUcgWckixJIXnZGYEUx
+A2i6Aluji6I1a741VbyXqceS+ydssDwpPp7iTaoHuOiHLNP8pTknVO7iPRBJS+5J
+29ldmj1+61ZTaTHWCD8vSM4Zmkb1Gxua6PnSViyLZhg+fwxNqjoYY/a+lzFoQ6/Y
+V/lnVOiYQKhbbguKHnnH/vzPyQqu65UL0jpmDov0foamghNnTzw=
+=+eHV
 -----END PGP SIGNATURE-----
 -->

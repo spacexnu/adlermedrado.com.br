@@ -4,13 +4,19 @@ title = "Adler Medrado's corner of the web"
 theme = "dark-flat"
 
 [pagination]
-  pagerSize = 20
+  pagerSize = 10
 
 [params]
   categories = ["development", "infosec", "mac"]
+  mainSections = ["posts"]
+
+
+[permalinks]
+missives = "/missives/:slug/"
 
 [taxonomies]
-  category = "tags"
+  tag = "tags"
+  category = "categories"
 
 [markup]
     defaultMarkdownHandler = 'goldmark'

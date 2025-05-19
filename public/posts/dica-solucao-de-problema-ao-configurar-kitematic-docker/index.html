@@ -26,9 +26,9 @@ decidimos utilizar o Docker e um container do RabbitMQ.
 Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na
 instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
 precisam ser aparadas, mas no geral ele funciona bem."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Dica: Solução de problema ao configurar Kitematic/Docker</h1><div><div><p><small><time>June 3, 2015</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Dica: Solução de problema ao configurar Kitematic/Docker</h1><div><div><p><small><time>June 3, 2015</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p><strong>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
 pessoas.</strong></p><p>Um projeto que estou trabalhando usa o <a href=https://www.rabbitmq.com>RabbitMQ</a> e para tentar manter o meu OS X o mais
@@ -49,18 +49,18 @@ na <a href=https://github.com/kitematic/kitematic/issues/585>própria issue</a> 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9xwACgkQbV8aePHc
-Nh0AsBAAmoPaNdyPU9NHRhApGIoD+lsFd5yTv+pFcMtRmsx8smr/H+EyoKgXvrmy
-3BsqJCKvUhhrwjSW+frc88kadxgY1PL2zwOOhfmpT0JqdQ5zW9ORX58cx8UPrdGq
-RopqEuDtfqUsHQ5c8L/BaeWrtFGhYps1vCBLS2qqtWlvaEIWBQ62fBpL5rHHR3Yj
-eEVfaYnrQA4NsZ8KoRXiEBcQ8+8pbdELz+r9YEWbnpLEU5igiTQf9FrzWRVzV2GQ
-5nIaowxM4hxGKlFQYilxYwZfURetUJjKYIyGoySd/HrZmM81HWZpk8xINJrRv3A6
-duQjjHMhgI1HGO1O0Eby0a3ZrnXySJ43njBqujOTT9EqY89GI304skuLuRRN6DJn
-A31E6jmCxXu34kQzSkUoQ0jXCaEiz33qVfpXbXNxFD+xt32v8MZTHEscFPh6vPll
-Ya5cR4wnprsTiqlRzKJhB4gmrtL7RTwhNhRKQZ4cM3jrXE+Ornjxq8+HvUtzI9x5
-0xc8U4hJIkcKhi6YWVoE6PykZ8KEHGJe9VuUibdUH8KtlLYMjJXQ/V7u3GhgXEfH
-wOOzJT88KzEjBrlGgv4Bu01SlSAxZjEIjsTf37PxVWkZW0pGWhJx1VrmEs7iEUTS
-VrtiJN/uRdZfjVcSo5+WbDmaeTfcLygYxJL5Lkt2wr8WZopy+PA=
-=/Sgs
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzMACgkQbV8aePHc
+Nh1SuA//QWrSf6biEiq5aaMG9UCWYzHLzjZZeZb00mOOatgo23yDabw2pPMMTIsZ
+15v7GWDG2rhe78+aa5AHakSiuTJ1af95DgFt1TYs8QQVozFScvea+tXmYFcJs0tU
+/rUR8RFvT5Y5oJE9iwnmFk3ryQLzaZ8eQBgz2htd3rk8OffRxO/IWwzmCFEkskm4
+798bTMFK/DJk+7MEFVoy1JqKsCLl1fUIEss1YTuBJ1phwuze6CcOv61Rs6Uth7FA
+aZwxt78Msll/xh9KFKtAmf1aXbj2UGjhkTFD1L6jYgQdaI1DHDIkrOMwlvTHp/La
+3tOS4fa/1GGuUEx0MERUnybJV7lzY3liyq5XBveIEU9EfmqnIIChGLjo1M9CH9Sw
+pCq0YpgrpMgqATnC9LQT1WxF5j6SKeIuxTNHwVXU6wzYpdzgRz6d2NWuHaBM4ysQ
+YVLw9yf02Nx0Uk9iXWxlLPRvpRaqr1w1ceqTT6KcmFcLwFU9QyPnaNubWIqcQ4yO
+qxWFNkj4597P+c/Kx0JojKJdlrF7qN6WbvPXJyybmyDVvTYtUyX4ljhhIDjcn5Jg
+TFMl3Zktmxl6LOFeOIUAEw+MIp3T32vEE0+NjNrdID4cvis7EDEuoPPygmcFh8Np
+HP8oHwWPgWif3KGlDH0PqSJiP6Fdd9YYaIJLKB6+IfPopk1pS8Q=
+=SBJX
 -----END PGP SIGNATURE-----
 -->

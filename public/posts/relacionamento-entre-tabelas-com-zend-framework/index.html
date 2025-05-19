@@ -23,9 +23,9 @@ acesso à dados, como insert, update, etc.
 Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
 tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
 de métodos específicos da classe Zend_Db_Table_Row."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Relacionamento entre tabelas com Zend Framework</h1><div><div><p><small><time>March 25, 2008</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Relacionamento entre tabelas com Zend Framework</h1><div><div><p><small><time>March 25, 2008</time>
 |
 4 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>O Zend Framework possui uma camada de modelo, composta por algumas classes
 como <code>Zend_Db</code>, <code>Zend_Db_Table</code>, <code>Zend_Db_Table_Rowset</code>, entre outras, e é muito simples criar uma classe que representa
@@ -133,18 +133,18 @@ básico até o mais avançado. Então, espero começar na próxima semana.</p><p
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9xwACgkQbV8aePHc
-Nh08XBAAuNhNyG0u6A+2RZMGv077F4sreN5IjktthDW7Q/EzGWNlBcnGMtGudVMx
-hIDFYJNbpAwCHSPEI9O3bqGX99TUFm58mMf542CtZLmpQ2vTXUVSM58au6lfimbm
-grRoxRoudS4YHcf7ze29FwNcFAwuWPCtoKo3gfoOddjEHRriB9rt6aC9sJ93VCbD
-ckthExvS5zIAU/h3pOPcuocQDqQ8VSh+LNbnKuBeIW+VtRImZshYU3ufLYE4rliK
-kEGsnfhJhqn3MuPU36s2QZTQLT4cyuNM8jGBj8wKpQORndirZ3vgi3/oHqep4vEl
-FmZaMpVpEW0stINQNMfBozdmVAbWCsRANuF5t7Jp3UI950w4Ka20Q+wfaZO1w/sD
-ge+YHuP1G55QLvByVBIpU70dmGBXjNCLGPZAfJcDKe61iEfWqizQIdt8p1ZacXjS
-1ArXy6JYrQdcVQ4D1/rrCYr+baaPaemxEOKjPfH63vmf4ur7nAAFMfZPCOMBHFTg
-xXPEzkkwue9Va4YRB3giqJ5DtVylchs4Nl+Q4PQR3pxevZn1QpMa1T2D4xJ2jijm
-t/Jymx9gYh2wLVVCRkgQbY+KPICjRos+da0n+wy8ePyLQaj/VjByWspSmOOclijx
-3/mBg0EIojOhjd3NEnyJZo3FAenMYKxqnJvy1/RTafIUpRYKMWg=
-=ozeM
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzMACgkQbV8aePHc
+Nh30ug//c8qdUl/NLSjC4j/pBuU1jWlG/M5kx5vnf8IXrFMcIT2OTsxOsJsFWi8M
+rm+6S2Pr2MGS3WXNLPBBSP8oatThs+M8sO1kuDl17wRb8W7neBBepQeT7JBVKbWC
+EDTDNwMR1eI9q51BsZjLLstN/1PCCHxbqW/Hwqz4v5nPdDxdPtP+z4fZca2Q8xWZ
+89SvhCszrwZbZBe9NW+7cvqs/CDeRYCIzVbJ+SFWin9YtE/y41fxxeVu1XhE8KQE
+Mbj2SY8jvyETeNSvTSlOQ0J3gpFrGmcvakwyYcDDfVwiOIUDCoN50pBDoJ8wkjja
+DYbMq0svAn5qucZAzbHnVgpvRv3XDbi3nh8giYpbD3VdVeSes//8fAWvKG0tkTN6
+3eQzSdUxYkEeBx8b/HZvnumvKDP6oZ3MYn7YGH7p54y1mVnj0IFnIkORo8oe5G9o
+FIbfshCi+lXvYaFj/h+AQJLXggXLzxvLy2NTcmUzPQVgqL2jW9GOzu1s79Ue/a+a
+gichZPlA5v8hewnxBIHikfSSitkSCD6eKMylEnudo1jB6S1hvaENE2rpDd7m5a1M
+QFiwy7jbA3vMfPKidL79OypTPwCu7mUeJyyUjinQmZMuP6rEBXynNRvq/z8yQ78p
+1aI+SzOruYbeXLKvePw+efTQlbjgFBN00QCuaWBJ1aEjvbzdxGY=
+=JONq
 -----END PGP SIGNATURE-----
 -->

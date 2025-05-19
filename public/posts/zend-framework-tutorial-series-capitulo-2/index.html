@@ -35,9 +35,9 @@ Reveja o Capítulo 1 do tutorial.
 Uma observação importante: Eu estou utilizando a versão 1.10 do Zend Framework. Certifique-se que você também esteja
 utilizando esta mesma versão para melhor aproveitamento do tutorial. Mantenha sua estrutura atualizada, ok?
 Model, View, Controller"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Zend Framework tutorial series capítulo 2</h1><div><div><p><small><time>February 16, 2010</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Zend Framework tutorial series capítulo 2</h1><div><div><p><small><time>February 16, 2010</time>
 |
 11 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Tudo bem?</p><p>Demorou um pouco para eu publicar este capítulo pois infelizmente eu tive alguns contratempos nas últimas semanas, mas
 de qualquer forma, é muito bom saber que você se interessou por esta série de tutoriais e voltou para continuar
@@ -191,18 +191,18 @@ Caso você deseje participar deste grupo basta inscrever-se em: <a href=http://g
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-2/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9ygACgkQbV8aePHc
-Nh13KA//c64Mxj0kZQ2nyqcxDWg3psR85eXNAoA4OQGW6EHskm6gXShz+SNq3eA3
-+dYqZxmN8qmU1mtGhk4zfC9Cptp1SrtOmS8ImAsJZ4CBV/tXNZVGdrs1ISSRwwL0
-I3k7oXOPDJcD54M+4w7PT0Ko566371gmNvJNcpOQIsAzD5IYwbTk5CuMmiLemzlg
-vfPzxcdTIPzI7wQQq1RrSB3aLCHRPlsO/Y+8vLkDj/w+A2uV77VAb4NFH12FmWB1
-tniRdRsJOPXzTR1Ml0WGEwHGKiruPwRWb0w1srLhi0yyd7/jayjrbr/vE2nTF0fN
-xL4HQI8pO/ZymiYzbiqVS4MNuKMaOShMQ3Gb4f5jXWoapuzXyb1vlTpq1OrhOxL0
-vrKG6u2szMj/DC07n7/rMRCddPHuE2fhhOFF5+3V2dc+iSy3MRKQSKAU1+Bn2Ckz
-pXstXVe6mF4LoH5bAMzppWNIrF6J9+HUxs+rDVDAqO+L9B9IyQDJdof0NKW+hve0
-semWSjkEmzFBkFzDCIssb9GZwwM4Yv7vRzwuHmI2214MY0zxQlpiOhDW+FaV8DFo
-cGK2+SII7F7wMz3wHJgT9auaabavQHuG5JN0LOg/0drS9BfDgPicy2A0clnGB0jL
-SG7TWF0w0fpkbOrvUk12Kqip2JJjxyzMAoWTo53R7ggk34cH0ww=
-=8q0R
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnz8ACgkQbV8aePHc
+Nh17vQ/8DV0LDesNDvcv6ZSv6MHWnU6CmsGRL/dpH+QOphAAGq0XcyqxQk5jbDfP
+arFn0oHEbPfXH/W84nX54rYyv7RmfdG5UdA0mEME3ZcH15y2xEBFdkyl/eQEG+hF
+Xp2gWPo8dXz7rRwQZ8c346C0auXuj6Tq+fnKAIvx8CcmK9be12Cg5SR3YKLJ5fwS
+uThDZdVZ3O54Mx96EmqUyIDIJp1mU+a/TPk+FLnPw7n2HJJenhDoyVHJGzLQ4wBM
+XBXTVyqGR8nUAoQKgaG4z+pkUmB1jRVD8u3ZN+n556yqV2wgfENJmzszbHi1X0dU
+QGh9i9z6xL0dhS4vIgkFkuuNliiZ3SWg3xZkUjypbNGXDdjKX5IZdpa+LD2/1WF/
+66e1Eg/i4yaERLNI0csvuJm2uvkiWU28oYoiA/3Ou39f1wc5l2eQ+XRtNQKB2h0Z
+6PD3HPdqZy2jlcz63JlsuT7uu4Yvk2/1lZPDtJONskBhUFHhvhC1JXrowSFMFySc
+BL9Od2EXBPMFaaj8dSS0T9xTlh6E4kbzssgcAMa1xOIpdKc9lJjDzlmeWQKYvxxq
+0BtEfDqFIMcxxkPvYrxgXEPfokRhmBdEYoGMSpWbVXRxWp1HHsoqUONuaJy+RUp8
+4PJI6jgVraEc+kU0x37jfV/+OHRYT3ki2AzOzKtscwHnu6wcXyA=
+=pWv9
 -----END PGP SIGNATURE-----
 -->

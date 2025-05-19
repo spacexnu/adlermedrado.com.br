@@ -29,9 +29,9 @@ Antes de mais nada, os pré-requisitos para continuar este tutorial são:
 1- Conhecimento de PHP utilizando os conceitos de Orientação a Objetos.
 2- Configuração do ambiente (Apache, PHP, etc).
 3- Domínio do Sistema Operacional que está utilizando."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Zend Framework tutorial series capitulo 1</h1><div><div><p><small><time>January 19, 2010</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Zend Framework tutorial series capitulo 1</h1><div><div><p><small><time>January 19, 2010</time>
 |
 5 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os
 avançados.</p><p>Tentarei colocar um novo capítulo semanalmente, desta forma teremos uma janela boa para praticar o conteúdo proposto.</p><p>Este primeiro Tutorial da série visa demonstrar a instalação e configuração do ambiente bem como criar a estrutura de
@@ -97,18 +97,18 @@ Não esqueça de dar seu feedback, ele é muito importante para os próximos cap
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9x4ACgkQbV8aePHc
-Nh3GxBAAlp1eqVKBaaeQWEvTdY5TKaIai0HNni6XRrM3bPb4gh5YxwHB1HhLt5tF
-jFXTVQKZ9AeRAD2Lb5CVNLv7+pEICV9F3UqYmwxBob0i/qpM3fkYPOrmEZ1rfW+z
-yWGy6nfQl5unRIUcKzT3tB8rtla7SdvM2VEix9HiLtu1Uc+0f+lXx0e4+yGjh2Md
-8NxwapK8Ip5OXBraG99w2pl+24wD1I6dVD12ATMsInGcqBIXNyGGyinH0arFrrXi
-B7u4h/ARYoWmEnfeot5Z85SWrhWFmSkW75As2Sn9d95zZgkNvSp9oNPxLiW+Z2eE
-xodDeiZB2GpLCWRNTdKjF5nGSBzwJakVPdlTi4JB8DPygNicZeejUruWxBK2GPEI
-CKEZAKj3sOP6v7AE12PBLdUyXHAYOLvFssm9zllhX5jChsNhveotbSyVb+h4ckVZ
-IFs8Ur2J/lXg2nnDyYZflnETTBTzbg4H3zrfjtkqNofYTXlXw1ofA2/uz69TZlP1
-2QFw3KuF1UTc/65AVyZ1zArytKfC0Un2nSjx5ohpGCjGbRgC3ScrNLH+HrGR7JYL
-0hL6FIEIM322PLjfLl4A1ORsXzXmViTRW2wPZuBZsHOBThAfaPM8Habky1n0UpJt
-0jarxVZ3bE/NyDmo2ekfJmWuBpsuyKgHdrO9nFLOMrs2rDhbwIg=
-=hThl
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzUACgkQbV8aePHc
+Nh0ZRQ/8DiDdEJ0F6D2ZglinAMF/VlqumRlSjVtG/F/lX1xngbz+Cx59IdGciG+U
+7FMdFsiUx08v59xoF+2SZ1sgcfBGKs9aq8LDLtKbzSl5R82frggZ4TWmcyM2x2Ve
+oXdpZN59BYVa9ZxLAvoYH2HQ16chf9Qiw7t8TGL5bcchU6EUlsNRymBBVYNkVtac
+sVpp27HV0LKYHJTA+NEsIR3DuET+UGoNhKxTeRsrKJ4V5RbVtanHkFN7UCNQ62KH
+AnLPUNtwUSXZcv5Y07BM78y7EUGcKqUyknJkIp0v2iwJNHGrtAWPEGW3lHlNwJsq
+fzVtkogbExJ5jBpgme3bwwtkFyIpaKriejMr9TKHdYXF1QAuwK3x+D+fi+NovBOy
+hwaECcXGGH2RF1lj78ISUrbM2vnsDYwNXxc9e08+nJgyJJ0hVvnzziM8XNpIKK6J
+veZ7qduVFepg4Pz64Mz0BkbGmQ/s4f9CdTXrtvyvnrwD8AU7K6euFVuTzVijQbVc
+S/8tCJV7IfV0kE2W6RaE5/Y15MrH/ShpUqHqDKIsikVT+ddyKwYAyKbZnGcfX3Wo
+X7Yl6v8wKN9L6niOr37kMutKXRtglmYLQixRrhAVfvLLu6rqD21frDkE2c07t0c5
+excdWZ2z1cfcxB2IcWUvQJjqwghg0bFRB0SbBdKz9DXO/p9FCqg=
+=GZ8f
 -----END PGP SIGNATURE-----
 -->

@@ -29,9 +29,9 @@ Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele de
 auth sufficient pam_tid.so
 Passos detalhados para editar o arquivo
 Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Sudo com Touch ID no macOS</h1><div><div><p><small><time>June 16, 2024</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Sudo com Touch ID no macOS</h1><div><div><p><small><time>June 16, 2024</time>
 |
 2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.</p><p>Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele deve ficar assim:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># sudo_local: arquivo de configuração local que sobrevive a atualizações do sistema e é incluído para sudo</span>
@@ -46,18 +46,18 @@ Espero que essa dica seja útil para você.</p><h3 id=vídeo-sobre-o-tema-no-you
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9yoACgkQbV8aePHc
-Nh3//xAAzWZCYTQwBorlPH3/FFF8wPA2MKI+vw/Xtmyl1su6Rf5repsv85JqIU1V
-dcw1J7GJpFK/GVYfVZGeBdsPv0AOsdrN8G5hejANhRvUpgHD3sOlspa+iTYjo4Lf
-a2Z3NhZjLyuSJqakuEcgwoWRnLkhxxaRNbvoxJ1tZWx665JTwvx9X1ZyECQBJ7GI
-6S8QovODaHtKhal3ZvcEzjJMpT7gWcv9j1gRfQrmbdNugAxdzC9C5rdnRvSf0lY2
-f+6f2E4HSRf/N/seOll+/tjQEwvIGOYwTn6lVB4o7DhUMmJ8IlKz5Iuo1EUdnIsY
-QS3TinfDuzGa8k2xSVvtW5Js+smXpAapdF5Zw64z4zFbaGvjc5GKUeZBKFKokxfg
-nN0qpU4vW8pKpZGP6Ilh133GfwyVlCiO+bgCDwdCLwl+JNtXxD7B76PB8ZOMWHNF
-Vl9h9qwtLtMYN/RZ1/tWClOLC/13OsL9FcZkEnyOrxq05efUo3P+fZUjf8ux0NlW
-5gdxxG+aeDsypjZpyC0zjKFQwyqtzoQeFdjK00vNv9wo+NJ5BrVrYnTzLWYjDTEZ
-8kCmdJXVqzbF5o3bgGliIUtxue6b5W6ueYRjmyCFkp9fA4/TKLsCIgjx3prI72r9
-0sDqtybH+VDxlpA3kQq0G589k9y4dPJacmiLI/iP16sAQQTRmms=
-=uPgq
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqn0EACgkQbV8aePHc
+Nh3l6Q//VEU6hNmwxnfICctN1jQJcfR7AcA75hND0H99CKznCxG88cwBYlu3MyBM
+3O1z71/qZBbUfWBWLXHMZyHbUilU99HNyKeFSWUyhdqipGIMJ3zE5A3ycobzlnEk
+xvMJcMiK82lbgPtqctQsfSDAVjT0z510MvMSVxqs7FSh+G7ErswLCLrtO5+H5jgc
+uXy5n5fy1LY7vJ314bVG0qyl/+bFLP8RR9MbAKbmUCickQPoL2bpygWJn4XohJHY
+fUIdy56oxgV0Lssd/ecgtXo/SbPI6NZJHX3QZgxTVhKZ1AGgK/pJkDl0gbOgxvIs
+kMjM7y2UNzhy+QLbKW0TgugHzD0F0mBBKVxWCysFrI1TGE1ObUNPYxzWH4knX+/h
+Rj0kxwDN4fhqoYUH7NvJ3xWI7YdmdCqx7cokZqie7W+M3Pe6++cwaKIh3MPv9pas
+GTFmNPLW3Ub2l2W1g0sfX+b1tEEh156aAHYghUHCETDpbSV9rq5Sb0LnTFCrxqdQ
+APR4qCIFdaQeqO2wjYps1DJ6Z4Um9NvMQltM98pDVSxkCWaLbjesaAC54gb3Q/R1
+wNfjdkBKz98XRZyCNhBVuTUBW8fiRetiF/539rTX/UhcpJ/knWRg54f4MohWPgyx
+sMdpJKAXSEMIR3H14sDDBvKZ1jzE3ns7ROR4T2AWwwrZJitUeSY=
+=XVVN
 -----END PGP SIGNATURE-----
 -->

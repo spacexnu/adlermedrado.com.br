@@ -83,9 +83,9 @@ ERROR: Failed building wheel for xmlsec
 Failed to build xmlsec  
 ERROR: Could not build wheels for xmlsec, which is required to install pyproject.toml-based projects
 So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I needed to execute the following commands:"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p><img src=/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png alt="pip install error when installing lxml"></p><p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Building wheels <span style=color:#66d9ef>for</span> collected packages: xmlsec  
 </span></span><span style=display:flex><span>Building wheel <span style=color:#66d9ef>for</span> xmlsec <span style=color:#f92672>(</span>pyproject.toml<span style=color:#f92672>)</span> … error  
@@ -122,18 +122,18 @@ So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9xoACgkQbV8aePHc
-Nh0lnhAAsj5yB46bSC0qQesC/6e7iPfyK1phM4NdCj9kpM33ZEi+vBaSpUK4U/Lz
-yIoMxX1Q/IN5nnQafL5IQxfSl7B+//3E/eDYPwJMlRw6DL6v9heimqwVA1qY58Cs
-9ep9XVcbzCcvYSO+9xuYN+drANDbK99Yq6Wn/yllaObmKC3q/EEKTo0JwvkxbY4N
-rMwpeuWb31gFherGZasyq/80H+sO5mSS8nk1vt7u/9cB/Mi02SVLw4kq5z/alXaA
-zQZekCDccOpv1K8IgadQrixw9O0w47moDZCT3kXzb9uIJqwyrkln1JCkx5KZiRUm
-6P5CMv4Y0i/v8wTlzr9gf7FkxW6cHiJfCH1oV+ZZWL9nvxcFGtpID1MvD48mvt0L
-XGFdkxPtdpzhYu9yiOnlKjROKhHcBbORCAZH1R5kxYdaB0T+UGcqzs2fUDyRDvAC
-7gs2o2O7RrDQX3yjhDF9LFMQw91JFIxCMkhbxT1X/PMPCWM7u04Ya+esM82hWXnw
-rTLHA6D8bI/OR8wN76BYujQR1f6NGnayx4N+I0GBYwJwRHU/1Y4zANVAcSi69iOu
-QvUHTDHGFMAr6z+UJBcldnWFL91wIOiQPklitIYPp6c02Bl14zrmMX5tXCYdTU1y
-/EKjc2GiHQzKAu2tIS5KhJlz/UdLxTLRYpK0/2E5eYvmKowTPgU=
-=Os2T
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzEACgkQbV8aePHc
+Nh00/hAAxkhysQ8bx/x7BoARGJ05bY28SxnQCCA8u8pOXGmD9vGhNh1FinVa+ewI
+XAgF5JLH4wQaRbHD0jtpHhIDLg5zdh26lVY5xGtRWsv4FBzQ4aNmb7WXc/UTZ5pn
+y56IEadsuKoyjS18u0zWrUJf4ToVm74c3pHn587CN2AiiehbgW2oEMJmMt38TYaL
+ehcx2dFI3Lnbrun9nz4IVqnZgNWVjtiRB8+M0EHAevGgjDY3hRQaltEP+bAl9mQw
+hSkQvjGpnAWkAdzI015ZYqZLf/SGugKEQOCMoHXcqbJfM65VekVc4R09/0ZTc7yK
+H+PYWu5SHxkbmMpVKgcFie136PrKkakXxxY7VpVQL4ryHnHrmEgBq6gzNcxYQTjb
+7A6uk8KNEdEi+Yz/m5AEQuadzLTX2R3uuznnPXf4yJa487h2bQIhocxjjo6AYrFA
+pTIHM/5qACDho+1TzBTSgxDItWuXA83sTIR21n62k/WuTRwuaUIV9CadzaYjdwld
+ntHVeHwiq65iK6DUxV2U9PgqgzbJnR/x/RQX52/3IQgKUozFO3WI+kdB4JetPucZ
+Sdn9t/WBeuow3Qk7/YqVDQ0o7dge4maf6PqdjcOS5pAdOaaePkpnolc3Z4N4oYM2
+GEUT5HQVoZP7erpHraLf6/mZ3gAQhoRpbqr42cW0zma22yEwB0o=
+=MCxk
 -----END PGP SIGNATURE-----
 -->

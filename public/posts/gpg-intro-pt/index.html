@@ -14,9 +14,9 @@ GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele per
 Se você ainda não utiliza GPG para assinar ou criptografar seus arquivos e mensagens, está na hora de repensar isso. Não é apenas sobre parecer um hacker de filme dos anos 90 — é sobre proteger sua comunicação e identidade digital em um mundo cada vez mais hostil.
 🔐 O que é GPG?
 GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele permite que você crie pares de chaves criptográficas para assinar digitalmente arquivos e mensagens, além de criptografá-los para garantir confidencialidade. É uma ferramenta essencial para quem leva a sério a segurança digital."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/gpg-intro-pt/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Por que você deveria começar a usar GPG agora</h1><div><div><p><small><time>April 27, 2025</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Por que você deveria começar a usar GPG agora</h1><div><div><p><small><time>April 27, 2025</time>
 |
 3 minutes read</small></p></div><span class=line_break></span></div><div class=content><h1 id=por-que-você-deveria-começar-a-usar-gpg-agora>Por que você deveria começar a usar GPG agora</h1><p>Se você ainda não utiliza GPG para assinar ou criptografar seus arquivos e mensagens, está na hora de repensar isso. Não é apenas sobre parecer um hacker de filme dos anos 90 — é sobre proteger sua comunicação e identidade digital em um mundo cada vez mais hostil.</p><h2 id=-o-que-é-gpg>🔐 O que é GPG?</h2><p>GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele permite que você crie pares de chaves criptográficas para assinar digitalmente arquivos e mensagens, além de criptografá-los para garantir confidencialidade. É uma ferramenta essencial para quem leva a sério a segurança digital.</p><h2 id=-por-que-usar>🧠 Por que usar?</h2><ul><li><strong>Assinatura digital</strong>: Prova que você é o autor de um arquivo ou mensagem (Como todas as páginas desse site são assinadas, por exemplo).</li><li><strong>Criptografia</strong>: Garante que apenas o destinatário pretendido possa ler o conteúdo.</li><li><strong>Controle</strong>: Você gerencia suas próprias chaves, sem depender de terceiros.</li><li><strong>Confiança</strong>: Estabelece uma rede de confiança entre usuários.</li></ul><h2 id=-backup-de-chaves>💾 Backup de Chaves</h2><p>Perder sua chave privada significa perder o acesso a tudo que foi criptografado ou assinado com ela. Para evitar isso, faça backups regulares e armazene-os em local seguro.</p><h2 id=-computação-quântica-uma-ameaça-real>⚠️ Computação Quântica: Uma Ameaça Real</h2><p>A computação quântica está avançando rapidamente e representa uma ameaça significativa aos algoritmos de criptografia atuais, como RSA e DSA. Estima-se que, em 10 a 20 anos, computadores quânticos possam quebrar essas criptografias, comprometendo a segurança de dados sensíveis.</p><p>Para mitigar esse risco, o NIST está desenvolvendo padrões de criptografia resistentes à computação quântica. O GnuPG está acompanhando essas evoluções e planeja incorporar suporte a algoritmos pós-quânticos, como ML-KEM (Kyber) e ML-DSA (Dilithium), em futuras versões. (<a href="https://datatracker.ietf.org/doc/draft-ietf-openpgp-pqc/?utm_source=chatgpt.com">fonte</a>)</p><h2 id=-comece-agora>🚀 Comece Agora</h2><p>A melhor maneira de se preparar para o futuro é começar agora. Instale o GPG, gere suas chaves e integre a criptografia no seu fluxo de trabalho diário. Segurança digital é uma jornada contínua, e cada passo conta.</p><hr><h1 id=-comandos-úteis-do-gpg>📜 Comandos Úteis do GPG</h1><h2 id=-backup-de-chaves-1>🔹 Backup de Chaves</h2><ul><li>Exportar a chave privada:</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>gpg --export-secret-keys --armor &gt; chave-privada.asc
 </span></span></code></pre></div><ul><li>Exportar a chave pública:</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>gpg --export --armor &gt; chave-publica.asc
@@ -35,18 +35,18 @@ GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele per
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/gpg-intro-pt/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9yYACgkQbV8aePHc
-Nh0X7Q/8CnEsMasU1aj0wKW7H1UaGAjnY9SldvQytMp8hXwZ8eypcTJQjyDnaLiD
-DapKSBy1uUtrKoG2+o4fArTJi4e8hSXTuzwN5CSszvU9d+3PWxGoFzvZF3LymPqx
-vua5R8kIQ3JvdUTnYVmJNXc5VCLiqXriZXWnQ3G/fIvSE2rXHBqpNP3xGgAt5I3x
-sVhNG/tWyVeGTZimlJWk1j9TvD4m1migSAWah8P/iSILlhZ9/w0Ax9kjusCxlzHW
-ln37KDqGAjvO2EuqNI6VcyM4LFZ4V1pl3ckpptYuiAIBHlv9bW87mBmSe/Uk8pCd
-8bpOyPb0Fgw+FL+uCLobxi0o+VcsmlwGJXAtfIiefYXUVcx0f73PLJWx2IVf9S4Y
-Qhn24EjOgBDtGWrPfkxmJdqir5MCfDAWkkzf2OQ6bTfqrFvVsp+PTDL3jsm+82E5
-rBN/rQW+U+qFn1Btw2FVJjQ0nSxFJZbDuEpasX335L8bj0BEB+/Ylizj9Io+gMTY
-/8qRVFoRlz+hqi0SouM51Cfd8EIBZfNFmG4c6I51Y65XZBC1nC1mqgJdnHr8EWcU
-UtDLh3tUzgOY3esU0Dg2WhtN+gkdwCahwdBqu5TRxJD6ffPT1Xwtx7xzzuyklrax
-2+2COtBbeXRGEeTsWPo5qjNMI1YQwozDw0fNELOLeUDC8n0t65A=
-=J0U8
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzwACgkQbV8aePHc
+Nh3nGw//ffD8qAiktsN90gCUDkhNBavdLXalzyx2JR15c0nG+Sxn18KTifUk9sFE
+nli+xLawCMXGXX3IPsoDk+BhlYHc2J7UIzXWJW74MwIYP4BKcfNBdgdZJRRQeUbz
+aN5G5chscxIoxvKLYx5EmELa9SFKiLEa3obhlCo4IQXWA5gyz8d9OJRxPW5RvP/D
+TpJJPqKWBbMko/2C7Cpq28IxhC+YYmy5pnN87F2Mo30JbrimR0DOm0luW+2BYFa2
++RuodKwVz19AxuQNuk7ZM5bijIK6Lm5Il55yPBvG+s3qt3tyk0Y5HrEkcxaZw0Cu
+kVa9sM9IQvp+Wkxu/qIeNBT7I/3Q5ju1aqLXjpqNgbrggFhKq1yxlGP+tE/pqmOt
+4Oee7WW3LtI7zMQy1aze5XxM/Iwy2UAwk7OQhVr8hkMtBP82lk9KqUln0izr5iDR
+3qs7EskEnNWjTIsGuwh5Pf4BlZpWnm9EqLlIpbH/1m0DxU8XeXlTz37c0w6ruOcX
+3R9+c53l/rSc+tm/c/iqH0Zed8GDOl++JsvtH8hke9L7AjNYfjqdnQVabhPAI8gU
+8c93WapnY7uzSfvXfZ7/SpPC0tI9EOKV7ScLTcj/8ZcNLZiS6uB+6FNnH9geVhTM
+Ri8eo0acpWe9niNRv5Kx5azUtAfRJz2SRihurIpXK0sROuTSzpM=
+=gWQS
 -----END PGP SIGNATURE-----
 -->

@@ -17,9 +17,9 @@ O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que envie
 Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
 Zend_Services_Flickr.
 Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/atualizacao-no-site/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Atualizacao No Site</h1><div><div><p><small><time>May 9, 2008</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Atualizacao No Site</h1><div><div><p><small><time>May 9, 2008</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.</p><p>O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.</p><p>Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
 <strong>Zend_Services_Flickr</strong>.</p><p>Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:</p><p>Controller:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span>$flickr <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Zend_Service_Flickr</span>(<span style=color:#a6e22e>’MINHA_CHAVE_DO_FLICKR</span>;
@@ -31,18 +31,18 @@ Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/atualizacao-no-site/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIyBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9xgACgkQbV8aePHc
-Nh3oyA/4qjFXcVwYMzRv7G+gCYugqHIOuxo3PF8qf30zGZLLv2s1zPRrmWXu7jzu
-tGj4uz4LH+Xwka8J7pTIWyjJzg6YcYx6aXEYwN3xI8D15Fe9Lv5XM9p37LgGK1Er
-B59wTlAb3fshJvbc5wxSj82oBpIMYpBhSktqXfuszrYZa3v9Oa0PqOP3QWeWYM8i
-LmcgQARbXyL/6bqBQTe8tOUixpdaG7LxA3pZ7+TlYcSTKrR19pLc88dBJGAx3oxR
-GD751yAcCCG14Rh1NzfKn4NdACJApf2yonxK7W0IcLpAAkH2lS1WbMdV5173Rugq
-7jBpY1cLyop8QY2j2YbrJU/0s8EMVj4eXX0PCE/IfjXiCCVdstW7nsW5pM/YePai
-oxW4Q9i8E4vtXEKocgQOJcBYA5c+7MuuC1bNoQWeklsu/SP+VZ11+QEOCPEiYS3p
-pyOXRBwQUuhLvtPUJLlSpf2nV61XICrsScZZQp2GxXLhRGzl0ONURcBLdAb89b1q
-1dzixxQjS7LsmdkfC44Bo8XGEwMi9UNxQNamoRtnfcQ64AZdJ3zM9L6g793ygZkP
-JpkD52Oi+08Kgd6HibTsBvZQNdOvlCvfx8tpsvutor+xX0nx/kdmpsVhsz3tUJA8
-l0YPCj27pLYtdt1MO7Vs1HUA31QE3u6egCo6xfibkKptv+zaig==
-=3xj4
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqny8ACgkQbV8aePHc
+Nh16ghAAsDMlfC6bCAlkDLsWZqxG8ch9I7IEglRML76M7t8Jo67sh/DFuaamHto4
+72Kba32qRhpw1RqHcJZVA2AxDjLTnL7J2ESS9HGJJ5jS+mWkcP6qnZLtMX4N/1gI
+PFcqJGw0TTVy6jVQIAz1EiNiPmCwG3mDQjBOJwJ700HXSgfXZxM4Hz9yWmzPF/8W
+rS5LWLlmzg9MgYe1wG53rGBM02F75QU4EMg/Pu3jga6CkyujhH4MKS+vZY7D+mEQ
+8/EBCarv85Be8Sr09TdlZeQzcayCn4mV1l99jEjI2vRBs34oV0OsuK8sJ+NK/eNV
+N2ePw97v2apdUW9IE1g0gxVH10vtvVEgOG3rdRFeh+lOiDKJA8aHNaqxY86Q00Xh
+5i33In+ViASmXwI9uJG+uIplYk4K0i1tJYnX02H6TIEBsJtfv/YRT9aSNj8krwuY
+RbdEagyu3jM2p5ZEN5xf8B9AgSuX8MAqJeGfeaLyx48MNxCTvbeg+bL8Ij1r5gsE
+U/K3JuYYABFwRgJpHQjoKEYZaA8WZOom6hk6Zsz37dfk9z28mahR++nikq11kAr5
+B8Y96dk7lod2Cw/WqSoaUAmApiDoIPK1HzEEIEVxntqJCsc91KBa/NSWyvrGgYJw
+pLIGT+QPjS/ykCAJ61QfyaRPVFKyeOoGjBashdf7sL1C6fQQ9ig=
+=ev9J
 -----END PGP SIGNATURE-----
 -->

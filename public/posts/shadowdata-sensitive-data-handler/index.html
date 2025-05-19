@@ -8,9 +8,9 @@ Therefore, I decided to create a Python library that can help me deal with scena
 Therefore, I decided to create a Python library that can help me deal with scenarios where it is necessary to process data to prevent any individual from being identified if the information is accessed. The library also handles data transformations, encryption, and the detection of sensitive personal data."><meta name=twitter:image content="/images/default-og-image.png"><title>Shadowdata Sensitive Data Handler Python Library</title>
 <meta name=description content="I am deeply concerned about how to handle sensitive data in the projects I work on. Nowadays, there are laws in various countries addressing this issue, and the topic becomes increasingly important as time goes on.
 Therefore, I decided to create a Python library that can help me deal with scenarios where it is necessary to process data to prevent any individual from being identified if the information is accessed. The library also handles data transformations, encryption, and the detection of sensitive personal data."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Shadowdata Sensitive Data Handler Python Library</h1><div><div><p><small><time>October 12, 2024</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Shadowdata Sensitive Data Handler Python Library</h1><div><div><p><small><time>October 12, 2024</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>I am deeply concerned about how to handle sensitive data in the projects I work on. Nowadays, there are laws in various countries addressing this issue, and the topic becomes increasingly important as time goes on.</p><p>Therefore, I decided to create a Python library that can help me deal with scenarios where it is necessary to process data to prevent any individual from being identified if the information is accessed. The library also handles data transformations, encryption, and the detection of sensitive personal data.</p><p>Today, I released the first minimally usable version. There’s still a lot of work ahead, but the project is already taking shape.</p><p>Currently, it can:</p><ul><li>Anonymize Brazilian personal data (CPF, CNPJ)</li><li>Anonymize U.S. Social Security Numbers (SSN)</li><li>Anonymize emails addresses</li><li>Anonymize phone numbers</li><li>Anonymize IPv4 and transform text more easily through substitutions</li><li>Detect Sensitive Personal Information (PII) using a Natural Language Processing (NLP) tool</li></ul><p>In the coming days, I will add a few more basic features and continue to update the project regularly.</p><p>If you’re interested in checking out the tool, it can be found on <a href=https://github.com/adlermedrado/ShadowData>Github</a>. I’d be delighted to receive feedback and suggestions, and of course, code contributions are welcome.</p><p>That’s all for now.</p><p>See you soon.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/privacy-5-initial-steps/>&#8592; Introduction to Internet Privacy: Five Essential First Steps</a>
 |
@@ -19,18 +19,18 @@ Therefore, I decided to create a Python library that can help me deal with scena
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9yMACgkQbV8aePHc
-Nh0AXg//Rt0cI7z8l+YoQ9AIdNk1KHU+ANSS51M5NqwP3LNLOqZicRCf5o/EesM3
-F21lgm6MRdeJ5qnMHvMP4scbVN8ilPkAk6W0xgYxMSLeSJmChGuCRAZxOwcaZGoS
-iAIeH2rTkicbN3kjHKeC2PNeJSYlrnncSzsaEyZl5lKSMOiYplXORcoAQDR7gtxB
-Sp44UwIkb64nE7gChiuvfPJ53jqtKSk5E/VfMKRslsnKjemjYFb/QcyNA88lr+Nh
-3NfXWYujsv55ogMBsHG5yTM5XIMUimP1vYIf0FiiTIjYGgsu+ajiCHtipY2pDyit
-0LGwxOBQv4yHRsm+4js50XBhH/rU0B85QR4e3iksFLL4EewFWDtc7ArbknJdpqYv
-pMp/k1bkPQabJw4owEibF7+Rp1exIbedTnx+T/AyklvAJEWDgCgqndKxJpGTV/QN
-y4fUm/kwamfpYknrXmoaPtF5IdT7weMfREwDDF6o3MaS4qIf0hqgul8phQpM8Zby
-SIqTW+yO5J4ijfigwJ0V5ZOI54eXXMXQZHRY10ejbG4A6XOdm3Hq6rvAhKt1ymJI
-dcqb8FfuedpEBBn/uJd9cYnV+mLm/mYkoGA6v8euF8cKyT4KzlYuelfeIPBOn4e4
-X728PC9Ci6L42Kh66Z5OkHnssoG+v3L9nmI+VMEuZEQMTCSE5aY=
-=ANLu
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzoACgkQbV8aePHc
+Nh0JIA//Y8izqljhxjk7qkbbpFekb4Y1/GUWJ+Sz2ifs3Q7LtlkXj5NjwVNfmkQx
+k9DcIEecwQ+jkStCqw5ZAoqVQ0UUszaVPueJvDseFJjoOrCBNKNMtov3jnJUbOFj
+ky8wMiPuIDaue/Oa7ytas10ocM2i6iqHCO6jfAgVpJBMI1PAVeLG93Ei4/+iSsud
+yNpHbfutkXEXuS2BJjv/4PBVzh+hACKyvwXU48RR7w+uPVKdFd1Dzu0fEIPAx5an
+gff/TEhLty3xBPQrRFrV1CMAoeRFmDPHfjcCDjHPQ/5FI89arjl7lxCOcKoCeG+F
+HULHA4Aez+qvG6wzdIg54DNs9A80XrtKaySHj4JgeYVpg4GLUnoO7W/YfASjrzaH
+iZQWF3T5Q+WVqz7q5a2MiF7f573AdCyBH+Z+vzl5g9FpeQFOg+6z7SK0plfrqRNA
+eCYDdvnTHI7eVBF8mgIcy6v4zEyPFNlyW1EdfwDg8HN4W9Xg8cZpMt5FK+Wwwmu4
+mV4F+sE1mDi7M4XL6UXJ+brMUc3Kpsh0lPkV0ueSskJVDu0Ij6MzpRylVB/m7wEd
+OhsBL+AWjbNbJ34suncNEp+KyrBQDjEwujHXVUzxxTfk8DMApLFuDQ2ie70j6IbF
+IfoQUkmG4dxVjreI822lIxyHVsCjqz9QBPogemkVztD13wnsauY=
+=N732
 -----END PGP SIGNATURE-----
 -->

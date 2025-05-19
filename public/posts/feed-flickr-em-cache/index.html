@@ -17,9 +17,9 @@ dias meu server no dreamhost está um pouco lento e justamente no consumo dos fe
 minha página no Flickr o meu site tem tipo um comportamento um pouco lento. É lógico que não é culpa exclusiva do
 consumo de feed e do REST do Flickr, porém, para melhorar um pouco eu usei o componente Zend_Cache do ZF para colocar
 estes dois objetos em cache."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/feed-flickr-em-cache/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Feed e Flickr em cache</h1><div><div><p><small><time>May 10, 2008</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Feed e Flickr em cache</h1><div><div><p><small><time>May 10, 2008</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Quem está me acompanhando no twitter e tem lido meus últimos posts, sabe que criei um site e etc, porém, nos últimos
 dias meu server no dreamhost está um pouco lento e justamente no consumo dos feeds do meu blog e na requisição REST para
@@ -53,18 +53,18 @@ então a melhora na performance poderia ser ainda melhor.</p><p>Um exemplo de co
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/feed-flickr-em-cache/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9xgACgkQbV8aePHc
-Nh3tFxAAiDYuV2sGdmgc8vhpU/IxJkjFHO7Svo5DWMNHzl0d3HUHjHl/1B1c4q5K
-qUmT3YTpRihu8I6sa+fCpUbcyYezhlJrhOAsLoJTZ1Y6Xsh3M2plAhLArL2CTa9F
-oosuJb1b90wI2CK+AKMd1fkNRH1TpvkUexoJ0hcM9u3VAuR8d9TpRfVH54v1y1/M
-jy0qYeNj75v2n4P8IYcJJ+Huol6DRIcwVKx7gNGMo5u1QNuN57xtJTlPVgotQQOI
-U9IxaqfNLWx0s5lUgDS2gMu+ZLrri9JQZtmcfgCOxbinop0blL+38emEJ0kjGbkw
-7dlBW4zr9l32GnsWLWTv5NrNG6025CzhjmSZQXgcUV72dedjvT7XXFjz0tiUem0y
-1fQ4xmA5n+9K7eyQuiPrsZ086S0Ee6zwfiiegsS2Lh7Ra+5ISOfnlX4pKQw1Pmm3
-C9L1K66dX21th8A9Tp5yCp0D9vUWKiT51LVbqC7BwLf4S9ZudXwvy1X7PfKbf9h/
-nHFlKFoyBJtadrAA7/HMLrGLSTGraMFNCEZqjWZ97c/irkzfRg+eYny1JAxZttu6
-RMyWZd4C4s6uVx3U33+wOr1AhTB107ZSjJRlaDeqIOuWCMXyUswbB5H4y/kKeJ3E
-4s8+NCxWJ0nrnb/EGBjHczLZyszXXT1haw5CgJIo/7tXmC9IcE0=
-=tIdN
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzAACgkQbV8aePHc
+Nh2J9Q//V9Vgafs5MQxTmfztIUoyQKNcSufDXojZwBa3v69ZN3R/+wGjqy21oiRU
+mFkzwQJnxYNy1a27FaNPvsVakP+wiAEnmA59CPU8CGqL4NIXW7GlAFvWIskFu3kn
+c94mSQgZnNIo2+ke6xdZE1eX0qw18NA1drcMUzB+EjLSzrzwVypAcp5TLXVgQz66
+Y3wDprlOkDCPaNvUHGgrXIPP7Rtc6wGq8zsDm/qCEwMWq1MJbpILpEtGDKaectl0
+zPBHz+HMkQ6p1k4FgCwMgKLOkwXP/Fm3yRHUXYoii6sE4tkUf+o5giLT5ShHPnPL
+PJkgOB9MnGyYaD3fJB6y33Tuefjf7EcPfkPFZsURyEDO3yAlQpyccPqOHoZWQ4gJ
+Nhb/awfeEibSDeq248aave+QPQFE6d7fDAXftFLz6DGOHblApSaReK3XK/mhkrOr
+T6jOFZxcBw0N/179FD/tDTN/or54HNIvIiVe2wW5ZJoqWu9ciOCiq4NnHPLxC4kB
+hkbthJHsWcf53+AuTTM8fGIQ1yjV3X5Gujqb57qPYyGKXhOjbnRsAM8OO8aYrxmv
+Qp1tUA3Fq2ipJIs1l4sBwU77g8AaS+zYEmdfrgJUvBkcfbQ2To9g1bKUmWpJt9Ml
+n5RsSalQuzbNI4Od+GYRZ4m9Rl7oFjzk9u0qDT0Zzk9Dt8VZSHY=
+=pnye
 -----END PGP SIGNATURE-----
 -->

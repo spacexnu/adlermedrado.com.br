@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="missives">
+  <h1 class="text-4xl font-bold mb-4">Missives</h1>
+  <p class="text-gray-600 mb-6 italic">Short notes, rants, tips, scattered thoughts..</p>
+
+  {{ $paginator := .Paginate (where .Pages "Type" "missives") }}
+  {{ range $paginator.Pages }}
+  <article class="mb-10">
+    <h2 class="text-2xl font-semibold mb-1">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+    <p class="text-sm text-gray-500">{{ .Date.Format "02 Jan 2006" }}</p>
+    <p>{{ .Summary }}</p>
+  </article>
+  {{ end }}
+
+  <nav class="pagination" style="display: flex; justify-content: center; gap: 20px; margin-top: 40px;">
+    {{ if $paginator.HasPrev }}
+    <a class="button" href="{{ $paginator.Prev.URL }}">← Página anterior</a>
+    {{ end }}
+    {{ if $paginator.HasNext }}
+    <a class="button" href="{{ $paginator.Next.URL }}">Próxima página →</a>
+    {{ end }}
+  </nav>
+
+</section>
+{{ end }}

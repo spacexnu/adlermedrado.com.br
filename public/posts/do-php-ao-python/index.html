@@ -32,9 +32,9 @@ descrita neste post
 do osantana.
 Era um desafio pois a equipe estava bem restrita, a plataforma era monolítica e de difícil manutenção, somado a isso o
 negócio do Olist em si não é algo trivial."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/do-php-ao-python/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Do PHP ao Python</h1><div><div><p><small><time>June 9, 2017</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Do PHP ao Python</h1><div><div><p><small><time>June 9, 2017</time>
 |
 11 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Um pouco da minha experiência na transição de PHP para Python</p><p><img src=/posts/images/1*wlukTN8cgk7n2rJTOKlOkw.jpeg alt></p><p>Eu e o Elephant na PHP Conference Brasil 2012</p><h3 id=introdução>Introdução</h3><p>Em Dezembro de 2015 eu fui convidado a trabalhar no Olist e eu comecei a trabalhar efetivamente em Janeiro de 2016.
 A situação naquela época está mais ou menos
@@ -125,18 +125,18 @@ para mim, é um privilégio enorme.</p><p>Quando comecei trabalhar no Olist eu e
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/do-php-ao-python/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9ygACgkQbV8aePHc
-Nh0n9A//dumO7FiZ7eSEQ9laFa6dx4XVWubxmxtvMj1k6YsbxoEx8QPFZD0n4PnU
-e+rP3GtLGGkPJabTHIHiKg65ne4OEv7Ql2mbA6dPsZAUcqBeaGUbJPkOkTMP+igH
-WjogqeucBomVys/tqmuPDRSKfSYfY0FlUmaZc3rmRZpV2UCNBFTwtCga2+5xyQwT
-J0CciuMC8h8Xq59W6lYk666RAnRBA+rpb7ACdaC09nKpniDzvOYnFBuN2PI7N7Yc
-uME7NJR9WhUpij8aA08tJ0dZfYksnz5hOOjTZz4wcqFYJvkECQe2GtgyYPLCGAjp
-S7b6tY54YjR09pAMgCKKwn2Pyb2KvPd/jytJwVV7r5WCOm+ejaa6BHW9P+4o4aes
-PjRl2etiFa0imgWTyt3kjXsAm9dYzfhmQ5AAt5PQ4sfyunIpCKcb8z7NsVx/AHDi
-s7pG52yZyQxGzz47MDO/xggJmyVoBZp6hq6BoGY12tPOrishw/3xr2dWaQShImZU
-9ngTmF5AF0EZQdRlZkVcw8N9RNYXep0XF/cO6HXATcU8FIviP0gIIcJ/yidGDvMq
-72GoIebQIryYmpmhJ5/WCiDdNMLMZFDpKDGNy3nxj9nJLafqpHXVmRGLSXI7mqpy
-Qmy+vmBOXNobpRCE9c8UY26MnOW0paydim0YW3k+WmSJoPQw+pI=
-=fQVo
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnz8ACgkQbV8aePHc
+Nh3e8g/+IRZ4mfrJD9iGpjm2dHbUGIBgfi1WKYBCzADI7ZlEg5oyecbaOlnRWq7U
+1okjzkAk5/Yf6gNYKSVX2fuZEkO7gZAz343JAXFdIu3/pDca6aM+9QQJN4GliWhZ
+Eg5gq3zrqme5bGXcBZQXyqrM3kLS2V3KqDe3PhAuQW/hlls522tXYd+u4FaUXjTJ
+X9IUMdOxLnLGxc2RCiOHoWv3KPMuWKkVyGHiRkrcKKvuGxRJDA80hEAs+FPcy10l
+6hc247c4obLYu/aIASDvL+6JO2XMnVyy3duSb7Klz409THyCi/4O/vtfJ1lExXhO
+GjiGJ+FAH7+p86/9aMbKWe54mfKPZ8he07N6hklxxAMztae0DzEUta9Ung1TYb7M
+5EzN0jy5PR8AzlUhbCfhRj9N2+cC537WoLrm1drnXmUz5rA/sClmeD2c8GEdAR6+
+fPkKpAZfnAp5ViQMcESJmX7g/0VR9IiZLchrZnNbgO3q5nsBt2+Yg+t+DjdXg6zR
+Qp5T07/H1ablY2Tms/DqXTQjiYJKwjD1zM+aaDFUU24P4RwVZWLn52N6m5aNrGDm
+oV3bYR1ojITr0U+2z6Yq/8WAmMgGew+p5GN5L3bXEGlrnoekv2RmkvMya+C7CenW
+PdNp5qUa5KKQiuyiKVGCFmubO9JBegtPvSZ+E9LDZmTbRMWwbOg=
+=mRMd
 -----END PGP SIGNATURE-----
 -->

@@ -26,9 +26,9 @@ Com o código acima, todas as classes incluindo as que utilizassem a estrutura d
 pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está
 deprecated e com isso algumas mudanças são necessárias para que seu código continue funcionando em versões futuras e não
 receba um notice nas versões atuais."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/mudancas-no-zend-loader/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Mudanças no Zend_Loader</h1><div><div><p><small><time>May 28, 2009</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Mudanças no Zend_Loader</h1><div><div><p><small><time>May 28, 2009</time>
 |
 3 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
 autoload.</p><p>Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span><span style=color:#a6e22e>Zend_Loader</span><span style=color:#f92672>::</span><span style=color:#a6e22e>registerAutoload</span>();
@@ -60,18 +60,18 @@ locais diferentes do bootstrapper como por exemplo num controller.</p><p>Espero 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/mudancas-no-zend-loader/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9yIACgkQbV8aePHc
-Nh15gw/+LM4WewK6ohOKdapRkrvsI6rZ027rBrinb5a+U/FDDlVxNnZxVzOfC9Tm
-Y5QhZFL9b3zF1XETjMe4aM9m31KHl29ld8sz/T0hV1X46bV9Bpdd72CDyr6IOu9V
-idydVduVf9iAuTfl9CKJNetgAsLUXH3+5qay5qac8wlFXEXFNR9yCgdJNN/IgQam
-WPs6cXiyjSW5/5X9F8avt2B+6Dtm0gikY+D4vx6qZXIneKieBMOwVfW2a5WEW3CH
-loRo/T1w7QW7WW34I80JqYe1hExcNpUD7qbBjmimlI/X7DBpVvzt54mHpyFkxGAQ
-KkKE8eUHl185kwE1wasqinoYdVnUm/BPGB162YeVT+bH/x2z5FWTRamHbVQVnNk6
-DBoUwV9YKtluKZU04K/uZ6XsPI35oh6W9dpYqr02kNyY+hMreFrJO3YZ+JCflqAD
-0LzWwbQiBlU7CVNeJkPFdcz1b1xv2OchHfbQJWZjvYVnC7RLJftgt+ulm78P8Dpi
-TFVHeK/+zzLC4Zz1LtS0tB7N91iunXY6OG9kx92TsO0zeQbpyFH8suc5SZZSwdoq
-EsfXTeNMfu7Pi5cOWZihAQpfQ6sPLoBiPZLzqTlGU5HtlN7dNFrIvRLA+Ue15OQh
-MJhbYl3hzsUS2j4VFm+oenoJSJSzuMnoUSd29/I2Rv4h9sICWQs=
-=TqQg
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzoACgkQbV8aePHc
+Nh3b+BAAjzyeFZGQWG66rhtR3Ytp7OJZWb/b3ZAIZIn9qYFF9j9zf+NLfznPpqRA
+v58EO12nupkNxa2v2d4RE1iFrjlriyKl4KEuYJnRvcIm9YPzSGVx+Pk9Rm26ivCY
+GYsknB9p3E3N5qgfflzOT1Iw4+Vj/63qpYBDSeB9Qdx3BSnOU8/azGSm/AKjUduN
+gnvL1x5IFSTo4F3YObM/EpHybXii61rsOBUXBcrTpHkvCBzNy99RUxiI5fJIYQXn
+WjTvZVog1/WyE0s6uUdUGmJeS1JEw/rQwmCCbn+kih3vp7Y2e+3UZs4uucIjIF4I
+terAq7yJFlptHc9a6CvoCKBoTYgUuZCFwaR8Ww5YReRKwxqu7eWRjyYBp9FuZGXN
+H+3GvQAWxNxWB1S4Uzz8uI0XQN/Y2oRQMygoZCJvBYcT/TIhjarG3j+qGRV8xSt4
+hciYkOLQnVeXmZUaEoxO8ElAyl+ocD5nWHZOw8wyX3tHoMn5eEmkcSHXAjq24gAS
+DUyDCVrZNE4E6mqc4korbeU4upu8Bu6umQdzJmWMsFCMOJhEV7tw4sm8XPEMas5q
+CA/zjgTWrhrsXLZ3obUp7n5ny5a00Hpuj9M6avsEavQLoU/sGCB5462+hSCJaIGz
+9RytG8auuZUjZ/2Cj9Hv9fhonwzMZ/xmWRJ3ZNca6kSPBte+DCo=
+=dtPN
 -----END PGP SIGNATURE-----
 -->

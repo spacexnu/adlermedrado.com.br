@@ -8,9 +8,9 @@ I put this guide together because I wanted LLMs running locally, even with limit
 I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta name=twitter:image content="/images/default-og-image.png"><title>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</title>
 <meta name=description content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
 I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</h1><div><div><p><small><time>April 21, 2025</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</h1><div><div><p><small><time>April 21, 2025</time>
 |
 3 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.</p><p>I put this guide together because I wanted <strong>LLMs running locally</strong>, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes.</p><h2 id=-ollama-vs-lm-studio-vs-llamacpp--real-talk>📊 Ollama vs LM Studio vs llama.cpp — Real Talk</h2><table><thead><tr><th>Feature</th><th><strong>Ollama</strong></th><th><strong>LM Studio</strong></th><th><strong>llama.cpp</strong></th></tr></thead><tbody><tr><td><strong>Interface</strong></td><td>CLI + API</td><td>GUI (Electron)</td><td>Pure CLI</td></tr><tr><td><strong>Open Source</strong></td><td>Yes (MIT, server included)</td><td>Nope</td><td>Yes (MIT)</td></tr><tr><td><strong>Quantization</strong></td><td>GGUF via llama.cpp</td><td>GGUF via llama.cpp</td><td>Native GGUF</td></tr><tr><td><strong>Model Install</strong></td><td>One-liner (<code>ollama run</code>)</td><td>Manual (GUI)</td><td>Manual (CLI/scripts)</td></tr><tr><td><strong>Modelfile Support</strong></td><td>Yes (customizable)</td><td>No</td><td>Yes (limited)</td></tr><tr><td><strong>Customization</strong></td><td>Medium</td><td>Basic</td><td>Full control</td></tr><tr><td><strong>Offline</strong></td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td><strong>Local API</strong></td><td>Yes (port 11434)</td><td>Yes (via server)</td><td>Yes (via <code>server</code> binary)</td></tr><tr><td><strong>RAM Usage (idle)</strong></td><td>~1GB</td><td>~2GB</td><td>~100MB</td></tr><tr><td><strong>Complexity</strong></td><td>Low</td><td>Baby mode</td><td>Medium to high</td></tr><tr><td><strong>Prod Ready</strong></td><td>Yes (with tuning)</td><td>No</td><td>Absolutely</td></tr></tbody></table><h2 id=-why-run-it-local>🚀 Why Run It Local?</h2><p>Here’s why you should stop relying on the cloud when it comes to LLMs:</p><ul><li>🔐 <strong>Privacy</strong> — No data leaves your machine. Period.</li><li>⚡ <strong>Low latency</strong> — Local means instant, no round trips.</li><li>💸 <strong>Free</strong> — No monthly API bloodsucking.</li><li>🛠️ <strong>Customizable</strong> — Tweak it all, from tokens to system prompts.</li><li>🔌 <strong>Offline</strong> — No signal? No problem.</li></ul><p>GGUF quantized models are a game changer. You can run 7B models without melting your Mac. It’s not just viable — it’s smooth.</p><h2 id=-setting-up-llamacpp-on-macos-the-fast-way>🔧 Setting Up llama.cpp on macOS (The Fast Way)</h2><h3 id=what-you-need>What you need:</h3><ul><li>macOS 12.6+ (Apple Silicon strongly recommended)</li><li><a href=https://brew.sh/>Homebrew</a></li><li>Xcode Command Line Tools:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>xcode-select --install
 </span></span></code></pre></div></li><li>CMake:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>brew install cmake
@@ -31,18 +31,18 @@ Add voice. Add vision. Build like it’s 1999 again — but with 2025 firepower.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9yUACgkQbV8aePHc
-Nh0ikhAAmG447Kennz+t8DMfG+NQLJn59fGIB6ogLJlHbebUIcEw5v+tyCbgUDat
-IYLWoyymrVxh7qlOau/lpiBWD+CpqHE3bOyDEnht8hPu5edUlurp7UMAvkeAgceH
-QNkUYXJbPKdohGnjux3qfz+1Da4lmMt5TYazNFI+oCKf8mkyXT9tzkWAhtLrEsM/
-Z1aY/3A0rkUuAmJg376rBTgzg712hnYH43pasC4dqvJheF7ozqQogBU+nxgMyo9O
-UTVmL/ZNjuQ/Q1RChXZRfxGfmaMTTGtICHU2BHtApgaQf3qNgVbUwi29fKQQEyzH
-GZLAMmOZi+/cU1SBb3XDRA+z+Xu/wsbt3DprLScYF1pBDSxTNUV6D782cXoh9gcq
-ZILqORGllZrJ1A7oRYcyAhdX9Wjseqv9VjC2NjMSYbI2dlc/MHc2hJJQDjoZ38PM
-F4CMhqbeJL8smlJLO/lGI1aQT0FOqsLh0zyaZcCuHocSTmKL4zzVClH5rDfO4U/2
-Pjeq8QP+OR1kyjnlRBpE6BWWUFUUNjHbEevQgbRTF+ObMk0nPtABVnO3sWrNak4w
-oQ3+wxOaNnp/N2y1fto55QFaM4T9NpAnaFusCuOl9q2o0qJ1f8jkDj3aFnMPvstx
-WwdEnh6j+Z/Gcgpd+osnlXRCvK85tGltOM5xv0TqUqozDeb7hzM=
-=mAEL
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzsACgkQbV8aePHc
+Nh1B3Q/6AqOowRA+m7W/dBMewJvQxNgazlgqOv/QdcbS5N+swdpVH5zxU7vpLbiu
+xVvRaypVn51rkv2a8q1+IBeAuN3L7eapjVeZ5kAqk6iQIeA6PQmjrB8/q2ztXJvP
+zvUy2NY9KLe8pkRrUMMwA4HX7YLwJJ6QhxpKJLb0tZh9U/NyLKSqbp8qCkTa2jNb
+CtdcD2yEllJ2rYg7i90IW3J00WesnlNtaYUNlf2YlFrn7lSwaSXV6FuCIGRNTgol
+Yt7e+mJeEIjL/QCXBlzNpYQ0zEQ7K2nxejZ5G/TxomClawjCtTvT34Bc+dZAuPgC
+YvpXacWeJbsS6/Sf/jdVotorhhfJr4DU21hHkMkO3/Acjx/ctdkuJPHi6j7AYZYp
+rvtRdLAjg3j2LqalBDWz7paAUKsLr+3sT/7SwFL6NRy5VpdbStEl3sj5qwZ1rYaZ
+7/9XC7mPtnqivgMvJn3AFb/22W0aHPHQ+OV468B0p99pvdiy4Kkj4d1MCO5R+4tz
+M7SEIJ8Q1/08ommynjJ+EEq2n/Jzx6z1KjVMiWoYGhKkL0PL68/ubXfDNGz0fiIZ
+Kxq7OFxhfUqT/wrLVrfok+F5inZWrD6NrqaCqXl4ZuQyNDrYncaSvmxtwecqMAZZ
+yPapu2ysFdznuKmVfyFkLl4ik99wkSPid7VP84uoa2KDNWwAQkw=
+=gqr+
 -----END PGP SIGNATURE-----
 -->

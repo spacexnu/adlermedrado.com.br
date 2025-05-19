@@ -23,9 +23,9 @@ O Zend_Form é um componente que permite que formulários sejam criados e mantid
 e mantendo um padrão de desenvolvimento. É possível também com o Zend_Form, a implementação de formulários com
 herança, ou seja, você tem um formulário genérico (ex: UsuarioForm) que pode ser utilizado para criação de outros (ex:
 UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Zend_Form: Um simples tutorial</h1><div><div><p><small><time>September 14, 2008</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Zend_Form: Um simples tutorial</h1><div><div><p><small><time>September 14, 2008</time>
 |
 6 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Introdução</p><p>Depois de algum tempo sem escrever algo sobre o Zend Framework, venho hoje mostrar rapidamente um exemplo de como usar
 o <code>Zend_Form</code> e de quebra vou mostrar o <code>Zend_Translator</code>, que pode ser usado em internacionalização.</p><p>O <code>Zend_Form</code> é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade
@@ -165,18 +165,18 @@ $this-&gt;setTranslator($translate);
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9xkACgkQbV8aePHc
-Nh0kBBAAqPGiCe+pe1Tvz+w/BcJcfM77y8KNJs3R2F4S7DEJjPLbCkLIROh5Ead9
-beXN5AdcCvu8V/cDWndxgLMoQbCieldCVORS4NkOb8zqK7Ehqttt9DhPPwkV67ZL
-2OOsg61Fmvm/2AQqdpVkQ0iKbU3BSvvAkyxWwru62E+fcfWjQ4JjFQtg3+vU5ep/
-LwKvh5tcLyMdu8Dk8s+A3Yav/bipGKVYJQT2xI64FxwtIkypughp9qqu9pC3HP6E
-t/sGJNaZ3K3SkdoYPxchPGdDNeTD5CPdu9USi+BFQH3OhOVn+GU/Foclr0SoTZN6
-pHiefzyMsVLenDyRC9K0CXWU/vcDN1egkWyHwux01x3Lnn8Wr7JdIeymRxqBwcJG
-F/4KDL2BM5XnijtVHFpD3cM4Hj3agWeam4yHWmU3+RedOykGyCtL4qfALq6RPTdz
-jAPp2Hvt4vT7NAU/07HRwOCYJG106YM77ommNWJ9ZdHEvcFlDO2N0CgzE/UZ4QSM
-dkrYH3PjXJ/lfJrSJxBzOJribUwo+kxBkaUdTtk1xSOgS99e7qi4ST/ha4V+Au/1
-1lNJVQhOsfWEy6LerB29gXWOSGmO83sAbm1yKr0g0+bCPo3i0nU/96zT/Vja90OX
-UaTGOsgDw0JdZ5TWo0cABjhKxBoRlQQlJf+o/fcSyRBticXx3pg=
-=iIlJ
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzAACgkQbV8aePHc
+Nh3RZBAAmetE5WvBTIYqaIWRIPlLcB2JppdRSdZnDBmCOWpWNJc+5FTe10OnDqwx
+piG+bAIxJbWnSV0CoQYAAhN3ZMuW5T9eiTG3xjSgkuFFw5zgqXKuFp8MNw8s1SfG
+aYEqxtxEyCFipHVd+kvBE2eEwd+rhFHre3XdIJNwMVtsacqvtpCbfGR3SaEKoGHB
+bRb762CT20OKwf7PE789kkm9c2FMR2nwNMtrWAR0PsiehshF7qLd8d0jKC8AyoHK
+ga4rgm7RchTmYzmMXKxu9bidZyWg6TyodBVHEBNyq9XYuCTveLycwwA+ktlrEmlM
+z82xwYiS5K6lMOSLxmGow5nSRGXpI0lWOFle67YvBwgx1Wl3gsxKaUIIQgberqsf
+Ybd8bkhelXZopEGG5btpt8UG9IzhZvlvMhnqkkDe1RTN9M8t/MEQxJgygfuwRlX8
+/dWVcZqh/V/IfuCsOXmk0RXW1aiU0oYZBkfE2qPIfwbqHtVwG3+6aZJjDzrIhHMV
+Z/V/EDGOsFcG/8Ftp4kOA51jJ3fRIQPi6FV6rFYa6y19QMCnCGhvy7IGxpR1NtzF
+tje05OgFU8QLC0/0tgPe6fe88fHu3SjI+/vTt4ICx1m2Z1EW4ugnJMz+gDYyvflN
+V8UkpksFeB3dgFvYRzRHCPoGk1/n7xthtaRg1udpsy+utIn5HqY=
+=t6yi
 -----END PGP SIGNATURE-----
 -->

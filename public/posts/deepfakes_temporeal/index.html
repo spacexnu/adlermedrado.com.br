@@ -14,9 +14,9 @@ E isso levanta a pergunta inevitável: como validamos a identidade num mundo ond
 Com apenas uma imagem estática, ele consegue simular o rosto de qualquer pessoa em tempo real, dentro de uma chamada de vídeo. Tudo isso rodando localmente. Sem nuvem. Sem limites.
 A consequência é direta: não dá mais pra confiar em uma chamada de vídeo.
 E isso levanta a pergunta inevitável: como validamos a identidade num mundo onde rostos podem ser forjados ao vivo?"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/deepfakes_temporeal/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Deepfakes em tempo real: e se "ver para crer" já não valer mais nada?</h1><div><div><p><small><time>May 10, 2025</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Deepfakes em tempo real: e se "ver para crer" já não valer mais nada?</h1><div><div><p><small><time>May 10, 2025</time>
 |
 1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Um projeto open-source chamado Deep-Live-Cam está chamando atenção no GitHub. E com razão.</p><p>Com apenas uma imagem estática, ele consegue simular o rosto de qualquer pessoa em tempo real, dentro de uma chamada de vídeo. Tudo isso rodando localmente. Sem nuvem. Sem limites.</p><p>A consequência é direta: não dá mais pra confiar em uma chamada de vídeo.</p><p>E isso levanta a pergunta inevitável: <strong>como validamos a identidade num mundo onde rostos podem ser forjados ao vivo?</strong></p><p>Enquanto muitos ainda reagem com susto, eu só vejo uma resposta possível: <strong>assinatura digital</strong>.</p><p>Há anos defendo que devemos <strong>criptografar tudo</strong>, e mais do que isso, <strong>usar a criptografia como forma de pensar, viver e se proteger.</strong> Agora, chegou a hora de ir além:</p><p><strong>Não basta criptografar. Precisamos assinar.</strong></p><p>Assinar para garantir autenticidade. Assinar para que mesmo que a imagem seja falsa, o conteúdo não possa ser validado sem a chave correta.</p><p>É o que já fazemos com e-mails, com código, com pacotes de software.
 <strong>Por que não fazemos o mesmo com vídeo, áudio, transmissões em tempo real?</strong></p><p>Eu mesmo assino todas as páginas HTML do <a href=https://adlermedrado.com.br>meu site</a> com minha chave GPG. Não por paranóia, mas por princípio.
@@ -27,18 +27,18 @@ Porque <strong>segurança real não depende de confiança — depende de verific
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/deepfakes_temporeal/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9xwACgkQbV8aePHc
-Nh3YTRAAqgmwsKUDddJXIjv1IQeDePPp52V0ikeAkqREEEXfKKAwWOG9v28V4IeJ
-YZqmJeENsE7hxWhKPFdIZizeafKYnvxYe83X42V+lFhlxi9tROdssGRGwkcww9KL
-+jrYyj5cLy2HGLIXiG7f9isSGFvex+0umaREXgREkQudIiQjSgNhIBR7C1JNr6QY
-83G94ee3QFnPIlZBCRt3/XdHTC5oubtaUuM3skLxY1cor45mn6Zf6/gHwV1U1w/R
-9fzBpFRxGS3HDHgW88sZvwBn27kBxxA/mIJz+U1/jtvz23WeJU2fVvxHrMUPaYG2
-catHx0MjQ38r4cDmVYF0GAZiYGMIn0A+ou7L6A6M7m9pYlhT1O9yFkZa+c3EzeBr
-/YAR5+eFc9Q8HM8SkXJEynRaKk6HlZiZe802DcEI1YyEqvP3n45/9MM4eFKrk3/U
-D9mL5fHlgOt2yL5ynPkIFGU01GHDFAW93MmPJFTX3h/8dZNfpcxLZcnWeExKmJgw
-pu7W51iv0+CUG4i+v2A+yzCMk9gDZDK7VrsaDyO9qmSqMChkUXVPDzIXgp4IayRp
-3uqutZ3kZZfIXQyw7S6/2pKCKPaM3Pxdfm5geaQ7vEiZo3tMC+gnVCcelUEJuVTh
-/HtILuiiR4MjzSFTlkFvaQrcxugKxCMpbz7N0j4yY3HlNNNaI94=
-=51Gu
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzQACgkQbV8aePHc
+Nh13vRAAiCZHqOdhTKG0lIgN91/K1wzyWY+J/Y5K+WfkMBIEt8xfFDDM359D1JmG
+dQhmrPm53mwupreIaUJQMoBXD2stA5TcTMMDv8aPLMsNha2fbTJ1QS/l3fklfzkE
+8BZKhoK+OaQ4NkdAn5o+ihpz+mPoPzOd4XrSv+SkzvL/nZPLaQJpvIlcq9cqZ0LD
+vKymvbTEwkptZenCGFOWk2F+o0FdrJU1wZEJzWgQ5Oz5zCG9LqY7KoLTjPhS/aDR
+5mLowNp96uW5kMwCGxv6ccYZGSMOGlqOskWkXuQXcU7d59p6dz23e9lQfJHj7GcQ
+YZudERQCR96tW21/c5xsbXHG/TK3wGSX9CbT+aiXCUKm+Zsw4TI5FyhYuJGJsGFh
+WINp6/Acho5GJLELoxt2hiGFkQuEcak4r41aehbvF8I8A0EyppmVALim4YQd4NJe
+bXy1j9uyA7p/HBY46Nr5AzGSDdmAokKDRfJJiddGSXez7oZ0XrScsfhlbnCSmFg4
+MFTZKXqgy3usCX5zBL9BNhqtZaQJq92E75AjjnZdW15Hikv7E3uTe6qEkbHTx/fg
+xCJEVGqoWBYAlp2UnT0HdkwdCaN0wo/4bfKKaw4Bmw3G9AiCA1qXAgMffoBwQBd2
+My+5ir5X13/AMtQyYxRdn3sxzY00oLAzTFaS508/XAu5vS1mxPk=
+=SUH9
 -----END PGP SIGNATURE-----
 -->

@@ -23,9 +23,9 @@ Introdução
 Neste capítulo eu mostrarei um pouco do Zend_Form e algumas coisas que são possíveis de implementar usando ele.
 O Zend_Form é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando
 precisamos filtrar e validar dados provenientes de formulários."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Zend Framework tutorial series capítulo 3</h1><div><div><p><small><time>May 22, 2010</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Zend Framework tutorial series capítulo 3</h1><div><div><p><small><time>May 22, 2010</time>
 |
 6 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia,
 vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em
@@ -143,18 +143,18 @@ Ah, os fontes encontram-se no github.</p><p>Abraço.</p></div></div></article><d
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-3/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9ykACgkQbV8aePHc
-Nh1tsRAAuoso0WNxrzKhp0kaiPc+y691nPQCxmHAKLwU6Iiin4ayIWkfiZbhkty2
-UGppLVgt5Kz3TSiVIoyrtvKbk8XTxgWSALlmkDjc5Mip8FTfWfVme/O/arMda/v/
-6U/VkEmUuXY7obqoNF1RKcmVWDyTNSzqCukdxn2HmosVEkxFXtguGCwNLh3M3BTB
-yx/1MPZiYRGK2TF1WZes04/Jxz8pLW/U3aoD31XmoBMG/umHCe+A8AK8opIIjQOP
-BTER2Uvptc04049GsASTmlwAnETntJuTed4PkwWE/fOWnpBWJ80V4eYEpuSshA8c
-yBwZ5b1tkikE7Hxwt9Qcs9zlzjFcz0hVPd80EPrOsFI95iVNSRnPXUex+NICXIRG
-ZAqSF8LSq1HqrWY435i2mmc3x7AwDMcSos9ggBbio7ZoHp3FnbJx/73AXerQItwQ
-U75FVrXUDO6VukgYnlVo57/jcX+sjBmiufq9js9bYeEZ7X6uE2qd6BT2LmMImpD6
-nnmoDct9BOXlqx+JalfNn1/ATAAtkFkaeY1AmOHQ8dNdaNRtnMd58fpDLiwmvDhF
-oXnEKAy/HS7WdpikuRfHzridITNJwPgP/efJF+LZYrV5luxt4zT5EzsYL60T0NSR
-my3BUhonPhlG2H1sgoNqt+Zj7kzdCzGiw1UVIN+lnMkzSYLARKs=
-=SZRC
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqn0AACgkQbV8aePHc
+Nh1/cg/+KKnxpIdjMVQn2z9LzrM++k1b/4yat1QvC84sIuHiN4VrgKj0jIiOt4xO
+7GRlCBv+mpaQGreR7RD3tNXPS0tdGJuJYle5/b9Bd/sk08aOcD4rAFBSGiullGYY
+pTxK72QA0ljYnOOq5PRGVET5KnLU2qqXrVr2a8YDBMUkxiAh/TtHo8KuId8i7/8T
+ciRId+zKYitSoSvYXl+PG4RJrXFvYtd7LZO2xnmBvKhhOoMGSeSXgx+A2hJNJ1Ih
+2gFdz873EDzxT8ZH/vDzlD+6fuic/mPpkgnKAdONhuq1u05KVCcXToEQbzatPhzZ
+wzW3RFLyrfjYGH2lSOBVqSBy9kxrHY9PTJ2LjpNNokvzr+y6Asd37fQZUjo3DEvH
+MABi+LKNeies8uAS0g8HyDkmOdZ9dHjFVdXFBFgt0H/KLXOTtDcEd5sgAVgaHjfn
+mdhH7OpBgb7I9vv7/yAgiEYM40slzAKzua4vwERS+6PqlP6erb1BzA4wNURK+iuh
+1oehwFMEH17mHzseWGdwLnP76JxarSbfc9/T3R9cvPM6669Qi2QnrZaz1Hf0VJPc
+gmb7hlt6DydRNAYg2nLwuAVPn9hKC5KXXGYiyRh/Q3/BDU3Of8hc6MwR8cZ2Kh1p
+RR4DXwDg188F6cCMjx/na1vBIWVWtWarG8a0v0YiKNw4PlZ5b8s=
+=IrNH
 -----END PGP SIGNATURE-----
 -->

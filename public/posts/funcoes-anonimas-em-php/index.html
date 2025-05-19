@@ -29,9 +29,9 @@ Minha idéia é de escrever posts curtos e direto ao ponto.
 As funções anônimas, também conhecidas como closures e lambda functions são funcionalidades que são definidas sem que
 elas possuam um nome que as identifica e normalmente são usadas para definirmos funções que não serão utilizadas em
 nenhum outro local, apenas naquele momento específico."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Funções anônimas em PHP</h1><div><div><p><small><time>September 26, 2010</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Funções anônimas em PHP</h1><div><div><p><small><time>September 26, 2010</time>
 |
 3 minutes read</small></p></div><span class=line_break></span></div><div class=content><h3 id=introdução>Introdução</h3><p>Não é novidade para ninguém que foram incluídos no PHP 5.3 alguns recursos novos que a tornam uma linguagem melhor e
 mais completa.</p><p>A novidade é que eu irei publicar aqui a partir deste post, exemplos de como escrever código PHP usando estas
@@ -108,18 +108,18 @@ sido útil para você.</p><p>Se você já usou este recurso em situações difer
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/funcoes-anonimas-em-php/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9xQACgkQbV8aePHc
-Nh36dQ/8C6RVN/qujcxsyXYuDFi4N5fAvJy0rRmOKBaLGQLqocT3EQ8H+jaZpymf
-hM0MY73yzyzbjtuea7xbub5CUBkf6f+IOeedrAl3+WpRPkXwHVzIGJ8Z1vFQrJmR
-hoss51MYi0QSFFgNvPUxIVgPKOfNrEXw21gJA7vkRR9iSRJJNTbsEpM0yJ/I8oWq
-O291HKkxTHMW0+cO2E64bdhSmq10yOQJ46S45mcJmBnXBUQcz3AbIfMiW5Swrv7A
-UFdW0sWrt9DTgZuDCO10FLkWuVYDQstBXDvU07F6pvLCUYQj0Hj9vW9tMfo+DNDT
-rwWiAgH7Bl/TemBMLybXUhoN5wJOp61uQ0QS/Uiq1bTACBqYsfL/RpEREVFr6wIQ
-ZBheTD+kf6jP3Pr6vhP3VYNPs8sYSor/RUYKClpNQ7AoYXzdAAxlE2Zz++XAqccP
-rVUco31h6zfAQXeWR24uMJhOKDa+PhjLf8vR341FwVq7j1i2wSYaitM5Z5guLafp
-REzfyRU0LDJU8ApIsnwqkRH3iBO3i5cX3dy3X52YTIdOUn9qbOBTdrnV3zF9tuiG
-oxVOyBbyg9izZWzpCzUHzF8Dt6CR8q9os2O3hSfwDo0Q2qkuqhf42pSmkm0nVpe8
-ts4zGFR0B8ykt/gvpbcYFXfWHTEzurnlcqZHgavvB+ypxGhmJLE=
-=Q7QD
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnysACgkQbV8aePHc
+Nh28/w/+MxXAwIM7JDauU0Nv/oXj1J7X/VtpxVybC6fDtdvlk1IdO5JkrU8dFgZo
+60KuvSL9edYYDYVUa5QV6p5YnwoTIEnDHIFlXC9zhbcRqhNr5uo6+QMojexOr/kO
+dE1OSZPMwtD+pvshcj+3BohgZaweMFGbrt9rhVgS/w7Vg0IIvaZqLKQZk3UTdiGt
+x/Z2/dbU9W+7XxRhDVexzfJcgjhHdDbZs67iTZbzL2k06tA4WdLp0OLMoxEd4jjK
+rz3PnUDfGKi4DMoKrrHtKL/exJodrEeD5MICG3HJPViV6y0YX8XiAsxhwoMaxwQG
+AweQcHgXlxfbt/+10SfUWEIbro4jA0ARbSuMl6loB0zu7ZBUtJKo1D/Yn3YtXD1u
+g/xhmeeILRwXw+DilTBjy3KE8ZuJQDQVscrtZgzcf7o8YgwhLFQ3JcQSSmQcLYcv
+oCoaDnrUrDiH+zcWIWGIuoUIdctdTJdefw3ZkBLSAiVPTo5K78IIuMoWBRuiT7gh
+TsMEd1ZI18Ca3U8lc9R1KMcctVUtq2mUodLtoGgstLzr6UpOkrTYFoV44DuEm8Ib
+VQtTQkwaCN0uzKUar62PlPXscOpSotdoFY/Epme9RuuN2sjrzk4youE8D7r7XjgU
+4WgB7Mpst0OHX48G0txRnN/FcEvtwHbvOZVM+CA2+DrWQb8zzU0=
+=C06j
 -----END PGP SIGNATURE-----
 -->

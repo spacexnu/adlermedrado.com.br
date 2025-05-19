@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="tag-posts">
+    <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
+    <p class="text-gray-600 mb-6">Posts tagged with <strong>{{ .Title }}</strong>.</p>
+
+    {{ range .Pages }}
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+        <p class="text-sm text-gray-500">{{ .Date.Format "02 Jan 2006" }}</p>
+        <p>{{ .Summary }}</p>
+    </article>
+    {{ end }}
+</section>
+{{ end }}

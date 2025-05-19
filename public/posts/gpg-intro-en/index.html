@@ -14,9 +14,9 @@ GPG (GNU Privacy Guard) is a free implementation of the OpenPGP standard. It all
 If you&rsquo;re not using GPG to sign or encrypt your files and messages yet, it&rsquo;s time to reconsider. It&rsquo;s not just about looking like a 90s movie hacker — it&rsquo;s about protecting your communication and digital identity in an increasingly hostile world.
 🔐 What is GPG?
 GPG (GNU Privacy Guard) is a free implementation of the OpenPGP standard. It allows you to create cryptographic key pairs to digitally sign files and messages, as well as encrypt them to ensure confidentiality. It&rsquo;s an essential tool for anyone serious about digital security."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/gpg-intro-en/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/tags>tags</a></div></nav></header><main><section class=section><article><div><h1>Why You Should Start Using GPG Now</h1><div><div><p><small><time>April 27, 2025</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Why You Should Start Using GPG Now</h1><div><div><p><small><time>April 27, 2025</time>
 |
 3 minutes read</small></p></div><span class=line_break></span></div><div class=content><h1 id=why-you-should-start-using-gpg-now>Why You Should Start Using GPG Now</h1><p>If you&rsquo;re not using GPG to sign or encrypt your files and messages yet, it&rsquo;s time to reconsider. It&rsquo;s not just about looking like a 90s movie hacker — it&rsquo;s about protecting your communication and digital identity in an increasingly hostile world.</p><h2 id=-what-is-gpg>🔐 What is GPG?</h2><p>GPG (GNU Privacy Guard) is a free implementation of the OpenPGP standard. It allows you to create cryptographic key pairs to digitally sign files and messages, as well as encrypt them to ensure confidentiality. It&rsquo;s an essential tool for anyone serious about digital security.</p><h2 id=-why-use-it>🧠 Why Use It?</h2><ul><li><strong>Digital Signature</strong>: Proves that you are the author of a file or message (Every page on this site is signed, for example).</li><li><strong>Encryption</strong>: Ensures that only the intended recipient can read the content.</li><li><strong>Control</strong>: You manage your own keys without relying on third parties.</li><li><strong>Trust</strong>: Establishes a web of trust among users.</li></ul><h2 id=-key-backup>💾 Key Backup</h2><p>Losing your private key means losing access to everything encrypted or signed with it. To prevent this, make regular backups and store them securely.</p><h2 id=-quantum-computing-a-real-threat>⚠️ Quantum Computing: A Real Threat</h2><p>Quantum computing is advancing rapidly and poses a significant threat to current encryption algorithms like RSA and DSA. It&rsquo;s estimated that within 10 to 20 years, quantum computers could break these encryptions, compromising the security of sensitive data.</p><p>To mitigate this risk, NIST is developing post-quantum cryptography standards. GnuPG is keeping pace with these developments and plans to incorporate support for post-quantum algorithms, such as ML-KEM (Kyber) and ML-DSA (Dilithium), in future versions. (<a href="https://datatracker.ietf.org/doc/draft-ietf-openpgp-pqc/?utm_source=chatgpt.com">source</a>)</p><h2 id=-start-now>🚀 Start Now</h2><p>The best way to prepare for the future is to start now. Install GPG, generate your keys, and integrate encryption into your daily workflow. Digital security is an ongoing journey, and every step counts.</p><hr><h1 id=-useful-gpg-commands>📜 Useful GPG Commands</h1><h2 id=-key-backup-1>🔹 Key Backup</h2><ul><li>Export your private key:</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>gpg --export-secret-keys --armor &gt; private-key.asc
 </span></span></code></pre></div><ul><li>Export your public key:</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>gpg --export --armor &gt; public-key.asc
@@ -35,18 +35,18 @@ GPG (GNU Privacy Guard) is a free implementation of the OpenPGP standard. It all
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/gpg-intro-en/ | gpg --verify</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgo9yEACgkQbV8aePHc
-Nh2H0g/+OkPwgrsK6HsXYmrapaMKRn6j7uUn9rSh6wv9+YiETumoztXyuVJKHW7U
-yP64hUPQDu5D7HU2HPeMCHVGHMyUFNcBqlF6a59XBuTj+8Vxo2kxLaW/06e06SOj
-nGRP6zM0C3XzpqsrVixIYCFQ3YRqu/4tlg8DbiBGAjPjwzT08/imj4egbG//0SbK
-JlC+Zg9rp3A1XsO1861iCMEerQTQb+3pcORQ8x3ChRMOwNe7G6cQSNBYO/kcAU5Z
-JeKMIGMF5MBIoOd+g5g5CbYnSaFVzRYczAxFQ+Og78ywcTqygNaiTfmPsZbT4yd2
-ofqxw68phZmlZ+QCT6JzgTIjGM92d1Gs65lbW7j/qTx/v1xiDPDqpgkDPcO/I9u+
-4jaru/k2FQ5qMYGjqj86abziNqm4IEbvvHe27F7ZVhWCNzcuGglblxpFpIVcjern
-ovPxmN9fg3rDaDwBB+QW0+4xshTcj3AhiStBOsKfEC2s04fLSeBARqrFPelGtCmO
-sdpHzhRMTQKgWpUc9MGmCVqI64JGLdT+OggheInoR1Z/g3n7HR301SskFT8RDas+
-FWmkJATYoH8wExzL3qQLLgS2Us9nnkXsjS1J/VHpol/js/xyHVcU6HfrAZrf4nLd
-9fypH/L1ngLPwuugi5gRdCMws0av6px6HUhSlCiSfDFikdI+FNs=
-=+/vm
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqnzgACgkQbV8aePHc
+Nh1vlw//QdWSojMWWfd2xySIIZEh2zvmWT1xTDq0WRx1Dyp3pqC9kwf9TGkElaBJ
+QJSpM4/vueJt64TUyrlyz/Gwq7fzm3RjRxDXojM9fAwAmGSoy42dU0M25zLJq4+7
+nZQvAKiW0lM+k/7vVa3yA1rGXqvY4SMJywuTFP79PzXb2m7UDHClXOtqtI1i7WQZ
+/PiTz4BSXK/EncwFl0nBgPE1qxYFpXtuz+7X8vpQftXdH/slOJl6eRWCq6yvc3hy
+m6S+ITKeCjJYl9c9388MggGcXqicJRFzdDpOoSlqU4gYBz6wNVQ8/OyMjCd540/B
+a2A1qXHLJPUYyar8cPR0gvXE2+XxMc5wtUkK1STWiahgc7pKMmV/WISN2hoy7/UA
+D7hC4hH6ShgsBNwN43PYGMOQJUdWopIvFq0e2IBgwo3UqGcVicfaLouq+OARQ143
+4MPqzeALMNWX5KaOBiCQOTyytlzfcVO5IlMltaJDLj0g03sLkxVYrpLaKQPT6PY5
+sPR3pkZApYtssWF8ZwLfMr2UNYnaKiXByMxjmYdA5MSlNI4615PPMz4eC0mkRwWp
+s+8v0cbd2xsIJAYcZwv4QoMZws0Ve8sC+nbCfDVJXXXIUaa42FP2T/jcq/4MOJW7
+0CJOQ65k3TNaqQ3rdEHxssUR2HSHupKwBjWB9P2RAUNiNLw3ibY=
+=Oz7V
 -----END PGP SIGNATURE-----
 -->

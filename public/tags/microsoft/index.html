@@ -9,22 +9,23 @@ Hash: SHA256
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Microsoft</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Microsoft</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/acessando-o-office-365-via-powershell/>Acessando o Office 365 via Powershell</a></h2><p class="text-sm text-gray-500">26 Jul 2014</p><p><p>É muito fácil acessar sua conta do <a href=http://office.microsoft.com/en-us/>Office365</a>
 usando <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a>,<br>principalmente se você precisa otimizar a administração de contas corporativas<br>via script em situações onde é necessário manipular muitos usuários simultaneamente.</p><p>Alguns exemplos de tarefas que podem ser executadas são:</p><ul><li>Adicionar novos usuários</li><li>Remover usuários</li><li>Mudar permissões</li><li>etc.</li></ul><p><br><br>No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.</p></p></article></section></main><span class=line_break></span>
-<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/tags/microsoft/ | gpg --verify</em></p></div></footer></body></html><!--
+<span class=line_break></span><footer class=glitch-zone><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/tags/microsoft/ | gpg
+- --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIyBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqn0gACgkQbV8aePHc
-Nh0KrA/4xGeHOirRLAgTQReTsNuJ+f6I9pGKKiKBnQiNit5f4liR3n2dzdd+erj4
-4UzJLHLeGjNtlOYTcL5A8RG0kRnsd7K675NYrz+KrKy77GVoeGNWLYM//wyhg+1M
-5KuqVkFaOHJnVOiyXMnePOn3lbJxgVe+m74RSwJX47Y0It08m+jDRnrw5DuRoni8
-iSPh+H/ECmCMr6CpOxg5uCX+Fb95p5SpvRhKvc2QuW/tvzfk7Bi2zKdO4bfoUNj4
-EJam6OJ0YAq7cHTPvDn9qWLdarkHo1NUzy6briUdcPvFwTUyxOAZQgDlpqO2ksYR
-M9oXuJP1f3IV/fo9jpGLVzZSsPzIcSylWkbzKnhoXXF3AsHtpLjBEV3Dq0N3Gi6t
-gMczJfXHxuJSfigmCtOOwXnuvxRliFPpYxrPaWMweOfirSA15uOYcnzmcAk5njDc
-FPbT2pI7DrOtj4wW5P+nAk6OeIcj3spofMN73kAQ4u90Pd56WYl0TVwTTnE2/cBj
-JKe7qs6LKoEZ999djOK3DqAJUwGmTXSRqpR4GETO4NPhuG1Qo62xn3yPKybVTF7/
-Z4CtLOU1UgC3vv43B4RwiVAPKyIL8pL5u65XDCVhB9AUY6kxkFDElTZya8w/Ktcj
-uWUyw31mfQFz2an26nP9P6ZxuvsIsCN4+Kt1mSXJvUmKkj78LQ==
-=phTm
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgs7gEACgkQbV8aePHc
+Nh2cBhAAhFYFM1uVltP1x9z+X6QBaujT8oAqM3dPomJwg/rx4VxeozOToM5ruAr6
+2FnX3vEQuiHD+chHwAxJ+d58aymk9O5Gn3PXKpq5DK1nUhzd0Qz5cxu6hYsXzLRd
+LF/CuDhJg0UHspDJoQC3T793+26lb3XwFLgX+GsNjW/dCw0JQS4AQKq/1gWHit5z
+/X1ozgilKW20DPUL9BlrJBN/0eiYUS+d2DxRY3fOF9hyFAlIi8Jj0NnMpLkYOV7u
+kwusted2blxIoTEt/ExLy+M8cKf7myCiU2fAkMEtvEocVxcG0QKTSRrCBuwQiEjn
+U9DXInVeEAlphWkitpVS1KpFdxwV70iPfkxD8NtS9FbGuuP6qZXVfQR+Q9J3IH6d
+rtZv6lEwUfcVDCldNBXCxnK18LVNqnaRrf/KQYLxtVj4e9FHpRLk0UrqtU6N0+Ug
+/ju4/0LGAEVUfW6tgkmWDJCajOi4HnnkHeWRpuKPxwkv1k/eisNI1srHoIEqm51l
+w4fcGS3ON9Mt2wxH1F/FPVTI+15MnCaP1K4MoyGrFad3do9hM3qrHLbSAsdOErjl
+oNI0l5qJ44/g6GxAbNpRPBBWg9t3w/ykedkdyajoAtVCkg+GY58aZIy+57tyoiSR
+yI8JfZ7y+f/RsW4MBVZELlu1REyjfL8MbAeinMTtmJmBxU7oIQk=
+=YN/9
 -----END PGP SIGNATURE-----
 -->

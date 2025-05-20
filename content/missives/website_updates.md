@@ -2,7 +2,8 @@
 title: "Website updates"
 date: 2025-05-18T23:59:00-03:00
 draft: false
-tags: ["missive"]
+type: "missives"
+tags: ["site"]
 ---
 
 This website used to run on Cloudflare Pages. And being 100% honest with my visitors: I had all analytics disabled.  

@@ -9,22 +9,23 @@ Hash: SHA256
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Office</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Office</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/acessando-o-office-365-via-powershell/>Acessando o Office 365 via Powershell</a></h2><p class="text-sm text-gray-500">26 Jul 2014</p><p><p>É muito fácil acessar sua conta do <a href=http://office.microsoft.com/en-us/>Office365</a>
 usando <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a>,<br>principalmente se você precisa otimizar a administração de contas corporativas<br>via script em situações onde é necessário manipular muitos usuários simultaneamente.</p><p>Alguns exemplos de tarefas que podem ser executadas são:</p><ul><li>Adicionar novos usuários</li><li>Remover usuários</li><li>Mudar permissões</li><li>etc.</li></ul><p><br><br>No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.</p></p></article></section></main><span class=line_break></span>
-<span class=line_break></span><footer class=glitch-zone><div><p><br><small><em>Privacy policy: this website employs no tracking.</em></small></p></div><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/tags/office/ | gpg --verify</em></p></div></footer></body></html><!--
+<span class=line_break></span><footer class=glitch-zone><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/tags/office/ | gpg
+- --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgqn0UACgkQbV8aePHc
-Nh10OA//UjwRaLi472ohf1ucJ78dluQ2pSyGJrL2P8jFSSoGIVL1wtc7MAx01NlB
-pQStnmDfi2VVSmRNxbRsDX/eowLxYj/GnuMMSzqpFHiWr/tqjEV89NmP52Tcm8gO
-YMq5tPhBV2ZvJu9NWwlh2eHnjzx2is6pFdDMgCBlPjxt5CTxms4AYgsGH24CWkp2
-PiNZhJgjiq1gGKetLkTWsqhSjoSj9QesU5XSh7pXG6k6kxNWyyuDa15RXBalWs1W
-5A3mI+nzxAUW7LKsrIxlmAsYWJGQPyoWvHQcRuWEesVoqRA4YZOMqu/B66CSy3ty
-DqRDYb48GY8/oIi/KfzRsRpFFIC4EgoP+d2hSW//p2FmdSlMX0tDdAoAp2jxUIvf
-ZKMdNgQQIGtNIUNTTTvqQiLhedIFWDCzY0EJJtngKit4D4VTZ4LNoGN6oVo4G3pA
-Ads2uliIcuXVfZKTyi0O8ZndjTa2GVMfHHLIp6Ad76PU4TRLcRfOuhecyaCaCJL/
-8PH8q+BFl3pr/Oo9UxvAtLu+SmQ1Y7Igf7HXO1eawM64Z62JZukvKtpsjtFFWjl3
-jXx2oWCPBHlWKUWuZUK4AEPHG/7D06XqRE5T6HMXD2Dri+A8Js1nKHvNcwFOBZOr
-/pd4NohTW/O+WT1BDIZ58MNPnv1OdYluFBIUm8A3a0ENcqBNpJA=
-=DORb
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgs7f8ACgkQbV8aePHc
+Nh2msA//Trvc6TKqmtpkcLcBERKzgtdyvYCgAOzqNtZNoIMd9FNrhszkwQkmVuzm
+qtaRfwDlqXFGi5yX4/Yz4Wjve0GL/zhTPFw7DDrlZ39oT9Cr0AyHdKerb9V1xpGA
+19N+Jwnhn3/azG6Y4DjHAiKPC7bHuprqKN6e6jARmAA1tNZfKy6oFmVtJ2U12yX5
+UtOzNly6f3lkgR/strGVwEKGM4fDLyMnIDnKA/9ZEa4jfFy27jK6dwtbWRagx0g8
+oaF4XJmA8w2j3PZ2ZwQzMAzYpHHnKjOdWuNuH2OLasXjjC7A4sK6BnE6jnlM28Wo
+Oh73yEqWBFX2DTfdeXWAscte3Bh5/wK0vNEO4trkzucmNib7BogKYQjNu0JzRRoT
+Px/o4p/mBUXgVEFxVjE88Uri3oEbuR98Fh49TixS0uG+2MOOnwOISPvuT7HTKAHi
+wyFozRvW9gIXkv7CTl95/PZHXn89WIgYkRiRnz1mTTiBS1JmKUok1JbjCJTkyCbk
+ZmlOGP0hBDn1dNCFgVweX8orfXMTTI1TH5RkfnruW+PCuWaiECFkvJkRjJF6siab
+4NbLNlwZr2vReUye7exjSOZeUxmFHrEL3KSZv1JIeCBWqu04b9eXDnPSh4JBEXVG
+zO3S2FJ8EmHxUOLVxjOpU77q6I1lipHfhAEq5zDU6/8yg2vidkQ=
+=1dR8
 -----END PGP SIGNATURE-----
 -->

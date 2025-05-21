@@ -324,3 +324,15 @@ th {
 .gpg_signed_info {
     font-size: 10px;
 }
+
+.badge-a-plus {
+    display: inline-block;
+    background-color: #2e7d32; /* Verde escuro tipo o da imagem */
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 1.1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}

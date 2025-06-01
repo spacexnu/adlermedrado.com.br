@@ -3,8 +3,7 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Llama.cpp"><meta property="og:description" content><meta property="og:url" content="https://adlermedrado.com.br/tags/llama.cpp/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="website"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Llama.cpp"><meta name=twitter:description content><meta name=twitter:image content="/images/default-og-image.png"><title>Llama.cpp</title>
-<meta name=description content><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/tags/llama.cpp/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Llama.cpp"><meta property="og:description" content><meta property="og:url" content="https://adlermedrado.com.br/tags/llama.cpp/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="website"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Llama.cpp"><meta name=twitter:description content><meta name=twitter:image content="/images/default-og-image.png"><title>Llama.cpp</title><meta name=description content><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/tags/llama.cpp/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Llama.cpp</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Llama.cpp</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/llm_local_llamacpp_mac/>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</a></h2><p class="text-sm text-gray-500">21 Apr 2025</p><p><p>Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.</p><p>I put this guide together because I wanted <strong>LLMs running locally</strong>, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes.</p></p></article></section></main><span class=line_break></span>
@@ -13,18 +12,18 @@ Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://ad
 - --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgtJggACgkQbV8aePHc
-Nh3AHA//V9ByK6QP4+mMmNawRlkqtzewLFtB064SP5NQmdQyWPbblFipC6j6aMF4
-dDFmIdr4knE4QbWVIic4XrKlXzwxMRkiS2HwgOFvUh/b7G18UDKD93dJQpMes/jv
-ce0EjaVzKAd2j7XPKQAd+7wX72m9lBGlr5VI8Bp2aMAD1q8zlsAmIk9pJRVd1k47
-K9/hPX8zWqzBTz5+5o4S2FNNjYfNDrnrSQRAgl1i9ogctTrWGQqNczYtmBdsf3iC
-lDnWQESO5YZb+KevICHjjDrxkEw5CJhm4Ocicv91mP/mMYl+BF0pfzOyF7o0TG6q
-zwRCWWlm97K0vvMUueZ8b79fN887xrosKZMFHK8a7UiqQkXa8d1E1nS72qultaX+
-s4wkPycZTNFjMqtrmi6kL06c7NuCZDQnWL89BIlapoOd4XZI7ri06c3tM7+F1P2w
-7DjCZa1TrUwFF2gUAil6dm8Iu+GU2ZSRasjEXz0m7nVMRauUIQLlmOxwek/gQcgu
-xe2eN0g5FUwSRtVtmoqseYsTpvh0eCx17fGAvYcGiLZSSYzT0d1EAiRYJNVnOHTR
-kC2i1WM6tw+gij3O6vLacMVVXxefv6ybPnjWOv1Zj8mu2Yub9Sbo5rwep9DhN1v+
-Q6FCXSlsSowCKYwGPLYpK9taDXXKL3tH6qlFm0wFG5ixgFiNn5Y=
-=mH3F
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmg7rY4ACgkQbV8aePHc
+Nh0JJA//c1Mcr4nmwJIY7QbeDXMv40hEEzU9/fAj/wXBfvxVXmDUh7486F+dMhvp
+rO8QY1HgsmLoPmGctk4zzAZ+m/J9y+BOT/iyIJ51Ldnb0mnA2k7Pmg+muxi8Eoch
+8/Ci4dHS5PUCbgVdZb3KuiCcjdwGAiHcnvOOvZAV4rHnM1uOWpdjxBppVhxoZoYX
+Q54mYvCpOXQtVf1/iUXI6y0+IaIFXxUVInmb9J6lYEIV1BEFVBcJn9zHvV43Zmwk
+Alc4aG/1F58HpI8zllrWOtoVuJC35bFiHQXSm9C5T0Ornz4P+ZE4OEPTqiD6HOTY
+DnEjWs8YSGDanR8CeI2poDC3kOPpaLaHMvr/WTHy4coQeoNgaF5A8Lt0bwf1U9T7
+rI3pC15JFhYS9spsVuPUlbBIou5qDa/Wm6QxCFkblj/NoSfiZmvQrXYo5Xg6G6zw
+Q3ZX4+nuSQc7EEywe9LcKUV7pLPgbo7hi9ysAmXL64mDiz0rh/KcowAjMowKZOOB
+kMMg6nCIbkT5dkeaLF/VQmdW4a1vhfFAcFKLRUdB4botlAlAN8nWEz2LHRMQaJxK
+/ZPsES/7hibOU4+8pnZHbPT/lhIxLa5d3oJXLlCG0ohvWOk0JddtUnTdw3q9fe6g
+fPmxsisqc7KJGyTP7ZjcI7fdhLq8ybLEX2fRXOHARnQEADxGA2I=
+=vnB1
 -----END PGP SIGNATURE-----
 -->

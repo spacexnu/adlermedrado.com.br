@@ -3,8 +3,7 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Java"><meta property="og:description" content><meta property="og:url" content="https://adlermedrado.com.br/tags/java/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="website"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Java"><meta name=twitter:description content><meta name=twitter:image content="/images/default-og-image.png"><title>Java</title>
-<meta name=description content><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/tags/java/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Java"><meta property="og:description" content><meta property="og:url" content="https://adlermedrado.com.br/tags/java/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="website"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Java"><meta name=twitter:description content><meta name=twitter:image content="/images/default-og-image.png"><title>Java</title><meta name=description content><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/tags/java/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Java</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Java</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/stream-vs-foreach-in-java/>Understanding when to use stream() vs forEach() in Java</a></h2><p class="text-sm text-gray-500">03 Nov 2024</p><p><p>In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.</p><h2 id=stream>stream()</h2><p>Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:</p><ul><li>Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.</li><li>Chained processing: Apply multiple operations in a single chain.</li><li>Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.</li><li>Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.</li></ul><h4 id=example>Example:</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> names <span style=color:#f92672>=</span> Arrays.<span style=color:#a6e22e>asList</span>(<span style=color:#e6db74>&#34;Maria&#34;</span>, <span style=color:#e6db74>&#34;José&#34;</span>, <span style=color:#e6db74>&#34;João&#34;</span>);
@@ -20,18 +19,18 @@ Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://ad
 - --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgtJgwACgkQbV8aePHc
-Nh2qxhAAmT1tgcJi6f8bzQ4ALMwLwiNTwfbcYy4SYNj4DbFYJuvnS+QDv8LqzMtd
-YDthlTOZDiIHH/fzkFsX4pGcDlEx8NGEX2D7tG19wteqRe/IeGl5+TqJO+564c6l
-g8NqJW2T1DppwEwGbv387uO77nhGmMsPwSQ1XLCU67V29VJQUaQQOXsv8+4Rxwfa
-kwR3SAVncN8CR2wLTXwY9/kLZhfH5uYYcTmD7WFrEciIbYLjhXrFa2QZkFh2JTma
-4SiSslk4rI7LIvFcZgXN5zzdp/3944eBVzhokT5wO0p7V35hnqze14fNj3Pqbq8E
-wWu7wKxCcJhYkBUe9qcMUP8n0y3/fYGL/SC2JThY1KjxGTk6u3p5TQw2pGpUoeCp
-OQmGeAmgkMv0UMrb12HQ4m2E4+lbhTnR1EZvWqLG9F5TxAzMEIr0zMG/t4uMA3eJ
-WvLAwYpNCKN2AIC0VtYz5r5CK0Z2owykT81M71TARpt13H7kvWmafOt7RLw7c7HT
-jvRZTMkdBLDd0hk2nHr2O8hfXpun1oy2JTIhjxgSabolkA99oh6VDfQTibny0CMF
-NVmWnhS0b04LYcg1zcgSJSNmA0FuQn3cfLlP/I4BBNaNImhHCoPQSAy21zRL6cns
-T07W0OPT3IuLRkQ+wKLV/0sq1H7lpg4aFUzQNJ9Im/cNYOxf6fE=
-=At6t
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmg7rZEACgkQbV8aePHc
+Nh30+Q//Wl1IPuz9GwtGVmovCj1grOTp7rL7D3LKChJRGPdFjlpxTiWTc3P+1SSo
+jxDwGEw8HS5+DwY0YVHjfa2AE+Y+72MZ6YOegQk2vkHyaoNBhM3H4Rt/yvL4EzSW
+A/WU50tXlvWt+aI+6/Oxrfee89DNtnY6o9AM0wua7InvHK7Dqj+l5V1SCcrMk1tK
+g0QE0qB0GKGBwDDsYmXYXbLCAAPHfURJqWR+Xi5iS6QsRayD1ibpc2oeZFFEbTUn
++nX7beX33js3X2affVRROlJBveLsmNFeNpDIL8oOF6n1RqDYkHkIw5v4kQLR+4aK
+t7NYr3pC52Dxazv3SBguOuAg7r7V3lD1/3gzyv3/OQ1e50rPmyk/0aE+E0jF2hwx
+W0TruVQH5CaiWur6r7twPuiP16Jm+v0OSB5MkXhmYUTQ+eN1CWluFPiG/S8Jonei
+o93R7/c8ef9LA50roTGmXjFZ1qLVsH2/D93yppQSxXSHArR0BztEM6qhpAc1YNVy
+BpZE9XwahhI9SmaX6Taz13vHEgNHUl51rN0JRmAhwm6weotwqhByrv3LANEE4mdR
+oTJhGAaQ81PXKeec2fcc+A7SD+PeocEk9yQgzH5V6/jquq/Fqvk7rFn7nWP8nZvC
+0LqOdoEqN9lN34ZQXkUFi/K8SloyE6eLHOb/WaCsdYeJ/fxsAYQ=
+=F+De
 -----END PGP SIGNATURE-----
 -->

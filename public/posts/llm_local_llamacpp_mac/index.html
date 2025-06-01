@@ -5,8 +5,7 @@ Hash: SHA256
 - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS"><meta property="og:description" content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
 I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta property="og:url" content="https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS"><meta name=twitter:description content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
-I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta name=twitter:image content="/images/default-og-image.png"><title>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</title>
-<meta name=description content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
+I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta name=twitter:image content="/images/default-og-image.png"><title>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</title><meta name=description content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
 I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
@@ -32,18 +31,18 @@ Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://ad
 - --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmgtJf4ACgkQbV8aePHc
-Nh1/gw//TJ0QxgnWr7u2f2Wqy5AUswBGFY3JOzHg+KfF0MDD3KZF8eE/SIHnXh67
-yLIU3OU5ohuHM5IRJIt5wj1xh1ocPqaM+bj2W3dMvrSc6cppFEBNvGJ+wWa9i2A0
-i8/eNRPUDVFX51kt2fWWzJ8u66WUpo1x4fQj1Qmqo1kOwr8GoDabQW8uWVeMW+my
-R/r4whu46iKgy23Cr4tqJu+TgyWBnPore7jQvcjYcQPINjwNXEfjODoonMjDX2R5
-JJ04fHKBSxJ2CP03ePy2wRQsl/5GcXNZgoRCYX2EO5hAQOcfddzMaTMx/dAvR8IO
-HQ2A1PbYGpBlv6yf2e2JKv2jh6gF2XQIlLnljIhrx2KprRJrwqSCFeBweE4kB9if
-aNays+ixBlxJZICmxdBbbxF4wKr/jMEz1bePWbiT7trhLCFM9kt7VeRhY3KmzRxw
-v1I8dGc7tP2HMumZ6F6ff+xFIFGD8JhzeVaw/LY5Jebi8qBHInBFpbFrD7mYb0hS
-XeCCIaQMaz0a5n1MFiEmq7qULOmY+PlkLGC7DXSVC9yC4XE+9CoPNryTDOn0lXuk
-FHogmkDOqscsQNj6g9oCPov5TSBITLAlTnLw/WrcS2SA5yg5Q3Xkuevm54M3B5ta
-HHLKkmq8+NcMANIU6Y/tQ9oIXwpQBPXXx6Ocx/zuuKxDIk1+OH4=
-=Eg0B
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmg7rYMACgkQbV8aePHc
+Nh3y0A//dQBokuIJdADeGWLSfbyc7qn+KdP3Pxo2vavK+o2MOhOW757mmAkkJUAn
+13n/HaI9l7cSLqSinL98V5MzkzKABo/dSYpu0DGuw820D0d+B0nX1L5+6Dnb6Duz
+p1q1yzIV9eJlyMcB81cWzp5N/D6r2mFwxMWqVK+WOLvLkfvviEMr2KmnFlxnzvtU
+wMGg5w+tUh7cS2+4rX/+8m2K7wyd8j5r8dKEtFwFweM+y9sH4/9yn5hOx04q54q7
+MIBfTvlXk+fkn+STRFj9PDmfVolDpwmMZNDVP/hbER1uKmKw2podvB5j4FTRyuMP
+0d6O1GEQY2w1FNN++Jc07U4TFxmep9BBrhEUqETLwzM0C35QNOI5w4JoguEdHJWg
+6g3SO7fY0tFf9LQ7Qytqu1p6A7GqrkBbeN6K33W9begBUBSqTHFodpRqxSaiRQwC
+aqoa5d8NUJkh6boCn55b2eZfzbNabba4OVn2y6jj05yjd2qb3hjtLVzToRrH9v6A
+o0sG/jUZtnw4JR1aYMpx4L3pm0Dp325hT2Ixghv8qrE+t89t8vjXpV+wX3wCmnz/
+jL05v58U2k/r57EBinPJ0XF/Cgx6PAuZIIm1WuQibIMs5GiYs1rm3APEPuBhbFF1
+LpPqbYdwa6CX8tHfb+fU4oiJ26SRPYmVDdSTl8mvyMGRqHJFXaE=
+=D1ol
 -----END PGP SIGNATURE-----
 -->

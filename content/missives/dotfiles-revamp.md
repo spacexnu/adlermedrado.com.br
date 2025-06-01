@@ -14,6 +14,6 @@ Ongoing work on fully revamping my dot-files `install.sh` and Neovim stack.
 - LSP, CMP, Treesitter, and nvim-tree properly initialized using `config` blocks.
 - Keymaps handled via `which-key` with full namespace documentation.
 
-Work in progress: Will continue updating and refining over the next days.
+Work in progress. Updates and refinements will continue over the next days.
 
 Source: [spacexnu/dot-files](https://github.com/spacexnu/dot-files)

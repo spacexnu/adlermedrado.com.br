@@ -7,4 +7,4 @@
 &lt;li>LSP, CMP, Treesitter, and nvim-tree properly initialized using &lt;code>config&lt;/code> blocks.&lt;/li>
 &lt;li>Keymaps handled via &lt;code>which-key&lt;/code> with full namespace documentation.&lt;/li>
 &lt;/ul>
-&lt;p>Work in progress: Will continue updating and refining over the next days.&lt;/p></description></item></channel></rss>
+&lt;p>Work in progress. Updates and refinements will continue over the next days.&lt;/p></description></item></channel></rss>

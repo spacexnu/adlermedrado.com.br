@@ -59,5 +59,5 @@ Mostly rock, fusion, and everything in between. Here’s what’s been on repeat
 - *Patos não existem* - Urumbeta do Espaço
 - *Dimensão Zó* - Urumbeta do Espaço
 
-### Soul
+### 🎷 Soul
 - *Reach Out I'll Be There* - Four tops. 

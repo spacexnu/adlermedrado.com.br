@@ -9,5 +9,3 @@ Essa semana eu [publiquei um vídeo](https://www.youtube.com/watch?v=PpYk139Xw2Y
 alguns pontos que eu considero importantes e aplico de maneira objetiva no meu site.
 
 O vídeo pode ser interessante para quem se preocupa com soberania, segurança e privacidade.
-
-{{<youtube PpYk139Xw2Y>}}

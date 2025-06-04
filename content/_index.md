@@ -6,13 +6,13 @@ layout: "staticpage"
 
 # ⚡️ About Me
 
-👾 I’m Adler Medrado — also known as __spacexnu__.
+👾 I’m Adler Medrado - also known as __spacexnu__.
 
 Software Engineer with 20+ years writing code, defending systems, and staying ahead of hype.
 
 My journey began on a BBS I built in the 90s on a PC/AT 386 running MS-DOS. That mindset still drives everything I do: build it yourself, understand every layer, stay sovereign.
 
-I've architected and deployed systems across finance, e-commerce, and healthcare — always with security, privacy, and performance in mind.
+I've architected and deployed systems across finance, e-commerce, and healthcare. Always with security, privacy, and performance in mind.
 
 Currently working on AI-powered log analysis, NLP-based data extraction, and decentralized, censorship-resistant tools.
 

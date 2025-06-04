@@ -11,7 +11,7 @@ If you’re curious about the tools I use to work, create, write, or simply surv
 This is a living document I update from time to time.  
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-_Last update: 2025-04-15_
+_Last update: 2025-06-04_
 
 ---
 
@@ -25,7 +25,7 @@ _Last update: 2025-04-15_
 - Sennheiser HD 450BT
 - 2 Nexstand K2 Folding Laptop Stands (one for my MacBook Air, another for the company’s MacBook Pro)
 - USB-C Hub w/ HDMI
-- A battle-worn wooden chair (replacement pending…)
+- Standard office chair, reinforced, custom-made. ~~A battle-worn wooden chair (replacement pending…)~~
 
 ---
 

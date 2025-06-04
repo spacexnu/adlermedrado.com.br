@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About Adler on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/</link><description>Recent content in About Adler on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 31 May 2025 22:29:46 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/index.xml" rel="self" type="application/rss+xml"/><item><title>Install &amp; Neovim Bootstrap Revamp</title><link>https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/</link><pubDate>Sat, 31 May 2025 22:29:46 -0300</pubDate><guid>https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/</guid><description>&lt;p>Ongoing work on fully revamping my dot-files &lt;code>install.sh&lt;/code> and Neovim stack.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About Adler on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/</link><description>Recent content in About Adler on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 04 Jun 2025 20:17:00 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/index.xml" rel="self" type="application/rss+xml"/><item><title>Video sobre o meu site</title><link>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</link><pubDate>Wed, 04 Jun 2025 20:17:00 -0300</pubDate><guid>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</guid><description>&lt;p>Essa semana eu &lt;a href="https://www.youtube.com/watch?v=PpYk139Xw2Y">publiquei um vídeo&lt;/a> no &lt;a href="https://www.youtube.com/@labsadler">meu canal do Youtube&lt;/a> explicando
+alguns pontos que eu considero importantes e aplico de maneira objetiva no meu site.&lt;/p>
+&lt;p>O vídeo pode ser interessante para quem se preocupa com soberania, segurança e privacidade.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PpYk139Xw2Y?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div></description></item><item><title>Install &amp; Neovim Bootstrap Revamp</title><link>https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/</link><pubDate>Sat, 31 May 2025 22:29:46 -0300</pubDate><guid>https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/</guid><description>&lt;p>Ongoing work on fully revamping my dot-files &lt;code>install.sh&lt;/code> and Neovim stack.&lt;/p>
 &lt;ul>
 &lt;li>Dotfiles bootstrap is now modular and declarative.&lt;/li>
 &lt;li>&lt;code>install.sh&lt;/code> handles symlinks, backups, plugin sync, and full lazy.nvim bootstrap automatically.&lt;/li>
@@ -705,7 +710,7 @@ verificar até que ponto aquele indíce do Tiobe é realista.&lt;/p>
 &lt;p>O Tiobe verifica em sites de pesquisa ( Google, Msn, etc ) quais as linguagens que mais aparecem em determinada pesquisa
 nestes engines de busca. A query utilizada pelo TIOBE (conforme mostrada em seu site ) é +&amp;quot; programming&amp;quot; -tv -channel .&lt;/p></description></item><item><title>Now</title><link>https://adlermedrado.com.br/now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/now/</guid><description>&lt;h1 id="-what-im-doing-now">📍 What I&amp;rsquo;m Doing Now&lt;/h1>
 &lt;p>This is a &lt;a href="https://nownownow.com">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com">you should make one&lt;/a> too.&lt;/p>
-&lt;p>&lt;em>Last updated: 2025-04-15&lt;/em>&lt;/p>
+&lt;p>&lt;em>Last updated: 2025-06-04&lt;/em>&lt;/p>
 &lt;hr>
 &lt;h2 id="-life">🧠 Life&lt;/h2>
 &lt;p>Trying to improve my quality of life. Right now, I’m focused on:&lt;/p>
@@ -727,21 +732,17 @@ nestes engines de busca. A query utilizada pelo TIOBE (conforme mostrada em seu 
 &lt;li>&lt;a href="https://github.com/adlermedrado/ShadowData">ShadowData&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/adlermedrado/job_finder">Job Finder&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/spacexnu/log-analyzer">Log Analyser&lt;/a>&lt;/li>
+&lt;li>FraudTalon (available soon)&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h2 id="-reading">📚 Reading&lt;/h2>
-&lt;ul>
-&lt;li>&lt;em>Ghost in the Wires&lt;/em> by Kevin Mitnick&lt;/li>
-&lt;/ul>
-&lt;hr>
 &lt;h2 id="-listening">🎧 Listening&lt;/h2>
-&lt;p>Mostly grunge, fusion, and everything in between. Here’s what’s been on repeat:&lt;/p></description></item><item><title>Uses</title><link>https://adlermedrado.com.br/uses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/uses/</guid><description>&lt;h1 id="-which-tools-do-i-use">🛠️ Which Tools Do I Use&lt;/h1>
+&lt;p>Mostly rock, fusion, and everything in between. Here’s what’s been on repeat:&lt;/p></description></item><item><title>Uses</title><link>https://adlermedrado.com.br/uses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/uses/</guid><description>&lt;h1 id="-which-tools-do-i-use">🛠️ Which Tools Do I Use&lt;/h1>
 &lt;p>If you’re curious about the tools I use to work, create, write, or simply survive the digital chaos — you’re in the right place.&lt;/p>
 &lt;p>This is a living document I update from time to time.&lt;br>
 Inspired by Wes Bos’ &lt;a href="https://uses.tech">uses.tech&lt;/a> project.&lt;/p>
-&lt;p>&lt;em>Last update: 2025-04-15&lt;/em>&lt;/p>
+&lt;p>&lt;em>Last update: 2025-06-04&lt;/em>&lt;/p>
 &lt;hr>
 &lt;h2 id="-hardware">💻 Hardware&lt;/h2>
 &lt;ul>
@@ -753,7 +754,7 @@ Inspired by Wes Bos’ &lt;a href="https://uses.tech">uses.tech&lt;/a> project.&
 &lt;li>Sennheiser HD 450BT&lt;/li>
 &lt;li>2 Nexstand K2 Folding Laptop Stands (one for my MacBook Air, another for the company’s MacBook Pro)&lt;/li>
 &lt;li>USB-C Hub w/ HDMI&lt;/li>
-&lt;li>A battle-worn wooden chair (replacement pending…)&lt;/li>
+&lt;li>Standard office chair, reinforced, custom-made. &lt;del>A battle-worn wooden chair (replacement pending…)&lt;/del>&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;h2 id="-daily-workflow">⚙️ Daily Workflow&lt;/h2>

@@ -86,7 +86,10 @@ So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I 
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Install lxml on MacBook with Apple Silicon</h1><div><div><p><small><time>January 3, 2023</time>
 |
-1 minute read</small></p></div><span class=line_break></span></div><div class=content><p><img src=/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png alt="pip install error when installing lxml"></p><p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Building wheels <span style=color:#66d9ef>for</span> collected packages: xmlsec  
+1 minute read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/mac>mac</a>,
+<a href=/tags/python>python</a>,
+<a href=/tags/tip>tip</a></p></div></p></div><span class=line_break></span></div><div class=content><p><img src=/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png alt="pip install error when installing lxml"></p><p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Building wheels <span style=color:#66d9ef>for</span> collected packages: xmlsec  
 </span></span><span style=display:flex><span>Building wheel <span style=color:#66d9ef>for</span> xmlsec <span style=color:#f92672>(</span>pyproject.toml<span style=color:#f92672>)</span> … error  
 </span></span><span style=display:flex><span>error: subprocess-exited-with-error  
 </span></span><span style=display:flex><span>× Building wheel <span style=color:#66d9ef>for</span> xmlsec <span style=color:#f92672>(</span>pyproject.toml<span style=color:#f92672>)</span> did not run successfully.  
@@ -121,18 +124,18 @@ So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/install-lxml-on-macbook-with-apple-silicon/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA2t8ACgkQbV8aePHc
-Nh2EuRAArZM5+mOxLbfRPGnuinb7wULq2oeFGVOG1ggkN1DSnKfkNanZ2JdAoGJe
-K2uo0Fiay7t1S8p6eUQP6BGO6vXnz06q1zMtMU/l4ZlSqIwtK99RIjdjkMbxgqS4
-IHvmHiA/nFCLtPMAUwXBtGildqBZxJPKsD9mbjPWnqwICnjPxu63rsVyGZQHrNgV
-WSRS9YGhnxkU0L0nfRxFJrouuYlv50zEMLPSMD/Vl1K3+HvPrILT1QQ3pfRopBJQ
-rAQqCWCvm8bB/JMZzck9IBWyypjJCHtFL7zpyXuf7Om7XbKadi9o4RYyujfrg33D
-AbXchcfzCLhSElknHSeWUGVweMB+gusE1/AVbJiS+5uUyCro59GYwoPkb8FFm/72
-qpCuEQQbqMyVqbbE0D6lOeG/MT3eguZPPF0+p3xFfHUiaU7fm/IhWkqvpE4D/qGq
-0MMUYfXjN1yDakrhoZXtcRa3O71lqllxwlvqVsihkZX80jebgsRKUzwKdcEgLra2
-gxGCk5SBrkVAgRWs+Y7eyhuCEJ6fJIYVDenz+P/lt0dvLlMik9lcogIBevSQxnTi
-vYOonSGsMzFAtJcDyPQJUVrYEq2uUMTU6NktvAVdclZ6D+Q2jVwAFpuPm8p1oSY8
-g++g2GNNqvOU42TSH281K79XVDNvisIcNlcYN6SJM8aYkK6tEQ0=
-=QesG
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA4ZcACgkQbV8aePHc
+Nh1Y9hAAyPOPsrSOitUKvNQm39x0J3a4M2Keca1G34ykNSP7k/MHoBcv+sGp+FfW
+S256XLfOP0PqwoQ0ZQxTGj0GdA3hfUygmC3ljKm81XZXyM14J4T+fgJ/WvROmWPg
+xcao0nbNqGCh12ZJUz1oBzw/g2nzrQs7cYu96NnA7rJSGjLb276w/mmX5x8dPH0c
+L2UMa4fvQdONsBvmMpHZLo0I7X6MZdfVYvU+GtYtJDyrXLacT8hbkTJwrbvQi7RT
+Ni8ZRoQ+0XuzTc2LsMcTr0NR/UoxPol8bg+5y7vKmLj/Gox0LkYOFSOjAFLXJvzJ
+QK5xDwY6oaCB+H/D+S5w2W2BqKmZdE2TOAoZHWxtS+yOA+eXUK6NtElycp6dzwXf
+srnXWNlZlcDTZad5BwYz61wkTsNvJ4JIMkOOiU5wOs3cLL4MUOTUgJUVgy+Uq7Z+
+81yaRSUU62++7D4gUdCq84yx652DEme7cdX1NYTNiv3phRxKnTwJoSxnCNT8nStu
+Rb1biPzzaNg7tO/3rIQDqWjhJbkZLU+5HV1Srwo38Pcea22NIyoH52+hcyZXhYGJ
+g2/c4+qOjYr9t6+c/SlPcEM2214T8xMS3fTcFo3UzdUCBDy0jnTUAtRtqNoGa3Vx
+6vRWu3gMjuUKCWQ/NSPTzSCEQUaYwVGAC+Ylsi+p84LLI5MqKZU=
+=7t6K
 -----END PGP SIGNATURE-----
 -->

@@ -336,3 +336,25 @@ th {
     font-size: 1.1rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
+.post-tags {
+    margin-top: 10px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.7em;
+    color: #00ffc3;
+}
+
+.post-tags a {
+    color: #00b3ff;
+    text-decoration: none;
+    border-bottom: 1px dashed #00b3ff;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+}
+
+.post-tags a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+    animation: glitchRGB 0.5s linear;
+}

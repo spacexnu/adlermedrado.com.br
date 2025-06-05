@@ -53,7 +53,11 @@ The results will be a new list only with the names started with J in uppercase.'
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Understanding when to use stream() vs forEach() in Java</h1><div><div><p><small><time>November 3, 2024</time>
 |
-2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.</p><h2 id=stream>stream()</h2><p>Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:</p><ul><li>Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.</li><li>Chained processing: Apply multiple operations in a single chain.</li><li>Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.</li><li>Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.</li></ul><h4 id=example>Example:</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> names <span style=color:#f92672>=</span> Arrays.<span style=color:#a6e22e>asList</span>(<span style=color:#e6db74>&#34;Maria&#34;</span>, <span style=color:#e6db74>&#34;José&#34;</span>, <span style=color:#e6db74>&#34;João&#34;</span>);
+2 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/programming>programming</a>,
+<a href=/tags/development>development</a>,
+<a href=/tags/java>java</a>,
+<a href=/tags/tips>tips</a></p></div></p></div><span class=line_break></span></div><div class=content><p>In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.</p><h2 id=stream>stream()</h2><p>Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:</p><ul><li>Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.</li><li>Chained processing: Apply multiple operations in a single chain.</li><li>Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.</li><li>Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.</li></ul><h4 id=example>Example:</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> names <span style=color:#f92672>=</span> Arrays.<span style=color:#a6e22e>asList</span>(<span style=color:#e6db74>&#34;Maria&#34;</span>, <span style=color:#e6db74>&#34;José&#34;</span>, <span style=color:#e6db74>&#34;João&#34;</span>);
 </span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> filteredNames <span style=color:#f92672>=</span> names.<span style=color:#a6e22e>stream</span>()
 </span></span><span style=display:flex><span>.<span style=color:#a6e22e>filter</span>(name <span style=color:#f92672>-&gt;</span> name.<span style=color:#a6e22e>startsWith</span>(<span style=color:#e6db74>&#34;J&#34;</span>))
 </span></span><span style=display:flex><span>.<span style=color:#a6e22e>map</span>(String::toUpperCase)
@@ -67,18 +71,18 @@ The results will be a new list only with the names started with J in uppercase.'
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/stream-vs-foreach-in-java/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA2ugACgkQbV8aePHc
-Nh2jnhAAj8Hk4QC3r2IlG6ZQeVKRBMVBCFo64eZvgkeCfeXEfIXrtCi3jr6m2UCT
-Z3T714lbAarG+GVoN+9P0hXZrWcuhEs5CkNN15itn7rk4xr2Pb+h/J5cl41nFyLb
-fjHmSj69cLJM6eQfgKqRxnx2NPRy0D7PxvhvaojTr4IivgXMU7CUeeFrwUegn3dB
-NrwoIBLifdoq/6+ofquoZqAEvtsMxh0DOH3XMcz3jH4f9Wejl/lW1VBJLWPQ8dMD
-dNkQomC9QqxnKdgVZZMQZfxF1B5VVMwIv+5GeWFu5PB5ceUrTcJrf+p+stUtMalB
-APq4pCz8kyHbl0lG0eAJM0TA6VdvCqVst131dQ1DKcEWyDtqOni3eHZp8RiGHlWj
-Neta0W5YSOEBdEYe6PhrNbpBiYpHpRr9kwQvnsXcILVefhZjBmlD2+cKYgDIntDc
-NOKLkomOt+apU+lC8J/RfzDM0TB/vIBXWJXWTWDaQC6Sb5cX0k0JeyoSLiFhnasz
-IZ/NaTgHRNP2Lzv0yEeeIZ+Hngw5FiToQNmbeXOE3HrCbTPMiO+Eb/yFr0Vn1lG7
-gBUKFLM5wTQLoeDwXPgVvI1RsD3jABWvF0e20drhU+4lAXYPSXtNaxdN5I3Cy19M
-IcFL0oL4DyLVvcHNN6htihT9ef4t7VFuNElJVcXyYtVzfecr/Bw=
-=ckd8
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA4aAACgkQbV8aePHc
+Nh0VzBAAyOH2Ni8/z28ldeqrQJiGC5d3bfribQHoPQSHKH+Y7nDJ5HH5OVHNKqRh
+C/mJ8xHFms3nIiS/+42qNInmFBCBDpQJ/iSxaHlTx6K7PZCifhgeDEIj6Z+FaY6V
+h7MleGCcSd9fhvr/8XOjxpJAgQZhQgrr2YralY27sH0HkEQFP/vHIEFtcXcPW/r/
+42bPKrMZMmQhgyliE3eXhAV3afldl5ffHfOyFLKZswqPH6mFi/df88ZAnAwfTGoq
+iViuwGpbpatQiFatusobSZk4FSk3aYn3ImMF1ae+nb58B1076pTwLEEnTHSNlmlD
+CV21XBFLC4j+BZ5QkZF/iSgAdC1MyHkBosQrU8WushwvzUomC6BqSIFeM2vENya4
+PN7CItnhJHrp+qnnprFla/qrvU3IBvDoKsjdap6qgT36sPNV1FOn1aFYALeLVTiH
+AWGVinNn+0zK3tjZKYGoeDg4VMR+X3zaNDah0Y09BGHb4V6IEPPYVR4tu7KP+TLb
+lZyxHhPx/fF5/HaJUKP3RqHQmEaDm83nLOV32sUsdwd5+XghaN7z2l7q/Rr43BSx
+RuhfrG3SjSCtG7o/GexkFuDI9Cy3o34GWSQqWS21iMFIOSK+pdQeqJAJbalNE7zY
+UDABdWXtJwsrDurhvid/BfwfW1rUZ4qnA7AOHI7jzCHdrPy2yN4=
+=OkRV
 -----END PGP SIGNATURE-----
 -->

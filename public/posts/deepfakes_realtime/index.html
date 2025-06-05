@@ -17,7 +17,12 @@ So here’s the question: how do we verify identity in a world where faces can b
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Real-time Deepfakes: what if "seeing is believing" no longer means anything?</h1><div><div><p><small><time>May 10, 2025</time>
 |
-1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.</p><p>With just a single still image, it can mimic anyone’s face in a live video call. In real-time. Running locally. No cloud required.</p><p>The implication is clear: you can no longer trust a video call at face value.</p><p>So here’s the question: <strong>how do we verify identity in a world where faces can be forged on demand?</strong></p><p>While many react with fear or disbelief, I see only one viable answer: <strong>digital signatures.</strong></p><p>For years, I’ve been saying: we should <strong>encrypt everything</strong> — files, messages, infrastructure. But now, that’s not enough.</p><p><strong>We need to start signing everything.</strong></p><p>Digital signatures ensure authenticity. They prove that something really came from who claims to have sent it and hasn’t been tampered with.</p><p>We already sign emails, source code, and software packages.
+1 minute read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/ai>ai</a>,
+<a href=/tags/deepfake>deepfake</a>,
+<a href=/tags/cryptography>cryptography</a>,
+<a href=/tags/gpg>gpg</a>,
+<a href=/tags/security>security</a></p></div></p></div><span class=line_break></span></div><div class=content><p>An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.</p><p>With just a single still image, it can mimic anyone’s face in a live video call. In real-time. Running locally. No cloud required.</p><p>The implication is clear: you can no longer trust a video call at face value.</p><p>So here’s the question: <strong>how do we verify identity in a world where faces can be forged on demand?</strong></p><p>While many react with fear or disbelief, I see only one viable answer: <strong>digital signatures.</strong></p><p>For years, I’ve been saying: we should <strong>encrypt everything</strong> — files, messages, infrastructure. But now, that’s not enough.</p><p><strong>We need to start signing everything.</strong></p><p>Digital signatures ensure authenticity. They prove that something really came from who claims to have sent it and hasn’t been tampered with.</p><p>We already sign emails, source code, and software packages.
 <strong>Why not apply the same principle to real-time streams?</strong></p><p>Imagine a video call cryptographically signed with the speaker’s GPG key.
 Even if the face looks convincing, if the signature doesn’t verify, you know something’s off.</p><p>I sign every HTML page on my <a href=https://adlermedrado.com.br>personal website</a> with my GPG key. Not because I’m paranoid — but because <strong>I believe security should be a mindset.</strong></p><p><strong>Don’t trust. Verify.</strong></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/deepfakes_temporeal/>&#8592; Deepfakes em tempo real: e se "ver para crer" já não valer mais nada?</a>
 |</div></div></div></section></main><span class=line_break></span>
@@ -25,18 +30,18 @@ Even if the face looks convincing, if the signature doesn’t verify, you know s
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/deepfakes_realtime/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA2uwACgkQbV8aePHc
-Nh3rQw/+OoElC27vqsGxr3GR1upwVrlwfnvnnVEi2450kGUxpiErwZYtN7BtBU8I
-0HED/ZZrAL8O/p9/jvONlfe46cVS5RNeQEaPNeMo22MT1vzyPCntVubPFarF1WoO
-yZ7teLkM0yhBMYgPfxif3UpTvIHxWCpFlF3MgThMuolEKpFm2oMuv3KtAD41sAWM
-xIPAuOU7kRWzDM+2mkarvy8+NJNzoXVO0NAZBccBT0qyMgdJU1x/U5yKXc0JoD/H
-gBwbRoDD7AeiLHSeQEim09NCkgSmkLtp8Ocx6L2WIkmw7ehrD0uG9h8J2U5R8Jts
-06rXE658e4qAw5GMpkCdj+YDL4FFqOk7Gw2eRBZk09xfd4FWFI4HwMusDsC4V22M
-8S+iHcr5kY+fdhRJrf3HlDbAfS8OWPwi7/8s7ijKLeJtX6xCY6LkEeZ3mBAwTv+C
-l0Z66ibsH8Jbemb0VWpElqVNzp9c5qKAUxNwHZPVMDlzRAGnEDcKsuligq0xu/sj
-6T7NCi8EAa0+PGGzVv+pWkw6Xl3CB0iE+koIAw52TZURwGABZVDTCUxJ4yurIcMK
-4cWHvDoMK4eJQA+lJwlPIMcEe69HeeTp3zN/Lu8mjbusIortixp1S10EZhvZmUAk
-pziiXV8PJj2x0SD6cLHWolHQd7OVj6jZg1whkrvCF+pYFIN5XTg=
-=o9SE
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA4aQACgkQbV8aePHc
+Nh0gAA/8C3uEtEKNOYh485BQyw1StcdL5tay3QJrePGmdw7BBzh3/kzJYcpkTBuw
+IaSP0j4d4v4rDQTrjTpGS8Aj98mnmV5zwLpmREg5jIHYwHIx3uvteRR6HS2Y8zqj
++LxyLfKAlc3BBbRZmnBZkP3jNF70ypavhPKR591aXDG7gF9rxB7oN2OM94bn7izw
+1fLrBrlNMqZlkv914cWQG4pFqo0/JO8MDyhxme/rST6tAxsTOU6tjnsf/Ypm2Mk0
+LQ3qnFERVn66cOOGpylZtPmj2L8euI4IpXp7mw07MNDWSR75KG7TjlQTb34T2UhB
+fRUFVs8Mujs2yb8c57xgpfXEz/JJtvcoq/Q4XjUXNpJ1wEp4KiIGZB2zXLKxPhjb
++gFUUM/1yv0hEGbEaDu1HqssKlfu7iaW2Kld2tWRIJsoMDUMyIuXRH26GFiwfgv/
+H5UOprAnLZ6PoP5O7ePsagbTOMsm6DtUWeLS8Fh8N4unULUNUuelcwrk5Cc3jX7a
+ab5u6Yyb+x7TVgNPZMHOaDJGiXkNWIqEzdu5IaY36I+cxxKcXCuoKSrvx+feFpWW
+Ka+LhGUkjv3nSCzoZxNDF2hLyJiES8gBoNCWP9darB9CVR/62JPZEOCA06WJma86
+S75INbDpeEwq8K1DOTfYgkMJuum4/BILdcqk7HuQbqWhj7dmfuA=
+=EmB3
 -----END PGP SIGNATURE-----
 -->

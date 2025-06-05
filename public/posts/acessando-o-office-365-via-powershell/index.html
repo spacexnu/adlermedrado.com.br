@@ -44,7 +44,10 @@ No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a um
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Acessando o Office 365 via Powershell</h1><div><div><p><small><time>July 26, 2014</time>
 |
-2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>É muito fácil acessar sua conta do <a href=http://office.microsoft.com/en-us/>Office365</a>
+2 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/microsoft>microsoft</a>,
+<a href=/tags/powershell>powershell</a>,
+<a href=/tags/office>office</a></p></div></p></div><span class=line_break></span></div><div class=content><p>É muito fácil acessar sua conta do <a href=http://office.microsoft.com/en-us/>Office365</a>
 usando <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a>,<br>principalmente se você precisa otimizar a administração de contas corporativas<br>via script em situações onde é necessário manipular muitos usuários simultaneamente.</p><p>Alguns exemplos de tarefas que podem ser executadas são:</p><ul><li>Adicionar novos usuários</li><li>Remover usuários</li><li>Mudar permissões</li><li>etc.</li></ul><p><br><br>No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.</p><p>O primeiro passo é <a href=http://technet.microsoft.com/en-us/library/hh974317.aspx>instalar os Cmdlets</a> para Office365 ao
 Powershell,<br>a partir daí basta se familiarizar com os cmdlets específicos para esta integração.</p><p>O passo seguinte é importar o módulo MSOnline para obter acesso aos cmdlets instalados anteriormente:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>Import-Module MSOnline
 </span></span></code></pre></div><p>Em seguida é necessário obter as credenciais de acesso ao serviço:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$credenciais <span style=color:#f92672>=</span> Get-Credential
@@ -69,18 +72,18 @@ ela estará exposta a qualquer um com acesso ao código.</p><p>Durante a transa�
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA2uoACgkQbV8aePHc
-Nh08Jw//WjOwNd3npZ7m2Q9EUt+Ip/lNiboDKMrLD9SzIeQrRsEw18qDU5bxgvdo
-BAZik6eCHyoF1jOEFsSZV3PNg1CbQ/1ntVosOlAtq7zbvwcPa4RGudP+ctfhcg4x
-jJDgakEGkmA/kTrtQL9qCfK+t/nW9GYlLfqKKCe5NIR/YPEr5uTZ/1MzRmYG+gVZ
-7xbORp41HMzfcoHdcMKqgEueMbtZlPAy3MThq0s/y0Cu9d76Xa/K8nrhbbXQY+IN
-6wiHT63nuVhWtzWBnsI5tC0zIfcIsZvLGJAJZq9SLdcdkUe24xLtsE+8Rg9luBBt
-ruEvTXMFi4M+NxoYaicwbPBYodaj20gM59YXLlCByhgRW+InKcCLvbCPNXrS6nTB
-SBafrXMFLTru6Nyeu5NQEppPZ7XbspmZ66AN8Up1iIv/TkFzZ5w/Tk9m6y9NNnUA
-uLatTIYLOoy31kjsTvTsb83CI5jvYqvgyVuukSfbWEb9gKgmNyd6DW4HJGOUPE7z
-j+1lCluSENZiGXZiXEwps5xqslgc2e8H687GU6KXCSzpxIASqj/tiwcIeIFgAnYp
-swBL49rMrLGA0GFKgzq4xgKMCaDatO0qVI57GiGVA6NZH2+SdsZO1RLuKSzuR3T4
-z+H8VEQ2jbHODmnQiqdrLIjWq6t7ZyAGE9LKdUaYk+CnaYY29m4=
-=2Gd8
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA4aIACgkQbV8aePHc
+Nh0J2g/8DrCKKVGJX3rO0+22MmljDxTlSlssOprAlqxcXStIZGuH0JpTrqnykj8a
+T4nI4v/wZTLnWsxw0dj6wyyVt2fXoowHrY0ZngQ3uEo9ENFP5gHzxdLm9oZFvyYv
+uSe9SiPerxv1F02geaS69akedN7li/snVTXjBZ8rVrUKq9X0N+j9zN7iFIbJ78cy
+Q8dCPySGrXvwxeATcHyzjPa76OtCfyd4yv7FgfGLyd22ec/dFY8w9rvjN6W8m8W8
+TcSxUuXwi8xyA8ULjES7p7wYfqjFUoUOpkXWSzUeHJlnHRYRPcfE+k/TJLWiTTK2
+/g8Ep0p4QuyLjE+gB/Y7mdCBtJd4dBvyoowUI8oSBfEv4gbwZUtVq0SUrslwwakG
+52TXN2CJT+zt+tUhQuQRKyT3rvlZkunWaRsHPFrQt4myvLKh//4AWle9cNGqWIas
+4p4CsAh9vjqaJ+Y4TTJ+O60GNsgCe155cTUtB+R8Zz5N03Wx7/1CLLdUJwdeQ2EF
+KyPfJ0sA2fUUmYhgUu43t1R8iGmUrevql16mR9h38lwWjG0NeLe8DkG8f5GTx3iQ
+X7b9YnZ2/OhnwUqHV4X/YAiMo22thNKenzTEmlmTIIjXlbX76vBBcuV6ryuV8M7H
+1y/cPLdwVx0zQ3hxomh/vLAi8ptWJFskvaga+PqmqBcQa2mj0Gw=
+=5uJ0
 -----END PGP SIGNATURE-----
 -->

@@ -33,23 +33,24 @@ Keymaps handled via which-key with full namespace documentation.
 Work in progress. Updates and refinements will continue over the next days."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a></div></nav></header><main><article class=missive><h1 class="text-4xl font-bold mb-4">Install & Neovim Bootstrap Revamp</h1><p class="text-sm text-gray-500 mb-6">31 May 2025</p><div class=prose><p>Ongoing work on fully revamping my dot-files <code>install.sh</code> and Neovim stack.</p><ul><li>Dotfiles bootstrap is now modular and declarative.</li><li><code>install.sh</code> handles symlinks, backups, plugin sync, and full lazy.nvim bootstrap automatically.</li><li>Neovim config is framework-free, built from scratch with isolated plugin control.</li><li>Full lazy-loading using <code>lazy.nvim</code>, with sniper-level loading precision.</li><li>LSP, CMP, Treesitter, and nvim-tree properly initialized using <code>config</code> blocks.</li><li>Keymaps handled via <code>which-key</code> with full namespace documentation.</li></ul><p>Work in progress. Updates and refinements will continue over the next days.</p><p>Source: <a href=https://github.com/spacexnu/dot-files>spacexnu/dot-files</a></p></div></article></main><span class=line_break></span>
+<a href=/uses>what am i using</a></div></nav></header><main><article class=missive><h1 class="text-4xl font-bold mb-4">Install & Neovim Bootstrap Revamp</h1><p class="text-sm text-gray-500 mb-6">31 May 2025</p><div class=prose><p>Ongoing work on fully revamping my dot-files <code>install.sh</code> and Neovim stack.</p><ul><li>Dotfiles bootstrap is now modular and declarative.</li><li><code>install.sh</code> handles symlinks, backups, plugin sync, and full lazy.nvim bootstrap automatically.</li><li>Neovim config is framework-free, built from scratch with isolated plugin control.</li><li>Full lazy-loading using <code>lazy.nvim</code>, with sniper-level loading precision.</li><li>LSP, CMP, Treesitter, and nvim-tree properly initialized using <code>config</code> blocks.</li><li>Keymaps handled via <code>which-key</code> with full namespace documentation.</li></ul><p>Work in progress. Updates and refinements will continue over the next days.</p><p>Source: <a href=https://github.com/spacexnu/dot-files>spacexnu/dot-files</a></p></div></article><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/dotfiles>dotfiles</a></p></div></main><span class=line_break></span>
 <span class=line_break></span><footer class=glitch-zone><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA2vAACgkQbV8aePHc
-Nh02uw/+KAuvoVDU0nKr0aNKM3wQTnoJ7Zyby7JvY9stmW9htfwp8vdnnlfpdtLz
-N4lK2pe9e5QuOhkMArSWTlwPB3qUqJeyv7PCPnvsN+IngnkFXRzBetaFfPw5dGA9
-4lBw8iEuRrcjyo5Keu57DWVHg+EdV7sixgVz9rb3dHkU1pAJd7+phfhfxNUaIwaX
-ytpQp5qXN4oIrAZTvuXX70gWe+s3QH85YjlZJ+rO4uC9dV0ugPNU8kMJNp2YztqE
-qOjKij7mb4oK2rGXaD0Wx3O8LONjGVGOBdJXuzRpg0G5ZzL8iNn1ZiO3yq5nQNyZ
-snOYRADZPBYI1hy33QszJ+gdP4yjwaLawr4OmXnnwlLayKkByjM+9EkyDcg8Ni2G
-EVjRQSRGwsDc/mAk7CSMIqcJ4n+oXGYqzNraq7tq3w30j0k02+j5GaVPXLNIRYuL
-S2saWfakNpVjlGHVddXvRXKEF+JGfwYS2N2fGwFsbXLgab34qXzIXtjGzUmrR3eL
-VSUDszfyMX1Ii4UEVc9ViZqbm6eEsAnvonKXUVb0+tGVYH03Q53HVfWbxkFiaxy+
-vJCGa5XMyotNDwNlOr/uQbZ49uR6yOBgzT9g3ATpGW+ijEQLVPiMHKUrqi0J/ERd
-glEdKEP8i4qfzuBQppmbm0wyXrpL28VtjmgJ9FNR1fKci3+Lwlk=
-=gNcD
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA4akACgkQbV8aePHc
+Nh05HA/+KB9XQMj6iOGnO7eIwL3hYQ7C0HKH1E2iBzAkkHgtA0H+YZtoyRA+R2B2
+Cuz6eocL5TVwXiNHa/Cmrg6s2VrGmSqt5Fmxj2hNb6HszHOBUAZ0VTdlm67Fwq0R
+R3gDWVB+/cAeVONZASjSxcScjSrt7ICZPVwFgJQ3lp4MBlz5YILhwpTtBnD+x8PZ
+0JDKi0suJfejdPzopTBXDJW/lnOCwaNYCSNsC02m5S+jGUfyhsWafSrIbYZXQo2i
+BN4vr0PA0JejLiP2rHpl/vUrpTcNe6vDWv96N1diZ1+sdZNWzYog9o/saMG1t8w9
+A0yYoRB6VXkql0ykZ1rbxBqPRvwq8V0MZb73pWtWEQ+AQJ2RuH3eIQQdaRbqNvGz
+CTyKRW7Y+jW+avNtuT7hwvIJot3o/3Pechvr0w6Sj/cOcZe8o35wD97EqGJCiF8W
+6lGYYsFZFMHw7TGaZ+EpSUfUeM73FepN3tX9F/M+kwMUjotEzAd3xUfZ0MiCxzTw
+oRoQTB9caetx+QVruaaqQZbJ1RDLps0OebOsbUcE62OwSYyiqfNmFGugzwUQcI3n
+FQ/OPBiMJkIstUDIE3OTy5mmFvZLmoh+C2SXXJ+NG+UcFsShi6a61k/ZouwjFkH/
+5s8pcuF1ul8LaR3B16EJqLZan6w2+AodkWGW5PU/da5DJgc/Qc0=
+=n9zi
 -----END PGP SIGNATURE-----
 -->

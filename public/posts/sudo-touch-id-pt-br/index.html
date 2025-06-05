@@ -32,7 +32,11 @@ Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Sudo com Touch ID no macOS</h1><div><div><p><small><time>June 16, 2024</time>
 |
-2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.</p><p>Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+2 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/tip>tip</a>,
+<a href=/tags/dica>dica</a>,
+<a href=/tags/mac>mac</a>,
+<a href=/tags/seguranca>seguranca</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.</p><p>Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele deve ficar assim:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># sudo_local: arquivo de configuração local que sobrevive a atualizações do sistema e é incluído para sudo</span>
 </span></span><span style=display:flex><span><span style=color:#75715e># descomente a linha a seguir para habilitar o Touch ID para sudo</span>
 </span></span><span style=display:flex><span>auth sufficient pam_tid.so
@@ -45,18 +49,18 @@ Espero que essa dica seja útil para você.</p><h3 id=vídeo-sobre-o-tema-no-you
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA2u8ACgkQbV8aePHc
-Nh2Irg//QX6Lb6puTJ0Y1WmbfDYa4ynV5biZ7AkTOUv2oV6+49Z9BNNJMAIufOez
-AqnJDQvL4X8oX35fXM/DBRdZLRED77EZAr+0vLrGxluwAgsluJBi3IrjxzX/c/8f
-fyt0UiZW4spAgBjikeb4obtVB+5lVdzpOCJj32YULrhwMggb93u72qWFXw8OCFSA
-PlB38fbkxPsPEH83NJM6HEhwzJYnp8OG9bcahzECoAT++Ks4gt1WPpnuXufZry8I
-uCQwG8kHykjOoVY0dD8W12KvMVGJVliuG5v3yNZqSFQAr1XnIGQNdimQ60JYWqov
-BJ+icXXhm2poWN1j7M1bfYYsB+TaKH59GYVWicHeEAR19Xp5E9hWIe3FZI73NCfu
-BXRJfgJrmTW1uxtolYlvePEdruaMwVkVN60UAEj61hBleMn5g1gkmmJ4lpCa39jl
-J4mFaE16ed+7HNSkqvpWL1WbCwsUyH12khnKOgV46XvCXBDaAVPSfUZieZSClivn
-EvZoyUEjxdxft2klsbAflM6d+FdSqsNjWWBBhAnSEejwL459ri3zVzk39Bc56Tv9
-Y/OdD6jpZG+eID3elcRwSFrw6VuHng+tbQ+QRqDj7O/CU7Sw7u06DfzBAe2je7LQ
-D3ZzYmlH9zav3wEnZ2C3f/f56kpre7exiKyCH8iQZQtGmf+Fs+E=
-=2VhC
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA4acACgkQbV8aePHc
+Nh0KEg/9H7EsrwjxawJggviIYW96i6NbZTe9tDGjxion8DLCZwFy+7V8ppcBKeIe
+aBYBADgYv5BdGgFDjdHLKUG33kCN0zOri7D8GlLA4GhILdDRFe4lzeFwaFHNPinC
+RtQ5c7UpvCsWQHPHN2R98Ib/YgQkCMk5IqiMV8Eh2sO4o8wLTXQQwMT7rEoz6ZGg
+VOEusujTI2VhzKzffWizky64yhC3a+ql+YYPfMIkyt+49EFa32wym6obeYX+XoIq
+n+Iw425NvB4Oe4cGsMkdgTmG5gB0vmNmhECw6JrlYYWLta7c4BeQcD2crtW0ocIq
+/Jot/KpmupUFYyq0+OiMK7BYAFz/j8r0ljgMxDTRa+u5VQVBajHiiJVNxZOAucec
+DJNaBFmjhg2MYEoGVsknNVk3IJYPdK3wPoaDsxOUkWtw04cHm4Xn8TX0G8u5eneQ
+sllYLdec+wpdwASKJO4gXQt0sWTE25arDqIASUMVJBMQBS3ueJGjVhG2CnZod0dI
+h9yv5qh4g67rBCUKOsdFqSfrqsx9TcHmzVEH66CTPR2sa54NQDeyDwBer6q3jvaX
+jpb634kJMKxosIvkV/qaku+WcY6cnB7gky266m2lyENXstHm/76hkxQPlj1+4jQ1
+ratQwOFbksQem4goyBnmzrLX7kF7cpu7taHP5Hm0TNzxDVPFcAQ=
+=Tx9O
 -----END PGP SIGNATURE-----
 -->

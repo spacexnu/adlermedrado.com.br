@@ -32,7 +32,10 @@ To edit the file, use a text editor like nano or vim. For example, with nano:"><
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Sudo with Touch ID on macOS</h1><div><div><p><small><time>June 5, 2024</time>
 |
-2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.</p><p>Locate the <em>file /etc/pam.d/sudo_local.template</em> and make a copy as shown in the example below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+2 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/tip>tip</a>,
+<a href=/tags/mac>mac</a>,
+<a href=/tags/security>security</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Setting up sudo for use with Touch ID on macOS Sonoma in just a few steps is very easy.</p><p>Locate the <em>file /etc/pam.d/sudo_local.template</em> and make a copy as shown in the example below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Then edit the file and remove the # character from the beginning of line 3, it should look like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span># sudo_local: local config file which survives system update and is included for sudo
 </span></span><span style=display:flex><span># uncomment following line to enable Touch ID for sudo
 </span></span><span style=display:flex><span>auth sufficient pam_tid.so
@@ -44,18 +47,18 @@ To edit the file, use a text editor like nano or vim. For example, with nano:"><
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA2uEACgkQbV8aePHc
-Nh1ZChAAoW0suORLJ9lIvJir7mb6f0T7Ev8ZlCkHmaKN9S/BkTmJsjPoyXiCMLqx
-i7jA12LLqJLZwK/XqDLYBJ/F0khjxjfrIikdeHcsBOzz/tYGsvhXIz5NzKi3Nv2w
-5TbJWcgPHXk1MjCN0GwGNGXDbK+RtRPtsOtJXpm9R23fZkHYc0pfJngclNRWiAvK
-bJ0ddnLN03cJbwRVJYebcqx3Un7XcVxu98IjYhYUiMUYc+nh0AOS+f63kRTXfdxU
-2cW0yk5tEgnZl9nssuQBmsv4eCyn0AIwygCbfMpERJbasnkwpnFz1vrewggEipN1
-4F9NfahFwYj7ZMeZnPsx4XfMGuqBZLBVwjY9vWBOvIAlzNX5cvA4n/p1CyoGFXg6
-u5a3BmvjfyyeogZ6zPxQI/npbDTdgVCAgGftkyVHrUHWHuq5ygYDMaKHt7HBXH8m
-WUYhvrAx8a5OWBm+EbMIXZArVTHYdr1InrGvWjVnCZ18e+0GP4yjIYqHZD/XQG+Z
-/F8BIY+/GI1Q7jY1XIyXHmMK2iBfbOUf2THV+ct31Q6ns37vU0ZQ2kJ4QAdoUCen
-FZn+lJI+RofR6evWETYpq12BZWfmhciwZs3Q/mfDSj9ULTEGFOPN5WTvvPTdnsS9
-SizP/ikrFRydWkeRunqUaXY1s3RJiPa8KHZRjBaONuBs7rOzB68=
-=EwwO
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA4ZkACgkQbV8aePHc
+Nh2xYw//YKJ8vgN3fRfg8gqK4IjzQAzA33H8km8m8/niKQBWAd/LurrcgFi22nQv
+0bhX/hLdNuEPb1dzS3LhtCrGqswJJGcCy4Cag8E4MUu4GYmjmxQXS/8lLr5MBMqs
+CCDlRjk5OIbQyjnRxwafx7n9dhdwZbCt1dFQ6JD3AC90YJPBe0hprhqjLFY5+xMO
+A4Jok/v2UmIJutMJLaNShGPlnnhKTsrmRiOCvsIFGiqhPod4fBI2nL0EBKJFWn/L
+wyP0XxeAtLB/LWfGM3Qim533CKYK9yMT5gPoEgv1fdakg/EJ3+HGqaNDJNW8VNqd
+qC9PJUVO7BXZJxYaXtU5kdxrUDWVPMlpmz5NmQfl9uY/y+dnQtnmjJnlQw93Cx26
+0P/VTnw8l5bh2yOkbMnJosT0E7g9NsYZ0JCAL6GxF2tvEqneUOyMJ5OG4ivIUiz7
+hZUlCnVQhz9YEEgvN5j91o4eZbzzPwv4CvcQkdGgQmDwcgtJNDxeHFCa233FojOx
+IDnRAHnQDovhc71L7DZilZHbPQxnfQjf63UPhgzj/VNfnkMsmbGf57LuyPcoC2A/
+qXf/sIiZbyc8jmhXzY7tXm9fhy1LxkwKqoh1zbLDIRvZ/6JuHn4xvvXObvCO53nQ
+ISVv7d573H47nut3pE4XzXQhccH9VNR43Qy3+Kb/XRl8+Cdfi48=
+=xKRT
 -----END PGP SIGNATURE-----
 -->

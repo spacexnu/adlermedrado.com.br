@@ -6,4 +6,16 @@
     {{ .Content }}
   </div>
 </article>
+{{ if .Params.tags }}
+<div class="post-tags">
+  <p>
+    <strong>Tags:</strong>
+    {{ range .Params.tags }}
+    <a href="/tags/{{ . | urlize }}">{{ . }}</a>{{ if not (eq (index $.Params.tags (sub (len
+    $.Params.tags) 1)) .) }}, {{ end }}
+    {{ end }}
+  </p>
+</div>
+{{ end }}
+
 {{ end }}

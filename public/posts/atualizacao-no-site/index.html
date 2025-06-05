@@ -20,7 +20,8 @@ Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o 
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Atualizacao No Site</h1><div><div><p><small><time>May 9, 2008</time>
 |
-1 minute read</small></p></div><span class=line_break></span></div><div class=content><p>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.</p><p>O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.</p><p>Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
+1 minute read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/site>site</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.</p><p>O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.</p><p>Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
 <strong>Zend_Services_Flickr</strong>.</p><p>Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:</p><p>Controller:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span>$flickr <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Zend_Service_Flickr</span>(<span style=color:#a6e22e>’MINHA_CHAVE_DO_FLICKR</span>;
 </span></span><span style=display:flex><span>$this<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>view</span><span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>imgRes</span> <span style=color:#f92672>=</span> $flickr<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>userSearch</span>(<span style=color:#a6e22e>’EMAIL_DO_USUARIO</span>);
 </span></span></code></pre></div><p>Na View, basta manipular o objeto <strong>Zend_Services_Flickr_Resultset</strong> e <strong>Zend_Services_Flickr_Image</strong>.</p><p>Simples demais!!!</p><p>Abraço.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/o-endereco-do-meu-blog-ira-mudar/>&#8592; O endereço do meu blog irá mudar</a>
@@ -30,18 +31,18 @@ Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/atualizacao-no-site/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA2t0ACgkQbV8aePHc
-Nh39Rg/6AzJkjVsLchFehvtfS/DIZ7DmTYsuGyGCrg31uiwa3LXnT3Wj99xeNcOv
-5BV/rzAfQpB9gT1CL4nf4/Yi9AJ89F8OwbTavYgS7j843RsiCsThQj5/4I4ELMSc
-vlWxOyWOcGhk0rr6bPpFRD0lKV/qoGjIWOzwm74057d9QPH7JUT4A9TY3kqCDV8x
-0VH5rBtlLiSb+gIldfUGeYRIHFUvdir5rJ8VM02w3Ahf7IwgOzPlMV4M9paeeq6J
-xFOTah+oPhA3ZgtN2rgdQUGWNvjmHaIYefkJ/eKNvSBIjkjtyacUo+tmEBgciZlG
-Zr1p74/1lz50ZducXOntopJqvGQLLyX1g9TPzHZlt3NQfGxBy9rczKU3Dk3laSgs
-BwUuQij5AFhRpekCfz5YFUeXRcM1foQudeb+yqrWpyhvI9fVSjf/kXrZrQTzcJjE
-r5oeGKSvkWe8eZryz0SlYKD0UI0GxD8QyZDb3uBiDSe/vsBigLOO1QR3ci2z8woY
-I0gHQP60Jr/Cx8j2tPcQl+XP4gf4m2bD8ZZRqiWmzAuWHKM3hkdQH6DbjJEg1Bbx
-YwwR3z7Thw/E96LFcCXClSlC+6zXrEytRHttCDqr+XjAFpegobUNVqN13vRRDpc0
-S9CEYELbTuwuBVmrydCEeKZsr7LnEuTy7JihYaJdtKVtpW2qgYc=
-=Ttoj
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA4ZUACgkQbV8aePHc
+Nh0nQxAAkbAewqFeigj+yTyzn6uhi53Aj3j10bfx6VMM9X9xLj8mE4Weo9SI05b5
+Qsc4RHbwvLoOHIdp6Hi9r5l78ih3D3dj/E3k6dlxXolvV44yjrO9GlMQTibShjXf
+H+MsRQBOngd804bVcOsQZDurMuypyvvCragyy3sCF+j4YOy5ik/t1T0nmHDxiQvX
+4NcJ8O9QXI9D8QMqc7VB2JUY+UYDdn8jBgBzXT9f59H+ixJJGrKH4PxKexeMUYCQ
+Bzq8rJHQIiT9KyKBSM6MdUA3FIWiFpaFdNpc5DyaHnxjzPELvn75a/lvgcejNnhL
+vc/3qCCKerwkYdIbrpzC6Kxng9LB/RzjBbo/cg+tLo3GErqY3RI7rYUeS7Fsw2wj
+PZg1ONlEJ+Qf7nBgs35eEuvmnF0uqhLog6OA/7Url9+9U/ZF4OTu6r6P5qlcGPy1
+cwoYv82MCFDBRFpSjW/oVGdI/AK2NGZ6T2LbIh5T+RBDsy7ATJYAt1inLY4tMqnh
+eDMu5s0Hmsuf5rrn74I1gSrD25jiNntPxQlCYoHmdF976CF8sY1Z76MjWNLbFF6e
+6FlMOWugb2WSFlqahvXEIxzRf4rgHQr7NSTpRRu4y7hXae23u3+Kp57ymb+kTGvi
+NcsUT0mRifIRR6l21my3UPHlv+ERpbdQx92qiI1bTIXWLHElScE=
+=KHPS
 -----END PGP SIGNATURE-----
 -->

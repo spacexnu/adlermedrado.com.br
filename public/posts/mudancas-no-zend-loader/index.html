@@ -29,7 +29,8 @@ receba um notice nas versões atuais."><link rel=author href=/humans.txt><link r
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Mudanças no Zend_Loader</h1><div><div><p><small><time>May 28, 2009</time>
 |
-3 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
+3 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/zend-framework>zend-framework</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Com o advento da versão 1.8.0 do Zend Framework algumas mudanças no Zend_Loader serão necessárias quando for utilizado o
 autoload.</p><p>Até então nós habilitávamos o Zend_Loader no bootstrapper para usar o autoload da seguinte forma:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span><span style=color:#a6e22e>Zend_Loader</span><span style=color:#f92672>::</span><span style=color:#a6e22e>registerAutoload</span>();
 </span></span></code></pre></div><p>Com o código acima, todas as classes incluindo as que utilizassem a estrutura de namespaces do ZF seriam inclusas no
 pelo autoload no ato da criação de sua instância desde que estivessem no include_path, porém, esta maneira está
@@ -59,18 +60,18 @@ locais diferentes do bootstrapper como por exemplo num controller.</p><p>Espero 
 Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/mudancas-no-zend-loader/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA2ugACgkQbV8aePHc
-Nh300BAAqQGpDdpcwAJ3xupTgI0F1qXyS0EzOkt1pwxIOgkcFOQ7/XEB68ivXEuh
-YccvooVwRxqErWMsnzpPcXS+fPtSVW0b9arKfpQmpzTkXACmcTjNhnxKmS0HYZfA
-qTN2CNbSk8uxBBur/J3pOVRzpJ67XizAVSTHhmxyJi1lp8fjajHANVjDswL2yBCi
-x1jjx39Lwsghzlf+a0VCbdR47Or/AoLzzYEdKq0zZgrG+l3rElGUowMz2doHgN2L
-i/FwwIgO1iCkKfNKjIkaeS2sTw4CBD2BJBpligUK67qkSZEHl3xKWVcDUo8d0IJj
-TJ7O4aqdybd67eWFNgD+HEf3MFd7PAfj5Dq1mXi4QcMCQQ41bQvXLemFh8ZR0um+
-Gd1x8WBBonMoz8JprqAM1PMgfNH93/dlzPAR9y9PpggQVA0326EvFaz8jPgQwgoP
-SYcZ+7xu035v2yVvGq0FloR4GJul3BN29WVYGZE35uSOPBEbpsFcsJ2y2q1D5RkC
-LjTSgNzAwpUQSluUrFgGNLO6aeek9tEIN/wpSSKvZrpn9I7GAZ8/nfBw7XYSYfmZ
-hyk/XdQJOIYo8G0omUAo7CxHGjj0LQxhhLw0IkgXOTwh0H9jDNdEdFU8AUYrrJyq
-Cg71FGZOPZwJDBXFs6XJn04nukzuYa5kkRspVo7Q4T+W+NlrE/Y=
-=CsyD
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA4aAACgkQbV8aePHc
+Nh2JsA//cBT9hlNuzdsCiRzzkCzXlUD77ST4qUgmKVhvTpeUJPPUfbMb9mAnINhZ
+TEw0V3MA9xoHPB+qqKgo18erjFHMUP+sn7NjlLY40cjgMvoqxNsK4MuhNa5cr5jD
+lI3Ay8d5seSaWDyP95AoUrh/loK0VDmyhGabV6Q5au69katqVZPkOlGEp4ik3PbR
+/cfcpnceJXJG22rD3h2yISGmXKwpvOpOz5kRGfP32atA4ePBEq7jeiLq+KmGyP+J
+f2E5F9xt4l3R/ZenOPESERvdup9cKQz/6jHfPyvNSHP4pQreP5tUEhl8UjpAZHbd
+S2OZZX1kmzmAZe9IGqD8E5N/R/LpodyLGg53D51+zjJpiZOJk15CPmsoLW4CdBv9
+G07dJFfe0DSt+IawVWJLd05Ngjr2xZ6WqNlTwm67chJ2tYpunP/kxGpWm47E8PF0
+EFbNeOX8b5leIyV2wKjGFbr0J3egkcbf4BU9LukrV+c+rTf01VfFhTm3SCmzu2w5
+mI9bx3o2uDP+w4k4p/agQLCWUmq02OwW6Ea+77rzXvjLR/bxtncQn37Cobls0hsC
+ztMcSaXcyYuFg+htPq6TIR6lh2DzuMGMi+Qp0usYdk3x1JeAGWYF/Ji/RIB79sRu
+2wMmGNCqVNyv4XGgTpHjaEKe8zD+l/vtURyA8Ga2znimGLuVP7c=
+=83B4
 -----END PGP SIGNATURE-----
 -->

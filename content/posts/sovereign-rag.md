@@ -1,5 +1,5 @@
 ---
-title: "Sovereign Rag"
+title: "Building My Own Sovereign RAG for Secure Code Analysis"
 date: 2025-06-14T14:59:31-03:00
 draft: false
 tags: [ai, sovereign, ollama, llm, rag, security]

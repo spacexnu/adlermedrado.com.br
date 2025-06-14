@@ -3,16 +3,16 @@
 Hash: SHA256
 
 - -->
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Sovereign Rag"><meta property="og:description" content="Building My Own Sovereign RAG for Secure Code Analysis
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Building My Own Sovereign RAG for Secure Code Analysis"><meta property="og:description" content="Building My Own Sovereign RAG for Secure Code Analysis
 Lately, I’ve been taking a closer look at some code analysis tools that claim to detect security vulnerabilities in software projects. The idea itself is solid. I got one of these tools recommended to me and decided to dig deeper to see what’s really behind these solutions.
-Pretty quickly I noticed a pattern: these platforms are far from cheap. Some offer limited free plans, but we all know how this game works. When something that good is offered for “free”, the real price usually comes from somewhere else — data collection, vendor lock-in, black-box models processing your code in someone else’s cloud. And since I’ve been deeply studying AI lately, especially Retrieval-Augmented Generation (RAG), the question came naturally: why not build my own pipeline, fully local, sovereign, using open-source tools, running on my own machine, and depending on no one?"><meta property="og:url" content="https://adlermedrado.com.br/posts/sovereign-rag/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Sovereign Rag"><meta name=twitter:description content="Building My Own Sovereign RAG for Secure Code Analysis
+Pretty quickly I noticed a pattern: these platforms are far from cheap. Some offer limited free plans, but we all know how this game works. When something that good is offered for “free”, the real price usually comes from somewhere else — data collection, vendor lock-in, black-box models processing your code in someone else’s cloud. And since I’ve been deeply studying AI lately, especially Retrieval-Augmented Generation (RAG), the question came naturally: why not build my own pipeline, fully local, sovereign, using open-source tools, running on my own machine, and depending on no one?"><meta property="og:url" content="https://adlermedrado.com.br/posts/sovereign-rag/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Building My Own Sovereign RAG for Secure Code Analysis"><meta name=twitter:description content="Building My Own Sovereign RAG for Secure Code Analysis
 Lately, I’ve been taking a closer look at some code analysis tools that claim to detect security vulnerabilities in software projects. The idea itself is solid. I got one of these tools recommended to me and decided to dig deeper to see what’s really behind these solutions.
-Pretty quickly I noticed a pattern: these platforms are far from cheap. Some offer limited free plans, but we all know how this game works. When something that good is offered for “free”, the real price usually comes from somewhere else — data collection, vendor lock-in, black-box models processing your code in someone else’s cloud. And since I’ve been deeply studying AI lately, especially Retrieval-Augmented Generation (RAG), the question came naturally: why not build my own pipeline, fully local, sovereign, using open-source tools, running on my own machine, and depending on no one?"><meta name=twitter:image content="/images/default-og-image.png"><title>Sovereign Rag</title><meta name=description content="Building My Own Sovereign RAG for Secure Code Analysis
+Pretty quickly I noticed a pattern: these platforms are far from cheap. Some offer limited free plans, but we all know how this game works. When something that good is offered for “free”, the real price usually comes from somewhere else — data collection, vendor lock-in, black-box models processing your code in someone else’s cloud. And since I’ve been deeply studying AI lately, especially Retrieval-Augmented Generation (RAG), the question came naturally: why not build my own pipeline, fully local, sovereign, using open-source tools, running on my own machine, and depending on no one?"><meta name=twitter:image content="/images/default-og-image.png"><title>Building My Own Sovereign RAG for Secure Code Analysis</title><meta name=description content="Building My Own Sovereign RAG for Secure Code Analysis
 Lately, I’ve been taking a closer look at some code analysis tools that claim to detect security vulnerabilities in software projects. The idea itself is solid. I got one of these tools recommended to me and decided to dig deeper to see what’s really behind these solutions.
 Pretty quickly I noticed a pattern: these platforms are far from cheap. Some offer limited free plans, but we all know how this game works. When something that good is offered for “free”, the real price usually comes from somewhere else — data collection, vendor lock-in, black-box models processing your code in someone else’s cloud. And since I’ve been deeply studying AI lately, especially Retrieval-Augmented Generation (RAG), the question came naturally: why not build my own pipeline, fully local, sovereign, using open-source tools, running on my own machine, and depending on no one?"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/sovereign-rag/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Sovereign Rag</h1><div><div><p><small><time>June 14, 2025</time>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Building My Own Sovereign RAG for Secure Code Analysis</h1><div><div><p><small><time>June 14, 2025</time>
 |
 7 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
 <a href=/tags/ai>ai</a>,
@@ -26,18 +26,18 @@ Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public ke
 <span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNudcACgkQbV8aePHc
-Nh1Jmg/9GJe0bEZqXpO2PmFPyfyIv0910P8Jrq8/KJkyitI+e4dCQ87sUOIe/vxD
-JJnIuFs/jzoqSho//ewMDgYsG6M+ErPObsis4HSIB0w1uT/RPE8XVHAbvTbo0LCZ
-H3RmkuSlMZt6q0xauO50E5s8ilVXhR4vqLV7tUklD+cKx5zcFEKSzbMbParH6Z6G
-zVzk5Pxh4OKGjrICucBFJKWdSkUlad3zEcY/VQTGYUk2zoQLj2YHiDvlEhHCmQAk
-o6mUCNHYWzG4YxPDKnvXnmNn5iP05GX7nKIaOcnVhXicbHkDqaCB2VmMtK/qrVvc
-rHcYz7xkRqIUj1Z3AzcQR3vFSe9VQXNjEjCBHR3zzlKQIpzoJ8vECSdcMdlJhiSN
-OFWBHqtRq5tKin6nkkBsdU2bm1+ns+w+FrBauGE5bQ6OIC9jmh0kpgC/6iVO3DeB
-jMYQ47+rCrVeV2Hn/29n2MudEKXrDEjq3tBRxSaGUmSvubze7gYvFwL6767XvKx4
-Dg+RLFqtkRHyENESRfyJoheWZPBoo2OCxb15qfMGT+cFWf2muWmZpk6n0LJAnJLl
-icjMK3wf7o4qMFdSg+mUSMBNtCh8GMk8bVn0wTx9wZqwLLXw87KurZIOGYB62N6z
-rYHRQfGl438V/iC9Q5sMkBBl0bdnfztRicFfOmocWPnOgwxVbNw=
-=Kbsb
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNuuMACgkQbV8aePHc
+Nh0Bfw//f1dhDjv6+sASF1m1lqvPozWVyQaqiJze8qVCXazil+njh2lYHDq4kbDb
+wYWvELmvf/bkRZutrrr3EjjbqBle6pQBtAw6TQKEm/UYTQW0e0f8HD/gT5mOeU2b
+yMF2Wa7QNKhkshQY3ycXjJpQVBmLiTAg28vc8pA4zThHldXA517dP5Hfe2eVI3ZR
+CIAb1qhVZ1IcrwOMzQ/fdEvfelFPpK+4D+stMQTzAo2e3wEwMI7cKHM/GRrR7z7a
+dTH8BlH8+5Txliyd7Ei8Wj2pmbU3AQmb+UmXKoTOhbcL4NboXJP3PAJ6xUYo4ywA
+Ej8HWWv4jHoBPZHZaK5kVQe/UexU8gUeTEfA4gos46o+8WERW+iwhtxXxWJW5WX+
+nupqQBFYyluaFPqpf4eKgvx4wBu1Nyc2J3VkCFwNaN4FrqjxMLl1IKn6mYrA/m2N
+82KqTl5LmSK+KqbagucXSVgtuqaE8tGFOhIkcwdLKLm8/MzShO2A7ky57Su0u7eN
+gMmF9xsKR2ds6AJaTq5+OZ3ulHHvmvmXYCpaJ2vlhWVsT2dBQnuJSUjH96Eh5+gQ
+dho/IK//a8SXKylHawWG9xdcgdlIA7DDqyFXroalcZ8gvg5s+6tc/Ukt//+ydQWU
+jtbzGm2+awShZbJp27Iyni5j5qj/N5bl2bpp7uEFJ/XwEAhkaB0=
+=UkKj
 -----END PGP SIGNATURE-----
 -->

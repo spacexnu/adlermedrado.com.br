@@ -7,23 +7,23 @@ Hash: SHA256
 <a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
 <a href=/uses>what am i using</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Powershell</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Powershell</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/acessando-o-office-365-via-powershell/>Acessando o Office 365 via Powershell</a></h2><p class="text-sm text-gray-500">26 Jul 2014</p><p><p>É muito fácil acessar sua conta do <a href=http://office.microsoft.com/en-us/>Office365</a>
-usando <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a>,<br>principalmente se você precisa otimizar a administração de contas corporativas<br>via script em situações onde é necessário manipular muitos usuários simultaneamente.</p><p>Alguns exemplos de tarefas que podem ser executadas são:</p><ul><li>Adicionar novos usuários</li><li>Remover usuários</li><li>Mudar permissões</li><li>etc.</li></ul><p><br><br>No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.</p></p></article></section></main><span class=line_break></span>
-<span class=line_break></span><footer class=glitch-zone><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/tags/powershell/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
+usando <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a>,<br>principalmente se você precisa otimizar a administração de contas corporativas<br>via script em situações onde é necessário manipular muitos usuários simultaneamente.</p><p>Alguns exemplos de tarefas que podem ser executadas são:</p><ul><li>Adicionar novos usuários</li><li>Remover usuários</li><li>Mudar permissões</li><li>etc.</li></ul><p><br><br>No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.</p></p></article></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/tags/powershell/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA4+AACgkQbV8aePHc
-Nh0rzg/9FTYHxOHIKHkvDhYCA0bWz1CQntAGn5GGzXhy8/shXfmRYTdsa3R2Y6Tz
-yRujoaS1O7Zn4rg3vwFimxbe6I/bbGoccNjQXa9nkRPM4O+VBj7Wxsnl4iypPFBw
-P2C08JD/2w3vOcobm2q1Xtyt2XA6PTsUVV3Pfyxc38COykBLTMEJeLcQKrfUefS9
-tMR79ty2AcQ1iyq1E8ItzoIzH5IDLvcHKjiKhAUfsd4TQJ6+EhwGYtjhGNHjirkU
-SPK5B25PLHpVlZIM8HZW6R+q7/dcTovMq+aF/Eny48A6RnNcEq4cOQ4+ELOxT2s0
-6AHMit4X4oyNnd9DvT2dTrULyEjm+tehSVB1aoIINvdlOHR5fCrM0vS2rKNaTKnE
-vt8GrqNA5euznMXHLFNPfhp1uJIw6XUvpuwV0TIYIgDLGBQXvrvK5XhYIvm/MZ7j
-WHbYNa8qlcACKq5xXKTr3qOTGoVNkhoU+UyiBKVlB738gwjnOxQPMyEe+JNYgubT
-LhH+eVHJ5MsbGea4s/fsYxVLpWxxSVp3sgdm7+Xb65WJUzw5Fn8ZPhn2X7IAKv7U
-FA0N873bbQ7zo7xMvwiA5bMCLn2UrEMEytpfa3Wj4yK+Klt8mPc6+bxQn0pFD+Nw
-b1+hNVjuf6gNozl8h5Y/XjtcxJ3GfSXRizYQo3qe2ahWvGW0mUU=
-=M9Pg
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNuesACgkQbV8aePHc
+Nh0TtQ/+IAfnNhZMW99dqtjHBgYHtAQ9cmUblH+5aHBv9HQp9LLSaCMAO0hf0l9k
+8ahoEq/Q4IDhIQ9Tz9r7zjryrrFnawFB3rYz5GAWDvYCee2eBPfmeDWp7VAz2gTq
+HvA1Yuobf0ZEIm/YP1GLmAD83xIg5n00K1PPfiOpm8KQHevMpic9g36xtUypUGSs
+hvM6Cxobhs/9JpfMocHJpkGwlXJNi3hJ1tc30aZT1qcXxhp5wHXsUcLf3FoeWmtJ
+MUpV8TmjGv9HGNZJzgJ2AFudhOEYq19nFECcZounudkna5G/yDwimPWP474SaT6B
+vmVbVlKolfJgbUYeYb219M7PKs2aFrm0IYIzSmy+3dYtJBt6e7RZzRFxbnjYOMp2
+rWcRQaAqxG9MFCUF/+kFdYOCfUmSioFC3St7PuVYsFdxEDO5PMlGZIsQhEPddkAF
+0KPcYt0qw8/3fTkIp20Tclu2DjdcFBQTLwrHRvDA3zxSt8pkd61EG772AHEFpUz+
+r2GkeW9nvo65ST9JauVN1T+/+6h5FMpyl+nOwqgBxbDqg9RFuxzqjLStvq4ViE4r
+cpcYKjNwS4L0sUUlay5Wa6jxdNvf3HEodqoAp6fuRq3cSi80nGCssDku+aAbeCfH
+rguf6tUf9XHLU68JSQVzHa/3UW/NxCj9ZShcFZLTukTUjjaGmhA=
+=26vw
 -----END PGP SIGNATURE-----
 -->

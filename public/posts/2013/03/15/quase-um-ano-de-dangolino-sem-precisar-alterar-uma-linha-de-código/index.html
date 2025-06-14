@@ -1,0 +1,81 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!--
+- -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- - -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Quase um ano de Dangolino sem precisar alterar uma linha de código"><meta property="og:description" content="Já faz algum tempo que eu postei aqui que eu estava usando o picasaweb para publicar as imagens no meu blog usando o
+dangolino, mas, recentemente eu pensei melhor e decidi que quero manter as imagens no meu próprio servidor.
+Os motivos são vários, mas o principal é que quero manter a integridade do meu conteúdo em único local, neste caso o meu
+servidor, simplesmente pela facilidade que tenho de fazer backup dele, que é muito mais fácil para mim do que manter um
+backup de serviços como o picasaweb ou o flickr por exemplo."><meta property="og:url" content="https://adlermedrado.com.br/posts/2013/03/15/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-c%C3%B3digo/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Quase um ano de Dangolino sem precisar alterar uma linha de código"><meta name=twitter:description content="Já faz algum tempo que eu postei aqui que eu estava usando o picasaweb para publicar as imagens no meu blog usando o
+dangolino, mas, recentemente eu pensei melhor e decidi que quero manter as imagens no meu próprio servidor.
+Os motivos são vários, mas o principal é que quero manter a integridade do meu conteúdo em único local, neste caso o meu
+servidor, simplesmente pela facilidade que tenho de fazer backup dele, que é muito mais fácil para mim do que manter um
+backup de serviços como o picasaweb ou o flickr por exemplo."><meta name=twitter:image content="/images/default-og-image.png"><title>Quase um ano de Dangolino sem precisar alterar uma linha de código</title><meta name=description content="Já faz algum tempo que eu postei aqui que eu estava usando o picasaweb para publicar as imagens no meu blog usando o
+dangolino, mas, recentemente eu pensei melhor e decidi que quero manter as imagens no meu próprio servidor.
+Os motivos são vários, mas o principal é que quero manter a integridade do meu conteúdo em único local, neste caso o meu
+servidor, simplesmente pela facilidade que tenho de fazer backup dele, que é muito mais fácil para mim do que manter um
+backup de serviços como o picasaweb ou o flickr por exemplo."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/2013/03/15/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-c%C3%B3digo/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Quase um ano de Dangolino sem precisar alterar uma linha de código</h1><div><div><p><small><time>March 15, 2013</time>
+|
+2 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/general>general</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Já faz algum tempo que eu postei aqui que eu estava usando o picasaweb para publicar as imagens no meu blog usando o
+dangolino, mas, recentemente eu pensei melhor e decidi que quero manter as imagens no meu próprio servidor.</p><p>Os motivos são vários, mas o principal é que quero manter a integridade do meu conteúdo em único local, neste caso o meu
+servidor, simplesmente pela facilidade que tenho de fazer backup dele, que é muito mais fácil para mim do que manter um
+backup de serviços como o picasaweb ou o flickr por exemplo.</p><p><strong>Modificações no dangolino</strong></p><p>Pois bem, eu me sentei e comecei planejar e depois a codificar algumas modificações que estavam ficando legais, minha
+idéia era a de que para cada post novo, deveria ser informado o caminho para um arquivo yaml com os caminhos dos
+arquivos que seriam anexados ao post e no ato da geração do post com o comando dangolino.rb estes arquivos seriam
+movidos a um diretório específico, os caminhos seriam mesclados no conteúdo do post e posteriormente seriam
+sincronizados com o servidor via rsync, que é a maneira a qual eu já sincronizo os arquivos do meu site com meu
+servidor.</p><p><strong>Mas as modificações são desnecessárias</strong></p><p>Depois de analisar bem a situação eu percebi que essa mudança poderia ser feito de uma maneira bem mais simples sem
+precisar mexer em uma única linha de código do projeto.</p><p>Eu já possuo no meu site um diretório para imagens e demais arquivos anexados aos posts que foram importados do
+wordpress quando comecei a usar o dangolino, então basta eu colocar os arquivos lá e referencia-los no conteúdo do post
+da mesma maneira que eu estava fazendo quando apontava para uma imagem no picasaweb.</p><p><strong>Resumindo</strong></p><p>Eu sou adepto do &lsquo;quanto mais simples, melhor&rsquo;, então eu fico feliz de ver que minha app está me atendendo mesmo quando
+os meus requisitos atuais não são mais os mesmos de quando eu a projetei a quase um ano atrás.</p><p>Ela não está um primor como eu já disse em outro post anteriormente e precisa de muito refactoring, mas, mesmo assim
+está me atendendo bem.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/2010/09/26/fun%C3%A7%C3%B5es-an%C3%B4nimas-em-php/>&#8592; Funções anônimas em PHP</a>
+|
+<a href=https://adlermedrado.com.br/posts/2013/09/20/novo-blog/>Novo blog &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/2013/03/15/quase-um-ano-de-dangolino-sem-precisar-alterar-uma-linha-de-c%C3%B3digo/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
+- -----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhFnfUACgkQbV8aePHc
+Nh3PyA//RhwFFWXYxUW/xw1jB0IsWSxSV/UV4Xnabtcl+xq7WI5FkDkpwRyxxE0H
+q87dFlkGFljeRm7744OC/OgbTgtatDYiN+hsqhZq4CbD2Lie6fqaBbSLGD4O5c0D
+FKYJIVbeSbkpngdDekHPdoKCPsQ7uoKhNTWMAVLk76qZUh3ZyvpTfrZ/0yQkyQCm
+4556i5qSWS83jSfe8d3CAzc0ubH6+MgYpUzRxrj1EuQ4+QIg2cjzW3WvTmAE57Te
+3+glnmGtOK8hL9AXy34CPp62kc+XqribBiJlx4c45zMTp2GSIYyBx9hMO9vlpLnc
+mp+PPSo88oPYonVW71vrDN4suBfiSLaVEDS62Llq/UVk6cGbxE1JOYeH2LfnIURN
+Z1pWkifU58l9Dy/c0zuhm/J6ul0YojNGgAcyZftBbFu8OxUIF2mCnvBAf7LU3S1Z
+pdYjnESw0UWy5Uxwk0MJ2TFOMbfijfYpt22zDEAwtcmWYSw67dpXRwfBVjZELnJt
+c9sv2y5Vzdhhf9RpRJsXBhkMYBnYCPtl8QATeu6rRTRgiQTJ97wLJ6S69VeRJqVi
+Qjfr3ERenRvHr5I4UNgwpxtazPsnt76cd0WbvInL6BOWoM1Jr2pX3/nAPwpiVoFL
+hI/adv8yzsSvkSDOsVZ6tizny92QPzowbZn4T/Z1pNQUA6VHxU4=
+=k4EO
+- -----END PGP SIGNATURE-----
+- -->
+<!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNubQACgkQbV8aePHc
+Nh027hAAtEiVm0tya0vVRKsP7t5TwIWUNmQ6vbIOiZ2VY1g+WwCET7sCQUUHA6J9
+li/MiTwJsV9Ss0zq3dm8cFsWBPJ9EamyDA72gDPRM3MBq0DoM9Om1KqfDpcoLiED
+Jnf8QfIX+jq4etV6aZD+TUuifIyUpJbBTanZb86NjKNGrFJjw8Y+G2MaWhU7PJvm
+cWgPU23RsSj5CRf6fTDaPCgqmJPQyZzAToB2FYbq+GbDVwzRqaiRjvvwjJ35ZCJA
+FqjUwZObqBk0q5k5PzmW4XKbF0L+1RInrXuX6+wjUUz6lw+r7pyi5Ww4wwxB+HUN
+/fAkprbUsFmflfs6rfoBTvld9ZB/k2/lbVPNPMFH/aW0lcGRQuzjPtCDXQPTcgVn
+VQ+27jRdlCtCxC4uYKeOcnYZwrii3tYt1CeWvAiI8QBuJCtNX9vwll6NJARpIA7F
+MXVT9D5e2qyx0TFXtBY8ZVJIND6TuLWxgYyqZNozTzI27BHODElopMM1aayBVywf
+fPEt2Dz83yOM7xaCexWvPyya4zk4lfglfoz7XI9bGZYsP8FtJbbhHDxep1jsEoHO
+q21hAu0ZJjRRDIIsoQhkP5D9XvocozYNUT51tUv3nKQLL5EiCkDowEmGQeJsLHun
+dHnC/GJYvJBhljbA1EaJoflqppYzNh880E9tnHmmUTpNhHw7ci4=
+=nGte
+-----END PGP SIGNATURE-----
+-->

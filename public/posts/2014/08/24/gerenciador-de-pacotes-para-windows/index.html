@@ -1,0 +1,84 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!--
+- -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- - -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Gerenciador de pacotes para Windows"><meta property="og:description" content="Não é segredo que nos últimos meses eu tenho usado Windows como a
+minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como
+ambiente de trabalho em alguns projetos.
+Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes nix eu sempre busco por alternativas
+similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o chocolatey, que é
+um gerenciador de pacotes similar ao apt-get no linux, só que para windows."><meta property="og:url" content="https://adlermedrado.com.br/posts/2014/08/24/gerenciador-de-pacotes-para-windows/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Gerenciador de pacotes para Windows"><meta name=twitter:description content="Não é segredo que nos últimos meses eu tenho usado Windows como a
+minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como
+ambiente de trabalho em alguns projetos.
+Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes nix eu sempre busco por alternativas
+similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o chocolatey, que é
+um gerenciador de pacotes similar ao apt-get no linux, só que para windows."><meta name=twitter:image content="/images/default-og-image.png"><title>Gerenciador de pacotes para Windows</title><meta name=description content="Não é segredo que nos últimos meses eu tenho usado Windows como a
+minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como
+ambiente de trabalho em alguns projetos.
+Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes nix eu sempre busco por alternativas
+similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o chocolatey, que é
+um gerenciador de pacotes similar ao apt-get no linux, só que para windows."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/2014/08/24/gerenciador-de-pacotes-para-windows/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Gerenciador de pacotes para Windows</h1><div><div><p><small><time>August 24, 2014</time>
+|
+1 minute read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/windows>windows</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Não é segredo que nos últimos meses eu tenho usado <a href=http://windows.microsoft.com/pt-br/windows/home>Windows</a> como a
+minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como
+ambiente de trabalho em alguns projetos.</p><p>Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes <em>nix</em> eu sempre busco por alternativas
+similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o <a href=https://chocolatey.org/>chocolatey</a>, que é
+um gerenciador de pacotes similar ao apt-get no linux, só que para windows.</p><p>Para instalar, basta abrir uma janela do <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a> em modo
+administrador e digitar:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>iex <span style=color:#f92672>((</span>new-object net.webclient<span style=color:#f92672>)</span>.DownloadString<span style=color:#f92672>(</span><span style=color:#e6db74>&#39;https://chocolatey.org/install.ps1&#39;</span><span style=color:#f92672>))</span>
+</span></span></code></pre></div><p>Após a instalação, o comando <em>choco</em> será disponibilizado no sistema, e a partir daí diversas aplicações poderão ser
+instaladas (e desinstaladas se for o caso) via linha de comando.</p><p>Os comandos básicos são:</p><p><em>list</em></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco list
+</span></span></code></pre></div><p>Exemplo: Listar todos pacotes que possuem <em>git</em> no nome</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco list git
+</span></span></code></pre></div><p><em>update</em></p><p>Ex: Atualiza todos os pacotes</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco update
+</span></span></code></pre></div><p>Ex: Atualiza pacote específico</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco update git
+</span></span></code></pre></div><p><em>uninstall</em></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco uninstall git
+</span></span></code></pre></div><p><em>help</em></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco /?
+</span></span></code></pre></div><p>É isso. Mais uma <em>hidden gem</em> do mundo windows que até pouco tempo atrás eu não conhecia.</p><p>Para conhecer melhor, visite a <a href=https://github.com/chocolatey/chocolatey/wiki>documentação do projeto</a>.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/2014/07/26/acessando-o-office-365-via-powershell/>&#8592; Acessando o Office 365 via Powershell</a>
+|
+<a href=https://adlermedrado.com.br/posts/2014/12/21/por-que-%C3%A9-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/>Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/2014/08/24/gerenciador-de-pacotes-para-windows/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
+- -----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhFnfgACgkQbV8aePHc
+Nh0U3g//RtxTkbO8Cz3zBeJMknBxC8c/Dw4+Mk8UzwIKm3UbUw0pmMw+yv3x2ImT
+mMPe2D/GwcCbOirZ1PinKsvsBOynpCTq+LalfFxmzvQdspDDj502mN1QatkKFAms
+uEtTTG/rA8a9E9RyzY6JCjiIScnrsxc/f+UCe81ww8xXZppy5A/QgxsnZ2CRpqNT
+toxkI00HtPwLk0/SEeApBpIanFNiaYr8RlxJpiPA98RQzc2BlewSqxvZTDeBbPzC
+tu91qz8Qlke9sgbOn6eIlcBOxcDA0OaVHqQITvqLppNMu+3ZZ55TvNPHVCp6U5hw
+84FLNgQlqbHrgZxvMJtkcGuMdppgeGPBT8Lej6OMXb9yfD84dES0QzDgAAJgGjik
++9QNA6UIPYuRttdMRNW3y+PS9O64Aco/gEVA/3Byt988+sllF/V53mATXHEtQvaK
+vKBV0DseZWoc0VTGcp8swyQH0oSXA6ESa4yXAlesL1cGsCCiCUZc0mUCaVVC+2V6
+Sp0oj6DdF0uHnjaiGT4aIbpPidfrT4IYurLoj9P2zxKwPzSVefrnQ0Wg7BcJXasa
+NoEJ7PYUCg/N7pJLOFXbDGLyuEuoai+ePqu8HXFTvGp7+n1SEjBhETmLyi2TJzhC
+x/XhUDWv6Sr+fos+bIfbJo/OoQyL5K50WPKnfBOI5BoZfBu8pm4=
+=WHPW
+- -----END PGP SIGNATURE-----
+- -->
+<!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNubcACgkQbV8aePHc
+Nh3v8RAAvT/ZutLSPLaT0hZa4d+x7hyuFLM68VJ2OtXbFTo0pl59RthBLQRQL4Qd
+DTAKY+tiC5FKYG7iUbaG2Pg+mUD3FneWBO4qg3IeIzk+pnlw3ikroSaEuYCSRAr4
+VHOVSek/SsIZ/ORw8PaKc1KPRaoPlcPTBA3l+UwKcWvWV4mO80VfU7cA0E/DH8t8
+ny+qDx3AjQDuAw6PYi9FOZF6ytyTmBm7POYYnaFfrmLZCdyGLcLXw1p+ukL17gqy
+ifZ043XAauDQSlTYfKskwur2CjH0TU9TMDRc3NxzFJAGpJAPDX19ufogRVEzE56x
+LhCfZ+DxyyvXFkSPf7EqimpoShGYSL29zGE2EXFfLIWNNzVNTC6p7YWxzx3gjuhb
+zEvHllGAWf1WpBYVGJq7BX9DFR5P3THYASBlrV3v3fjTLSV332eDnryKrzci9A08
+wB7WwufMti52nSfbAY3RiQAV/fIo0rmduaR9/U7r/rV6uvuj6PwT5J4gSnmZcM7g
+pAsXCU96HPj5A913Jwcbz1azMNjZdpiHfJyKoLoG4b/F+ZAW2QPQu2QpKvm1mEtM
+Zw2aVzRVSn+Fzn1tR93RALOvXKTbmLZEnJvgOScxCpZBKAopwAjRyeqXKjwjZJdj
+n16VyPHV0UmCYQn+7qJs33LzLnDhUMQJZcq1KWIwo86wFYYkeco=
+=/Z2m
+-----END PGP SIGNATURE-----
+-->

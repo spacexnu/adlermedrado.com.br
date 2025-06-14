@@ -1,0 +1,71 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!--
+- -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- - -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Atualizacao No Site"><meta property="og:description" content="Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.
+O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.
+Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
+Zend_Services_Flickr.
+Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:"><meta property="og:url" content="https://adlermedrado.com.br/posts/2008/05/09/atualizacao-no-site/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Atualizacao No Site"><meta name=twitter:description content="Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.
+O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.
+Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
+Zend_Services_Flickr.
+Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:"><meta name=twitter:image content="/images/default-og-image.png"><title>Atualizacao No Site</title><meta name=description content="Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.
+O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.
+Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
+Zend_Services_Flickr.
+Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/2008/05/09/atualizacao-no-site/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Atualizacao No Site</h1><div><div><p><small><time>May 9, 2008</time>
+|
+1 minute read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/site>site</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Incluí no meu site uma área destinada à galeria de fotos. Eu coloco minhas fotos no flickr e não irei mudar isso.</p><p>O que eu fiz foi apenas um mashup onde eu busco as 10 últimas imagens que enviei ao flickr e coloco no meu site.</p><p>Implementar isso foi muito fácil utilizando o componente do Zend Framework para acesso à API do Flickr,
+<strong>Zend_Services_Flickr</strong>.</p><p>Segue abaixo um exemplo de código para busca de imagens no Flickr utilizando o Zend Framework:</p><p>Controller:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span>$flickr <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Zend_Service_Flickr</span>(<span style=color:#a6e22e>’MINHA_CHAVE_DO_FLICKR</span>;
+</span></span><span style=display:flex><span>$this<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>view</span><span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>imgRes</span> <span style=color:#f92672>=</span> $flickr<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>userSearch</span>(<span style=color:#a6e22e>’EMAIL_DO_USUARIO</span>);
+</span></span></code></pre></div><p>Na View, basta manipular o objeto <strong>Zend_Services_Flickr_Resultset</strong> e <strong>Zend_Services_Flickr_Image</strong>.</p><p>Simples demais!!!</p><p>Abraço.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/2008/05/07/o-endere%C3%A7o-do-meu-blog-ir%C3%A1-mudar/>&#8592; O endereço do meu blog irá mudar</a>
+|
+<a href=https://adlermedrado.com.br/posts/2008/05/09/mudan%C3%A7a-de-endere%C3%A7o-realizada/>Mudança de endereço realizada &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/2008/05/09/atualizacao-no-site/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
+- -----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhFnggACgkQbV8aePHc
+Nh0GvBAAgH0GzSHVi7aeSD0+HPk7Rr0bA+TWYTNOKTzc81YnLcJd7dbg187jNaxN
+muChoGsReDrLmSP1LdDPrHAHuUnBzcUWsWkhHiVPwGgp0nNGrXHVjw0Fmf0j7zgp
+wuUGpMo8aHqYCY5aYbk1jMo2O345AhnrO4ZqoCfhyLDdCATsao0paANrwKGo3hOR
+RPWuujQMRCq43IqD2BevYGaO++dBBTrt5+G6g6jKTHGPdqc+UMDaoNuP1DyqHFMJ
+9MwgqQ4xfIjwzPCFqs3j9q/pbTofkxVlkeZXUnLcnaa3cXCBONCjRCNy5NKSzZVn
+94jz5MRPqhfSOfxXH7P6VmOoXglgZcEEwcyCs6h7Nbr3uVHJLAF+zZgHBlnEq+k9
+SYwsvyiBkzwyN7dz0haK3oRykzNj/MNFek+M8WdrGM2el/XY/sXCIpqtt07SmgMc
+o0QbOyxMAwC0CyaDG+I8ZBkambsGsrBhHdw3GIml6jWi9j2dLmv++H6p4b3J6qru
+xRF2US4q7DwFoURo0bvoH78doINIX4Dzxg7f//Qxb88fBSfxIGyvYA2ldB/vNH09
+08CdH1z/E7CLSgYpoXG10BMDz5CC+GDWKkrFCzQKWTbINHOHSwS0pOjiPj7vz415
+R2D8UQqQ8sAvaheF9D0rMjRks3X6YAn7NQIKypXKeewYNu44jEA=
+=ZFLz
+- -----END PGP SIGNATURE-----
+- -->
+<!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNucwACgkQbV8aePHc
+Nh3lnxAAy73Bzuql11M6wnVtRJ/vjgyhgmhDdKh3hPtA0dan1QUlbI7x+PZqjAMi
+CeWvuxLBI1lhMVnK10nsPaYiWTr4okgYota++IaPc5joe3qh2zDoqluJSPmDw1Fz
+bpgyc0nCPJH9AkXJ5+i0y2jJSsdEKm/fo1LICcTKLTSMkjT8WEmZx0XFXaoCeppM
+0zvxk6Sbj95WRO87YWJzDq8h+ebnJz2koKZ5DA4H7QdjuCMwPud0Dqr2t5QqeplG
+1/MxoTfYGUfKTM7bRP6I/0avZNOsysgPHtHSB0XJbko7JMy3xd7JM8Hv1I3q/5Ze
+5myLccLFwpRODTku0oyi0Zktvw6dq1yRwtHnE71JlIcYRy8N9kS/eF7w57GddwFl
+PU48m+DACeAwiEP1k4RJMJ1vvDQ0nk6ZByY1fPHRgKj5pWjvUwUZ9a1tR32NVaI8
+5PLzawGDCqRsWJmHzzC/iEQ9priG6At9T+5SolloMc6n5CDa0hrrWZaya3vjCF5Z
+OxWoEjHdV9Qozfw1/IE23A9rS7xSCypBwqkU5KwZTfgqED0Iz9UO3qnbNs6RI+nD
+PedPS+QrZhritEf5ZxV/i+Qtv4wAuus0B/zMEZPAA9dAtRQtuHOBwYoCR1cDDNmM
+1bArjqH/yhgEXfV6XDfm3CUx3jQEn2zHsKlR63XEfEhbinCEc/8=
+=Dz5M
+-----END PGP SIGNATURE-----
+-->

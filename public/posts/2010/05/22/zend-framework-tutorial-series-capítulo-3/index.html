@@ -1,0 +1,183 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!--
+- -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- - -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Zend Framework tutorial series capítulo 3"><meta property="og:description" content="Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia,
+vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em
+uma frequência maior. Espero que dê certo.
+Introdução
+Neste capítulo eu mostrarei um pouco do Zend_Form e algumas coisas que são possíveis de implementar usando ele.
+O Zend_Form é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando
+precisamos filtrar e validar dados provenientes de formulários."><meta property="og:url" content="https://adlermedrado.com.br/posts/2010/05/22/zend-framework-tutorial-series-cap%C3%ADtulo-3/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Zend Framework tutorial series capítulo 3"><meta name=twitter:description content="Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia,
+vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em
+uma frequência maior. Espero que dê certo.
+Introdução
+Neste capítulo eu mostrarei um pouco do Zend_Form e algumas coisas que são possíveis de implementar usando ele.
+O Zend_Form é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando
+precisamos filtrar e validar dados provenientes de formulários."><meta name=twitter:image content="/images/default-og-image.png"><title>Zend Framework tutorial series capítulo 3</title><meta name=description content="Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia,
+vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em
+uma frequência maior. Espero que dê certo.
+Introdução
+Neste capítulo eu mostrarei um pouco do Zend_Form e algumas coisas que são possíveis de implementar usando ele.
+O Zend_Form é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando
+precisamos filtrar e validar dados provenientes de formulários."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/2010/05/22/zend-framework-tutorial-series-cap%C3%ADtulo-3/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Zend Framework tutorial series capítulo 3</h1><div><div><p><small><time>May 22, 2010</time>
+|
+6 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/zend-framework>zend-framework</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Depois de muito tempo eu consegui voltar a este tutorial e a partir deste capítulo eu vou mudar um pouco a estratégia,
+vocês irão perceber que este capítulo será menor do que os anteriores porque eu vou buscar escrever capítulos menores em
+uma frequência maior. Espero que dê certo.</p><p><strong>Introdução</strong></p><p>Neste capítulo eu mostrarei um pouco do Zend_Form e algumas coisas que são possíveis de implementar usando ele.</p><p>O <code>Zend_Form</code> é um componente que nos permite tratar formulários HTML como objetos PHP, simplificando o uso quando
+precisamos filtrar e validar dados provenientes de formulários.</p><p>Eu sempre fui contra criar objetos PHP que simplesmente cuspissem código HTML sem trazer nenhum benefício como
+filtragem, validações, etc., isso pra mim não fazia nenhum sentido e por isso que eu demorei para me interessar pelo
+Zend_Form, até que vi que a proposta era diferente, e eles nos traz diversos benefícios como além das já mencionadas
+funcionalidades de filtro e validação, nos permite trabalhar com Subforms de maneira bem simples, agrupar elementos de
+formulários e também fazer herança de formulários, depois de ver isso eu não deixei de usa-lo e sempre incentivo quem
+usa Zend Framework a experimenta-lo.</p><p>Uma das premissas de segurança em desenvolvimento web é: Filter Input, Escape Output (Filtrar Entradas, Tratar Saídas)
+porque nós não devemos confiar nos usuários pois como iremos saber que as informações que estão sendo enviadas à
+aplicação são corretas ou mal-intencionadas?</p><p>Se você não ouviu falar sobre SQL Injection, XSS, CSRF, etc., é bom buscar
+maiores informações a respeito e aí você vai entender o motivo que leva muitos desenvolvedores a serem paranóicos. :-)</p><p>Pretendo escrever um capítulo deste tutorial que aborde apenas aspectos de segurança com Zend Framework, até lá vou
+mostrar apenas como filtrar dados usando <code>Zend_Form</code>.</p><p><strong>Bom, vamos lá.</strong></p><p>Nosso primeiro form será o de cadastro de usuário e o trabalho sujo quem vai fazer para nós será o <code>Zend_Tool</code> então, de
+dentro do diretório raíz de sua app, digite o comando:</p><pre><code>zf create form User
+</code></pre><p>Este comando criará um diretório chamado forms dentro do diretório application e se você analisar o conteúdo deste
+diretório, verá um arquivo chamado User.php com o seguinte conteúdo:</p><pre><code>&lt;?php
+class Application_Form_User extends Zend_Form
+{
+    public function init()
+    {
+        /* Form Elements &amp; Other Definitions Here ... */
+    }
+}
+</code></pre><p>Pronto. Agora, dentro do método <code>init()</code> nós podemos configurar o nosso formulário.</p><p>Este formulário terá os seguintes campos:</p><p>username: Nome do usuário do sistema, login de acesso.
+fullName: Nome completo do usuário
+email: Endereço de e-mail do sujeito
+password: Senha de acesso ao sistema
+submit: Botão de submit :-)</p><p>Se eu fosse criar esse formulário na mão, eu teria de validar no script PHP que recebesse estes dados para garantir
+que as informações estão de acordo com o que deve ser submetido e esse trabalho se torna chato depois de algum
+tempo trabalhando com desenvolvimento e é aí que o <code>Zend_Form</code> começa a nos dar uma força.</p><p>Para este formulário eu determinei tais filtros e validações:</p><p>username</p><ul><li>O campo é obrigatório</li><li>Qualquer tag deverá ser removida</li><li>Espaços em branco das extremidades serão removidos</li><li>Não pode ser submetido em branco/vazio</li><li>Deverá contér entre 5 e 30 caracteres.</li><li></li></ul><p>fullName</p><ul><li>O campo é obrigatório</li><li>Qualquer tag deverá ser removida</li><li>Espaços em branco das extremidades serão removidos</li><li>Não pode ser submetido em branco/vazio</li><li>Deverá contér entre 5 e 90 caracteres.</li></ul><p>email</p><ul><li>O campo é obrigatório</li><li>Qualquer tag deverá ser removida</li><li>Espaços em branco das extremidades serão removidos</li><li>Deverá validar se o valor informado é compatível com um endereço de e-mail válido</li></ul><p>password</p><ul><li>O campo é obrigatório</li><li>Qualquer tag deverá ser removida</li><li>Espaços em branco das extremidades serão removidos</li><li>Não pode ser submetido em branco/vazio</li><li>Deverá contér entre 5 e 30 caracteres.</li></ul><p>Vamos configurar nossa classe para atender a estes requisitos:</p><pre><code>class Application_Form_User extends Zend_Form
+{
+    public function init()
+    {
+        $username = new Zend_Form_Element_Text('username');
+        $username-&gt;setLabel('Usuário')
+          -&gt;setRequired(true)
+          -&gt;addFilter('StripTags')
+          -&gt;addFilter('StringTrim')
+          -&gt;addValidator('NotEmpty')
+          -&gt;addValidator('StringLength', false, array(5,30));
+        $fullName = new Zend_Form_Element_Text('fullName');
+        $fullName-&gt;setLabel('Nome Completo')
+          -&gt;setRequired(true)
+          -&gt;addFilter('StripTags')
+          -&gt;addFilter('StringTrim')
+          -&gt;addValidator('NotEmpty')
+          -&gt;addValidator('StringLength', false, array(5,90));
+        $email = new Zend_Form_Element_Text('email');
+        $email-&gt;setLabel('E-mail')
+          -&gt;setRequired(true)
+          -&gt;addFilter('StripTags')
+          -&gt;addFilter('StringTrim')
+          -&gt;addValidator('EmailAddress');
+        $password = new Zend_Form_Element_Password('password');
+        $password-&gt;setLabel('Senha')
+          -&gt;setRequired(true)
+          -&gt;addFilter('StripTags')
+          -&gt;addFilter('StringTrim')
+          -&gt;addValidator('NotEmpty')
+          -&gt;addValidator('StringLength', false, array(5,30));
+        $submit = new Zend_Form_Element_Submit('Salvar');
+        $this-&gt;addElements( array($username, $fullName, $email, $password, $submit) );
+    }
+}
+</code></pre><p>Depois de ler os requisitos para nosso formulário fica fácil entender o código acima faz,
+mas vamos dar uma analisada rápida:
+Para cada elemento do formulário nós criamos um objeto respectivo, por exemplo, para campos de texto nós usamos
+<code>Zend_Form_Element_Text</code>, para campo de senha nós usamos <code>Zend_Form_Element_Password</code> e individualmente em cada
+elemento nós determinamos quais filtros nós usaríamos por meio do método <code>addFilter()</code> e quais validações seriam
+feitas usando o método <code>addValidator()</code>.</p><p>A diferença entre filters e validators é bem simples: Filtros alteram o valor do elemento e validadores checam se o
+valor do elemento possi certas características de acordo com o validador e retornam se o valor é válido ou não sem
+alterar seu valor.</p><p><strong>Elementos</strong></p><p>Obviamente os elementos de formulário mais comuns já existem no framework, qualquer elemento mais específico pode ser desenvolvimento sem muitas dificuldades.</p><ul><li>button</li><li>checkbox / multicheckboxes</li><li>hidden</li><li>image</li><li>password</li><li>radio</li><li>reset</li><li>select / multiselect</li><li>submit</li><li>text</li><li>textarea</li></ul><p><strong>Filtros e Validadores</strong></p><p>Os filtros e validadores considerados mais comuns também já fazem parte do pacote do Zend Framework,
+além daqueles que nós usamos no nosso formulário Users, nós temos os seguintes Validadores e Filtros à disposição.</p><p>Veja direto na fonte:</p><p><a href=http://framework.zend.com/manual/1.10/en/zend.validate.set.html>http://framework.zend.com/manual/1.10/en/zend.validate.set.html</a>
+<a href=http://framework.zend.com/manual/1.10/en/zend.filter.set.html>http://framework.zend.com/manual/1.10/en/zend.filter.set.html</a></p><p><strong>Vamos colocar pra funcionar agora</strong></p><p>Agora vamis pra parte mais legal que é ver o nosso formulário funcionando,
+para isso temos que instancia-lo no controller e adiciona-lo à nossa view.</p><p>Controller:
+$this->view->form = new Application_Form_User();
+if ($this->getRequest()->isPost()) {
+if ($this->view->form->isValid($this->_request->getPost())) {
+// Salva no banco de dados ou seja lá o que for fazer com os dados provenientes do form
+var_dump($this->_request->getPost());
+} else {
+$this->view->form->populate($this->_request->getPost());
+}
+}</p><p>Primeiramente nós criamos uma instância da nossa classe Application_Form_User
+(sim, este é o nome gerado automaticamente e é um padrão, portanto, não mude) e associamos ao nosso objeto <code>Zend_View</code>.</p><p>Em seguida obtemos o objeto que mantém as informações do request e verificamos se o request foi do método POST,
+se for post, verificamos se os dados do formulário são válidos e se o resultado for positivo, nós mostramos estes dados
+na tela (no próximo capítulo gravaremos no banco de dados), senão, nós renderizamos a tela novamente com os dados
+preenchidos no form e suas devidas mensagens de erro.</p><p>Em princípio as mensagens de erro estão em inglês e nós as alteraremos posteriormente quando trabalharmos com I18N e L10N.</p><p>Na camada de visão, basta fazer:</p><pre><code>echo $this-&gt;form;
+</code></pre><p>Pronto. Seu form já pode ser usado.</p><p>O código-fonte que é gerado não agrada a todos, mas para mudar isso nós podemos usar os Decorators e deixar
+o código gerado da maneira que preferirmos, porém os decorators não são um assunto tão trivial e por isso eu não
+vou aborda-los neste capítulo.
+Se desejar conhecer mais: <a href=http://framework.zend.com/manual/1.10/en/zend.form.decorators.html>http://framework.zend.com/manual/1.10/en/zend.form.decorators.html</a></p><p>O código gerado foi esse:</p><pre><code>&lt;form enctype=&quot;application/x-www-form-urlencoded&quot; action=&quot;&quot; method=&quot;post&quot;&gt;&lt;dl class=&quot;zend_form&quot;&gt;
+&lt;dt id=&quot;username-label&quot;&gt;&lt;label for=&quot;username&quot; class=&quot;required&quot;&gt;Usuário&lt;/label&gt;&lt;/dt&gt;
+&lt;dd id=&quot;username-element&quot;&gt;
+&lt;input type=&quot;text&quot; name=&quot;username&quot; id=&quot;username&quot; value=&quot;&quot;&gt;&lt;/dd&gt;
+&lt;dt id=&quot;fullName-label&quot;&gt;&lt;label for=&quot;fullName&quot; class=&quot;required&quot;&gt;Nome Completo&lt;/label&gt;&lt;/dt&gt;
+&lt;dd id=&quot;fullName-element&quot;&gt;
+&lt;input type=&quot;text&quot; name=&quot;fullName&quot; id=&quot;fullName&quot; value=&quot;&quot;&gt;&lt;/dd&gt;
+&lt;dt id=&quot;email-label&quot;&gt;&lt;label for=&quot;email&quot; class=&quot;required&quot;&gt;E-mail&lt;/label&gt;&lt;/dt&gt;
+&lt;dd id=&quot;email-element&quot;&gt;
+&lt;input type=&quot;text&quot; name=&quot;email&quot; id=&quot;email&quot; value=&quot;&quot;&gt;&lt;/dd&gt;
+&lt;dt id=&quot;password-label&quot;&gt;&lt;label for=&quot;password&quot; class=&quot;required&quot;&gt;Senha&lt;/label&gt;&lt;/dt&gt;
+&lt;dd id=&quot;password-element&quot;&gt;
+&lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; value=&quot;&quot;&gt;&lt;/dd&gt;
+&lt;dt id=&quot;Salvar-label&quot;&gt;&amp;nbsp;&lt;/dt&gt;&lt;dd id=&quot;Salvar-element&quot;&gt;
+&lt;input type=&quot;submit&quot; name=&quot;Salvar&quot; id=&quot;Salvar&quot; value=&quot;Salvar&quot;&gt;&lt;/dd&gt;&lt;/dl&gt;&lt;/form&gt;
+</code></pre><p><strong>Considerações Finais</strong></p><p>Trabalhar com <code>Zend_Form</code> é muito simples e nos proporciona uma produtividade
+maior em nosso dia-a-dia, tenho trabalhado com ele diariamente e posso dizer que tem sido com muito sucesso.</p><p>Obviamente, há muito mais coisas para ver e este tutorial é apenas introdutório, durante nosso tutorial espero
+poder encaixar outras funcionalidades como Subform.</p><p>Espero que você tenha gostado de mais esse capítulo.
+Ah, os fontes encontram-se no github.</p><p>Abraço.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/2010/04/25/atualizem-suas-agendas/>&#8592; Atualizem suas agendas</a>
+|
+<a href=https://adlermedrado.com.br/posts/2010/06/13/screencast-zend-framework-e-netbeans/>Screencast Zend Framework e Netbeans &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/2010/05/22/zend-framework-tutorial-series-cap%C3%ADtulo-3/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
+- -----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhFnhAACgkQbV8aePHc
+Nh1H3A//aVEEaAyFvbgqkhrC85khCYxjVGnyd/nKYJFZ4ud0VkXxQG3Nrx+HO4Vh
+XxqWgzWUh0gJvtiugejj8NpFAxydOZTJoyMwmesBeRSJDOV5OFgsR1nlteaDaG5S
+sBaQba1oDldF+lOcQqsKDx9MLH+JIxqavXPTx0Uwgwumckeq0uSw+vcW+eclA/NU
+XfEq9my7F6s51PokMHNWUZJ9GVATkM9KY/RM/bIhdC+xIdQyzL+ZPTaytq/Z4wmG
+W2YFZ1Q0+lyalKIz7EPMgkxMBZJWYvsPQookQkkBkHg7QWxW+VC8IyE8PACy1h6v
+U1nmKLn0ZFXxlYZigzzg8dEfKYufD3SRNi2CbutFYshxef8dyLqrH2Zu9jNdcMUH
+djPgycTjMsgNbUSNe+Y4ZUkNdJnFjxLnQOgWGqxtOWti46m2a2B0xxyB4jMQv+O5
+p27XS00ftB8hgGssk0oqYAf41xZL9GEUiO77FhU4zhecAtQoNXtLdgo89Z9sPNEB
+CxXCpImU+qH/S+KIZRcMMhGv1lAND3MMfeodhUsXdqMjXEl502OZcvph9ZZ2WNXz
+lL6AHj4kDbh6Bq+6ZGl7YWjaYykDy1uIxJnf9i2y5RffHHCm0IaZZPeha40Sesk9
+Zy8XIfOF5lbkUGID1L4+iroSm45Gq2wru+A7JeUpyQXoCBR3IBM=
+=REy4
+- -----END PGP SIGNATURE-----
+- -->
+<!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNudUACgkQbV8aePHc
+Nh0LgA/9ESheIbsUP9HE/MVatfd+9nJNlMsNuEWzaXdnd6OT1gqqrrPN8+r4qz0N
+ZcXGvw+N4rwYVoq86VDb0Ux26mnQAzYGK7aD5sndXj6mwpfO7DDzYaQIzo2fSBjX
+YYwSAc85UaEsrVnbJqgRt5Wyg7AC+OaTAAU0RMEF44fPCnD1XuaBTdxQ77clIy96
+VC21s7eSBtzFrsD8VlDX7YRcWnnGsPOET/q+786A9DqhgDy8so+7ZWXYw9UX3bf2
+IMpIntfJS8KI0P3xV8CPNemDWfXNBiJoPrK05VwpYpBnYUjFddVUIJDMO57ofznE
+5BhyX9i1ECjj8sMrOiuIkKqNoEt8kIHQ3hLslq3PSpTgcPyC37G5KHl/NImAV1JO
+LoVpwGUd5PkO+h8zHjsXAqx9XKYaKfOXrh/Cm0GtNymrWVz83jEyIzRpUm82zzYI
+lEncWNu08vzcNgy563+vtpvSUJziOENeRoL6/Jv2w8+L5ASUhH4SCZteBhgLR6py
+uGh1J4WYCT5S0hhIvgKtH03gHnbchCVxFuF5776iJcUB7rj+tspJAfYlpSuCeOUt
+bOGKkoo39JGl7wTUq0XqzzFnVkRcySstL6P4bkM8RV0+fPYVYGcUTLfN6aCEcrFe
+XaqFR9NZRomEu8MA3WsPE9x77tHIfMWEg7mbp7jWL/CAvOAV9ZU=
+=G9B0
+-----END PGP SIGNATURE-----
+-->

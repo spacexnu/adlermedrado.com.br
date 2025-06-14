@@ -42,23 +42,23 @@ To edit the file, use a text editor like nano or vim. For example, with nano:"><
 </span></span></code></pre></div><h3 id=detailed-steps-to-edit-the-file>Detailed Steps to Edit the File</h3><p>To edit the file, use a text editor like nano or vim. For example, with nano:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo nano /etc/pam.d/sudo_local
 </span></span></code></pre></div><p>Make the necessary changes and save the file (Ctrl+O, Enter, Ctrl+X in nano).</p><h3 id=benefits-of-using-touch-id-with-sudo>Benefits of Using Touch ID with sudo</h3><ul><li>Convenience: Touch ID eliminates the need to repeatedly type your password, making the process faster and easier.</li><li>Security: Touch ID adds an extra layer of security, ensuring only authorized users can execute sudo commands.</li></ul><h3 id=troubleshooting-common-issues>Troubleshooting Common Issues</h3><p><strong>Touch ID Not Working:</strong></p><ul><li>Check if the /etc/pam.d/sudo_local file is configured correctly.</li><li>Ensure your macOS is updated and Touch ID is set up in system preferences.</li></ul><h3 id=macos-versions>macOS Versions</h3><p>This configuration has been tested on macOS Sonoma but may work on other recent macOS versions. Check your system documentation for confirmation.</p><h3 id=security-considerations>Security Considerations</h3><p>Using Touch ID for sudo is generally safe and convenient. However, ensure your Touch ID is correctly configured and that only authorized users have access to your Mac.</p><p>As I use sudo a lot, this configuration is very convenient for me.</p><p>I hope that this tip will be of some use to you.</p><p><em>Updated: June 16, 2024</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/assinando-html-com-gpg/>&#8592; Assinando páginas HTML com GPG</a>
 |
-<a href=https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/>Sudo com Touch ID no macOS &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer class=glitch-zone><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
+<a href=https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/>Sudo com Touch ID no macOS &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA48cACgkQbV8aePHc
-Nh0n9g/8Cf4VWM6XdkwX8QJlBljmuaCkRPEHBzL/yD3cH+YKtCzhyl2JQeZe+/UK
-zfO+kYWR4Gs0g03zQ6y5ZPO5/d6KCQ/7L6iFJnfOEwtoyoQNaFBCy9H2pgu7dmOI
-LAApedsYBGe+fFyI8J64a0e713P2BJ+b2YPo8waIvM3zaoQLlc4qi7zaSJjCS2K5
-xB/zZCigibi/bojDtMazDQiTT/SN2StkjVWKHxCqoOYBRdpEBlmaG7Q3VcqjR+3b
-2eDEkRGC1fu7WgVloGDAIEX/siAWD+pBMjCOvlR9/eZYAqKeK4MybDIZd4vf0EWO
-BU7RGl/W1fRIYLNpG46JiBYEr7aD11zaOZ9kcWlFhyITAkY7M1aH8qepRzZTxbSs
-ZqhPijyvCToL0nPnIZBvq++lHw/5oiLAIAsP1a8EEzLYC+VAFOtWKkSbrKLVQZzx
-j9Z6XmdRHN381+RKp0esIGFR021o5Lf4aFVUsj6WegB0feAroXfC8ARodXV29eG2
-PDIIkxxGNexOfiWxk4/QWfEr8t7cSLoDsxcNjeciQX+4IPfFeWNBbyYJ4rzNlH7m
-fzxBsp6yk8b5Tb4bT1hX5CKe2EJDY488EPtdQEJILYqws7HUXszeuWu+RBMNJXaa
-IdRlK3r7dUb8R6DbAjlYOKb9sUOcOMilFQVuH0GyO8NLkhMHTQ0=
-=1Ep9
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNuckACgkQbV8aePHc
+Nh03Cg//aQFn62Z1t02p7Y5Xly0Cvvg3OJV2ABJl2JwfXc7H/WDwFIuS4tAN5mqE
+DTi3ZrAjEUFVjbFKK5qTVpgFntm9vENTONq8BcmpNSRzq47kDi7WAE9ruF+9sZuo
+l0Ha7E3Gp46gijMchFYHh2KWThMkB+cbaVTfB4BngVZBhVd/BkTb+BEkcz4Vz84Q
+OTkIvYFgrEOROHE7W8xVyBlujxh1Co8Yx8Kv2wRrLAB7ILpAvG0uuK9JQTIndJMj
+ytWPt7lSurUssjFYxbmoq2dHHz9WiCKXuCYoJkJBalKqrtBDwEPcvBQLC0sOvLcp
+8G3TMafkIUQWKfey5FmB+esePfugTrNxDCu1TNyB0nBpABILrxb7n6Buy+PzNnlz
+mZtqjhwZuKrvcTnlVN5n4a5srKTJe95BIa5IBxyHN1Uc0TaYdu0mkk7K8a80onvU
+RqWnW/bi7TzFv+1BQm4wYDHcmuixETMuSE61DkFkMVHoOtisgUQexUeTSFoKR7sy
+lbr0DXtQ1rNoFYIEY1bpss/tIR35TzbS+3CZ72JdpJFGJlcu29enAftRCfVoCkVK
+7RO8Ck/jFI2+Oq6zf+1UBIxFJ89SVqW18KRdEQ9GZmshzpgolOeqaI7dgXa/VK2s
+3ZaL82xY3Uom1AtfDujbA6GJJ5XUcnRloO85qy+EZu+LNpqDiyc=
+=Nmr1
 -----END PGP SIGNATURE-----
 -->

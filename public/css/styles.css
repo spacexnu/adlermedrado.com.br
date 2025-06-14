@@ -344,7 +344,51 @@ th {
 }
 
 .gpg_signed_info {
-    font-size: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.copyright {
+    margin-bottom: 0.5rem;
+}
+
+.badge-description {
+    font-size: 12px;
+    margin-left: 0.5rem;
+    color: #d0d0d0;
+    vertical-align: middle;
+}
+
+/* Responsive footer adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        gap: 0.75rem;
+    }
+
+    .badge-description {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        gap: 0.5rem;
+    }
+
+    .gpg_signed_info {
+        font-size: 11px;
+    }
 }
 
 .badge-a-plus {

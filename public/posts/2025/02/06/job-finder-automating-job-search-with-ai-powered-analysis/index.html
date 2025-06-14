@@ -1,0 +1,67 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!--
+- -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- - -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Job Finder - Automating job search with AI powered analysis"><meta property="og:description" content="
+Hey everyone! I just wanted to share a new pet project I&rsquo;ve been working on.
+I built Job Finder to automate job searches, analyze descriptions using AI, and filter the best opportunities based on personal criteria.
+Job Finder is an open-source project designed to automate job searching, analyze job descriptions using AI, and filter opportunities based on predefined criteria. Initially developed as a personal study project, it demonstrates the integration of automation, AI, and data processing, but can also be useful for others looking to streamline job searches."><meta property="og:url" content="https://adlermedrado.com.br/posts/2025/02/06/job-finder-automating-job-search-with-ai-powered-analysis/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Job Finder - Automating job search with AI powered analysis"><meta name=twitter:description content="
+Hey everyone! I just wanted to share a new pet project I&rsquo;ve been working on.
+I built Job Finder to automate job searches, analyze descriptions using AI, and filter the best opportunities based on personal criteria.
+Job Finder is an open-source project designed to automate job searching, analyze job descriptions using AI, and filter opportunities based on predefined criteria. Initially developed as a personal study project, it demonstrates the integration of automation, AI, and data processing, but can also be useful for others looking to streamline job searches."><meta name=twitter:image content="/images/default-og-image.png"><title>Job Finder - Automating job search with AI powered analysis</title><meta name=description content="
+Hey everyone! I just wanted to share a new pet project I&rsquo;ve been working on.
+I built Job Finder to automate job searches, analyze descriptions using AI, and filter the best opportunities based on personal criteria.
+Job Finder is an open-source project designed to automate job searching, analyze job descriptions using AI, and filter opportunities based on predefined criteria. Initially developed as a personal study project, it demonstrates the integration of automation, AI, and data processing, but can also be useful for others looking to streamline job searches."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/2025/02/06/job-finder-automating-job-search-with-ai-powered-analysis/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Job Finder - Automating job search with AI powered analysis</h1><div><div><p><small><time>February 6, 2025</time>
+|
+3 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/ai>AI</a>,
+<a href=/tags/python>python</a>,
+<a href=/tags/open-source>open-source</a></p></div></p></div><span class=line_break></span></div><div class=content><p><img src=/images/header-job-search.png alt="Job Finder" width=100% height=auto></img></p><p>Hey everyone! I just wanted to share a new pet project I&rsquo;ve been working on.</p><p>I built <strong>Job Finder</strong> to automate job searches, analyze descriptions using AI, and filter the best opportunities based on personal criteria.</p><p><strong>Job Finder</strong> is an <strong>open-source</strong> project designed to <strong>automate job searching, analyze job descriptions using AI, and filter opportunities based on predefined criteria</strong>. Initially developed as a personal study project, it demonstrates the integration of <strong>automation, AI, and data processing</strong>, but can also be useful for others looking to streamline job searches.</p><hr><h2 id=how-it-works>How It Works</h2><h3 id=1---automated-scraping>1 - Automated Scraping</h3><p>The system <strong>automatically scrapes job postings</strong> from multiple sources, including <strong>GitHub Issues</strong> and other job boards. These sources can be extended as needed.</p><h3 id=2---data-processing--optimization>2 - Data Processing & Optimization</h3><p>Before being analyzed, job descriptions undergo a <strong>sanitization process using spaCy</strong> to <strong>reduce token consumption</strong> when interacting with OpenAI’s API. This step removes:</p><ul><li><strong>Emails, phone numbers, and addresses</strong> (to avoid irrelevant token usage)</li><li><strong>Special characters, formatting issues, and excessive whitespace</strong></li><li><strong>Common stopwords</strong> that do not contribute to job analysis</li></ul><p>By optimizing job descriptions before submission, the system significantly <strong>reduces costs and improves response accuracy</strong> from the AI.</p><h3 id=3---ai-powered-analysis>3 - AI-Powered Analysis</h3><p>Once cleaned, job descriptions are sent to <strong>OpenAI’s API</strong>, where they are evaluated based on key criteria:</p><ul><li><strong>Seniority Level</strong> – Only <strong>Senior-level or higher</strong> roles are considered.</li><li><strong>Technology Stack</strong> – Jobs must include <strong>specific technologies</strong> (e.g., Python, Java, PHP).</li><li><strong>Remote Work</strong> – The job must be <strong>fully remote</strong> to be marked as a match.</li></ul><p>These criteria determine if a job <strong>fully matches, partially matches, or does not match</strong> the user’s preferences.</p><h3 id=4---classification--filtering>4 - Classification & Filtering</h3><p>After AI processing, each job is categorized as:</p><ul><li>✔ <strong>Fully Matches</strong> – Meets all criteria (senior-level, required tech stack, fully remote)</li><li>✔ <strong>Partially Matches</strong> – Meets some but not all conditions</li><li>✔ <strong>Does Not Match</strong> – Does not meet essential requirements</li></ul><p>Filtered results are <strong>stored in the database</strong> and can be retrieved for review.</p><hr><h2 id=customization--future-enhancements>Customization & Future Enhancements</h2><p>The criteria used for filtering <strong>can be modified</strong>, but currently, changes must be made directly in the <strong>codebase</strong>. However, a <strong>configuration panel via Django Admin</strong> is planned in the <strong>roadmap</strong> to allow users to define criteria dynamically <strong>without modifying the code</strong>.</p><p>Future updates aim to introduce:</p><ul><li><strong>Support for additional job sources</strong> (LinkedIn, Indeed, etc.)</li><li><strong>More AI providers</strong> beyond OpenAI</li><li><strong>Customizable job filtering via Django Admin</strong></li><li><strong>Enhanced AI-driven ranking based on job relevance</strong></li><li><strong>Web-based dashboard for job visualization</strong></li></ul><hr><h2 id=tech-stack--architecture>Tech Stack & Architecture</h2><ul><li><strong>Backend:</strong> Built with <strong>Django</strong>, using Django ORM for database management.</li><li><strong>Task Queue:</strong> Uses <strong>Celery</strong> for background job processing.</li><li><strong>Job Scheduling:</strong> Managed via <strong>Celery Beat</strong>, allowing automated job scraping at scheduled intervals.</li><li><strong>Database:</strong> PostgreSQL (recommended) or SQLite (for local development).</li><li><strong>Message Broker:</strong> Uses <strong>Redis</strong> to handle Celery tasks efficiently.</li><li><strong>AI Processing:</strong> Integrates <strong>OpenAI API</strong> for job description analysis.</li><li><strong>Data Sanitization:</strong> Utilizes <strong>spaCy</strong> to preprocess and clean job descriptions before AI submission.</li><li><strong>Docker Support:</strong> Provides an optional <strong>Docker Compose setup</strong> for running PostgreSQL and Redis.</li></ul><hr><h2 id=why-this-project>Why This Project?</h2><p>This project was created <strong>as a learning experiment</strong>, combining <strong>automation, AI integration, and efficient data processing</strong>. However, it has real-world applications and can be <strong>useful for anyone looking to automate and refine job searches</strong> with AI-powered filtering.</p><p><strong>I know I could use tools like <a href=https://n8n.io>n8n</a> or <a href=https://www.make.com/en>Make</a> to automate this, but I&rsquo;m a coder, and coders love to code. :)</strong></p><p>Since this is an <strong>open-source project</strong>, contributions are welcome! You can customize, improve, or extend its functionality as needed. Feel free to explore, use, or contribute!</p><p><a href=https://github.com/adlermedrado/job_finder>Go and check out on GitHub</a>!</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/2025/01/30/aproveita-daqui-pra-frente-%C3%A9-s%C3%B3-porrada/>&#8592; Aproveita, daqui pra frente é só porrada</a>
+|
+<a href=https://adlermedrado.com.br/posts/2025/04/15/the-places-i-never-returned-to-but-still-live-in-me/>The Places I Never Returned To, But Still Live in Me &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/2025/02/06/job-finder-automating-job-search-with-ai-powered-analysis/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
+- -----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhFnfsACgkQbV8aePHc
+Nh0HBw//WrJGrvbEc9YNSaw678u0yVbNrzokinu15zYkF988oyIMcbJBtn88UCSx
+bWy1MHjs0xOtLKvDYJqRuY+j85QfivUXvKwR+LlvTJ1QYXD7rEEb53u52/aDJMmy
+LsCllUu+hWsoYYBClFGYMDkGCrucgP3t5lqPOYAr8JglGgNp1Ikd0LD4Uw3cApgj
+lnG/yOmm1k/KX0lLstkgiRpe3+epwBOUGD5n1/PdWZljufFxRgfgTLVUDKUtrNrZ
+AujLEJgL8c9EajI/VEpd7nFzY/hAjo3c08YYOKjtrj87GWbziNn523gBPqT6ks2b
+AQHj+QG1598g/KGWBqv2LZUTNpLYT2xvGwU9YmX2WK1ZKUYRAYVABwgHGxpPvS/9
+y8ZNlAhGlwJjdxrkpLfJdyAH5I0MQABT8adwvS6f5szfgsjO9OAmynlwLOwVW7Xs
+50mSldU8EoRkg2d9dlssfmoyOeu0gvLIuanu3AMuRmCRubIAk34cRHnkbWORNGGI
+gWJyNJdacwTUmvbqi2hLiGe7viwW/F5yLCKrnc1AYm+UOP90l5hFcNVbGzB95fcg
+k1ZfT/g3XFGJBQa4s0QHUw9sP7GUKisyTdiZqoYc7Q2bbz+13ZlCvcXU0txDhskP
+/vh/z48CUFbdTaB5seNf6BIUMa7V55us8uaUjMy9afjuBkJ1gn8=
+=ooK7
+- -----END PGP SIGNATURE-----
+- -->
+<!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNubsACgkQbV8aePHc
+Nh1ZBg//SQ+hrEC84xRXD3Y65ZBun8wPYIAlW5rpMmrkybcBwWUHQvWP4l+9ngDE
+qGBu0i8sg+l3LZa7G5ptgL1egAKMykNYXVR5RYirGU/M4eBcMqbbyohCoRlRgYw3
+cV+1nNIrFaz0b7IUQsac6cUepv4fEb9zXmvhhUbYqQQTMn1AL5SgO/85uH+QWpej
+myFFMpmImE60o3/GLe871nxw5RFm1ChBvTMfJDit8umgeCvpcj7STUCBe8cnp2SL
+9aG18WSOtBpD53BuebtRaw97XxiGpWQiWFcgHmiP8CInL/FM2adY24Hmbis87OhL
+ThPFLWgsuMXdGJ4G2lGyiOVxq4mVRuWHSA+Fnix2XDytA7+JZgv2vVQb4upc9+m+
+PuVw3QMLzP8xaGvpwAJVUOTphmE8cuepMYCOdoH0cYk1KPxyXivYAYF+0FAHue7F
+o3UVQ/hh7I987Hh5ZGLiUIUbEIoaJfuX/M4t9fLI4wJnJ1J0OuMdgIFWEgdjfeyZ
+TYHw9zsn/tV8NTPF42QaURJANnLjvcueTjPkY6zxInePDL67ocUMVQHwl2wI+Az/
+1YtKDiil3TX1R/DFTBQqI+6P1nDf9HEeL6BK8d5O/OTrF+Czb7bWJLu/ymYhm6GQ
+cpP504wQ5ZDQ1y7vfAqPBTxm91hd2oiCXyqIMq3EdIoG2484lcA=
+=JMMh
+-----END PGP SIGNATURE-----
+-->

@@ -1,0 +1,173 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!--
+- -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- - -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Relacionamento entre tabelas com Zend Framework"><meta property="og:description" content="O Zend Framework possui uma camada de modelo, composta por algumas classes
+como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa
+uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de
+acesso à dados, como insert, update, etc.
+Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
+tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
+de métodos específicos da classe Zend_Db_Table_Row."><meta property="og:url" content="https://adlermedrado.com.br/posts/2008/03/25/relacionamento-entre-tabelas-com-zend-framework/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Relacionamento entre tabelas com Zend Framework"><meta name=twitter:description content="O Zend Framework possui uma camada de modelo, composta por algumas classes
+como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa
+uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de
+acesso à dados, como insert, update, etc.
+Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
+tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
+de métodos específicos da classe Zend_Db_Table_Row."><meta name=twitter:image content="/images/default-og-image.png"><title>Relacionamento entre tabelas com Zend Framework</title><meta name=description content="O Zend Framework possui uma camada de modelo, composta por algumas classes
+como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa
+uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de
+acesso à dados, como insert, update, etc.
+Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
+tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
+de métodos específicos da classe Zend_Db_Table_Row."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/2008/03/25/relacionamento-entre-tabelas-com-zend-framework/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Relacionamento entre tabelas com Zend Framework</h1><div><div><p><small><time>March 25, 2008</time>
+|
+4 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/zend-framework>zend-framework</a></p></div></p></div><span class=line_break></span></div><div class=content><p>O Zend Framework possui uma camada de modelo, composta por algumas classes
+como <code>Zend_Db</code>, <code>Zend_Db_Table</code>, <code>Zend_Db_Table_Rowset</code>, entre outras, e é muito simples criar uma classe que representa
+uma determinada tabela, basta herdar da classe <code>Zend_Db_Table_Abstract</code> que você terá todos os métodos principais de
+acesso à dados, como insert, update, etc.</p><p>Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
+tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
+de métodos específicos da classe <code>Zend_Db_Table_Row</code>.</p><p>Para demonstrar isso, vou usar como exemplo uma relação bem simples. Supondo que existam as seguintes tabelas:</p><pre tabindex=0><code>UF
+id - INT - PRIMARY KEY
+nome - Varchar(100)
+
+CIDADE
+id - INT - PRIMARY KEY
+nome - Varchar(100)
+uf_id - INT - FOREIGN KEY
+</code></pre><p>Se criarmos duas classes no Zend Framework para representar essas tabelas, nós faríamos o seguinte:</p><pre tabindex=0><code>class UF extends Zend_Db_Table_Abstract
+{
+    protected $_name = &#34;uf&#34;;
+}
+
+class Cidade extends Zend_Db_Table_Abstract
+{
+    protected $_name = &#34;cidade&#34;;
+}
+</code></pre><p>Com essas duas classes nós já possuímos os métodos necessários para inserir, alterar, excluir e recuperar os dados
+delas, porém, de maneira independente. Para recuperarmos todas as cidades de um determinado estado por exemplo, nós
+poderíamos fazer o seguinte:</p><p>Primeiro, uma pequena alteração nas classes:</p><pre tabindex=0><code>class UF extends Zend_Db_Table_Abstract
+{
+    protected $_name = &#34;uf&#34;;
+    protected $_dependentTables = array(&#39;Cidade&#39;);
+}
+
+class Cidade extends Zend_Db_Table_Abstract
+{
+    protected $_name = &#34;cidade&#34;;
+    protected $_referenceMap = array(
+        &#39;UF&#39; =&gt; array(
+            &#39;columns&#39; =&gt; &#39;uf_id&#39;,
+            &#39;refTableClass&#39; =&gt; &#39;UF&#39;,
+            &#39;refColumns&#39; =&gt; &#39;id&#39;
+        )
+    );
+}
+</code></pre><p><strong>Calma, já vou explicar:</strong></p><p>Na propriedade da classe UF <code>$_dependantTables</code>, eu defino quais tabelas/classes que são dependentes da tabela UF,
+passando simplesmente o nome da classe como um elemento de um array. Pode-se passar quantos nomes de tabelas/classes
+forem necessárias, desde que cada um seja um elemento distinto.</p><p>Na propriedade da classe Cidade <code>$_referenceMap</code>, nós fazemos o mapeamento entre as duas classes, onde a coluna <code>uf_id</code>
+da tabela Cidade é uma referência ao campo id da tabela UF. Simples demais!</p><p>Vamos testar?</p><p>Eu vou mostrar duas maneiras diferentes para retornar todas as cidades de uma determinada UF, a primeira segue abaixo:</p><p>PS: Eu vou criar um IndexController para executar este exemplo.</p><pre tabindex=0><code>include_once &#39;UF.php&#39;;
+include_once &#39;Cidade.php&#39;;
+
+class IndexController extends Base_Controller_Action
+{
+    public function indexAction()
+    {
+        // Cria instância da classe UF
+        $tabelaUF = new UF();
+        
+        // Pesquisa pelo UF 1 (1 é o ID do UF na tabela UF)
+        $ufRows = $tabelaUF-&gt;find(1);
+        
+        // Retorna o Zend_Db_Table
+        $uf = $ufRows-&gt;current();
+        
+        // Pesquisa pelas cidades referentes ao UF consultado acima
+        $cidadesPorUF = $uf-&gt;findDependentRowset(’Cidade’);
+        
+        // Mostra resultado
+        echo ‘&lt;pre&gt;’;
+        print_r($cidadesPorUF);
+        echo ‘&lt;/pre&gt;’;
+    
+    }
+}
+</code></pre><p>Simples não?</p><p>O Outro exemplo terá o mesmo resultado porém a maneira como consultaremos as cidades por dada UF será um pouco
+diferente.
+Se você está acostumado com PHP 5, você já conhece os chamados &lsquo;métodos mágicos&rsquo; como <code>__call()</code>, <code>__set()</code>, <code>__get()</code>
+certo? pois então, agora nós vamos usar um método mágico chamado <code>FindCidadeByUF()</code> só que esse método não existe em
+nossa classe, então de onde que ele veio? O Zend Framework possui um mecanismo que nos permite consultar tabelas
+dependentes utilizando métodos mágicos no seguinte formato: <code>Find&lt;Tabela>By&lt;Tabela></code>, então ele dinamicamente saberá
+onde consultar os dados, basta substituirmos a primeira <tabela>pelo nome da classe Cidade e a segunda tabela pela
+classe UF que ele se encarrega do resto.</p><p>Veja o exemplo:</p><pre tabindex=0><code>include_once &#39;UF.php&#39;;
+include_once &#39;Cidade.php&#39;;
+
+class IndexController extends Base_Controller_Action
+{
+    public function indexAction()
+    {
+        $tabelaUF = new UF();
+        $ufRows = $tabelaUF-&gt;find(1);
+        $uf = $ufRows-&gt;current();
+        
+        $cidadesPorUF = $uf-&gt;findCidadeByUF();
+        
+        echo ‘&lt;pre&gt;’;
+        print_r($cidadesPorUF);
+    }
+}
+</code></pre><p><strong>Considerações finais</strong></p><p>Espero ter conseguido demonstrar este mecanismo interessante do Zend Framework. Espero que da mesma forma com que ele
+tem auxiliado o trabalho ele também auxilie o seu.</p><p><strong>O que que você achou? Deixe aqui seu comentário.</strong></p><p>A propósito, nos últimos dias alguns colegas me perguntaram bastante coisa sobre o Zend Framework, muitos queria fazer
+um hello world para entender o padrão dele, outros queriam algo mais avançado, então eu pensei: Porque não escrever uma
+série de tutoriais no meu blog? Isso pode ser útil para muito mais pessoas. Então gostaria de sua opinião. Deixe seu
+comentário.</p><p>Eu estou pensando em fazer uma série de artigos simples e diretos ao assunto sobre Zend Framework, abordando desde o
+básico até o mais avançado. Então, espero começar na próxima semana.</p><p>abraço.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/2008/03/23/lehitraot-guterman/>&#8592; Lehitraot Guterman</a>
+|
+<a href=https://adlermedrado.com.br/posts/2008/04/01/usabilidade/>Usabilidade &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/2008/03/25/relacionamento-entre-tabelas-com-zend-framework/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
+- -----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhFngcACgkQbV8aePHc
+Nh1ADw/9Gn0+s5oOsl+el64famNXnH+LECc9TWtLP02eVNFMnh1+jAyG3VBytVpH
+3OGxN8/urmTGOeIb/EUsiA5LY2izA/C27bbsMOmIP9Lb2fElGRPOkwDeJS2Fjt9Q
+H2Mi/rUU1jPgloeMv8Bks4hYaU/YDw8k88SZjzuCYFh8xq1MXoG/LVgAhAJlgT8Z
+UykbdedRJ9neCwHwCrbQOlBOSg2KsAoJamUT5+gjPAGD8muZgM8laNu+B7JUfCRe
+ekODAm16rvFgkLlLLWJWpLiauo+9XyH+vuUnYS76avvZTtRnNDqbfG5G+E5ShxbY
+XLC5xYNx2A12dWm9gPjSLiYSxB9ru5GYfxREfNkU6pHlliF1O/erDbGXn1TIPGVo
+cbBKEP0U5gq+Lv8f+6wkplufbVYxEtKS+tkok5ttaHZibjPtYJm9k/bTb/N1yL+T
+W3F2ANXhnOiOU/Oeg+fGYKPPXSkBG6gMRgfGLup0u/qpfgPxxbzvky1g1wjSzEiM
+uwlybp4BbNadXFcpU76qHlxQuH1o8c5FbRLQf+JUhCqPvabe0w+N/3rlV9pCj4fU
+JlIIuebICVXp876uZtC72QZpj9M51NhVkGwJiKq6ttHkYiHZowQO71hKYaRqKE09
+i6DmBSfxkl9Z6BqZLdbZTgW7fjq4jWDRiT6wWVhJf19rfyfSmvY=
+=ddFc
+- -----END PGP SIGNATURE-----
+- -->
+<!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNucsACgkQbV8aePHc
+Nh3dWw//ac8vrzDbZoYj4BxN4uuUj8OJbg6vHf/OWHVJRnLxqDjxieqA0XZ/DQGZ
+7KaeaVpi9YLgH7mmk6pqBGsrvAIvV+cDvmX0h+5Fbb9fBoD3BaVGZ8MZ1Kh6ApXd
+Z9yRwTO+6q1l5eF4nlmurpOebSkb1aLGVOjX156E4aYexCst5OtBG8whhMKLmtZE
+hXe8LQJi/ENRBews4a/h7ZiXLwwiMPHikVp2G/zAm67vz2dG/N4nqvqJ4uGRAvIz
+N96fADEGG1MpBGSpEMjh/+uoITij3PPsiCLEyo3AmTVKw/FsNlUz/jOcO9sAI9aa
+9X/qBDUABVml0lglNk9OlLGu8Q+ot3Ks9yl+R0SPJqly7B2+KtT3WmqPsHF3my70
+j7g75yW140klq4Jbt9sh2cvHCkUtuDVIcJh1iG3Oe4EpL4uB+Jb6wnv5g3vBKfFV
+9THisqXP+gWSpQ0DN/6WVFpgxaXf9M6qgYxw0jRs7gPMinQsCOmVsx7A7/W4svra
+vYjrpVluVfIQt40I/mg68DwrgypON+N47dKMKN3gPpw6dwvXkFgW/uRZiRo8bp3J
+7fP3TaioziEqduqlhTjk+yn7sWdLNd7o6YTqsByber39pR/hehsNe5BtZy7+m+he
+8nLdiyqZUzqbxqsZnHsIgsCyr1GPVdkLplNomA3N8LPiNC45UaY=
+=vvp3
+-----END PGP SIGNATURE-----
+-->

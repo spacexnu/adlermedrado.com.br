@@ -92,23 +92,23 @@ exemplo acima.</p><p><strong>Testando o ambiente</strong></p><p>Se nossas config
 para o index de nossa aplicação, se for mostrada uma tela de boas-vindas ao Zend Framework, a configuração foi realizada com sucesso.</p><p>Caso não funcione da forma correta, revise a configuração do domínio virtual e da configuração do DNS (hosts);</p><p><strong>Considerações finais</strong></p><p>Este primeiro capítudo da nossa série termina por aqui.</p><p>No próximo eu entrarei em detalhes na estrutura de pastas criada pelo Zend_Tool e na estrutura MVC do Zend Framework.</p><p>Nesta ocasião criaremos nosso primeiro controller e suas actions.</p><p>Espero que este tutorial seja útil para você.
 Não esqueça de dar seu feedback, ele é muito importante para os próximos capítulos da série.</p><p>Abraço.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/agenda-atualizada/>&#8592; Agenda atualizada</a>
 |
-<a href=https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/>Zend Framework 1.10.0 stable released &#8594;</a></div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer class=glitch-zone><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
+<a href=https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/>Zend Framework 1.10.0 stable released &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA48kACgkQbV8aePHc
-Nh28ThAAhE4dIUOHj/pTsXyqa0/liFE9UQ23RkRShQb2zbLVgk8AVQFzVJAtcv7q
-RPWJyh92teQSEFv46BmjcTbOG0iIMYFOkxOuPAtu+o2ystSlDIFa6T9NncpSNrhO
-MQz5gs2WYjWh2E0Y/BXrbVg7tBV3foYcVpENAjLqTTAoJnSPypmaONZBJ1ylM+sd
-Q0mZGaTuBOyjfkoYsQvUsxJ7gG0NOliimbCLgnswEPguM5A55ERJy7XCzG6QmOMY
-ByrWBgzOUexjontnj3c1Iyzt5uyyVARFmjnquafYMm/EMJGo8X9xtUdPspq3w6up
-NUVqzTBr7Zd8D/2HxMSOUC7cf+EU68Z3cG2+1BqgeSbMSy6V4zIg9833SRecbkim
-L2zIADkvbJ5dj48tO+/dboZ9A+67pYgJPg4Bgq5hoFyhVwk667CJa8JDfY3RuYjN
-Fa62LOUeWgzijQWraD5oJ0U4NDXi5VZj1MBw5c0Z0h5uH/NffoBRjg5HruMqRGkh
-wrYwXFjFpwdoHcpe9pCrgKT7ZTPVcOzWSl8d/rhAEKUvx50mnaR00xG8CN9puOfb
-kSCxg0aXQ6sg17Q3/Yilfvzixd1DN27oh2EOReUXZ7z8XdUjGpbVWI8/6XdNJA5R
-Czy1XwVzb3lKkFfFWuW/emT0hVuQVZcgAfIvTl8ueEQADhGPIQI=
-=r74w
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNuc8ACgkQbV8aePHc
+Nh1NkA//ZNlBb5GOv+OIoxkz/PbZP3FooKRuRKQs5wPfuBnMssX+vuxYI7waWps1
+ppvDtB0aDQ9Y7/4u1EEKW7mfVVcb+EIOJJcyztYA5xT7kPqldiSYTRP/64pDZ0jy
+Lh0DlopFnf5YndWtVCfKGHIxwXGrmFKfDo0S+MOtmSk4JSdpM3ypDdoNO/GdsVJM
+lYFVz8uSStbO8TGzPMlF4/xpOiiTBJh6X5LVd9NvHXXvv1Ef20gvqReX0KfWERV/
+B4V4SCFNssazxfL5u6HapbFor/tP44TXPoVfxvFhYWgEbJ4xhLgObgQs2agRHuza
+vfC8E4MkOMbyQKVD4F5/d6RQdwTuMU7e/ne8ciaqZhtT767VGEn/Jy3lei/gL0DA
+ZirHWRGHXk98UHzJ3J/wAG+jp/uK0kYK3KDpsnkdAexixRygduWeLgoFkUZUUUYF
+NaQehxouGUlMObnpGjkP1ViZqhYHpYKt4503upvzSGdurx1YSPHMOgfjc30CqQV1
+I5ptyZRz+24IL3M1Ifo2sed01DcT/pe4DlZ5rqRdVJm7ZULx2onUgIQtleroAaGD
+/OcQS2Wwo8B1L+d7Jx3n+OVe3NQZ+FUo4+yEjg/o1y1npv6ZePjP2XdDTIvo6fma
+vNrMcTZRlISO2EVrSsXmd/TtcWkkBmntZAUL9fyWc6nYEe9sJ9s=
+=u+jf
 -----END PGP SIGNATURE-----
 -->

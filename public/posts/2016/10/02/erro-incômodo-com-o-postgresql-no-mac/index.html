@@ -1,0 +1,82 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!--
+- -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- - -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Erro incômodo com o Postgresql no Mac"><meta property="og:description" content="Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a
+atualização para o MacOS Sierra.
+O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:
+
+WTF?
+Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum
+problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:"><meta property="og:url" content="https://adlermedrado.com.br/posts/2016/10/02/erro-inc%C3%B4modo-com-o-postgresql-no-mac/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Erro incômodo com o Postgresql no Mac"><meta name=twitter:description content="Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a
+atualização para o MacOS Sierra.
+O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:
+
+WTF?
+Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum
+problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:"><meta name=twitter:image content="/images/default-og-image.png"><title>Erro incômodo com o Postgresql no Mac</title><meta name=description content="Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a
+atualização para o MacOS Sierra.
+O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:
+
+WTF?
+Eu costumo usar o homebrew para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum
+problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/2016/10/02/erro-inc%C3%B4modo-com-o-postgresql-no-mac/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Erro incômodo com o Postgresql no Mac</h1><div><div><p><small><time>October 2, 2016</time>
+|
+1 minute read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/mac>mac</a>,
+<a href=/tags/macos>macos</a>,
+<a href=/tags/macos-sierra>macos-sierra</a>,
+<a href=/tags/postgres>postgres</a>,
+<a href=/tags/postgresql>postgresql</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Esse é um post bem curto que resolvi escrever depois de me incomodar com um erro esquisito no Postgresql no Mac após a
+atualização para o MacOS Sierra.</p><p>O servidor do Postgresql estava funcionando OK mas o client cli me retorna o erro abaixo sempre que eu o executava:</p><p><img src=/posts/images/1*nKXkh2PzTW85hhl59x3-3w.png alt></p><p>WTF?</p><p>Eu costumo usar o <em>homebrew</em> para instalar a maioria das coisas no meu mac, primeiramente eu pensei que fosse algum
+problema com algum link simbólico incorreto, então eu executei o comando abaixo para ver se resolvia:</p><p><img src=/posts/images/1*aOcgI9fU746SkcSacFKqNA.png alt></p><p>Recriando os links</p><p>Mesmo assim o erro persistu, então eu removi o readline e reinstalei:</p><p><img src=/posts/images/1*mpcBc2Tu-ShIzR770ebQrg.png alt></p><p>Reinstalando …</p><p>Mas nada.:(</p><p>Tentei reinstalar forçando o <em>build from source</em>:</p><p><img src=/posts/images/1*eLE49JvI5vtL6ieIYF_eyQ.png alt></p><p>Nessa hora eu já tava ficando puto</p><p>E nada … resolvi então chutar o balde o reinstalar o PostgreSQL:</p><p><img src=/posts/images/1*n7GMinuLwIcIqldxekZb8w.png alt></p><p>Reinstalando a porra toda</p><p>E funcionou.:)</p><p><img src=/posts/images/1*qUqQk3QyIsE0YejWnjO9CA.png alt></p><p>Tcham:)</p><p>Fica a dica para quem estiver passando pelo mesmo problema que eu.</p><p>Acredito que na atualização do sistema operacional alguma lib ficou desatualizada o que gerou este problema. Em outros
+tempos não muito distantes, eu teria feito uma instalação limpa do sistema todo, ainda bem que hoje eu estou aprendendo
+a lidar de forma diferente com este tipo de problema.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/2015/11/22/home-office-significa-trabalhar-de-cueca/>&#8592; Home-Office significa trabalhar de cueca?</a>
+|
+<a href=https://adlermedrado.com.br/posts/2017/06/09/do-php-ao-python/>Do PHP ao Python &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/2016/10/02/erro-inc%C3%B4modo-com-o-postgresql-no-mac/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
+- -----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhFnhIACgkQbV8aePHc
+Nh1BNQ/9HfxVxfCBSObGeME3o3c/SPnO4DCRbA5HU4u9GMYk5+WctkZ+/2FsPwkZ
+HFRpE7UxWJs/m/6VlgIrM961FK3Fa2/y2+yk3ZNcAyZHgDLhm3aodhrLVWSWFo79
+Ar4Q8KK42SwitUqh0hOGKgyS6Azpxl+S3goxH4ZYbAHVMUQe2ax9l0veFD1OEuLW
+eiUfgv3yc2etR2bEGqetsWrEwJoHc0enfhon+3WrjB4+oRZ7/E0/2nLXf6OmA1vk
+WxKZgbOnULNZNBxQVCcWQo7F4tKfnOPyha+5zzwW1yXPrJTP5TWiT/XJa+v8dJd1
+UjVZU/DvX9kQ34MO1xV2ZTlNEe2wZtX5WkG30s7cXoxz/IIv0AK3aLAPDYuEmEhN
+YO5GVa2SSegh9Ha+49Gfm5YGz8q/GI9ufld7ZtbnnHfDICQ5NcpP3WqKhwXlcgvh
+ehnYIOs3nu+daccyTElW0OQVSLCfnq2Hoa0JUNR+AImRVr4vFfWye0WhMM2qd2SU
+e3zclbTsQqPXJfgaHRMPET+KAx9Q2N22rNETkCTpr246TPf6lIjtt0gEjAB+jiJZ
+UtZvbDcmTVMoAjONEQ8TSiuVtgdc/poG5NNyo6hwoMIDw9zbhQ41puu+IhVnNOY0
+u9HZCjPSU1ns2j3binxW82TzRrB2smIAco/XZctZhftMG4Nr6iU=
+=IHnk
+- -----END PGP SIGNATURE-----
+- -->
+<!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNudgACgkQbV8aePHc
+Nh0wCQ/8CYs02yAULxrYA9ai6pQ4P20+Emm3tnsVFC9WZdzrZbJAlFWCBDbiY+qy
+/ZzNLNBv8FPo3bS0nG7YGhKO2QCHPY8JRjxMvDCSLCJJmiVGuGYG8f2WECIugR6F
+Lbf3OYZ8H1xqWTP7LH39y6TkIdgKm0Khl2HEXRlQjot/Z+Fh/mwi0tLTDiJqTlca
+FufpnTpbLbOF0zKHPON5DRfU3ZSnyPBsnta/FIk37vZq/xDyPmX+YJV4GMk7bHdP
+oy/FYK1C+xMOvq0bhjLBvxcATmrfGSwkq91FSFss0iWIFAk6ifi5tJ6FppXOJsXu
+cnHQnO3nqliJCtro/EQFbOFlA58mUdLnNP4juhOnCg9w04bqlYdTzc5/i389gmbT
+nuCjuBz/ub/CJFO+RSGk6Czl8gvXTmAxN+kKcvFKvky8NWMgu8Cg6Slrt2uV/SXN
+ZtjTpJkk/nY2kOcuFaHL/pF3ImsqgAuZe9Blch9DCLXkrHl+tn8l5fE4jxmyh48y
+zYQdCbX7iBCJ4b6PyF7iz2aFBTIDatBs904Xz5k+LdP76fbdes6zZO3g8GbkyMng
+kEXq1+5FSmLIXizLYcsP/wBEuNl00FnkQ/RyyCu7XuHSMFLOMKghD+S3MjrvjwPz
+Ya6CxoHqo1DB8h9ibGZFjLiQnA5h2WAgE9idDylSYkSaPSClfWY=
+=oHaI
+-----END PGP SIGNATURE-----
+-->

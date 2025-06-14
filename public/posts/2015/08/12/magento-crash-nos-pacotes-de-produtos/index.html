@@ -1,0 +1,76 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!--
+- -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- - -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Magento: Crash nos pacotes de produtos"><meta property="og:description" content="Esta é a primeira dica sobre Magento publicada por mim, acredito que
+isso se tornará algo recorrente daqui para a frente.
+Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na
+hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto
+as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo."><meta property="og:url" content="https://adlermedrado.com.br/posts/2015/08/12/magento-crash-nos-pacotes-de-produtos/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Magento: Crash nos pacotes de produtos"><meta name=twitter:description content="Esta é a primeira dica sobre Magento publicada por mim, acredito que
+isso se tornará algo recorrente daqui para a frente.
+Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na
+hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto
+as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo."><meta name=twitter:image content="/images/default-og-image.png"><title>Magento: Crash nos pacotes de produtos</title><meta name=description content="Esta é a primeira dica sobre Magento publicada por mim, acredito que
+isso se tornará algo recorrente daqui para a frente.
+Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na
+hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto
+as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/2015/08/12/magento-crash-nos-pacotes-de-produtos/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Magento: Crash nos pacotes de produtos</h1><div><div><p><small><time>August 12, 2015</time>
+|
+1 minute read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/magento>magento</a>,
+<a href=/tags/php>php</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Esta é a primeira dica sobre <a href=http://magento.com title="Magento Official Website">Magento</a> publicada por mim, acredito que
+isso se tornará algo recorrente daqui para a frente.</p><p>Recentemente eu tive problemas com um pacote de produtos que possui bastante produtos virtuais associados, sempre na
+hora de incluir ou remover algum produto virtual do pacote, o Magento realizava todo o processo corretamente, no entanto
+as mudanças não eram de fato aplicadas, mesmo com o Magento informando que sim, tudo tinha sido feito de acordo.</p><p>Depois de gastar um tempinho debugando o problema (read the freaking logs), percebi que isso se dava pelo fato de a tela
+onde os produtos virtuais são associados ao pacote possuir muitos campos de formulário (por produto) e somando uma
+quantidade grande de produtos, ocorria um erro causado pela limitação padrão determinada pela
+diretiva <a href=http://php.net/manual/en/info.configuration.php#ini.max-input-vars title="Diretiva max_input_vars">max_input_vars</a>
+do <a href=http://www.php.net title="PHP Oficial Website">PHP</a>.</p><p>Para resolver o problema, bastou aumentar o valor desta diretiva e <em>voilá</em>, tudo voltou a funcionar como esperado.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/2015/08/04/atom-e-php-em-busca-da-configura%C3%A7%C3%A3o-perfeita/>&#8592; Atom e PHP: Em busca da configuração perfeita</a>
+|
+<a href=https://adlermedrado.com.br/posts/2015/08/25/reflex%C3%A3o-di%C3%A1ria/>Reflexão diária &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/2015/08/12/magento-crash-nos-pacotes-de-produtos/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
+- -----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhFngEACgkQbV8aePHc
+Nh1jzBAApZQEonpE9J/66PAnv/1KfRKqE3JLmc1JUNmMUombmwvQSHEC9Nclu2oE
+bhFfIFs8rzSVTLSA81MrGrgIJRr2wmGNjC+hNACCchKVATWFCE4Eear1kjZMHpQK
+3cGn5fDULpyQBYc+PhqXazOHQeRu5JHWujXA9jQJ2NzGOSc1yAOGmoRCaKwakOSZ
+yYB/UjINMo0ytA1sNTFQk+nwbYuFNujArW00Y68lxuxtSW4QTdlRCswDpT699cyO
+9+DKDpOr/zlk+XQsRNFQcCKjsEaqpN9AdwBwNTA7xBcM0byIBKXN2PED0nsU9XgL
+s70NoE7x+GGw7RGm7irjWwvirIQuYPBzBbRC1jckYe0pqxj/jyZATe2Vkp3eT2M+
+GJusBUapJulbZAJos6GuV5oNoOUOTgT1XWIHlMYbs0t/4+A8mYCPGQNARH+1y0BF
+2M1pmqo2kw8II8kfoaGxPLN4HJe8Ihh585jgrx4CYIkdwg9hWiHLOMpIdgmqjqG/
+BaIw/hSF8neCP4Wg6AnqF3ceboqeToxhi+yenhvqUAo4S9thzs0pwcJLtfWRx8Eo
+qBXiidyVuIzspRYVRw1kAzXVn7PZxJnWMt4UxQydcs77LL9Dmc3eK/+Rg1BjIPgf
+lrMfARjXJ8st6OXj4jAU4V5UbPDnMjp+QWv1ZdgVpdU1LHyWLCE=
+=A+Wk
+- -----END PGP SIGNATURE-----
+- -->
+<!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNucMACgkQbV8aePHc
+Nh3iUA/+Jv4SPWu1cYHFDXDNYcczFbfwiDUnLd9XlvkZNWWN/RRtreijlY5r6YFM
+xDFfb0bra0zE+dz6qOdC7IoX4DxPW5/Ej0JhRhR+/1OM6ppMOaWZ/GZGEsbxgrM0
+ouQM+jQRpgZ+WY8eF+OBxOCWu3mS0cHI7WWl+TiYUnnpvatn+VWGxPgiZgpwoBIe
+xisfsnTaMz/zXX4I2/KklIqyP4dNLNxPI4YJIjvdjwaEldSqpdD95HBy7bNCX3hA
+CWlDDoKHUqnj7qubYjfeR3oC5e1KtdkkxzH/qicnfO3lr2fBIgo60b9T5SN4mnhz
+QlCZO3C2EX5DNtcfQ8zWG0gndxHTui9LV8c4ZCZPl7C/nIUcmo+zebjO7IdBdsak
+WVv48PiZ2EmeWeZCkFui1YbX6+sfGk5c3uy7aHDZzRlBL1gLJbEaHy3DED8wMzhj
+6ScNt46JSNdAJjy0MxWIoqeWCuimZsQNwq5diJM/TTi0sREE6Y6wJnLnEryZvlIE
+eS5Qp8seCeAkLbixMRf4OXpVSMqjRzo1LyQo4ZfQ7P5iV+PGHovHk11Ffcmax0CJ
+/gVY5R8QK2yFFCsCJWhWtltdIT17im2tLIahR/XXPXxHU0WFj3SzAOPw/h2XXX8h
+E+g1y9IZ0vRGHCfD4cz9qjHquiBHIRMtkkEUUfiXsLP5JcnrXEs=
+=sFmk
+-----END PGP SIGNATURE-----
+-->

@@ -1,0 +1,88 @@
+<!--
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- -->
+<!--
+- -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- - -->
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Dica: Solução de problema ao configurar Kitematic/Docker"><meta property="og:description" content="Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
+pessoas.
+Um projeto que estou trabalhando usa o RabbitMQ e para tentar manter o meu OS X o mais
+higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós
+decidimos utilizar o Docker e um container do RabbitMQ.
+Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na
+instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
+precisam ser aparadas, mas no geral ele funciona bem."><meta property="og:url" content="https://adlermedrado.com.br/posts/2015/06/03/dica-solu%C3%A7%C3%A3o-de-problema-ao-configurar-kitematic/docker/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Dica: Solução de problema ao configurar Kitematic/Docker"><meta name=twitter:description content="Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
+pessoas.
+Um projeto que estou trabalhando usa o RabbitMQ e para tentar manter o meu OS X o mais
+higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós
+decidimos utilizar o Docker e um container do RabbitMQ.
+Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na
+instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
+precisam ser aparadas, mas no geral ele funciona bem."><meta name=twitter:image content="/images/default-og-image.png"><title>Dica: Solução de problema ao configurar Kitematic/Docker</title><meta name=description content="Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
+pessoas.
+Um projeto que estou trabalhando usa o RabbitMQ e para tentar manter o meu OS X o mais
+higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós
+decidimos utilizar o Docker e um container do RabbitMQ.
+Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na
+instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
+precisam ser aparadas, mas no geral ele funciona bem."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/2015/06/03/dica-solu%C3%A7%C3%A3o-de-problema-ao-configurar-kitematic/docker/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Dica: Solução de problema ao configurar Kitematic/Docker</h1><div><div><p><small><time>June 3, 2015</time>
+|
+2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p><strong>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
+pessoas.</strong></p><p>Um projeto que estou trabalhando usa o <a href=https://www.rabbitmq.com>RabbitMQ</a> e para tentar manter o meu OS X o mais
+higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós
+decidimos utilizar o <a href=https://www.docker.com/>Docker</a> e um container do RabbitMQ.</p><p>Para facilitar, existe um projeto chamado <a href=https://kitematic.com/>Kitematic</a> que auxilia na configuração do Docker e na
+instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
+precisam ser aparadas, mas no geral ele funciona bem.</p><h4 id=problema-na-instalação>Problema na instalação</h4><p>Na hora em que o Kitematic é instalado ele verifica se o Virtualbox está instalado no computador, caso não esteja, ele
+baixa e faz a instalação automaticamente, após isso prossegue com a instalação, mas quando chegou em 99% ele ficou
+parado e não avançou mais, conforme a imagem abaixo:</p><p>Eu quase desisti após xingar bastante, mas então eu executei os seguintes comandos no terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>docker-machine rm -f dev
+</span></span><span style=display:flex><span>docker-machine create -d virtualbox dev
+</span></span></code></pre></div><p>E tudo passou a funcionar corretamente.</p><p>Durante o período em que eu esperava a instalação finalizar, eu abri uma issue
+no <a href=https://github.com/kitematic/kitematic>Github do projeto</a> e em seguida ao conseguir resolver eu postei a solução
+na <a href=https://github.com/kitematic/kitematic/issues/585>própria issue</a> e a fechei, como o projeto ainda está na fase beta
+é normal ter problemas e aparentemente os desenvolvedores já estão cientes deste.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/2015/06/03/seguran%C3%A7a-ou-sensa%C3%A7%C3%A3o-de-seguran%C3%A7a/>&#8592; Segurança ou sensação de segurança?</a>
+|
+<a href=https://adlermedrado.com.br/posts/2015/06/13/liberdade/>Liberdade &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/2015/06/03/dica-solu%C3%A7%C3%A3o-de-problema-ao-configurar-kitematic/docker/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
+- -----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhFngEACgkQbV8aePHc
+Nh3TEQ//QdyQz24H6kedFjxo2v+HWgboqjAty3lWe2TCUY1RE02DCIE/DUCCjzLp
+4n/L9UoK9tiDq4Pr5xQY8mIMl3j8yymQD0SwlsmsOLCN5vyJBRrA/sxQxZ+54Gau
+oVaoyyL77DRXvqlzi/1J4hUPTT1qP5lj5xmocJoDllrKgsy90GAukflZnYyqtnR3
+ALGySmCdS/iYsaMGJAwIiz/6sPMaaj1u2D//lQKGpCCHykiRoG9Xfx+PEgAp0YYK
+A+IurS8GPpU3Rj3DKzK0DXSUZ7xw1KANgM4d8GqVc2ZSqMIqPeBp9yqbWh9O0VoP
+/KDBVYBqGebAW07IfUpnBRvXVQ9cc/bW2zRgGe+aTD65hlA8kknHW0lOMCjKR7Bq
+jVjd3suaU0Grzs6ZE6JaS55ZuIUWa3Dz5qfBDT16LXjee83z0neFbcKnlSCL4nsC
+Br/XIWxEDNy5+zS3Ld2tZ+SGJL4vtfAaBb7ZstdJemC51sYrdYO4B1ncBpfSBBk3
+hPcjmRjM5GNgx8MJsU2Ne0EHWltZR2tt9zJSIARO7RJeEWPT23VOWfFqm3uMa9zC
+KhJ4uJGgcJBe8121bQ8jAz3pFuNRZAHts3gWCXE7mcX+FYRrRACVoyNRbDsHF0p5
+L1Bpv/pAfeRJ8gpui/BtoECeZcfeEMcWWJTCH6czvrTt4htofqM=
+=4dej
+- -----END PGP SIGNATURE-----
+- -->
+<!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNucMACgkQbV8aePHc
+Nh0GyQ//VJosjejQUj9c6ldNz1vqRSc/XZrTKHIFw/CSO1dxqoUUUVPXcBnSJzBL
+0SBD8GnB7DWX3rmUon230BRMlx+R/nnZC6fUz8EttdzmAZ+z0++tZINQSaFfC4Ex
+SV1WXQRFZ8gozvA1y5bBxGqQkFrkuu9FfowmAPtdMMii+ikRxDaiyD8GqHu9gkNU
+OQpGaKhCFa6/qswsSu3mdWak+/Yxvt7S+qFbQEAmWKmKXfpUq5w0FhtHyMVEtm0c
+U2VzYZbOgi18fqEEa9Iis4NYJVQGdosAszROZRgkRlv99dcs01YAyA5M1I8eRtER
+F3Liytj18kwfFaAW4J2dwFpAimPl4znWfj/7OqJFaNSMIA0n168GqwaQDnxHB6Up
+qUhLsmWQ4pGgwUsKNRwIn11m8qtJ+uHAJll+YP8BEVnAu6RNMqTnKFOgxpV51P8A
+ieaAvfaDjVQbh9eM0AFz1AogFsgg4Kc/UTlRGV3NeRoadsyhvTDQLCSZKsiEb40w
+3keCBmcnaBH2mAKZr+MrS6OwHl0QNuUsPzQ38Hn3ucT9vp9ChlWS8GL+VsR8ImGA
+K2AQqEDJnLyAScb6GIXnrbcgQqKOngK61l/Ws4EeVsJkBJZ/mklLiQYs2M+BQext
+p/B77ELPHBBUQZ3wPAc1Vu1i4mI+2xqzQDRuUThxHhQS8TFXdU8=
+=4IAQ
+-----END PGP SIGNATURE-----
+-->

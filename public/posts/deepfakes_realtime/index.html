@@ -25,23 +25,24 @@ So here’s the question: how do we verify identity in a world where faces can b
 <a href=/tags/security>security</a></p></div></p></div><span class=line_break></span></div><div class=content><p>An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.</p><p>With just a single still image, it can mimic anyone’s face in a live video call. In real-time. Running locally. No cloud required.</p><p>The implication is clear: you can no longer trust a video call at face value.</p><p>So here’s the question: <strong>how do we verify identity in a world where faces can be forged on demand?</strong></p><p>While many react with fear or disbelief, I see only one viable answer: <strong>digital signatures.</strong></p><p>For years, I’ve been saying: we should <strong>encrypt everything</strong> — files, messages, infrastructure. But now, that’s not enough.</p><p><strong>We need to start signing everything.</strong></p><p>Digital signatures ensure authenticity. They prove that something really came from who claims to have sent it and hasn’t been tampered with.</p><p>We already sign emails, source code, and software packages.
 <strong>Why not apply the same principle to real-time streams?</strong></p><p>Imagine a video call cryptographically signed with the speaker’s GPG key.
 Even if the face looks convincing, if the signature doesn’t verify, you know something’s off.</p><p>I sign every HTML page on my <a href=https://adlermedrado.com.br>personal website</a> with my GPG key. Not because I’m paranoid — but because <strong>I believe security should be a mindset.</strong></p><p><strong>Don’t trust. Verify.</strong></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/deepfakes_temporeal/>&#8592; Deepfakes em tempo real: e se "ver para crer" já não valer mais nada?</a>
-|</div></div></div></section></main><span class=line_break></span>
-<span class=line_break></span><footer class=glitch-zone><div><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc>public key</a> and check with <em>curl https://adlermedrado.com.br/posts/deepfakes_realtime/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus>A+</span></p></div></footer></body></html><!--
+|
+<a href=https://adlermedrado.com.br/posts/rag_soberano/>Como construí meu próprio RAG soberano para análise de segurança de código &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/deepfakes_realtime/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhA49IACgkQbV8aePHc
-Nh1Fsw/9EPJZ6NZMVEghWYS1y2fTF8RI6eIFypQboLGbzkvUzMhesOX/oQFMzX75
-LZi5GF3BdWg5/YxqiHvRq6tdNSPM8QSEdbCXg0gtTBqq+8ZzCRVF7WYzxgTVarq8
-f4/tX96rlkwoG+yDwUA/umkHfOGU8BTMZMPfVcQbd/ZJxTR6A4X8BmAUCb2tgeID
-SIhYGT3OVHDSCaeU65Luu99k2phInPmHg8iCmeZqLdSdicM/popY4t2E+bGAufLQ
-75IwU7IpK4VVqdRKIOKsJPFlZVzsXczXhDpKHKr2zxr2TYKOK8C6NKssTLfa5g0N
-UVC2crixEG9q9q8SjBssm5okdW4pA/XJzVJvV8dL6yNWgNq3s1Vc2C/GFxo9E5Tx
-l4TMuKL7DcBRwIXOGB4NUxl9XqxW96nJCkDRYUufoDhLgPEd63rLIkfdYloHtwbJ
-0atEgDFdctMRp2LyrS6UsidhxJj4Q661TtwoG2UX2Yr4XJ1lfOdMAN/MDTox+P/r
-vYxena3IOeJkjBGvzxr51CUTHE2isFlsZUw9oeIjwhAd+EPUTBO6WRSKqD4vz3iL
-0G642leqOE+f2soO6lYGVPGH9n/25pYZ45+mhNF9OGE5SBTLJQpj1BeWNCrRAHb3
-OkUeWbaxw0iT+cuvU7BdHE/IG3E4cQGx5szkB5N8Kpt/iTg9jx8=
-=uGfF
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNudwACgkQbV8aePHc
+Nh1ljw/+LEIS4CXTkMrOqlluWT+8GicvNzB1hJamesfImR6a9uZfwQSCvNtRLvD2
+VABOhgfjO+oA0flmGj4BskyuiRDmYm9gXe42h1Z8yVtF/dYFT1uAvIoaQoPizroN
+vxaaSs9NVbHF2XCn/WbVrBs/NUdxUhL8S9fcY2qHMN22g1de5+pkYHbaTaLabhdI
+KB2joYftJyg3JdJS+5hyUAjOY8c3OqUVmBO7BVxvOAks92cenO0nHuNEbOr8uhqQ
+ujs+9UEPlMd96qyDku4bqwN8PycShPEoMXtLkLZefRgjdieMv5IVGkP2oocn7OUh
+qTK+swibABL5+UbxZjVk+L+xT9MB+oJ2doOkrfcO/0rK96iMpIKxxoIEpgNv82Gk
+i+dChaeb30P8d2zF7UeViZbzUzqomdFHp1H5ZctLRK1fBg0W1X1WFd5/JoLzRiaq
+1gcEpg4VjaQGa+6DZpuNuYjwCA1vt6lxeq9RCuMMRppLrKUwWI8MaQl91V6W+Qow
+7rqV2locbaXEEnpYhw1yQklCA0LbSQHJY1OweV2ncversIklApKhBsBjFMhWgh/C
+kQ3vU61aaC7i07W5jFv5wehlWkDMB/T1nq2DuQW1m0BIudLN6+rnrPui0jRVcOsF
+sS1lb/JgLgJM7RqEHODEkk/yl1acWOED2WITDFhApZg44HzY4pw=
+=trin
 -----END PGP SIGNATURE-----
 -->

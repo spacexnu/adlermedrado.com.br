@@ -60,7 +60,7 @@ There’s also a constant balancing act between embedding quality and local infe
 
 And of course, the most obvious challenge: speed. You can’t run this locally and expect instant responses, especially with 7B models. Every analysis takes time. This isn’t something you plug into a CI/CD pipeline (yet), but as a sovereign lab and proof of concept, it performs its job exactly as intended.
 
-<img height="50%" src="images/sovereign-rag.png" width="50%"/>
+<img height="50%" src="/posts/images/sovereign-rag.png" width="50%"/>
 
 
 ### Next steps and evolution
@@ -79,4 +79,4 @@ Finally, the bigger move over the mid-term is evolving what today is a lab into 
 
 The concept is planted. Now it’s a matter of refining the machine and sharpening the blade.
 
-![gif-version-of-video-running-the-rag](images/sovereign-rag-faster.gif)
+![gif-version-of-video-running-the-rag](/posts/images/sovereign-rag-faster.gif)

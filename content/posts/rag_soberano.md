@@ -62,7 +62,7 @@ Além disso, o próprio balanceamento entre embedding de qualidade e performance
 
 Por fim, o mais óbvio de todos: velocidade. Não tem como rodar isso localmente e esperar tempos de resposta instantâneos, ainda mais com modelos de 7B. A cada análise, é preciso ter um pouco de paciência. Não é o tipo de ferramenta para integrar num fluxo de CI/CD ainda, mas como laboratório e prova de conceito soberano, cumpre o seu papel com excelência.
 
-<img height="50%" src="images/sovereign-rag.png" width="50%"/>
+<img height="50%" src="/posts/images/sovereign-rag.png" width="50%"/>
 
 ### Próximos passos e evolução do projeto
 
@@ -80,4 +80,4 @@ Por fim, o grande movimento de médio prazo envolve transformar o que hoje é um
 
 O conceito está plantado. Agora é seguir no aprimoramento técnico e deixar a máquina cada vez mais afiada.
 
-![gif-version-of-video-running-the-rag](images/sovereign-rag-faster.gif)
+![gif-version-of-video-running-the-rag](/posts/images/sovereign-rag-faster.gif)

@@ -6,7 +6,7 @@ layout: "staticpage"
 
 # 🛠️ Which Tools Do I Use
 
-If you’re curious about the tools I use to work, create, write, or simply survive the digital chaos — you’re in the right place.
+If you’re curious about the tools I use to work, create, write, or simply survive the digital chaos - you’re in the right place.
 
 This is a living document I update from time to time.  
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
@@ -17,7 +17,7 @@ _Last update: 2025-06-04_
 
 ## 💻 Hardware
 
-- MacBook Air M1 — 16GB RAM, 1TB Storage
+- MacBook Air M1 - 16GB RAM, 1TB Storage
 - LG 19” Full HD Monitor
 - Logitech MX Anywhere Mouse
 - Logitech K30 Keyboard
@@ -31,23 +31,23 @@ _Last update: 2025-06-04_
 
 ## ⚙️ Daily Workflow
 
-Tools that power my day-to-day — whether I’m writing code, answering emails, or navigating the system.
+Tools that power my day-to-day - whether I’m writing code, answering emails, or navigating the system.
 
 - **Browser**
-  - Safari — my main browser for daily usage
-  - Brave — mostly for Nostr usage
-- **Apple Mail** — old-school, but essential
-- **Notes app** — for quick thoughts, task lists, project ideas
-- **Enpass** — a password manager, because remembering everything is a trap
-- **Alfred + Apple Shortcuts** — for quick actions, workflows, and automation
-- **iTerm2** — my terminal of choice
-- **Fish Shell** — recently moved from ZSH, and enjoying the experience
+  - Safari - my main browser for daily usage
+  - Brave - mostly for Nostr usage
+- **Apple Mail** - old-school, but essential
+- **Notes app** - for quick thoughts, task lists, project ideas
+- **Enpass** - a password manager, because remembering everything is a trap
+- **Alfred + Apple Shortcuts** - for quick actions, workflows, and automation
+- **iTerm2** - my terminal of choice
+- **Fish Shell** - recently moved from ZSH, and enjoying the experience
 
 ---
 
 ## 🌐 This Website
 
-- Built with [Hugo](https://gohugo.io) — fast, static, reliable
+- Built with [Hugo](https://gohugo.io) - fast, static, reliable
 - Custom theme: [Dark Flat](https://github.com/adlermedrado/dark-flat)
 - No JavaScript, no trackers, no analytics  
   _Just content. No distractions. No surveillance._
@@ -56,7 +56,7 @@ Tools that power my day-to-day — whether I’m writing code, answering emails,
 
 ## 💻 Development Stack
 
-Technologies I use across projects — from building APIs to backend infrastructure.
+Technologies I use across projects - from building APIs to backend infrastructure.
 
 - **Platforms:** [GitHub](https://github.com), [GitLab](https://gitlab.com)
 - **Languages:** Python, Java, Golang, PHP, JavaScript
@@ -67,29 +67,29 @@ Technologies I use across projects — from building APIs to backend infrastruct
 
 ### 🖋️ Editors & IDEs
 
-- **IntelliJ IDEA Ultimate** — my main IDE
-- **Neovim** — for quick edits and terminal workflows
-- **tmux** — for remote multi-session workflows
-- **VS Code** — trying to embrace it again (it’s a process)
+- **IntelliJ IDEA Ultimate** - my main IDE
+- **Neovim** - for quick edits and terminal workflows
+- **tmux** - for remote multi-session workflows
+- **VS Code** - trying to embrace it again (it’s a process)
 
 ---
 
 ## 🔐 Security & Privacy
 
-I take privacy seriously — both mine and my users’.
+I take privacy seriously - both mine and my users’.
 
 - **GPG:** `07D7 0FDB CC44 6C19 CA43  02CE 6D5F 1A78 F1DC 361D`
-- Antivirus — better safe than sorry
-- VPN — encryption everywhere
-- TOR Browser — for when it matters
+- Antivirus - better safe than sorry
+- VPN - encryption everywhere
+- TOR Browser - for when it matters
 
 ---
 
 ## 🧪 Experiments & Local AI
 
-- [Ollama](https://ollama.com) — running local LLMs like:
+- [Ollama](https://ollama.com) - running local LLMs like:
   - `wizardcoder`, `deepseek-coder`, `mistral`, etc.
-- `llama.cpp` — for ultra-light inference on M1
+- `llama.cpp` - for ultra-light inference on M1
 - Exploring:
   - LangChain + ChromaDB
   - Local RAG pipelines with Markdown data
@@ -100,8 +100,8 @@ I take privacy seriously — both mine and my users’.
 
 ## 🖥️ Operating Systems
 
-- **macOS** — main development and creative environment
-- **Linux** — for servers, experiments, and staying sharp
+- **macOS** - main development and creative environment
+- **Linux** - for servers, experiments, and staying sharp
 
 ---
 

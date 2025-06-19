@@ -1,19 +1,94 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pgp on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/pgp/</link>
-    <description>Recent content in Pgp on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
+    <title>Adler Medrado&#39;s corner of the web</title>
+    <link>http://localhost:1313/</link>
+    <description>&lt;no value&gt;</description>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Feb 2010 19:08:14 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/pgp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Jun 2025 18:15:20 -03</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pgp/" rel="self" type="application/rss+xml"/>
+
+    
     <item>
-      <title>GPG no MacOS X Snow Leopard</title>
-      <link>http://localhost:1313/posts/gpg-no-macosx-snow-leopard/</link>
-      <pubDate>Sun, 21 Feb 2010 19:08:14 -0300</pubDate>
-      <guid>http://localhost:1313/posts/gpg-no-macosx-snow-leopard/</guid>
-      <description>&lt;p&gt;Desde que comprei meu mac e instalei o Snow Leopard no ano passado, eu busquei alguma forma de instalar o GPG integrado&#xA;ao cliente de email &amp;ldquo;Mail&amp;rdquo; que vem com o Mac OS X, mas estava complicado porque a versão do Mail que vem com o Snow&#xA;Leopard não suporta o GPGMail que é um bundle para o Mail que permite que esta integração seja feita.&lt;/p&gt;&#xA;&lt;p&gt;Hoje, senti necessidade novamente em criptografar meus emails utilizando GPG e por isso fui atrás de uma solução para o&#xA;problema supracitado e desta vez eu encontrei um tutorial bacana que me permitiu fazer esta integração.&lt;/p&gt;</description>
+      <title>Ollama Local AI Playbook</title>
+      <link>http://localhost:1313/missives/ollama-local-ai-playbook/</link>
+      <guid>http://localhost:1313/missives/ollama-local-ai-playbook/</guid>
+      <pubDate>Mon, 16 Jun 2025 20:25:44 -03</pubDate>
+      <description><img </description>
     </item>
+    
+    <item>
+      <title>Building My Own Sovereign RAG for Secure Code Analysis</title>
+      <link>http://localhost:1313/posts/sovereign-rag/</link>
+      <guid>http://localhost:1313/posts/sovereign-rag/</guid>
+      <pubDate>Sat, 14 Jun 2025 14:59:31 -03</pubDate>
+      <description><img </description>
+    </item>
+    
+    <item>
+      <title>Como construí meu próprio RAG soberano para análise de segurança de código</title>
+      <link>http://localhost:1313/posts/rag_soberano/</link>
+      <guid>http://localhost:1313/posts/rag_soberano/</guid>
+      <pubDate>Sat, 14 Jun 2025 14:48:35 -03</pubDate>
+      <description><img </description>
+    </item>
+    
+    <item>
+      <title>Now</title>
+      <link>http://localhost:1313/now/</link>
+      <guid>http://localhost:1313/now/</guid>
+      <pubDate>Wed, 04 Jun 2025 21:33:15 -03</pubDate>
+      <description><img </description>
+    </item>
+    
+    <item>
+      <title>Uses</title>
+      <link>http://localhost:1313/uses/</link>
+      <guid>http://localhost:1313/uses/</guid>
+      <pubDate>Wed, 04 Jun 2025 21:33:15 -03</pubDate>
+      <description><img </description>
+    </item>
+    
+    <item>
+      <title>Video sobre o meu site</title>
+      <link>http://localhost:1313/missives/video-sobre-o-meu-site/</link>
+      <guid>http://localhost:1313/missives/video-sobre-o-meu-site/</guid>
+      <pubDate>Wed, 04 Jun 2025 20:17:00 -03</pubDate>
+      <description><img </description>
+    </item>
+    
+    <item>
+      <title>Install &amp; Neovim Bootstrap Revamp</title>
+      <link>http://localhost:1313/missives/install-neovim-bootstrap-revamp/</link>
+      <guid>http://localhost:1313/missives/install-neovim-bootstrap-revamp/</guid>
+      <pubDate>Sat, 31 May 2025 22:29:46 -03</pubDate>
+      <description><img </description>
+    </item>
+    
+    <item>
+      <title>MDN Report A&#43;</title>
+      <link>http://localhost:1313/missives/mdn-report-a-/</link>
+      <guid>http://localhost:1313/missives/mdn-report-a-/</guid>
+      <pubDate>Tue, 20 May 2025 21:44:46 -03</pubDate>
+      <description><img </description>
+    </item>
+    
+    <item>
+      <title>Website updates</title>
+      <link>http://localhost:1313/missives/website-updates/</link>
+      <guid>http://localhost:1313/missives/website-updates/</guid>
+      <pubDate>Sun, 18 May 2025 23:59:00 -03</pubDate>
+      <description><img </description>
+    </item>
+    
+    <item>
+      <title>Real-time Deepfakes: what if &#34;seeing is believing&#34; no longer means anything?</title>
+      <link>http://localhost:1313/posts/deepfakes_realtime/</link>
+      <guid>http://localhost:1313/posts/deepfakes_realtime/</guid>
+      <pubDate>Sat, 10 May 2025 11:19:13 -03</pubDate>
+      <description><img </description>
+    </item>
+    
+
   </channel>
 </rss>

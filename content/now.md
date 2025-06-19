@@ -2,6 +2,7 @@
 title: "Now"
 description: "What I'm doing now"
 layout: "staticpage"
+date: 2025-06-04T21:33:15-03:00
 ---
 
 # 📍 What I'm Doing Now

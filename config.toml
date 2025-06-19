@@ -10,9 +10,11 @@ theme = "dark-flat"
   categories = ["development", "infosec", "mac"]
   mainSections = ["posts"]
 
+[outputs]
+  home = ["HTML", "RSS"]
 
 [permalinks]
-missives = "/missives/:slug/"
+  missives = "/missives/:slug/"
 
 [taxonomies]
   tag = "tags"

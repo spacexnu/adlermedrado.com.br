@@ -1,6 +1,7 @@
 ---
 title: "Uses"
 description: "Here's what I use"
+date: 2025-06-04T21:33:15-03:00
 layout: "staticpage"
 ---
 

@@ -13,7 +13,57 @@
 &lt;p>Lately, I’ve been taking a closer look at some code analysis tools that claim to detect security vulnerabilities in software projects. The idea itself is solid. I got one of these tools recommended to me and decided to dig deeper to see what’s really behind these solutions.&lt;/p>
 &lt;p>Pretty quickly I noticed a pattern: these platforms are far from cheap. Some offer limited free plans, but we all know how this game works. When something that good is offered for “free”, the real price usually comes from somewhere else — data collection, vendor lock-in, black-box models processing your code in someone else’s cloud. And since I’ve been deeply studying AI lately, especially Retrieval-Augmented Generation (RAG), the question came naturally: why not build my own pipeline, fully local, sovereign, using open-source tools, running on my own machine, and depending on no one?&lt;/p></description></item><item><title>Como construí meu próprio RAG soberano para análise de segurança de código</title><link>https://adlermedrado.com.br/posts/rag_soberano/</link><pubDate>Sat, 14 Jun 2025 14:48:35 -0300</pubDate><guid>https://adlermedrado.com.br/posts/rag_soberano/</guid><description>&lt;h2 id="construindo-meu-próprio-rag-soberano-para-análise-de-segurança-de-código">Construindo meu próprio RAG soberano para análise de segurança de código&lt;/h2>
 &lt;p>Nos últimos tempos, comecei a olhar com mais atenção para algumas ferramentas de análise de código que prometem identificar falhas de segurança em projetos. A ideia é boa. Recebi uma dessas ferramentas como sugestão e fui atrás para entender melhor o que havia por trás da proposta.&lt;/p>
-&lt;p>Logo de cara percebi um padrão: os preços dessas plataformas não são exatamente convidativos. Algumas até oferecem planos gratuitos limitados, mas a gente sabe como funciona o jogo. Quando algo muito bom aparece “de graça”, o custo real costuma vir de outro lugar. Coleta de dados, lock-in na plataforma, modelos black-box processando seu código na nuvem de terceiros. E como hoje eu venho estudando bastante IA e, em especial, o tema dos RAGs (Retrieval-Augmented Generation), a pergunta veio automática: por que não montar o meu próprio pipeline, 100% local, soberano, usando ferramentas open-source, rodando direto na minha máquina, sem depender de ninguém?&lt;/p></description></item><item><title>Video sobre o meu site</title><link>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</link><pubDate>Wed, 04 Jun 2025 20:17:00 -0300</pubDate><guid>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</guid><description>&lt;p>Essa semana eu &lt;a href="https://www.youtube.com/watch?v=PpYk139Xw2Y">publiquei um vídeo&lt;/a> no &lt;a href="https://www.youtube.com/@labsadler">meu canal do Youtube&lt;/a> explicando
+&lt;p>Logo de cara percebi um padrão: os preços dessas plataformas não são exatamente convidativos. Algumas até oferecem planos gratuitos limitados, mas a gente sabe como funciona o jogo. Quando algo muito bom aparece “de graça”, o custo real costuma vir de outro lugar. Coleta de dados, lock-in na plataforma, modelos black-box processando seu código na nuvem de terceiros. E como hoje eu venho estudando bastante IA e, em especial, o tema dos RAGs (Retrieval-Augmented Generation), a pergunta veio automática: por que não montar o meu próprio pipeline, 100% local, soberano, usando ferramentas open-source, rodando direto na minha máquina, sem depender de ninguém?&lt;/p></description></item><item><title>Now</title><link>https://adlermedrado.com.br/now/</link><pubDate>Wed, 04 Jun 2025 21:33:15 -0300</pubDate><guid>https://adlermedrado.com.br/now/</guid><description>&lt;h1 id="-what-im-doing-now">📍 What I&amp;rsquo;m Doing Now&lt;/h1>
+&lt;p>This is a &lt;a href="https://nownownow.com">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com">you should make one&lt;/a> too.&lt;/p>
+&lt;p>&lt;em>Last updated: 2025-06-04&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="-life">🧠 Life&lt;/h2>
+&lt;p>Trying to improve my quality of life. Right now, I’m focused on:&lt;/p>
+&lt;ul>
+&lt;li>Losing weight&lt;/li>
+&lt;li>Eating healthier&lt;/li>
+&lt;li>Lifting weights&lt;/li>
+&lt;li>Quitting alcohol&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="-work">💼 Work&lt;/h2>
+&lt;ul>
+&lt;li>Working remotely — location-independent&lt;/li>
+&lt;li>Diving deeper into A.I.&lt;/li>
+&lt;li>Back to producing videos on my &lt;a href="https://www.youtube.com/@adlermedrado">YouTube channel&lt;/a>&lt;br>
+&lt;em>(Only in Portuguese, for now)&lt;/em>&lt;/li>
+&lt;li>Building and maintaining a few personal projects:
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/adlermedrado/ShadowData">ShadowData&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/adlermedrado/job_finder">Job Finder&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/spacexnu/log-analyzer">Log Analyser&lt;/a>&lt;/li>
+&lt;li>FraudTalon (available soon)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="-listening">🎧 Listening&lt;/h2>
+&lt;p>Mostly rock, fusion, and everything in between. Here’s what’s been on repeat:&lt;/p></description></item><item><title>Uses</title><link>https://adlermedrado.com.br/uses/</link><pubDate>Wed, 04 Jun 2025 21:33:15 -0300</pubDate><guid>https://adlermedrado.com.br/uses/</guid><description>&lt;h1 id="-which-tools-do-i-use">🛠️ Which Tools Do I Use&lt;/h1>
+&lt;p>If you’re curious about the tools I use to work, create, write, or simply survive the digital chaos - you’re in the right place.&lt;/p>
+&lt;p>This is a living document I update from time to time.&lt;br>
+Inspired by Wes Bos’ &lt;a href="https://uses.tech">uses.tech&lt;/a> project.&lt;/p>
+&lt;p>&lt;em>Last update: 2025-06-04&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="-hardware">💻 Hardware&lt;/h2>
+&lt;ul>
+&lt;li>MacBook Air M1 - 16GB RAM, 1TB Storage&lt;/li>
+&lt;li>LG 19” Full HD Monitor&lt;/li>
+&lt;li>Logitech MX Anywhere Mouse&lt;/li>
+&lt;li>Logitech K30 Keyboard&lt;/li>
+&lt;li>AirPods Pro (2nd Gen)&lt;/li>
+&lt;li>Sennheiser HD 450BT&lt;/li>
+&lt;li>2 Nexstand K2 Folding Laptop Stands (one for my MacBook Air, another for the company’s MacBook Pro)&lt;/li>
+&lt;li>USB-C Hub w/ HDMI&lt;/li>
+&lt;li>Standard office chair, reinforced, custom-made. &lt;del>A battle-worn wooden chair (replacement pending…)&lt;/del>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="-daily-workflow">⚙️ Daily Workflow&lt;/h2>
+&lt;p>Tools that power my day-to-day - whether I’m writing code, answering emails, or navigating the system.&lt;/p></description></item><item><title>Video sobre o meu site</title><link>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</link><pubDate>Wed, 04 Jun 2025 20:17:00 -0300</pubDate><guid>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</guid><description>&lt;p>Essa semana eu &lt;a href="https://www.youtube.com/watch?v=PpYk139Xw2Y">publiquei um vídeo&lt;/a> no &lt;a href="https://www.youtube.com/@labsadler">meu canal do Youtube&lt;/a> explicando
 alguns pontos que eu considero importantes e aplico de maneira objetiva no meu site.&lt;/p>
 &lt;p>O vídeo pode ser interessante para quem se preocupa com soberania, segurança e privacidade.&lt;/p></description></item><item><title>Install &amp; Neovim Bootstrap Revamp</title><link>https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/</link><pubDate>Sat, 31 May 2025 22:29:46 -0300</pubDate><guid>https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/</guid><description>&lt;p>Ongoing work on fully revamping my dot-files &lt;code>install.sh&lt;/code> and Neovim stack.&lt;/p>
 &lt;ul>
@@ -720,54 +770,4 @@ language translations contributed by the community (Thanks!).&lt;/strong>&lt;/p>
 site &lt;a href="https://web.archive.org/web/20060507033039/http://www.tiobe.com/tpci.htm">TIOBE Programming Community Index&lt;/a> para
 verificar até que ponto aquele indíce do Tiobe é realista.&lt;/p>
 &lt;p>O Tiobe verifica em sites de pesquisa ( Google, Msn, etc ) quais as linguagens que mais aparecem em determinada pesquisa
-nestes engines de busca. A query utilizada pelo TIOBE (conforme mostrada em seu site ) é +&amp;quot; programming&amp;quot; -tv -channel .&lt;/p></description></item><item><title>Now</title><link>https://adlermedrado.com.br/now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/now/</guid><description>&lt;h1 id="-what-im-doing-now">📍 What I&amp;rsquo;m Doing Now&lt;/h1>
-&lt;p>This is a &lt;a href="https://nownownow.com">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com">you should make one&lt;/a> too.&lt;/p>
-&lt;p>&lt;em>Last updated: 2025-06-04&lt;/em>&lt;/p>
-&lt;hr>
-&lt;h2 id="-life">🧠 Life&lt;/h2>
-&lt;p>Trying to improve my quality of life. Right now, I’m focused on:&lt;/p>
-&lt;ul>
-&lt;li>Losing weight&lt;/li>
-&lt;li>Eating healthier&lt;/li>
-&lt;li>Lifting weights&lt;/li>
-&lt;li>Quitting alcohol&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="-work">💼 Work&lt;/h2>
-&lt;ul>
-&lt;li>Working remotely — location-independent&lt;/li>
-&lt;li>Diving deeper into A.I.&lt;/li>
-&lt;li>Back to producing videos on my &lt;a href="https://www.youtube.com/@adlermedrado">YouTube channel&lt;/a>&lt;br>
-&lt;em>(Only in Portuguese, for now)&lt;/em>&lt;/li>
-&lt;li>Building and maintaining a few personal projects:
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/adlermedrado/ShadowData">ShadowData&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/adlermedrado/job_finder">Job Finder&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/spacexnu/log-analyzer">Log Analyser&lt;/a>&lt;/li>
-&lt;li>FraudTalon (available soon)&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="-listening">🎧 Listening&lt;/h2>
-&lt;p>Mostly rock, fusion, and everything in between. Here’s what’s been on repeat:&lt;/p></description></item><item><title>Uses</title><link>https://adlermedrado.com.br/uses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/uses/</guid><description>&lt;h1 id="-which-tools-do-i-use">🛠️ Which Tools Do I Use&lt;/h1>
-&lt;p>If you’re curious about the tools I use to work, create, write, or simply survive the digital chaos - you’re in the right place.&lt;/p>
-&lt;p>This is a living document I update from time to time.&lt;br>
-Inspired by Wes Bos’ &lt;a href="https://uses.tech">uses.tech&lt;/a> project.&lt;/p>
-&lt;p>&lt;em>Last update: 2025-06-04&lt;/em>&lt;/p>
-&lt;hr>
-&lt;h2 id="-hardware">💻 Hardware&lt;/h2>
-&lt;ul>
-&lt;li>MacBook Air M1 - 16GB RAM, 1TB Storage&lt;/li>
-&lt;li>LG 19” Full HD Monitor&lt;/li>
-&lt;li>Logitech MX Anywhere Mouse&lt;/li>
-&lt;li>Logitech K30 Keyboard&lt;/li>
-&lt;li>AirPods Pro (2nd Gen)&lt;/li>
-&lt;li>Sennheiser HD 450BT&lt;/li>
-&lt;li>2 Nexstand K2 Folding Laptop Stands (one for my MacBook Air, another for the company’s MacBook Pro)&lt;/li>
-&lt;li>USB-C Hub w/ HDMI&lt;/li>
-&lt;li>Standard office chair, reinforced, custom-made. &lt;del>A battle-worn wooden chair (replacement pending…)&lt;/del>&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="-daily-workflow">⚙️ Daily Workflow&lt;/h2>
-&lt;p>Tools that power my day-to-day - whether I’m writing code, answering emails, or navigating the system.&lt;/p></description></item></channel></rss>
+nestes engines de busca. A query utilizada pelo TIOBE (conforme mostrada em seu site ) é +&amp;quot; programming&amp;quot; -tv -channel .&lt;/p></description></item></channel></rss>

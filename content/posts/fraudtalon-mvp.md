@@ -7,7 +7,7 @@ tags: [ai, fraud, security]
 
 After getting so many messages from my parents, wife, sister, and friends asking if emails or ads they saw on social media were legit, I decided to build a tool to help identify fraud, scams, and phishing attempts.
 
-That’s how **FraudTalon** was born.
+That’s how [**FraudTalon**](https://fraudtalon.com) was born.
 
 It’s currently in MVP version **0.0.1** — basic functionality, simple heuristics (I started with NLP but dropped it — not needed for now), and a single cloud-based LLM. The goal at this stage is to validate the idea.
 

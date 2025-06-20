@@ -7,7 +7,7 @@ tags: [ai, seguranca, fraude]
 
 Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.
 
-Foi assim que nasceu o **FraudTalon**.
+Foi assim que nasceu o [**FraudTalon**](https://fraudtalon.com)
 
 Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.
 

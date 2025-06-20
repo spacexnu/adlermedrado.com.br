@@ -16,7 +16,8 @@ Construí usando ferramentas que conheço bem: Python, Django, PostgreSQL, Celer
 Sem no-code/low-code, sem fluxos estilo n8n. Não precisei disso. E sim, tenho um certo preconceito com no-code — sou um dev das antigas — do mesmo jeito que eu tinha preconceito com IA um ano atrás. As coisas mudam.
 
 ### Roteiro (Roadmap):
-- Upload e análise de arquivos .eml
+
+- Upload e análise de arquivos `.eml`
 - Validação de URLs com fontes externas como o SpamHaus
 - Verificação de números de telefone
 - Inspeção de QR codes

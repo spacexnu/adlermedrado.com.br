@@ -28,5 +28,5 @@ Essa é uma ferramenta para devs, profissionais de segurança, mentes curiosas �
 Vamos tornar a internet um pouco menos perigosa.
 Uma análise por vez.
 
-[Assista ao vídeo no YouTube](https://youtu.be/U_8blKG9iCU).
 
+[Assista ao vídeo no YouTube](https://youtu.be/U_8blKG9iCU).

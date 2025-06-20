@@ -17,24 +17,25 @@ It’s currently in MVP version 0.0.1 — basic functionality, simple heuristics
 2 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
 <a href=/tags/ai>ai</a>,
 <a href=/tags/fraud>fraud</a>,
-<a href=/tags/security>security</a></p></div></p></div><span class=line_break></span></div><div class=content><p>After getting so many messages from my parents, wife, sister, and friends asking if emails or ads they saw on social media were legit, I decided to build a tool to help identify fraud, scams, and phishing attempts.</p><p>That’s how <strong>FraudTalon</strong> was born.</p><p>It’s currently in MVP version <strong>0.0.1</strong> — basic functionality, simple heuristics (I started with NLP but dropped it — not needed for now), and a single cloud-based LLM. The goal at this stage is to validate the idea.</p><p>I built it using tools I know well: <strong>Python, Django, PostgreSQL, Celery</strong>, and <strong>OpenAI</strong>. But I want this to grow into a <strong>multi-LLM platform</strong>. I’m not interested in depending on black-box, closed, expensive services hosted in someone else&rsquo;s cloud. I wrote more about this mindset in my <a href=https://adlermedrado.com.br/posts/sovereign-rag/>SovereignRAG project</a>.</p><p>No no-code/low-code, no n8n-style flows. Didn’t need them. And yeah, I’ve got some bias against no-code — I’m an old-school dev — just like I had bias against AI a year ago. Things change.</p><h3 id=roadmap>Roadmap</h3><ul><li>Upload and analysis of <code>.eml</code> files</li><li>URL validation through external sources like SpamHaus</li><li>Phone number checks</li><li>QR code inspection</li></ul><p>Right now, you can paste the raw body of an email and get an instant risk analysis. But that’s just the beginning.</p><p>This is a tool for devs, security people, curious minds, and anyone who’s ever seen someone fall for a scam.</p><p>Let’s make the internet a little less dangerous.<br><strong>One analysis at a time.</strong></p><p><a href=https://youtu.be/U_8blKG9iCU>Watch the youtube video</a> (pt_BR only, sorry):</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/sovereign-rag/>&#8592; Building My Own Sovereign RAG for Secure Code Analysis</a>
-|</div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<a href=/tags/security>security</a></p></div></p></div><span class=line_break></span></div><div class=content><p>After getting so many messages from my parents, wife, sister, and friends asking if emails or ads they saw on social media were legit, I decided to build a tool to help identify fraud, scams, and phishing attempts.</p><p>That’s how <strong>FraudTalon</strong> was born.</p><p>It’s currently in MVP version <strong>0.0.1</strong> — basic functionality, simple heuristics (I started with NLP but dropped it — not needed for now), and a single cloud-based LLM. The goal at this stage is to validate the idea.</p><p>I built it using tools I know well: <strong>Python, Django, PostgreSQL, Celery</strong>, and <strong>OpenAI</strong>. But I want this to grow into a <strong>multi-LLM platform</strong>. I’m not interested in depending on black-box, closed, expensive services hosted in someone else&rsquo;s cloud. I wrote more about this mindset in my <a href=https://adlermedrado.com.br/posts/sovereign-rag/>SovereignRAG project</a>.</p><p>No no-code/low-code, no n8n-style flows. Didn’t need them. And yeah, I’ve got some bias against no-code — I’m an old-school dev — just like I had bias against AI a year ago. Things change.</p><h3 id=roadmap>Roadmap</h3><ul><li>Upload and analysis of <code>.eml</code> files</li><li>URL validation through external sources like SpamHaus</li><li>Phone number checks</li><li>QR code inspection</li></ul><p>Right now, you can paste the raw body of an email and get an instant risk analysis. But that’s just the beginning.</p><p>This is a tool for devs, security people, curious minds, and anyone who’s ever seen someone fall for a scam.</p><p>Let’s make the internet a little less dangerous.<br><strong>One analysis at a time.</strong></p><p><a href=https://youtu.be/U_8blKG9iCU>Watch the youtube video</a> (pt_BR only, sorry).</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/sovereign-rag/>&#8592; Building My Own Sovereign RAG for Secure Code Analysis</a>
+|
+<a href=https://adlermedrado.com.br/posts/fraudtalon-mvp-br/>Fraudtalon Mvp Br &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/fraudtalon-mvp/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
 <span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhVcPwACgkQbV8aePHc
-Nh0Y/Q/+M7xOz46luhDQu7jRKTAqcZdtEP3rv8dWucaKA68EZT5X/elU/umMev66
-vjJmXFtqLh2O3ODQx/Zbx70yW0eCrCrvNM12UBRWVKoHR19ntN/4N4Nk+ycJwXuM
-aP8K+UrRyrxGTdHhWyDEvdVFGP5jg+za8U1R3t6b8kwXFrOgf2zdz1X+mz5lsTmY
-PUMSNB5pIInp8+wMpO3Dx84Ukeli9BhjaSNMTEj3QOFvgu9gR2elEMLCfpM1wNHK
-HHj3VIdCvDN7kNHyQ12eT2KfUkGrvr6L1EHz8tOc9jwr/s/a3rGDBFvDrspQixBe
-hAA3d7XMculRAWlZISYhAI39OXzJHG+9VI0zpPSY40ZFrbjQWZRYOBhFsMqNi46a
-t0eLRkdl2RnKJ2i0W0hjXXatajMnsxaGROJNenzG1GsQrs7aa/Qwt/pAGN/JYas3
-NZiHX2EinW0nRuPBOnHJaufEiJ6kN+yPhjcFMaQvsNrFDImU0llhwT428a6zmSyY
-b7pZz44cmPhkrhD6+hmphu7nMMK/OUD+O25NXaTy0Rvq7uFcO7CzyxJj9g+w4c7a
-leQZZmn4SSEWk/w4d8nck6CG6ZeWOxkaqgzUzwJXzHHf6eVmIBk2DSFyQ1NkviR1
-eifxa3pH3aYic946NdlZB7InfJfxeVNx6S7Te+e0TQx4OUVjXuE=
-=Qiil
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhVzIcACgkQbV8aePHc
+Nh2FpBAAp6M8dnyqrWBqh+mQTpOFoq+c0nE2ldunn244/oDKSshk4yKRWgLkuUEz
+JmTkPHWWesu6iLDW/fPFaB61oMbLemsjcjq1m6QTAx7saepAZ21pOyK+mAgaUjNH
+pSuDFn4RufDuk7qp2rPo9+25s+tY0HbnKA9yCN9Tv8Bj2I5WFYiYrJRR2FvUlkhx
+0wTSY2RWkaTabALIahT+Sezu51w37DevHeUYlKvWLFYHeZvl4Fvie3Jez07+F8du
+pKHMva8ZU+DMJkMn+UPYEVqF8VV2L4Hiu6HPlUPZbiZRA0cyqnREXF31TVOoLq9f
+m/utJR/lLiOK0zOmvxmdEccPMNHE+SYE94WujtL2RH9xp0TuuXVmFvWBE4QoctJb
+QVeBL4sSbdVhU0odDk/F+q88SH+LMZV3lZw32PKL7GYVxB2QYRlVHpvId7tTPd3l
+rIrINJvMGUiTB+ALp4tdHVuxEey6V6jhmNoZj74er02gohgP/Ova9p7ZwU77UKVH
+GdGlMcNwZ9MMYJaKCxgZVQWvJeyMTSNJNOUs5elxuSW/wTsvn0ZqfGvRWfaHuuWj
+h+bL2Kfz5lyhqno+1v8JR9Ec+ghcS52/FIFM4IIAx6391lE0Pe0KW34jQahEhT4Y
+zOMErHfZmf2XjD3wWZpot/FcPk4ST5cViaPU0CgX4HA0r/RM16A=
+=OG1r
 -----END PGP SIGNATURE-----
 -->

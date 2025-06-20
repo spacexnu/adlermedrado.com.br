@@ -28,5 +28,5 @@ This is a tool for devs, security people, curious minds, and anyone who’s ever
 Let’s make the internet a little less dangerous.  
 **One analysis at a time.**
 
-[Watch the youtube video](https://youtu.be/U_8blKG9iCU) (pt_BR only, sorry):
+[Watch the youtube video](https://youtu.be/U_8blKG9iCU) (pt_BR only, sorry).
 

@@ -1,5 +1,5 @@
 ---
-title: "Fraudtalon Mvp Br"
+title: "Combatendo fraudes online com FraudTalon"
 date: 2025-06-20T17:58:55-03:00
 draft: false
 tags: [ai, seguranca, fraude]

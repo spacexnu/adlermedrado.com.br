@@ -17,29 +17,28 @@ Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heuríst
 2 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
 <a href=/tags/ai>ai</a>,
 <a href=/tags/seguranca>seguranca</a>,
-<a href=/tags/fraude>fraude</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.</p><p>Foi assim que nasceu o <strong>FraudTalon</strong>.</p><p>Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.</p><p>Construí usando ferramentas que conheço bem: Python, Django, PostgreSQL, Celery e OpenAI. Mas quero que isso evolua para uma plataforma multi-LLM. Não me interessa depender de serviços caros, fechados e opacos, hospedados na nuvem de terceiros. Escrevi mais sobre essa mentalidade no meu projeto <a href=https://adlermedrado.com.br/posts/rag_soberano/>SovereignRAG</a>.</p><p>Sem no-code/low-code, sem fluxos estilo n8n. Não precisei disso. E sim, tenho um certo preconceito com no-code — sou um dev das antigas — do mesmo jeito que eu tinha preconceito com IA um ano atrás. As coisas mudam.</p><h3 id=roteiro-roadmap>Roteiro (Roadmap):</h3><pre><code>•	Upload e análise de arquivos .eml
-•	Validação de URLs com fontes externas como o SpamHaus
-•	Verificação de números de telefone
-•	Inspeção de QR codes
-</code></pre><p>Por enquanto, você pode colar o corpo bruto de um e-mail e obter uma análise de risco instantânea. Mas isso é só o começo.</p><p>Essa é uma ferramenta para devs, profissionais de segurança, mentes curiosas — e qualquer um que já viu alguém cair num golpe.</p><p>Vamos tornar a internet um pouco menos perigosa.
+<a href=/tags/fraude>fraude</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.</p><p>Foi assim que nasceu o <strong>FraudTalon</strong>.</p><p>Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.</p><p>Construí usando ferramentas que conheço bem: Python, Django, PostgreSQL, Celery e OpenAI. Mas quero que isso evolua para uma plataforma multi-LLM. Não me interessa depender de serviços caros, fechados e opacos, hospedados na nuvem de terceiros. Escrevi mais sobre essa mentalidade no meu projeto <a href=https://adlermedrado.com.br/posts/rag_soberano/>SovereignRAG</a>.</p><p>Sem no-code/low-code, sem fluxos estilo n8n. Não precisei disso. E sim, tenho um certo preconceito com no-code — sou um dev das antigas — do mesmo jeito que eu tinha preconceito com IA um ano atrás. As coisas mudam.</p><h3 id=roteiro-roadmap>Roteiro (Roadmap):</h3><p>• Upload e análise de arquivos .eml
+• Validação de URLs com fontes externas como o SpamHaus
+• Verificação de números de telefone
+• Inspeção de QR codes</p><p>Por enquanto, você pode colar o corpo bruto de um e-mail e obter uma análise de risco instantânea. Mas isso é só o começo.</p><p>Essa é uma ferramenta para devs, profissionais de segurança, mentes curiosas — e qualquer um que já viu alguém cair num golpe.</p><p>Vamos tornar a internet um pouco menos perigosa.
 Uma análise por vez.</p><p><a href=https://youtu.be/U_8blKG9iCU>Assista ao vídeo no YouTube</a>.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/fraudtalon-mvp/>&#8592; Fighting online fraud with FraudTalon</a>
 |</div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/fraudtalon-mvp-br/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
 <span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhVzvUACgkQbV8aePHc
-Nh1pABAAiIfiVsK0pYWeIvITLBszHk/cj5e/UTlYCkrnMIH6pHpgrNemScMBoPke
-y8aH3ahQV9T08azkx2AXkcRSda7vxT/8ohY80ADh1x8xL/irxY27Rss+YVUWmx/M
-tr+tHOgfp6tM+EGw5lxFTLMjrN1pHyVUE4HHUJC/OgSVfjycIDMeAV6nyHjysemH
-TQPFOyuZ6aY2tbVGeqFYAMG0iy0raQR8iPtTPBqLGFu1IUZl7W1xvG+kKeQ8W/jw
-lqTIrzBWWC+0SJdnngLzyUsKpQArr3w+JYw2Q0SN7F6KSsEPdkefQuui61grzt7o
-ESEhi4dQbqG8dxWR1M3fJXNkuvNU8y/8o6VS7xj6+tZRTtvpLC8Xjy9e7+Grgpzb
-hwjqbfCd4MsEasgFUMa3+ybTnbmi0DGj9W7creVhYn8//Vpu18ARaQJjd8Qap6XY
-3E09pvNYnsR6glItprMMT4jFurlgSQ90YF7jDUJaaoAA34YuX1UXLNP0EI+N4eN1
-NLZx0JMVuD4hYFbmLRLMkCd7x2KzRZck4psSGbXznPGVzfQ+Xo+TIihr3/ejkhz7
-Cg/ZPv+R7O7k4maZaE4qGy8C814S25yBWmwLeX5r58h7/xRLw0DLuykL3hNlVB4f
-P/Y6fyHNOK5zcUlKhoPhdn0iKAhtD07rlgBe1q3LqUN6HeDzjjs=
-=ddn4
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhVz7QACgkQbV8aePHc
+Nh3GdhAAnVXza3heGFCZXaX4lPMBJxuFJHIc2aJcIE56kO+9zeLCmtMWVvjJCKrQ
+t7jzBMlDFCkqjqoiJqzqu+5RKvGumUccsiNCKJ3ad0/TAuZtK8fQDlgbV+Ixej2m
+Bb7BQReg36tWZAm20Y3pohpLGMPUYsu+0pkpjYMJSn5faEXalEewfxOSvE8H2Kt/
+HNCxFx3B3lUw7tYa5QO5MCwlS772LJIP1owa+uekZvdI8cQO2CEXQbSS4Nik/Qvu
+PHGVrWAa+J+a06Jme92V5gteDxORNHrnepCZZZ+Bop1lLQykNRB2feUCXBECtP1p
+gSLjWJEqplI9RckSP227N19M1SS+7m+sAmK2uM4uI0UsDaDE4LLiYl4FOe36eOkr
+1mx8sh0HqJxX0t8ED7ZdtMC3qVm0sBwIWoLdK/OZtliaEjTh4qC/pqLyTWNYAwsU
+MDJQK0TFaU1ZDK1UFtyk9/XDPkb4dxuRSftXJseHGV61c0EKihrzg0AXczGMX7xP
+QRgJUY+3n4ySAgf7qIbfRTANIwesplIqJmiPt3+rzSAWpnKddQsTAQP9l1r2/HAJ
+dr7Wh59VSULqkc+doQZ/I6NsnxKYVHtGh5n1NF95VjfTRinm23d9hY7iS1P6dpJt
+qGzG1Hd6pHHPbxXT8zgssI++doIg23KJCvJczsFHRI5r8LKhgEw=
+=8b54
 -----END PGP SIGNATURE-----
 -->

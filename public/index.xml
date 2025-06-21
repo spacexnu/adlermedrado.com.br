@@ -19,7 +19,7 @@
 &lt;p>Nos últimos tempos, comecei a olhar com mais atenção para algumas ferramentas de análise de código que prometem identificar falhas de segurança em projetos. A ideia é boa. Recebi uma dessas ferramentas como sugestão e fui atrás para entender melhor o que havia por trás da proposta.&lt;/p>
 &lt;p>Logo de cara percebi um padrão: os preços dessas plataformas não são exatamente convidativos. Algumas até oferecem planos gratuitos limitados, mas a gente sabe como funciona o jogo. Quando algo muito bom aparece “de graça”, o custo real costuma vir de outro lugar. Coleta de dados, lock-in na plataforma, modelos black-box processando seu código na nuvem de terceiros. E como hoje eu venho estudando bastante IA e, em especial, o tema dos RAGs (Retrieval-Augmented Generation), a pergunta veio automática: por que não montar o meu próprio pipeline, 100% local, soberano, usando ferramentas open-source, rodando direto na minha máquina, sem depender de ninguém?&lt;/p></description></item><item><title>Now</title><link>https://adlermedrado.com.br/now/</link><pubDate>Wed, 04 Jun 2025 21:33:15 -0300</pubDate><guid>https://adlermedrado.com.br/now/</guid><description>&lt;h1 id="-what-im-doing-now">📍 What I&amp;rsquo;m Doing Now&lt;/h1>
 &lt;p>This is a &lt;a href="https://nownownow.com">now page&lt;/a>, and if you have your own site, &lt;a href="https://nownownow.com">you should make one&lt;/a> too.&lt;/p>
-&lt;p>&lt;em>Last updated: 2025-06-04&lt;/em>&lt;/p>
+&lt;p>&lt;em>Last updated: 2025-06-21&lt;/em>&lt;/p>
 &lt;hr>
 &lt;h2 id="-life">🧠 Life&lt;/h2>
 &lt;p>Trying to improve my quality of life. Right now, I’m focused on:&lt;/p>
@@ -38,10 +38,10 @@
 &lt;em>(Only in Portuguese, for now)&lt;/em>&lt;/li>
 &lt;li>Building and maintaining a few personal projects:
 &lt;ul>
+&lt;li>&lt;a href="https://fraudtalon.com">FraudTalon&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/adlermedrado/ShadowData">ShadowData&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/adlermedrado/job_finder">Job Finder&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/spacexnu/log-analyzer">Log Analyser&lt;/a>&lt;/li>
-&lt;li>FraudTalon (available soon)&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -51,7 +51,7 @@
 &lt;p>If you’re curious about the tools I use to work, create, write, or simply survive the digital chaos - you’re in the right place.&lt;/p>
 &lt;p>This is a living document I update from time to time.&lt;br>
 Inspired by Wes Bos’ &lt;a href="https://uses.tech">uses.tech&lt;/a> project.&lt;/p>
-&lt;p>&lt;em>Last update: 2025-06-04&lt;/em>&lt;/p>
+&lt;p>&lt;em>Last update: 2025-06-21&lt;/em>&lt;/p>
 &lt;hr>
 &lt;h2 id="-hardware">💻 Hardware&lt;/h2>
 &lt;ul>

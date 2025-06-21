@@ -9,7 +9,7 @@ date: 2025-06-04T21:33:15-03:00
 
 This is a [now page](https://nownownow.com), and if you have your own site, [you should make one](https://nownownow.com) too.
 
-_Last updated: 2025-06-04_
+_Last updated: 2025-06-21_
 
 ---
 
@@ -31,10 +31,10 @@ Trying to improve my quality of life. Right now, I’m focused on:
 - Back to producing videos on my [YouTube channel](https://www.youtube.com/@adlermedrado)  
   _(Only in Portuguese, for now)_  
 - Building and maintaining a few personal projects:
+  - [FraudTalon](https://fraudtalon.com)
   - [ShadowData](https://github.com/adlermedrado/ShadowData)
   - [Job Finder](https://github.com/adlermedrado/job_finder)
   - [Log Analyser](https://github.com/spacexnu/log-analyzer)
-  - FraudTalon (available soon)
 
 ---
 

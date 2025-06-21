@@ -2,7 +2,7 @@
 title: "Como construí meu próprio RAG soberano para análise de segurança de código"
 date: 2025-06-14T14:48:35-03:00
 draft: false
-tags: [rag, ai, ia, soberania, ollama, llm, seguranca]
+tags: [rag, ia, soberania, ollama, llm, seguranca]
 ---
 
 ## Construindo meu próprio RAG soberano para análise de segurança de código

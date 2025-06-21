@@ -12,7 +12,7 @@ If you’re curious about the tools I use to work, create, write, or simply surv
 This is a living document I update from time to time.  
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-_Last update: 2025-06-04_
+_Last update: 2025-06-21_
 
 ---
 
@@ -86,7 +86,7 @@ I take privacy seriously - both mine and my users’.
 
 ---
 
-## 🧪 Experiments & Local AI
+## 🧪 Experiments & AI
 
 - [Ollama](https://ollama.com) - running local LLMs like:
   - `wizardcoder`, `deepseek-coder`, `mistral`, etc.
@@ -95,7 +95,9 @@ I take privacy seriously - both mine and my users’.
   - LangChain + ChromaDB
   - Local RAG pipelines with Markdown data
   - PrivateGPT
-  - VS Code agents + Copilot replacements
+  - ~~VS Code agents + Copilot replacements~~
+  - ChatGPT
+  - Jetbrains AI Assistant + Junie
 
 ---
 

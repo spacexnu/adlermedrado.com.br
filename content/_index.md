@@ -16,6 +16,8 @@ I've architected and deployed systems across finance, e-commerce, and healthcare
 
 Currently working on AI-powered log analysis, NLP-based data extraction, and decentralized, censorship-resistant tools.
 
+I’m also building [FraudTalon](https://fraudtalon.com)—an AI-powered platform that detects phishing, scams, and online fraud in emails, images, and URLs—created after too many “is this real?” questions from my family and friends.
+
 All while finishing a History degree and staying deeply embedded in hacker culture.
 
 ---

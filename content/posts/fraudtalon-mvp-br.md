@@ -2,7 +2,7 @@
 title: "Combatendo fraudes online com FraudTalon"
 date: 2025-06-20T17:58:55-03:00
 draft: false
-tags: [ai, seguranca, fraude]
+tags: [fraudtalon, ai, seguranca, fraude]
 ---
 
 Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.

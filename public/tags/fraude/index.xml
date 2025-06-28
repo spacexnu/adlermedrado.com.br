@@ -1,3 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fraude on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/fraude/</link><description>Recent content in Fraude on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 20 Jun 2025 17:58:55 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/fraude/index.xml" rel="self" type="application/rss+xml"/><item><title>Combatendo fraudes online com FraudTalon</title><link>https://adlermedrado.com.br/posts/fraudtalon-mvp-br/</link><pubDate>Fri, 20 Jun 2025 17:58:55 -0300</pubDate><guid>https://adlermedrado.com.br/posts/fraudtalon-mvp-br/</guid><description>&lt;p>Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fraude on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/fraude/</link><description>Recent content in Fraude on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 28 Jun 2025 15:46:07 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/fraude/index.xml" rel="self" type="application/rss+xml"/><item><title>Update: Análise de emails (.eml) com FraudTalon</title><link>https://adlermedrado.com.br/posts/fraudtalon-processamento-email/</link><pubDate>Sat, 28 Jun 2025 15:46:07 -0300</pubDate><guid>https://adlermedrado.com.br/posts/fraudtalon-processamento-email/</guid><description>&lt;h3 id="o-fraudtalon-deu-mais-um-passo-importante">O FraudTalon deu mais um passo importante.&lt;/h3>
+&lt;p>Mesmo com pouco tempo livre na semana, sigo comprometido em manter o FraudTalon avançando e publicando updates regulares.&lt;/p>
+&lt;p>A partir de hoje, é possível fazer o upload de arquivos .eml diretamente pela interface, e o sistema realiza uma análise
+completa combinando heurísticas de segurança de e-mails com inteligência artificial.&lt;/p>
+&lt;img alt="fraudtalon-banner" height="50%" src="https://adlermedrado.com.br/posts/images/fraudtalon-banner.png" width="50%"/>
+&lt;p>O pipeline está assim:&lt;/p>
+&lt;ul>
+&lt;li>Parse automático do .eml, com extração dos headers, remetente, destinatário, assunto e corpo&lt;/li>
+&lt;li>Avaliação heurística com sinais como:
+&lt;ul>
+&lt;li>Mismatch entre From, Reply-To e Return-Path&lt;/li>
+&lt;li>Falhas de autenticação (DKIM, SPF, DMARC)&lt;/li>
+&lt;li>Recebimento por servidores desconhecidos&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Análise por IA (via OpenAI) levando em conta todo o conteúdo textual&lt;/li>
+&lt;li>Score consolidado com os sinais suspeitos encontrados&lt;/li>
+&lt;/ul>
+&lt;p>Essa atualização transforma o &lt;a href="https://fraudtalon.com">FraudTalon&lt;/a> em uma ferramenta muito mais útil para análise de
+e-mails suspeitos, como golpes de Pix, phishing, ou promessas falsas de investimento.&lt;/p></description></item><item><title>Combatendo fraudes online com FraudTalon</title><link>https://adlermedrado.com.br/posts/fraudtalon-mvp-br/</link><pubDate>Fri, 20 Jun 2025 17:58:55 -0300</pubDate><guid>https://adlermedrado.com.br/posts/fraudtalon-mvp-br/</guid><description>&lt;p>Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.&lt;/p>
 &lt;p>Foi assim que nasceu o &lt;a href="https://fraudtalon.com">&lt;strong>FraudTalon&lt;/strong>&lt;/a>&lt;/p>
 &lt;p>Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.&lt;/p></description></item></channel></rss>

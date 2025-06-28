@@ -6,23 +6,25 @@ Hash: SHA256
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Fraude"><meta property="og:description" content><meta property="og:url" content="https://adlermedrado.com.br/tags/fraude/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="website"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Fraude"><meta name=twitter:description content><meta name=twitter:image content="/images/default-og-image.png"><title>Fraude</title><meta name=description content><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/tags/fraude/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Fraude</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Fraude</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/fraudtalon-mvp-br/>Combatendo fraudes online com FraudTalon</a></h2><p class="text-sm text-gray-500">20 Jun 2025</p><p><p>Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.</p><p>Foi assim que nasceu o <a href=https://fraudtalon.com><strong>FraudTalon</strong></a></p><p>Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.</p></p></article></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+<a href=/uses>what am i using</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Fraude</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Fraude</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/fraudtalon-processamento-email/>Update: Análise de emails (.eml) com FraudTalon</a></h2><p class="text-sm text-gray-500">28 Jun 2025</p><p><h3 id=o-fraudtalon-deu-mais-um-passo-importante>O FraudTalon deu mais um passo importante.</h3><p>Mesmo com pouco tempo livre na semana, sigo comprometido em manter o FraudTalon avançando e publicando updates regulares.</p><p>A partir de hoje, é possível fazer o upload de arquivos .eml diretamente pela interface, e o sistema realiza uma análise
+completa combinando heurísticas de segurança de e-mails com inteligência artificial.</p><img alt=fraudtalon-banner height=50% src=/posts/images/fraudtalon-banner.png width=50%><p>O pipeline está assim:</p><ul><li>Parse automático do .eml, com extração dos headers, remetente, destinatário, assunto e corpo</li><li>Avaliação heurística com sinais como:<ul><li>Mismatch entre From, Reply-To e Return-Path</li><li>Falhas de autenticação (DKIM, SPF, DMARC)</li><li>Recebimento por servidores desconhecidos</li></ul></li><li>Análise por IA (via OpenAI) levando em conta todo o conteúdo textual</li><li>Score consolidado com os sinais suspeitos encontrados</li></ul><p>Essa atualização transforma o <a href=https://fraudtalon.com>FraudTalon</a> em uma ferramenta muito mais útil para análise de
+e-mails suspeitos, como golpes de Pix, phishing, ou promessas falsas de investimento.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/fraudtalon-mvp-br/>Combatendo fraudes online com FraudTalon</a></h2><p class="text-sm text-gray-500">20 Jun 2025</p><p><p>Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.</p><p>Foi assim que nasceu o <a href=https://fraudtalon.com><strong>FraudTalon</strong></a></p><p>Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.</p></p></article></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/tags/fraude/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
 <span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhf+UMACgkQbV8aePHc
-Nh2QwBAAreZQgodPKyhDpEVYkOLdjlsokzQWl0+GCPZ4WCRItVwF4oMOSGez10Ca
-KGQOFm/kV8pBJZqZ2Pcy+IQ2U2DfJEUS7kvNZO5y4BgyZ8xbu6mbQNifGB+Q4d8n
-AR/ibTuwn209/KWi3qrHiwrpam7s0L+wb9jWi7nXt8KznHRTcanIR08VXVVaIpGa
-OLLUnsRQM+np1LCQ/0ovGnsxT6L/6ZIEVZZnbK1UPxCk8APafbFRXMWdjo+xd3Ej
-MlJVRtHhNbrrxTwxwnuLxLEJ4Lycaa33XRWEkoIMe5LOolekx/M2mVqGZOPeohvv
-zgUgawHN3RUDTLkyV2NzBvMuajwzGZaQ1L16QgThX1JG91vqdoduIu15l28edfrW
-ympefg4xBkn2qZlasptIHEM1Wkdo7Vre7H5Iy9GxdSEc/d0aFrHfaglvPVIcK0Uy
-NMO0RUGpC9fDo3gk9lmmCWLMHDrXYZbBGovT5ikLxb/7wkJ4Pf5Piri+us/qiv/P
-0TXQsRTaJ7BjtWQv24oLR7HMzys0KFPmWeceq65CBVenvrY7ZNuY30IX+5QXJVND
-JMRkw+Cd2HVFtPhdEx9dpZh/OaWoPBO4eHO/Onhw4zi9WM3ZS3AKdD1JwdNPvUSb
-eZG2vTd3DGQ6A2pd9Ol4otq9kC7pXwtcyTmvwYEIIg2roroytFI=
-=UyVS
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhgPboACgkQbV8aePHc
+Nh1mVQ/+IMIYsu7O90H38EvW2iLqH5ckyFgw6QU/+Di4/A0jEiq+Z0G4UILbERYi
+ho28cTezDhd8r/7fIY3D/yoLODnIcjaoHOJohm9U81RHRZjjMaOCa5JybDlIQPN5
+YuRZDXOyWsmdolaEahRmNoOBEuNGH8QOtTxl6+F8JDeJ9VPaAhoRyMf1cW0atwMT
++ZExf8KorHticYBUXy16KdaC2pHL8ZYCeWBlGIsG8+xzZA3QCeJUCY5Tk3R+BMuh
+AbZvhMhsmLG92UrpV7q7Spzl15jrq4AFDDatbNyTOj/39ucaFLPY3CZcGUvGEo6K
+GZ3O2D6NutrqjbKqQ36AQiP756buYwkGd6nsGp93gjhVFGMDZZbD/xsjEkn24prv
+cmnyQ2YedCRvGJQmqrB7Gog5pYnWd/TifgMDO8q4ruUnX5ttzjxmT4kmDbYFJfEZ
+bva7hyt3T4Oasnu/MJ2GpKpjE6Vs35pqy19fZ3K5rgwW93TL1hNcxrFwWO9d26/i
+yInPM9YXbmbGOYlo+lCFz7X6dG8r95JBPqFwwnzPsi/rBTLx7KKmBiHbdZYBjph8
+e8YkG/pPM3aejzIHnUoMmJYELLj/6MU9Nbmo0xZQZa2NTMnZa+JgNjICJtw8zO9L
+RaF4MvcR29EDRdlcjXPFtJa6T4Aa0TIFFjmrCGzRBZvO9b23AyQ=
+=y0/H
 -----END PGP SIGNATURE-----
 -->

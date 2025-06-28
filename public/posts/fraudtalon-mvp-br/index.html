@@ -15,27 +15,29 @@ Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heuríst
 <a href=/uses>what am i using</a></div></nav></header><main><section class=section><article><div><h1>Combatendo fraudes online com FraudTalon</h1><div><div><p><small><time>June 20, 2025</time>
 |
 2 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/fraudtalon>fraudtalon</a>,
 <a href=/tags/ai>ai</a>,
 <a href=/tags/seguranca>seguranca</a>,
 <a href=/tags/fraude>fraude</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.</p><p>Foi assim que nasceu o <a href=https://fraudtalon.com><strong>FraudTalon</strong></a></p><p>Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.</p><p>Construí usando ferramentas que conheço bem: Python, Django, PostgreSQL, Celery e OpenAI. Mas quero que isso evolua para uma plataforma multi-LLM. Não me interessa depender de serviços caros, fechados e opacos, hospedados na nuvem de terceiros. Escrevi mais sobre essa mentalidade no meu projeto <a href=https://adlermedrado.com.br/posts/rag_soberano/>SovereignRAG</a>.</p><p>Sem no-code/low-code, sem fluxos estilo n8n. Não precisei disso. E sim, tenho um certo preconceito com no-code — sou um dev das antigas — do mesmo jeito que eu tinha preconceito com IA um ano atrás. As coisas mudam.</p><h3 id=roteiro-roadmap>Roteiro (Roadmap):</h3><ul><li>Upload e análise de arquivos <code>.eml</code></li><li>Validação de URLs com fontes externas como o SpamHaus</li><li>Verificação de números de telefone</li><li>Inspeção de QR codes</li></ul><p>Por enquanto, você pode colar o corpo bruto de um e-mail e obter uma análise de risco instantânea. Mas isso é só o começo.</p><p>Essa é uma ferramenta para devs, profissionais de segurança, mentes curiosas — e qualquer um que já viu alguém cair num golpe.</p><p>Vamos tornar a internet um pouco menos perigosa.
 Uma análise por vez.</p><p><a href=https://youtu.be/U_8blKG9iCU>Assista ao vídeo no YouTube</a>.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/fraudtalon-mvp/>&#8592; Fighting online fraud with FraudTalon</a>
-|</div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+|
+<a href=https://adlermedrado.com.br/posts/fraudtalon-email-processing/>Update: Email (.eml) Analysis with FraudTalon &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/fraudtalon-mvp-br/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
 <span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhf+ToACgkQbV8aePHc
-Nh3PFg/+L4e4h3NTxUmMkR92m3AZp4aws+ys570SmxR+0yKqylvtOtflyBTs8Sqd
-/FxoOevRV9TmVIoa62yclKqx/Lt5RDt+KjKomiiQI76NZTRsnwArhwDl5LSlpP5j
-qxwgoOiON1Oz9MKt85Sl0zriVJtFmK9H5xYZlokO09GGkkRw2snHWRTENS0JIe02
-KTV4uomo0jDYHUfc6jGgPze2HUjpCMkjHWrVLuhXv8rUTO/joLhl+c9IPe4tLVcp
-gQrjRWMGwma2VUk5d1hQm1+7Jj0CK6XuE4+exERvvINPy87RJr3KWszdks7uYGi8
-qaTkQJVxJyCBCkNVWpuYJNjb+c2WfJqxlWbYVQJ7bG34fdQWTr5SAh7+ui7Ac3m6
-Y6L7/xeO+bBFdTL+NNpyRvlNOu96ZjmugimyWfSBAhDj7W2lCDL4luBDcbhN82r7
-niwq0G/5iFN/iAe8t8RbWGhk3f+JpQKXYos+SThEz57Jn29/Hiv7JV//R+QztOpZ
-XUuYuUhMEbI/1pk1UNnKpw/LbnHfjA3zREAoxNU3KxuVgFkfNc70NZjQLeKkV9pU
-RV98tPAbc6gCyeu8RyrPYI2h7YsC5WYnaswC0Bd2WhKfIuL4nZnQHH68H/Rc52T5
-XjVBsSr6WGrLzrsvIn6tYpQSwFPEL695l/nbqnE0w1QrHVhXG9M=
-=7Jmo
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhgPbEACgkQbV8aePHc
+Nh33TxAAoNwMzgE1PatHxqlWQwOnjUWl7TRnKVwkaAaThCwitgNu1/r5ODoZBzhk
+QRcqAl8KseVFgtQ7F1m5yXRvtfc5hTZ+IvHXtBiNBYotfBhQTZFx/txZPdNPMW+V
+mKh047wIinZq7MmC0E+eiGPmb5cQKjj8kmsUuMxsdHtGpRHzjoWSebXNlTTJsLbf
+5pMpS/V9pA6Fkg5QHyeiwWPVcBksULJ3Kpp7VOBBJaXAadQXPLNgT4DGTIZDBRWF
+MCNDu3vOkkgg+nFMq6/+JVyV0USUAv1Ts5pp0i7vSDbI02lfCUZlNLmSi6UwxQt5
+QJ2+glFxmuKS71EisPuCMK5SQ/0jBWeKv2CEixVuouNIvA2Fv5d0yyCtIQsGBTGp
+iM3cvpL+v614DLNlKPXj+IEJYb5/fUwTtwssw4JVkoDc+6sc10Gst0mgA8RlaA80
+9dRbinyHl4cKcsvmF0wYwwxLs16N4fxXLSRF8sRzrwDz9iOpAI1d2lkNWwEVt/ul
+lO8EmjsiRvAN9Fj6iwDVEl+L4erJOQX0PqAOW1jcBeOpGzzGWK2S6413Ju5ggN3h
+LbZB5HoRqJVkoIfunskzAlP5BsjyFiZl9hWmtX5/MoOUEmWSFxq1/RWTOUTnLIIl
+Nt2TkxX32wNmZvu2gW46Rplmofy+jlKwpsmuMAhi8U7Bdat4css=
+=Hgm0
 -----END PGP SIGNATURE-----
 -->

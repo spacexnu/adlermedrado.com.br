@@ -24,6 +24,7 @@ All while finishing a History degree and staying deeply embedded in hacker cultu
 
 ## 🛠️ Projects
 
+- [FraudTalon](https://fraudtalon.com) - AI-powered platform for digital fraud detection
 - [ShadowData](https://github.com/spacexnu/ShadowData) – NLP for sensitive data detection
 - [log-analyzer](https://github.com/spacexnu/log-analyzer) – Real-time attack detection from logs
 - [job_finder](https://github.com/spacexnu/job_finder) – CLI tool for scraping tech jobs
@@ -35,7 +36,7 @@ All while finishing a History degree and staying deeply embedded in hacker cultu
 - [GitHub](https://github.com/spacexnu)
 - [LinkedIn](https://linkedin.com/in/adlermedrado)
 - [Twitter/X](https://x.com/spacexnu)
-- [Nostr](https://nostr.build/u/spacexnu)
+- [Nostr](https://nostr.build/u/spacexnu) 
 - [Tilde.team](https://tilde.team) & [SDF](https://sdf.org)
 
 ---

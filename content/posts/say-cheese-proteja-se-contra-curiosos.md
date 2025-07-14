@@ -46,5 +46,7 @@ Tudo código aberto. Tudo pensado pra proteger você sem depender de soluções 
 
 **Say Cheese** é mais uma camada de defesa. Um jeito prático de flagrar tentativas de acesso não autorizadas ao seu Mac, especialmente útil se você trabalha em cafés, coworkings ou divide o ambiente com outras pessoas.
 
+Veja mais no vídeo que eu publiquei em meu [canal do Youtube](https://youtu.be/jbDdSa44Fe4?si=-txcRsSzlSlGmlid).
+
 Privacidade se conquista com atitude.  
 E, às vezes, com uma foto bem tirada.

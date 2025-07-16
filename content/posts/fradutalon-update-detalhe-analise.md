@@ -6,7 +6,7 @@ tags: ["fraudes", "ciberseguranca", "projeto", "atualizacao", "fraudtalon"]
 slug: "fraudtalon-atualizacao-julho-2025"
 ---
 
-# 🚨 Novidades no FraudTalon: agora com análise explicativa, suporte a imagens, e planos para QR Codes e URLs
+# 🚨 Novidades no FraudTalon: agora com análise explicativa
 
 O FraudTalon está evoluindo. A nova atualização traz recursos importantes e prepara o terreno para o lançamento oficial, com foco em educação, precisão e proteção contra golpes digitais.
 

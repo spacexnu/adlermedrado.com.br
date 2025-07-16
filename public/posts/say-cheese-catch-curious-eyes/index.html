@@ -20,23 +20,24 @@ Here’s the idea: if someone opens your Mac’s lid without authenticating via 
 <a href=/tags/open-source>open source</a>,
 <a href=/tags/apple>apple</a>,
 <a href=/tags/scripts>scripts</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Ever worried someone might peek at your MacBook when you&rsquo;re not around?</p><p>Last Friday, I built a simple, effective, and open-source solution to deal with that — and I called it <strong>Say Cheese</strong>.</p><p>Here’s the idea: if someone opens your Mac’s lid without authenticating via Touch ID, a photo is instantly taken and sent to your iPhone through iMessage. You get a live snapshot of the intruder — no fuss.</p><h2 id=how-it-works>How It Works</h2><p>Under the hood, Say Cheese integrates with <a href=https://objective-see.org/products/dnd.html><strong>Do Not Disturb</strong></a>, an open-source tool from Objective-See that monitors the lid sensor on your Mac.</p><p>If someone opens the lid without a valid Touch ID authentication, Do Not Disturb creates a temporary file. I hooked into that event and wrote a script that gets triggered automatically.</p><p>The script runs <strong>ImageSnap</strong>, which captures an image using the Mac’s front camera. Then, it uses an <strong>AppleScript</strong> to send the photo via iMessage.</p><p>So:</p><ul><li>👀 Someone opened your Mac?</li><li>📸 Photo taken.</li><li>📱 Snapshot lands on your phone within seconds.</li></ul><h2 id=open-source-and-easy-to-use>Open Source and Easy to Use</h2><p><strong>Say Cheese</strong> is available on my GitHub:<br>🔗 <a href=https://github.com/spacexnu/say_cheese>github.com/spacexnu/say_cheese</a></p><p>Just follow the setup instructions and let it run in the background. It’s lightweight, efficient, and discreet.</p><h2 id=more-tools-from-objective-see>More Tools from Objective-See</h2><p>If you like this kind of approach, check out the <a href=https://objective-see.org><strong>Objective-See</strong></a> site. They provide several powerful open-source tools for macOS, including:</p><ul><li>🔥 LuLu (firewall)</li><li>🎙️ OverSight (mic and webcam monitoring)</li><li>💽 BlockBlock (persistence monitoring)</li></ul><p>All free. All built to protect your Mac without bloat or intrusion.</p><hr><p><strong>Say Cheese</strong> adds one more layer to your defense strategy — a clever way to catch unauthorized access attempts, especially useful if you work in cafés, shared spaces, or open environments.</p><p>Privacy is an attitude.<br>Sometimes, it starts with a snapshot.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/say-cheese-proteja-se-contra-curiosos/>&#8592; Say Cheese: Proteja Seu Mac de Curiosos com Uma Foto na Hora do Acesso</a>
-|</div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+|
+<a href=https://adlermedrado.com.br/posts/fraudtalon-atualizacao-julho-2025/>Novidades no FraudTalon: análise explicativa e planos para QR Codes e URLs &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/say-cheese-catch-curious-eyes/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
 <span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmh1DaUACgkQbV8aePHc
-Nh3H3A//SBiwJD+8qOHgatxCtDAQBivWfWXBHHBrJplDIll6sQeHpu2TVagwd+Pe
-qN3Tyu+0Yl86wVd5o2CdToMnBSGJnpX1jYUHteT86BP0m5NXDFq6UEGtIXCuqB8Q
-xaxc2GMbjWwymskJIfCZekLBZR3//fXlmoPcRm9VETWXfYnkKJThRyyFZrACFT4x
-c3IG74iK+e2RW6av5vfOnWQBN+xcV0Cf9Om8l41FV8rqLeHyqtErI+3YBR+aDBsQ
-vLzBD5qVB+gr9H2QibcQl3mbfKIDUXGHTBHBm+HkuEYGR8LO5Gs4VUjSk7E76wM+
-lJkfGWAjrs7zY50n4hLfAqdmL3Rpf/MB36CsK5H61fH/uU5JPKSx3Lw9vJ+YhIkF
-nyG5dYbgpXQQA5l8EVr8BRDeOwT/H4IS3z3hmkRsdeVYs7ccWDhSB0g5U7qH+M8N
-JU4f0stHbuKzu/ARHOTZXWsEkGWHj6mo/iE2uCQqxUoce0AvvdstEij0f7Xe4m/E
-sz6y3h19pkLeQtGCgu2fughEFGoOa8vReWUpxzXbzEy+A0uN2BA51fpi3ftdOLdO
-udPikoyc8HwAn5WROcCA0/T2nRXEUx59kxea7MuwX4Dtj1BFTKtlrCIGrFbHPp53
-qVfTuV9vcu2wPsNCW3yZ6tfAMcc6SuMpMLOPI1TwHgwESWlD0Pw=
-=XLpk
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmh34AkACgkQbV8aePHc
+Nh1bmA/+KA3xOKDtCSFdbmbKs/wbI+tEqnF/o6PVT/aHjbI3pT1mUeJ3hk3gsahR
+1pGDDoLMHDRYD7sNNT2OPVlQK+Y6todv+YZ8X0SQVlmxj2b5KYpd21eGXpx1qn+S
+51LiNP7G26Mso3sY3etyH9zq8mqX/j/SsE6WmEuaq31hOkiTM6VbCZ51OIOCvhK4
+7Ja5zHlLcDimzeWPMPO/PWSbKFm33EiS1JILaEtoBNUXSjnmjGfqaPsvbzd7gLPf
+mv+0IX3XvsGWWhXkEnJb30bPg8hrDxIfZ1Logy01zDz2cPkrqOtNy1i7KlXT99K1
+hABuug1SADaKxg+nm+WxYisaXxhQuWfegr+TbhmiYfmrhHl1F2XYwjHJ6WOROKNA
+EaG00HsNh0CKa63k0k0PQTe97RzCGnhTHervrPSpQosFYxBcap8PSEB5T3TZ/aRk
+zVCNM3VcyByCYqIp3MA4Cp9sXzAiCqxj+nbU6eHq/fDP8/Sw52asqa6oiGVeaUwz
+Xav/EyR5WKujPRbkDE6gR5BIMM33K16JKCnqTjk3zctjJG0hA+KIe5hrVNurycHG
+d7Of976UURGKa3Rv/Cx23I2a9zdTGdDtODRiFrGeC4hQJ3eU60EbGtidiVKXowC4
+UGVBRC/vvG8pRI/hTz5s/iB8bbxWdTwITCnyH94lraZWPpF5FlM=
+=slft
 -----END PGP SIGNATURE-----
 -->

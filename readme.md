@@ -7,5 +7,3 @@ The site is my digital outpost: a space where I publish technical deep dives, pe
 Everything here is self-managed, gpg-signed content, privacy-respecting, and tracker-free. No JavaScript bloat, no analytics, no external dependencies. Just static files and intent.
 
 Visit: [https://adlermedrado.com.br](https://adlermedrado.com.br)
-
-

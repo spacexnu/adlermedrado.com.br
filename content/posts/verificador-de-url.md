@@ -35,7 +35,10 @@ Por isso, estou separando esse módulo de verificação de URL como um novo proj
 
 Vou tocar os dois projetos em paralelo. Mesmo com pouco tempo livre — trabalho, família, a vida não para — o progresso tá acontecendo. Semana que vem devo ter mais novidades. E sim, prometi liberar o acesso pra mais gente testar, mas confesso: fico adiando porque quero que esteja redondo antes. Preciso quebrar esse perfeccionismo. Melhor soltar logo e iterar.
 
-Se quiser acompanhar a evolução, segue o canal no YouTube e deixa um comentário por lá. Isso ajuda demais a dar visibilidade pro projeto — e quem sabe até viabilizar financeiramente esse troço todo.
+Se quiser acompanhar a evolução, segue o canal no YouTube e deixa um comentário por lá. Isso ajuda demais a dar visibilidade pro projeto e quem sabe até viabilizar financeiramente esse troço todo.
+
+[Esse é o vídeo em que eu falo sobe esse tema
+](https://youtu.be/_rJpERYysYk).
 
 Valeu por acompanhar.
 

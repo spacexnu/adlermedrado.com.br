@@ -163,6 +163,11 @@ Hash: SHA256
 Hash: SHA256
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS"><meta property="og:description" content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
 I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta property="og:url" content="https://adlermedrado.com.br/posts/2025/04/21/ollama-vs-lm-studio-vs-llama.cpp-a-no-bs-guide-to-running-llms-locally-on-macos/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS"><meta name=twitter:description content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
 I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta name=twitter:image content="/images/default-og-image.png"><title>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</title><meta name=description content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
@@ -195,7 +200,7 @@ Add voice. Add vision. Build like it’s 1999 again — but with 2025 firepower.
 <a href=https://adlermedrado.com.br/posts/2025/04/27/why-you-should-start-using-gpg-now/>Why You Should Start Using GPG Now &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/2025/04/21/ollama-vs-lm-studio-vs-llama.cpp-a-no-bs-guide-to-running-llms-locally-on-macos/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
 <span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhFnfoACgkQbV8aePHc
 Nh2CHg//fEkBX0tWA+BX+hPSAbxkKJhKv3plSGtLrBSx5MbbvbE6Nwg4EgGUjZJY
@@ -210,10 +215,10 @@ a17+skRoDpPHChldayugwNYfjtUjP2YYGC1ZNEiADrqaxZoeHXxttPBsolXwHrvW
 Dpr1BVVkFJQZmQVZOlGraOuafJCwKY3OzSljcGECpCngwAyuCv6sGJscOClPaEej
 mrsNeqRsxLa8BSPjK3M0yh2chaWTOm5yqWVRVPh9xAGV+eOiM9M=
 =GBZI
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNuboACgkQbV8aePHc
 Nh1u8xAAzszdbcEYdMJ7h06HaUAEzI06ZAvjuLRp6SBKE1Av36t9xaYOHNCe8TN2
@@ -228,10 +233,10 @@ oZSIoyiXVuEbjMntL2DyZu36LB0201AxXOEfhaLgjJsCgDbjEy+gD8HR3zIrQwEp
 zoqTQatKHpUTNDplHclX9j47F6KXlESIz+SKGsiQeAq3Bdp7JbfMlBtXCWN7j7TK
 IfVfMSfZvlEiEO5ln0Qfr78YLdfmn5gNF7qck5kjwzowHd1JX7A=
 =S9x6
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNusYACgkQbV8aePHc
 Nh3UbRAAsGz2zuuVA1AdY96QPc+k6Y1JurV1ug25DFPX60eltY8Oy+uyaAO1y8er
@@ -246,10 +251,10 @@ fZjoGS7AmUiuezm0ERh5bMNtwsaXgQeG9eUmrpWJFWwfSpsqsYbBFxmvnNAqiSHz
 RVER5G5uuenxQDWdOplwEzRJIe6et9RXQ+gZSGeYEeLe8Imj5be02iYrh1A+pBJ8
 hnPG69X/Lco6ZSUEefZc0M6Pt+rZS0xjE5nf6xpMys8ehP6sQ8k=
 =2mTb
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhNvA4ACgkQbV8aePHc
 Nh20gw//bjCSsZ7jVZpRwknO7OJAqgs1abKR1OWba1prRP6UrmI40rXSdLycnJDR
@@ -264,10 +269,10 @@ hnQCr1GYtH8zbLt5RacaF6NpE+wFOdf2pu2rlxapXBnk6qehaLNGVuK+W0JjXHVX
 rua4rvymGOuPvxoI0p5CWaJhPRrad9j21CpHLuLwATw2NVoQYhGl3N1VkMpmy/OQ
 OQPFzvm+WZk8+nIkaVYohG9WALodp+AX6WC8uMT/E5w/NLrpSZc=
 =aFco
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhQkFgACgkQbV8aePHc
 Nh16EQ//eqmk94mw22JIHssn93+ajCuQ4VdJ65APJ6v21nfkHdySYbPV9hSsVKPN
@@ -282,16 +287,16 @@ GZFkPvZ/omhtLpqpfEwGEaZqTM26tnOgqBY3PxjeRf2Al/eWdZy9jc2c+/RfKBFa
 D+cCzsKUG6mjWJPK3pB6q6E9vTTAoUllOI0Av3Wsf1KPMj56UhS5Uf2nOLZ4FhsZ
 F1+GIn92iAcONgVaOuRvMiA6qA3njmGfgauQKys89qPG9rJzvS0=
 =auUR
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!--
 - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!--
 - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - - - - - - - - - -->
-<!--
-- - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhQsJEACgkQbV8aePHc
 Nh0TrRAAr6kcYgcjoNdkau/xaz6bpHFpXk/ZqL4OSxuEzO+wdLf+MbduhJvFfv4f
@@ -306,10 +311,10 @@ qP3k3JH2uWl9j4tWRYwv8odmxu8GbspUCyDA5Tq5Wn7HuchbFFAujvaxEmc2Yqsm
 coNqmBpnwtJ4yMgCV+Yaer8DDmmCVr4HHxEtaNhV2BR5MyOZh6wZteXFFfPL1Prl
 Q9yXbAcgpen3JUuX2kMXVxvhkuZaCvX3yOgsne5SuWl8TdGINQo=
 =I0HO
-- - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhUbCwACgkQbV8aePHc
 Nh2XgQ/9F8nnKTUZ6duNb499o3meTyBOQ5j4eVFMBCcnQ4QbEcYQC/7P4wsYRdF6
@@ -324,10 +329,10 @@ ukihCtsIjj4iMyDjtDrG/Ji31cTMnNhYsAn1ZM5OHP0nAHpMViLiQg31bGalvkC4
 HVcFxK9qqYuKQrK/lR2gADaHv39EDYUOJqHzihu8tENWrZxZsJp7S0QbihGxVl0F
 jMz6IZbCvoTx8/GRQmUNbXA5DAFKbdP7QnWdwZfIkpIuMxoOm0Y=
 =a9Nc
-- - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhUfwMACgkQbV8aePHc
 Nh184xAAoNyMqZLvESaJOGU2uf0U0MVIkZwr6Rht3/+f/oT6BLmC7zays/mo2N9r
@@ -342,10 +347,10 @@ Tsehk3ZeW/kNRULhB+BmtHxEnx3sxXjXI+xlP81ONWsMFuauKAF9fpwgHhsiZ/FR
 +mFqbSZVXgHdCoqS/pBPEUZak+WWAgy0b52xthYEPizjqJg+9vN5fsUyrM96xaZN
 McaJ4X+dPl2Wn16eFFfsIh1i4pPqImfHju9hSv+qMg6q5nn9c9M=
 =z6Vg
-- - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhUgG8ACgkQbV8aePHc
 Nh314hAAp6XgEf32o2eylrMZepEmTm83krYjtS6LKTapt1LbIFOo15fJ+qg/jmsj
@@ -360,10 +365,10 @@ XFsjmTgDH+h8qfelykj30L9EWLpEZCwMstbVYu1rWDcA1cOTH7yTdkas7QqPih2K
 WvDM/eQvOsFQeql8myZ+eeDHXsby7FuAFJomabo6qrBuv1zkFCbYSfFMzyVq3QjZ
 eHx4lAW585j3i/8z/PUCI7d/cDoWqiBB9c4fZUrDguvLD4XA684=
 =gFZ9
-- - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhVcOgACgkQbV8aePHc
 Nh2CHxAAlxOLflGkxJW3b3tvFiX26Ry/b67V6P1uKoIEC0nUcbjQctdwsME249CJ
@@ -378,10 +383,10 @@ yF3Okhtl7s2a7OT8+uRdF77trIxWXitCwQO1MTlQXewHhYdaMW65Nsl1H/UmbiYe
 IFB+sxnesGLxFyrG8vZ6pZ+Y5C6ZJsf+1OS8tK0sCx0kwvEEGrrECOfTy9iIBK8K
 f54afid8pA9/piBPzNd56TwlpMvleHJdUcVKO/A/irE/7/MI8eA=
 =9YgQ
-- - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhVfWkACgkQbV8aePHc
 Nh2boRAAz6wqGLFvYBbFndd3kq+PYZ2GC2ZAmOvNjxMe/s8CDXQbL6Wgxh3i6oCI
@@ -396,10 +401,10 @@ NSdLKjlLlXybmPjcVdDT8wo/PYiTABaB9A+/3zyiT+knLDoI2EBGRd9NOQLQpxNd
 qiXqgjfT7I8YrHjNIoeiCeeoeWSAj1zslbwekPHnqH4koOkCWx57xkkDvw6/S3jh
 KUX6PpBbWuQ8cPy4bFb0IP1/Fu3OosFsN0SJTXWq3AOn5ad/BjA=
 =de0o
-- - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhVzG0ACgkQbV8aePHc
 Nh20SRAAlvG7CD7S0f16AyXE+xT+sZ2gzR+oHsLpfzuUTbxyqfETOnj3iWYVkZ9w
@@ -414,10 +419,10 @@ QdjzdwtFY6MSLqekn8N3PsxtClu3WFDnW70nX/4GynmOrLIwDsMGby6AhOKCFA4c
 Yvi5On0Z8T2favUzl/HB5MuBNSTfiVok/IXvgYcx2vGMVRhc2NF1FgbpJ7Lqz+IV
 HeVNtTcZRja2CIrbmt8UK9ETznx7ODZAX5WrhH8c/NosFc/Q2Og=
 =6rqZ
-- - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhVzgQACgkQbV8aePHc
 Nh2Mog/8DpmCct2TZXhK/p87JRWihevp8BgyWQMoP0uh8Kp+7qzBhpgkgM/I2K83
@@ -432,10 +437,10 @@ JV/4ooYGszPmGx9z9YgCSRoY62huUtGJRZX1GQhSA4HcdBNL1/Bfjr5qvVhqQtUd
 Dy/hslaL7+x4mBpnNrgxkOTlQLvNqO2fbvAQghwj8n6R2xGB0BIyMkbLnn79TbFU
 2sWyZNIZXkt1fPFGePzKAmBjr0iNlvidXcAY5egvRMsTiMvZq6I=
 =lwba
-- - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhVztcACgkQbV8aePHc
 Nh2aexAAtKS3KPwHyGkqYdcHUOza3kU1qX95IN3/E8wubt2HLDdWR/8dmDpc1wZy
@@ -450,10 +455,10 @@ nqmxtPb1mIrh3G6dasZXgsozWxbsmWW6AtOAIYbZ7pWUSkLXJLpQawvE9FXJOFP0
 CJ16UNaXqxclTcWJHPSv6pB+p7P8UxSsAZSe8++0NhKLcs3/jwJ7mefbPrmcHwBC
 nDTA34KuldYAIql0sOfSqok2oMIZ7RxVo+gu2afN32GnRt+4cJQ=
 =uQor
-- - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhVz5YACgkQbV8aePHc
 Nh0zvw/+Pq/sE26sPtP4CarNbfGtx/w2H6+TKBoo6aPxZ1vTEeySvZGHzTrfljpV
@@ -468,10 +473,10 @@ Ccl3XivSFqzhatuvhPEuDRNGgvP7Ni57dQZCjGbJSVnR0IvoFqRV2XoyEyMyuARH
 Yx+4G7mpX0uCI0khEi2g8Gcwy5gQmSv8Bysjqw1JiKRd0RYCLBHuLc9hnRzR8Y95
 lJsfHjHGbiyKZdoDlESMBI4ahNIRGnB/k0JtW0YYuBfaM2hUyq4=
 =6wJM
-- - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhV0W0ACgkQbV8aePHc
 Nh0ZshAA0aXjrQ2qPRFFO7iYEx8PQoOmmRGKawHrZeH8EHXpVvI5xE9DJftfldzo
@@ -486,10 +491,10 @@ Cfj4tabSdXLsbWRVAWTC0xduF6d7PveSC3NskePLu2lpx5LPeHNyHV+fOBL3HtAj
 RXHJnNa5qovd1lEe3L155p9MLok2JwqAX1V+eC//bpQp0BUVieQMvSFpooc/hbeu
 4qCqZ8Vt6mcygRa43JxpAAyEL94gjd3qugwxAiL6o1huppsv3no=
 =i8Yd
-- - - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhV0bMACgkQbV8aePHc
 Nh1qPBAAr+zaakDTL/6efltKzRBhTnAgSbfyhgjY5swDjBvZwlKlRSU7GtxSHQcP
@@ -504,10 +509,10 @@ vfHy0nOozK96huzNBDjWFZMFjdn9EXDfgoBin/j5c8n0BxqoVITRwcxl/E22gwVY
 ypT6+Gf+aUdGfAQiNZsbWBJ6wOKlg32vu/Ityq2gPT+iwWtqcHbZN9EiB5AzS2+x
 JZmtTnYLajfb4C6/h1t+Gv+LPneD5BSLWjfS20+YxR7xE9YXBKc=
 =ib26
-- - - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - - -->
+- - - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhV2B0ACgkQbV8aePHc
 Nh2fiA//XWJ7xweJzHyo9j7XMXIQ0w2Ng6oQKReEM8NSaDB7B/PeOD3wnUO/HNKP
@@ -522,10 +527,10 @@ ooTgsdXSlTg4h55IPqR9qipJKDfEPIaeeXs1sUeFzFE6QMoSSYy6sD9/VGrMwGqx
 2/PgGRO4AZIm4Tek/HnC+7kp8HPSjxvk8dc/QjDtpBbEvzO1MzyF3xwnwVR+2gJ3
 cp4wFUdo0AV3H44X4C04CW1dJC07MpibFK7+mYVQD8F1QoLYMoA=
 =n70t
-- - - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - - -->
+- - - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhXMmsACgkQbV8aePHc
 Nh0XKw/+I/V7ciJRex7MvaQRFSH5MiY43gDvtzk5L5pJsv6Ph9KZ3q4vzWVDgSEt
@@ -540,10 +545,10 @@ s+LNM5y7TpebN0J8kDp16Cpfh1rI7iTwgACu+IqIL0i3rznexmQa2s6PGfqA+cwB
 GKEXGbQGi2wRg33XyaFOeDe9R39aBAYCE2aNka0jhb47QPFEXSGvGR273XdLOdvZ
 UzCMhCSJScveqFG7E3DURyUhJ8qlC19k+qqFSj0HtIYVvdJ4mEM=
 =aInk
-- - - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - - -->
+- - - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - - -->
 <!--
-- - - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhZ28EACgkQbV8aePHc
 Nh0ziw//VI3B4URUBEbd73ZXMvlkp8JfV8Iqxs1Kh/XvC2Hs+4zZHC6QlizcH1Nq
@@ -558,10 +563,10 @@ yhQH6l6z45TwpKoRid+b70ik3DenPDLqn0n3k3SNhS7qPdQXvD3xkIcJhD/XsuBA
 T62FhFneGAuhuxwj66XPXlXr/POdtS8TNlly0DEaDcUoP3jq0bSGkOhwqBQ/v5mm
 UKW9hXYJI0wZC2GF+LiLSLKzxyA5I3jjxl8PMQWJHIypPzh0myo=
 =tc7E
-- - - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - - -->
+- - - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - - -->
 <!--
-- - - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhZ3JsACgkQbV8aePHc
 Nh07BRAAhuLV+uYVOwVUUDtLfKLX1C1tVC3CmXDRSlS2JwknewwWNa8XdHCmnMn3
@@ -576,10 +581,10 @@ PxqAeF81eEsPnCxq4qiDRVa/VAclJWy1dZk5m4ELR2Mm4s1DsLUQaCbZju/aLE+T
 wN5ugpaoZzhUkBupdSVE8wJIx3EiUhFLj0+PsY88fO7GbT8kqvg1Pv93ul9ylfwG
 kQkSPyzOJoVj5NXBWuxTzQkS/BJWuyyYGm9bnJZvDNaV6MuKCkI=
 =1AOs
-- - - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - - -->
+- - - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - - -->
 <!--
-- - - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhf+SQACgkQbV8aePHc
 Nh2Urg//ZCM1PU/83l51Eut98knrN9QLxGLayo0p259ueOPq+dBIsU44RyA/8CCD
@@ -594,10 +599,10 @@ EvX9iS/IY/3B/2r3+uy3cwjEktNAVtitPiN7ZlYyIt3E4GsGELPm+yPZbxFcYwqv
 1kLTbRt9UvdFF0Z+xknmpgAySbAqOJm/Bw81IdNowE6R61dqcY5Hs3+lU5CCsS+q
 /7ZNEjwHfAELfd9+GH1zcQmi6m7APOi9RUmlqKZT+vlUuRKf7x4=
 =D8M/
-- - - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - - -->
+- - - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - - -->
 <!--
-- - - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmhgPZsACgkQbV8aePHc
 Nh0GIRAAqhRRH5jbFnHj7MtGc1JUTcGj1xfe0LD6lvY80ksElFep0E8tL0UY3zCc
@@ -612,10 +617,10 @@ frEOYCNSiAunEniPYSB1J6ZybahhB28U6HCa9yp7wfSDH/AyY3nlYQsaqyNdaocI
 +MoBVFOdjiHrrGy2pfkUXHVDR+u5HoZ05wwhmq0Ty0WwVTnRxxphoZRlBWkzX1qz
 macSs/u7MZMqHIIKdtBDn3nPq8w1t05A+lN3LLnZ2mvf8phKE6U=
 =GYra
-- - - - - - - -----END PGP SIGNATURE-----
-- - - - - - - -->
+- - - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - - -->
 <!--
-- - - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmh0+fUACgkQbV8aePHc
 Nh0Bsw/9GZPuL7kWF1HD7CzfottEV8lS3vkIZVV4ml4M8yVoZeHVb5uRNjBkHEAa
@@ -630,10 +635,10 @@ dz4p8BB87SXZNI5G++DMKk2tMdjxb81Q210r4eM8OEFs+eQm3NVvR7wXM8Ar9lG7
 lmvedrD90ILg5SrpqKlFcbepymL8Uzsh2LaETXKS1ZZ56DB+nP1T+nzbOGU4HEbk
 oubB+/FO624ShB49hLatVVnyBHgUcziP8T0d+LyNbYD9MOegLd8=
 =GxFY
-- - - - - - -----END PGP SIGNATURE-----
-- - - - - - -->
+- - - - - - - -----END PGP SIGNATURE-----
+- - - - - - - -->
 <!--
-- - - - - -----BEGIN PGP SIGNATURE-----
+- - - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmh1DaEACgkQbV8aePHc
 Nh33zw/9G0rcSNT2BsVFCifa6NNAWnoFEIX/OH1Ow8eoOxXDsUdK1rHgLTt9Ka0l
@@ -648,10 +653,10 @@ mRXPGm+HsGzEuofarFedRllgZRoeskKs9u07h5oVVVa6EEIcVsHjLAsJ9F6PVUqq
 4H7jibS4pemCMdubbJ44GPz8E1iY7VDnLAAieGhlwGZRNTS6YL2s9zf5DStX10gD
 8ZiNbWIi2lV0hAGWDtUch43vBQcffb/JGcIe7OwDKdOrEKZh1MU=
 =Pmjj
-- - - - - -----END PGP SIGNATURE-----
-- - - - - -->
+- - - - - - -----END PGP SIGNATURE-----
+- - - - - - -->
 <!--
-- - - - -----BEGIN PGP SIGNATURE-----
+- - - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmh34AYACgkQbV8aePHc
 Nh1PRA//XjyVIKkEDzJTpWeSaOdJXijbX248gEsZ9RTrpidVaFBmwLPEpYWLTcJu
@@ -666,10 +671,10 @@ NYNdVNmce0LOY1RQmufPClPrs1t0+sDyy3hzNDkUYw69OgCT4D532WEEP//Dna59
 nBt4l2mz/F86Zf5qdcdePF4kQzGQTp66xZxdf6jaSUCFH5v9tARHOl0ZvJm2FjWE
 TNtbwA+W03a3EcRZDaSMZcvSfv9IZJKLkPpi624QX8/pwFK3ASM=
 =qA3t
-- - - - -----END PGP SIGNATURE-----
-- - - - -->
+- - - - - -----END PGP SIGNATURE-----
+- - - - - -->
 <!--
-- - - -----BEGIN PGP SIGNATURE-----
+- - - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmh38yoACgkQbV8aePHc
 Nh14FQ//Qc1DMvAkI4LkL9L78Gddf7lJopFFO7IIxEKTAVIKhqlroqEGLeZoZFoh
@@ -684,10 +689,10 @@ tg57K4asoJdigqXpNjo/o5/NA3oP7/8gcKmGj7KX9aXMFexmIeN6H/aPZKtDK1su
 jNIw3qGUNWC2aG2v74e4b5BjwaNZk9U2j9epfmU7eHxp6bZjiItZAI13gg/TlhBP
 0txzyratsxeFc3xKjNCW6Gcwy8zhhOJ9Ukwwv2MpJtgh5CxYOTE=
 =fZyN
-- - - -----END PGP SIGNATURE-----
-- - - -->
+- - - - -----END PGP SIGNATURE-----
+- - - - -->
 <!--
-- - -----BEGIN PGP SIGNATURE-----
+- - - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmh67RYACgkQbV8aePHc
 Nh0lZA//ZW86h8Zb434Kpjc43JME7CZn816CAHcLuBzLEbsLf1XE3SVbOlRY+jsP
@@ -702,10 +707,10 @@ UmIOeBL38EIETFT1q4BkoI01bcc/tYi2dn+mjv0XHVyRk39rDpqGjJkmc8nlsLgI
 d7l4ADTi+pL5Uye3OkuvRr0FFHrrg0toRQwGVD14UhNe2sPLaPqA9al/W4HpmIRo
 8gUoiMxPNmKxESxcXH3/jLqleMmj0xkM48zuiTwK/UEhrmyzT7U=
 =0Nco
-- - -----END PGP SIGNATURE-----
-- - -->
+- - - -----END PGP SIGNATURE-----
+- - - -->
 <!--
-- -----BEGIN PGP SIGNATURE-----
+- - -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmh9W+YACgkQbV8aePHc
 Nh0Bug//aBqe7+AAC+HfNxtYXVzGgXbfa2+az/+Rrozav1DZvaE3I+nNdPbhMMm1
@@ -720,10 +725,10 @@ sZemIlHmFuU3q9IpzzoKTOarhfjGhlUKIzTk4HJCGTIOPDVkWeYzhpDlUBI95xp9
 TQ/ECxww5271aVW7uDkMQK7k0vuGl4maEEcqfeOEB7EL62k2wQBt67649dn0LquC
 BF7YPLTuYC4fI9ErB5WGSqxBAiofQ2OmZ0U0mPV5zy2NAK4FE7s=
 =mTid
-- -----END PGP SIGNATURE-----
-- -->
+- - -----END PGP SIGNATURE-----
+- - -->
 <!--
------BEGIN PGP SIGNATURE-----
+- -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmh9XOIACgkQbV8aePHc
 Nh1FfRAAm110fY1lHoxAmWE716zdJfMk5qr6Hk+UKoCVyeeCdyv0Ylaas8m1L+W5
@@ -738,5 +743,23 @@ NsEs2NPDGJjmox68phQFQpRRM4eRZPJ4Q7LxgnBZweuvKFl7WAPxkZj9C1LvyRK9
 yEPE1PWaK/BXePFuAidNmSDwhGM94nUhElUeZ7YFuWLtjRCw+iWVA3nqAlT8YCGJ
 xLqjR7YnvIH/oebEX3oZVaUiNzo8m8DL6R1GUMzMaHK27PslRag=
 =/XIg
+- -----END PGP SIGNATURE-----
+- -->
+<!--
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmh/ggYACgkQbV8aePHc
+Nh2jSxAAlkbjrayOagEpju4VeLAuWGDaCExNh+BvtKMssQ8Jf5dKe1M1qMfbVEjS
+aLVMb8z4CjpdNGYdaxQkG2bIs6w2b8LmRBaySkrjUvuQF4eZjfuyvBXGveTewDdS
+owmJt5UoicgGcI82eXYa/hPsvvaFG2SI549oJHTpgax3n2VZU8cm0dkAYa4n4kCQ
+Q2K8bKIUHFqROx3zDr6JWiEH+4oOww6nUNkhKK3XytfqylOy/FR22Zs9fGnD7pMo
+QhJECdevnZFbdZUycA1oiVMNhtTAh/x3xZEMpgqDhnOMnZF0DtJkdORiIPmqHmth
+Fk7kKrBQlevtnV65/nzgXRSfgQBAX5ZoOaPFKQUeJ2vjqgECygvEA4TczWbALBk8
+K4l8hLDdJrbkpQ2pMEdGrWTRChA6E5RkUOsSk08E+6yXeb+UySSFRtYjJqKvvr+g
+maEXlhJXPTLnopt47SF5KjVU9jsw9ebSReZoFpawUKHbNPp+r19xNz831SWAPMef
+uyspw38MX6c47EAYRAnnftgi+1MCbC6ves5ZunIU0zKILZ5ccVYjs83lgUMAUaA+
+PRg7qfT1X14EyX/LITZqv+d2FG0nlsoJ6n4EqWsp7DMXyUV4AYeognbP8cZkneXa
+CUpbTH/hAmzE9UBtIMlBUJuNG10isZIaFj81mxTKNKXjQ4jn7hM=
+=xZI2
 -----END PGP SIGNATURE-----
 -->

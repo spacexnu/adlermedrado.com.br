@@ -5,7 +5,7 @@ draft: false
 tags: ["sovereign"]
 ---
 
-<img alt="x-email-about-suspending-my-account-in-pt-br" height="50%" src="images/x-blocked.png" width="50%"/>
+<img alt="x-email-about-suspending-my-account-in-pt-br" height="50%" src="/missives/images/x-blocked.png" width="50%"/>
 
 Account from 2006. Almost 1200 followers. GONE.
 

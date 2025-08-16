@@ -15,23 +15,24 @@ Hash: SHA256
 <a href=/tags/projeto>projeto</a>,
 <a href=/tags/fraudtalon>FraudTalon</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Nos últimos dias, mergulhei fundo numa questão que há tempos me incomodava: a validação de URLs suspeitas no contexto de fraudes digitais.</p><p>O <a href=https://fraudtalon.com>FraudTalon</a> já consegue lidar com textos, imagens, e e-mails. A ideia é simples: extrair qualquer URL contida nesses conteúdos e verificar se ela tem indícios de ser maliciosa. Parece simples, mas quando você começa a testar serviços disponíveis no mercado, o buraco é mais embaixo.</p><p>Experimentei várias opções: Google Safe Browsing, URLScan, PhishTank, OpenPhish… e o resultado foi frustrante. Muitos têm limitações severas — uso restrito, pouca cobertura, APIs que bloqueiam projetos fechados, preços impraticáveis (alguns começando em 500 dólares por mês!). E mesmo os gratuitos falham feio em detecções básicas. O próprio Safe Browsing, por exemplo, só detecta o que já é amplamente conhecido. Se a URL do golpe é nova, ele vai te dizer que está tudo certo. Inútil.</p><p>Diante disso, decidi algo importante: <strong>vou desenvolver meu próprio motor de análise de URLs</strong>, feito sob medida para o FraudTalon.</p><p>Esse novo motor será capaz de identificar sinais clássicos de golpe:</p><ul><li>Páginas falsas de login</li><li>Domínios disfarçados (tipo g00gle.com)</li><li>Ofuscação no código</li><li>Scripts maliciosos embutidos</li><li>Padrões de phishing e scam conhecidos na área de segurança</li></ul><p>A ideia é tornar essa análise <strong>rápida, eficiente e sem dependência de terceiros</strong>. Um projeto fechado, mantido por mim, com foco em <strong>performance</strong> e <strong>autonomia total</strong>. Se no futuro for viável, posso até explorar algum modelo de machine learning para reforçar a detecção, treinando com dados públicos.</p><p>Vale reforçar: <strong>FraudTalon não é open source</strong>. Pelo menos por enquanto. Não porque eu não acredite em software livre, mas porque esse projeto <strong>precisa se sustentar</strong>. O custo pra manter rodando é alto - envolve inteligência artificial, servidores, infraestrutura. Se eu abrir totalmente e a galera começar a usar em massa, simplesmente não vou ter como bancar. E desligar o projeto por falta de grana seria pior.</p><p>Tudo isso nasceu de uma dor pessoal. Sempre que alguém me mandava um e-mail ou anúncio suspeito, perguntando “isso aqui é fraude?”, eu pensava: cara, por que ninguém ainda fez uma ferramenta que responda isso de forma confiável? Agora eu tô construindo essa ferramenta.</p><p>Comecei para ajudar meus amigos e familiares, mas estou vendo que isso pode virar algo maior. Um produto que gere valor real, tanto para pessoas comuns quanto para empresas. E se virar um produto de verdade, que se sustenta, melhor ainda — consigo continuar desenvolvendo, mantendo a qualidade e a independência.</p><p>Por isso, estou separando esse módulo de verificação de URL como um novo projeto interno, que será usado pelo FraudTalon, mas poderá crescer de forma mais especializada. Ainda tô definindo as prioridades, mas já comecei o esqueleto.</p><p>Vou tocar os dois projetos em paralelo. Mesmo com pouco tempo livre — trabalho, família, a vida não para — o progresso tá acontecendo. Semana que vem devo ter mais novidades. E sim, prometi liberar o acesso pra mais gente testar, mas confesso: fico adiando porque quero que esteja redondo antes. Preciso quebrar esse perfeccionismo. Melhor soltar logo e iterar.</p><p>Se quiser acompanhar a evolução, segue o canal no YouTube e deixa um comentário por lá. Isso ajuda demais a dar visibilidade pro projeto e quem sabe até viabilizar financeiramente esse troço todo.</p><p><a href=https://youtu.be/_rJpERYysYk>Esse é o vídeo em que eu falo sobe esse tema
 </a>.</p><p>Valeu por acompanhar.</p><p><strong>Libertas Invicta</strong>.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/fraudtalon-atualizacao-julho-2025/>&#8592; Novidades no FraudTalon: análise explicativa e planos para QR Codes e URLs</a>
-|</div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
+|
+<a href=https://adlermedrado.com.br/posts/security-isnt-a-feature-its-a-consequence/>Security isn’t a feature. It’s a consequence &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
 Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/verificador-de-url/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
 <span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmigp1cACgkQbV8aePHc
-Nh1lOQ/+KJLiCroaTxVCOKJJ9k17dfiYs9Yyqt7y+t4zXN+lJCGBC/WaKYUWHt6a
-X54IyK8iAQH8fk6APv4AfCgHz8eyPc2Z/tG2DK4Yq06vYtFBZ3XBQ0v4GCuF/eo3
-okS1hF4QULkJwxd6Q6ESa7lUVHAZaTUCdZ7btx+6j3F3tN3Xy41VLfx2IUE2+vH0
-iIL+i9/QqWWGK+LqBSwpkudbKbdY0Sht0b2UPuAke6bzEcGhUDi6Hu0BaAdG3VFp
-StLW4TLSegDsOaCisB5zaZDwTaI9wKjupXToiIYNfEuDSy5X5DoM19+QaahZlxHG
-GZlELPFbmWQzuJ9m4BR7gXKd1PsqzMXHvRTxr0MpZaRYKfyuQFxzHyz70kuuBeFu
-Pw+3Gr978/F7soEEU3oI4oO7FNMaHRLobtC7l0QRRrkzC8/deuAN5cyBHtIdYuB0
-IeOb/92BNrK92JD411yPqqYM65rrqgtP9gZjNzliMV1cE9DRuu0kR8X11l3xU09n
-WruWaguvBkZOp7uWC+2YifgjmfV3jzXtfo8OOHGkl628ZbPHERReG6iAfRr6VdWy
-KxYGRlaHxSJbrXehA+YUXw2RGm9rOXUeA9OXLZpQlQ5UkfgWrBG7aegthOuMe52N
-nl8Tj4gl3l0cVk0ODmGqZKnvpNrwBfzwCMBEsn52fof2DfnORrY=
-=xRVr
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmigqC0ACgkQbV8aePHc
+Nh2KFQ/+Ne8XCvsU8N+z3umTcnjKtW/wB2TkAS5aiczlDLAkmX68yq+dNAuP6EpM
+bjjM5rI4mj1kXe2aP2IPqzeVq/BgEv9mvaTUk8kv0mhNlyinWet30Ef0IERqcYt8
+fP6k0oUJdA2NCvB/XI0Lj82iU3AdhVkOk1TmQdSM+BPDf02KJK5fxsaqY8Tud2Dc
+UtnZOsex5GgMw2Piz29Ye5/sWhGyOmRmzHfssg8AyKsBsCC0TiN3WZ4BnYdhUs9b
+ppcftYoaHSAsyFB0Iv7LG/xUyJ0psJE/mTPuG1QnBmF8cpvkJ+m4MdnCvtSsVrg2
+qkS3WJshLQTiYGPDVLmyDfIuWQG8/adwlreX4xqjds3VdwxLv5zG+yQJO2m1vTw+
+AC4bWmbdH6QyZkjPAK7RnDos3/QXtS/+JB1ZhNtbjopbgKnY9lfgZ8V3/MIggwbS
+EfCrwGofIjFKJXpenBFtsU7OXQFYpUQMr0P8K3Y4CsxkHmHrkRaSDUuc38Rawie4
+Dr6KIflSq9i7g9M9PbwXP8OtZL9X5aYcE0qvUL5OZj36S8vhXVVUud/7YH0JuexH
+BxJlOEPnN0bs6LNVMtdGP1xdsyaZicR4eQYBs9Ls5L0InOhUFyDtnO3p4pzI1Nh6
+onvHGdiaLaIR6pm3R/ylbV6mVnbdE/gDmxZEeDZ54AuzceoB5e0=
+=SDDm
 -----END PGP SIGNATURE-----
 -->

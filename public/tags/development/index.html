@@ -6,7 +6,8 @@ Hash: SHA256
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Development"><meta property="og:description" content><meta property="og:url" content="https://adlermedrado.com.br/tags/development/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="website"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Development"><meta name=twitter:description content><meta name=twitter:image content="/images/default-og-image.png"><title>Development</title><meta name=description content><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/tags/development/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/posts>posts</a>
 <a href=/missives>missives</a>
 <a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Development</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Development</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/stream-vs-foreach-in-java/>Understanding when to use stream() vs forEach() in Java</a></h2><p class="text-sm text-gray-500">03 Nov 2024</p><p><p>In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.</p><h2 id=stream>stream()</h2><p>Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:</p><ul><li>Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.</li><li>Chained processing: Apply multiple operations in a single chain.</li><li>Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.</li><li>Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.</li></ul><h4 id=example>Example:</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> names <span style=color:#f92672>=</span> Arrays.<span style=color:#a6e22e>asList</span>(<span style=color:#e6db74>&#34;Maria&#34;</span>, <span style=color:#e6db74>&#34;José&#34;</span>, <span style=color:#e6db74>&#34;João&#34;</span>);
+<a href=/uses>what am i using</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Development</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Development</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/security-isnt-a-feature-its-a-consequence/>Security isn’t a feature. It’s a consequence</a></h2><p class="text-sm text-gray-500">16 Aug 2025</p><p><p>People talk about security like it’s a product you install or a checkbox you tick off before launch. But that mindset is exactly why so many systems fail. Security isn’t a module. It’s not a team. It’s not something you slap on later. It’s a consequence — of how you think when you build.</p><p>Most software is a prototype that accidentally went live.
+Security gets added later. If it gets added at all. Usually after something breaks or someone screams.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/stream-vs-foreach-in-java/>Understanding when to use stream() vs forEach() in Java</a></h2><p class="text-sm text-gray-500">03 Nov 2024</p><p><p>In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.</p><h2 id=stream>stream()</h2><p>Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:</p><ul><li>Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.</li><li>Chained processing: Apply multiple operations in a single chain.</li><li>Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.</li><li>Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.</li></ul><h4 id=example>Example:</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> names <span style=color:#f92672>=</span> Arrays.<span style=color:#a6e22e>asList</span>(<span style=color:#e6db74>&#34;Maria&#34;</span>, <span style=color:#e6db74>&#34;José&#34;</span>, <span style=color:#e6db74>&#34;João&#34;</span>);
 </span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> filteredNames <span style=color:#f92672>=</span> names.<span style=color:#a6e22e>stream</span>()
 </span></span><span style=display:flex><span>.<span style=color:#a6e22e>filter</span>(name <span style=color:#f92672>-&gt;</span> name.<span style=color:#a6e22e>startsWith</span>(<span style=color:#e6db74>&#34;J&#34;</span>))
 </span></span><span style=display:flex><span>.<span style=color:#a6e22e>map</span>(String::toUpperCase)
@@ -22,18 +23,18 @@ Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public ke
 <span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmigp2kACgkQbV8aePHc
-Nh0tNg//V/+/3F3/D/2ShvA2XFlMzRk+9otLCsm2Wn0H7789kj3MhCgqdVQgo7rI
-nytiBqFgzhi7kJgEIGULrH+S5jtkHh7I29ZoRRVU5EnbKdojXA/fVtxPsUGm0x8m
-+0PzreQP0GoNAHvvVND171xRmMXFqq5pDzUN+JZIveM86Ja2jE+nKjkmuH72/eBP
-rudrtbJl9uInnOWr1z0Jfx6Hysc+Dcn6WaciHzJ4q5HqI2UcOB4ZkHOq94hxJeea
-ncDho4LeNWk2XonjsnlwxiUnbnWKcCF5ngBQO5iaNUIIZg5+VjwQHmJrb6xWus/h
-Bn2mSPUqhHpmidDf7uQi73vK13mvGYqJY24Ly7KcBD+Eg0UT8osXIbL1NV1+oBOb
-bNRPAA58BSymNvRWJEIuBOc3uMmmE89sHiXV13EwmNRt0elI8zIPQyyxWx5VXwNr
-wTjWl+ckIZDVo49tUUjGYOWeB2Kxnn37jLiIgl5oz98g0j1etdXjYEpnLRw5m0xn
-Yv6jU6dYB0iwMfAzxc6bP79FfjfoBNnulHTMp80aYoNSTUycP6eZRzXXZUp4nJ6r
-DF3kcVcpHZlggaqow9a5CofMf6XTKfuP9KkcpJ4ud1oKHEy8jPh39d1gGCSQEf3h
-E40hkUlGIBiD2t0PgxxBSt5OOCiEwkF8mmIyaFDF3Yjpy1aCK/0=
-=D9uN
+iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmigqD8ACgkQbV8aePHc
+Nh0BXw/8CTvH4Y9YsbPNwGrobkGYDldl3MfKieQtXv+dRFBf2EX197YcYbryrPJs
+SiMl6YguWVVfubnuv28a9RLeqLO9LfbOPUn773S7H+/tIu6abNZnQwVQxyku+Pfw
+OeMMdkBoR1LU3o/4s+O6WxvYBR3f2u8ILBMLaTfaNPpu/Is43My3gJL/dyT0RaRs
+wxClJayMnf8NY1vzOpUH7Hp6DeRM/1km7YHT1MH5DWld4Ll178ulsuQrWn2iGAo4
+MyUg9VddrzeRdMOJennqZoKqljq442/eiJ3x52hXdRJcdY/MzvhhTcdqJGhxgq7L
+oT40S28lb/0TeyBevvFKgKTwJceO9J9T67Uxqiz+dRCmlnQsYFozQUGk3aAxn5wU
+J+hNB8Qg4edyLmJ+F37KSxY5WWI0scI8tL+cQ1mBCVpqPNJEUWomteybymoed1kF
+BBnMQH8dYQHFMXefte0PW1pOV6+EL/x+oKbMt+UQ9tMlv5rVWwssCN5XLEM7S84H
+fCRDqqSDf8B5TlP6CraTG0rWZ/Y6F8cNZjww17ZVf2H16sessC1NMXOomSFO6RjY
+YWe1Pst1qzKmD0wvxylOZSDT32i63GCKoX4AM1Mk5k1zJGygT8FhZm0opSFtOLW6
+Z53Y7IMY5EkVVKtS3Mo3RquJiXH3sr9EauXK1iZRqV5Nae4zsHg=
+=Ms5C
 -----END PGP SIGNATURE-----
 -->

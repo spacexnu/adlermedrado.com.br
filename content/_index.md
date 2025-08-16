@@ -28,6 +28,7 @@ All while finishing a History degree and staying deeply embedded in hacker cultu
 - [ShadowData](https://github.com/spacexnu/ShadowData) – NLP for sensitive data detection
 - [log-analyzer](https://github.com/spacexnu/log-analyzer) – Real-time attack detection from logs
 - [job_finder](https://github.com/spacexnu/job_finder) – CLI tool for scraping tech jobs
+- [hades](https://github.com/spacexnu/hades) – Heuristic Analysis of Domains & Embedded Sites
 
 ---
 

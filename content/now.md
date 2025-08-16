@@ -34,7 +34,8 @@ Trying to improve my quality of life. Right now, I’m focused on:
   - [FraudTalon](https://fraudtalon.com)
   - [ShadowData](https://github.com/adlermedrado/ShadowData)
   - [Job Finder](https://github.com/adlermedrado/job_finder)
-  - [Log Analyser](https://github.com/spacexnu/log-analyzer)
+  - [Log Analyzer](https://github.com/spacexnu/log-analyzer)
+  - [hades](https://github.com/spacexnu/hades) – Heuristic Analysis of Domains & Embedded Sites
 
 ---
 

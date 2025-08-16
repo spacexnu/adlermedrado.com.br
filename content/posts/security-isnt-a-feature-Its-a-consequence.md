@@ -1,10 +1,7 @@
 ---
 title: "Security isn’t a feature. It’s a consequence"
 date: 2025-08-16T21:12:17-03:00
-tags:
-- "software"
-- "development"
-- "security"
+tags: ["software", "development", "security"]
 ---
 
 People talk about security like it’s a product you install or a checkbox you tick off before launch. But that mindset is exactly why so many systems fail. Security isn’t a module. It’s not a team. It’s not something you slap on later. It’s a consequence — of how you think when you build.

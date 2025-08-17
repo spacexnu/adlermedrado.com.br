@@ -32,10 +32,10 @@ Trying to improve my quality of life. Right now, I’m focused on:
   _(Only in Portuguese, for now)_  
 - Building and maintaining a few personal projects:
   - [FraudTalon](https://fraudtalon.com)
-  - [ShadowData](https://github.com/adlermedrado/ShadowData)
-  - [Job Finder](https://github.com/adlermedrado/job_finder)
+  - [ShadowData](https://github.com/spacexnu/ShadowData)
+  - [Job Finder](https://github.com/spacexnu/job_finder)
   - [Log Analyzer](https://github.com/spacexnu/log-analyzer)
-  - [hades](https://github.com/spacexnu/hades) – Heuristic Analysis of Domains & Embedded Sites
+  - [hades](https://github.com/spacexnu/hades)
 
 ---
 

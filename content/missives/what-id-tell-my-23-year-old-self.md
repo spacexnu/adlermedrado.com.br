@@ -1,7 +1,7 @@
 ---
 title: "What I’d Tell My 23-Year-Old Self"
 date: 2025-09-26T22:48:18-03:00
-draft: true
+draft: false
 tags: [thoughts]
 ---
 

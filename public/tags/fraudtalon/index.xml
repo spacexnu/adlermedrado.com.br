@@ -1,46 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FraudTalon on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/fraudtalon/</link><description>Recent content in FraudTalon on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 20 Jul 2025 18:05:08 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/fraudtalon/index.xml" rel="self" type="application/rss+xml"/><item><title>Vou construir meu próprio verificador de URLs</title><link>https://adlermedrado.com.br/posts/verificador-de-url/</link><pubDate>Sun, 20 Jul 2025 18:05:08 -0300</pubDate><guid>https://adlermedrado.com.br/posts/verificador-de-url/</guid><description>&lt;p>Nos últimos dias, mergulhei fundo numa questão que há tempos me incomodava: a validação de URLs suspeitas no contexto de fraudes digitais.&lt;/p>
-&lt;p>O &lt;a href="https://fraudtalon.com">FraudTalon&lt;/a> já consegue lidar com textos, imagens, e e-mails. A ideia é simples: extrair qualquer URL contida nesses conteúdos e verificar se ela tem indícios de ser maliciosa. Parece simples, mas quando você começa a testar serviços disponíveis no mercado, o buraco é mais embaixo.&lt;/p>
-&lt;p>Experimentei várias opções: Google Safe Browsing, URLScan, PhishTank, OpenPhish… e o resultado foi frustrante. Muitos têm limitações severas — uso restrito, pouca cobertura, APIs que bloqueiam projetos fechados, preços impraticáveis (alguns começando em 500 dólares por mês!). E mesmo os gratuitos falham feio em detecções básicas. O próprio Safe Browsing, por exemplo, só detecta o que já é amplamente conhecido. Se a URL do golpe é nova, ele vai te dizer que está tudo certo. Inútil.&lt;/p></description></item><item><title>Novidades no FraudTalon: análise explicativa e planos para QR Codes e URLs</title><link>https://adlermedrado.com.br/posts/fraudtalon-atualizacao-julho-2025/</link><pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/fraudtalon-atualizacao-julho-2025/</guid><description>&lt;h1 id="-novidades-no-fraudtalon-agora-com-análise-explicativa">🚨 Novidades no FraudTalon: agora com análise explicativa&lt;/h1>
-&lt;p>O FraudTalon está evoluindo. A nova atualização traz recursos importantes e prepara o terreno para o lançamento oficial, com foco em educação, precisão e proteção contra golpes digitais.&lt;/p>
-&lt;h2 id="-análise-explicativa-entenda-por-que-é-fraude">🧠 Análise explicativa: entenda por que é fraude&lt;/h2>
-&lt;p>Agora, independentemente do tipo de dado analisado — texto, imagem ou e-mail — o sistema apresenta uma &lt;strong>explicação clara sobre os motivos&lt;/strong> que levaram à classificação como possível fraude. Isso torna a experiência muito mais educativa, revelando os padrões usados por golpistas.&lt;/p></description></item><item><title>Update: Análise de emails (.eml) com FraudTalon</title><link>https://adlermedrado.com.br/posts/fraudtalon-processamento-email/</link><pubDate>Sat, 28 Jun 2025 15:46:07 -0300</pubDate><guid>https://adlermedrado.com.br/posts/fraudtalon-processamento-email/</guid><description>&lt;h3 id="o-fraudtalon-deu-mais-um-passo-importante">O FraudTalon deu mais um passo importante.&lt;/h3>
-&lt;p>Mesmo com pouco tempo livre na semana, sigo comprometido em manter o FraudTalon avançando e publicando updates regulares.&lt;/p>
-&lt;p>A partir de hoje, é possível fazer o upload de arquivos .eml diretamente pela interface, e o sistema realiza uma análise
-completa combinando heurísticas de segurança de e-mails com inteligência artificial.&lt;/p>
-&lt;img alt="fraudtalon-banner" height="50%" src="https://adlermedrado.com.br/posts/images/fraudtalon-banner.png" width="50%"/>
-&lt;p>O pipeline está assim:&lt;/p>
-&lt;ul>
-&lt;li>Parse automático do .eml, com extração dos headers, remetente, destinatário, assunto e corpo&lt;/li>
-&lt;li>Avaliação heurística com sinais como:
-&lt;ul>
-&lt;li>Mismatch entre From, Reply-To e Return-Path&lt;/li>
-&lt;li>Falhas de autenticação (DKIM, SPF, DMARC)&lt;/li>
-&lt;li>Recebimento por servidores desconhecidos&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Análise por IA (via OpenAI) levando em conta todo o conteúdo textual&lt;/li>
-&lt;li>Score consolidado com os sinais suspeitos encontrados&lt;/li>
-&lt;/ul>
-&lt;p>Essa atualização transforma o &lt;a href="https://fraudtalon.com">FraudTalon&lt;/a> em uma ferramenta muito mais útil para análise de
-e-mails suspeitos, como golpes de Pix, phishing, ou promessas falsas de investimento.&lt;/p></description></item><item><title>Update: Email (.eml) Analysis with FraudTalon</title><link>https://adlermedrado.com.br/posts/fraudtalon-email-processing/</link><pubDate>Sat, 28 Jun 2025 15:46:07 -0300</pubDate><guid>https://adlermedrado.com.br/posts/fraudtalon-email-processing/</guid><description>&lt;h3 id="fraudtalon-just-took-another-important-step">FraudTalon just took another important step.&lt;/h3>
-&lt;p>I’m only able to work on FraudTalon a few hours per week, but I’m committed to making steady progress and sharing weekly updates.0&lt;/p>
-&lt;p>Starting today, you can upload &lt;code>.eml&lt;/code> files directly through the interface, and the system will run a complete analysis
-using a combination of email security heuristics and artificial intelligence.&lt;/p>
-&lt;img alt="fraudtalon-banner" height="50%" src="https://adlermedrado.com.br/posts/images/fraudtalon-banner.png" width="50%"/>
-&lt;p>The pipeline now works like this:&lt;/p>
-&lt;ul>
-&lt;li>Automatic &lt;code>.eml&lt;/code> parsing with extraction of headers, sender, recipient, subject, and body&lt;/li>
-&lt;li>Heuristic evaluation with signals such as:
-&lt;ul>
-&lt;li>Mismatch between From, Reply-To, and Return-Path&lt;/li>
-&lt;li>Authentication failures (DKIM, SPF, DMARC)&lt;/li>
-&lt;li>Relaying through unknown servers&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>AI analysis (via OpenAI) that takes into account the full textual content&lt;/li>
-&lt;li>Final score with a breakdown of suspicious indicators&lt;/li>
-&lt;/ul>
-&lt;p>This update makes &lt;a href="https://fraudtalon.com">FraudTalon&lt;/a> a much more powerful tool for analyzing suspicious emails like
-phishing, Pix scams, or fake investment offers.&lt;/p></description></item><item><title>Combatendo fraudes online com FraudTalon</title><link>https://adlermedrado.com.br/posts/fraudtalon-mvp-br/</link><pubDate>Fri, 20 Jun 2025 17:58:55 -0300</pubDate><guid>https://adlermedrado.com.br/posts/fraudtalon-mvp-br/</guid><description>&lt;p>Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.&lt;/p>
-&lt;p>Foi assim que nasceu o &lt;a href="https://fraudtalon.com">&lt;strong>FraudTalon&lt;/strong>&lt;/a>&lt;/p>
-&lt;p>Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FraudTalon on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/fraudtalon/</link><description>Recent content in FraudTalon on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 20 Jul 2025 18:05:08 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/fraudtalon/index.xml" rel="self" type="application/rss+xml"/><item><title>Vou construir meu próprio verificador de URLs</title><link>https://adlermedrado.com.br/posts/verificador-de-url/</link><pubDate>Sun, 20 Jul 2025 18:05:08 -0300</pubDate><guid>https://adlermedrado.com.br/posts/verificador-de-url/</guid><description>&lt;p&gt;Nos últimos dias, mergulhei fundo numa questão que há tempos me incomodava: a validação de URLs suspeitas no contexto de fraudes digitais.&lt;/p&gt;
+&lt;p&gt;O &lt;a href="https://fraudtalon.com"&gt;FraudTalon&lt;/a&gt; já consegue lidar com textos, imagens, e e-mails. A ideia é simples: extrair qualquer URL contida nesses conteúdos e verificar se ela tem indícios de ser maliciosa. Parece simples, mas quando você começa a testar serviços disponíveis no mercado, o buraco é mais embaixo.&lt;/p&gt;
+&lt;p&gt;Experimentei várias opções: Google Safe Browsing, URLScan, PhishTank, OpenPhish… e o resultado foi frustrante. Muitos têm limitações severas — uso restrito, pouca cobertura, APIs que bloqueiam projetos fechados, preços impraticáveis (alguns começando em 500 dólares por mês!). E mesmo os gratuitos falham feio em detecções básicas. O próprio Safe Browsing, por exemplo, só detecta o que já é amplamente conhecido. Se a URL do golpe é nova, ele vai te dizer que está tudo certo. Inútil.&lt;/p&gt;</description></item><item><title>Novidades no FraudTalon: análise explicativa e planos para QR Codes e URLs</title><link>https://adlermedrado.com.br/posts/fraudtalon-atualizacao-julho-2025/</link><pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/fraudtalon-atualizacao-julho-2025/</guid><description>&lt;h1 id="-novidades-no-fraudtalon-agora-com-análise-explicativa"&gt;🚨 Novidades no FraudTalon: agora com análise explicativa&lt;/h1&gt;
+&lt;p&gt;O FraudTalon está evoluindo. A nova atualização traz recursos importantes e prepara o terreno para o lançamento oficial, com foco em educação, precisão e proteção contra golpes digitais.&lt;/p&gt;
+&lt;h2 id="-análise-explicativa-entenda-por-que-é-fraude"&gt;🧠 Análise explicativa: entenda por que é fraude&lt;/h2&gt;
+&lt;p&gt;Agora, independentemente do tipo de dado analisado — texto, imagem ou e-mail — o sistema apresenta uma &lt;strong&gt;explicação clara sobre os motivos&lt;/strong&gt; que levaram à classificação como possível fraude. Isso torna a experiência muito mais educativa, revelando os padrões usados por golpistas.&lt;/p&gt;</description></item><item><title>Update: Análise de emails (.eml) com FraudTalon</title><link>https://adlermedrado.com.br/posts/fraudtalon-processamento-email/</link><pubDate>Sat, 28 Jun 2025 15:46:07 -0300</pubDate><guid>https://adlermedrado.com.br/posts/fraudtalon-processamento-email/</guid><description>&lt;h3 id="o-fraudtalon-deu-mais-um-passo-importante"&gt;O FraudTalon deu mais um passo importante.&lt;/h3&gt;
+&lt;p&gt;Mesmo com pouco tempo livre na semana, sigo comprometido em manter o FraudTalon avançando e publicando updates regulares.&lt;/p&gt;
+&lt;p&gt;A partir de hoje, é possível fazer o upload de arquivos .eml diretamente pela interface, e o sistema realiza uma análise
+completa combinando heurísticas de segurança de e-mails com inteligência artificial.&lt;/p&gt;
+&lt;img alt="fraudtalon-banner" height="50%" src="https://adlermedrado.com.br/posts/images/fraudtalon-banner.png" width="50%"/&gt;
+&lt;p&gt;O pipeline está assim:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Parse automático do .eml, com extração dos headers, remetente, destinatário, assunto e corpo&lt;/li&gt;
+&lt;li&gt;Avaliação heurística com sinais como:
+&lt;ul&gt;
+&lt;li&gt;Mismatch entre From, Reply-To e Return-Path&lt;/li&gt;
+&lt;li&gt;Falhas de autenticação (DKIM, SPF, DMARC)&lt;/li&gt;
+&lt;li&gt;Recebimento por servidores desconhecidos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Análise por IA (via OpenAI) levando em conta todo o conteúdo textual&lt;/li&gt;
+&lt;li&gt;Score consolidado com os sinais suspeitos encontrados&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Essa atualização transforma o &lt;a href="https://fraudtalon.com"&gt;FraudTalon&lt;/a&gt; em uma ferramenta muito mais útil para análise de
+e-mails suspeitos, como golpes de Pix, phishing, ou promessas falsas de investimento.&lt;/p&gt;</description></item><item><title>Update: Email (.eml) Analysis with FraudTalon</title><link>https://adlermedrado.com.br/posts/fraudtalon-email-processing/</link><pubDate>Sat, 28 Jun 2025 15:46:07 -0300</pubDate><guid>https://adlermedrado.com.br/posts/fraudtalon-email-processing/</guid><description>&lt;h3 id="fraudtalon-just-took-another-important-step"&gt;FraudTalon just took another important step.&lt;/h3&gt;
+&lt;p&gt;I’m only able to work on FraudTalon a few hours per week, but I’m committed to making steady progress and sharing weekly updates.0&lt;/p&gt;
+&lt;p&gt;Starting today, you can upload &lt;code&gt;.eml&lt;/code&gt; files directly through the interface, and the system will run a complete analysis
+using a combination of email security heuristics and artificial intelligence.&lt;/p&gt;
+&lt;img alt="fraudtalon-banner" height="50%" src="https://adlermedrado.com.br/posts/images/fraudtalon-banner.png" width="50%"/&gt;
+&lt;p&gt;The pipeline now works like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatic &lt;code&gt;.eml&lt;/code&gt; parsing with extraction of headers, sender, recipient, subject, and body&lt;/li&gt;
+&lt;li&gt;Heuristic evaluation with signals such as:
+&lt;ul&gt;
+&lt;li&gt;Mismatch between From, Reply-To, and Return-Path&lt;/li&gt;
+&lt;li&gt;Authentication failures (DKIM, SPF, DMARC)&lt;/li&gt;
+&lt;li&gt;Relaying through unknown servers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;AI analysis (via OpenAI) that takes into account the full textual content&lt;/li&gt;
+&lt;li&gt;Final score with a breakdown of suspicious indicators&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This update makes &lt;a href="https://fraudtalon.com"&gt;FraudTalon&lt;/a&gt; a much more powerful tool for analyzing suspicious emails like
+phishing, Pix scams, or fake investment offers.&lt;/p&gt;</description></item><item><title>Combatendo fraudes online com FraudTalon</title><link>https://adlermedrado.com.br/posts/fraudtalon-mvp-br/</link><pubDate>Fri, 20 Jun 2025 17:58:55 -0300</pubDate><guid>https://adlermedrado.com.br/posts/fraudtalon-mvp-br/</guid><description>&lt;p&gt;Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.&lt;/p&gt;
+&lt;p&gt;Foi assim que nasceu o &lt;a href="https://fraudtalon.com"&gt;&lt;strong&gt;FraudTalon&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.&lt;/p&gt;</description></item></channel></rss>

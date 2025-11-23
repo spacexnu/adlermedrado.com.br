@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Fira Code', 'Roboto Mono', 'Courier New', monospace;
+    font-family: 'Roboto Mono', 'Courier New', monospace;
     background-color: #121212;
     color: #d0d0d0;
     line-height: 1.8;
@@ -47,7 +45,7 @@ button, .button {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     border-radius: 4px;
-    font-family: 'Fira Code', monospace;
+    font-family: 'Roboto Mono', 'Courier New', monospace;
     text-shadow: 0 0 3px rgba(0, 255, 195, 0.8);
 }
 
@@ -80,7 +78,7 @@ pre {
     color: #00ffc3;
     padding: 20px 24px;
     border-radius: 6px;
-    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-family: 'Roboto Mono', 'Courier New', monospace;
     overflow-x: auto;
     font-size: 18px;
     line-height: 1.8;
@@ -105,7 +103,7 @@ pre code {
 
 .post-tags {
     margin-top: 10px;
-    font-family: 'Fira Code', monospace;
+    font-family: 'Roboto Mono', 'Courier New', monospace;
     font-size: 0.7em;
     color: #00ffc3;
 }
@@ -230,7 +228,7 @@ a:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     color: #00ffc3;
     text-transform: lowercase;
     border: none;
-    font-family: 'Fira Code', monospace;
+    font-family: 'Roboto Mono', 'Courier New', monospace;
     font-size: 16px;
     position: relative;
     transition: color 0.3s ease;
@@ -300,7 +298,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 2em 0;
-    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-family:'Roboto Mono', 'Courier New', monospace;
 }
 
 th, td {

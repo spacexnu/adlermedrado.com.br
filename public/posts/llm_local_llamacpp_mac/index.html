@@ -1,8 +1,3 @@
-<!--
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS"><meta property="og:description" content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
 I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta property="og:url" content="https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS"><meta name=twitter:description content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
 I put this guide together because I wanted LLMs running locally, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes."><meta name=twitter:image content="/images/default-og-image.png"><title>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</title><meta name=description content="Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.
@@ -32,23 +27,5 @@ I put this guide together because I wanted LLMs running locally, even with limit
 </span></span></code></pre></div><blockquote><p>Need an API?<br>Just do this:<br><code>./bin/server</code> → then hit <code>http://localhost:8080</code></p></blockquote><h2 id=-models-that-actually-work-on-a-mac-m1>🧠 Models That Actually Work on a Mac M1</h2><table><thead><tr><th>Model</th><th>Size</th><th>Use Case</th></tr></thead><tbody><tr><td>Phi-3-mini-4k</td><td>~2.3GB</td><td>General tasks / instruction</td></tr><tr><td>Mistral-7B-Instruct</td><td>~4.2GB</td><td>Chat / coding / workflows</td></tr><tr><td>CodeLlama-7B</td><td>~3.8GB</td><td>Code assistant</td></tr><tr><td>DeepSeek-Coder-6.7B</td><td>~3.5GB</td><td>Dev work / tech-heavy prompts</td></tr></tbody></table><h2 id=-final-words>🧩 Final Words</h2><p>Running LLMs locally isn’t hype — it’s rebellion. It’s freedom.<br><strong>llama.cpp</strong> gives you total control. <strong>Ollama</strong> and <strong>LM Studio</strong>? Handy, but still wrappers.</p><p>You choose the tools. You own the data.<br>No middleman. No leash.</p><hr><br>Want to go deeper? Build your own local RAG pipeline.
 Add voice. Add vision. Build like it’s 1999 again — but with 2025 firepower.<p>Welcome to the resistance.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/os-lugares-onde-nunca-mais-voltei/>&#8592; Os lugares onde nunca mais voltei, mas que ainda me habitam</a>
 |
-<a href=https://adlermedrado.com.br/posts/gpg-intro-en/>Why You Should Start Using GPG Now &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
------BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmjpMIwACgkQbV8aePHc
-Nh310xAAuROMfO5tSbqkG5qjh959WM8lTKGnMcYt6r64prFsz7hW2ShzQO+2QRP3
-wnKp0ZyAUNaY+n41w6x8SJv1LY1Z9z5tNuoBJlI+oH8V+nQ6b5ty5auwJ4Sn3sS9
-gVT3YHZtIJJsU/PZqQOdR+yt6s6Ep0ByxMDWVvBbX/MHf1SjO05WE3MzW5OhWVkO
-xmqLZqED4Dx56L8B1YOrbL6nHzVywDnSw0T8Q4Q7Tqrz0XpwpJqekgjwPdU0VE99
-Py2MHHy5Tjzk0O3YVhazS1WEH74A3izrOxEvlrv6hVaZ+55521M4T7qG8GFQmVhR
-tIfp18GRGUXV2leLl4YpWtNOr+QseKhWotRt60mwpjQOqbVJMMzHEcBX34xNqW3H
-g45xhZAt8wkHxsPfIhZnC8Nfv+t18xHMN5u7cNCso2fkYkiLcJ4eaIPlL8AlvQ6Z
-ftRcYUMN2fqDE9g3H1yUz5ckqn68TMB/orB5vzjjmXZxHo70XQoiDhPo79VU7GIe
-2gausr4XI//t8neyGnlIAsKKAMGw0/XknHc8EA1iYAlC5mfp4aQXhO1C4+b42GJZ
-vDdrykZFm8oFD6NE/IV5IFf07WCpatZ/APt0TUA7DDfkOOlwQChQnxe4SGi5V5ES
-bddvbrCArUPOxVY1xHw9L0Gre8zGrxbE0ru48sC0t4tIwWngCeE=
-=Xdhn
------END PGP SIGNATURE-----
--->
+<a href=https://adlermedrado.com.br/posts/gpg-intro-en/>Why You Should Start Using GPG Now &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.</p><p>Learn how to verify my PGP signature <a href=/posts/verify-signatures>here</a>.</p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

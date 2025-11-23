@@ -1,50 +1,45 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
-# Signs an HTML file by appending a PGP signature.
-# Args:
-#   $1: Path to the HTML file to sign.
-function sign_html {
-  local html_file="$1"
-  local temp_file
+# Generates ASCII-armored detached signatures (.asc) for site assets.
+# Usage: ./clearsign_html.sh [target_directory]
 
-  temp_file=$(mktemp /tmp/pgp-html-XXXXXX.html)
-  if [[ ! -f "$temp_file" ]]; then
-    echo "Failed to create temporary file" >&2
-    return 1
-  fi
+TARGET_DIR="${1:-public}"
+SIGNING_KEY="${GPG_SIGNING_KEY:-}"
 
-  echo "Preparing file $html_file for signing"
-  {
-    echo '-->'
-    cat "$html_file"
-    echo '<!--'
-  } >"$temp_file"
+if [[ ! -d "$TARGET_DIR" ]]; then
+  echo "Target directory '$TARGET_DIR' not found" >&2
+  exit 1
+fi
 
-  if [[ $? -ne 0 ]]; then
-    echo "Failed to prepare file for signing" >&2
-    rm -f "$temp_file"
-    return 1
-  fi
+extensions=(
+  html
+  htm
+  css
+  js
+  xml
+  txt
+  json
+  webmanifest
+  map
+  svg
+)
 
-  echo "Signing $temp_file and updating $html_file"
-  {
-    echo '<!--'
-    gpg --clearsign --output - "$temp_file"
-    echo '-->'
-  } >"$html_file"
-
-  if [[ $? -ne 0 ]]; then
-    echo "Failed to sign the file" >&2
-    rm -f "$temp_file"
-    return 1
-  fi
-
-  echo "Cleaning up temporary file..."
-  rm -f "$temp_file"
-}
-
-# Process all HTML files in the public directory and its subdirectories.
-find public -type f -name "*.html" | while IFS= read -r html_file; do
-  sign_html "$html_file"
+find_predicate=()
+for ext in "${extensions[@]}"; do
+  find_predicate+=( -name "*.${ext}" -o )
 done
+# Drop trailing -o
+unset 'find_predicate[${#find_predicate[@]}-1]'
 
+echo "Signing files in '$TARGET_DIR' and writing sidecar .asc signatures..."
+find "$TARGET_DIR" -type f ! -name "*.asc" \( "${find_predicate[@]}" \) -print0 |
+  while IFS= read -r -d '' file; do
+    asc_file="${file}.asc"
+    echo " - $file -> ${asc_file}"
+    if [[ -n "$SIGNING_KEY" ]]; then
+      gpg --batch --yes --armor --detach-sign --local-user "$SIGNING_KEY" --output "$asc_file" "$file"
+    else
+      gpg --batch --yes --armor --detach-sign --output "$asc_file" "$file"
+    fi
+  done

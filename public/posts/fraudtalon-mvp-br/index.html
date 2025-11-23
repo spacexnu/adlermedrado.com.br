@@ -1,8 +1,3 @@
-<!--
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Combatendo fraudes online com FraudTalon"><meta property="og:description" content="Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.
 Foi assim que nasceu o FraudTalon
 Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia."><meta property="og:url" content="https://adlermedrado.com.br/posts/fraudtalon-mvp-br/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Combatendo fraudes online com FraudTalon"><meta name=twitter:description content="Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.
@@ -21,23 +16,5 @@ Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heuríst
 <a href=/tags/fraude>fraude</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.</p><p>Foi assim que nasceu o <a href=https://fraudtalon.com><strong>FraudTalon</strong></a></p><p>Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.</p><p>Construí usando ferramentas que conheço bem: Python, Django, PostgreSQL, Celery e OpenAI. Mas quero que isso evolua para uma plataforma multi-LLM. Não me interessa depender de serviços caros, fechados e opacos, hospedados na nuvem de terceiros. Escrevi mais sobre essa mentalidade no meu projeto <a href=https://adlermedrado.com.br/posts/rag_soberano/>SovereignRAG</a>.</p><p>Sem no-code/low-code, sem fluxos estilo n8n. Não precisei disso. E sim, tenho um certo preconceito com no-code — sou um dev das antigas — do mesmo jeito que eu tinha preconceito com IA um ano atrás. As coisas mudam.</p><h3 id=roteiro-roadmap>Roteiro (Roadmap):</h3><ul><li>Upload e análise de arquivos <code>.eml</code></li><li>Validação de URLs com fontes externas como o SpamHaus</li><li>Verificação de números de telefone</li><li>Inspeção de QR codes</li></ul><p>Por enquanto, você pode colar o corpo bruto de um e-mail e obter uma análise de risco instantânea. Mas isso é só o começo.</p><p>Essa é uma ferramenta para devs, profissionais de segurança, mentes curiosas — e qualquer um que já viu alguém cair num golpe.</p><p>Vamos tornar a internet um pouco menos perigosa.
 Uma análise por vez.</p><p><a href=https://youtu.be/U_8blKG9iCU>Assista ao vídeo no YouTube</a>.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/fraudtalon-mvp/>&#8592; Fighting online fraud with FraudTalon</a>
 |
-<a href=https://adlermedrado.com.br/posts/fraudtalon-email-processing/>Update: Email (.eml) Analysis with FraudTalon &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/fraudtalon-mvp-br/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
------BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmjpMIsACgkQbV8aePHc
-Nh3dzhAAx8RlfTUa7FLHEc14GGfz2SEXNwfkg4E4nmSkg2znO+wDEjJAcOac1bBS
-dq/v/1Onj8QK8+wLJmwxphUb07pyre5gN83gQia87lJqSKrdQhodXR8N9bK4aVrI
-zlbsA/OXUP8f2MRTV8CtNIVCf4mzxkFVwFnLJ8Y3px/6zRpTeJfWpUUGMoSxhrlN
-DR9znKvk1Qoufr+sxNteVxp7rSSnGSewaeKrkG+z6mfS84lNmvBgtaz7iNCBgkRZ
-GuaeuBx1tUPOzQdmFRUSnIz28zLQf9RQW3c0unEyVwpdAOotSEPyowNU18MfBD3P
-ztGkHP7F2QMKf3nQX6tIw17kkQllELJbS/80slJM8XW8Ae6kn6Hn9RvmUfTwBWIF
-LzAQEyZ2QA+lAmNkvhwsNg069Ls29YOfW3qCjoDDyszlgr3hWATh1v2KYtJaLzGO
-tNPNo9EwpyQx3In0TAK7tRzowu+CLHwjiBmSTzDNMMUhuFNi1WyDCEwAX3O7InoG
-oAkK3fPhucHK9kLbXci4UInrYkgZnmub21VcprAOKrCC8bzADYpu73tqovqYbamV
-DVlRVZMIqtdUrm2CcaQUyhEvz8nWpu9hiAj6N8g0wZdwCdsfw5yxet2OyBN++i4O
-48vXUZPFbaHr+5d4ZA7DjQ8m0+8xUVjWRUKt4Joq2ZWbwW8RR7Y=
-=3tvr
------END PGP SIGNATURE-----
--->
+<a href=https://adlermedrado.com.br/posts/fraudtalon-email-processing/>Update: Email (.eml) Analysis with FraudTalon &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.</p><p>Learn how to verify my PGP signature <a href=/posts/verify-signatures>here</a>.</p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

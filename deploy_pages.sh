@@ -8,7 +8,7 @@ CURRENT_DATETIME=$(LANG=en_US.UTF-8 date)
 echo "🏗️  Building Hugo..."
 hugo --minify
 
-echo "✍️  Signing HTML..."
+echo "✍️  Signing build artifacts..."
 if command -v make &>/dev/null && make -qn clear-sign; then
   make clear-sign
 elif [ -x ./clearsign_html.sh ]; then

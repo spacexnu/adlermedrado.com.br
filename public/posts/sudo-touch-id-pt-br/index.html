@@ -1,8 +1,3 @@
-<!--
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- -->
 <!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Sudo com Touch ID no macOS"><meta property="og:description" content="Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.
 Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:
 sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
@@ -44,23 +39,5 @@ Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com
 </span></span></code></pre></div><p>Faça as alterações necessárias e salve o arquivo (Ctrl+O, Enter, Ctrl+X no nano).</p><h2 id=benefícios-do-uso-do-touch-id-com-sudo>Benefícios do uso do Touch ID com sudo</h2><ul><li>Conveniência: Utilizar o Touch ID elimina a necessidade de digitar sua senha repetidamente, tornando o processo mais rápido e fácil.</li><li>Segurança: O Touch ID adiciona uma camada extra de segurança, garantindo que apenas usuários autorizados possam executar comandos sudo.</li></ul><h3 id=solução-de-problemas-comuns>Solução de problemas comuns</h3><p><strong>Touch ID não funciona:</strong></p><ul><li>Verifique se o arquivo /etc/pam.d/sudo_local está configurado corretamente.</li><li>Certifique-se de que o seu macOS está atualizado e que o Touch ID está configurado nas preferências do sistema.</li></ul><h3 id=versões-do-macos>Versões do macOS</h3><p>Esta configuração foi testada no macOS Sonoma, mas também pode funcionar em outras versões recentes do macOS. Verifique a documentação do seu sistema para confirmar.</p><h3 id=considerações-de-segurança>Considerações de segurança</h3><p>Usar o Touch ID para sudo é geralmente seguro e conveniente. No entanto, é importante garantir que o seu Touch ID esteja configurado corretamente e que apenas usuários autorizados tenham acesso ao seu Mac.</p><p>Como uso muito o sudo, essa configuração é muito conveniente para mim.
 Espero que essa dica seja útil para você.</p><h3 id=vídeo-sobre-o-tema-no-youtube>Vídeo sobre o tema, no Youtube</h3><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/FQ0UaBYwkJvkalDd?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p><em>Atualizado: 18 de Junho de 2024</em></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/sudo-touch-id/>&#8592; Sudo with Touch ID on macOS</a>
 |
-<a href=https://adlermedrado.com.br/posts/privacidade-5-passos-essenciais/>Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.
-Import my <a href=/pub-key.asc aria-label="Download my PGP public key">public key</a> and check with <em>curl https://adlermedrado.com.br/posts/sudo-touch-id-pt-br/ | gpg --verify</em></p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html><!--
------BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmjpMJAACgkQbV8aePHc
-Nh2cMw/7BubRK83/s0113Mo11xhDCPfnJJpq4bfjVh9WD/yqnKZa5rhtGSScIYpD
-biG3ydElKA9jGgNQLPiNLlzEDrIQubryxSOSqdg1n2hY9b+zcyomqTzGpo7I7T9P
-4tcX4+67UYQMkQz6PIgEA0MjJ6Xaqu/bd1HPtCdzPeiLMHVKWdpr/HmAwPtNq3bu
-KOu+pYnH2RFJKx5mYXIIwPTUJ2Ccl5PsktgJ1obUDYowq66Bo0WKgm3z7c8Dp6S3
-yceAWzVcU94imyKbAcqX3wNmHa/bmFjRQTeluUtifANBMondyTDWRZk5L02B1h4E
-miske8uQELDMWafYcX8BtGMY6nn/e0/NGMGA52pZKxdbmzJij7c2N68tMfq9PT1w
-xd8uHJJ9WRqc7oaVzC662mYXoAmfnWYhJrVZxe8AGli+sSbu1hykJkkqV94F3P6F
-+wIBRVgeEKsMR6LmIRipz03HoOTmZydMeScVK2/Pd0ThbFBmn/QMiyH6YvqNbfFl
-pS94vgq0MIxzPgAVGgwv+p3amUSDgiO+9icdG9pQS0/a+7Wx/kkbZYCTPopdkH9f
-gWknxMH16nZSU4YXMOKLVHhLbW2fSW6uwTrxFoFIJgNb6b8PQPZ8wNwKNBEOdGe9
-U2e3D6+ZCohETq/LSgxSMiSOvrZwhzTBPr+p4xPSP/POVNJmUvI=
-=RP17
------END PGP SIGNATURE-----
--->
+<a href=https://adlermedrado.com.br/posts/privacidade-5-passos-essenciais/>Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><p>All pages on this website are PGP signed.</p><p>Learn how to verify my PGP signature <a href=/posts/verify-signatures>here</a>.</p><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

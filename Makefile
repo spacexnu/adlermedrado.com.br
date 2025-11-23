@@ -2,7 +2,7 @@ help:
 	@echo "targets:"
 	@echo "serve: Run a local hugo development server"
 	@echo "build: Build the minified version of the site"
-	@echo "clear-sign: PGP Clearsign all HTML pages of the site"
+	@echo "clear-sign: Generate .asc signatures for published assets"
 	@echo "deploy: Deploy files to server"
 	@echo "help: Show this help"
 

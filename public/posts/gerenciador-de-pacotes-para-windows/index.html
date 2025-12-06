@@ -1,165 +1,42 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta property="og:title" content="Gerenciador de pacotes para Windows">
-<meta property="og:description" content="Não é segredo que nos últimos meses eu tenho usado Windows como a
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Gerenciador de pacotes para Windows"><meta property="og:description" content="Não é segredo que nos últimos meses eu tenho usado Windows como a
 minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como
 ambiente de trabalho em alguns projetos.
 Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes nix eu sempre busco por alternativas
 similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o chocolatey, que é
-um gerenciador de pacotes similar ao apt-get no linux, só que para windows.">
-<meta property="og:url" content="http://localhost:1313/posts/gerenciador-de-pacotes-para-windows/">
-<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
-
-<meta property="og:type" content="article">
-
-
-<meta property="og:image" content="/images/default-og-image.png">
-
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Gerenciador de pacotes para Windows">
-<meta name="twitter:description" content="Não é segredo que nos últimos meses eu tenho usado Windows como a
+um gerenciador de pacotes similar ao apt-get no linux, só que para windows."><meta property="og:url" content="https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Gerenciador de pacotes para Windows"><meta name=twitter:description content="Não é segredo que nos últimos meses eu tenho usado Windows como a
 minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como
 ambiente de trabalho em alguns projetos.
 Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes nix eu sempre busco por alternativas
 similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o chocolatey, que é
-um gerenciador de pacotes similar ao apt-get no linux, só que para windows.">
-
-<meta name="twitter:image" content="/images/default-og-image.png">
-
-
-    <title>Gerenciador de pacotes para Windows</title>
-    <meta name="description" content="Não é segredo que nos últimos meses eu tenho usado Windows como a
+um gerenciador de pacotes similar ao apt-get no linux, só que para windows."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Gerenciador de pacotes para Windows</title><meta name=description content="Não é segredo que nos últimos meses eu tenho usado Windows como a
 minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como
 ambiente de trabalho em alguns projetos.
 Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes nix eu sempre busco por alternativas
 similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o chocolatey, que é
-um gerenciador de pacotes similar ao apt-get no linux, só que para windows.">
-    <link rel="author" href="/humans.txt"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="canonical" href="http://localhost:1313/posts/gerenciador-de-pacotes-para-windows/"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <div class="navbar_right navbar_right_animated">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">what am i doing now</a>
-            <a href="/uses">what am i using</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Gerenciador de pacotes para Windows</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>August 24, 2014</time>
-                            |
-                            1  minute  read
-                        </small>
-                        
-                        <div class="post-tags">
-                            <p>
-                                <strong>Tags:</strong>
-                                
-                                <a href="/tags/windows">windows</a>
-                                
-                            </p>
-                        </div>
-                        
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Não é segredo que nos últimos meses eu tenho usado <a href="http://windows.microsoft.com/pt-br/windows/home">Windows</a> como a
+um gerenciador de pacotes similar ao apt-get no linux, só que para windows."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Gerenciador de pacotes para Windows</h1><div><div><p><small><time>August 24, 2014</time>
+|
+1 minute read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/windows>windows</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Não é segredo que nos últimos meses eu tenho usado <a href=http://windows.microsoft.com/pt-br/windows/home>Windows</a> como a
 minha principal plataforma de trabalho, apesar de lidar com servidores linux diariamente e também usar VMs linux como
-ambiente de trabalho em alguns projetos.</p>
-<p>Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes <em>nix</em> eu sempre busco por alternativas
-similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o <a href="https://chocolatey.org/">chocolatey</a>, que é
-um gerenciador de pacotes similar ao apt-get no linux, só que para windows.</p>
-<p>Para instalar, basta abrir uma janela do <a href="http://technet.microsoft.com/pt-br/library/bb978526.aspx">Powershell</a> em modo
-administrador e digitar:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>iex <span style="color:#f92672">((</span>new-object net.webclient<span style="color:#f92672">)</span>.DownloadString<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;https://chocolatey.org/install.ps1&#39;</span><span style="color:#f92672">))</span>
+ambiente de trabalho em alguns projetos.</p><p>Como estou acostumado a trabalhar com diversas ferramentas comuns em ambientes <em>nix</em> eu sempre busco por alternativas
+similares para a plataforma Windows e hoje eu irei demonstrar rapidamente o <a href=https://chocolatey.org/>chocolatey</a>, que é
+um gerenciador de pacotes similar ao apt-get no linux, só que para windows.</p><p>Para instalar, basta abrir uma janela do <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a> em modo
+administrador e digitar:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>iex <span style=color:#f92672>((</span>new-object net.webclient<span style=color:#f92672>)</span>.DownloadString<span style=color:#f92672>(</span><span style=color:#e6db74>&#39;https://chocolatey.org/install.ps1&#39;</span><span style=color:#f92672>))</span>
 </span></span></code></pre></div><p>Após a instalação, o comando <em>choco</em> será disponibilizado no sistema, e a partir daí diversas aplicações poderão ser
-instaladas (e desinstaladas se for o caso) via linha de comando.</p>
-<p>Os comandos básicos são:</p>
-<p><em>list</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco list
-</span></span></code></pre></div><p>Exemplo: Listar todos pacotes que possuem <em>git</em> no nome</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco list git
-</span></span></code></pre></div><p><em>update</em></p>
-<p>Ex: Atualiza todos os pacotes</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco update
-</span></span></code></pre></div><p>Ex: Atualiza pacote específico</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco update git
-</span></span></code></pre></div><p><em>uninstall</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco uninstall git
-</span></span></code></pre></div><p><em>help</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco /?
-</span></span></code></pre></div><p>É isso. Mais uma <em>hidden gem</em> do mundo windows que até pouco tempo atrás eu não conhecia.</p>
-<p>Para conhecer melhor, visite a <a href="https://github.com/chocolatey/chocolatey/wiki">documentação do projeto</a>.</p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/acessando-o-office-365-via-powershell/">&#8592; Acessando o Office 365 via Powershell</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/">Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><footer class="glitch-zone" role="contentinfo">
-    <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
-                </div>
-            </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+instaladas (e desinstaladas se for o caso) via linha de comando.</p><p>Os comandos básicos são:</p><p><em>list</em></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco list
+</span></span></code></pre></div><p>Exemplo: Listar todos pacotes que possuem <em>git</em> no nome</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco list git
+</span></span></code></pre></div><p><em>update</em></p><p>Ex: Atualiza todos os pacotes</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco update
+</span></span></code></pre></div><p>Ex: Atualiza pacote específico</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco update git
+</span></span></code></pre></div><p><em>uninstall</em></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco uninstall git
+</span></span></code></pre></div><p><em>help</em></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>choco /?
+</span></span></code></pre></div><p>É isso. Mais uma <em>hidden gem</em> do mundo windows que até pouco tempo atrás eu não conhecia.</p><p>Para conhecer melhor, visite a <a href=https://github.com/chocolatey/chocolatey/wiki>documentação do projeto</a>.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/>&#8592; Acessando o Office 365 via Powershell</a>
+|
+<a href=https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/>Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

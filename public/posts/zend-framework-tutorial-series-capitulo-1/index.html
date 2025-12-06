@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta property="og:title" content="Zend Framework tutorial series capitulo 1">
-<meta property="og:description" content="Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Zend Framework tutorial series capitulo 1"><meta property="og:description" content="Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os
 avançados.
 Tentarei colocar um novo capítulo semanalmente, desta forma teremos uma janela boa para praticar o conteúdo proposto.
 Este primeiro Tutorial da série visa demonstrar a instalação e configuração do ambiente bem como criar a estrutura de
@@ -13,20 +6,7 @@ diretórios de uma aplicação utilizando o Zend_Tool.
 Antes de mais nada, os pré-requisitos para continuar este tutorial são:
 1- Conhecimento de PHP utilizando os conceitos de Orientação a Objetos.
 2- Configuração do ambiente (Apache, PHP, etc).
-3- Domínio do Sistema Operacional que está utilizando.">
-<meta property="og:url" content="http://localhost:1313/posts/zend-framework-tutorial-series-capitulo-1/">
-<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
-
-<meta property="og:type" content="article">
-
-
-<meta property="og:image" content="/images/default-og-image.png">
-
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Zend Framework tutorial series capitulo 1">
-<meta name="twitter:description" content="Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os
+3- Domínio do Sistema Operacional que está utilizando."><meta property="og:url" content="https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Zend Framework tutorial series capitulo 1"><meta name=twitter:description content="Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os
 avançados.
 Tentarei colocar um novo capítulo semanalmente, desta forma teremos uma janela boa para praticar o conteúdo proposto.
 Este primeiro Tutorial da série visa demonstrar a instalação e configuração do ambiente bem como criar a estrutura de
@@ -34,13 +14,7 @@ diretórios de uma aplicação utilizando o Zend_Tool.
 Antes de mais nada, os pré-requisitos para continuar este tutorial são:
 1- Conhecimento de PHP utilizando os conceitos de Orientação a Objetos.
 2- Configuração do ambiente (Apache, PHP, etc).
-3- Domínio do Sistema Operacional que está utilizando.">
-
-<meta name="twitter:image" content="/images/default-og-image.png">
-
-
-    <title>Zend Framework tutorial series capitulo 1</title>
-    <meta name="description" content="Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os
+3- Domínio do Sistema Operacional que está utilizando."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Zend Framework tutorial series capitulo 1</title><meta name=description content="Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os
 avançados.
 Tentarei colocar um novo capítulo semanalmente, desta forma teremos uma janela boa para praticar o conteúdo proposto.
 Este primeiro Tutorial da série visa demonstrar a instalação e configuração do ambiente bem como criar a estrutura de
@@ -48,123 +22,41 @@ diretórios de uma aplicação utilizando o Zend_Tool.
 Antes de mais nada, os pré-requisitos para continuar este tutorial são:
 1- Conhecimento de PHP utilizando os conceitos de Orientação a Objetos.
 2- Configuração do ambiente (Apache, PHP, etc).
-3- Domínio do Sistema Operacional que está utilizando.">
-    <link rel="author" href="/humans.txt"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="canonical" href="http://localhost:1313/posts/zend-framework-tutorial-series-capitulo-1/"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <div class="navbar_right navbar_right_animated">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">what am i doing now</a>
-            <a href="/uses">what am i using</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Zend Framework tutorial series capitulo 1</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>January 19, 2010</time>
-                            |
-                            5  minutes  read
-                        </small>
-                        
-                        <div class="post-tags">
-                            <p>
-                                <strong>Tags:</strong>
-                                
-                                <a href="/tags/zend-framework">zend-framework</a>
-                                
-                            </p>
-                        </div>
-                        
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os
-avançados.</p>
-<p>Tentarei colocar um novo capítulo semanalmente, desta forma teremos uma janela boa para praticar o conteúdo proposto.</p>
-<p>Este primeiro Tutorial da série visa demonstrar a instalação e configuração do ambiente bem como criar a estrutura de
-diretórios de uma aplicação utilizando o Zend_Tool.</p>
-<p>Antes de mais nada, os pré-requisitos para continuar este tutorial são:
+3- Domínio do Sistema Operacional que está utilizando."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/zend-framework-tutorial-series-capitulo-1/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Zend Framework tutorial series capitulo 1</h1><div><div><p><small><time>January 19, 2010</time>
+|
+5 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/zend-framework>zend-framework</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Estou iniciando uma série de tutoriais sobre Zend Framework onde eu pretendo mostrar desde os conceitos básicos até os
+avançados.</p><p>Tentarei colocar um novo capítulo semanalmente, desta forma teremos uma janela boa para praticar o conteúdo proposto.</p><p>Este primeiro Tutorial da série visa demonstrar a instalação e configuração do ambiente bem como criar a estrutura de
+diretórios de uma aplicação utilizando o Zend_Tool.</p><p>Antes de mais nada, os pré-requisitos para continuar este tutorial são:
 1- Conhecimento de PHP utilizando os conceitos de Orientação a Objetos.
 2- Configuração do ambiente (Apache, PHP, etc).
-3- Domínio do Sistema Operacional que está utilizando.</p>
-<p>IMPORTANTE: Caso você não possua este conhecimento eu sugiro que não continue com este tutorial e sim busque conhecer
-estes pré-requisitos.</p>
-<p>Eu vou partir do princípio que você já possui o ambiente pra rodar PHP instalado em sua máquina, ok?</p>
-<p>Vamos lá!</p>
-<p>Após terminar de ler este capítulo da série você estará apto a:</p>
-<ul>
-<li>Configurar variáveis de ambiente do sistema operacional</li>
-<li>Configurar domínios virtuais no apache</li>
-<li>Configurar o sistema operacional para lidar com hosts locais</li>
-<li>Criar a estrutura de diretórios de uma aplicação escrita em Zend Framework utilizando o Zend_Tool</li>
-</ul>
-<p><strong>Baixando o Zend Framework e configurando o ambiente</strong></p>
-<p>Primeiramente, baixe o Zend Framework em: <a href="http://framework.zend.com/">http://framework.zend.com/</a></p>
-<p>Descompacte o conteúdo deste pacote no local que você desejar e inclua o conteúdo da pasta library no include_path do
-seu ambiente PHP.</p>
-<p>Para setar o include_path você deverá alterar seu php.ini conforme orientações nesse link (<a href="http://www.php.net/manual/en/ini.core.php#ini.include-path)">http://www.php.net/manual/en/ini.core.php#ini.include-path)</a>.</p>
-<p>Beleza!!! Agora vamos colocar o script do <code>Zend_Tool</code> no <em>PATH</em> do sistema operacional.</p>
-<p>No Mac, eu editei o arquivo <em>.bash_profile</em> que se encontra no meu diretório home e coloquei o seguinte:</p>
-<p><code>export PATH=~/bin:/usr/local/bin:/Users/adlermedrado/dev/share/zf/bin:$PATH</code> onde <em>/Users/adlermedrado/dev/share/zf</em> é o
-local onde eu coloquei o conteúdo do arquivo que baixamos do site <a href="http://framework.zend.com">http://framework.zend.com</a> e <em>/bin</em> é onde se encontram
-os scripts do Zend_Tool.</p>
-<p>Em ambientes Windows, você deve ir no Painel de <code>Controle-&gt;Sistema-&gt;Avançado-&gt;Variáveis de Ambiente</code> e na variável <code>PATH</code> (
-Se ela não existir, crie) colocar o caminho do local onde você descompactou o Zend Framework até o diretório bin.</p>
-<p><em>IMPORTANTE: Eu coloquei essa configuração do Windows conforme lembrei de cabeça. Caso haja algum erro me desculpem,
+3- Domínio do Sistema Operacional que está utilizando.</p><p>IMPORTANTE: Caso você não possua este conhecimento eu sugiro que não continue com este tutorial e sim busque conhecer
+estes pré-requisitos.</p><p>Eu vou partir do princípio que você já possui o ambiente pra rodar PHP instalado em sua máquina, ok?</p><p>Vamos lá!</p><p>Após terminar de ler este capítulo da série você estará apto a:</p><ul><li>Configurar variáveis de ambiente do sistema operacional</li><li>Configurar domínios virtuais no apache</li><li>Configurar o sistema operacional para lidar com hosts locais</li><li>Criar a estrutura de diretórios de uma aplicação escrita em Zend Framework utilizando o Zend_Tool</li></ul><p><strong>Baixando o Zend Framework e configurando o ambiente</strong></p><p>Primeiramente, baixe o Zend Framework em: <a href=http://framework.zend.com/>http://framework.zend.com/</a></p><p>Descompacte o conteúdo deste pacote no local que você desejar e inclua o conteúdo da pasta library no include_path do
+seu ambiente PHP.</p><p>Para setar o include_path você deverá alterar seu php.ini conforme orientações nesse link (<a href=http://www.php.net/manual/en/ini.core.php#ini.include-path)>http://www.php.net/manual/en/ini.core.php#ini.include-path)</a>.</p><p>Beleza!!! Agora vamos colocar o script do <code>Zend_Tool</code> no <em>PATH</em> do sistema operacional.</p><p>No Mac, eu editei o arquivo <em>.bash_profile</em> que se encontra no meu diretório home e coloquei o seguinte:</p><p><code>export PATH=~/bin:/usr/local/bin:/Users/adlermedrado/dev/share/zf/bin:$PATH</code> onde <em>/Users/adlermedrado/dev/share/zf</em> é o
+local onde eu coloquei o conteúdo do arquivo que baixamos do site <a href=http://framework.zend.com>http://framework.zend.com</a> e <em>/bin</em> é onde se encontram
+os scripts do Zend_Tool.</p><p>Em ambientes Windows, você deve ir no Painel de <code>Controle->Sistema->Avançado->Variáveis de Ambiente</code> e na variável <code>PATH</code> (
+Se ela não existir, crie) colocar o caminho do local onde você descompactou o Zend Framework até o diretório bin.</p><p><em>IMPORTANTE: Eu coloquei essa configuração do Windows conforme lembrei de cabeça. Caso haja algum erro me desculpem,
 pois, eu não tenho nenhuma máquina windows aqui para verificar se o que falei está 100%.
 Ok. Com as variáveis de ambiente configuradas, abra uma janela do terminal e digite o seguinte: zf.bat (windows) e
-zf.sh (*nix).</em></p>
-<p>Se aparecer o help com uma listagem de comandos , está tudo certo. Caso o resultado seja uma mensagem de comando não
-existente ou algo parecido, verifique a variável PATH do seu sistema operacional.</p>
-<p><strong>Criando a estrutura da aplicação</strong></p>
-<p>Agora que o <code>Zend_Tool</code> está acessível da linha de comando, vamos criar a estrutura de nosso projeto.</p>
-<p>O <code>Zend_Tool</code> é uma aplicação que roda na linha de comando (CLI) que nos facilita a criação de projetos com Zend
-Framework.</p>
-<p>Com ele nós po demos criar o projeto, controllers, actions, etc; Não precisa se preocupar pois veremos os comandos do
-Zend_Tool detalhadamente nos próximos capítulos.</p>
-<p>A seguir você poderá criar a estrutura de um projeto. Preparado?</p>
-<p>No diretório de sua escolha (aqui na minha máquina eu escolhi: <em>/Users/adlermedrado/Sites/zf-series</em>) digite o seguinte
-comando:</p>
-<p><code>zf.sh create project zf-series</code> (Lembre-se que em windows o comando é <code>zf.bat</code> ou somente <code>zf</code>).</p>
-<p>Este comando criará a estrutura de diretórios necessária para uma aplicação com Zend Framework.</p>
-<p>Você viu que dentro do diretório <code>zf_series</code> foram criados diversos diretórios mas nós entraremos em detalhes nesses
-diretórios conforme formos avançando nos tutoriais com exceção do diretório public o qual falaremos agora.</p>
-<p>O diretório public é o diretório público da aplicação (duh!)  ou seja, neste diretório nós colocaremos os arquivos de
-imagens, javascript, CSS, etc. Este diretório será nosso DocumentRoot e como tal deve ser configurado no apache.</p>
-<p>Os demais diretórios são da aplicação e não precisam ser acessados pela URL por intermédio do servidor web e isso nos dá
+zf.sh (*nix).</em></p><p>Se aparecer o help com uma listagem de comandos , está tudo certo. Caso o resultado seja uma mensagem de comando não
+existente ou algo parecido, verifique a variável PATH do seu sistema operacional.</p><p><strong>Criando a estrutura da aplicação</strong></p><p>Agora que o <code>Zend_Tool</code> está acessível da linha de comando, vamos criar a estrutura de nosso projeto.</p><p>O <code>Zend_Tool</code> é uma aplicação que roda na linha de comando (CLI) que nos facilita a criação de projetos com Zend
+Framework.</p><p>Com ele nós po demos criar o projeto, controllers, actions, etc; Não precisa se preocupar pois veremos os comandos do
+Zend_Tool detalhadamente nos próximos capítulos.</p><p>A seguir você poderá criar a estrutura de um projeto. Preparado?</p><p>No diretório de sua escolha (aqui na minha máquina eu escolhi: <em>/Users/adlermedrado/Sites/zf-series</em>) digite o seguinte
+comando:</p><p><code>zf.sh create project zf-series</code> (Lembre-se que em windows o comando é <code>zf.bat</code> ou somente <code>zf</code>).</p><p>Este comando criará a estrutura de diretórios necessária para uma aplicação com Zend Framework.</p><p>Você viu que dentro do diretório <code>zf_series</code> foram criados diversos diretórios mas nós entraremos em detalhes nesses
+diretórios conforme formos avançando nos tutoriais com exceção do diretório public o qual falaremos agora.</p><p>O diretório public é o diretório público da aplicação (duh!) ou seja, neste diretório nós colocaremos os arquivos de
+imagens, javascript, CSS, etc. Este diretório será nosso DocumentRoot e como tal deve ser configurado no apache.</p><p>Os demais diretórios são da aplicação e não precisam ser acessados pela URL por intermédio do servidor web e isso nos dá
 uma segurança maior pois os arquivos com regras de negócio, configurações de conexão com banco de dados, etc, não
 precisam ser acessados pela URL para serem compilados e interpretados pelo PHP então, desta forma nós garantimos que
-serão acessíveis pelo público somente arquivos de pouca importância (no sentido de segurança) como CSS, imagens e afins.</p>
-<p>Como esta pasta é o DocumentRoot, nós devemos criar um domínio virtual para este projeto; Nós faremos isso configurando
-o servidor web Apache Httpd.</p>
-<p><strong>Configurando o servidor web</strong></p>
-<p>No diretório onde meu Apache está instalado eu tenho um arquivo chamado extras/httpd_vhosts.conf e será nele que
-adicionarei o domínio virtual para nossa aplicação.</p>
-<p>Neste arquivo eu criei o meu virtual host da seguinte forma:</p>
-<pre><code>&lt;VirtualHost *:80&gt;
+serão acessíveis pelo público somente arquivos de pouca importância (no sentido de segurança) como CSS, imagens e afins.</p><p>Como esta pasta é o DocumentRoot, nós devemos criar um domínio virtual para este projeto; Nós faremos isso configurando
+o servidor web Apache Httpd.</p><p><strong>Configurando o servidor web</strong></p><p>No diretório onde meu Apache está instalado eu tenho um arquivo chamado extras/httpd_vhosts.conf e será nele que
+adicionarei o domínio virtual para nossa aplicação.</p><p>Neste arquivo eu criei o meu virtual host da seguinte forma:</p><pre><code>&lt;VirtualHost *:80&gt;
 ServerAdmin adlermedrado@gmail.com
 DocumentRoot &quot;/Users/adlermedrado/Sites/zf-series/public&quot;
 ServerName zf-series
@@ -178,11 +70,8 @@ Order allow,deny
 Allow from all
 &lt;/Directory&gt;
 &lt;/VirtualHost&gt;
-</code></pre>
-<p>O próximo passo é configurar seu Sistema Operacional para que ele saiba que o endereço zf-series se encontra no domínio
-virtual definido acima.</p>
-<p>Em meu Mac eu editei o arquivo <code>/etc/hosts</code> e ele ficou da seguinte forma:</p>
-<pre><code>##
+</code></pre><p>O próximo passo é configurar seu Sistema Operacional para que ele saiba que o endereço zf-series se encontra no domínio
+virtual definido acima.</p><p>Em meu Mac eu editei o arquivo <code>/etc/hosts</code> e ele ficou da seguinte forma:</p><pre><code>##
 # Host Database
 #
 # localhost is used to configure the loopback interface
@@ -197,61 +86,10 @@ fe80::1%lo0 localhost
 # Meus dominios locais
 
 127.0.0.1 zf-series
-</code></pre>
-<p>Em um ambiente Windows você deve editar o arquivo <code>C:\Windows\System32\drivers\etc\hosts</code> e a edição dele é igual a do meu
-exemplo acima.</p>
-<p><strong>Testando o ambiente</strong></p>
-<p>Se nossas configurações forem bem sucedidas, se nós digitarmos em um browser a URL http://zf-series ela será direcionada
-para o index de nossa aplicação, se for mostrada uma tela de boas-vindas ao Zend Framework, a configuração foi realizada com sucesso.</p>
-<p>Caso não funcione da forma correta, revise a configuração do domínio virtual e da configuração do DNS (hosts);</p>
-<p><strong>Considerações finais</strong></p>
-<p>Este primeiro capítudo da nossa série termina por aqui.</p>
-<p>No próximo eu entrarei em detalhes na estrutura de pastas criada pelo Zend_Tool e na estrutura MVC do Zend Framework.</p>
-<p>Nesta ocasião criaremos nosso primeiro controller e suas actions.</p>
-<p>Espero que este tutorial seja útil para você.
-Não esqueça de dar seu feedback, ele é muito importante para os próximos capítulos da série.</p>
-<p>Abraço.</p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/agenda-atualizada/">&#8592; Agenda atualizada</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/zf-1-10-0-stable-released/">Zend Framework 1.10.0 stable released &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><footer class="glitch-zone" role="contentinfo">
-    <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
-                </div>
-            </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+</code></pre><p>Em um ambiente Windows você deve editar o arquivo <code>C:\Windows\System32\drivers\etc\hosts</code> e a edição dele é igual a do meu
+exemplo acima.</p><p><strong>Testando o ambiente</strong></p><p>Se nossas configurações forem bem sucedidas, se nós digitarmos em um browser a URL http://zf-series ela será direcionada
+para o index de nossa aplicação, se for mostrada uma tela de boas-vindas ao Zend Framework, a configuração foi realizada com sucesso.</p><p>Caso não funcione da forma correta, revise a configuração do domínio virtual e da configuração do DNS (hosts);</p><p><strong>Considerações finais</strong></p><p>Este primeiro capítudo da nossa série termina por aqui.</p><p>No próximo eu entrarei em detalhes na estrutura de pastas criada pelo Zend_Tool e na estrutura MVC do Zend Framework.</p><p>Nesta ocasião criaremos nosso primeiro controller e suas actions.</p><p>Espero que este tutorial seja útil para você.
+Não esqueça de dar seu feedback, ele é muito importante para os próximos capítulos da série.</p><p>Abraço.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/agenda-atualizada/>&#8592; Agenda atualizada</a>
+|
+<a href=https://adlermedrado.com.br/posts/zf-1-10-0-stable-released/>Zend Framework 1.10.0 stable released &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

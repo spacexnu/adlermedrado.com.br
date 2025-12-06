@@ -1,292 +1,143 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta property="og:title" content="Assinando páginas HTML com GPG">
-<meta property="og:description" content="Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Assinando páginas HTML com GPG"><meta property="og:description" content="Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
 muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o Hugo.
 No passado eu já utilizei o Pelican, o Jekyll e o Dangolino,
 este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.
 Se não me engano, há posts aqui falando sobre eles.
 Por que assinar as páginas?
 Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
-criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.">
-<meta property="og:url" content="http://localhost:1313/posts/assinando-html-com-gpg/">
-<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
-
-<meta property="og:type" content="article">
-
-
-<meta property="og:image" content="/images/default-og-image.png">
-
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Assinando páginas HTML com GPG">
-<meta name="twitter:description" content="Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
+criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas."><meta property="og:url" content="https://adlermedrado.com.br/posts/assinando-html-com-gpg/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Assinando páginas HTML com GPG"><meta name=twitter:description content="Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
 muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o Hugo.
 No passado eu já utilizei o Pelican, o Jekyll e o Dangolino,
 este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.
 Se não me engano, há posts aqui falando sobre eles.
 Por que assinar as páginas?
 Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
-criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.">
-
-<meta name="twitter:image" content="/images/default-og-image.png">
-
-
-    <title>Assinando páginas HTML com GPG</title>
-    <meta name="description" content="Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
+criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Assinando páginas HTML com GPG</title><meta name=description content="Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
 muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o Hugo.
 No passado eu já utilizei o Pelican, o Jekyll e o Dangolino,
 este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.
 Se não me engano, há posts aqui falando sobre eles.
 Por que assinar as páginas?
 Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
-criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.">
-    <link rel="author" href="/humans.txt"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="canonical" href="http://localhost:1313/posts/assinando-html-com-gpg/"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <div class="navbar_right navbar_right_animated">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">what am i doing now</a>
-            <a href="/uses">what am i using</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Assinando páginas HTML com GPG</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>January 7, 2024</time>
-                            |
-                            6  minutes  read
-                        </small>
-                        
-                        <div class="post-tags">
-                            <p>
-                                <strong>Tags:</strong>
-                                
-                                <a href="/tags/site">site</a>, 
-                                
-                                <a href="/tags/gpg">gpg</a>, 
-                                
-                                <a href="/tags/seguranca">seguranca</a>
-                                
-                            </p>
-                        </div>
-                        
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
-muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o <a href="https://gohugo.io">Hugo</a>.</p>
-<p>No passado eu já utilizei o <a href="https://getpelican.com">Pelican</a>, o <a href="https://jekyllrb.com">Jekyll</a> e o Dangolino,
+criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/assinando-html-com-gpg/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Assinando páginas HTML com GPG</h1><div><div><p><small><time>January 7, 2024</time>
+|
+6 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/site>site</a>,
+<a href=/tags/gpg>gpg</a>,
+<a href=/tags/seguranca>seguranca</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
+muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o <a href=https://gohugo.io>Hugo</a>.</p><p>No passado eu já utilizei o <a href=https://getpelican.com>Pelican</a>, o <a href=https://jekyllrb.com>Jekyll</a> e o Dangolino,
 este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.
-Se não me engano, há posts aqui falando sobre eles.</p>
-<h2 id="por-que-assinar-as-páginas">Por que assinar as páginas?</h2>
-<p>Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
-criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.</p>
-<p>Nesse caso específico, quando eu resolvi reestruturar esse site pensei em garantir que
+Se não me engano, há posts aqui falando sobre eles.</p><h2 id=por-que-assinar-as-páginas>Por que assinar as páginas?</h2><p>Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
+criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.</p><p>Nesse caso específico, quando eu resolvi reestruturar esse site pensei em garantir que
 o conteúdo aqui publicado fosse de fato produzido por mim, isso evitaria uma situação
 em que uma pessoa com acesso indevido ao meu servidor alterasse conteúdo postado aqui e
-me comprometesse de alguma maneira.</p>
-<p>Esse foi um ponto, mas atualmente com a quantidade de fake news publicadas na internet,
+me comprometesse de alguma maneira.</p><p>Esse foi um ponto, mas atualmente com a quantidade de fake news publicadas na internet,
 bem como o uso indiscriminado de IA, é difícil saber o que é ou não confiável,
-e eu quero que pelo menos o que eu postar, seja facilmente identificado como legítimo.</p>
-<h2 id="fazendo-isso-no-meu-site-vai-mudar-alguma-coisa">Fazendo isso no meu site, vai mudar alguma coisa?</h2>
-<p>Isoladamente não vai mudar nada, mas imagina se todo mundo que publicasse
-algo em seus sites fizesse isso? Já mudaria alguma coisa, certo?</p>
-<p>Usar GPG/PGP não é trivial, entretanto também não um bicho de sete cabeças,
+e eu quero que pelo menos o que eu postar, seja facilmente identificado como legítimo.</p><h2 id=fazendo-isso-no-meu-site-vai-mudar-alguma-coisa>Fazendo isso no meu site, vai mudar alguma coisa?</h2><p>Isoladamente não vai mudar nada, mas imagina se todo mundo que publicasse
+algo em seus sites fizesse isso? Já mudaria alguma coisa, certo?</p><p>Usar GPG/PGP não é trivial, entretanto também não um bicho de sete cabeças,
 tem posts aqui que eu já abordei o assunto, fazem alguns anos e podem estar
-desatualizados, mas serve como ponto de partida se você está começando a estudar o assunto agora.</p>
-<h2 id="como-funciona-uma-assinatura-gpg">Como funciona uma assinatura GPG</h2>
-<p><a href="https://www.gnupg.org">GPG</a> ou GNU Privacy Guard é uma implementação livre do
-<a href="https://www.openpgp.org">OpenPGP</a>, que é um padrão para criptografia, descriptografia,
-assinatura, etc, baseado no PGP, desenvolvido por Phil Zimmermann.</p>
-<p>Basicamente o GPG é uma suite de software que te permite gerir chaves criptográficas e
-criptografar e descriptografar usando as chaves geridas por ele.</p>
-<p>Quando uma pessoa cria um par de chaves, ela pode compartilhar a chave pública com outras pessoas,
+desatualizados, mas serve como ponto de partida se você está começando a estudar o assunto agora.</p><h2 id=como-funciona-uma-assinatura-gpg>Como funciona uma assinatura GPG</h2><p><a href=https://www.gnupg.org>GPG</a> ou GNU Privacy Guard é uma implementação livre do
+<a href=https://www.openpgp.org>OpenPGP</a>, que é um padrão para criptografia, descriptografia,
+assinatura, etc, baseado no PGP, desenvolvido por Phil Zimmermann.</p><p>Basicamente o GPG é uma suite de software que te permite gerir chaves criptográficas e
+criptografar e descriptografar usando as chaves geridas por ele.</p><p>Quando uma pessoa cria um par de chaves, ela pode compartilhar a chave pública com outras pessoas,
 que por sua vez também compartilham as suas e quando há uma relação de confiança entre elas,
-as suas chaves podem ser mutuamente assinadas o que demonstra para terceiros que as chaves são legítimas.</p>
-<p>A minha chave pública está disponível <a href="/pub-key.asc">aqui</a> bem como no
-<a href="https://keys.openpgp.org/search?q=FF676DC52A0191C3">servidor do OpenPGP</a>.</p>
-<p>Voltando&hellip;</p>
-<p>No caso das assinaturas das páginas HTML do meu site, qualquer pessoa pode verificar
-se elas estão assinadas com a minha chave ou não, nesse segundo caso o conteúdo não é legítimo.</p>
-<h2 id="assinar-o-próprio-arquivo-ou-em-um-arquivo-separado">Assinar o próprio arquivo ou em um arquivo separado?</h2>
-<p>Os arquivos do meu site estão assinados no próprio html, mas a assinatura poderia
-estar em um arquivo separado.</p>
-<p>Em um arquivo separado, seria algo assim: O endereço <a href="https://site.com/index.html">https://site.com/index.html</a>
-teria um endereço com um arquivo correspondente chamado <a href="https://site.com/index.asc">https://site.com/index.asc</a>,
-cujo conteúdo é a assinatura criptográfica do arquivo index.html.</p>
-<p>Eu optei por deixar no mesmo arquivo para facilitar
-o processo de validação, mas ambas as maneiras são válidas.</p>
-<p>Caso tenha curiosidade para ver como é o arquivo com a assinatura embutida, utilize
-a funcionalidade <em>Mostrar código-fonte do seu navegador</em>.</p>
-<h2 id="como-validar-a-integridade-do-arquivo-assinado">Como validar a integridade do arquivo assinado?</h2>
-<p>Primeiro a minha chave pública deve ser importada para seu gerenciador de chaves (GPG Suite por exemplo),
-depois basta fazer o download do arquivo html e usar o comando <em>verify</em> do GPG para checar a integridade.</p>
-<p>Para validar o arquivo HTML da home do meu site, basta executar o seguinte comando no seu terminal:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl https://adlermedrado.com.br/ | gpg --verify
-</span></span></code></pre></div><p>Resultado:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl https://adlermedrado.com.br/ | gpg --verify
-</span></span><span style="display:flex;"><span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-</span></span><span style="display:flex;"><span>                                 Dload  Upload   Total   Spent    Left  Speed
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">100</span>  <span style="color:#ae81ff">7413</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">7413</span>    <span style="color:#ae81ff">0</span>     <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">7803</span>      <span style="color:#ae81ff">0</span> --:--:-- --:--:-- --:--:--  <span style="color:#ae81ff">7803</span>
-</span></span><span style="display:flex;"><span>gpg: Signature made Dom <span style="color:#ae81ff">31</span> Dez 13:19:04 <span style="color:#ae81ff">2023</span> -03
-</span></span><span style="display:flex;"><span>gpg:                using RSA key 39A90E7D803B5C02D3EFEBA7FF676DC52A0191C3
-</span></span><span style="display:flex;"><span>gpg: Good signature from <span style="color:#e6db74">&#34;Adler Medrado &lt;adler@adlermedrado.com.br&gt;&#34;</span> <span style="color:#f92672">[</span>ultimate<span style="color:#f92672">]</span>
+as suas chaves podem ser mutuamente assinadas o que demonstra para terceiros que as chaves são legítimas.</p><p>A minha chave pública está disponível <a href=/pub-key.asc>aqui</a> bem como no
+<a href="https://keys.openpgp.org/search?q=FF676DC52A0191C3">servidor do OpenPGP</a>.</p><p>Voltando&mldr;</p><p>No caso das assinaturas das páginas HTML do meu site, qualquer pessoa pode verificar
+se elas estão assinadas com a minha chave ou não, nesse segundo caso o conteúdo não é legítimo.</p><h2 id=assinar-o-próprio-arquivo-ou-em-um-arquivo-separado>Assinar o próprio arquivo ou em um arquivo separado?</h2><p>Os arquivos do meu site estão assinados no próprio html, mas a assinatura poderia
+estar em um arquivo separado.</p><p>Em um arquivo separado, seria algo assim: O endereço <a href=https://site.com/index.html>https://site.com/index.html</a>
+teria um endereço com um arquivo correspondente chamado <a href=https://site.com/index.asc>https://site.com/index.asc</a>,
+cujo conteúdo é a assinatura criptográfica do arquivo index.html.</p><p>Eu optei por deixar no mesmo arquivo para facilitar
+o processo de validação, mas ambas as maneiras são válidas.</p><p>Caso tenha curiosidade para ver como é o arquivo com a assinatura embutida, utilize
+a funcionalidade <em>Mostrar código-fonte do seu navegador</em>.</p><h2 id=como-validar-a-integridade-do-arquivo-assinado>Como validar a integridade do arquivo assinado?</h2><p>Primeiro a minha chave pública deve ser importada para seu gerenciador de chaves (GPG Suite por exemplo),
+depois basta fazer o download do arquivo html e usar o comando <em>verify</em> do GPG para checar a integridade.</p><p>Para validar o arquivo HTML da home do meu site, basta executar o seguinte comando no seu terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
+</span></span></code></pre></div><p>Resultado:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
+</span></span><span style=display:flex><span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+</span></span><span style=display:flex><span>                                 Dload  Upload   Total   Spent    Left  Speed
+</span></span><span style=display:flex><span><span style=color:#ae81ff>100</span>  <span style=color:#ae81ff>7413</span>    <span style=color:#ae81ff>0</span>  <span style=color:#ae81ff>7413</span>    <span style=color:#ae81ff>0</span>     <span style=color:#ae81ff>0</span>   <span style=color:#ae81ff>7803</span>      <span style=color:#ae81ff>0</span> --:--:-- --:--:-- --:--:--  <span style=color:#ae81ff>7803</span>
+</span></span><span style=display:flex><span>gpg: Signature made Dom <span style=color:#ae81ff>31</span> Dez 13:19:04 <span style=color:#ae81ff>2023</span> -03
+</span></span><span style=display:flex><span>gpg:                using RSA key 39A90E7D803B5C02D3EFEBA7FF676DC52A0191C3
+</span></span><span style=display:flex><span>gpg: Good signature from <span style=color:#e6db74>&#34;Adler Medrado &lt;adler@adlermedrado.com.br&gt;&#34;</span> <span style=color:#f92672>[</span>ultimate<span style=color:#f92672>]</span>
 </span></span></code></pre></div><p>Para mostrar o que aconteceria caso o conteúdo do arquivo fosse modificado, eu
-fiz uma modificação e mandei verificar novamente. O resultado:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl https://adlermedrado.com.br/ | gpg --verify
-</span></span><span style="display:flex;"><span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-</span></span><span style="display:flex;"><span>                                 Dload  Upload   Total   Spent    Left  Speed
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">100</span>  <span style="color:#ae81ff">7423</span>    <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">7423</span>    <span style="color:#ae81ff">0</span>     <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">7813</span>      <span style="color:#ae81ff">0</span> --:--:-- --:--:-- --:--:--  <span style="color:#ae81ff">7813</span>
-</span></span><span style="display:flex;"><span>gpg: Signature made Dom <span style="color:#ae81ff">31</span> Dez 13:19:04 <span style="color:#ae81ff">2023</span> -03
-</span></span><span style="display:flex;"><span>gpg:                using RSA key 39A90E7D803B5C02D3EFEBA7FF676DC52A0191C3
-</span></span><span style="display:flex;"><span>gpg: BAD signature from <span style="color:#e6db74">&#34;Adler Medrado &lt;adler@adlermedrado.com.br&gt;&#34;</span> <span style="color:#f92672">[</span>ultimate<span style="color:#f92672">]</span>
+fiz uma modificação e mandei verificar novamente. O resultado:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
+</span></span><span style=display:flex><span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+</span></span><span style=display:flex><span>                                 Dload  Upload   Total   Spent    Left  Speed
+</span></span><span style=display:flex><span><span style=color:#ae81ff>100</span>  <span style=color:#ae81ff>7423</span>    <span style=color:#ae81ff>0</span>  <span style=color:#ae81ff>7423</span>    <span style=color:#ae81ff>0</span>     <span style=color:#ae81ff>0</span>   <span style=color:#ae81ff>7813</span>      <span style=color:#ae81ff>0</span> --:--:-- --:--:-- --:--:--  <span style=color:#ae81ff>7813</span>
+</span></span><span style=display:flex><span>gpg: Signature made Dom <span style=color:#ae81ff>31</span> Dez 13:19:04 <span style=color:#ae81ff>2023</span> -03
+</span></span><span style=display:flex><span>gpg:                using RSA key 39A90E7D803B5C02D3EFEBA7FF676DC52A0191C3
+</span></span><span style=display:flex><span>gpg: BAD signature from <span style=color:#e6db74>&#34;Adler Medrado &lt;adler@adlermedrado.com.br&gt;&#34;</span> <span style=color:#f92672>[</span>ultimate<span style=color:#f92672>]</span>
 </span></span></code></pre></div><p>Esse resultado indica que o arquivo foi modificado, ou seja, não está íntegro
-de acordo com a assinatua contida nele.</p>
-<h2 id="como-assinar-os-arquivos">Como assinar os arquivos</h2>
-<p>Como mencionei anteriormente, estou usando o Hugo para gerar os arquivos estáticos
+de acordo com a assinatua contida nele.</p><h2 id=como-assinar-os-arquivos>Como assinar os arquivos</h2><p>Como mencionei anteriormente, estou usando o Hugo para gerar os arquivos estáticos
 do site, para isso o Hugo possui um comando específico. Como são diversos comandos
 usados nesse processo, eu coloquei todos em um arquivo Makefile pois minha memória
-é péssima.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span><span style="color:#a6e22e">help</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>	@echo <span style="color:#e6db74">&#34;targets:&#34;</span>
-</span></span><span style="display:flex;"><span>	@echo <span style="color:#e6db74">&#34;serve: Run a local hugo development server&#34;</span>
-</span></span><span style="display:flex;"><span>	@echo <span style="color:#e6db74">&#34;build: Build the minified version of the site&#34;</span>
-</span></span><span style="display:flex;"><span>	@echo <span style="color:#e6db74">&#34;clear-sign: PGP Clearsign all HTML pages of the site&#34;</span>
-</span></span><span style="display:flex;"><span>	@echo <span style="color:#e6db74">&#34;deploy: Deploy files to server&#34;</span>
-</span></span><span style="display:flex;"><span>	@echo <span style="color:#e6db74">&#34;help: Show this help&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">serve</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>	hugo server -D
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">build</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>	hugo --gc --minify
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">clear-sign</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>	./clearsign_html.sh
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">deploy</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>	rsync -rvhe ssh --progress --delete ./public/ host:dir
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> serve build signature
+é péssima.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Makefile data-lang=Makefile><span style=display:flex><span><span style=color:#a6e22e>help</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;targets:&#34;</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;serve: Run a local hugo development server&#34;</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;build: Build the minified version of the site&#34;</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;clear-sign: PGP Clearsign all HTML pages of the site&#34;</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;deploy: Deploy files to server&#34;</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;help: Show this help&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>serve</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>	hugo server -D
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>build</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>	hugo --gc --minify
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>clear-sign</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>	./clearsign_html.sh
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>deploy</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>	rsync -rvhe ssh --progress --delete ./public/ host:dir
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>.PHONY</span><span style=color:#f92672>:</span> serve build signature
 </span></span></code></pre></div><p>Após redigir um novo post, eu uso o comando <em>build</em> para converter os arquivos
 markdown em html, em seguida eu uso o comando <em>clear-sign</em> para assinar cada
 arquivo individualmente e em seguida eu atualizo o servidor com os novos arquivos
-usando o comando <em>deploy</em>.</p>
-<p>Para realizar as assinaturas, eu criei um pequeno script bash que é executado
-para cada arquivo:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>shopt -s globstar
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> sign_html <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>  html<span style="color:#f92672">=</span>$1
-</span></span><span style="display:flex;"><span>  temp<span style="color:#f92672">=</span>/tmp/pgp-html-$$
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Copying file </span>$1<span style="color:#e6db74"> to </span>$temp<span style="color:#e6db74"> in order to be signed&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">(</span>
-</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#39;--&gt;&#39;</span>
-</span></span><span style="display:flex;"><span>    cat <span style="color:#e6db74">&#34;</span>$html<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#39;&lt;!--&#39;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">)</span> &gt;$temp
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Signing </span>$temp<span style="color:#e6db74"> and renaming to </span>$html<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">(</span>
-</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#39;&lt;!--&#39;</span>
-</span></span><span style="display:flex;"><span>    gpg --clearsign --default-key YOUR_KEY --output - $temp
-</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#39;--&gt;&#39;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">)</span> &gt;<span style="color:#e6db74">&#34;</span>$html<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Cleaning the garbage...&#34;</span>
-</span></span><span style="display:flex;"><span>  rm $temp
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i in public/**/*.html; <span style="color:#66d9ef">do</span>
-</span></span><span style="display:flex;"><span>  sign_html <span style="color:#e6db74">&#34;</span>$i<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
-</span></span></code></pre></div><h2 id="se-você-não-usa-considere-refletir-sobre-o-assunto">Se você não usa, considere refletir sobre o assunto</h2>
-<p>Gerenciar chaves não é trivial, é necessário estudar e conhecer a ferramenta e os conceitos,
-é por isso que a maioria das pessoas só usam criptografia em casos que consideram importantes.</p>
-<p>É por isso que eu acho projetos como o <a href="https://keybase.io">Keybase</a> interessantes,
-pois facilitam a gestão de chaves e promovem o uso da criptografia.</p>
-<p>Se você nunca usou GPG, sugiro que comece por lá.</p>
-<h2 id="e-daqui-pra-frente">E daqui pra frente?</h2>
-<p>Eu abordei apenas um único ponto relacionado à criptografia, esse universo é
+usando o comando <em>deploy</em>.</p><p>Para realizar as assinaturas, eu criei um pequeno script bash que é executado
+para cada arquivo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/usr/bin/env bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>shopt -s globstar
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> sign_html <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>  html<span style=color:#f92672>=</span>$1
+</span></span><span style=display:flex><span>  temp<span style=color:#f92672>=</span>/tmp/pgp-html-$$
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  echo <span style=color:#e6db74>&#34;Copying file </span>$1<span style=color:#e6db74> to </span>$temp<span style=color:#e6db74> in order to be signed&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>(</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#39;--&gt;&#39;</span>
+</span></span><span style=display:flex><span>    cat <span style=color:#e6db74>&#34;</span>$html<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#39;&lt;!--&#39;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>)</span> &gt;$temp
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  echo <span style=color:#e6db74>&#34;Signing </span>$temp<span style=color:#e6db74> and renaming to </span>$html<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>(</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#39;&lt;!--&#39;</span>
+</span></span><span style=display:flex><span>    gpg --clearsign --default-key YOUR_KEY --output - $temp
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#39;--&gt;&#39;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>)</span> &gt;<span style=color:#e6db74>&#34;</span>$html<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  echo <span style=color:#e6db74>&#34;Cleaning the garbage...&#34;</span>
+</span></span><span style=display:flex><span>  rm $temp
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i in public/**/*.html; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>  sign_html <span style=color:#e6db74>&#34;</span>$i<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><h2 id=se-você-não-usa-considere-refletir-sobre-o-assunto>Se você não usa, considere refletir sobre o assunto</h2><p>Gerenciar chaves não é trivial, é necessário estudar e conhecer a ferramenta e os conceitos,
+é por isso que a maioria das pessoas só usam criptografia em casos que consideram importantes.</p><p>É por isso que eu acho projetos como o <a href=https://keybase.io>Keybase</a> interessantes,
+pois facilitam a gestão de chaves e promovem o uso da criptografia.</p><p>Se você nunca usou GPG, sugiro que comece por lá.</p><h2 id=e-daqui-pra-frente>E daqui pra frente?</h2><p>Eu abordei apenas um único ponto relacionado à criptografia, esse universo é
 vasto e eu aprendo coias novas diariamente e se você tiver tempo e interesse no assunto,
 irá se deparar com temas muito interessantes como Bitcoin (criptomoedas em geral)
-e o protocolo do <a href="https://nostr.com">Nostr</a>, por exemplo.</p>
-<p>Divirta-se, espero que aos poucos as pessoas passem a compreender mais sobre a
+e o protocolo do <a href=https://nostr.com>Nostr</a>, por exemplo.</p><p>Divirta-se, espero que aos poucos as pessoas passem a compreender mais sobre a
 importancia desse tema e cheguem à mesma conclusão que eu:
-<strong>Criptografia é nossa defesa. Criptografe tudo o que puder.</strong></p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/ferramentas-para-uso-diario/">&#8592; Ferramentas para uso diário</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/sudo-touch-id/">Sudo with Touch ID on macOS &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><footer class="glitch-zone" role="contentinfo">
-    <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
-                </div>
-            </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+<strong>Criptografia é nossa defesa. Criptografe tudo o que puder.</strong></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/ferramentas-para-uso-diario/>&#8592; Ferramentas para uso diário</a>
+|
+<a href=https://adlermedrado.com.br/posts/sudo-touch-id/>Sudo with Touch ID on macOS &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

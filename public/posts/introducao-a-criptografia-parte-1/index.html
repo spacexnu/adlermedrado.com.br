@@ -1,198 +1,57 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta property="og:title" content="Introdução a Criptografia — Parte 1">
-<meta property="og:description" content="Eu gosto muito de chuva —apenas quando estou tranquila e confortavelmente em casa— e agora no momento em que escrevo
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Introdução a Criptografia — Parte 1"><meta property="og:description" content="Eu gosto muito de chuva —apenas quando estou tranquila e confortavelmente em casa— e agora no momento em que escrevo
 este, está caindo uma chuva muito boa aqui em Guarapuava/PR, além disso está
 ventando bastante a ponto das janelas da minha casa ficarem vibrando, isso é muito bom para relaxar…
 Eu não sei porque escrevi isso, mas tudo bem, agora vamos ao que interessa.
 Introdução
 O objetivo deste post é tentar mostrar o conceito básico de criptografia de uma maneira bem simples para que todos
 possam entender, pois o que eu desejo é que usuários comuns aka não-técnicos, saibam o que é criptografia e como fazer
-uso dela em seu dia-a-dia.">
-<meta property="og:url" content="http://localhost:1313/posts/introducao-a-criptografia-parte-1/">
-<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
-
-<meta property="og:type" content="article">
-
-
-<meta property="og:image" content="/images/default-og-image.png">
-
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Introdução a Criptografia — Parte 1">
-<meta name="twitter:description" content="Eu gosto muito de chuva —apenas quando estou tranquila e confortavelmente em casa— e agora no momento em que escrevo
+uso dela em seu dia-a-dia."><meta property="og:url" content="https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Introdução a Criptografia — Parte 1"><meta name=twitter:description content="Eu gosto muito de chuva —apenas quando estou tranquila e confortavelmente em casa— e agora no momento em que escrevo
 este, está caindo uma chuva muito boa aqui em Guarapuava/PR, além disso está
 ventando bastante a ponto das janelas da minha casa ficarem vibrando, isso é muito bom para relaxar…
 Eu não sei porque escrevi isso, mas tudo bem, agora vamos ao que interessa.
 Introdução
 O objetivo deste post é tentar mostrar o conceito básico de criptografia de uma maneira bem simples para que todos
 possam entender, pois o que eu desejo é que usuários comuns aka não-técnicos, saibam o que é criptografia e como fazer
-uso dela em seu dia-a-dia.">
-
-<meta name="twitter:image" content="/images/default-og-image.png">
-
-
-    <title>Introdução a Criptografia — Parte 1</title>
-    <meta name="description" content="Eu gosto muito de chuva —apenas quando estou tranquila e confortavelmente em casa— e agora no momento em que escrevo
+uso dela em seu dia-a-dia."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Introdução a Criptografia — Parte 1</title><meta name=description content="Eu gosto muito de chuva —apenas quando estou tranquila e confortavelmente em casa— e agora no momento em que escrevo
 este, está caindo uma chuva muito boa aqui em Guarapuava/PR, além disso está
 ventando bastante a ponto das janelas da minha casa ficarem vibrando, isso é muito bom para relaxar…
 Eu não sei porque escrevi isso, mas tudo bem, agora vamos ao que interessa.
 Introdução
 O objetivo deste post é tentar mostrar o conceito básico de criptografia de uma maneira bem simples para que todos
 possam entender, pois o que eu desejo é que usuários comuns aka não-técnicos, saibam o que é criptografia e como fazer
-uso dela em seu dia-a-dia.">
-    <link rel="author" href="/humans.txt"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="canonical" href="http://localhost:1313/posts/introducao-a-criptografia-parte-1/"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <div class="navbar_right navbar_right_animated">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">what am i doing now</a>
-            <a href="/uses">what am i using</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Introdução a Criptografia — Parte 1</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>December 28, 2014</time>
-                            |
-                            4  minutes  read
-                        </small>
-                        
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Eu gosto muito de chuva —<em>apenas quando estou tranquila e confortavelmente em casa</em>— e agora no momento em que escrevo
-este, está caindo uma chuva muito boa aqui em <a href="http://pt.wikipedia.org/wiki/Guarapuava">Guarapuava/PR</a>, além disso está
-ventando bastante a ponto das janelas da minha casa ficarem vibrando, isso é muito bom para relaxar…</p>
-<p>Eu não sei porque escrevi isso, mas tudo bem, agora vamos ao que interessa.</p>
-<h3 id="introdução">Introdução</h3>
-<p>O objetivo deste post é tentar mostrar o conceito básico de criptografia de uma maneira bem simples para que todos
+uso dela em seu dia-a-dia."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-1/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Introdução a Criptografia — Parte 1</h1><div><div><p><small><time>December 28, 2014</time>
+|
+4 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Eu gosto muito de chuva —<em>apenas quando estou tranquila e confortavelmente em casa</em>— e agora no momento em que escrevo
+este, está caindo uma chuva muito boa aqui em <a href=http://pt.wikipedia.org/wiki/Guarapuava>Guarapuava/PR</a>, além disso está
+ventando bastante a ponto das janelas da minha casa ficarem vibrando, isso é muito bom para relaxar…</p><p>Eu não sei porque escrevi isso, mas tudo bem, agora vamos ao que interessa.</p><h3 id=introdução>Introdução</h3><p>O objetivo deste post é tentar mostrar o conceito básico de criptografia de uma maneira bem simples para que todos
 possam entender, pois o que eu desejo é que <em>usuários comuns</em> aka não-técnicos, saibam o que é criptografia e como fazer
-uso dela em seu dia-a-dia.</p>
-<p>Nos próximos dias eu mostrarei em uma série de posts sobre como configurar e usar tudo o que for necessário para
+uso dela em seu dia-a-dia.</p><p>Nos próximos dias eu mostrarei em uma série de posts sobre como configurar e usar tudo o que for necessário para
 criptografar arquivos e e-mails, creio que assim eu estarei fazendo ao menos um pouquinho para ajudar aqueles que se
-interessam em proteger a sua privacidade mas não sabem por onde começar.</p>
-<h3 id="o-que-é-criptografia">O que é criptografia?</h3>
-<p>O nome tem origem no grego Kryptós (escondido) e gráphein (escrita). É uma ciência que estuda meios que transformem uma
+interessam em proteger a sua privacidade mas não sabem por onde começar.</p><h3 id=o-que-é-criptografia>O que é criptografia?</h3><p>O nome tem origem no grego Kryptós (escondido) e gráphein (escrita). É uma ciência que estuda meios que transformem uma
 informação de seu estado original para outro completamente ilegível, normalmente utilizando técnicas que permita que uma
-informação fique escondida dentro de outra.</p>
-<p>Obviamente a criptografia atual não é algo o simples pois envolve cálculos matemáticos complexos para atingirem seu
-objetivo.</p>
-<h3 id="personalidades-históricas-que-eram-entusiastas-da-criptografia">Personalidades históricas que eram entusiastas da criptografia</h3>
-<ul>
-<li><a href="http://pt.wikipedia.org/wiki/Sun_Tzu">Sun Tzu</a></li>
-<li><a href="http://pt.wikipedia.org/wiki/Adolf_Hitler">Hitler</a></li>
-<li><a href="http://pt.wikipedia.org/wiki/Carl_von_Clausewitz">Carl Von Clausewitz</a></li>
-</ul>
-<p>Como o principal objetivo da criptografia é esconder a informação de atores não autorizados a terem acesso a ela,
-obviamente estrategistas militares infames ou não, tinham um profundo interesse nela.</p>
-<h3 id="uso-na-segunda-guerramundial">Uso na segunda guerra mundial</h3>
-<p>No final da primeira guerra mundial foi desenvolvida uma máquina criptográfica chamada <a href="http://pt.wikipedia.org/wiki/Enigma_%28m%C3%A1quina%29">**Enygma
+informação fique escondida dentro de outra.</p><p>Obviamente a criptografia atual não é algo o simples pois envolve cálculos matemáticos complexos para atingirem seu
+objetivo.</p><h3 id=personalidades-históricas-que-eram-entusiastas-da-criptografia>Personalidades históricas que eram entusiastas da criptografia</h3><ul><li><a href=http://pt.wikipedia.org/wiki/Sun_Tzu>Sun Tzu</a></li><li><a href=http://pt.wikipedia.org/wiki/Adolf_Hitler>Hitler</a></li><li><a href=http://pt.wikipedia.org/wiki/Carl_von_Clausewitz>Carl Von Clausewitz</a></li></ul><p>Como o principal objetivo da criptografia é esconder a informação de atores não autorizados a terem acesso a ela,
+obviamente estrategistas militares infames ou não, tinham um profundo interesse nela.</p><h3 id=uso-na-segunda-guerramundial>Uso na segunda guerra mundial</h3><p>No final da primeira guerra mundial foi desenvolvida uma máquina criptográfica chamada <a href=http://pt.wikipedia.org/wiki/Enigma_%28m%C3%A1quina%29>**Enygma
 **</a>, que foi amplamente usada pelos nazistas e deu bastante
 trabalho para os aliados que só conseguiram compreender as mensagens trocadas entre os alemães após conseguirem quebrar
-o código criptográfico dela.</p>
-<p>Uma outra forma mais rústica, mas que não deixa de ser criptografia e que também foi usada na segunda guerra mundial,
-foi a “<a href="http://navajocodetalkers.org/story-of-the-navajo-code-talkers/">Navajo Code Talkers</a>” que consistia basicamente
+o código criptográfico dela.</p><p>Uma outra forma mais rústica, mas que não deixa de ser criptografia e que também foi usada na segunda guerra mundial,
+foi a “<a href=http://navajocodetalkers.org/story-of-the-navajo-code-talkers/>Navajo Code Talkers</a>” que consistia basicamente
 no uso de indígenas norte-americanos como operadores de rádio que enviavam mensagens em código no idioma deles. Esta
-história é apresentada no filme <a href="http://www.adorocinema.com/filmes/filme-26823/">Códigos de Guerra</a>.</p>
-<h3 id="uso-atualmente">Uso atualmente</h3>
-<p>Atualmente a criptografia é utilizada para proteger qualquer informação considerada importante como:</p>
-<ul>
-<li>Transações bancárias;</li>
-<li>Privacidade;</li>
-<li>Garantia de autenticidade;</li>
-<li>Certificação Digital;</li>
-<li>Navegação segura na internet;</li>
-</ul>
-<p>Emfim, são vários os exemplos, como: Quando você acessa um site e ele conta com criptografia para garantir a comunicação
+história é apresentada no filme <a href=http://www.adorocinema.com/filmes/filme-26823/>Códigos de Guerra</a>.</p><h3 id=uso-atualmente>Uso atualmente</h3><p>Atualmente a criptografia é utilizada para proteger qualquer informação considerada importante como:</p><ul><li>Transações bancárias;</li><li>Privacidade;</li><li>Garantia de autenticidade;</li><li>Certificação Digital;</li><li>Navegação segura na internet;</li></ul><p>Emfim, são vários os exemplos, como: Quando você acessa um site e ele conta com criptografia para garantir a comunicação
 segura entre seu navegador e o servidor onde este site está rodando, o navegador mostra um cadeado que é o sinal que a
-conexão está criptografada.</p>
-<h3 id="exemplo-rústico-decifra">Exemplo rústico de cifra</h3>
-<p>Supondo que você queira mandar a seguinte mensagem para alguém, mas deseja que somente o destinatário possa
-interpreta-la:</p>
-<p><strong>EU VOU PRA CASA</strong></p>
-<p><strong>5 20 21 14 20 15 17 1 3 18 1</strong></p>
-<p>Acho que deu pra compreender que cada letra foi substituída pelo seu respectivo número na ordem do alfabeto, supondo que
+conexão está criptografada.</p><h3 id=exemplo-rústico-decifra>Exemplo rústico de cifra</h3><p>Supondo que você queira mandar a seguinte mensagem para alguém, mas deseja que somente o destinatário possa
+interpreta-la:</p><p><strong>EU VOU PRA CASA</strong></p><p><strong>5 20 21 14 20 15 17 1 3 18 1</strong></p><p>Acho que deu pra compreender que cada letra foi substituída pelo seu respectivo número na ordem do alfabeto, supondo que
 o código para cifrar/decifrar a mensagem fosse 10, ela ficaria conforme abaixo, pois seria somado o valor original com
-10:</p>
-<p><strong>15 30 31 24 30 25 27 11 13 11 28 11</strong></p>
-<p>Para decifrar a mensagem, bastaria conforme previamente combinado com o destinatário, subtrair 10 de cada número da
-mensagem para então poder converte-la em letra novamente e ficar ciente que a mensagem era “EU VOU PRA CASA”.</p>
-<p><strong>Obviamente, isso é só um exemplo, não use isso de maneira nenhuma.</strong></p>
-<p>Outra técnica interessante para ser estudada é a <a href="http://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar">Cifra de Cesar</a>.</p>
-<p>Mas ficou bem claro que uma das vulnerabilidades deste tipo de método é que o mesmo código que criptografa é usado para
-descriptografar, certo?</p>
-<p>No próximo post eu mostrarei os meios utilizados hoje em dia que garantem uma segurança maior em todos os sentidos.</p>
-<p>Quer ler a parte 2 agora? <a href="http://blog.adlermedrado.com.br/2014/12/introducao-a-criptografia-parte-2">Vamos lá</a>.</p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/meu-ambiente-de-trabalho-na-plataforma-windows/">&#8592; Meu ambiente de trabalho na plataforma Windows</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/introducao-a-criptografia-parte-2/">Introdução a Criptografia — Parte 2 &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><footer class="glitch-zone" role="contentinfo">
-    <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
-                </div>
-            </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+10:</p><p><strong>15 30 31 24 30 25 27 11 13 11 28 11</strong></p><p>Para decifrar a mensagem, bastaria conforme previamente combinado com o destinatário, subtrair 10 de cada número da
+mensagem para então poder converte-la em letra novamente e ficar ciente que a mensagem era “EU VOU PRA CASA”.</p><p><strong>Obviamente, isso é só um exemplo, não use isso de maneira nenhuma.</strong></p><p>Outra técnica interessante para ser estudada é a <a href=http://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar>Cifra de Cesar</a>.</p><p>Mas ficou bem claro que uma das vulnerabilidades deste tipo de método é que o mesmo código que criptografa é usado para
+descriptografar, certo?</p><p>No próximo post eu mostrarei os meios utilizados hoje em dia que garantem uma segurança maior em todos os sentidos.</p><p>Quer ler a parte 2 agora? <a href=http://blog.adlermedrado.com.br/2014/12/introducao-a-criptografia-parte-2>Vamos lá</a>.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/>&#8592; Meu ambiente de trabalho na plataforma Windows</a>
+|
+<a href=https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-2/>Introdução a Criptografia — Parte 2 &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

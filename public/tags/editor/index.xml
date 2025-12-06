@@ -1,19 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Editor on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/editor/</link>
-    <description>Recent content in Editor on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 04 Aug 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/editor/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Atom e PHP: Em busca da configuração perfeita</title>
-      <link>http://localhost:1313/posts/atom-e-php-em-busca-da-configuracao-perfeita/</link>
-      <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/atom-e-php-em-busca-da-configuracao-perfeita/</guid>
-      <description>&lt;p&gt;Como eu&#xA;disse &lt;a href=&#34;http://blog.adlermedrado.com.br/2015/07/31/migrando-para-o-atom.html&#34; title=&#34;Migrando para o Atom&#34;&gt;recentemente&lt;/a&gt;, eu&#xA;deixei de usar o Textmate, passei a usar o &lt;a href=&#34;https://atom.io&#34;&gt;Atom&lt;/a&gt; e recomendei alguns &lt;em&gt;packages&lt;/em&gt; que eu estou usando e&#xA;estão me ajudando diariamente.&lt;/p&gt;&#xA;&lt;p&gt;Neste post eu quero mostrar mais alguns &lt;em&gt;packages&lt;/em&gt; bem úteis para desenvolvimento PHP:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;linter-phpmd&lt;/li&gt;&#xA;&lt;li&gt;linter-phpcs&lt;/li&gt;&#xA;&lt;li&gt;php-getters-setters&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Os dois primeiros para funcionar precisam que tanto o PHPMD (PHP Mess Detector) e o PHP_CodeSniffer esteja instalados&#xA;no ambiente e acessíveis por meio do PATH, ou seja, os comandos phpcs e phpmd devem ser acessíveis de qualquer local.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Editor on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/editor/</link><description>Recent content in Editor on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 04 Aug 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/editor/index.xml" rel="self" type="application/rss+xml"/><item><title>Atom e PHP: Em busca da configuração perfeita</title><link>https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</link><pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/atom-e-php-em-busca-da-configuracao-perfeita/</guid><description>&lt;p&gt;Como eu
+disse &lt;a href="http://blog.adlermedrado.com.br/2015/07/31/migrando-para-o-atom.html" title="Migrando para o Atom"&gt;recentemente&lt;/a&gt;, eu
+deixei de usar o Textmate, passei a usar o &lt;a href="https://atom.io"&gt;Atom&lt;/a&gt; e recomendei alguns &lt;em&gt;packages&lt;/em&gt; que eu estou usando e
+estão me ajudando diariamente.&lt;/p&gt;
+&lt;p&gt;Neste post eu quero mostrar mais alguns &lt;em&gt;packages&lt;/em&gt; bem úteis para desenvolvimento PHP:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;linter-phpmd&lt;/li&gt;
+&lt;li&gt;linter-phpcs&lt;/li&gt;
+&lt;li&gt;php-getters-setters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Os dois primeiros para funcionar precisam que tanto o PHPMD (PHP Mess Detector) e o PHP_CodeSniffer esteja instalados
+no ambiente e acessíveis por meio do PATH, ou seja, os comandos phpcs e phpmd devem ser acessíveis de qualquer local.&lt;/p&gt;</description></item></channel></rss>

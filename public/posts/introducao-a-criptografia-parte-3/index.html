@@ -1,275 +1,84 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta property="og:title" content="Introdução a Criptografia — Parte 3">
-<meta property="og:description" content="Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Introdução a Criptografia — Parte 3"><meta property="og:description" content="Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma
 Windows, Gnu/Linux e Darwin (Mac OS X).
 Apesar de cada plataforma possuir ferramentas gráficas para a gestão das chaves, não é fácil manter uma uniformidade
 neste processo, então eu mostrarei como fazer esta gestão utilizando o cliente de e-mail pois assim haverá uniformidade
 independente da plataforma utilizada por você, leitor.
 É possível também gerenciar estas chaves através da linha de comando, no entanto meu objetivo aqui é facilitar e não
 complicar e eu presumo também que se você, caro leitor, possui as habilidades necessárias para usar a linha de comando
-em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas man pages ou similares.">
-<meta property="og:url" content="http://localhost:1313/posts/introducao-a-criptografia-parte-3/">
-<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
-
-<meta property="og:type" content="article">
-
-
-<meta property="og:image" content="/images/default-og-image.png">
-
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Introdução a Criptografia — Parte 3">
-<meta name="twitter:description" content="Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma
+em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas man pages ou similares."><meta property="og:url" content="https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Introdução a Criptografia — Parte 3"><meta name=twitter:description content="Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma
 Windows, Gnu/Linux e Darwin (Mac OS X).
 Apesar de cada plataforma possuir ferramentas gráficas para a gestão das chaves, não é fácil manter uma uniformidade
 neste processo, então eu mostrarei como fazer esta gestão utilizando o cliente de e-mail pois assim haverá uniformidade
 independente da plataforma utilizada por você, leitor.
 É possível também gerenciar estas chaves através da linha de comando, no entanto meu objetivo aqui é facilitar e não
 complicar e eu presumo também que se você, caro leitor, possui as habilidades necessárias para usar a linha de comando
-em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas man pages ou similares.">
-
-<meta name="twitter:image" content="/images/default-og-image.png">
-
-
-    <title>Introdução a Criptografia — Parte 3</title>
-    <meta name="description" content="Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma
+em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas man pages ou similares."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Introdução a Criptografia — Parte 3</title><meta name=description content="Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma
 Windows, Gnu/Linux e Darwin (Mac OS X).
 Apesar de cada plataforma possuir ferramentas gráficas para a gestão das chaves, não é fácil manter uma uniformidade
 neste processo, então eu mostrarei como fazer esta gestão utilizando o cliente de e-mail pois assim haverá uniformidade
 independente da plataforma utilizada por você, leitor.
 É possível também gerenciar estas chaves através da linha de comando, no entanto meu objetivo aqui é facilitar e não
 complicar e eu presumo também que se você, caro leitor, possui as habilidades necessárias para usar a linha de comando
-em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas man pages ou similares.">
-    <link rel="author" href="/humans.txt"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="canonical" href="http://localhost:1313/posts/introducao-a-criptografia-parte-3/"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <div class="navbar_right navbar_right_animated">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">what am i doing now</a>
-            <a href="/uses">what am i using</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Introdução a Criptografia — Parte 3</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>January 6, 2015</time>
-                            |
-                            8  minutes  read
-                        </small>
-                        
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma
-Windows, Gnu/Linux e Darwin (Mac OS X).</p>
-<p>Apesar de cada plataforma possuir ferramentas gráficas para a gestão das chaves, não é fácil manter uma uniformidade
+em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas man pages ou similares."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/introducao-a-criptografia-parte-3/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Introdução a Criptografia — Parte 3</h1><div><div><p><small><time>January 6, 2015</time>
+|
+8 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma
+Windows, Gnu/Linux e Darwin (Mac OS X).</p><p>Apesar de cada plataforma possuir ferramentas gráficas para a gestão das chaves, não é fácil manter uma uniformidade
 neste processo, então eu mostrarei como fazer esta gestão utilizando o cliente de e-mail pois assim haverá uniformidade
-independente da plataforma utilizada por você, leitor.<br>
-É possível também gerenciar estas chaves através da linha de comando, no entanto meu objetivo aqui é facilitar e não
+independente da plataforma utilizada por você, leitor.<br>É possível também gerenciar estas chaves através da linha de comando, no entanto meu objetivo aqui é facilitar e não
 complicar e eu presumo também que se você, caro leitor, possui as habilidades necessárias para usar a linha de comando
-em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas <em>man pages</em> ou similares.</p>
-<h3 id="importante">Importante</h3>
-<p>Se você chegou primeiro nesta parte da série, eu recomendo que leia
-a <a href="/posts/introducao-a-criptografia-parte-1">primeira</a> e
-a <a href="/posts/introducao-a-criptografia-parte-2">segunda</a> antes.</p>
-<h3 id="instalação-do-gnupg">Instalação do <a href="https://www.gnupg.org/">GnuPG</a>.</h3>
-<h3 id="gnulinux">Gnu/Linux</h3>
-<p>Normalmente o GnuPG já vem instalado, mas certifique-se disso executando o comando em seu shell:</p>
-<p>adler@adler: ~ $ gpg — version</p>
-<p>Se o resultado não for semelhante ao exemplo abaixo, provavelmente você precisará fazer a instalação, neste caso, por
+em seu dia-a-dia, você não sentirá dificuldades em buscar essas informações nas <em>man pages</em> ou similares.</p><h3 id=importante>Importante</h3><p>Se você chegou primeiro nesta parte da série, eu recomendo que leia
+a <a href=/posts/introducao-a-criptografia-parte-1>primeira</a> e
+a <a href=/posts/introducao-a-criptografia-parte-2>segunda</a> antes.</p><h3 id=instalação-do-gnupg>Instalação do <a href=https://www.gnupg.org/>GnuPG</a>.</h3><h3 id=gnulinux>Gnu/Linux</h3><p>Normalmente o GnuPG já vem instalado, mas certifique-se disso executando o comando em seu shell:</p><p>adler@adler: ~ $ gpg — version</p><p>Se o resultado não for semelhante ao exemplo abaixo, provavelmente você precisará fazer a instalação, neste caso, por
 não existir uniformidade entre os gerenciadores de pacotes das distribuições, aconselho você a procurar a documentação
-de sua distribuição:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gpg <span style="color:#f92672">(</span> GnuPG <span style="color:#f92672">)</span> 1.4.16  
-</span></span><span style="display:flex;"><span>Copyright <span style="color:#f92672">(</span> C <span style="color:#f92672">)</span> <span style="color:#ae81ff">2013</span> Free Software Foundation , Inc .  
-</span></span><span style="display:flex;"><span>License GPLv3 +: GNU GPL version <span style="color:#ae81ff">3</span> or later &lt; http: / / gnu .org / licenses / gpl .html &gt;  
-</span></span><span style="display:flex;"><span>This is free software: you are free to change and redistribute it .  
-</span></span><span style="display:flex;"><span>There is NO WARRANTY , to the extent permitted by law .
-</span></span></code></pre></div><h3 id="darwin--mac-os-x">Darwin / Mac OS X</h3>
-<p>Quando eu usava Mac eu instalava o <a href="https://gpgtools.org/">GPGTools</a> e a instalação também é bem tranquila.</p>
-<h3 id="windows">Windows</h3>
-<p>No Windows é necessário fazer o download do <a href="http://www.gpg4win.org/">GPG4Win</a>, eu sempre faço o download do pacote
-completo.</p>
-<p>A instalação em ambiente Windows é aquela de sempre: <em>next, next, next, finish</em>,<br>
-então não entrarei em detalhes neste ponto.</p>
-<h3 id="cliente-de-e-mail">Cliente de e-mail</h3>
-<p>O cliente de e-mail que eu uso em meu dia-a-dia é o <a href="http://postbox-inc.com/">Postbox</a> e como ele é derivado
-do <a href="https://www.mozilla.org/pt-BR/thunderbird/">Thunderbird</a>, o passo-a-passo mostrado aqui em tese funcionará nele
-também.</p>
-<p>É importante lembrar que existem outros clientes de e-mail que suportam o GnuPG, mas o único multiplataforma e
-open-source que conheço que seja fácil de usar é o Thunderbird.</p>
-<h3 id="instalação-do-thunderbird">Instalação do Thunderbird</h3>
-<p>Eu não mostrarei os passos para fazer a instalação do Thunderbird aqui, ao invés disso siga as instruções da
-documentação oficial do Thunderbird para cada plataforma através dos links abaixo, é bem simples:</p>
-<ul>
-<li><a href="https://support.mozilla.org/pt-BR/kb/instalando-thunderbir-linux">Instalação do Mozilla Thunderbird no Linux</a></li>
-<li><a href="https://support.mozilla.org/pt-BR/kb/instalando-o-thunderbird-no-mac">Instalação do Mozilla Thunderbird no Mac</a></li>
-<li><a href="https://support.mozilla.org/pt-BR/kb/instalando-thunderbird-no-windows">Instalação do Mozilla Thunderbird no Windows</a></li>
-</ul>
-<blockquote>
-<p><strong>Importante</strong>: É bem provável que
-o <a href="https://support.mozilla.org/pt-BR/kb/configuracao-automatica-de-conta">Thunderbird irá configur facilmente o seu e-mail para uso nele</a>,
-se não for o caso, a empresa que te presta serviço de e-mail poderá auxiliá-lo na configuração.</p>
-</blockquote>
-<h3 id="instalação-do-enigmail">Instalação do Enigmail</h3>
-<p>O <a href="https://www.enigmail.net/home/index.php">Enigmail</a> é um complemento para o thunderbird que permite fazer a integração
+de sua distribuição:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>gpg <span style=color:#f92672>(</span> GnuPG <span style=color:#f92672>)</span> 1.4.16  
+</span></span><span style=display:flex><span>Copyright <span style=color:#f92672>(</span> C <span style=color:#f92672>)</span> <span style=color:#ae81ff>2013</span> Free Software Foundation , Inc .  
+</span></span><span style=display:flex><span>License GPLv3 +: GNU GPL version <span style=color:#ae81ff>3</span> or later &lt; http: / / gnu .org / licenses / gpl .html &gt;  
+</span></span><span style=display:flex><span>This is free software: you are free to change and redistribute it .  
+</span></span><span style=display:flex><span>There is NO WARRANTY , to the extent permitted by law .
+</span></span></code></pre></div><h3 id=darwin--mac-os-x>Darwin / Mac OS X</h3><p>Quando eu usava Mac eu instalava o <a href=https://gpgtools.org/>GPGTools</a> e a instalação também é bem tranquila.</p><h3 id=windows>Windows</h3><p>No Windows é necessário fazer o download do <a href=http://www.gpg4win.org/>GPG4Win</a>, eu sempre faço o download do pacote
+completo.</p><p>A instalação em ambiente Windows é aquela de sempre: <em>next, next, next, finish</em>,<br>então não entrarei em detalhes neste ponto.</p><h3 id=cliente-de-e-mail>Cliente de e-mail</h3><p>O cliente de e-mail que eu uso em meu dia-a-dia é o <a href=http://postbox-inc.com/>Postbox</a> e como ele é derivado
+do <a href=https://www.mozilla.org/pt-BR/thunderbird/>Thunderbird</a>, o passo-a-passo mostrado aqui em tese funcionará nele
+também.</p><p>É importante lembrar que existem outros clientes de e-mail que suportam o GnuPG, mas o único multiplataforma e
+open-source que conheço que seja fácil de usar é o Thunderbird.</p><h3 id=instalação-do-thunderbird>Instalação do Thunderbird</h3><p>Eu não mostrarei os passos para fazer a instalação do Thunderbird aqui, ao invés disso siga as instruções da
+documentação oficial do Thunderbird para cada plataforma através dos links abaixo, é bem simples:</p><ul><li><a href=https://support.mozilla.org/pt-BR/kb/instalando-thunderbir-linux>Instalação do Mozilla Thunderbird no Linux</a></li><li><a href=https://support.mozilla.org/pt-BR/kb/instalando-o-thunderbird-no-mac>Instalação do Mozilla Thunderbird no Mac</a></li><li><a href=https://support.mozilla.org/pt-BR/kb/instalando-thunderbird-no-windows>Instalação do Mozilla Thunderbird no Windows</a></li></ul><blockquote><p><strong>Importante</strong>: É bem provável que
+o <a href=https://support.mozilla.org/pt-BR/kb/configuracao-automatica-de-conta>Thunderbird irá configur facilmente o seu e-mail para uso nele</a>,
+se não for o caso, a empresa que te presta serviço de e-mail poderá auxiliá-lo na configuração.</p></blockquote><h3 id=instalação-do-enigmail>Instalação do Enigmail</h3><p>O <a href=https://www.enigmail.net/home/index.php>Enigmail</a> é um complemento para o thunderbird que permite fazer a integração
 entre ele e o GnuPG. Com ele é possível enviar e-mails criptografamos diretamente pelo cliente de e-mail sem precisar
-fazer dois procedimentos distintos (criptografar um arquivo e posteriormente anexá-lo a um e-mail).</p>
-<p>Através do menu, selecione a opção <strong>Complementos</strong>. O menu é localizado no<br>
-final da barra de menus, do lado direito, veja a imagem abaixo:</p>
-<p>Em <strong>Adicionar</strong>, no campo de busca, digite: <strong>Enigmail</strong> e serão mostrados diversos complementos, no ato em que este
-tutorial foi escrito ele estava na<br>
-primeira posição dos resultados com o nome: <strong>Enigmail 1.7.2</strong>, selecione-o<br>
-clicando no botão <strong>Instalar</strong>.</p>
-<p>Quando a instalação terminar, reinicie o Thunderbird e ao reinicia-lo, quando for solicitado informe que você não quer
-usar o <em>wizard</em>.</p>
-<h3 id="criando-seu-primeiro-par-de-chaves">Criando seu primeiro par de chaves</h3>
-<p>Agora que o ambiente está configurado, está na hora de criar seu primeiro par de chaves.</p>
-<p>Selecione o menu (o mesmo do screenshot acima) e em seguida a opção Enigmail, depois selecione a opção <strong>Gerenciamento
-de Chaves OpenPGP</strong>.</p>
-<p>Se abriu uma tela parecida com a da imagem abaixo, parabéns, se não abriu, siga todos os passos novamente pois deve ter
-ocorrido algum erro.</p>
-<p>Selecione a opção <strong>Gerar</strong> e depois <strong>Novo par de Chaves</strong>.</p>
-<p>Bom, como dizia Jack o Estripador, vamos por partes:</p>
-<ul>
-<li>Essa nova chave será associada ao e-mail que você configurou no Thunderbird, se você configurou mais do que uma conta,
+fazer dois procedimentos distintos (criptografar um arquivo e posteriormente anexá-lo a um e-mail).</p><p>Através do menu, selecione a opção <strong>Complementos</strong>. O menu é localizado no<br>final da barra de menus, do lado direito, veja a imagem abaixo:</p><p>Em <strong>Adicionar</strong>, no campo de busca, digite: <strong>Enigmail</strong> e serão mostrados diversos complementos, no ato em que este
+tutorial foi escrito ele estava na<br>primeira posição dos resultados com o nome: <strong>Enigmail 1.7.2</strong>, selecione-o<br>clicando no botão <strong>Instalar</strong>.</p><p>Quando a instalação terminar, reinicie o Thunderbird e ao reinicia-lo, quando for solicitado informe que você não quer
+usar o <em>wizard</em>.</p><h3 id=criando-seu-primeiro-par-de-chaves>Criando seu primeiro par de chaves</h3><p>Agora que o ambiente está configurado, está na hora de criar seu primeiro par de chaves.</p><p>Selecione o menu (o mesmo do screenshot acima) e em seguida a opção Enigmail, depois selecione a opção <strong>Gerenciamento
+de Chaves OpenPGP</strong>.</p><p>Se abriu uma tela parecida com a da imagem abaixo, parabéns, se não abriu, siga todos os passos novamente pois deve ter
+ocorrido algum erro.</p><p>Selecione a opção <strong>Gerar</strong> e depois <strong>Novo par de Chaves</strong>.</p><p>Bom, como dizia Jack o Estripador, vamos por partes:</p><ul><li>Essa nova chave será associada ao e-mail que você configurou no Thunderbird, se você configurou mais do que uma conta,
 você deve selecionar a conta desejada no primeiro campo (um combobox) no início da tela. Dá pra criar uma chave sem
 associar, mas creio que para o escopo deste tutorial assim é melhor, mas se você quiser desmarcar o <em>checkbox</em> <strong>Usar
-chave gerada para a identidade selecionada</strong>, fica a seu critério;</li>
-<li>Para prover uma segurança maior para a sua chave, crie uma senha usando os campos <em>Senha</em> e <em>Senha (repita)</em>, não
-utilize senhas óbvias como datas de nascimento, placas de carro, nome da esposa/namorada, nome do cachorro, etc.<br>
-Quanto mais longa for a sua senha, melhor;</li>
-<li>Vamos criar uma chave de 4096 bits, pense nos bits da seguinte forma: Quanto mais, mais difícil quebrar a
+chave gerada para a identidade selecionada</strong>, fica a seu critério;</li><li>Para prover uma segurança maior para a sua chave, crie uma senha usando os campos <em>Senha</em> e <em>Senha (repita)</em>, não
+utilize senhas óbvias como datas de nascimento, placas de carro, nome da esposa/namorada, nome do cachorro, etc.<br>Quanto mais longa for a sua senha, melhor;</li><li>Vamos criar uma chave de 4096 bits, pense nos bits da seguinte forma: Quanto mais, mais difícil quebrar a
 criptografia, porém alguns computadores podem ter problemas para processar isso, então caso ocorram tratamentos
-selecione a opção <strong>Avançado</strong> e diminua o tamanho da chave;</li>
-<li>A data de expiração da chave fica a seu critério também, eu configurei aqui para não expirar;</li>
-<li>Clique em Gerar e aguarde;</li>
-<li>Quando este processo for finalizado, será solicitado a você que crie um certificado de revogação, você deve estar se
-perguntando: <strong>Mas o que que é isso?</strong><br>
-Vamos lá…</li>
-</ul>
-<p>Imagine uma situação onde você utiliza suas chaves constantemente mas que por algum motivo você acredita que ela esteja
+selecione a opção <strong>Avançado</strong> e diminua o tamanho da chave;</li><li>A data de expiração da chave fica a seu critério também, eu configurei aqui para não expirar;</li><li>Clique em Gerar e aguarde;</li><li>Quando este processo for finalizado, será solicitado a você que crie um certificado de revogação, você deve estar se
+perguntando: <strong>Mas o que que é isso?</strong><br>Vamos lá…</li></ul><p>Imagine uma situação onde você utiliza suas chaves constantemente mas que por algum motivo você acredita que ela esteja
 comprometida ou até mesmo você a tenha perdido. Todas as pessoas que possuem a sua chave pública continuarão pensando
 que está tudo OK com suas chaves, no entanto você não quer mais receber nada que tenha sido cifrado usando sua chave
-pública, para isso você usa o certificado de revogação, para invalidar a sua chave e avisar a todos que aquela<br>
-chave não é mais segura.</p>
-<p>Eu mostrarei daqui a pouco que as chaves públicas podem ser enviadas para um <em>servidor de chaves</em>, neste caso quando é
-feita a revogação os servidores de chave são atualizados e esta informação é propagada para todos.</p>
-<p>Vamos continuar, confirme a criação do certificado de revogação e depois guarde-o em um local seguro.</p>
-<h3 id="enviando-as-chaves-para-um-servidor">Enviando as chaves para um servidor</h3>
-<p>Como eu falei anteriormente, as chaves podem ser enviadas para servidores de chaves. Existem diversos desses servidores
+pública, para isso você usa o certificado de revogação, para invalidar a sua chave e avisar a todos que aquela<br>chave não é mais segura.</p><p>Eu mostrarei daqui a pouco que as chaves públicas podem ser enviadas para um <em>servidor de chaves</em>, neste caso quando é
+feita a revogação os servidores de chave são atualizados e esta informação é propagada para todos.</p><p>Vamos continuar, confirme a criação do certificado de revogação e depois guarde-o em um local seguro.</p><h3 id=enviando-as-chaves-para-um-servidor>Enviando as chaves para um servidor</h3><p>Como eu falei anteriormente, as chaves podem ser enviadas para servidores de chaves. Existem diversos desses servidores
 espalhados pela internet e normalmente eles fazem uma sincronização entre si, portanto basicamente se você enviar sua
-chave para um servidor, em breve ela estará replicada nos demais (pelo menos nos principais, mais famosos).</p>
-<p><strong>Somente sua chave pública vai para o servidor, a sua chave privada é responsabilidade sua protegê-la.</strong></p>
-<h3 id="mas-por-que-enviar-a-chave-pública-para-um-servidor">Mas por que enviar a chave pública para um servidor?</h3>
-<p>A resposta é simples: Para ficar mais fácil de você ser encontrado.</p>
-<p>Como normalmente a chave está associada a um endereço de e-mail, se alguém quiser te enviar algo criptografado mas não
+chave para um servidor, em breve ela estará replicada nos demais (pelo menos nos principais, mais famosos).</p><p><strong>Somente sua chave pública vai para o servidor, a sua chave privada é responsabilidade sua protegê-la.</strong></p><h3 id=mas-por-que-enviar-a-chave-pública-para-um-servidor>Mas por que enviar a chave pública para um servidor?</h3><p>A resposta é simples: Para ficar mais fácil de você ser encontrado.</p><p>Como normalmente a chave está associada a um endereço de e-mail, se alguém quiser te enviar algo criptografado mas não
 sabe qual é sua chave pública, basta essa pessoa pesquisar pelo seu e-mail em um servidor de chaves para poder
-encontrá-la.</p>
-<p><strong>Agora vamos enviar nossa nova chave para um servidor.</strong></p>
-<p>Na tela de gerenciamento de chaves, clique com o botão direito em cima do seu endereço de e-mail, em seguida clique em *
-<em>Enviar chaves públicas para servidor de chaves</em>*.</p>
-<p>Pronto. ?</p>
-<h3 id="que-tal-enviar-um-e-mail-criptografado-para-testar">Que tal enviar um e-mail criptografado para testar?</h3>
-<p><strong>Primeiramente, importe a minha chave pública.</strong></p>
-<p>Abra a tela de gerenciamento de chaves e selecione a opção <strong>Servidor de Chaves</strong> no menu, em seguida selecione a opção
-<strong>Procurar por chaves</strong>,<br>
-daí coloque meu e-mail: adler <em>arroba</em> adlermedrado <em>ponto</em> com <em>ponto</em> br,<br>
-serão mostradas muitas chaves, a maioria delas estão inválidas e eu esqueci de criar o certificado de revogação (daí a
+encontrá-la.</p><p><strong>Agora vamos enviar nossa nova chave para um servidor.</strong></p><p>Na tela de gerenciamento de chaves, clique com o botão direito em cima do seu endereço de e-mail, em seguida clique em *
+<em>Enviar chaves públicas para servidor de chaves</em>*.</p><p>Pronto. ?</p><h3 id=que-tal-enviar-um-e-mail-criptografado-para-testar>Que tal enviar um e-mail criptografado para testar?</h3><p><strong>Primeiramente, importe a minha chave pública.</strong></p><p>Abra a tela de gerenciamento de chaves e selecione a opção <strong>Servidor de Chaves</strong> no menu, em seguida selecione a opção
+<strong>Procurar por chaves</strong>,<br>daí coloque meu e-mail: adler <em>arroba</em> adlermedrado <em>ponto</em> com <em>ponto</em> br,<br>serão mostradas muitas chaves, a maioria delas estão inválidas e eu esqueci de criar o certificado de revogação (daí a
 importância deles), ignore todas as chaves com exceção daquela que tem o ID <strong>158299F</strong>, selecione-a e faça a importação
-clicando em OK.</p>
-<p>Você verá que após esse procedimento o meu e-mail e as chaves associadas a ele<br>
-estarão na lista de chaves, junto com a sua.</p>
-<h3 id="enviando-o-e-mail-criptografado">Enviando o e-mail criptografado</h3>
-<p>Agora que as chaves estão criadas e você já importou a minha para poder me enviar um e-mail, vamos testar se tudo está
-OK.</p>
-<ul>
-<li>Clique em Nova Mensagem;</li>
-<li>Informe o meu endereço de e-mail;</li>
-<li>Informe um título para o e-mail;</li>
-<li>Escreva o conteúdo do seu e-mail;</li>
-<li>Clique no menu Enigmail;</li>
-<li>Clique em <strong>A mensagem será criptografada</strong>;</li>
-<li>Clique em <strong>Force Encryption</strong>;</li>
-<li>Clique em Enviar agora;</li>
-</ul>
-<p>Se for mostrada uma mensagem falando sobre o formato HTML, etc., ignore-a pois é apenas um aviso que o conteúdo pode
-perder formatação após a encriptação.</p>
-<p><strong>Se tudo correr bem</strong>, eu receberei um e-mail seu e o responderei avisando que recebi OK.</p>
-<h3 id="considerações-finais">Considerações finais</h3>
-<p>Na próxima parte eu mostrarei como criptografar arquivos e também como usar um plugin para Firefox e Google Chrome que
-permite realizar estes mesmos passos diretamente no Gmail e outros webmails.</p>
-<p>Eu espero ter sido claro, eu tentei ser o menos técnico possível mas caso tenha ficado alguma dúvida, envie um
-comentário que eu tentarei ajuda-lo.</p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/feliz-2015/">&#8592; Feliz 2015</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/sugestoes-para-o-carnaval/">Sugestões para o carnaval &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><footer class="glitch-zone" role="contentinfo">
-    <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
-                </div>
-            </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+clicando em OK.</p><p>Você verá que após esse procedimento o meu e-mail e as chaves associadas a ele<br>estarão na lista de chaves, junto com a sua.</p><h3 id=enviando-o-e-mail-criptografado>Enviando o e-mail criptografado</h3><p>Agora que as chaves estão criadas e você já importou a minha para poder me enviar um e-mail, vamos testar se tudo está
+OK.</p><ul><li>Clique em Nova Mensagem;</li><li>Informe o meu endereço de e-mail;</li><li>Informe um título para o e-mail;</li><li>Escreva o conteúdo do seu e-mail;</li><li>Clique no menu Enigmail;</li><li>Clique em <strong>A mensagem será criptografada</strong>;</li><li>Clique em <strong>Force Encryption</strong>;</li><li>Clique em Enviar agora;</li></ul><p>Se for mostrada uma mensagem falando sobre o formato HTML, etc., ignore-a pois é apenas um aviso que o conteúdo pode
+perder formatação após a encriptação.</p><p><strong>Se tudo correr bem</strong>, eu receberei um e-mail seu e o responderei avisando que recebi OK.</p><h3 id=considerações-finais>Considerações finais</h3><p>Na próxima parte eu mostrarei como criptografar arquivos e também como usar um plugin para Firefox e Google Chrome que
+permite realizar estes mesmos passos diretamente no Gmail e outros webmails.</p><p>Eu espero ter sido claro, eu tentei ser o menos técnico possível mas caso tenha ficado alguma dúvida, envie um
+comentário que eu tentarei ajuda-lo.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/feliz-2015/>&#8592; Feliz 2015</a>
+|
+<a href=https://adlermedrado.com.br/posts/sugestoes-para-o-carnaval/>Sugestões para o carnaval &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

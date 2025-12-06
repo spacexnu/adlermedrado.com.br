@@ -1,68 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Missives on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/missives/</link>
-    <description>Recent content in Missives on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 26 Sep 2025 22:48:18 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/missives/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>What I’d Tell My 23-Year-Old Self</title>
-      <link>http://localhost:1313/missives/what-id-tell-my-23-year-old-self/</link>
-      <pubDate>Fri, 26 Sep 2025 22:48:18 -0300</pubDate>
-      <guid>http://localhost:1313/missives/what-id-tell-my-23-year-old-self/</guid>
-      <description>&lt;p&gt;If I could whisper to my 23-year-old self, I’d tell him this:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stop wasting time worrying about what people think.&lt;/li&gt;&#xA;&lt;li&gt;Pour your energy into building, into creating, into making something that’s yours.&lt;/li&gt;&#xA;&lt;li&gt;And never forget: everything is impermanent — every victory, every failure, every storm.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;That truth alone is enough to keep you moving forward.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>X reactivated my account</title>
-      <link>http://localhost:1313/missives/x-reactivated-my-account/</link>
-      <pubDate>Sun, 03 Aug 2025 10:11:03 -0300</pubDate>
-      <guid>http://localhost:1313/missives/x-reactivated-my-account/</guid>
-      <description>&lt;img alt=&#34;x-email-about-restoring-my-account-in-pt-br&#34; height=&#34;50%&#34; src=&#34;http://localhost:1313/missives/images/x-restored.png&#34; width=&#34;50%&#34;/&gt;&#xA;&lt;p&gt;After being suspended without warning, my account on X was restored.&lt;/p&gt;&#xA;&lt;p&gt;Lesson stays the same: if you rely only on centralized platforms, you are always one click away from being erased.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>They suspended my X account</title>
-      <link>http://localhost:1313/missives/they-suspended-my-x-account/</link>
-      <pubDate>Tue, 22 Jul 2025 09:11:03 -0300</pubDate>
-      <guid>http://localhost:1313/missives/they-suspended-my-x-account/</guid>
-      <description>&lt;img alt=&#34;x-email-about-suspending-my-account-in-pt-br&#34; height=&#34;50%&#34; src=&#34;http://localhost:1313/missives/images/x-blocked.png&#34; width=&#34;50%&#34;/&gt;&#xA;&lt;p&gt;Account from 2006. Almost 1200 followers. GONE.&lt;/p&gt;&#xA;&lt;p&gt;No clear reason. just “violated authenticity rules.”&lt;/p&gt;&#xA;&lt;p&gt;Didn’t insult anyone. Didn’t spread fake news. Just posted.&lt;/p&gt;&#xA;&lt;p&gt;They threatened to block any new account I create.&lt;/p&gt;&#xA;&lt;p&gt;See how dumb it is to rely on centralized platforms?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ollama Local AI Playbook</title>
-      <link>http://localhost:1313/missives/ollama-local-ai-playbook/</link>
-      <pubDate>Mon, 16 Jun 2025 20:25:44 -0300</pubDate>
-      <guid>http://localhost:1313/missives/ollama-local-ai-playbook/</guid>
-      <description>&lt;p&gt;Running AI models locally on your Mac M1 is easier than you think.&lt;/p&gt;&#xA;&lt;p&gt;No cloud. No expensive subscriptions. No unnecessary complexity. Just your own hardware and full control.&lt;/p&gt;&#xA;&lt;p&gt;I just released a 30-minute playbook that shows exactly how to run Ollama fully local on Mac M1:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Full install guide&lt;/li&gt;&#xA;&lt;li&gt;Copy-paste terminal commands&lt;/li&gt;&#xA;&lt;li&gt;Model recommendations tested on M1 hardware&lt;/li&gt;&#xA;&lt;li&gt;Performance optimization tips&lt;/li&gt;&#xA;&lt;li&gt;Local security checklist&lt;/li&gt;&#xA;&lt;li&gt;Bonus cheat sheet included&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Launch price: $5&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Video sobre o meu site</title>
-      <link>http://localhost:1313/missives/video-sobre-o-meu-site/</link>
-      <pubDate>Wed, 04 Jun 2025 20:17:00 -0300</pubDate>
-      <guid>http://localhost:1313/missives/video-sobre-o-meu-site/</guid>
-      <description>&lt;p&gt;Essa semana eu &lt;a href=&#34;https://www.youtube.com/watch?v=PpYk139Xw2Y&#34;&gt;publiquei um vídeo&lt;/a&gt; no &lt;a href=&#34;https://www.youtube.com/@labsadler&#34;&gt;meu canal do Youtube&lt;/a&gt; explicando&#xA;alguns pontos que eu considero importantes e aplico de maneira objetiva no meu site.&lt;/p&gt;&#xA;&lt;p&gt;O vídeo pode ser interessante para quem se preocupa com soberania, segurança e privacidade.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Install &amp; Neovim Bootstrap Revamp</title>
-      <link>http://localhost:1313/missives/install-neovim-bootstrap-revamp/</link>
-      <pubDate>Sat, 31 May 2025 22:29:46 -0300</pubDate>
-      <guid>http://localhost:1313/missives/install-neovim-bootstrap-revamp/</guid>
-      <description>&lt;p&gt;Ongoing work on fully revamping my dot-files &lt;code&gt;install.sh&lt;/code&gt; and Neovim stack.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dotfiles bootstrap is now modular and declarative.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;install.sh&lt;/code&gt; handles symlinks, backups, plugin sync, and full lazy.nvim bootstrap automatically.&lt;/li&gt;&#xA;&lt;li&gt;Neovim config is framework-free, built from scratch with isolated plugin control.&lt;/li&gt;&#xA;&lt;li&gt;Full lazy-loading using &lt;code&gt;lazy.nvim&lt;/code&gt;, with sniper-level loading precision.&lt;/li&gt;&#xA;&lt;li&gt;LSP, CMP, Treesitter, and nvim-tree properly initialized using &lt;code&gt;config&lt;/code&gt; blocks.&lt;/li&gt;&#xA;&lt;li&gt;Keymaps handled via &lt;code&gt;which-key&lt;/code&gt; with full namespace documentation.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Work in progress. Updates and refinements will continue over the next days.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>MDN Report A&#43;</title>
-      <link>http://localhost:1313/missives/mdn-report-a-/</link>
-      <pubDate>Tue, 20 May 2025 21:44:46 -0300</pubDate>
-      <guid>http://localhost:1313/missives/mdn-report-a-/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/missives/images/badge-aplus.png&#34; alt=&#34;MDN A+ badge&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Ran my site through &lt;a href=&#34;https://developer.mozilla.org/en-US/&#34;&gt;MDN&lt;/a&gt;’s security scanner and kept tweaking until I hit &lt;a href=&#34;https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br&#34;&gt;120/100 (A+)&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Checked the &lt;a href=&#34;https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br#history&#34;&gt;scan history&lt;/a&gt; and the very first one, back in 2018, scored 20/100 (F).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Always improving.&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Website updates</title>
-      <link>http://localhost:1313/missives/website-updates/</link>
-      <pubDate>Sun, 18 May 2025 23:59:00 -0300</pubDate>
-      <guid>http://localhost:1313/missives/website-updates/</guid>
-      <description>&lt;p&gt;This website used to run on Cloudflare Pages. And being 100% honest with my visitors: I had all analytics disabled.&lt;br&gt;&#xA;But I still wanted to know more about my traffic without compromising anyone’s privacy.&lt;/p&gt;&#xA;&lt;p&gt;So I migrated everything to my own VPS. Now I use nothing but raw logs + &lt;a href=&#34;https://goaccess.io&#34;&gt;GoAccess&lt;/a&gt; to understand what’s going on.&lt;br&gt;&#xA;No JavaScript tracking, no fingerprinting, no big tech spy bullshit.&lt;/p&gt;&#xA;&lt;p&gt;Nginx logs + GoAccess = enough intel to know what’s happening, without selling anyone out.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Missives on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/missives/</link><description>Recent content in Missives on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 26 Sep 2025 22:48:18 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/missives/index.xml" rel="self" type="application/rss+xml"/><item><title>What I’d Tell My 23-Year-Old Self</title><link>https://adlermedrado.com.br/missives/what-id-tell-my-23-year-old-self/</link><pubDate>Fri, 26 Sep 2025 22:48:18 -0300</pubDate><guid>https://adlermedrado.com.br/missives/what-id-tell-my-23-year-old-self/</guid><description>&lt;p&gt;If I could whisper to my 23-year-old self, I’d tell him this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stop wasting time worrying about what people think.&lt;/li&gt;
+&lt;li&gt;Pour your energy into building, into creating, into making something that’s yours.&lt;/li&gt;
+&lt;li&gt;And never forget: everything is impermanent — every victory, every failure, every storm.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That truth alone is enough to keep you moving forward.&lt;/p&gt;</description></item><item><title>X reactivated my account</title><link>https://adlermedrado.com.br/missives/x-reactivated-my-account/</link><pubDate>Sun, 03 Aug 2025 10:11:03 -0300</pubDate><guid>https://adlermedrado.com.br/missives/x-reactivated-my-account/</guid><description>&lt;img alt="x-email-about-restoring-my-account-in-pt-br" height="50%" src="https://adlermedrado.com.br/missives/images/x-restored.png" width="50%"/&gt;
+&lt;p&gt;After being suspended without warning, my account on X was restored.&lt;/p&gt;
+&lt;p&gt;Lesson stays the same: if you rely only on centralized platforms, you are always one click away from being erased.&lt;/p&gt;</description></item><item><title>They suspended my X account</title><link>https://adlermedrado.com.br/missives/they-suspended-my-x-account/</link><pubDate>Tue, 22 Jul 2025 09:11:03 -0300</pubDate><guid>https://adlermedrado.com.br/missives/they-suspended-my-x-account/</guid><description>&lt;img alt="x-email-about-suspending-my-account-in-pt-br" height="50%" src="https://adlermedrado.com.br/missives/images/x-blocked.png" width="50%"/&gt;
+&lt;p&gt;Account from 2006. Almost 1200 followers. GONE.&lt;/p&gt;
+&lt;p&gt;No clear reason. just “violated authenticity rules.”&lt;/p&gt;
+&lt;p&gt;Didn’t insult anyone. Didn’t spread fake news. Just posted.&lt;/p&gt;
+&lt;p&gt;They threatened to block any new account I create.&lt;/p&gt;
+&lt;p&gt;See how dumb it is to rely on centralized platforms?&lt;/p&gt;</description></item><item><title>Ollama Local AI Playbook</title><link>https://adlermedrado.com.br/missives/ollama-local-ai-playbook/</link><pubDate>Mon, 16 Jun 2025 20:25:44 -0300</pubDate><guid>https://adlermedrado.com.br/missives/ollama-local-ai-playbook/</guid><description>&lt;p&gt;Running AI models locally on your Mac M1 is easier than you think.&lt;/p&gt;
+&lt;p&gt;No cloud. No expensive subscriptions. No unnecessary complexity. Just your own hardware and full control.&lt;/p&gt;
+&lt;p&gt;I just released a 30-minute playbook that shows exactly how to run Ollama fully local on Mac M1:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Full install guide&lt;/li&gt;
+&lt;li&gt;Copy-paste terminal commands&lt;/li&gt;
+&lt;li&gt;Model recommendations tested on M1 hardware&lt;/li&gt;
+&lt;li&gt;Performance optimization tips&lt;/li&gt;
+&lt;li&gt;Local security checklist&lt;/li&gt;
+&lt;li&gt;Bonus cheat sheet included&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Launch price: $5&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Video sobre o meu site</title><link>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</link><pubDate>Wed, 04 Jun 2025 20:17:00 -0300</pubDate><guid>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</guid><description>&lt;p&gt;Essa semana eu &lt;a href="https://www.youtube.com/watch?v=PpYk139Xw2Y"&gt;publiquei um vídeo&lt;/a&gt; no &lt;a href="https://www.youtube.com/@labsadler"&gt;meu canal do Youtube&lt;/a&gt; explicando
+alguns pontos que eu considero importantes e aplico de maneira objetiva no meu site.&lt;/p&gt;
+&lt;p&gt;O vídeo pode ser interessante para quem se preocupa com soberania, segurança e privacidade.&lt;/p&gt;</description></item><item><title>Install &amp; Neovim Bootstrap Revamp</title><link>https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/</link><pubDate>Sat, 31 May 2025 22:29:46 -0300</pubDate><guid>https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/</guid><description>&lt;p&gt;Ongoing work on fully revamping my dot-files &lt;code&gt;install.sh&lt;/code&gt; and Neovim stack.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dotfiles bootstrap is now modular and declarative.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;install.sh&lt;/code&gt; handles symlinks, backups, plugin sync, and full lazy.nvim bootstrap automatically.&lt;/li&gt;
+&lt;li&gt;Neovim config is framework-free, built from scratch with isolated plugin control.&lt;/li&gt;
+&lt;li&gt;Full lazy-loading using &lt;code&gt;lazy.nvim&lt;/code&gt;, with sniper-level loading precision.&lt;/li&gt;
+&lt;li&gt;LSP, CMP, Treesitter, and nvim-tree properly initialized using &lt;code&gt;config&lt;/code&gt; blocks.&lt;/li&gt;
+&lt;li&gt;Keymaps handled via &lt;code&gt;which-key&lt;/code&gt; with full namespace documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Work in progress. Updates and refinements will continue over the next days.&lt;/p&gt;</description></item><item><title>MDN Report A+</title><link>https://adlermedrado.com.br/missives/mdn-report-a-/</link><pubDate>Tue, 20 May 2025 21:44:46 -0300</pubDate><guid>https://adlermedrado.com.br/missives/mdn-report-a-/</guid><description>&lt;p&gt;&lt;img src="https://adlermedrado.com.br/missives/images/badge-aplus.png" alt="MDN A+ badge"&gt;&lt;/p&gt;
+&lt;p&gt;Ran my site through &lt;a href="https://developer.mozilla.org/en-US/"&gt;MDN&lt;/a&gt;’s security scanner and kept tweaking until I hit &lt;a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br"&gt;120/100 (A+)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Checked the &lt;a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br#history"&gt;scan history&lt;/a&gt; and the very first one, back in 2018, scored 20/100 (F).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Always improving.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Website updates</title><link>https://adlermedrado.com.br/missives/website-updates/</link><pubDate>Sun, 18 May 2025 23:59:00 -0300</pubDate><guid>https://adlermedrado.com.br/missives/website-updates/</guid><description>&lt;p&gt;This website used to run on Cloudflare Pages. And being 100% honest with my visitors: I had all analytics disabled.&lt;br&gt;
+But I still wanted to know more about my traffic without compromising anyone’s privacy.&lt;/p&gt;
+&lt;p&gt;So I migrated everything to my own VPS. Now I use nothing but raw logs + &lt;a href="https://goaccess.io"&gt;GoAccess&lt;/a&gt; to understand what’s going on.&lt;br&gt;
+No JavaScript tracking, no fingerprinting, no big tech spy bullshit.&lt;/p&gt;
+&lt;p&gt;Nginx logs + GoAccess = enough intel to know what’s happening, without selling anyone out.&lt;/p&gt;</description></item></channel></rss>

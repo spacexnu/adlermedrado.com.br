@@ -1,155 +1,46 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta property="og:title" content="Dica: Solução de problema ao configurar Kitematic/Docker">
-<meta property="og:description" content="Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Dica: Solução de problema ao configurar Kitematic/Docker"><meta property="og:description" content="Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
 pessoas.
 Um projeto que estou trabalhando usa o RabbitMQ e para tentar manter o meu OS X o mais
 higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós
 decidimos utilizar o Docker e um container do RabbitMQ.
 Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na
 instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
-precisam ser aparadas, mas no geral ele funciona bem.">
-<meta property="og:url" content="http://localhost:1313/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/">
-<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
-
-<meta property="og:type" content="article">
-
-
-<meta property="og:image" content="/images/default-og-image.png">
-
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dica: Solução de problema ao configurar Kitematic/Docker">
-<meta name="twitter:description" content="Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
+precisam ser aparadas, mas no geral ele funciona bem."><meta property="og:url" content="https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Dica: Solução de problema ao configurar Kitematic/Docker"><meta name=twitter:description content="Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
 pessoas.
 Um projeto que estou trabalhando usa o RabbitMQ e para tentar manter o meu OS X o mais
 higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós
 decidimos utilizar o Docker e um container do RabbitMQ.
 Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na
 instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
-precisam ser aparadas, mas no geral ele funciona bem.">
-
-<meta name="twitter:image" content="/images/default-og-image.png">
-
-
-    <title>Dica: Solução de problema ao configurar Kitematic/Docker</title>
-    <meta name="description" content="Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
+precisam ser aparadas, mas no geral ele funciona bem."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Dica: Solução de problema ao configurar Kitematic/Docker</title><meta name=description content="Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
 pessoas.
 Um projeto que estou trabalhando usa o RabbitMQ e para tentar manter o meu OS X o mais
 higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós
 decidimos utilizar o Docker e um container do RabbitMQ.
 Para facilitar, existe um projeto chamado Kitematic que auxilia na configuração do Docker e na
 instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
-precisam ser aparadas, mas no geral ele funciona bem.">
-    <link rel="author" href="/humans.txt"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="canonical" href="http://localhost:1313/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <div class="navbar_right navbar_right_animated">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">what am i doing now</a>
-            <a href="/uses">what am i using</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Dica: Solução de problema ao configurar Kitematic/Docker</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>June 3, 2015</time>
-                            |
-                            2  minutes  read
-                        </small>
-                        
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p><strong>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
-pessoas.</strong></p>
-<p>Um projeto que estou trabalhando usa o <a href="https://www.rabbitmq.com">RabbitMQ</a> e para tentar manter o meu OS X o mais
+precisam ser aparadas, mas no geral ele funciona bem."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/dica-solucao-de-problema-ao-configurar-kitematic-docker/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Dica: Solução de problema ao configurar Kitematic/Docker</h1><div><div><p><small><time>June 3, 2015</time>
+|
+2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p><strong>Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras
+pessoas.</strong></p><p>Um projeto que estou trabalhando usa o <a href=https://www.rabbitmq.com>RabbitMQ</a> e para tentar manter o meu OS X o mais
 higienizado possível e também para manter a uniformidade entre o meu ambiente e os demais envolvidos no projeto, nós
-decidimos utilizar o <a href="https://www.docker.com/">Docker</a> e um container do RabbitMQ.</p>
-<p>Para facilitar, existe um projeto chamado <a href="https://kitematic.com/">Kitematic</a> que auxilia na configuração do Docker e na
+decidimos utilizar o <a href=https://www.docker.com/>Docker</a> e um container do RabbitMQ.</p><p>Para facilitar, existe um projeto chamado <a href=https://kitematic.com/>Kitematic</a> que auxilia na configuração do Docker e na
 instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
-precisam ser aparadas, mas no geral ele funciona bem.</p>
-<h4 id="problema-na-instalação">Problema na instalação</h4>
-<p>Na hora em que o Kitematic é instalado ele verifica se o Virtualbox está instalado no computador, caso não esteja, ele
+precisam ser aparadas, mas no geral ele funciona bem.</p><h4 id=problema-na-instalação>Problema na instalação</h4><p>Na hora em que o Kitematic é instalado ele verifica se o Virtualbox está instalado no computador, caso não esteja, ele
 baixa e faz a instalação automaticamente, após isso prossegue com a instalação, mas quando chegou em 99% ele ficou
-parado e não avançou mais, conforme a imagem abaixo:</p>
-<p>Eu quase desisti após xingar bastante, mas então eu executei os seguintes comandos no terminal:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker-machine rm -f dev
-</span></span><span style="display:flex;"><span>docker-machine create -d virtualbox dev
-</span></span></code></pre></div><p>E tudo passou a funcionar corretamente.</p>
-<p>Durante o período em que eu esperava a instalação finalizar, eu abri uma issue
-no <a href="https://github.com/kitematic/kitematic">Github do projeto</a> e em seguida ao conseguir resolver eu postei a solução
-na <a href="https://github.com/kitematic/kitematic/issues/585">própria issue</a> e a fechei, como o projeto ainda está na fase beta
-é normal ter problemas e aparentemente os desenvolvedores já estão cientes deste.</p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/seguranca-ou-sensacao-de-seguranca/">&#8592; Segurança ou sensação de segurança?</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/liberdade/">Liberdade &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><footer class="glitch-zone" role="contentinfo">
-    <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
-                </div>
-            </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+parado e não avançou mais, conforme a imagem abaixo:</p><p>Eu quase desisti após xingar bastante, mas então eu executei os seguintes comandos no terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>docker-machine rm -f dev
+</span></span><span style=display:flex><span>docker-machine create -d virtualbox dev
+</span></span></code></pre></div><p>E tudo passou a funcionar corretamente.</p><p>Durante o período em que eu esperava a instalação finalizar, eu abri uma issue
+no <a href=https://github.com/kitematic/kitematic>Github do projeto</a> e em seguida ao conseguir resolver eu postei a solução
+na <a href=https://github.com/kitematic/kitematic/issues/585>própria issue</a> e a fechei, como o projeto ainda está na fase beta
+é normal ter problemas e aparentemente os desenvolvedores já estão cientes deste.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/seguranca-ou-sensacao-de-seguranca/>&#8592; Segurança ou sensação de segurança?</a>
+|
+<a href=https://adlermedrado.com.br/posts/liberdade/>Liberdade &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

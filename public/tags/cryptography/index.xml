@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Cryptography on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/cryptography/</link>
-    <description>Recent content in Cryptography on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 10 May 2025 11:19:13 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Real-time Deepfakes: what if &#34;seeing is believing&#34; no longer means anything?</title>
-      <link>http://localhost:1313/posts/deepfakes_realtime/</link>
-      <pubDate>Sat, 10 May 2025 11:19:13 -0300</pubDate>
-      <guid>http://localhost:1313/posts/deepfakes_realtime/</guid>
-      <description>&lt;p&gt;An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.&lt;/p&gt;&#xA;&lt;p&gt;With just a single still image, it can mimic anyone’s face in a live video call. In real-time. Running locally. No cloud required.&lt;/p&gt;&#xA;&lt;p&gt;The implication is clear: you can no longer trust a video call at face value.&lt;/p&gt;&#xA;&lt;p&gt;So here’s the question: &lt;strong&gt;how do we verify identity in a world where faces can be forged on demand?&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptography on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/cryptography/</link><description>Recent content in Cryptography on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 10 May 2025 11:19:13 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/cryptography/index.xml" rel="self" type="application/rss+xml"/><item><title>Real-time Deepfakes: what if "seeing is believing" no longer means anything?</title><link>https://adlermedrado.com.br/posts/deepfakes_realtime/</link><pubDate>Sat, 10 May 2025 11:19:13 -0300</pubDate><guid>https://adlermedrado.com.br/posts/deepfakes_realtime/</guid><description>&lt;p&gt;An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.&lt;/p&gt;
+&lt;p&gt;With just a single still image, it can mimic anyone’s face in a live video call. In real-time. Running locally. No cloud required.&lt;/p&gt;
+&lt;p&gt;The implication is clear: you can no longer trust a video call at face value.&lt;/p&gt;
+&lt;p&gt;So here’s the question: &lt;strong&gt;how do we verify identity in a world where faces can be forged on demand?&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,19 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Code on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/code/</link>
-    <description>Recent content in Code on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 10 May 2008 10:10:46 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/code/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Feed e Flickr em cache</title>
-      <link>http://localhost:1313/posts/feed-flickr-em-cache/</link>
-      <pubDate>Sat, 10 May 2008 10:10:46 -0300</pubDate>
-      <guid>http://localhost:1313/posts/feed-flickr-em-cache/</guid>
-      <description>&lt;p&gt;Quem está me acompanhando no twitter e tem lido meus últimos posts, sabe que criei um site e etc, porém, nos últimos&#xA;dias meu server no dreamhost está um pouco lento e justamente no consumo dos feeds do meu blog e na requisição REST para&#xA;minha página no Flickr o meu site tem tipo um comportamento um pouco lento. É lógico que não é culpa exclusiva do&#xA;consumo de feed e do REST do Flickr, porém, para melhorar um pouco eu usei o componente &lt;em&gt;Zend_Cache&lt;/em&gt; do ZF para colocar&#xA;estes dois objetos em cache.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Code on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/code/</link><description>Recent content in Code on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 10 May 2008 10:10:46 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/code/index.xml" rel="self" type="application/rss+xml"/><item><title>Feed e Flickr em cache</title><link>https://adlermedrado.com.br/posts/feed-flickr-em-cache/</link><pubDate>Sat, 10 May 2008 10:10:46 -0300</pubDate><guid>https://adlermedrado.com.br/posts/feed-flickr-em-cache/</guid><description>&lt;p&gt;Quem está me acompanhando no twitter e tem lido meus últimos posts, sabe que criei um site e etc, porém, nos últimos
+dias meu server no dreamhost está um pouco lento e justamente no consumo dos feeds do meu blog e na requisição REST para
+minha página no Flickr o meu site tem tipo um comportamento um pouco lento. É lógico que não é culpa exclusiva do
+consumo de feed e do REST do Flickr, porém, para melhorar um pouco eu usei o componente &lt;em&gt;Zend_Cache&lt;/em&gt; do ZF para colocar
+estes dois objetos em cache.&lt;/p&gt;</description></item></channel></rss>

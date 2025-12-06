@@ -1,154 +1,29 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta property="og:title" content="Real-time Deepfakes: what if &#34;seeing is believing&#34; no longer means anything?">
-<meta property="og:description" content="An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content='Real-time Deepfakes: what if "seeing is believing" no longer means anything?'><meta property="og:description" content="An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.
 With just a single still image, it can mimic anyone’s face in a live video call. In real-time. Running locally. No cloud required.
 The implication is clear: you can no longer trust a video call at face value.
-So here’s the question: how do we verify identity in a world where faces can be forged on demand?">
-<meta property="og:url" content="http://localhost:1313/posts/deepfakes_realtime/">
-<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
-
-<meta property="og:type" content="article">
-
-
-<meta property="og:image" content="/images/default-og-image.png">
-
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Real-time Deepfakes: what if &#34;seeing is believing&#34; no longer means anything?">
-<meta name="twitter:description" content="An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.
+So here’s the question: how do we verify identity in a world where faces can be forged on demand?"><meta property="og:url" content="https://adlermedrado.com.br/posts/deepfakes_realtime/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content='Real-time Deepfakes: what if "seeing is believing" no longer means anything?'><meta name=twitter:description content="An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.
 With just a single still image, it can mimic anyone’s face in a live video call. In real-time. Running locally. No cloud required.
 The implication is clear: you can no longer trust a video call at face value.
-So here’s the question: how do we verify identity in a world where faces can be forged on demand?">
-
-<meta name="twitter:image" content="/images/default-og-image.png">
-
-
-    <title>Real-time Deepfakes: what if &#34;seeing is believing&#34; no longer means anything?</title>
-    <meta name="description" content="An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.
+So here’s the question: how do we verify identity in a world where faces can be forged on demand?"><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Real-time Deepfakes: what if "seeing is believing" no longer means anything?</title><meta name=description content="An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.
 With just a single still image, it can mimic anyone’s face in a live video call. In real-time. Running locally. No cloud required.
 The implication is clear: you can no longer trust a video call at face value.
-So here’s the question: how do we verify identity in a world where faces can be forged on demand?">
-    <link rel="author" href="/humans.txt"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="canonical" href="http://localhost:1313/posts/deepfakes_realtime/"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <div class="navbar_right navbar_right_animated">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">what am i doing now</a>
-            <a href="/uses">what am i using</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Real-time Deepfakes: what if &#34;seeing is believing&#34; no longer means anything?</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>May 10, 2025</time>
-                            |
-                            1  minute  read
-                        </small>
-                        
-                        <div class="post-tags">
-                            <p>
-                                <strong>Tags:</strong>
-                                
-                                <a href="/tags/ai">ai</a>, 
-                                
-                                <a href="/tags/deepfake">deepfake</a>, 
-                                
-                                <a href="/tags/cryptography">cryptography</a>, 
-                                
-                                <a href="/tags/gpg">gpg</a>, 
-                                
-                                <a href="/tags/security">security</a>
-                                
-                            </p>
-                        </div>
-                        
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.</p>
-<p>With just a single still image, it can mimic anyone’s face in a live video call. In real-time. Running locally. No cloud required.</p>
-<p>The implication is clear: you can no longer trust a video call at face value.</p>
-<p>So here’s the question: <strong>how do we verify identity in a world where faces can be forged on demand?</strong></p>
-<p>While many react with fear or disbelief, I see only one viable answer: <strong>digital signatures.</strong></p>
-<p>For years, I’ve been saying: we should <strong>encrypt everything</strong> — files, messages, infrastructure. But now, that’s not enough.</p>
-<p><strong>We need to start signing everything.</strong></p>
-<p>Digital signatures ensure authenticity. They prove that something really came from who claims to have sent it and hasn’t been tampered with.</p>
-<p>We already sign emails, source code, and software packages.
-<strong>Why not apply the same principle to real-time streams?</strong></p>
-<p>Imagine a video call cryptographically signed with the speaker’s GPG key.
-Even if the face looks convincing, if the signature doesn’t verify, you know something’s off.</p>
-<p>I sign every HTML page on my <a href="https://adlermedrado.com.br">personal website</a> with my GPG key. Not because I’m paranoid — but because <strong>I believe security should be a mindset.</strong></p>
-<p><strong>Don’t trust. Verify.</strong></p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/deepfakes_temporeal/">&#8592; Deepfakes em tempo real: e se &#34;ver para crer&#34; já não valer mais nada?</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/rag_soberano/">Como construí meu próprio RAG soberano para análise de segurança de código &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><footer class="glitch-zone" role="contentinfo">
-    <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
-                </div>
-            </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+So here’s the question: how do we verify identity in a world where faces can be forged on demand?"><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/deepfakes_realtime/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Real-time Deepfakes: what if "seeing is believing" no longer means anything?</h1><div><div><p><small><time>May 10, 2025</time>
+|
+1 minute read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/ai>ai</a>,
+<a href=/tags/deepfake>deepfake</a>,
+<a href=/tags/cryptography>cryptography</a>,
+<a href=/tags/gpg>gpg</a>,
+<a href=/tags/security>security</a></p></div></p></div><span class=line_break></span></div><div class=content><p>An open-source project called Deep-Live-Cam is gaining traction on GitHub — and for good reason.</p><p>With just a single still image, it can mimic anyone’s face in a live video call. In real-time. Running locally. No cloud required.</p><p>The implication is clear: you can no longer trust a video call at face value.</p><p>So here’s the question: <strong>how do we verify identity in a world where faces can be forged on demand?</strong></p><p>While many react with fear or disbelief, I see only one viable answer: <strong>digital signatures.</strong></p><p>For years, I’ve been saying: we should <strong>encrypt everything</strong> — files, messages, infrastructure. But now, that’s not enough.</p><p><strong>We need to start signing everything.</strong></p><p>Digital signatures ensure authenticity. They prove that something really came from who claims to have sent it and hasn’t been tampered with.</p><p>We already sign emails, source code, and software packages.
+<strong>Why not apply the same principle to real-time streams?</strong></p><p>Imagine a video call cryptographically signed with the speaker’s GPG key.
+Even if the face looks convincing, if the signature doesn’t verify, you know something’s off.</p><p>I sign every HTML page on my <a href=https://adlermedrado.com.br>personal website</a> with my GPG key. Not because I’m paranoid — but because <strong>I believe security should be a mindset.</strong></p><p><strong>Don’t trust. Verify.</strong></p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/deepfakes_temporeal/>&#8592; Deepfakes em tempo real: e se "ver para crer" já não valer mais nada?</a>
+|
+<a href=https://adlermedrado.com.br/posts/rag_soberano/>Como construí meu próprio RAG soberano para análise de segurança de código &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

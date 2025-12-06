@@ -1,33 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Apple on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/apple/</link>
-    <description>Recent content in Apple on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 14 Jul 2025 09:32:27 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/apple/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot</title>
-      <link>http://localhost:1313/posts/say-cheese-catch-curious-eyes/</link>
-      <pubDate>Mon, 14 Jul 2025 09:32:27 -0300</pubDate>
-      <guid>http://localhost:1313/posts/say-cheese-catch-curious-eyes/</guid>
-      <description>&lt;p&gt;Ever worried someone might peek at your MacBook when you&amp;rsquo;re not around?&lt;/p&gt;&#xA;&lt;p&gt;Last Friday, I built a simple, effective, and open-source solution to deal with that — and I called it &lt;strong&gt;Say Cheese&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Here’s the idea: if someone opens your Mac’s lid without authenticating via Touch ID, a photo is instantly taken and sent to your iPhone through iMessage. You get a live snapshot of the intruder — no fuss.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Say Cheese: Proteja Seu Mac de Curiosos com Uma Foto na Hora do Acesso</title>
-      <link>http://localhost:1313/posts/say-cheese-proteja-se-contra-curiosos/</link>
-      <pubDate>Mon, 14 Jul 2025 09:32:00 -0300</pubDate>
-      <guid>http://localhost:1313/posts/say-cheese-proteja-se-contra-curiosos/</guid>
-      <description>&lt;p&gt;Já pensou alguém abrindo seu MacBook quando você não tá por perto?&lt;/p&gt;&#xA;&lt;p&gt;Na sexta-feira criei uma solução simples, eficaz e de código aberto pra lidar com isso — e batizei de &lt;strong&gt;Say Cheese&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;A ideia é a seguinte: se alguém abrir a tampa do seu Mac sem autenticar com Touch ID, uma foto é tirada na hora e enviada direto pro seu iPhone, via iMessage. Você recebe a cara do curioso em tempo real. Simples assim.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>De volta ao mundo Apple</title>
-      <link>http://localhost:1313/posts/de-volta-ao-mundo-apple/</link>
-      <pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/de-volta-ao-mundo-apple/</guid>
-      <description>&lt;p&gt;Apesar de ter dito diversas vezes: &lt;strong&gt;Apple nunca mais&lt;/strong&gt;, dois meses atrás eu voltei a usar um Mac. Até então eu tinha&#xA;decidido me desfazer de todos os dispositivos Apple que eu tinha (dei meu Macbook Pro e meu iPod para minha esposa) e&#xA;buscado outras alternativas como Android, Linux e Windows.&lt;br&gt;&#xA;Eu me saí muito bem durante este período, principalmente com a plataforma Windows, como pode ser&#xA;visto no entanto durante este período o trabalho que eu realizava era em sua maior parte realizada na plataforma da&#xA;Microsoft, então eu não sentia tantas dificuldades de adaptação &lt;a href=&#34;https://leanpub.com/devphpms&#34;&gt;&lt;em&gt;eu até comecei a escrever um livro sobre isso e espero&#xA;termina-lo em breve&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apple on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/apple/</link><description>Recent content in Apple on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 14 Jul 2025 09:32:27 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/apple/index.xml" rel="self" type="application/rss+xml"/><item><title>Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot</title><link>https://adlermedrado.com.br/posts/say-cheese-catch-curious-eyes/</link><pubDate>Mon, 14 Jul 2025 09:32:27 -0300</pubDate><guid>https://adlermedrado.com.br/posts/say-cheese-catch-curious-eyes/</guid><description>&lt;p&gt;Ever worried someone might peek at your MacBook when you&amp;rsquo;re not around?&lt;/p&gt;
+&lt;p&gt;Last Friday, I built a simple, effective, and open-source solution to deal with that — and I called it &lt;strong&gt;Say Cheese&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Here’s the idea: if someone opens your Mac’s lid without authenticating via Touch ID, a photo is instantly taken and sent to your iPhone through iMessage. You get a live snapshot of the intruder — no fuss.&lt;/p&gt;</description></item><item><title>Say Cheese: Proteja Seu Mac de Curiosos com Uma Foto na Hora do Acesso</title><link>https://adlermedrado.com.br/posts/say-cheese-proteja-se-contra-curiosos/</link><pubDate>Mon, 14 Jul 2025 09:32:00 -0300</pubDate><guid>https://adlermedrado.com.br/posts/say-cheese-proteja-se-contra-curiosos/</guid><description>&lt;p&gt;Já pensou alguém abrindo seu MacBook quando você não tá por perto?&lt;/p&gt;
+&lt;p&gt;Na sexta-feira criei uma solução simples, eficaz e de código aberto pra lidar com isso — e batizei de &lt;strong&gt;Say Cheese&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A ideia é a seguinte: se alguém abrir a tampa do seu Mac sem autenticar com Touch ID, uma foto é tirada na hora e enviada direto pro seu iPhone, via iMessage. Você recebe a cara do curioso em tempo real. Simples assim.&lt;/p&gt;</description></item><item><title>De volta ao mundo Apple</title><link>https://adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</link><pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/de-volta-ao-mundo-apple/</guid><description>&lt;p&gt;Apesar de ter dito diversas vezes: &lt;strong&gt;Apple nunca mais&lt;/strong&gt;, dois meses atrás eu voltei a usar um Mac. Até então eu tinha
+decidido me desfazer de todos os dispositivos Apple que eu tinha (dei meu Macbook Pro e meu iPod para minha esposa) e
+buscado outras alternativas como Android, Linux e Windows.&lt;br&gt;
+Eu me saí muito bem durante este período, principalmente com a plataforma Windows, como pode ser
+visto no entanto durante este período o trabalho que eu realizava era em sua maior parte realizada na plataforma da
+Microsoft, então eu não sentia tantas dificuldades de adaptação &lt;a href="https://leanpub.com/devphpms"&gt;&lt;em&gt;eu até comecei a escrever um livro sobre isso e espero
+termina-lo em breve&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>

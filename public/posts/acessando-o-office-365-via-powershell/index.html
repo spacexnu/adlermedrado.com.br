@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta property="og:title" content="Acessando o Office 365 via Powershell">
-<meta property="og:description" content="É muito fácil acessar sua conta do Office365
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Acessando o Office 365 via Powershell"><meta property="og:description" content="É muito fácil acessar sua conta do Office365
 usando Powershell,
 principalmente se você precisa otimizar a administração de contas corporativas
 via script em situações onde é necessário manipular muitos usuários simultaneamente.
@@ -17,20 +10,7 @@ Mudar permissões
 etc.
 
 
-No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.">
-<meta property="og:url" content="http://localhost:1313/posts/acessando-o-office-365-via-powershell/">
-<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
-
-<meta property="og:type" content="article">
-
-
-<meta property="og:image" content="/images/default-og-image.png">
-
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Acessando o Office 365 via Powershell">
-<meta name="twitter:description" content="É muito fácil acessar sua conta do Office365
+No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365."><meta property="og:url" content="https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Acessando o Office 365 via Powershell"><meta name=twitter:description content="É muito fácil acessar sua conta do Office365
 usando Powershell,
 principalmente se você precisa otimizar a administração de contas corporativas
 via script em situações onde é necessário manipular muitos usuários simultaneamente.
@@ -42,13 +22,7 @@ Mudar permissões
 etc.
 
 
-No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.">
-
-<meta name="twitter:image" content="/images/default-og-image.png">
-
-
-    <title>Acessando o Office 365 via Powershell</title>
-    <meta name="description" content="É muito fácil acessar sua conta do Office365
+No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Acessando o Office 365 via Powershell</title><meta name=description content="É muito fácil acessar sua conta do Office365
 usando Powershell,
 principalmente se você precisa otimizar a administração de contas corporativas
 via script em situações onde é necessário manipular muitos usuários simultaneamente.
@@ -60,149 +34,37 @@ Mudar permissões
 etc.
 
 
-No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.">
-    <link rel="author" href="/humans.txt"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="canonical" href="http://localhost:1313/posts/acessando-o-office-365-via-powershell/"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <div class="navbar_right navbar_right_animated">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">what am i doing now</a>
-            <a href="/uses">what am i using</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Acessando o Office 365 via Powershell</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>July 26, 2014</time>
-                            |
-                            2  minutes  read
-                        </small>
-                        
-                        <div class="post-tags">
-                            <p>
-                                <strong>Tags:</strong>
-                                
-                                <a href="/tags/microsoft">microsoft</a>, 
-                                
-                                <a href="/tags/powershell">powershell</a>, 
-                                
-                                <a href="/tags/office">office</a>
-                                
-                            </p>
-                        </div>
-                        
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>É muito fácil acessar sua conta do <a href="http://office.microsoft.com/en-us/">Office365</a>
-usando <a href="http://technet.microsoft.com/pt-br/library/bb978526.aspx">Powershell</a>,<br>
-principalmente se você precisa otimizar a administração de contas corporativas<br>
-via script em situações onde é necessário manipular muitos usuários simultaneamente.</p>
-<p>Alguns exemplos de tarefas que podem ser executadas são:</p>
-<ul>
-<li>Adicionar novos usuários</li>
-<li>Remover usuários</li>
-<li>Mudar permissões</li>
-<li>etc.</li>
-</ul>
-<p><br /><br />
-No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.</p>
-<p>O primeiro passo é <a href="http://technet.microsoft.com/en-us/library/hh974317.aspx">instalar os Cmdlets</a> para Office365 ao
-Powershell,<br>
-a partir daí basta se familiarizar com os cmdlets específicos para esta integração.</p>
-<p>O passo seguinte é importar o módulo MSOnline para obter acesso aos cmdlets instalados anteriormente:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Import-Module MSOnline
-</span></span></code></pre></div><p>Em seguida é necessário obter as credenciais de acesso ao serviço:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$credenciais <span style="color:#f92672">=</span> Get-Credential
-</span></span></code></pre></div><p>O comando acima irá mostrar uma tela nativa do Windows solicitando um nome de usuário e senha.</p>
-<p>O problema desta abordagem é que se houver a necessidade de colocar este script<br>
-no agendador de tarefas ele não irá funcionar, neste caso será necessário<br>
-configura-lo para uso em modo não-interativo, conforme o código a seguir:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Import-Module MSOnline  
-</span></span><span style="display:flex;"><span>$password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;avidaebelaagenteequefodeela&#34;</span>  
-</span></span><span style="display:flex;"><span>$securePassword <span style="color:#f92672">=</span> $password | ConvertTo-SecureString -AsPlainText -Force  
-</span></span><span style="display:flex;"><span>$UserName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;username@domain&#34;</span>  
-</span></span><span style="display:flex;"><span>$Credentials <span style="color:#f92672">=</span> New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
-</span></span><span style="display:flex;"><span>Connect-MsolService -Credential $Credentials
+No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Acessando o Office 365 via Powershell</h1><div><div><p><small><time>July 26, 2014</time>
+|
+2 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/microsoft>microsoft</a>,
+<a href=/tags/powershell>powershell</a>,
+<a href=/tags/office>office</a></p></div></p></div><span class=line_break></span></div><div class=content><p>É muito fácil acessar sua conta do <a href=http://office.microsoft.com/en-us/>Office365</a>
+usando <a href=http://technet.microsoft.com/pt-br/library/bb978526.aspx>Powershell</a>,<br>principalmente se você precisa otimizar a administração de contas corporativas<br>via script em situações onde é necessário manipular muitos usuários simultaneamente.</p><p>Alguns exemplos de tarefas que podem ser executadas são:</p><ul><li>Adicionar novos usuários</li><li>Remover usuários</li><li>Mudar permissões</li><li>etc.</li></ul><p><br><br>No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.</p><p>O primeiro passo é <a href=http://technet.microsoft.com/en-us/library/hh974317.aspx>instalar os Cmdlets</a> para Office365 ao
+Powershell,<br>a partir daí basta se familiarizar com os cmdlets específicos para esta integração.</p><p>O passo seguinte é importar o módulo MSOnline para obter acesso aos cmdlets instalados anteriormente:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>Import-Module MSOnline
+</span></span></code></pre></div><p>Em seguida é necessário obter as credenciais de acesso ao serviço:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>$credenciais <span style=color:#f92672>=</span> Get-Credential
+</span></span></code></pre></div><p>O comando acima irá mostrar uma tela nativa do Windows solicitando um nome de usuário e senha.</p><p>O problema desta abordagem é que se houver a necessidade de colocar este script<br>no agendador de tarefas ele não irá funcionar, neste caso será necessário<br>configura-lo para uso em modo não-interativo, conforme o código a seguir:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Import-Module MSOnline  
+</span></span><span style=display:flex><span>$password <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;avidaebelaagenteequefodeela&#34;</span>  
+</span></span><span style=display:flex><span>$securePassword <span style=color:#f92672>=</span> $password | ConvertTo-SecureString -AsPlainText -Force  
+</span></span><span style=display:flex><span>$UserName <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;username@domain&#34;</span>  
+</span></span><span style=display:flex><span>$Credentials <span style=color:#f92672>=</span> New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
+</span></span><span style=display:flex><span>Connect-MsolService -Credential $Credentials
 </span></span></code></pre></div><p>Desta maneira o script converterá as credenciais de acesso, que estão hardcoded, e converterá em um objeto
-<em>Automation.PSCredential</em>.</p>
-<p>É importante frisar que nesta abordagem a segurança é menor, pois a senha fica explícita no código, o que significa que
-ela estará exposta a qualquer um com acesso ao código.</p>
-<p>Durante a transação esses dados ficam criptografados no objeto Automation.PSCredential.</p>
-<p>Pronto!</p>
-<p>Com esses passos o seu script powershell estará apto a se autenticar na nuvem do Office365.</p>
-<p>Segue agora o código completo:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Import-Module MSOnline  
-</span></span><span style="display:flex;"><span>$password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;huehuebrbr&#34;</span>  
-</span></span><span style="display:flex;"><span>$securePassword <span style="color:#f92672">=</span> $password | ConvertTo-SecureString -AsPlainText -Force  
-</span></span><span style="display:flex;"><span>$UserName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;username@domain&#34;</span>  
-</span></span><span style="display:flex;"><span>$Credentials <span style="color:#f92672">=</span> New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
-</span></span><span style="display:flex;"><span>Connect-MsolService -Credential $Credentials
-</span></span></code></pre></div><p>Espero ter a oportunidade de em breve poder explorar mais funcionalidades como criar, excluir e alterar usuários, por exemplo, e também espero que este post tenha sido útil.</p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/como-subverter-uma-nacao-por-yuri-bezmenov/">&#8592; Como subverter uma nação. Por Yuri Bezmenov</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/gerenciador-de-pacotes-para-windows/">Gerenciador de pacotes para Windows &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><footer class="glitch-zone" role="contentinfo">
-    <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
-                </div>
-            </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+<em>Automation.PSCredential</em>.</p><p>É importante frisar que nesta abordagem a segurança é menor, pois a senha fica explícita no código, o que significa que
+ela estará exposta a qualquer um com acesso ao código.</p><p>Durante a transação esses dados ficam criptografados no objeto Automation.PSCredential.</p><p>Pronto!</p><p>Com esses passos o seu script powershell estará apto a se autenticar na nuvem do Office365.</p><p>Segue agora o código completo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Import-Module MSOnline  
+</span></span><span style=display:flex><span>$password <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;huehuebrbr&#34;</span>  
+</span></span><span style=display:flex><span>$securePassword <span style=color:#f92672>=</span> $password | ConvertTo-SecureString -AsPlainText -Force  
+</span></span><span style=display:flex><span>$UserName <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;username@domain&#34;</span>  
+</span></span><span style=display:flex><span>$Credentials <span style=color:#f92672>=</span> New-Object System.Management.Automation.PSCredential -ArgumentList $UserName, $securePassword  
+</span></span><span style=display:flex><span>Connect-MsolService -Credential $Credentials
+</span></span></code></pre></div><p>Espero ter a oportunidade de em breve poder explorar mais funcionalidades como criar, excluir e alterar usuários, por exemplo, e também espero que este post tenha sido útil.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/como-subverter-uma-nacao-por-yuri-bezmenov/>&#8592; Como subverter uma nação. Por Yuri Bezmenov</a>
+|
+<a href=https://adlermedrado.com.br/posts/gerenciador-de-pacotes-para-windows/>Gerenciador de pacotes para Windows &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

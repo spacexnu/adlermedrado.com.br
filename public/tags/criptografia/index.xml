@@ -1,33 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Criptografia on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/criptografia/</link>
-    <description>Recent content in Criptografia on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 04 Jun 2025 20:17:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/criptografia/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Video sobre o meu site</title>
-      <link>http://localhost:1313/missives/video-sobre-o-meu-site/</link>
-      <pubDate>Wed, 04 Jun 2025 20:17:00 -0300</pubDate>
-      <guid>http://localhost:1313/missives/video-sobre-o-meu-site/</guid>
-      <description>&lt;p&gt;Essa semana eu &lt;a href=&#34;https://www.youtube.com/watch?v=PpYk139Xw2Y&#34;&gt;publiquei um vídeo&lt;/a&gt; no &lt;a href=&#34;https://www.youtube.com/@labsadler&#34;&gt;meu canal do Youtube&lt;/a&gt; explicando&#xA;alguns pontos que eu considero importantes e aplico de maneira objetiva no meu site.&lt;/p&gt;&#xA;&lt;p&gt;O vídeo pode ser interessante para quem se preocupa com soberania, segurança e privacidade.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Deepfakes em tempo real: e se &#34;ver para crer&#34; já não valer mais nada?</title>
-      <link>http://localhost:1313/posts/deepfakes_temporeal/</link>
-      <pubDate>Sat, 10 May 2025 11:13:20 -0300</pubDate>
-      <guid>http://localhost:1313/posts/deepfakes_temporeal/</guid>
-      <description>&lt;p&gt;Um projeto open-source chamado Deep-Live-Cam está chamando atenção no GitHub. E com razão.&lt;/p&gt;&#xA;&lt;p&gt;Com apenas uma imagem estática, ele consegue simular o rosto de qualquer pessoa em tempo real, dentro de uma chamada de vídeo. Tudo isso rodando localmente. Sem nuvem. Sem limites.&lt;/p&gt;&#xA;&lt;p&gt;A consequência é direta: não dá mais pra confiar em uma chamada de vídeo.&lt;/p&gt;&#xA;&lt;p&gt;E isso levanta a pergunta inevitável: &lt;strong&gt;como validamos a identidade num mundo onde rostos podem ser forjados ao vivo?&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Por que você deveria começar a usar GPG agora</title>
-      <link>http://localhost:1313/posts/gpg-intro-pt/</link>
-      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/gpg-intro-pt/</guid>
-      <description>&lt;h1 id=&#34;por-que-você-deveria-começar-a-usar-gpg-agora&#34;&gt;Por que você deveria começar a usar GPG agora&lt;/h1&gt;&#xA;&lt;p&gt;Se você ainda não utiliza GPG para assinar ou criptografar seus arquivos e mensagens, está na hora de repensar isso. Não é apenas sobre parecer um hacker de filme dos anos 90 — é sobre proteger sua comunicação e identidade digital em um mundo cada vez mais hostil.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-o-que-é-gpg&#34;&gt;🔐 O que é GPG?&lt;/h2&gt;&#xA;&lt;p&gt;GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele permite que você crie pares de chaves criptográficas para assinar digitalmente arquivos e mensagens, além de criptografá-los para garantir confidencialidade. É uma ferramenta essencial para quem leva a sério a segurança digital.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Criptografia on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/criptografia/</link><description>Recent content in Criptografia on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 04 Jun 2025 20:17:00 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/criptografia/index.xml" rel="self" type="application/rss+xml"/><item><title>Video sobre o meu site</title><link>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</link><pubDate>Wed, 04 Jun 2025 20:17:00 -0300</pubDate><guid>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</guid><description>&lt;p&gt;Essa semana eu &lt;a href="https://www.youtube.com/watch?v=PpYk139Xw2Y"&gt;publiquei um vídeo&lt;/a&gt; no &lt;a href="https://www.youtube.com/@labsadler"&gt;meu canal do Youtube&lt;/a&gt; explicando
+alguns pontos que eu considero importantes e aplico de maneira objetiva no meu site.&lt;/p&gt;
+&lt;p&gt;O vídeo pode ser interessante para quem se preocupa com soberania, segurança e privacidade.&lt;/p&gt;</description></item><item><title>Deepfakes em tempo real: e se "ver para crer" já não valer mais nada?</title><link>https://adlermedrado.com.br/posts/deepfakes_temporeal/</link><pubDate>Sat, 10 May 2025 11:13:20 -0300</pubDate><guid>https://adlermedrado.com.br/posts/deepfakes_temporeal/</guid><description>&lt;p&gt;Um projeto open-source chamado Deep-Live-Cam está chamando atenção no GitHub. E com razão.&lt;/p&gt;
+&lt;p&gt;Com apenas uma imagem estática, ele consegue simular o rosto de qualquer pessoa em tempo real, dentro de uma chamada de vídeo. Tudo isso rodando localmente. Sem nuvem. Sem limites.&lt;/p&gt;
+&lt;p&gt;A consequência é direta: não dá mais pra confiar em uma chamada de vídeo.&lt;/p&gt;
+&lt;p&gt;E isso levanta a pergunta inevitável: &lt;strong&gt;como validamos a identidade num mundo onde rostos podem ser forjados ao vivo?&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Por que você deveria começar a usar GPG agora</title><link>https://adlermedrado.com.br/posts/gpg-intro-pt/</link><pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/gpg-intro-pt/</guid><description>&lt;h1 id="por-que-você-deveria-começar-a-usar-gpg-agora"&gt;Por que você deveria começar a usar GPG agora&lt;/h1&gt;
+&lt;p&gt;Se você ainda não utiliza GPG para assinar ou criptografar seus arquivos e mensagens, está na hora de repensar isso. Não é apenas sobre parecer um hacker de filme dos anos 90 — é sobre proteger sua comunicação e identidade digital em um mundo cada vez mais hostil.&lt;/p&gt;
+&lt;h2 id="-o-que-é-gpg"&gt;🔐 O que é GPG?&lt;/h2&gt;
+&lt;p&gt;GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele permite que você crie pares de chaves criptográficas para assinar digitalmente arquivos e mensagens, além de criptografá-los para garantir confidencialidade. É uma ferramenta essencial para quem leva a sério a segurança digital.&lt;/p&gt;</description></item></channel></rss>

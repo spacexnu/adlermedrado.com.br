@@ -1,19 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Powershell on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/powershell/</link>
-    <description>Recent content in Powershell on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 26 Jul 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Acessando o Office 365 via Powershell</title>
-      <link>http://localhost:1313/posts/acessando-o-office-365-via-powershell/</link>
-      <pubDate>Sat, 26 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/acessando-o-office-365-via-powershell/</guid>
-      <description>&lt;p&gt;É muito fácil acessar sua conta do &lt;a href=&#34;http://office.microsoft.com/en-us/&#34;&gt;Office365&lt;/a&gt;&#xA;usando &lt;a href=&#34;http://technet.microsoft.com/pt-br/library/bb978526.aspx&#34;&gt;Powershell&lt;/a&gt;,&lt;br&gt;&#xA;principalmente se você precisa otimizar a administração de contas corporativas&lt;br&gt;&#xA;via script em situações onde é necessário manipular muitos usuários simultaneamente.&lt;/p&gt;&#xA;&lt;p&gt;Alguns exemplos de tarefas que podem ser executadas são:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Adicionar novos usuários&lt;/li&gt;&#xA;&lt;li&gt;Remover usuários&lt;/li&gt;&#xA;&lt;li&gt;Mudar permissões&lt;/li&gt;&#xA;&lt;li&gt;etc.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&#xA;No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Powershell on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/powershell/</link><description>Recent content in Powershell on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 26 Jul 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/powershell/index.xml" rel="self" type="application/rss+xml"/><item><title>Acessando o Office 365 via Powershell</title><link>https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/</link><pubDate>Sat, 26 Jul 2014 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/acessando-o-office-365-via-powershell/</guid><description>&lt;p&gt;É muito fácil acessar sua conta do &lt;a href="http://office.microsoft.com/en-us/"&gt;Office365&lt;/a&gt;
+usando &lt;a href="http://technet.microsoft.com/pt-br/library/bb978526.aspx"&gt;Powershell&lt;/a&gt;,&lt;br&gt;
+principalmente se você precisa otimizar a administração de contas corporativas&lt;br&gt;
+via script em situações onde é necessário manipular muitos usuários simultaneamente.&lt;/p&gt;
+&lt;p&gt;Alguns exemplos de tarefas que podem ser executadas são:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adicionar novos usuários&lt;/li&gt;
+&lt;li&gt;Remover usuários&lt;/li&gt;
+&lt;li&gt;Mudar permissões&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+No texto a seguir eu demonstrarei de uma forma bem simples como se conectar a uma conta na nuvem do Office365.&lt;/p&gt;</description></item></channel></rss>

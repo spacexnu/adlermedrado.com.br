@@ -1,114 +1,38 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta property="og:title" content="Zend_Form: Um simples tutorial">
-<meta property="og:description" content="Introdução
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Zend_Form: Um simples tutorial"><meta property="og:description" content="Introdução
 Depois de algum tempo sem escrever algo sobre o Zend Framework, venho hoje mostrar rapidamente um exemplo de como usar
 o Zend_Form e de quebra vou mostrar o Zend_Translator, que pode ser usado em internacionalização.
 O Zend_Form é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade
 e mantendo um padrão de desenvolvimento. É possível também com o Zend_Form, a implementação de formulários com
 herança, ou seja, você tem um formulário genérico (ex: UsuarioForm) que pode ser utilizado para criação de outros (ex:
-UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão.">
-<meta property="og:url" content="http://localhost:1313/posts/zend-form-um-simples-tutorial/">
-<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
-
-<meta property="og:type" content="article">
-
-
-<meta property="og:image" content="/images/default-og-image.png">
-
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Zend_Form: Um simples tutorial">
-<meta name="twitter:description" content="Introdução
+UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão."><meta property="og:url" content="https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Zend_Form: Um simples tutorial"><meta name=twitter:description content="Introdução
 Depois de algum tempo sem escrever algo sobre o Zend Framework, venho hoje mostrar rapidamente um exemplo de como usar
 o Zend_Form e de quebra vou mostrar o Zend_Translator, que pode ser usado em internacionalização.
 O Zend_Form é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade
 e mantendo um padrão de desenvolvimento. É possível também com o Zend_Form, a implementação de formulários com
 herança, ou seja, você tem um formulário genérico (ex: UsuarioForm) que pode ser utilizado para criação de outros (ex:
-UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão.">
-
-<meta name="twitter:image" content="/images/default-og-image.png">
-
-
-    <title>Zend_Form: Um simples tutorial</title>
-    <meta name="description" content="Introdução
+UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Zend_Form: Um simples tutorial</title><meta name=description content="Introdução
 Depois de algum tempo sem escrever algo sobre o Zend Framework, venho hoje mostrar rapidamente um exemplo de como usar
 o Zend_Form e de quebra vou mostrar o Zend_Translator, que pode ser usado em internacionalização.
 O Zend_Form é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade
 e mantendo um padrão de desenvolvimento. É possível também com o Zend_Form, a implementação de formulários com
 herança, ou seja, você tem um formulário genérico (ex: UsuarioForm) que pode ser utilizado para criação de outros (ex:
-UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão.">
-    <link rel="author" href="/humans.txt"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="canonical" href="http://localhost:1313/posts/zend-form-um-simples-tutorial/"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <div class="navbar_right navbar_right_animated">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">what am i doing now</a>
-            <a href="/uses">what am i using</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Zend_Form: Um simples tutorial</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>September 14, 2008</time>
-                            |
-                            6  minutes  read
-                        </small>
-                        
-                        <div class="post-tags">
-                            <p>
-                                <strong>Tags:</strong>
-                                
-                                <a href="/tags/zend-framework">zend-framework</a>
-                                
-                            </p>
-                        </div>
-                        
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Introdução</p>
-<p>Depois de algum tempo sem escrever algo sobre o Zend Framework, venho hoje mostrar rapidamente um exemplo de como usar
-o <code>Zend_Form</code> e de quebra vou mostrar o <code>Zend_Translator</code>, que pode ser usado em internacionalização.</p>
-<p>O <code>Zend_Form</code> é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade
+UsuarioAdminForm) que possuiriam apenas alguns campos adicionais além do form padrão."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/zend-form-um-simples-tutorial/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Zend_Form: Um simples tutorial</h1><div><div><p><small><time>September 14, 2008</time>
+|
+6 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/zend-framework>zend-framework</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Introdução</p><p>Depois de algum tempo sem escrever algo sobre o Zend Framework, venho hoje mostrar rapidamente um exemplo de como usar
+o <code>Zend_Form</code> e de quebra vou mostrar o <code>Zend_Translator</code>, que pode ser usado em internacionalização.</p><p>O <code>Zend_Form</code> é um componente que permite que formulários sejam criados e mantido em um objeto, aumentando produtividade
 e mantendo um padrão de desenvolvimento. É possível também com o <code>Zend_Form</code>, a implementação de formulários com
 herança, ou seja, você tem um formulário genérico (ex: <code>UsuarioForm</code>) que pode ser utilizado para criação de outros (ex:
-<code>UsuarioAdminForm</code>) que possuiriam apenas alguns campos adicionais além do form padrão.</p>
-<p>Ele também possui componentes que permitem a utilização de todos os Filters e Validators do Zend, bem como a
-implementação de Componentes personalizados.</p>
-<p><strong>Mãos à obra</strong></p>
-<p>Vamos criar um formulário de contato com o Zend_Form para ser o exemplo deste tutorial.
-Este formulário terá os campos Nome, Email, Assunto e Mensagem.</p>
-<p>Se fôssemos criar um formulário da maneira convencional, serial algo assim:</p>
-<pre><code>&lt;html&gt;
+<code>UsuarioAdminForm</code>) que possuiriam apenas alguns campos adicionais além do form padrão.</p><p>Ele também possui componentes que permitem a utilização de todos os Filters e Validators do Zend, bem como a
+implementação de Componentes personalizados.</p><p><strong>Mãos à obra</strong></p><p>Vamos criar um formulário de contato com o Zend_Form para ser o exemplo deste tutorial.
+Este formulário terá os campos Nome, Email, Assunto e Mensagem.</p><p>Se fôssemos criar um formulário da maneira convencional, serial algo assim:</p><pre><code>&lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;Exemplo de form&lt;/title&gt;
     &lt;/head&gt;
@@ -122,9 +46,7 @@ Este formulário terá os campos Nome, Email, Assunto e Mensagem.</p>
         &lt;/form&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<p>E se fôssemos usar os <code>Zend_View_Helpers</code> para criar os campos, ficaria mais ou menos assim:</p>
-<pre><code>&lt;html&gt;
+</code></pre><p>E se fôssemos usar os <code>Zend_View_Helpers</code> para criar os campos, ficaria mais ou menos assim:</p><pre><code>&lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;Exemplo de form&lt;/title&gt;
     &lt;/head&gt;
@@ -138,18 +60,13 @@ Este formulário terá os campos Nome, Email, Assunto e Mensagem.</p>
         &lt;/form&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-<p><strong>Agora vem o Zend_Form</strong></p>
-<p>A diferença principal entre estas duas maneiras e a maneira utilizando Zend_Form é que nós podemos definir regras de
-validação no servidor diretamente no objeto do form.</p>
-<p>Antes de usar o form, nós devemos criar uma classe que deriva da classe Zend_Form.
+</code></pre><p><strong>Agora vem o Zend_Form</strong></p><p>A diferença principal entre estas duas maneiras e a maneira utilizando Zend_Form é que nós podemos definir regras de
+validação no servidor diretamente no objeto do form.</p><p>Antes de usar o form, nós devemos criar uma classe que deriva da classe Zend_Form.
 Antes de criarmos o código PHP do formulário, devemos criar um diretório para guardar estas classes.
 Eu normalmente crio um diretório forms dentro do diretório da minha aplicação e o incluo no meu include_path.
 Eu já vi algumas pessoas colocando os forms dentro do diretório de models. Enfim, o Zend Framework te dá uma
 flexibilidade para
-definir o que é melhor para você.</p>
-<p>Vejamos o código do formulário, que se chama <code>ContatoForm.php</code> e está no meu diretório forms conforme citado acima:</p>
-<pre><code>&lt;?php
+definir o que é melhor para você.</p><p>Vejamos o código do formulário, que se chama <code>ContatoForm.php</code> e está no meu diretório forms conforme citado acima:</p><pre><code>&lt;?php
 class ContatoForm extends Zend_Form
 {
 
@@ -198,18 +115,11 @@ class ContatoForm extends Zend_Form
         $this-&gt;addElements(array($nome, $email, $assunto, $mensagem,  $submit));
     }
 }
-</code></pre>
-<p>Analisando o código acima, é possível ver que utilizamos os plugins do Zend_Form para criar os campos e botão do nosso
+</code></pre><p>Analisando o código acima, é possível ver que utilizamos os plugins do Zend_Form para criar os campos e botão do nosso
 formulário, e em cada elemento do form nós definimos o filtro StripTags e o Validator NotEmpty, que acredito devem ter
-ficado claros para que que servem. :D</p>
-<p>No campo assunto, todos os elementos do select são definidos no array $arrOpcoes, sendo o índice o value e o valor o
-texto. Sendo assim, é muito fácil colocar dados que estão em banco de dados no select.</p>
-<p>No campo da mensagem, no TextArea, nós definimos os atributos rows e cols utilizando o método setAttrib. Isso vale para
-qualquer componente.</p>
-<p>No final, associamos estes campos no form e o form está pronto.</p>
-<p><strong>Criação do Controller</strong></p>
-<p>Agora, vamos fazer um controller para receber estes dados:</p>
-<pre><code>&lt;?php
+ficado claros para que que servem. :D</p><p>No campo assunto, todos os elementos do select são definidos no array $arrOpcoes, sendo o índice o value e o valor o
+texto. Sendo assim, é muito fácil colocar dados que estão em banco de dados no select.</p><p>No campo da mensagem, no TextArea, nós definimos os atributos rows e cols utilizando o método setAttrib. Isso vale para
+qualquer componente.</p><p>No final, associamos estes campos no form e o form está pronto.</p><p><strong>Criação do Controller</strong></p><p>Agora, vamos fazer um controller para receber estes dados:</p><pre><code>&lt;?php
 class ExemploGridController extends Zend_Controller_Action
 {
     public function indexAction()
@@ -232,88 +142,22 @@ class ExemploGridController extends Zend_Controller_Action
         }
     }
 }
-</code></pre>
-<p>No Controller, nós obtemos o objeto do formulário e associamos ao objeto Zend_View, depois verificamos se a requisição é do tipo POST (se for, o form foi submetido) e então verificamos se os dados enviados são válidos (os filters e validators que colocamos no form). Se forem válidos, enviaria o email (este exemplo simula um form de contatos, lembra ? :D ) senão, popula o form e mostra as mensagens de erro. Se a requisição não for do tipo POST, o form é renderizado na tela.</p>
-<p>No arquivo de template (<code>index.phtml</code>) nós apenas damos um echo no form (<code>echo $this-&gt;form</code>).</p>
-<p>Abaixo teremos um screenshot do form antes de ser submetido e outra do form após ser submetido com dados incorretos para mostrar os erros retornados pelo objeto.</p>
-<p>Se você viu a segunda screenshot, percebeu que as mensagens de erro estão em inglês, certo? Isso ocorre porque o idioma padrão para o ZF é o inglês e é aí que vai entrar o Zend_Translate, que usaremos para traduzir estas mensagens de erro.</p>
-<p><strong>Traduzindo as mensagens de erro</strong></p>
-<p>Conforme a documentação do Zend Framework, o <code>Zend_Translate</code> é a solução para aplicações multilinguisticas.</p>
-<p>Existem diversas formas de se criar um objeto <code>Zend_Translate</code> e você pode obter maiores detalhes na documentação. Eu irei usar neste tutorial o meio que julgo ser o mais simples, que é criando o dicionário em um array e depois associar ele com o objeto <code>Zend_Translate</code>.</p>
-<p><strong>Vejamos:</strong></p>
-<p>Eu criei um diretório em minha aplicação chamado i18n e da mesma maneira coloquei-o no include_path. Dentro dele, o arquivo pt_Br.php foi criado e nele contém o array com as traduções.</p>
-<p>Eu vou colocar o array aqui de maneira reduzida para não ficar muito extenso:</p>
-<pre><code>&lt;?php
+</code></pre><p>No Controller, nós obtemos o objeto do formulário e associamos ao objeto Zend_View, depois verificamos se a requisição é do tipo POST (se for, o form foi submetido) e então verificamos se os dados enviados são válidos (os filters e validators que colocamos no form). Se forem válidos, enviaria o email (este exemplo simula um form de contatos, lembra ? :D ) senão, popula o form e mostra as mensagens de erro. Se a requisição não for do tipo POST, o form é renderizado na tela.</p><p>No arquivo de template (<code>index.phtml</code>) nós apenas damos um echo no form (<code>echo $this->form</code>).</p><p>Abaixo teremos um screenshot do form antes de ser submetido e outra do form após ser submetido com dados incorretos para mostrar os erros retornados pelo objeto.</p><p>Se você viu a segunda screenshot, percebeu que as mensagens de erro estão em inglês, certo? Isso ocorre porque o idioma padrão para o ZF é o inglês e é aí que vai entrar o Zend_Translate, que usaremos para traduzir estas mensagens de erro.</p><p><strong>Traduzindo as mensagens de erro</strong></p><p>Conforme a documentação do Zend Framework, o <code>Zend_Translate</code> é a solução para aplicações multilinguisticas.</p><p>Existem diversas formas de se criar um objeto <code>Zend_Translate</code> e você pode obter maiores detalhes na documentação. Eu irei usar neste tutorial o meio que julgo ser o mais simples, que é criando o dicionário em um array e depois associar ele com o objeto <code>Zend_Translate</code>.</p><p><strong>Vejamos:</strong></p><p>Eu criei um diretório em minha aplicação chamado i18n e da mesma maneira coloquei-o no include_path. Dentro dele, o arquivo pt_Br.php foi criado e nele contém o array com as traduções.</p><p>Eu vou colocar o array aqui de maneira reduzida para não ficar muito extenso:</p><pre><code>&lt;?php
 // Traducao para o Portugues
 $portugues = array();
 $portugues['isEmpty']= 'Este campo não pode ser vazio';
 
 // Email
 $portugues['emailAddressInvalid'] = 'não é um email válido no formato nome@servidor';
-</code></pre>
-<p>Como podemos ver, <code>isEmpty</code> e <code>emailAddressInvalid</code> são palavras-reservadas dos filtros usados no <code>Zend_Form</code>.
-Eu senti uma dificuldade para encontrar estas informações na documentação, até onde pesquisei esta parte ainda não havia sido documentada, então para encontrar as palavras reservadas eu tive que abrir as classes, uma a uma para traduzi-las.</p>
-<p>Agora nós devemos associar este array com o objeto <code>Zend_Translator</code> para então informar ao Form que ele deve ser traduzido. Vamos lá:</p>
-<pre><code>// Carregando arquivo de internacionalização
+</code></pre><p>Como podemos ver, <code>isEmpty</code> e <code>emailAddressInvalid</code> são palavras-reservadas dos filtros usados no <code>Zend_Form</code>.
+Eu senti uma dificuldade para encontrar estas informações na documentação, até onde pesquisei esta parte ainda não havia sido documentada, então para encontrar as palavras reservadas eu tive que abrir as classes, uma a uma para traduzi-las.</p><p>Agora nós devemos associar este array com o objeto <code>Zend_Translator</code> para então informar ao Form que ele deve ser traduzido. Vamos lá:</p><pre><code>// Carregando arquivo de internacionalização
 
 include_once 'i18n.php';
 $translate = new Zend_Translate('array', $portugues, 'pt_BR');
 $registry-&gt;set('translate', $translate);
-</code></pre>
-<p>Eu crio o objeto <code>Zend_Translate</code>, passando o array <code>$portugues</code> que criei no arquivo <code>i18n.php</code> e guardo este objeto na Registry para poder ser usado posteriormente. Existem outras formas de persistir este objeto, mas eu prefiro desta maneira, então sinta-se a vontade para mudar se achar uma maneira mais conveniente para você.</p>
-<p>No <code>Zend_Form</code> eu digo para ele usar este arquivo, adicionando o código abaixo no metodo <code>init()</code> do <code>ContatoForm</code>:</p>
-<pre><code>$translate = Zend_Registry::get('translate');
+</code></pre><p>Eu crio o objeto <code>Zend_Translate</code>, passando o array <code>$portugues</code> que criei no arquivo <code>i18n.php</code> e guardo este objeto na Registry para poder ser usado posteriormente. Existem outras formas de persistir este objeto, mas eu prefiro desta maneira, então sinta-se a vontade para mudar se achar uma maneira mais conveniente para você.</p><p>No <code>Zend_Form</code> eu digo para ele usar este arquivo, adicionando o código abaixo no metodo <code>init()</code> do <code>ContatoForm</code>:</p><pre><code>$translate = Zend_Registry::get('translate');
 $this-&gt;setTranslator($translate);
-</code></pre>
-<p>Pronto! Agora seus erros serão traduzidos, conforme screenshot abaixo:</p>
-<p>Simples não? Uma vez criado o objeto <code>Zend_Translate</code>, você pode tornar esse processo de tradução dinâmico, daí o trabalho será feito apenas uma única vez.</p>
-<p><strong>Considerações Finais</strong></p>
-<p>Espero que eu tenha conseguido ser claro neste tutorial e que ele seja proveitoso para você. Aproveito para lembrar que este foi um tutorial básico, apenas uma introdução ao Zend_Form, que possui diversos recursos que não abordamos hoje. Espero em breve poder mostrá-los para vocês.</p>
-<p>Eu estou usando o <code>Zend_Form</code> no meu dia-a-dia no trabalho e nossa equipe teve um aumento na produtividade muito grande.</p>
-<p>Bem, tentem implementar um exemplo como esse e qualquer dúvida poste aqui no blog que a gente tenta se ajudar. Se tiver alguma dica adicional, deixa-e aqui também.</p>
-<p>Vamos lá, o que está esperando para testar? :D</p>
-<p>Abraços.</p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/dia-do-programador/">&#8592; Dia do Programador</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/mini-curso-solidario/">Mini-curso Solidário &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><footer class="glitch-zone" role="contentinfo">
-    <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
-                </div>
-            </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+</code></pre><p>Pronto! Agora seus erros serão traduzidos, conforme screenshot abaixo:</p><p>Simples não? Uma vez criado o objeto <code>Zend_Translate</code>, você pode tornar esse processo de tradução dinâmico, daí o trabalho será feito apenas uma única vez.</p><p><strong>Considerações Finais</strong></p><p>Espero que eu tenha conseguido ser claro neste tutorial e que ele seja proveitoso para você. Aproveito para lembrar que este foi um tutorial básico, apenas uma introdução ao Zend_Form, que possui diversos recursos que não abordamos hoje. Espero em breve poder mostrá-los para vocês.</p><p>Eu estou usando o <code>Zend_Form</code> no meu dia-a-dia no trabalho e nossa equipe teve um aumento na produtividade muito grande.</p><p>Bem, tentem implementar um exemplo como esse e qualquer dúvida poste aqui no blog que a gente tenta se ajudar. Se tiver alguma dica adicional, deixa-e aqui também.</p><p>Vamos lá, o que está esperando para testar? :D</p><p>Abraços.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/dia-do-programador/>&#8592; Dia do Programador</a>
+|
+<a href=https://adlermedrado.com.br/posts/mini-curso-solidario/>Mini-curso Solidário &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

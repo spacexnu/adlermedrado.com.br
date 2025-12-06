@@ -1,40 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Privacidade on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/privacidade/</link>
-    <description>Recent content in Privacidade on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 04 Jun 2025 20:17:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/privacidade/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Video sobre o meu site</title>
-      <link>http://localhost:1313/missives/video-sobre-o-meu-site/</link>
-      <pubDate>Wed, 04 Jun 2025 20:17:00 -0300</pubDate>
-      <guid>http://localhost:1313/missives/video-sobre-o-meu-site/</guid>
-      <description>&lt;p&gt;Essa semana eu &lt;a href=&#34;https://www.youtube.com/watch?v=PpYk139Xw2Y&#34;&gt;publiquei um vídeo&lt;/a&gt; no &lt;a href=&#34;https://www.youtube.com/@labsadler&#34;&gt;meu canal do Youtube&lt;/a&gt; explicando&#xA;alguns pontos que eu considero importantes e aplico de maneira objetiva no meu site.&lt;/p&gt;&#xA;&lt;p&gt;O vídeo pode ser interessante para quem se preocupa com soberania, segurança e privacidade.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Por que você deveria começar a usar GPG agora</title>
-      <link>http://localhost:1313/posts/gpg-intro-pt/</link>
-      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/gpg-intro-pt/</guid>
-      <description>&lt;h1 id=&#34;por-que-você-deveria-começar-a-usar-gpg-agora&#34;&gt;Por que você deveria começar a usar GPG agora&lt;/h1&gt;&#xA;&lt;p&gt;Se você ainda não utiliza GPG para assinar ou criptografar seus arquivos e mensagens, está na hora de repensar isso. Não é apenas sobre parecer um hacker de filme dos anos 90 — é sobre proteger sua comunicação e identidade digital em um mundo cada vez mais hostil.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-o-que-é-gpg&#34;&gt;🔐 O que é GPG?&lt;/h2&gt;&#xA;&lt;p&gt;GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele permite que você crie pares de chaves criptográficas para assinar digitalmente arquivos e mensagens, além de criptografá-los para garantir confidencialidade. É uma ferramenta essencial para quem leva a sério a segurança digital.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais</title>
-      <link>http://localhost:1313/posts/privacidade-5-passos-essenciais/</link>
-      <pubDate>Mon, 05 Aug 2024 21:19:41 -0300</pubDate>
-      <guid>http://localhost:1313/posts/privacidade-5-passos-essenciais/</guid>
-      <description>&lt;h3 id=&#34;introdução-à-privacidade-na-internet-cinco-primeiros-passos-essenciais&#34;&gt;Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais&lt;/h3&gt;&#xA;&lt;img alt=&#34;Privacidade&#34; height=&#34;60%&#34; src=&#34;http://localhost:1313/posts/images/privacidade.jpg&#34; title=&#34;Privacidade&#34; width=&#34;60%&#34;/&gt;&#xA;&lt;p&gt;Vivemos em uma era onde a internet está profundamente enraizada em nossas vidas diárias. Seja para trabalho, lazer ou comunicação, estamos constantemente conectados. No entanto, essa conexão contínua vem com um preço: nossa privacidade. Em um mundo onde dados são o novo ouro, proteger nossa informação pessoal tornou-se crucial. Aqui estão cinco primeiros passos essenciais para garantir sua privacidade online.&lt;/p&gt;&#xA;&lt;h4 id=&#34;1-use-um-navegador-focado-em-privacidade&#34;&gt;1. Use um Navegador Focado em Privacidade&lt;/h4&gt;&#xA;&lt;p&gt;A maioria dos navegadores populares coleta uma quantidade significativa de dados sobre seus usuários. Para minimizar essa coleta, considere usar navegadores focados em privacidade, como o Brave ou o Tor Browser. O Brave bloqueia rastreadores automaticamente e o Tor Browser anonimiza seu tráfego, tornando mais difícil para terceiros rastrearem suas atividades online.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Mais um pouco sobre privacidade</title>
-      <link>http://localhost:1313/posts/mais-um-pouco-sobre-privacidade/</link>
-      <pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/mais-um-pouco-sobre-privacidade/</guid>
-      <description>&lt;p&gt;Eu resolvi escrever este post depois de ficar pensando neste assunto por um tempo, então se você não se importa muito&#xA;com a proteção da privacidade e/ou acha que quem se preocupa com isso é teórico da conspiração, pirado, louco ou&#xA;qualquer coisa do gênero, fique com essa foto desse gatinho com uma cara engraçada, assim a vinda até este post não foi&#xA;em vão.&lt;/p&gt;&#xA;&lt;h4 id=&#34;mas-se-você-quiser-ler-um-resumo-sobre-o-que-penso-a-respeito-deste-assunto-é-só-continuar-a-leitura&#34;&gt;Mas se você quiser ler um resumo sobre o que penso a respeito deste assunto, é só continuar a leitura.&lt;/h4&gt;&#xA;&lt;p&gt;Nós estamos vivendo na era da informação, sendo assim quem possui o domínio sobre a informação possui o poder. Não é a&#xA;toa que os governos estão tentando de uma forma ou de outra tomar o controle de tudo que trafega na internet para&#xA;censurar e vigiar seus cidadãos.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Privacidade on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/privacidade/</link><description>Recent content in Privacidade on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 04 Jun 2025 20:17:00 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/privacidade/index.xml" rel="self" type="application/rss+xml"/><item><title>Video sobre o meu site</title><link>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</link><pubDate>Wed, 04 Jun 2025 20:17:00 -0300</pubDate><guid>https://adlermedrado.com.br/missives/video-sobre-o-meu-site/</guid><description>&lt;p&gt;Essa semana eu &lt;a href="https://www.youtube.com/watch?v=PpYk139Xw2Y"&gt;publiquei um vídeo&lt;/a&gt; no &lt;a href="https://www.youtube.com/@labsadler"&gt;meu canal do Youtube&lt;/a&gt; explicando
+alguns pontos que eu considero importantes e aplico de maneira objetiva no meu site.&lt;/p&gt;
+&lt;p&gt;O vídeo pode ser interessante para quem se preocupa com soberania, segurança e privacidade.&lt;/p&gt;</description></item><item><title>Por que você deveria começar a usar GPG agora</title><link>https://adlermedrado.com.br/posts/gpg-intro-pt/</link><pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/gpg-intro-pt/</guid><description>&lt;h1 id="por-que-você-deveria-começar-a-usar-gpg-agora"&gt;Por que você deveria começar a usar GPG agora&lt;/h1&gt;
+&lt;p&gt;Se você ainda não utiliza GPG para assinar ou criptografar seus arquivos e mensagens, está na hora de repensar isso. Não é apenas sobre parecer um hacker de filme dos anos 90 — é sobre proteger sua comunicação e identidade digital em um mundo cada vez mais hostil.&lt;/p&gt;
+&lt;h2 id="-o-que-é-gpg"&gt;🔐 O que é GPG?&lt;/h2&gt;
+&lt;p&gt;GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele permite que você crie pares de chaves criptográficas para assinar digitalmente arquivos e mensagens, além de criptografá-los para garantir confidencialidade. É uma ferramenta essencial para quem leva a sério a segurança digital.&lt;/p&gt;</description></item><item><title>Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais</title><link>https://adlermedrado.com.br/posts/privacidade-5-passos-essenciais/</link><pubDate>Mon, 05 Aug 2024 21:19:41 -0300</pubDate><guid>https://adlermedrado.com.br/posts/privacidade-5-passos-essenciais/</guid><description>&lt;h3 id="introdução-à-privacidade-na-internet-cinco-primeiros-passos-essenciais"&gt;Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais&lt;/h3&gt;
+&lt;img alt="Privacidade" height="60%" src="https://adlermedrado.com.br/posts/images/privacidade.jpg" title="Privacidade" width="60%"/&gt;
+&lt;p&gt;Vivemos em uma era onde a internet está profundamente enraizada em nossas vidas diárias. Seja para trabalho, lazer ou comunicação, estamos constantemente conectados. No entanto, essa conexão contínua vem com um preço: nossa privacidade. Em um mundo onde dados são o novo ouro, proteger nossa informação pessoal tornou-se crucial. Aqui estão cinco primeiros passos essenciais para garantir sua privacidade online.&lt;/p&gt;
+&lt;h4 id="1-use-um-navegador-focado-em-privacidade"&gt;1. Use um Navegador Focado em Privacidade&lt;/h4&gt;
+&lt;p&gt;A maioria dos navegadores populares coleta uma quantidade significativa de dados sobre seus usuários. Para minimizar essa coleta, considere usar navegadores focados em privacidade, como o Brave ou o Tor Browser. O Brave bloqueia rastreadores automaticamente e o Tor Browser anonimiza seu tráfego, tornando mais difícil para terceiros rastrearem suas atividades online.&lt;/p&gt;</description></item><item><title>Mais um pouco sobre privacidade</title><link>https://adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</link><pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/mais-um-pouco-sobre-privacidade/</guid><description>&lt;p&gt;Eu resolvi escrever este post depois de ficar pensando neste assunto por um tempo, então se você não se importa muito
+com a proteção da privacidade e/ou acha que quem se preocupa com isso é teórico da conspiração, pirado, louco ou
+qualquer coisa do gênero, fique com essa foto desse gatinho com uma cara engraçada, assim a vinda até este post não foi
+em vão.&lt;/p&gt;
+&lt;h4 id="mas-se-você-quiser-ler-um-resumo-sobre-o-que-penso-a-respeito-deste-assunto-é-só-continuar-a-leitura"&gt;Mas se você quiser ler um resumo sobre o que penso a respeito deste assunto, é só continuar a leitura.&lt;/h4&gt;
+&lt;p&gt;Nós estamos vivendo na era da informação, sendo assim quem possui o domínio sobre a informação possui o poder. Não é a
+toa que os governos estão tentando de uma forma ou de outra tomar o controle de tudo que trafega na internet para
+censurar e vigiar seus cidadãos.&lt;/p&gt;</description></item></channel></rss>

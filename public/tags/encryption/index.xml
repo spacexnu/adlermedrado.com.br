@@ -1,40 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Encryption on Adler Medrado&#39;s corner of the web</title>
-    <link>http://localhost:1313/tags/encryption/</link>
-    <description>Recent content in Encryption on Adler Medrado&#39;s corner of the web</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 27 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/encryption/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Why You Should Start Using GPG Now</title>
-      <link>http://localhost:1313/posts/gpg-intro-en/</link>
-      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/gpg-intro-en/</guid>
-      <description>&lt;h1 id=&#34;why-you-should-start-using-gpg-now&#34;&gt;Why You Should Start Using GPG Now&lt;/h1&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re not using GPG to sign or encrypt your files and messages yet, it&amp;rsquo;s time to reconsider. It&amp;rsquo;s not just about looking like a 90s movie hacker — it&amp;rsquo;s about protecting your communication and digital identity in an increasingly hostile world.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-what-is-gpg&#34;&gt;🔐 What is GPG?&lt;/h2&gt;&#xA;&lt;p&gt;GPG (GNU Privacy Guard) is a free implementation of the OpenPGP standard. It allows you to create cryptographic key pairs to digitally sign files and messages, as well as encrypt them to ensure confidentiality. It&amp;rsquo;s an essential tool for anyone serious about digital security.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Shadowdata Updates</title>
-      <link>http://localhost:1313/posts/shadowdata-updates/</link>
-      <pubDate>Sun, 13 Oct 2024 15:53:53 -0300</pubDate>
-      <guid>http://localhost:1313/posts/shadowdata-updates/</guid>
-      <description>&lt;p&gt;Yesterday, &lt;a href=&#34;https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/&#34;&gt;I published a blog&lt;/a&gt; post introducing my new open-source project, ShadowData.&lt;/p&gt;&#xA;&lt;p&gt;This post is just to inform anyone interested that I have made some updates today.&lt;/p&gt;&#xA;&lt;p&gt;New Features Added to the Project:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Email address anonymization&lt;/li&gt;&#xA;&lt;li&gt;Phone number anonymization&lt;/li&gt;&#xA;&lt;li&gt;Symmetric cryptography for encryption and decryption&lt;/li&gt;&#xA;&lt;li&gt;Minor improvements to tests and code quality&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You can look the code at the &lt;a href=&#34;https://github.com/adlermedrado/ShadowData/&#34;&gt;Github repository&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;See you.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Shadowdata Sensitive Data Handler Python Library</title>
-      <link>http://localhost:1313/posts/shadowdata-sensitive-data-handler/</link>
-      <pubDate>Sat, 12 Oct 2024 21:23:34 -0300</pubDate>
-      <guid>http://localhost:1313/posts/shadowdata-sensitive-data-handler/</guid>
-      <description>&lt;p&gt;I am deeply concerned about how to handle sensitive data in the projects I work on. Nowadays, there are laws in various countries addressing this issue, and the topic becomes increasingly important as time goes on.&lt;/p&gt;&#xA;&lt;p&gt;Therefore, I decided to create a Python library that can help me deal with scenarios where it is necessary to process data to prevent any individual from being identified if the information is accessed. The library also handles data transformations, encryption, and the detection of sensitive personal data.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>GPG no MacOS X Snow Leopard</title>
-      <link>http://localhost:1313/posts/gpg-no-macosx-snow-leopard/</link>
-      <pubDate>Sun, 21 Feb 2010 19:08:14 -0300</pubDate>
-      <guid>http://localhost:1313/posts/gpg-no-macosx-snow-leopard/</guid>
-      <description>&lt;p&gt;Desde que comprei meu mac e instalei o Snow Leopard no ano passado, eu busquei alguma forma de instalar o GPG integrado&#xA;ao cliente de email &amp;ldquo;Mail&amp;rdquo; que vem com o Mac OS X, mas estava complicado porque a versão do Mail que vem com o Snow&#xA;Leopard não suporta o GPGMail que é um bundle para o Mail que permite que esta integração seja feita.&lt;/p&gt;&#xA;&lt;p&gt;Hoje, senti necessidade novamente em criptografar meus emails utilizando GPG e por isso fui atrás de uma solução para o&#xA;problema supracitado e desta vez eu encontrei um tutorial bacana que me permitiu fazer esta integração.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Encryption on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/encryption/</link><description>Recent content in Encryption on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 27 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/encryption/index.xml" rel="self" type="application/rss+xml"/><item><title>Why You Should Start Using GPG Now</title><link>https://adlermedrado.com.br/posts/gpg-intro-en/</link><pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/gpg-intro-en/</guid><description>&lt;h1 id="why-you-should-start-using-gpg-now"&gt;Why You Should Start Using GPG Now&lt;/h1&gt;
+&lt;p&gt;If you&amp;rsquo;re not using GPG to sign or encrypt your files and messages yet, it&amp;rsquo;s time to reconsider. It&amp;rsquo;s not just about looking like a 90s movie hacker — it&amp;rsquo;s about protecting your communication and digital identity in an increasingly hostile world.&lt;/p&gt;
+&lt;h2 id="-what-is-gpg"&gt;🔐 What is GPG?&lt;/h2&gt;
+&lt;p&gt;GPG (GNU Privacy Guard) is a free implementation of the OpenPGP standard. It allows you to create cryptographic key pairs to digitally sign files and messages, as well as encrypt them to ensure confidentiality. It&amp;rsquo;s an essential tool for anyone serious about digital security.&lt;/p&gt;</description></item><item><title>Shadowdata Updates</title><link>https://adlermedrado.com.br/posts/shadowdata-updates/</link><pubDate>Sun, 13 Oct 2024 15:53:53 -0300</pubDate><guid>https://adlermedrado.com.br/posts/shadowdata-updates/</guid><description>&lt;p&gt;Yesterday, &lt;a href="https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/"&gt;I published a blog&lt;/a&gt; post introducing my new open-source project, ShadowData.&lt;/p&gt;
+&lt;p&gt;This post is just to inform anyone interested that I have made some updates today.&lt;/p&gt;
+&lt;p&gt;New Features Added to the Project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Email address anonymization&lt;/li&gt;
+&lt;li&gt;Phone number anonymization&lt;/li&gt;
+&lt;li&gt;Symmetric cryptography for encryption and decryption&lt;/li&gt;
+&lt;li&gt;Minor improvements to tests and code quality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can look the code at the &lt;a href="https://github.com/adlermedrado/ShadowData/"&gt;Github repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See you.&lt;/p&gt;</description></item><item><title>Shadowdata Sensitive Data Handler Python Library</title><link>https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/</link><pubDate>Sat, 12 Oct 2024 21:23:34 -0300</pubDate><guid>https://adlermedrado.com.br/posts/shadowdata-sensitive-data-handler/</guid><description>&lt;p&gt;I am deeply concerned about how to handle sensitive data in the projects I work on. Nowadays, there are laws in various countries addressing this issue, and the topic becomes increasingly important as time goes on.&lt;/p&gt;
+&lt;p&gt;Therefore, I decided to create a Python library that can help me deal with scenarios where it is necessary to process data to prevent any individual from being identified if the information is accessed. The library also handles data transformations, encryption, and the detection of sensitive personal data.&lt;/p&gt;</description></item></channel></rss>

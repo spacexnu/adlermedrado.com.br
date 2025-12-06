@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adlermedrado.com.br/sitemap.xml

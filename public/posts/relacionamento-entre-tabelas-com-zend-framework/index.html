@@ -1,109 +1,37 @@
-<!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta property="og:title" content="Relacionamento entre tabelas com Zend Framework">
-<meta property="og:description" content="O Zend Framework possui uma camada de modelo, composta por algumas classes
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Relacionamento entre tabelas com Zend Framework"><meta property="og:description" content="O Zend Framework possui uma camada de modelo, composta por algumas classes
 como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa
 uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de
 acesso à dados, como insert, update, etc.
 Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
 tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
-de métodos específicos da classe Zend_Db_Table_Row.">
-<meta property="og:url" content="http://localhost:1313/posts/relacionamento-entre-tabelas-com-zend-framework/">
-<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
-
-<meta property="og:type" content="article">
-
-
-<meta property="og:image" content="/images/default-og-image.png">
-
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Relacionamento entre tabelas com Zend Framework">
-<meta name="twitter:description" content="O Zend Framework possui uma camada de modelo, composta por algumas classes
+de métodos específicos da classe Zend_Db_Table_Row."><meta property="og:url" content="https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Relacionamento entre tabelas com Zend Framework"><meta name=twitter:description content="O Zend Framework possui uma camada de modelo, composta por algumas classes
 como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa
 uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de
 acesso à dados, como insert, update, etc.
 Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
 tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
-de métodos específicos da classe Zend_Db_Table_Row.">
-
-<meta name="twitter:image" content="/images/default-og-image.png">
-
-
-    <title>Relacionamento entre tabelas com Zend Framework</title>
-    <meta name="description" content="O Zend Framework possui uma camada de modelo, composta por algumas classes
+de métodos específicos da classe Zend_Db_Table_Row."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Relacionamento entre tabelas com Zend Framework</title><meta name=description content="O Zend Framework possui uma camada de modelo, composta por algumas classes
 como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa
 uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de
 acesso à dados, como insert, update, etc.
 Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
 tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
-de métodos específicos da classe Zend_Db_Table_Row.">
-    <link rel="author" href="/humans.txt"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="canonical" href="http://localhost:1313/posts/relacionamento-entre-tabelas-com-zend-framework/"/>
-    <link href="/css/styles.css" rel="stylesheet">
-</head>
-<body><header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <div class="navbar_right navbar_right_animated">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">what am i doing now</a>
-            <a href="/uses">what am i using</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-        </div>
-    </nav>
-</header>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Relacionamento entre tabelas com Zend Framework</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>March 25, 2008</time>
-                            |
-                            4  minutes  read
-                        </small>
-                        
-                        <div class="post-tags">
-                            <p>
-                                <strong>Tags:</strong>
-                                
-                                <a href="/tags/zend-framework">zend-framework</a>
-                                
-                            </p>
-                        </div>
-                        
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>O Zend Framework possui uma camada de modelo, composta por algumas classes
+de métodos específicos da classe Zend_Db_Table_Row."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>what am i doing now</a>
+<a href=/uses>what am i using</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Relacionamento entre tabelas com Zend Framework</h1><div><div><p><small><time>March 25, 2008</time>
+|
+4 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/zend-framework>zend-framework</a></p></div></p></div><span class=line_break></span></div><div class=content><p>O Zend Framework possui uma camada de modelo, composta por algumas classes
 como <code>Zend_Db</code>, <code>Zend_Db_Table</code>, <code>Zend_Db_Table_Rowset</code>, entre outras, e é muito simples criar uma classe que representa
 uma determinada tabela, basta herdar da classe <code>Zend_Db_Table_Abstract</code> que você terá todos os métodos principais de
-acesso à dados, como insert, update, etc.</p>
-<p>Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
+acesso à dados, como insert, update, etc.</p><p>Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
 tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
-de métodos específicos da classe <code>Zend_Db_Table_Row</code>.</p>
-<p>Para demonstrar isso, vou usar como exemplo uma relação bem simples. Supondo que existam as seguintes tabelas:</p>
-<pre tabindex="0"><code>UF
+de métodos específicos da classe <code>Zend_Db_Table_Row</code>.</p><p>Para demonstrar isso, vou usar como exemplo uma relação bem simples. Supondo que existam as seguintes tabelas:</p><pre tabindex=0><code>UF
 id - INT - PRIMARY KEY
 nome - Varchar(100)
 
@@ -111,8 +39,7 @@ CIDADE
 id - INT - PRIMARY KEY
 nome - Varchar(100)
 uf_id - INT - FOREIGN KEY
-</code></pre><p>Se criarmos duas classes no Zend Framework para representar essas tabelas, nós faríamos o seguinte:</p>
-<pre tabindex="0"><code>class UF extends Zend_Db_Table_Abstract
+</code></pre><p>Se criarmos duas classes no Zend Framework para representar essas tabelas, nós faríamos o seguinte:</p><pre tabindex=0><code>class UF extends Zend_Db_Table_Abstract
 {
     protected $_name = &#34;uf&#34;;
 }
@@ -123,9 +50,7 @@ class Cidade extends Zend_Db_Table_Abstract
 }
 </code></pre><p>Com essas duas classes nós já possuímos os métodos necessários para inserir, alterar, excluir e recuperar os dados
 delas, porém, de maneira independente. Para recuperarmos todas as cidades de um determinado estado por exemplo, nós
-poderíamos fazer o seguinte:</p>
-<p>Primeiro, uma pequena alteração nas classes:</p>
-<pre tabindex="0"><code>class UF extends Zend_Db_Table_Abstract
+poderíamos fazer o seguinte:</p><p>Primeiro, uma pequena alteração nas classes:</p><pre tabindex=0><code>class UF extends Zend_Db_Table_Abstract
 {
     protected $_name = &#34;uf&#34;;
     protected $_dependentTables = array(&#39;Cidade&#39;);
@@ -142,16 +67,10 @@ class Cidade extends Zend_Db_Table_Abstract
         )
     );
 }
-</code></pre><p><strong>Calma, já vou explicar:</strong></p>
-<p>Na propriedade da classe UF <code>$_dependantTables</code>, eu defino quais tabelas/classes que são dependentes da tabela UF,
+</code></pre><p><strong>Calma, já vou explicar:</strong></p><p>Na propriedade da classe UF <code>$_dependantTables</code>, eu defino quais tabelas/classes que são dependentes da tabela UF,
 passando simplesmente o nome da classe como um elemento de um array. Pode-se passar quantos nomes de tabelas/classes
-forem necessárias, desde que cada um seja um elemento distinto.</p>
-<p>Na propriedade da classe Cidade <code>$_referenceMap</code>, nós fazemos o mapeamento entre as duas classes, onde a coluna <code>uf_id</code>
-da tabela Cidade é uma referência ao campo id da tabela UF. Simples demais!</p>
-<p>Vamos testar?</p>
-<p>Eu vou mostrar duas maneiras diferentes para retornar todas as cidades de uma determinada UF, a primeira segue abaixo:</p>
-<p>PS: Eu vou criar um IndexController para executar este exemplo.</p>
-<pre tabindex="0"><code>include_once &#39;UF.php&#39;;
+forem necessárias, desde que cada um seja um elemento distinto.</p><p>Na propriedade da classe Cidade <code>$_referenceMap</code>, nós fazemos o mapeamento entre as duas classes, onde a coluna <code>uf_id</code>
+da tabela Cidade é uma referência ao campo id da tabela UF. Simples demais!</p><p>Vamos testar?</p><p>Eu vou mostrar duas maneiras diferentes para retornar todas as cidades de uma determinada UF, a primeira segue abaixo:</p><p>PS: Eu vou criar um IndexController para executar este exemplo.</p><pre tabindex=0><code>include_once &#39;UF.php&#39;;
 include_once &#39;Cidade.php&#39;;
 
 class IndexController extends Base_Controller_Action
@@ -177,17 +96,14 @@ class IndexController extends Base_Controller_Action
     
     }
 }
-</code></pre><p>Simples não?</p>
-<p>O Outro exemplo terá o mesmo resultado porém a maneira como consultaremos as cidades por dada UF será um pouco
+</code></pre><p>Simples não?</p><p>O Outro exemplo terá o mesmo resultado porém a maneira como consultaremos as cidades por dada UF será um pouco
 diferente.
 Se você está acostumado com PHP 5, você já conhece os chamados &lsquo;métodos mágicos&rsquo; como <code>__call()</code>, <code>__set()</code>, <code>__get()</code>
 certo? pois então, agora nós vamos usar um método mágico chamado <code>FindCidadeByUF()</code> só que esse método não existe em
 nossa classe, então de onde que ele veio? O Zend Framework possui um mecanismo que nos permite consultar tabelas
-dependentes utilizando métodos mágicos no seguinte formato: <code>Find&lt;Tabela&gt;By&lt;Tabela&gt;</code>, então ele dinamicamente saberá
-onde consultar os dados, basta substituirmos a primeira <Tabela> pelo nome da classe Cidade e a segunda tabela pela
-classe UF que ele se encarrega do resto.</p>
-<p>Veja o exemplo:</p>
-<pre tabindex="0"><code>include_once &#39;UF.php&#39;;
+dependentes utilizando métodos mágicos no seguinte formato: <code>Find&lt;Tabela>By&lt;Tabela></code>, então ele dinamicamente saberá
+onde consultar os dados, basta substituirmos a primeira <tabela>pelo nome da classe Cidade e a segunda tabela pela
+classe UF que ele se encarrega do resto.</p><p>Veja o exemplo:</p><pre tabindex=0><code>include_once &#39;UF.php&#39;;
 include_once &#39;Cidade.php&#39;;
 
 class IndexController extends Base_Controller_Action
@@ -204,58 +120,12 @@ class IndexController extends Base_Controller_Action
         print_r($cidadesPorUF);
     }
 }
-</code></pre><p><strong>Considerações finais</strong></p>
-<p>Espero ter conseguido demonstrar este mecanismo interessante do Zend Framework. Espero que da mesma forma com que ele
-tem auxiliado o trabalho ele também auxilie o seu.</p>
-<p><strong>O que que você achou? Deixe aqui seu comentário.</strong></p>
-<p>A propósito, nos últimos dias alguns colegas me perguntaram bastante coisa sobre o Zend Framework, muitos queria fazer
+</code></pre><p><strong>Considerações finais</strong></p><p>Espero ter conseguido demonstrar este mecanismo interessante do Zend Framework. Espero que da mesma forma com que ele
+tem auxiliado o trabalho ele também auxilie o seu.</p><p><strong>O que que você achou? Deixe aqui seu comentário.</strong></p><p>A propósito, nos últimos dias alguns colegas me perguntaram bastante coisa sobre o Zend Framework, muitos queria fazer
 um hello world para entender o padrão dele, outros queriam algo mais avançado, então eu pensei: Porque não escrever uma
 série de tutoriais no meu blog? Isso pode ser útil para muito mais pessoas. Então gostaria de sua opinião. Deixe seu
-comentário.</p>
-<p>Eu estou pensando em fazer uma série de artigos simples e diretos ao assunto sobre Zend Framework, abordando desde o
-básico até o mais avançado. Então, espero começar na próxima semana.</p>
-<p>abraço.</p>
-
-            </div>
-        </div>
-    </article>
-    <div>
-        <div>
-            <div>
-                
-                <a href="http://localhost:1313/posts/lehitraot-guterman/">&#8592; Lehitraot Guterman</a>
-                
-                |
-                
-                <a href="http://localhost:1313/posts/usabilidade/">Usabilidade &#8594;</a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-</main><footer class="glitch-zone" role="contentinfo">
-    <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
-                </div>
-            </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+comentário.</p><p>Eu estou pensando em fazer uma série de artigos simples e diretos ao assunto sobre Zend Framework, abordando desde o
+básico até o mais avançado. Então, espero começar na próxima semana.</p><p>abraço.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/lehitraot-guterman/>&#8592; Lehitraot Guterman</a>
+|
+<a href=https://adlermedrado.com.br/posts/usabilidade/>Usabilidade &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

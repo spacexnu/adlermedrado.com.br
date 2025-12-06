@@ -1,20 +1,143 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Development"><meta property="og:description" content><meta property="og:url" content="https://adlermedrado.com.br/tags/development/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="website"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Development"><meta name=twitter:description content><meta name=twitter:image content="/images/default-og-image.png"><title>Development</title><meta name=description content><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/tags/development/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
-<a href=/projects>projects</a>
-<a href=/posts>posts</a>
-<a href=/missives>missives</a>
-<a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/contact>contact</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Development</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Development</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/security-isnt-a-feature-its-a-consequence/>Security isn’t a feature. It’s a consequence</a></h2><p class="text-sm text-gray-500">16 Aug 2025</p><p><p>People talk about security like it’s a product you install or a checkbox you tick off before launch. But that mindset is exactly why so many systems fail. Security isn’t a module. It’s not a team. It’s not something you slap on later. It’s a consequence — of how you think when you build.</p><p>Most software is a prototype that accidentally went live.
-Security gets added later. If it gets added at all. Usually after something breaks or someone screams.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/stream-vs-foreach-in-java/>Understanding when to use stream() vs forEach() in Java</a></h2><p class="text-sm text-gray-500">03 Nov 2024</p><p><p>In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.</p><h2 id=stream>stream()</h2><p>Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:</p><ul><li>Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.</li><li>Chained processing: Apply multiple operations in a single chain.</li><li>Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.</li><li>Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.</li></ul><h4 id=example>Example:</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> names <span style=color:#f92672>=</span> Arrays.<span style=color:#a6e22e>asList</span>(<span style=color:#e6db74>&#34;Maria&#34;</span>, <span style=color:#e6db74>&#34;José&#34;</span>, <span style=color:#e6db74>&#34;João&#34;</span>);
-</span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> filteredNames <span style=color:#f92672>=</span> names.<span style=color:#a6e22e>stream</span>()
-</span></span><span style=display:flex><span>.<span style=color:#a6e22e>filter</span>(name <span style=color:#f92672>-&gt;</span> name.<span style=color:#a6e22e>startsWith</span>(<span style=color:#e6db74>&#34;J&#34;</span>))
-</span></span><span style=display:flex><span>.<span style=color:#a6e22e>map</span>(String::toUpperCase)
-</span></span><span style=display:flex><span>.<span style=color:#a6e22e>collect</span>(Collectors.<span style=color:#a6e22e>toList</span>());
-</span></span></code></pre></div><p>The results will be a new list only with the names started with <em>J</em> in uppercase.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/posts-antigos-restaurados/>Posts antigos restaurados</a></h2><p class="text-sm text-gray-500">31 Dec 2017</p><p><p>É muito legal ser programador e participar de projetos com as mais variadas dimensões e complexidades, mas uma das
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<meta property="og:title" content="Development">
+<meta property="og:description" content="">
+<meta property="og:url" content="http://localhost:1313/tags/development/">
+<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
+
+<meta property="og:type" content="website">
+
+
+<meta property="og:image" content="/images/default-og-image.png">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Development">
+<meta name="twitter:description" content="">
+
+<meta name="twitter:image" content="/images/default-og-image.png">
+
+
+    <title>Development</title>
+    <meta name="description" content="">
+    <link rel="author" href="/humans.txt"/>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="canonical" href="http://localhost:1313/tags/development/"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header class="glitch-zone">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="navbar_left">
+            <a href="/" class="h-card" rel="me">
+                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
+            </a>
+        </div>
+        <div class="navbar_right navbar_right_animated">
+            <a href="/about">about</a>
+            <a href="/projects">projects</a>
+            <a href="/posts">posts</a>
+            <a href="/missives">missives</a>
+            <a href="/now">what am i doing now</a>
+            <a href="/uses">what am i using</a>
+            <a href="/contact">contact</a>
+            <a href="/index.xml" aria-label="RSS feed">rss</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="tag-posts">
+    <h1 class="text-4xl font-bold mb-4">Development</h1>
+    <p class="text-gray-600 mb-6">Posts tagged with <strong>Development</strong>.</p>
+
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/security-isnt-a-feature-its-a-consequence/">Security isn’t a feature. It’s a consequence</a>
+        </h2>
+        <p class="text-sm text-gray-500">16 Aug 2025</p>
+        <p><p>People talk about security like it’s a product you install or a checkbox you tick off before launch. But that mindset is exactly why so many systems fail. Security isn’t a module. It’s not a team. It’s not something you slap on later. It’s a consequence — of how you think when you build.</p>
+<p>Most software is a prototype that accidentally went live.
+Security gets added later. If it gets added at all. Usually after something breaks or someone screams.</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/stream-vs-foreach-in-java/">Understanding when to use stream() vs forEach() in Java</a>
+        </h2>
+        <p class="text-sm text-gray-500">03 Nov 2024</p>
+        <p><p>In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.</p>
+<h2 id="stream">stream()</h2>
+<p>Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:</p>
+<ul>
+<li>Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.</li>
+<li>Chained processing: Apply multiple operations in a single chain.</li>
+<li>Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.</li>
+<li>Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.</li>
+</ul>
+<h4 id="example">Example:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> names <span style="color:#f92672">=</span> Arrays.<span style="color:#a6e22e">asList</span>(<span style="color:#e6db74">&#34;Maria&#34;</span>, <span style="color:#e6db74">&#34;José&#34;</span>, <span style="color:#e6db74">&#34;João&#34;</span>);
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> filteredNames <span style="color:#f92672">=</span> names.<span style="color:#a6e22e">stream</span>()
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">filter</span>(name <span style="color:#f92672">-&gt;</span> name.<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;J&#34;</span>))
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">map</span>(String::toUpperCase)
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">collect</span>(Collectors.<span style="color:#a6e22e">toList</span>());
+</span></span></code></pre></div><p>The results will be a new list only with the names started with <em>J</em> in uppercase.</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/posts-antigos-restaurados/">Posts antigos restaurados</a>
+        </h2>
+        <p class="text-sm text-gray-500">31 Dec 2017</p>
+        <p><p>É muito legal ser programador e participar de projetos com as mais variadas dimensões e complexidades, mas uma das
 coisas que eu acho mais legal em ser um programador é o fato de poder utilizar este conhecimento para automatizar
-tarefas e resolver problemas do cotidiano.</p><p>Resolvi escrever este post justamente porque eu automatizei uma tarefa que me tomaria algumas horas com um pequeno e
-simples script <a href=https://www.python.org/>python</a>.</p><p>Eu achei legal escrever um pouco sobre isso porque pode servir de exemplo para pessoas que não trabalham com programação
-diariamente de que elas podem se beneficiar em conhecer um pouco e tentar otimizar tarefas repetitivas.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/remote-systems-no-pdt/>Remote Systems no PDT</a></h2><p class="text-sm text-gray-500">27 Jun 2008</p><p><p>Eu sempre procurei por plugins do eclipse que me permitissem acessar diretórios remotos via SSH para editar arquivos
-remotamente, mas todos que encontrei não funcionavam corretamente.</p><p>Hoje encontrei <a href=https://www.freshblurbs.com/blog/2007/12/11/best-sftp-plugin-eclipse.html>neste site</a> um plugin que
-parece ser o mesmo usado no Zend Studio for Eclipse e é muito bom.</p><p>[]s</p></p></article></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>
+tarefas e resolver problemas do cotidiano.</p>
+<p>Resolvi escrever este post justamente porque eu automatizei uma tarefa que me tomaria algumas horas com um pequeno e
+simples script <a href="https://www.python.org/">python</a>.</p>
+<p>Eu achei legal escrever um pouco sobre isso porque pode servir de exemplo para pessoas que não trabalham com programação
+diariamente de que elas podem se beneficiar em conhecer um pouco e tentar otimizar tarefas repetitivas.</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/remote-systems-no-pdt/">Remote Systems no PDT</a>
+        </h2>
+        <p class="text-sm text-gray-500">27 Jun 2008</p>
+        <p><p>Eu sempre procurei por plugins do eclipse que me permitissem acessar diretórios remotos via SSH para editar arquivos
+remotamente, mas todos que encontrei não funcionavam corretamente.</p>
+<p>Hoje encontrei <a href="https://www.freshblurbs.com/blog/2007/12/11/best-sftp-plugin-eclipse.html">neste site</a> um plugin que
+parece ser o mesmo usado no Zend Studio for Eclipse e é muito bom.</p>
+<p>[]s</p></p>
+    </article>
+    
+</section>
+
+</main><footer class="glitch-zone" role="contentinfo">
+    <div class="footer-content">
+        <div class="copyright">
+            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
+        </div>
+        <div class="gpg_signed_info">
+            <div class="gpg-callout">
+                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
+                <div class="gpg-callout__text">
+                    <p class="gpg-callout__title">All pages are PGP signed.</p>
+                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
+                </div>
+            </div>
+            <p>
+                <em>Privacy policy: this website employs no tracking.</em>
+            </p>
+            <p>
+                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+                <span class="badge-description">Mozilla Observatory Security Rating</span>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

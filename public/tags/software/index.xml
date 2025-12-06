@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/software/</link><description>Recent content in Software on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 16 Aug 2025 12:12:17 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/software/index.xml" rel="self" type="application/rss+xml"/><item><title>Security isn’t a feature. It’s a consequence</title><link>https://adlermedrado.com.br/posts/security-isnt-a-feature-its-a-consequence/</link><pubDate>Sat, 16 Aug 2025 12:12:17 -0300</pubDate><guid>https://adlermedrado.com.br/posts/security-isnt-a-feature-its-a-consequence/</guid><description>&lt;p&gt;People talk about security like it’s a product you install or a checkbox you tick off before launch. But that mindset is exactly why so many systems fail. Security isn’t a module. It’s not a team. It’s not something you slap on later. It’s a consequence — of how you think when you build.&lt;/p&gt;
-&lt;p&gt;Most software is a prototype that accidentally went live.
-Security gets added later. If it gets added at all. Usually after something breaks or someone screams.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Adler Medrado&#39;s corner of the web</title>
+    <link>http://localhost:1313/tags/software/</link>
+    <description>Recent content in Software on Adler Medrado&#39;s corner of the web</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 16 Aug 2025 12:12:17 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security isn’t a feature. It’s a consequence</title>
+      <link>http://localhost:1313/posts/security-isnt-a-feature-its-a-consequence/</link>
+      <pubDate>Sat, 16 Aug 2025 12:12:17 -0300</pubDate>
+      <guid>http://localhost:1313/posts/security-isnt-a-feature-its-a-consequence/</guid>
+      <description>&lt;p&gt;People talk about security like it’s a product you install or a checkbox you tick off before launch. But that mindset is exactly why so many systems fail. Security isn’t a module. It’s not a team. It’s not something you slap on later. It’s a consequence — of how you think when you build.&lt;/p&gt;&#xA;&lt;p&gt;Most software is a prototype that accidentally went live.&#xA;Security gets added later. If it gets added at all. Usually after something breaks or someone screams.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

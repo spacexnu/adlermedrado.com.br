@@ -1,4 +1,11 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Understanding when to use stream() vs forEach() in Java"><meta property="og:description" content='In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<meta property="og:title" content="Understanding when to use stream() vs forEach() in Java">
+<meta property="og:description" content="In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.
 stream()
 Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:
 
@@ -8,12 +15,25 @@ Parallel processing: For large datasets, use parallelStream() to leverage multi-
 Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.
 
 Example:
-List<String> names = Arrays.asList("Maria", "José", "João");
-List<String> filteredNames = names.stream()
-.filter(name -> name.startsWith("J"))
+List&lt;String&gt; names = Arrays.asList(&#34;Maria&#34;, &#34;José&#34;, &#34;João&#34;);
+List&lt;String&gt; filteredNames = names.stream()
+.filter(name -&gt; name.startsWith(&#34;J&#34;))
 .map(String::toUpperCase)
 .collect(Collectors.toList());
-The results will be a new list only with the names started with J in uppercase.'><meta property="og:url" content="https://adlermedrado.com.br/posts/stream-vs-foreach-in-java/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Understanding when to use stream() vs forEach() in Java"><meta name=twitter:description content='In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.
+The results will be a new list only with the names started with J in uppercase.">
+<meta property="og:url" content="http://localhost:1313/posts/stream-vs-foreach-in-java/">
+<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
+
+<meta property="og:type" content="article">
+
+
+<meta property="og:image" content="/images/default-og-image.png">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Understanding when to use stream() vs forEach() in Java">
+<meta name="twitter:description" content="In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.
 stream()
 Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:
 
@@ -23,12 +43,18 @@ Parallel processing: For large datasets, use parallelStream() to leverage multi-
 Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.
 
 Example:
-List<String> names = Arrays.asList("Maria", "José", "João");
-List<String> filteredNames = names.stream()
-.filter(name -> name.startsWith("J"))
+List&lt;String&gt; names = Arrays.asList(&#34;Maria&#34;, &#34;José&#34;, &#34;João&#34;);
+List&lt;String&gt; filteredNames = names.stream()
+.filter(name -&gt; name.startsWith(&#34;J&#34;))
 .map(String::toUpperCase)
 .collect(Collectors.toList());
-The results will be a new list only with the names started with J in uppercase.'><meta name=twitter:image content="/images/default-og-image.png"><title>Understanding when to use stream() vs forEach() in Java</title><meta name=description content='In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.
+The results will be a new list only with the names started with J in uppercase.">
+
+<meta name="twitter:image" content="/images/default-og-image.png">
+
+
+    <title>Understanding when to use stream() vs forEach() in Java</title>
+    <meta name="description" content="In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.
 stream()
 Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:
 
@@ -38,31 +64,144 @@ Parallel processing: For large datasets, use parallelStream() to leverage multi-
 Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.
 
 Example:
-List<String> names = Arrays.asList("Maria", "José", "João");
-List<String> filteredNames = names.stream()
-.filter(name -> name.startsWith("J"))
+List&lt;String&gt; names = Arrays.asList(&#34;Maria&#34;, &#34;José&#34;, &#34;João&#34;);
+List&lt;String&gt; filteredNames = names.stream()
+.filter(name -&gt; name.startsWith(&#34;J&#34;))
 .map(String::toUpperCase)
 .collect(Collectors.toList());
-The results will be a new list only with the names started with J in uppercase.'><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/stream-vs-foreach-in-java/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
-<a href=/projects>projects</a>
-<a href=/posts>posts</a>
-<a href=/missives>missives</a>
-<a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/contact>contact</a></div></nav></header><main><section class=section><article><div><h1>Understanding when to use stream() vs forEach() in Java</h1><div><div><p><small><time>November 3, 2024</time>
-|
-2 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
-<a href=/tags/programming>programming</a>,
-<a href=/tags/development>development</a>,
-<a href=/tags/java>java</a>,
-<a href=/tags/tips>tips</a></p></div></p></div><span class=line_break></span></div><div class=content><p>In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.</p><h2 id=stream>stream()</h2><p>Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:</p><ul><li>Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.</li><li>Chained processing: Apply multiple operations in a single chain.</li><li>Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.</li><li>Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.</li></ul><h4 id=example>Example:</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> names <span style=color:#f92672>=</span> Arrays.<span style=color:#a6e22e>asList</span>(<span style=color:#e6db74>&#34;Maria&#34;</span>, <span style=color:#e6db74>&#34;José&#34;</span>, <span style=color:#e6db74>&#34;João&#34;</span>);
-</span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> filteredNames <span style=color:#f92672>=</span> names.<span style=color:#a6e22e>stream</span>()
-</span></span><span style=display:flex><span>.<span style=color:#a6e22e>filter</span>(name <span style=color:#f92672>-&gt;</span> name.<span style=color:#a6e22e>startsWith</span>(<span style=color:#e6db74>&#34;J&#34;</span>))
-</span></span><span style=display:flex><span>.<span style=color:#a6e22e>map</span>(String::toUpperCase)
-</span></span><span style=display:flex><span>.<span style=color:#a6e22e>collect</span>(Collectors.<span style=color:#a6e22e>toList</span>());
-</span></span></code></pre></div><p>The results will be a new list only with the names started with <em>J</em> in uppercase.</p><h2 id=foreach>forEach()</h2><p>Using forEach() is perfect for simple tasks, applying an action to each item without returning anything. Use for:</p><ul><li>Simple operations: Direct tasks without transformations or chaining.</li><li>Side effects: Modify elements in an existing collection.</li><li>Readability: Simple and direct code.</li></ul><h4 id=example-1>Example:</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> names <span style=color:#f92672>=</span> Arrays.<span style=color:#a6e22e>asList</span>(<span style=color:#e6db74>&#34;Maria&#34;</span>, <span style=color:#e6db74>&#34;José&#34;</span>, <span style=color:#e6db74>&#34;João&#34;</span>);
-</span></span><span style=display:flex><span>names.<span style=color:#a6e22e>forEach</span>(name <span style=color:#f92672>-&gt;</span> System.<span style=color:#a6e22e>out</span>.<span style=color:#a6e22e>println</span>(name));
-</span></span></code></pre></div><p>This code snippet will only print all items on the list.</p><h2 id=final-thoughts>Final Thoughts</h2><ul><li>Use Stream() for complex transformations, parallel processing, or immutability.</li><li>Use ForEach() for simple, direct operations.</li></ul><p>These two options complement each other, enabling Java developers to work with collections efficiently.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/shadowdata-updates/>&#8592; Shadowdata Updates</a>
-|
-<a href=https://adlermedrado.com.br/posts/boat-gig-parody/>From BBS to Blockchain: A Boat Gig Parody for Old-School Nerds &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>
+The results will be a new list only with the names started with J in uppercase.">
+    <link rel="author" href="/humans.txt"/>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="canonical" href="http://localhost:1313/posts/stream-vs-foreach-in-java/"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header class="glitch-zone">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="navbar_left">
+            <a href="/" class="h-card" rel="me">
+                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
+            </a>
+        </div>
+        <div class="navbar_right navbar_right_animated">
+            <a href="/about">about</a>
+            <a href="/projects">projects</a>
+            <a href="/posts">posts</a>
+            <a href="/missives">missives</a>
+            <a href="/now">what am i doing now</a>
+            <a href="/uses">what am i using</a>
+            <a href="/contact">contact</a>
+            <a href="/index.xml" aria-label="RSS feed">rss</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="section">
+    <article>
+        <div>
+            <h1>Understanding when to use stream() vs forEach() in Java</h1>
+            <div>
+                <div>
+                    <p>
+                        <small>
+                            <time>November 3, 2024</time>
+                            |
+                            2  minutes  read
+                        </small>
+                        
+                        <div class="post-tags">
+                            <p>
+                                <strong>Tags:</strong>
+                                
+                                <a href="/tags/programming">programming</a>, 
+                                
+                                <a href="/tags/development">development</a>, 
+                                
+                                <a href="/tags/java">java</a>, 
+                                
+                                <a href="/tags/tips">tips</a>
+                                
+                            </p>
+                        </div>
+                        
+                    </p>
+                </div>
+                <span class="line_break"></span>
+            </div>
+            <div class="content">
+                <p>In Java, choosing between Stream() and ForEach() depends on what you want to do with your data. While both are used to iterate over collections, each has its own strengths.</p>
+<h2 id="stream">stream()</h2>
+<p>Using stream() is powerful for complex data transformations, allowing operations like filtering, mapping, and reducing. It&rsquo;s ideal for:</p>
+<ul>
+<li>Transformations and filters: Use Stream() to apply operations like filtering, mapping, grouping, or reducing data.</li>
+<li>Chained processing: Apply multiple operations in a single chain.</li>
+<li>Parallel processing: For large datasets, use parallelStream() to leverage multi-core processors.</li>
+<li>Immutability: Streams avoid side effects, allowing new collections to be generated without changing the original.</li>
+</ul>
+<h4 id="example">Example:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> names <span style="color:#f92672">=</span> Arrays.<span style="color:#a6e22e">asList</span>(<span style="color:#e6db74">&#34;Maria&#34;</span>, <span style="color:#e6db74">&#34;José&#34;</span>, <span style="color:#e6db74">&#34;João&#34;</span>);
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> filteredNames <span style="color:#f92672">=</span> names.<span style="color:#a6e22e">stream</span>()
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">filter</span>(name <span style="color:#f92672">-&gt;</span> name.<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;J&#34;</span>))
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">map</span>(String::toUpperCase)
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">collect</span>(Collectors.<span style="color:#a6e22e">toList</span>());
+</span></span></code></pre></div><p>The results will be a new list only with the names started with <em>J</em> in uppercase.</p>
+<h2 id="foreach">forEach()</h2>
+<p>Using forEach() is perfect for simple tasks, applying an action to each item without returning anything. Use for:</p>
+<ul>
+<li>Simple operations: Direct tasks without transformations or chaining.</li>
+<li>Side effects: Modify elements in an existing collection.</li>
+<li>Readability: Simple and direct code.</li>
+</ul>
+<h4 id="example-1">Example:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> names <span style="color:#f92672">=</span> Arrays.<span style="color:#a6e22e">asList</span>(<span style="color:#e6db74">&#34;Maria&#34;</span>, <span style="color:#e6db74">&#34;José&#34;</span>, <span style="color:#e6db74">&#34;João&#34;</span>);
+</span></span><span style="display:flex;"><span>names.<span style="color:#a6e22e">forEach</span>(name <span style="color:#f92672">-&gt;</span> System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(name));
+</span></span></code></pre></div><p>This code snippet will only print all items on the list.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<ul>
+<li>Use Stream() for complex transformations, parallel processing, or immutability.</li>
+<li>Use ForEach() for simple, direct operations.</li>
+</ul>
+<p>These two options complement each other, enabling Java developers to work with collections efficiently.</p>
+
+            </div>
+        </div>
+    </article>
+    <div>
+        <div>
+            <div>
+                
+                <a href="http://localhost:1313/posts/shadowdata-updates/">&#8592; Shadowdata Updates</a>
+                
+                |
+                
+                <a href="http://localhost:1313/posts/boat-gig-parody/">From BBS to Blockchain: A Boat Gig Parody for Old-School Nerds &#8594;</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+</main><footer class="glitch-zone" role="contentinfo">
+    <div class="footer-content">
+        <div class="copyright">
+            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
+        </div>
+        <div class="gpg_signed_info">
+            <div class="gpg-callout">
+                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
+                <div class="gpg-callout__text">
+                    <p class="gpg-callout__title">All pages are PGP signed.</p>
+                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
+                </div>
+            </div>
+            <p>
+                <em>Privacy policy: this website employs no tracking.</em>
+            </p>
+            <p>
+                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+                <span class="badge-description">Mozilla Observatory Security Rating</span>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

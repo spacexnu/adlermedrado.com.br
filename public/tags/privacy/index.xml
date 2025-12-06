@@ -1,7 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Privacy on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/privacy/</link><description>Recent content in Privacy on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 27 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/privacy/index.xml" rel="self" type="application/rss+xml"/><item><title>Why You Should Start Using GPG Now</title><link>https://adlermedrado.com.br/posts/gpg-intro-en/</link><pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/gpg-intro-en/</guid><description>&lt;h1 id="why-you-should-start-using-gpg-now"&gt;Why You Should Start Using GPG Now&lt;/h1&gt;
-&lt;p&gt;If you&amp;rsquo;re not using GPG to sign or encrypt your files and messages yet, it&amp;rsquo;s time to reconsider. It&amp;rsquo;s not just about looking like a 90s movie hacker — it&amp;rsquo;s about protecting your communication and digital identity in an increasingly hostile world.&lt;/p&gt;
-&lt;h2 id="-what-is-gpg"&gt;🔐 What is GPG?&lt;/h2&gt;
-&lt;p&gt;GPG (GNU Privacy Guard) is a free implementation of the OpenPGP standard. It allows you to create cryptographic key pairs to digitally sign files and messages, as well as encrypt them to ensure confidentiality. It&amp;rsquo;s an essential tool for anyone serious about digital security.&lt;/p&gt;</description></item><item><title>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</title><link>https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/</link><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/llm_local_llamacpp_mac/</guid><description>&lt;p&gt;Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.&lt;/p&gt;
-&lt;p&gt;I put this guide together because I wanted &lt;strong&gt;LLMs running locally&lt;/strong&gt;, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes.&lt;/p&gt;</description></item><item><title>Introduction to Internet Privacy: Five Essential First Steps</title><link>https://adlermedrado.com.br/posts/privacy-5-initial-steps/</link><pubDate>Thu, 08 Aug 2024 16:33:40 -0300</pubDate><guid>https://adlermedrado.com.br/posts/privacy-5-initial-steps/</guid><description>&lt;h3 id="introduction-to-internet-privacy-five-essential-first-steps"&gt;Introduction to Internet Privacy: Five Essential First Steps&lt;/h3&gt;
-&lt;img alt="Privacy" height="60%" src="https://adlermedrado.com.br/posts/images/privacidade.jpg" title="Privacy" width="60%"/&gt;
-&lt;p&gt;We live in an era where the internet is deeply embedded in our daily lives. Whether for work, leisure, or communication, we are constantly connected. However, this continuous connection comes at a price: our privacy. In a world where data is the new gold, protecting our personal information has become crucial. Here are five essential first steps to ensure your online privacy.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy on Adler Medrado&#39;s corner of the web</title>
+    <link>http://localhost:1313/tags/privacy/</link>
+    <description>Recent content in Privacy on Adler Medrado&#39;s corner of the web</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 27 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why You Should Start Using GPG Now</title>
+      <link>http://localhost:1313/posts/gpg-intro-en/</link>
+      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/gpg-intro-en/</guid>
+      <description>&lt;h1 id=&#34;why-you-should-start-using-gpg-now&#34;&gt;Why You Should Start Using GPG Now&lt;/h1&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re not using GPG to sign or encrypt your files and messages yet, it&amp;rsquo;s time to reconsider. It&amp;rsquo;s not just about looking like a 90s movie hacker — it&amp;rsquo;s about protecting your communication and digital identity in an increasingly hostile world.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-what-is-gpg&#34;&gt;🔐 What is GPG?&lt;/h2&gt;&#xA;&lt;p&gt;GPG (GNU Privacy Guard) is a free implementation of the OpenPGP standard. It allows you to create cryptographic key pairs to digitally sign files and messages, as well as encrypt them to ensure confidentiality. It&amp;rsquo;s an essential tool for anyone serious about digital security.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS</title>
+      <link>http://localhost:1313/posts/llm_local_llamacpp_mac/</link>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/llm_local_llamacpp_mac/</guid>
+      <description>&lt;p&gt;Let’s cut the fluff: if you care about privacy, speed, and having full control over your stack, running LLMs locally is no longer optional — it’s survival. Cloud’s nice until it’s not. Especially when your data is the product and your API bill explodes overnight.&lt;/p&gt;&#xA;&lt;p&gt;I put this guide together because I wanted &lt;strong&gt;LLMs running locally&lt;/strong&gt;, even with limited hardware — no vendor lock-in, no middlemen sniffing packets, just raw local compute. And yes, I run this stuff daily on a MacBook Air M1 with 16GB RAM. Modest? Yep. Enough? Hell yes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to Internet Privacy: Five Essential First Steps</title>
+      <link>http://localhost:1313/posts/privacy-5-initial-steps/</link>
+      <pubDate>Thu, 08 Aug 2024 16:33:40 -0300</pubDate>
+      <guid>http://localhost:1313/posts/privacy-5-initial-steps/</guid>
+      <description>&lt;h3 id=&#34;introduction-to-internet-privacy-five-essential-first-steps&#34;&gt;Introduction to Internet Privacy: Five Essential First Steps&lt;/h3&gt;&#xA;&lt;img alt=&#34;Privacy&#34; height=&#34;60%&#34; src=&#34;http://localhost:1313/posts/images/privacidade.jpg&#34; title=&#34;Privacy&#34; width=&#34;60%&#34;/&gt;&#xA;&lt;p&gt;We live in an era where the internet is deeply embedded in our daily lives. Whether for work, leisure, or communication, we are constantly connected. However, this continuous connection comes at a price: our privacy. In a world where data is the new gold, protecting our personal information has become crucial. Here are five essential first steps to ensure your online privacy.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

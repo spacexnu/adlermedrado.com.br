@@ -1,13 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nostalgia on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/nostalgia/</link><description>Recent content in Nostalgia on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/nostalgia/index.xml" rel="self" type="application/rss+xml"/><item><title>Os lugares onde nunca mais voltei, mas que ainda me habitam</title><link>https://adlermedrado.com.br/posts/os-lugares-onde-nunca-mais-voltei/</link><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/os-lugares-onde-nunca-mais-voltei/</guid><description>&lt;p&gt;Tem lugares que eu nunca mais pisei, mas que ainda moram em mim.&lt;br&gt;
-Quartos escuros, banhados pelo brilho frio de um monitor CRT.&lt;br&gt;
-A luz do modem piscando como um farol numa madrugada silenciosa.&lt;br&gt;
-Ninguém por perto. Só eu e alguma banda que berrava coisas que eu nem entendia direito — mas sentia.&lt;/p&gt;
-&lt;p&gt;Não era tristeza. Era solidão.&lt;br&gt;
-Mas era minha. Domada, domesticada.&lt;br&gt;
-Aprendi a conversar com ela quando todo o resto só queria fazer barulho.&lt;/p&gt;</description></item><item><title>The Places I Never Returned To, But Still Live in Me</title><link>https://adlermedrado.com.br/posts/the-places-i-never-returned-to/</link><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/the-places-i-never-returned-to/</guid><description>&lt;p&gt;There are places I never stepped in again, but they still live in me.&lt;br&gt;
-Dark rooms lit by the cold glow of a CRT monitor.&lt;br&gt;
-The light of the modem blinking like a lighthouse in the silent dawn.&lt;br&gt;
-No one around. Just me and some band screaming things I barely understood — but deeply felt.&lt;/p&gt;
-&lt;p&gt;It wasn’t sadness. It was solitude.&lt;br&gt;
-But it was mine. Tamed, familiar.&lt;br&gt;
-I learned to talk to it when the rest of the world only wanted noise.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nostalgia on Adler Medrado&#39;s corner of the web</title>
+    <link>http://localhost:1313/tags/nostalgia/</link>
+    <description>Recent content in Nostalgia on Adler Medrado&#39;s corner of the web</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/nostalgia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Os lugares onde nunca mais voltei, mas que ainda me habitam</title>
+      <link>http://localhost:1313/posts/os-lugares-onde-nunca-mais-voltei/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/os-lugares-onde-nunca-mais-voltei/</guid>
+      <description>&lt;p&gt;Tem lugares que eu nunca mais pisei, mas que ainda moram em mim.&lt;br&gt;&#xA;Quartos escuros, banhados pelo brilho frio de um monitor CRT.&lt;br&gt;&#xA;A luz do modem piscando como um farol numa madrugada silenciosa.&lt;br&gt;&#xA;Ninguém por perto. Só eu e alguma banda que berrava coisas que eu nem entendia direito — mas sentia.&lt;/p&gt;&#xA;&lt;p&gt;Não era tristeza. Era solidão.&lt;br&gt;&#xA;Mas era minha. Domada, domesticada.&lt;br&gt;&#xA;Aprendi a conversar com ela quando todo o resto só queria fazer barulho.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Places I Never Returned To, But Still Live in Me</title>
+      <link>http://localhost:1313/posts/the-places-i-never-returned-to/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/the-places-i-never-returned-to/</guid>
+      <description>&lt;p&gt;There are places I never stepped in again, but they still live in me.&lt;br&gt;&#xA;Dark rooms lit by the cold glow of a CRT monitor.&lt;br&gt;&#xA;The light of the modem blinking like a lighthouse in the silent dawn.&lt;br&gt;&#xA;No one around. Just me and some band screaming things I barely understood — but deeply felt.&lt;/p&gt;&#xA;&lt;p&gt;It wasn’t sadness. It was solitude.&lt;br&gt;&#xA;But it was mine. Tamed, familiar.&lt;br&gt;&#xA;I learned to talk to it when the rest of the world only wanted noise.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dotfiles on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/dotfiles/</link><description>Recent content in Dotfiles on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 31 May 2025 22:29:46 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/dotfiles/index.xml" rel="self" type="application/rss+xml"/><item><title>Install &amp; Neovim Bootstrap Revamp</title><link>https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/</link><pubDate>Sat, 31 May 2025 22:29:46 -0300</pubDate><guid>https://adlermedrado.com.br/missives/install-neovim-bootstrap-revamp/</guid><description>&lt;p&gt;Ongoing work on fully revamping my dot-files &lt;code&gt;install.sh&lt;/code&gt; and Neovim stack.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dotfiles bootstrap is now modular and declarative.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;install.sh&lt;/code&gt; handles symlinks, backups, plugin sync, and full lazy.nvim bootstrap automatically.&lt;/li&gt;
-&lt;li&gt;Neovim config is framework-free, built from scratch with isolated plugin control.&lt;/li&gt;
-&lt;li&gt;Full lazy-loading using &lt;code&gt;lazy.nvim&lt;/code&gt;, with sniper-level loading precision.&lt;/li&gt;
-&lt;li&gt;LSP, CMP, Treesitter, and nvim-tree properly initialized using &lt;code&gt;config&lt;/code&gt; blocks.&lt;/li&gt;
-&lt;li&gt;Keymaps handled via &lt;code&gt;which-key&lt;/code&gt; with full namespace documentation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Work in progress. Updates and refinements will continue over the next days.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dotfiles on Adler Medrado&#39;s corner of the web</title>
+    <link>http://localhost:1313/tags/dotfiles/</link>
+    <description>Recent content in Dotfiles on Adler Medrado&#39;s corner of the web</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 31 May 2025 22:29:46 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dotfiles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install &amp; Neovim Bootstrap Revamp</title>
+      <link>http://localhost:1313/missives/install-neovim-bootstrap-revamp/</link>
+      <pubDate>Sat, 31 May 2025 22:29:46 -0300</pubDate>
+      <guid>http://localhost:1313/missives/install-neovim-bootstrap-revamp/</guid>
+      <description>&lt;p&gt;Ongoing work on fully revamping my dot-files &lt;code&gt;install.sh&lt;/code&gt; and Neovim stack.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dotfiles bootstrap is now modular and declarative.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;install.sh&lt;/code&gt; handles symlinks, backups, plugin sync, and full lazy.nvim bootstrap automatically.&lt;/li&gt;&#xA;&lt;li&gt;Neovim config is framework-free, built from scratch with isolated plugin control.&lt;/li&gt;&#xA;&lt;li&gt;Full lazy-loading using &lt;code&gt;lazy.nvim&lt;/code&gt;, with sniper-level loading precision.&lt;/li&gt;&#xA;&lt;li&gt;LSP, CMP, Treesitter, and nvim-tree properly initialized using &lt;code&gt;config&lt;/code&gt; blocks.&lt;/li&gt;&#xA;&lt;li&gt;Keymaps handled via &lt;code&gt;which-key&lt;/code&gt; with full namespace documentation.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Work in progress. Updates and refinements will continue over the next days.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

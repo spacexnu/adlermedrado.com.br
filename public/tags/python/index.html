@@ -1,36 +1,152 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Python"><meta property="og:description" content><meta property="og:url" content="https://adlermedrado.com.br/tags/python/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="website"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Python"><meta name=twitter:description content><meta name=twitter:image content="/images/default-og-image.png"><title>Python</title><meta name=description content><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/tags/python/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
-<a href=/projects>projects</a>
-<a href=/posts>posts</a>
-<a href=/missives>missives</a>
-<a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/contact>contact</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Python</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Python</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/automating_job_search_with_ai_powered_analysis/>Job Finder - Automating job search with AI powered analysis</a></h2><p class="text-sm text-gray-500">06 Feb 2025</p><p><p><img src=/images/header-job-search.png alt="Job Finder" width=100% height=auto></img></p><p>Hey everyone! I just wanted to share a new pet project I&rsquo;ve been working on.</p><p>I built <strong>Job Finder</strong> to automate job searches, analyze descriptions using AI, and filter the best opportunities based on personal criteria.</p><p><strong>Job Finder</strong> is an <strong>open-source</strong> project designed to <strong>automate job searching, analyze job descriptions using AI, and filter opportunities based on predefined criteria</strong>. Initially developed as a personal study project, it demonstrates the integration of <strong>automation, AI, and data processing</strong>, but can also be useful for others looking to streamline job searches.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/boat-gig-parody/>From BBS to Blockchain: A Boat Gig Parody for Old-School Nerds</a></h2><p class="text-sm text-gray-500">28 Jan 2025</p><p><p>Last weekend, I was coding when a song from one of my Apple Music playlists started playing: Boat Gig by the band Tribal Tech (highly recommended if you’re not familiar with it).</p><p>As the music played and I continued coding and learning to work with AI, a sort of movie ran through my mind—reflecting on where we’ve come from (at least since I hopped on the boat) in the tech world, and where we are today.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/install-lxml-on-macbook-with-apple-silicon/>Install lxml on MacBook with Apple Silicon</a></h2><p class="text-sm text-gray-500">03 Jan 2023</p><p><p><img src=/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png alt="pip install error when installing lxml"></p><p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Building wheels <span style=color:#66d9ef>for</span> collected packages: xmlsec  
-</span></span><span style=display:flex><span>Building wheel <span style=color:#66d9ef>for</span> xmlsec <span style=color:#f92672>(</span>pyproject.toml<span style=color:#f92672>)</span> … error  
-</span></span><span style=display:flex><span>error: subprocess-exited-with-error  
-</span></span><span style=display:flex><span>× Building wheel <span style=color:#66d9ef>for</span> xmlsec <span style=color:#f92672>(</span>pyproject.toml<span style=color:#f92672>)</span> did not run successfully.  
-</span></span><span style=display:flex><span>│ exit code: <span style=color:#ae81ff>1</span>  
-</span></span><span style=display:flex><span>╰─&gt; <span style=color:#f92672>[</span><span style=color:#ae81ff>13</span> lines of output<span style=color:#f92672>]</span>  
-</span></span><span style=display:flex><span>running bdist_wheel  
-</span></span><span style=display:flex><span>running build  
-</span></span><span style=display:flex><span>running build_py  
-</span></span><span style=display:flex><span>creating build  
-</span></span><span style=display:flex><span>creating build/lib.macosx-13.0-arm64-cpython-310  
-</span></span><span style=display:flex><span>creating build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style=display:flex><span>copying src/xmlsec/py.typed -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style=display:flex><span>copying src/xmlsec/tree.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style=display:flex><span>copying src/xmlsec/**init**.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style=display:flex><span>copying src/xmlsec/constants.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style=display:flex><span>copying src/xmlsec/template.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
-</span></span><span style=display:flex><span>running build_ext  
-</span></span><span style=display:flex><span>error: xmlsec1 is not installed or not in path.  
-</span></span><span style=display:flex><span><span style=color:#f92672>[</span>end of output<span style=color:#f92672>]</span>  
-</span></span><span style=display:flex><span>note: This error originates from a subprocess, and is likely not a problem with pip.  
-</span></span><span style=display:flex><span>ERROR: Failed building wheel <span style=color:#66d9ef>for</span> xmlsec  
-</span></span><span style=display:flex><span>Failed to build xmlsec  
-</span></span><span style=display:flex><span>ERROR: Could not build wheels <span style=color:#66d9ef>for</span> xmlsec, which is required to install pyproject.toml-based projects
-</span></span></code></pre></div><p>So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I needed to execute the following commands:</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/posts-antigos-restaurados/>Posts antigos restaurados</a></h2><p class="text-sm text-gray-500">31 Dec 2017</p><p><p>É muito legal ser programador e participar de projetos com as mais variadas dimensões e complexidades, mas uma das
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<meta property="og:title" content="Python">
+<meta property="og:description" content="">
+<meta property="og:url" content="http://localhost:1313/tags/python/">
+<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
+
+<meta property="og:type" content="website">
+
+
+<meta property="og:image" content="/images/default-og-image.png">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Python">
+<meta name="twitter:description" content="">
+
+<meta name="twitter:image" content="/images/default-og-image.png">
+
+
+    <title>Python</title>
+    <meta name="description" content="">
+    <link rel="author" href="/humans.txt"/>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="canonical" href="http://localhost:1313/tags/python/"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header class="glitch-zone">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="navbar_left">
+            <a href="/" class="h-card" rel="me">
+                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
+            </a>
+        </div>
+        <div class="navbar_right navbar_right_animated">
+            <a href="/about">about</a>
+            <a href="/projects">projects</a>
+            <a href="/posts">posts</a>
+            <a href="/missives">missives</a>
+            <a href="/now">what am i doing now</a>
+            <a href="/uses">what am i using</a>
+            <a href="/contact">contact</a>
+            <a href="/index.xml" aria-label="RSS feed">rss</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="tag-posts">
+    <h1 class="text-4xl font-bold mb-4">Python</h1>
+    <p class="text-gray-600 mb-6">Posts tagged with <strong>Python</strong>.</p>
+
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/automating_job_search_with_ai_powered_analysis/">Job Finder - Automating job search with AI powered analysis</a>
+        </h2>
+        <p class="text-sm text-gray-500">06 Feb 2025</p>
+        <p><p><img src="/images/header-job-search.png" alt="Job Finder" width="100%" height="auto"></img></p>
+<p>Hey everyone! I just wanted to share a new pet project I&rsquo;ve been working on.</p>
+<p>I built <strong>Job Finder</strong> to automate job searches, analyze descriptions using AI, and filter the best opportunities based on personal criteria.</p>
+<p><strong>Job Finder</strong> is an <strong>open-source</strong> project designed to <strong>automate job searching, analyze job descriptions using AI, and filter opportunities based on predefined criteria</strong>. Initially developed as a personal study project, it demonstrates the integration of <strong>automation, AI, and data processing</strong>, but can also be useful for others looking to streamline job searches.</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/boat-gig-parody/">From BBS to Blockchain: A Boat Gig Parody for Old-School Nerds</a>
+        </h2>
+        <p class="text-sm text-gray-500">28 Jan 2025</p>
+        <p><p>Last weekend, I was coding when a song from one of my Apple Music playlists started playing: Boat Gig by the band Tribal Tech (highly recommended if you’re not familiar with it).</p>
+<p>As the music played and I continued coding and learning to work with AI, a sort of movie ran through my mind—reflecting on where we’ve come from (at least since I hopped on the boat) in the tech world, and where we are today.</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/install-lxml-on-macbook-with-apple-silicon/">Install lxml on MacBook with Apple Silicon</a>
+        </h2>
+        <p class="text-sm text-gray-500">03 Jan 2023</p>
+        <p><p><img src="/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png" alt="pip install error when installing lxml"></p>
+<p>Today I needed to install lxml into a python project I&rsquo;m working on my local machine, but I got the following errors when xmlsec, that is a library dependency, was being installed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Building wheels <span style="color:#66d9ef">for</span> collected packages: xmlsec  
+</span></span><span style="display:flex;"><span>Building wheel <span style="color:#66d9ef">for</span> xmlsec <span style="color:#f92672">(</span>pyproject.toml<span style="color:#f92672">)</span> … error  
+</span></span><span style="display:flex;"><span>error: subprocess-exited-with-error  
+</span></span><span style="display:flex;"><span>× Building wheel <span style="color:#66d9ef">for</span> xmlsec <span style="color:#f92672">(</span>pyproject.toml<span style="color:#f92672">)</span> did not run successfully.  
+</span></span><span style="display:flex;"><span>│ exit code: <span style="color:#ae81ff">1</span>  
+</span></span><span style="display:flex;"><span>╰─&gt; <span style="color:#f92672">[</span><span style="color:#ae81ff">13</span> lines of output<span style="color:#f92672">]</span>  
+</span></span><span style="display:flex;"><span>running bdist_wheel  
+</span></span><span style="display:flex;"><span>running build  
+</span></span><span style="display:flex;"><span>running build_py  
+</span></span><span style="display:flex;"><span>creating build  
+</span></span><span style="display:flex;"><span>creating build/lib.macosx-13.0-arm64-cpython-310  
+</span></span><span style="display:flex;"><span>creating build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style="display:flex;"><span>copying src/xmlsec/py.typed -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style="display:flex;"><span>copying src/xmlsec/tree.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style="display:flex;"><span>copying src/xmlsec/**init**.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style="display:flex;"><span>copying src/xmlsec/constants.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style="display:flex;"><span>copying src/xmlsec/template.pyi -&gt; build/lib.macosx-13.0-arm64-cpython-310/xmlsec  
+</span></span><span style="display:flex;"><span>running build_ext  
+</span></span><span style="display:flex;"><span>error: xmlsec1 is not installed or not in path.  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>end of output<span style="color:#f92672">]</span>  
+</span></span><span style="display:flex;"><span>note: This error originates from a subprocess, and is likely not a problem with pip.  
+</span></span><span style="display:flex;"><span>ERROR: Failed building wheel <span style="color:#66d9ef">for</span> xmlsec  
+</span></span><span style="display:flex;"><span>Failed to build xmlsec  
+</span></span><span style="display:flex;"><span>ERROR: Could not build wheels <span style="color:#66d9ef">for</span> xmlsec, which is required to install pyproject.toml-based projects
+</span></span></code></pre></div><p>So to install it, on my MacBook machine with Apple Silicon and macOS Ventura, I needed to execute the following commands:</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/posts-antigos-restaurados/">Posts antigos restaurados</a>
+        </h2>
+        <p class="text-sm text-gray-500">31 Dec 2017</p>
+        <p><p>É muito legal ser programador e participar de projetos com as mais variadas dimensões e complexidades, mas uma das
 coisas que eu acho mais legal em ser um programador é o fato de poder utilizar este conhecimento para automatizar
-tarefas e resolver problemas do cotidiano.</p><p>Resolvi escrever este post justamente porque eu automatizei uma tarefa que me tomaria algumas horas com um pequeno e
-simples script <a href=https://www.python.org/>python</a>.</p><p>Eu achei legal escrever um pouco sobre isso porque pode servir de exemplo para pessoas que não trabalham com programação
-diariamente de que elas podem se beneficiar em conhecer um pouco e tentar otimizar tarefas repetitivas.</p></p></article></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>
+tarefas e resolver problemas do cotidiano.</p>
+<p>Resolvi escrever este post justamente porque eu automatizei uma tarefa que me tomaria algumas horas com um pequeno e
+simples script <a href="https://www.python.org/">python</a>.</p>
+<p>Eu achei legal escrever um pouco sobre isso porque pode servir de exemplo para pessoas que não trabalham com programação
+diariamente de que elas podem se beneficiar em conhecer um pouco e tentar otimizar tarefas repetitivas.</p></p>
+    </article>
+    
+</section>
+
+</main><footer class="glitch-zone" role="contentinfo">
+    <div class="footer-content">
+        <div class="copyright">
+            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
+        </div>
+        <div class="gpg_signed_info">
+            <div class="gpg-callout">
+                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
+                <div class="gpg-callout__text">
+                    <p class="gpg-callout__title">All pages are PGP signed.</p>
+                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
+                </div>
+            </div>
+            <p>
+                <em>Privacy policy: this website employs no tracking.</em>
+            </p>
+            <p>
+                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+                <span class="badge-description">Mozilla Observatory Security Rating</span>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

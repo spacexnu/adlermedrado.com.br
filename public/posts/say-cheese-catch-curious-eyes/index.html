@@ -1,23 +1,166 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot"><meta property="og:description" content="Ever worried someone might peek at your MacBook when you&rsquo;re not around?
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<meta property="og:title" content="Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot">
+<meta property="og:description" content="Ever worried someone might peek at your MacBook when you&rsquo;re not around?
 Last Friday, I built a simple, effective, and open-source solution to deal with that — and I called it Say Cheese.
-Here’s the idea: if someone opens your Mac’s lid without authenticating via Touch ID, a photo is instantly taken and sent to your iPhone through iMessage. You get a live snapshot of the intruder — no fuss."><meta property="og:url" content="https://adlermedrado.com.br/posts/say-cheese-catch-curious-eyes/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot"><meta name=twitter:description content="Ever worried someone might peek at your MacBook when you&rsquo;re not around?
+Here’s the idea: if someone opens your Mac’s lid without authenticating via Touch ID, a photo is instantly taken and sent to your iPhone through iMessage. You get a live snapshot of the intruder — no fuss.">
+<meta property="og:url" content="http://localhost:1313/posts/say-cheese-catch-curious-eyes/">
+<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
+
+<meta property="og:type" content="article">
+
+
+<meta property="og:image" content="/images/default-og-image.png">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot">
+<meta name="twitter:description" content="Ever worried someone might peek at your MacBook when you&rsquo;re not around?
 Last Friday, I built a simple, effective, and open-source solution to deal with that — and I called it Say Cheese.
-Here’s the idea: if someone opens your Mac’s lid without authenticating via Touch ID, a photo is instantly taken and sent to your iPhone through iMessage. You get a live snapshot of the intruder — no fuss."><meta name=twitter:image content="/images/default-og-image.png"><title>Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot</title><meta name=description content="Ever worried someone might peek at your MacBook when you&rsquo;re not around?
+Here’s the idea: if someone opens your Mac’s lid without authenticating via Touch ID, a photo is instantly taken and sent to your iPhone through iMessage. You get a live snapshot of the intruder — no fuss.">
+
+<meta name="twitter:image" content="/images/default-og-image.png">
+
+
+    <title>Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot</title>
+    <meta name="description" content="Ever worried someone might peek at your MacBook when you&rsquo;re not around?
 Last Friday, I built a simple, effective, and open-source solution to deal with that — and I called it Say Cheese.
-Here’s the idea: if someone opens your Mac’s lid without authenticating via Touch ID, a photo is instantly taken and sent to your iPhone through iMessage. You get a live snapshot of the intruder — no fuss."><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/say-cheese-catch-curious-eyes/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
-<a href=/projects>projects</a>
-<a href=/posts>posts</a>
-<a href=/missives>missives</a>
-<a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/contact>contact</a></div></nav></header><main><section class=section><article><div><h1>Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot</h1><div><div><p><small><time>July 14, 2025</time>
-|
-2 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
-<a href=/tags/security>security</a>,
-<a href=/tags/macos>macos</a>,
-<a href=/tags/open-source>open source</a>,
-<a href=/tags/apple>apple</a>,
-<a href=/tags/scripts>scripts</a></p></div></p></div><span class=line_break></span></div><div class=content><p>Ever worried someone might peek at your MacBook when you&rsquo;re not around?</p><p>Last Friday, I built a simple, effective, and open-source solution to deal with that — and I called it <strong>Say Cheese</strong>.</p><p>Here’s the idea: if someone opens your Mac’s lid without authenticating via Touch ID, a photo is instantly taken and sent to your iPhone through iMessage. You get a live snapshot of the intruder — no fuss.</p><h2 id=how-it-works>How It Works</h2><p>Under the hood, Say Cheese integrates with <a href=https://objective-see.org/products/dnd.html><strong>Do Not Disturb</strong></a>, an open-source tool from Objective-See that monitors the lid sensor on your Mac.</p><p>If someone opens the lid without a valid Touch ID authentication, Do Not Disturb creates a temporary file. I hooked into that event and wrote a script that gets triggered automatically.</p><p>The script runs <strong>ImageSnap</strong>, which captures an image using the Mac’s front camera. Then, it uses an <strong>AppleScript</strong> to send the photo via iMessage.</p><p>So:</p><ul><li>👀 Someone opened your Mac?</li><li>📸 Photo taken.</li><li>📱 Snapshot lands on your phone within seconds.</li></ul><h2 id=open-source-and-easy-to-use>Open Source and Easy to Use</h2><p><strong>Say Cheese</strong> is available on my GitHub:<br>🔗 <a href=https://github.com/spacexnu/say_cheese>github.com/spacexnu/say_cheese</a></p><p>Just follow the setup instructions and let it run in the background. It’s lightweight, efficient, and discreet.</p><h2 id=more-tools-from-objective-see>More Tools from Objective-See</h2><p>If you like this kind of approach, check out the <a href=https://objective-see.org><strong>Objective-See</strong></a> site. They provide several powerful open-source tools for macOS, including:</p><ul><li>🔥 LuLu (firewall)</li><li>🎙️ OverSight (mic and webcam monitoring)</li><li>💽 BlockBlock (persistence monitoring)</li></ul><p>All free. All built to protect your Mac without bloat or intrusion.</p><hr><p><strong>Say Cheese</strong> adds one more layer to your defense strategy — a clever way to catch unauthorized access attempts, especially useful if you work in cafés, shared spaces, or open environments.</p><p>Privacy is an attitude.<br>Sometimes, it starts with a snapshot.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/say-cheese-proteja-se-contra-curiosos/>&#8592; Say Cheese: Proteja Seu Mac de Curiosos com Uma Foto na Hora do Acesso</a>
-|
-<a href=https://adlermedrado.com.br/posts/fraudtalon-atualizacao-julho-2025/>Novidades no FraudTalon: análise explicativa e planos para QR Codes e URLs &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>
+Here’s the idea: if someone opens your Mac’s lid without authenticating via Touch ID, a photo is instantly taken and sent to your iPhone through iMessage. You get a live snapshot of the intruder — no fuss.">
+    <link rel="author" href="/humans.txt"/>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="canonical" href="http://localhost:1313/posts/say-cheese-catch-curious-eyes/"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header class="glitch-zone">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="navbar_left">
+            <a href="/" class="h-card" rel="me">
+                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
+            </a>
+        </div>
+        <div class="navbar_right navbar_right_animated">
+            <a href="/about">about</a>
+            <a href="/projects">projects</a>
+            <a href="/posts">posts</a>
+            <a href="/missives">missives</a>
+            <a href="/now">what am i doing now</a>
+            <a href="/uses">what am i using</a>
+            <a href="/contact">contact</a>
+            <a href="/index.xml" aria-label="RSS feed">rss</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="section">
+    <article>
+        <div>
+            <h1>Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot</h1>
+            <div>
+                <div>
+                    <p>
+                        <small>
+                            <time>July 14, 2025</time>
+                            |
+                            2  minutes  read
+                        </small>
+                        
+                        <div class="post-tags">
+                            <p>
+                                <strong>Tags:</strong>
+                                
+                                <a href="/tags/security">security</a>, 
+                                
+                                <a href="/tags/macos">macos</a>, 
+                                
+                                <a href="/tags/open-source">open source</a>, 
+                                
+                                <a href="/tags/apple">apple</a>, 
+                                
+                                <a href="/tags/scripts">scripts</a>
+                                
+                            </p>
+                        </div>
+                        
+                    </p>
+                </div>
+                <span class="line_break"></span>
+            </div>
+            <div class="content">
+                <p>Ever worried someone might peek at your MacBook when you&rsquo;re not around?</p>
+<p>Last Friday, I built a simple, effective, and open-source solution to deal with that — and I called it <strong>Say Cheese</strong>.</p>
+<p>Here’s the idea: if someone opens your Mac’s lid without authenticating via Touch ID, a photo is instantly taken and sent to your iPhone through iMessage. You get a live snapshot of the intruder — no fuss.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>Under the hood, Say Cheese integrates with <a href="https://objective-see.org/products/dnd.html"><strong>Do Not Disturb</strong></a>, an open-source tool from Objective-See that monitors the lid sensor on your Mac.</p>
+<p>If someone opens the lid without a valid Touch ID authentication, Do Not Disturb creates a temporary file. I hooked into that event and wrote a script that gets triggered automatically.</p>
+<p>The script runs <strong>ImageSnap</strong>, which captures an image using the Mac’s front camera. Then, it uses an <strong>AppleScript</strong> to send the photo via iMessage.</p>
+<p>So:</p>
+<ul>
+<li>👀 Someone opened your Mac?</li>
+<li>📸 Photo taken.</li>
+<li>📱 Snapshot lands on your phone within seconds.</li>
+</ul>
+<h2 id="open-source-and-easy-to-use">Open Source and Easy to Use</h2>
+<p><strong>Say Cheese</strong> is available on my GitHub:<br>
+🔗 <a href="https://github.com/spacexnu/say_cheese">github.com/spacexnu/say_cheese</a></p>
+<p>Just follow the setup instructions and let it run in the background. It’s lightweight, efficient, and discreet.</p>
+<h2 id="more-tools-from-objective-see">More Tools from Objective-See</h2>
+<p>If you like this kind of approach, check out the <a href="https://objective-see.org"><strong>Objective-See</strong></a> site. They provide several powerful open-source tools for macOS, including:</p>
+<ul>
+<li>🔥 LuLu (firewall)</li>
+<li>🎙️ OverSight (mic and webcam monitoring)</li>
+<li>💽 BlockBlock (persistence monitoring)</li>
+</ul>
+<p>All free. All built to protect your Mac without bloat or intrusion.</p>
+<hr>
+<p><strong>Say Cheese</strong> adds one more layer to your defense strategy — a clever way to catch unauthorized access attempts, especially useful if you work in cafés, shared spaces, or open environments.</p>
+<p>Privacy is an attitude.<br>
+Sometimes, it starts with a snapshot.</p>
+
+            </div>
+        </div>
+    </article>
+    <div>
+        <div>
+            <div>
+                
+                <a href="http://localhost:1313/posts/say-cheese-proteja-se-contra-curiosos/">&#8592; Say Cheese: Proteja Seu Mac de Curiosos com Uma Foto na Hora do Acesso</a>
+                
+                |
+                
+                <a href="http://localhost:1313/posts/fraudtalon-atualizacao-julho-2025/">Novidades no FraudTalon: análise explicativa e planos para QR Codes e URLs &#8594;</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+</main><footer class="glitch-zone" role="contentinfo">
+    <div class="footer-content">
+        <div class="copyright">
+            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
+        </div>
+        <div class="gpg_signed_info">
+            <div class="gpg-callout">
+                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
+                <div class="gpg-callout__text">
+                    <p class="gpg-callout__title">All pages are PGP signed.</p>
+                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
+                </div>
+            </div>
+            <p>
+                <em>Privacy policy: this website employs no tracking.</em>
+            </p>
+            <p>
+                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+                <span class="badge-description">Mozilla Observatory Security Rating</span>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

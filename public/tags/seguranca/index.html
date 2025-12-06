@@ -1,186 +1,387 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Seguranca"><meta property="og:description" content><meta property="og:url" content="https://adlermedrado.com.br/tags/seguranca/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="website"><meta property="og:image" content="/images/default-og-image.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Seguranca"><meta name=twitter:description content><meta name=twitter:image content="/images/default-og-image.png"><title>Seguranca</title><meta name=description content><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/tags/seguranca/><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
-<a href=/projects>projects</a>
-<a href=/posts>posts</a>
-<a href=/missives>missives</a>
-<a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/contact>contact</a></div></nav></header><main><section class=tag-posts><h1 class="text-4xl font-bold mb-4">Seguranca</h1><p class="text-gray-600 mb-6">Posts tagged with <strong>Seguranca</strong>.</p><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/verificar-assinaturas/>Como verificar as assinaturas do meu site</a></h2><p class="text-sm text-gray-500">23 Nov 2025</p><p><h1 id=mudança-na-assinatura-gpg-do-meu-website>Mudança na assinatura GPG do meu website</h1><p>Não me lembro exatamente mas acredito que a pelo menos dois anos eu assino as páginas HTML do meu site com GPG, faço isso para praticar soberania, autenticidade até mesmo promover ferramentas que auxiliam na privacidade.</p><p>Inicialmente eu deixava a assinatura GPG embutida no próprio conteúdo HTML, por exemplo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!--
-</span></span></span><span style=display:flex><span><span style=color:#75715e>-----BEGIN PGP SIGNED MESSAGE-----
-</span></span></span><span style=display:flex><span><span style=color:#75715e>Hash: SHA256
-</span></span></span><span style=display:flex><span><span style=color:#75715e>
-</span></span></span><span style=display:flex><span><span style=color:#75715e>- --&gt;</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>&lt;!doctype html&gt;</span>
-</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>en</span>&gt;
-</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>head</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>utf-8</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>http-equiv</span><span style=color:#f92672>=</span><span style=color:#e6db74>X-UA-Compatible</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;IE=edge&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>viewport</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;width=device-width,initial-scale=1&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>property</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;og:title&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;What I’d Tell My 23-Year-Old Self&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>property</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;og:description&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;If I could whisper to my 23-year-old self, I’d tell him this:
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Stop wasting time worrying about what people think.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Pour your energy into building, into creating, into making something that’s yours.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    And never forget: everything is impermanent — every victory, every failure, every storm.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    That truth alone is enough to keep you moving forward.&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>property</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;og:url&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://adlermedrado.com.br/missives/what-id-tell-my-23-year-old-self/&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>property</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;og:site_name&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Adler Medrado&#39;s corner of the web&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>property</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;og:type&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;article&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>property</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;og:image&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/images/default-og-image.png&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>twitter:card</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;summary_large_image&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>twitter:title</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;What I’d Tell My 23-Year-Old Self&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>twitter:description</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;If I could whisper to my 23-year-old self, I’d tell him this:
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Stop wasting time worrying about what people think.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Pour your energy into building, into creating, into making something that’s yours.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    And never forget: everything is impermanent — every victory, every failure, every storm.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    That truth alone is enough to keep you moving forward.&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>twitter:image</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/images/default-og-image.png&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>title</span>&gt;What I’d Tell My 23-Year-Old Self&lt;/<span style=color:#f92672>title</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>description</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;If I could whisper to my 23-year-old self, I’d tell him this:
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Stop wasting time worrying about what people think.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Pour your energy into building, into creating, into making something that’s yours.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    And never forget: everything is impermanent — every victory, every failure, every storm.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    That truth alone is enough to keep you moving forward.&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>author</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/humans.txt</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>icon</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>image/png</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/images/favicon.png</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>canonical</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>https://adlermedrado.com.br/missives/what-id-tell-my-23-year-old-self/</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/css/styles.css</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>stylesheet</span>&gt;
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>head</span>&gt;
-</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>body</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>header</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>glitch-zone</span>&gt;
-</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>nav</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>navbar</span> <span style=color:#a6e22e>role</span><span style=color:#f92672>=</span><span style=color:#e6db74>navigation</span> <span style=color:#a6e22e>aria-label</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Main Navigation&#34;</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>navbar_left</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>h-card</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>me</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>strong</span>&gt;
-</span></span><span style=display:flex><span>                        Adler Medrado
-</span></span><span style=display:flex><span>                        &lt;<span style=color:#f92672>span</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>cursor-blink</span>&gt;|&lt;/<span style=color:#f92672>span</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;/<span style=color:#f92672>strong</span>&gt;
-</span></span><span style=display:flex><span>                &lt;/<span style=color:#f92672>a</span>&gt;
-</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;navbar_right navbar_right_animated&#34;</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/posts</span>&gt;posts&lt;/<span style=color:#f92672>a</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/missives</span>&gt;missives&lt;/<span style=color:#f92672>a</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/now</span>&gt;what am i doing now&lt;/<span style=color:#f92672>a</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/uses</span>&gt;what am i using&lt;/<span style=color:#f92672>a</span>&gt;
-</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>nav</span>&gt;
-</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>header</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>main</span>&gt;
-</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>article</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>missive</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>h1</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text-4xl font-bold mb-4&#34;</span>&gt;What I’d Tell My 23-Year-Old Self&lt;/<span style=color:#f92672>h1</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>p</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text-sm text-gray-500 mb-6&#34;</span>&gt;26 Sep 2025&lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>prose</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>p</span>&gt;If I could whisper to my 23-year-old self, I’d tell him this:&lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>ul</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>li</span>&gt;Stop wasting time worrying about what people think.&lt;/<span style=color:#f92672>li</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>li</span>&gt;Pour your energy into building, into creating, into making something that’s yours.&lt;/<span style=color:#f92672>li</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>li</span>&gt;And never forget: everything is impermanent — every victory, every failure, every storm.&lt;/<span style=color:#f92672>li</span>&gt;
-</span></span><span style=display:flex><span>                &lt;/<span style=color:#f92672>ul</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>p</span>&gt;That truth alone is enough to keep you moving forward.&lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>article</span>&gt;
-</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>post-tags</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>strong</span>&gt;Tags:&lt;/<span style=color:#f92672>strong</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/tags/thoughts</span>&gt;thoughts&lt;/<span style=color:#f92672>a</span>&gt;
-</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>main</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>footer</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>glitch-zone</span> <span style=color:#a6e22e>role</span><span style=color:#f92672>=</span><span style=color:#e6db74>contentinfo</span>&gt;
-</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>footer-content</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>copyright</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>small</span>&gt;&amp;copy; 1996-2025 Adler Medrado&lt;/<span style=color:#f92672>small</span>&gt;
-</span></span><span style=display:flex><span>                &lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>gpg_signed_info</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                    All pages on this website are PGP signed.
-</span></span><span style=display:flex><span>                    Import my 
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>/pub-key.asc</span> <span style=color:#a6e22e>aria-label</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Download my PGP public key&#34;</span>&gt;public key&lt;/<span style=color:#f92672>a</span>&gt;
-</span></span><span style=display:flex><span>                     and check with 
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>em</span>&gt;curl https://adlermedrado.com.br/missives/what-id-tell-my-23-year-old-self/ | gpg --verify&lt;/<span style=color:#f92672>em</span>&gt;
-</span></span><span style=display:flex><span>                &lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>em</span>&gt;Privacy policy: this website employs no tracking.&lt;/<span style=color:#f92672>em</span>&gt;
-</span></span><span style=display:flex><span>                &lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>span</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>badge-a-plus</span>&gt;
-</span></span><span style=display:flex><span>                        &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br&#34;</span> <span style=color:#a6e22e>aria-label</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Mozilla Observatory Security Rating: A+&#34;</span>&gt;A+&lt;/<span style=color:#f92672>a</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;/<span style=color:#f92672>span</span>&gt;
-</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>span</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>badge-description</span>&gt;Mozilla Observatory Security Rating&lt;/<span style=color:#f92672>span</span>&gt;
-</span></span><span style=display:flex><span>                &lt;/<span style=color:#f92672>p</span>&gt;
-</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>footer</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>script</span>&gt;
-</span></span><span style=display:flex><span>    (<span style=color:#66d9ef>function</span>() {
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>c</span>() {
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>b</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>contentDocument</span> <span style=color:#f92672>||</span> <span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>contentWindow</span>.document;
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>b</span>) {
-</span></span><span style=display:flex><span>                <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>d</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>b</span>.<span style=color:#a6e22e>createElement</span>(<span style=color:#e6db74>&#39;script&#39;</span>);
-</span></span><span style=display:flex><span>                <span style=color:#a6e22e>d</span>.<span style=color:#a6e22e>innerHTML</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;window.__CF$cv$params={r:&#39;9a31943f6eaad8cb&#39;,t:&#39;MTc2MzkxMDQ3Ng==&#39;};var a=document.createElement(&#39;script&#39;);a.src=&#39;/cdn-cgi/challenge-platform/scripts/jsd/main.js&#39;;document.getElementsByTagName(&#39;head&#39;)[0].appendChild(a);&#34;</span>;
-</span></span><span style=display:flex><span>                <span style=color:#a6e22e>b</span>.<span style=color:#a6e22e>getElementsByTagName</span>(<span style=color:#e6db74>&#39;head&#39;</span>)[<span style=color:#ae81ff>0</span>].<span style=color:#a6e22e>appendChild</span>(<span style=color:#a6e22e>d</span>)
-</span></span><span style=display:flex><span>            }
-</span></span><span style=display:flex><span>        }
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (document.<span style=color:#a6e22e>body</span>) {
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>a</span> <span style=color:#f92672>=</span> document.<span style=color:#a6e22e>createElement</span>(<span style=color:#e6db74>&#39;iframe&#39;</span>);
-</span></span><span style=display:flex><span>            <span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>height</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
-</span></span><span style=display:flex><span>            <span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>width</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
-</span></span><span style=display:flex><span>            <span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>style</span>.<span style=color:#a6e22e>position</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;absolute&#39;</span>;
-</span></span><span style=display:flex><span>            <span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>style</span>.<span style=color:#a6e22e>top</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
-</span></span><span style=display:flex><span>            <span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>style</span>.<span style=color:#a6e22e>left</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
-</span></span><span style=display:flex><span>            <span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>style</span>.<span style=color:#a6e22e>border</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;none&#39;</span>;
-</span></span><span style=display:flex><span>            <span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>style</span>.<span style=color:#a6e22e>visibility</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;hidden&#39;</span>;
-</span></span><span style=display:flex><span>            document.<span style=color:#a6e22e>body</span>.<span style=color:#a6e22e>appendChild</span>(<span style=color:#a6e22e>a</span>);
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (<span style=color:#e6db74>&#39;loading&#39;</span> <span style=color:#f92672>!==</span> document.<span style=color:#a6e22e>readyState</span>)
-</span></span><span style=display:flex><span>                <span style=color:#a6e22e>c</span>();
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>if</span> (window.<span style=color:#a6e22e>addEventListener</span>)
-</span></span><span style=display:flex><span>                document.<span style=color:#a6e22e>addEventListener</span>(<span style=color:#e6db74>&#39;DOMContentLoaded&#39;</span>, <span style=color:#a6e22e>c</span>);
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>else</span> {
-</span></span><span style=display:flex><span>                <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>e</span> <span style=color:#f92672>=</span> document.<span style=color:#a6e22e>onreadystatechange</span> <span style=color:#f92672>||</span> <span style=color:#66d9ef>function</span>() {};
-</span></span><span style=display:flex><span>                document.<span style=color:#a6e22e>onreadystatechange</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>b</span>) {
-</span></span><span style=display:flex><span>                    <span style=color:#a6e22e>e</span>(<span style=color:#a6e22e>b</span>);
-</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#39;loading&#39;</span> <span style=color:#f92672>!==</span> document.<span style=color:#a6e22e>readyState</span> <span style=color:#f92672>&amp;&amp;</span> (document.<span style=color:#a6e22e>onreadystatechange</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>e</span>, <span style=color:#a6e22e>c</span>())
-</span></span><span style=display:flex><span>                }
-</span></span><span style=display:flex><span>            }
-</span></span><span style=display:flex><span>        }
-</span></span><span style=display:flex><span>    })();
-</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>script</span>&gt;
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>body</span>&gt;
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
-</span></span><span style=display:flex><span><span style=color:#75715e>&lt;!--
-</span></span></span><span style=display:flex><span><span style=color:#75715e>-----BEGIN PGP SIGNATURE-----
-</span></span></span><span style=display:flex><span><span style=color:#75715e>
-</span></span></span><span style=display:flex><span><span style=color:#75715e>iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmjpMJEACgkQbV8aePHc
-</span></span></span><span style=display:flex><span><span style=color:#75715e>Nh114BAAlkjwHZgFP7b7xUr++nhvxslYyb4SEzpWOzWaf1pd1UnwK9g3dBgImdoq
-</span></span></span><span style=display:flex><span><span style=color:#75715e>hrBC0yUuGqyCu8ZflghIF2mEVex5uHBCB5SFeQyPqfLA9erFEAPoWQ3b6gcKNiKM
-</span></span></span><span style=display:flex><span><span style=color:#75715e>wHwPDNEbgNxjKfoxfHcL6qrzpBjm//EtzXBtgC0IV1HTXOv0CG2s2AiEtmFj2kHO
-</span></span></span><span style=display:flex><span><span style=color:#75715e>LlrlMnT0IiwfUfDpL1Va1/AAc3bLsAQJgQVNKkOueoE08OtvnJ2lsz7PhqsgREnF
-</span></span></span><span style=display:flex><span><span style=color:#75715e>eorexF2SsHRhueXtet892ICVJuWrZtdN401YhqhLWu8oL6ORrMuQv4ecHRPuk08k
-</span></span></span><span style=display:flex><span><span style=color:#75715e>lrZA5atOssG02ghKLd0ITC65R6rEe/Jk3u6oRXYinRKUHvtpFgSQcgVqzU0kbnFF
-</span></span></span><span style=display:flex><span><span style=color:#75715e>0a4v6uGkZN5fFTkQO7Ua0483Iv2B+w7B1soFUN034S8ASfOBZXxDdNpyq8vtfk2y
-</span></span></span><span style=display:flex><span><span style=color:#75715e>N2bYf5+u/HXn/lNqZsBrS1vY40HoogEch+oO4Im4nsar8znXw3HxiYUM0Th+oiTR
-</span></span></span><span style=display:flex><span><span style=color:#75715e>TTWa4NHITlvBOcnmH49mxHSc99vYu0/bSKm8qY8PiZiGXq+u+36X4/1W/A+oXACn
-</span></span></span><span style=display:flex><span><span style=color:#75715e>Ao9G0Ljt9bXN7/QGcrb8BYiC+1rgmcMOrGmx+dtbwzfJhkITn6QjykcKFRg+PEIO
-</span></span></span><span style=display:flex><span><span style=color:#75715e>Kkv3c6C17+Pz6LIPQe6I//V3LYSvUiMY8lGLuM/C/nvD5QPfMlQ=
-</span></span></span><span style=display:flex><span><span style=color:#75715e>=1D7N
-</span></span></span><span style=display:flex><span><span style=color:#75715e>-----END PGP SIGNATURE-----
-</span></span></span><span style=display:flex><span><span style=color:#75715e>--&gt;</span>
-</span></span></code></pre></div><p>Sabe aquela sensação de que algo não está certo? Pois é, ter a assinatura embutida nos meus arquivos HTML sempre me incomodou um pouco. Apesar de ser super prático validar a assinatura com um comando simples, tipo <code>curl https://adlermedrado.com.br/missives/what-id-tell-my-23-year-old-self/ | gpg —verify</code>, a ideia de ter a assinatura “colada” no arquivo original me incomodava. Parecia que o arquivo não era mais o original, né?</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/fraudtalon-processamento-email/>Update: Análise de emails (.eml) com FraudTalon</a></h2><p class="text-sm text-gray-500">28 Jun 2025</p><p><h3 id=o-fraudtalon-deu-mais-um-passo-importante>O FraudTalon deu mais um passo importante.</h3><p>Mesmo com pouco tempo livre na semana, sigo comprometido em manter o FraudTalon avançando e publicando updates regulares.</p><p>A partir de hoje, é possível fazer o upload de arquivos .eml diretamente pela interface, e o sistema realiza uma análise
-completa combinando heurísticas de segurança de e-mails com inteligência artificial.</p><img alt=fraudtalon-banner height=50% src=/posts/images/fraudtalon-banner.png width=50%><p>O pipeline está assim:</p><ul><li>Parse automático do .eml, com extração dos headers, remetente, destinatário, assunto e corpo</li><li>Avaliação heurística com sinais como:<ul><li>Mismatch entre From, Reply-To e Return-Path</li><li>Falhas de autenticação (DKIM, SPF, DMARC)</li><li>Recebimento por servidores desconhecidos</li></ul></li><li>Análise por IA (via OpenAI) levando em conta todo o conteúdo textual</li><li>Score consolidado com os sinais suspeitos encontrados</li></ul><p>Essa atualização transforma o <a href=https://fraudtalon.com>FraudTalon</a> em uma ferramenta muito mais útil para análise de
-e-mails suspeitos, como golpes de Pix, phishing, ou promessas falsas de investimento.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/fraudtalon-mvp-br/>Combatendo fraudes online com FraudTalon</a></h2><p class="text-sm text-gray-500">20 Jun 2025</p><p><p>Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.</p><p>Foi assim que nasceu o <a href=https://fraudtalon.com><strong>FraudTalon</strong></a></p><p>Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/rag_soberano/>Como construí meu próprio RAG soberano para análise de segurança de código</a></h2><p class="text-sm text-gray-500">14 Jun 2025</p><p><h2 id=construindo-meu-próprio-rag-soberano-para-análise-de-segurança-de-código>Construindo meu próprio RAG soberano para análise de segurança de código</h2><p>Nos últimos tempos, comecei a olhar com mais atenção para algumas ferramentas de análise de código que prometem identificar falhas de segurança em projetos. A ideia é boa. Recebi uma dessas ferramentas como sugestão e fui atrás para entender melhor o que havia por trás da proposta.</p><p>Logo de cara percebi um padrão: os preços dessas plataformas não são exatamente convidativos. Algumas até oferecem planos gratuitos limitados, mas a gente sabe como funciona o jogo. Quando algo muito bom aparece “de graça”, o custo real costuma vir de outro lugar. Coleta de dados, lock-in na plataforma, modelos black-box processando seu código na nuvem de terceiros. E como hoje eu venho estudando bastante IA e, em especial, o tema dos RAGs (Retrieval-Augmented Generation), a pergunta veio automática: por que não montar o meu próprio pipeline, 100% local, soberano, usando ferramentas open-source, rodando direto na minha máquina, sem depender de ninguém?</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/missives/video-sobre-o-meu-site/>Video sobre o meu site</a></h2><p class="text-sm text-gray-500">04 Jun 2025</p><p><p>Essa semana eu <a href="https://www.youtube.com/watch?v=PpYk139Xw2Y">publiquei um vídeo</a> no <a href=https://www.youtube.com/@labsadler>meu canal do Youtube</a> explicando
-alguns pontos que eu considero importantes e aplico de maneira objetiva no meu site.</p><p>O vídeo pode ser interessante para quem se preocupa com soberania, segurança e privacidade.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/deepfakes_temporeal/>Deepfakes em tempo real: e se "ver para crer" já não valer mais nada?</a></h2><p class="text-sm text-gray-500">10 May 2025</p><p><p>Um projeto open-source chamado Deep-Live-Cam está chamando atenção no GitHub. E com razão.</p><p>Com apenas uma imagem estática, ele consegue simular o rosto de qualquer pessoa em tempo real, dentro de uma chamada de vídeo. Tudo isso rodando localmente. Sem nuvem. Sem limites.</p><p>A consequência é direta: não dá mais pra confiar em uma chamada de vídeo.</p><p>E isso levanta a pergunta inevitável: <strong>como validamos a identidade num mundo onde rostos podem ser forjados ao vivo?</strong></p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/gpg-intro-pt/>Por que você deveria começar a usar GPG agora</a></h2><p class="text-sm text-gray-500">27 Apr 2025</p><p><h1 id=por-que-você-deveria-começar-a-usar-gpg-agora>Por que você deveria começar a usar GPG agora</h1><p>Se você ainda não utiliza GPG para assinar ou criptografar seus arquivos e mensagens, está na hora de repensar isso. Não é apenas sobre parecer um hacker de filme dos anos 90 — é sobre proteger sua comunicação e identidade digital em um mundo cada vez mais hostil.</p><h2 id=-o-que-é-gpg>🔐 O que é GPG?</h2><p>GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele permite que você crie pares de chaves criptográficas para assinar digitalmente arquivos e mensagens, além de criptografá-los para garantir confidencialidade. É uma ferramenta essencial para quem leva a sério a segurança digital.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/sudo-touch-id-pt-br/>Sudo com Touch ID no macOS</a></h2><p class="text-sm text-gray-500">16 Jun 2024</p><p><p>Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.</p><p>Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
-</span></span></code></pre></div><p>Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele deve ficar assim:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># sudo_local: arquivo de configuração local que sobrevive a atualizações do sistema e é incluído para sudo</span>
-</span></span><span style=display:flex><span><span style=color:#75715e># descomente a linha a seguir para habilitar o Touch ID para sudo</span>
-</span></span><span style=display:flex><span>auth sufficient pam_tid.so
-</span></span></code></pre></div><h4 id=passos-detalhados-para-editar-o-arquivo>Passos detalhados para editar o arquivo</h4><p>Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/assinando-html-com-gpg/>Assinando páginas HTML com GPG</a></h2><p class="text-sm text-gray-500">07 Jan 2024</p><p><p>Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
-muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o <a href=https://gohugo.io>Hugo</a>.</p><p>No passado eu já utilizei o <a href=https://getpelican.com>Pelican</a>, o <a href=https://jekyllrb.com>Jekyll</a> e o Dangolino,
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<meta property="og:title" content="Seguranca">
+<meta property="og:description" content="">
+<meta property="og:url" content="http://localhost:1313/tags/seguranca/">
+<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
+
+<meta property="og:type" content="website">
+
+
+<meta property="og:image" content="/images/default-og-image.png">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Seguranca">
+<meta name="twitter:description" content="">
+
+<meta name="twitter:image" content="/images/default-og-image.png">
+
+
+    <title>Seguranca</title>
+    <meta name="description" content="">
+    <link rel="author" href="/humans.txt"/>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="canonical" href="http://localhost:1313/tags/seguranca/"/>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body><header class="glitch-zone">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="navbar_left">
+            <a href="/" class="h-card" rel="me">
+                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
+            </a>
+        </div>
+        <div class="navbar_right navbar_right_animated">
+            <a href="/about">about</a>
+            <a href="/projects">projects</a>
+            <a href="/posts">posts</a>
+            <a href="/missives">missives</a>
+            <a href="/now">what am i doing now</a>
+            <a href="/uses">what am i using</a>
+            <a href="/contact">contact</a>
+            <a href="/index.xml" aria-label="RSS feed">rss</a>
+        </div>
+    </nav>
+</header>
+<main>
+<section class="tag-posts">
+    <h1 class="text-4xl font-bold mb-4">Seguranca</h1>
+    <p class="text-gray-600 mb-6">Posts tagged with <strong>Seguranca</strong>.</p>
+
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/verificar-assinaturas/">Como verificar as assinaturas do meu site</a>
+        </h2>
+        <p class="text-sm text-gray-500">23 Nov 2025</p>
+        <p><h1 id="mudança-na-assinatura-gpg-do-meu-website">Mudança na assinatura GPG do meu website</h1>
+<p>Não me lembro exatamente mas acredito que a pelo menos dois anos eu assino as páginas HTML do meu site com GPG, faço isso para praticar soberania, autenticidade até mesmo promover ferramentas que auxiliam na privacidade.</p>
+<p>Inicialmente eu deixava a assinatura GPG embutida no próprio conteúdo HTML, por exemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-----BEGIN PGP SIGNED MESSAGE-----
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Hash: SHA256
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">- --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">en</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">utf-8</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">X-UA-Compatible</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;IE=edge&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">viewport</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width,initial-scale=1&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:title&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;What I’d Tell My 23-Year-Old Self&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:description&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;If I could whisper to my 23-year-old self, I’d tell him this:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Stop wasting time worrying about what people think.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Pour your energy into building, into creating, into making something that’s yours.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    And never forget: everything is impermanent — every victory, every failure, every storm.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    That truth alone is enough to keep you moving forward.&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:url&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://adlermedrado.com.br/missives/what-id-tell-my-23-year-old-self/&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:site_name&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Adler Medrado&#39;s corner of the web&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:type&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:image&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/images/default-og-image.png&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">twitter:card</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;summary_large_image&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">twitter:title</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;What I’d Tell My 23-Year-Old Self&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">twitter:description</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;If I could whisper to my 23-year-old self, I’d tell him this:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Stop wasting time worrying about what people think.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Pour your energy into building, into creating, into making something that’s yours.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    And never forget: everything is impermanent — every victory, every failure, every storm.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    That truth alone is enough to keep you moving forward.&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">twitter:image</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/images/default-og-image.png&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;What I’d Tell My 23-Year-Old Self&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">description</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;If I could whisper to my 23-year-old self, I’d tell him this:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Stop wasting time worrying about what people think.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Pour your energy into building, into creating, into making something that’s yours.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    And never forget: everything is impermanent — every victory, every failure, every storm.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    That truth alone is enough to keep you moving forward.&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">author</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">/humans.txt</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">icon</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">image/png</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">/images/favicon.png</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">canonical</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">https://adlermedrado.com.br/missives/what-id-tell-my-23-year-old-self/</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">/css/styles.css</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">stylesheet</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">header</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">glitch-zone</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">navbar</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">navigation</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Main Navigation&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">navbar_left</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">/</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">h-card</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">me</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">strong</span>&gt;
+</span></span><span style="display:flex;"><span>                        Adler Medrado
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">cursor-blink</span>&gt;|&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#f92672">strong</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar_right navbar_right_animated&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">/posts</span>&gt;posts&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">/missives</span>&gt;missives&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">/now</span>&gt;what am i doing now&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">/uses</span>&gt;what am i using&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">main</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">article</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">missive</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-4xl font-bold mb-4&#34;</span>&gt;What I’d Tell My 23-Year-Old Self&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-sm text-gray-500 mb-6&#34;</span>&gt;26 Sep 2025&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">prose</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">p</span>&gt;If I could whisper to my 23-year-old self, I’d tell him this:&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">li</span>&gt;Stop wasting time worrying about what people think.&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">li</span>&gt;Pour your energy into building, into creating, into making something that’s yours.&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">li</span>&gt;And never forget: everything is impermanent — every victory, every failure, every storm.&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">p</span>&gt;That truth alone is enough to keep you moving forward.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">article</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">post-tags</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">strong</span>&gt;Tags:&lt;/<span style="color:#f92672">strong</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">/tags/thoughts</span>&gt;thoughts&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">main</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">footer</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">glitch-zone</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">contentinfo</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">footer-content</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">copyright</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">small</span>&gt;&amp;copy; 1996-2025 Adler Medrado&lt;/<span style="color:#f92672">small</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">gpg_signed_info</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>                    All pages on this website are PGP signed.
+</span></span><span style="display:flex;"><span>                    Import my 
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">/pub-key.asc</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Download my PGP public key&#34;</span>&gt;public key&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>                     and check with 
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">em</span>&gt;curl https://adlermedrado.com.br/missives/what-id-tell-my-23-year-old-self/ | gpg --verify&lt;/<span style="color:#f92672">em</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">em</span>&gt;Privacy policy: this website employs no tracking.&lt;/<span style="color:#f92672">em</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">badge-a-plus</span>&gt;
+</span></span><span style="display:flex;"><span>                        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Mozilla Observatory Security Rating: A+&#34;</span>&gt;A+&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">badge-description</span>&gt;Mozilla Observatory Security Rating&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">footer</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">c</span>() {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">contentDocument</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">contentWindow</span>.document;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">b</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">d</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;script&#39;</span>);
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">d</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;window.__CF$cv$params={r:&#39;9a31943f6eaad8cb&#39;,t:&#39;MTc2MzkxMDQ3Ng==&#39;};var a=document.createElement(&#39;script&#39;);a.src=&#39;/cdn-cgi/challenge-platform/scripts/jsd/main.js&#39;;document.getElementsByTagName(&#39;head&#39;)[0].appendChild(a);&#34;</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#39;head&#39;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">d</span>)
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (document.<span style="color:#a6e22e">body</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;iframe&#39;</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">position</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;absolute&#39;</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">top</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">left</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">border</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;none&#39;</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">visibility</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hidden&#39;</span>;
+</span></span><span style="display:flex;"><span>            document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">a</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#39;loading&#39;</span> <span style="color:#f92672">!==</span> document.<span style="color:#a6e22e">readyState</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">c</span>();
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (window.<span style="color:#a6e22e">addEventListener</span>)
+</span></span><span style="display:flex;"><span>                document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;DOMContentLoaded&#39;</span>, <span style="color:#a6e22e">c</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">e</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">onreadystatechange</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">function</span>() {};
+</span></span><span style="display:flex;"><span>                document.<span style="color:#a6e22e">onreadystatechange</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">b</span>) {
+</span></span><span style="display:flex;"><span>                    <span style="color:#a6e22e">e</span>(<span style="color:#a6e22e">b</span>);
+</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#39;loading&#39;</span> <span style="color:#f92672">!==</span> document.<span style="color:#a6e22e">readyState</span> <span style="color:#f92672">&amp;&amp;</span> (document.<span style="color:#a6e22e">onreadystatechange</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>, <span style="color:#a6e22e">c</span>())
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    })();
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-----BEGIN PGP SIGNATURE-----
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">iQIzBAEBCAAdFiEEB9cP28xEbBnKQwLObV8aePHcNh0FAmjpMJEACgkQbV8aePHc
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Nh114BAAlkjwHZgFP7b7xUr++nhvxslYyb4SEzpWOzWaf1pd1UnwK9g3dBgImdoq
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">hrBC0yUuGqyCu8ZflghIF2mEVex5uHBCB5SFeQyPqfLA9erFEAPoWQ3b6gcKNiKM
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">wHwPDNEbgNxjKfoxfHcL6qrzpBjm//EtzXBtgC0IV1HTXOv0CG2s2AiEtmFj2kHO
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">LlrlMnT0IiwfUfDpL1Va1/AAc3bLsAQJgQVNKkOueoE08OtvnJ2lsz7PhqsgREnF
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">eorexF2SsHRhueXtet892ICVJuWrZtdN401YhqhLWu8oL6ORrMuQv4ecHRPuk08k
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">lrZA5atOssG02ghKLd0ITC65R6rEe/Jk3u6oRXYinRKUHvtpFgSQcgVqzU0kbnFF
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">0a4v6uGkZN5fFTkQO7Ua0483Iv2B+w7B1soFUN034S8ASfOBZXxDdNpyq8vtfk2y
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">N2bYf5+u/HXn/lNqZsBrS1vY40HoogEch+oO4Im4nsar8znXw3HxiYUM0Th+oiTR
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">TTWa4NHITlvBOcnmH49mxHSc99vYu0/bSKm8qY8PiZiGXq+u+36X4/1W/A+oXACn
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Ao9G0Ljt9bXN7/QGcrb8BYiC+1rgmcMOrGmx+dtbwzfJhkITn6QjykcKFRg+PEIO
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Kkv3c6C17+Pz6LIPQe6I//V3LYSvUiMY8lGLuM/C/nvD5QPfMlQ=
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">=1D7N
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">-----END PGP SIGNATURE-----
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span></code></pre></div><p>Sabe aquela sensação de que algo não está certo? Pois é, ter a assinatura embutida nos meus arquivos HTML sempre me incomodou um pouco.  Apesar de ser super prático validar a assinatura com um comando simples, tipo <code>curl https://adlermedrado.com.br/missives/what-id-tell-my-23-year-old-self/ | gpg —verify</code>,  a ideia de ter a assinatura “colada” no arquivo original me incomodava.  Parecia que o arquivo não era mais o original, né?</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/fraudtalon-processamento-email/">Update: Análise de emails (.eml) com FraudTalon</a>
+        </h2>
+        <p class="text-sm text-gray-500">28 Jun 2025</p>
+        <p><h3 id="o-fraudtalon-deu-mais-um-passo-importante">O FraudTalon deu mais um passo importante.</h3>
+<p>Mesmo com pouco tempo livre na semana, sigo comprometido em manter o FraudTalon avançando e publicando updates regulares.</p>
+<p>A partir de hoje, é possível fazer o upload de arquivos .eml diretamente pela interface, e o sistema realiza uma análise
+completa combinando heurísticas de segurança de e-mails com inteligência artificial.</p>
+<img alt="fraudtalon-banner" height="50%" src="/posts/images/fraudtalon-banner.png" width="50%"/>
+<p>O pipeline está assim:</p>
+<ul>
+<li>Parse automático do .eml, com extração dos headers, remetente, destinatário, assunto e corpo</li>
+<li>Avaliação heurística com sinais como:
+<ul>
+<li>Mismatch entre From, Reply-To e Return-Path</li>
+<li>Falhas de autenticação (DKIM, SPF, DMARC)</li>
+<li>Recebimento por servidores desconhecidos</li>
+</ul>
+</li>
+<li>Análise por IA (via OpenAI) levando em conta todo o conteúdo textual</li>
+<li>Score consolidado com os sinais suspeitos encontrados</li>
+</ul>
+<p>Essa atualização transforma o <a href="https://fraudtalon.com">FraudTalon</a> em uma ferramenta muito mais útil para análise de
+e-mails suspeitos, como golpes de Pix, phishing, ou promessas falsas de investimento.</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/fraudtalon-mvp-br/">Combatendo fraudes online com FraudTalon</a>
+        </h2>
+        <p class="text-sm text-gray-500">20 Jun 2025</p>
+        <p><p>Depois de receber tantas mensagens dos meus pais, esposa, irmã e amigos perguntando se certos e-mails ou anúncios que viram nas redes sociais eram legítimos, decidi criar uma ferramenta para ajudar a identificar fraudes, golpes e tentativas de phishing.</p>
+<p>Foi assim que nasceu o <a href="https://fraudtalon.com"><strong>FraudTalon</strong></a></p>
+<p>Atualmente ele está na versão MVP 0.0.1 — funcionalidades básicas, heurísticas simples (comecei com NLP mas deixei de lado — por enquanto, não é necessário) e um único LLM baseado em nuvem. O objetivo neste estágio é validar a ideia.</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/rag_soberano/">Como construí meu próprio RAG soberano para análise de segurança de código</a>
+        </h2>
+        <p class="text-sm text-gray-500">14 Jun 2025</p>
+        <p><h2 id="construindo-meu-próprio-rag-soberano-para-análise-de-segurança-de-código">Construindo meu próprio RAG soberano para análise de segurança de código</h2>
+<p>Nos últimos tempos, comecei a olhar com mais atenção para algumas ferramentas de análise de código que prometem identificar falhas de segurança em projetos. A ideia é boa. Recebi uma dessas ferramentas como sugestão e fui atrás para entender melhor o que havia por trás da proposta.</p>
+<p>Logo de cara percebi um padrão: os preços dessas plataformas não são exatamente convidativos. Algumas até oferecem planos gratuitos limitados, mas a gente sabe como funciona o jogo. Quando algo muito bom aparece “de graça”, o custo real costuma vir de outro lugar. Coleta de dados, lock-in na plataforma, modelos black-box processando seu código na nuvem de terceiros. E como hoje eu venho estudando bastante IA e, em especial, o tema dos RAGs (Retrieval-Augmented Generation), a pergunta veio automática: por que não montar o meu próprio pipeline, 100% local, soberano, usando ferramentas open-source, rodando direto na minha máquina, sem depender de ninguém?</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/missives/video-sobre-o-meu-site/">Video sobre o meu site</a>
+        </h2>
+        <p class="text-sm text-gray-500">04 Jun 2025</p>
+        <p><p>Essa semana eu <a href="https://www.youtube.com/watch?v=PpYk139Xw2Y">publiquei um vídeo</a> no <a href="https://www.youtube.com/@labsadler">meu canal do Youtube</a> explicando
+alguns pontos que eu considero importantes e aplico de maneira objetiva no meu site.</p>
+<p>O vídeo pode ser interessante para quem se preocupa com soberania, segurança e privacidade.</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/deepfakes_temporeal/">Deepfakes em tempo real: e se &#34;ver para crer&#34; já não valer mais nada?</a>
+        </h2>
+        <p class="text-sm text-gray-500">10 May 2025</p>
+        <p><p>Um projeto open-source chamado Deep-Live-Cam está chamando atenção no GitHub. E com razão.</p>
+<p>Com apenas uma imagem estática, ele consegue simular o rosto de qualquer pessoa em tempo real, dentro de uma chamada de vídeo. Tudo isso rodando localmente. Sem nuvem. Sem limites.</p>
+<p>A consequência é direta: não dá mais pra confiar em uma chamada de vídeo.</p>
+<p>E isso levanta a pergunta inevitável: <strong>como validamos a identidade num mundo onde rostos podem ser forjados ao vivo?</strong></p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/gpg-intro-pt/">Por que você deveria começar a usar GPG agora</a>
+        </h2>
+        <p class="text-sm text-gray-500">27 Apr 2025</p>
+        <p><h1 id="por-que-você-deveria-começar-a-usar-gpg-agora">Por que você deveria começar a usar GPG agora</h1>
+<p>Se você ainda não utiliza GPG para assinar ou criptografar seus arquivos e mensagens, está na hora de repensar isso. Não é apenas sobre parecer um hacker de filme dos anos 90 — é sobre proteger sua comunicação e identidade digital em um mundo cada vez mais hostil.</p>
+<h2 id="-o-que-é-gpg">🔐 O que é GPG?</h2>
+<p>GPG (GNU Privacy Guard) é uma implementação livre do padrão OpenPGP. Ele permite que você crie pares de chaves criptográficas para assinar digitalmente arquivos e mensagens, além de criptografá-los para garantir confidencialidade. É uma ferramenta essencial para quem leva a sério a segurança digital.</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/sudo-touch-id-pt-br/">Sudo com Touch ID no macOS</a>
+        </h2>
+        <p class="text-sm text-gray-500">16 Jun 2024</p>
+        <p><p>Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.</p>
+<p>Localize o arquivo /etc/pam.d/sudo_local.template e faça uma cópia conforme o exemplo abaixo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+</span></span></code></pre></div><p>Em seguida, edite o arquivo e remova o caractere # do início da linha 3, ele deve ficar assim:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># sudo_local: arquivo de configuração local que sobrevive a atualizações do sistema e é incluído para sudo</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># descomente a linha a seguir para habilitar o Touch ID para sudo</span>
+</span></span><span style="display:flex;"><span>auth sufficient pam_tid.so
+</span></span></code></pre></div><h4 id="passos-detalhados-para-editar-o-arquivo">Passos detalhados para editar o arquivo</h4>
+<p>Para editar o arquivo, use um editor de texto como nano ou vim. Por exemplo, com o nano:</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/assinando-html-com-gpg/">Assinando páginas HTML com GPG</a>
+        </h2>
+        <p class="text-sm text-gray-500">07 Jan 2024</p>
+        <p><p>Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava
+muito feliz com isso, então decidi usar um gerador de páginas estáticas, nesse caso o <a href="https://gohugo.io">Hugo</a>.</p>
+<p>No passado eu já utilizei o <a href="https://getpelican.com">Pelican</a>, o <a href="https://jekyllrb.com">Jekyll</a> e o Dangolino,
 este último era uma ferramenta criada por mim, mas que descontinuei depois de algum tempo.
-Se não me engano, há posts aqui falando sobre eles.</p><h2 id=por-que-assinar-as-páginas>Por que assinar as páginas?</h2><p>Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
-criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.</p></p></article><article class=mb-10><h2 class="text-2xl font-semibold mb-1"><a href=/posts/a-seguranca-das-urnas-eletronicas/>A Segurança Das Urnas Eletrônicas</a></h2><p class="text-sm text-gray-500">02 May 2014</p><p><p>Quem me conhece sabe que eu sempre desconfiei da segurança das urnas<br>eletrônicas brasileiras, um dos fatores que me levam a ter essa postura<br>é devido ao fato de o código das urnas ser fechado e não passar por<br>auditorias externas.</p><p>Outro motivo é que aqui no Brasil nada que o governo coloca as mãos<br>funciona direito, vide a saúde, educação, segurança, etc., então é de<br>se desconfiar que a única coisa que funciona bem seja a urna eletrônica,<br>algo tão vital para a manutenção da democracia.</p></p></article></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2025 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>
+Se não me engano, há posts aqui falando sobre eles.</p>
+<h2 id="por-que-assinar-as-páginas">Por que assinar as páginas?</h2>
+<p>Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
+criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.</p></p>
+    </article>
+    
+    <article class="mb-10">
+        <h2 class="text-2xl font-semibold mb-1">
+            <a href="/posts/a-seguranca-das-urnas-eletronicas/">A Segurança Das Urnas Eletrônicas</a>
+        </h2>
+        <p class="text-sm text-gray-500">02 May 2014</p>
+        <p><p>Quem me conhece sabe que eu sempre desconfiei da segurança das urnas<br>
+eletrônicas brasileiras, um dos fatores que me levam a ter essa postura<br>
+é devido ao fato de o código das urnas ser fechado e não passar por<br>
+auditorias externas.</p>
+<p>Outro motivo é que aqui no Brasil nada que o governo coloca as mãos<br>
+funciona direito, vide a saúde, educação, segurança, etc., então é de<br>
+se desconfiar que a única coisa que funciona bem seja a urna eletrônica,<br>
+algo tão vital para a manutenção da democracia.</p></p>
+    </article>
+    
+</section>
+
+</main><footer class="glitch-zone" role="contentinfo">
+    <div class="footer-content">
+        <div class="copyright">
+            <p><small>&copy; 1996-2025 Adler Medrado</small></p>
+        </div>
+        <div class="gpg_signed_info">
+            <div class="gpg-callout">
+                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
+                <div class="gpg-callout__text">
+                    <p class="gpg-callout__title">All pages are PGP signed.</p>
+                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
+                </div>
+            </div>
+            <p>
+                <em>Privacy policy: this website employs no tracking.</em>
+            </p>
+            <p>
+                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+                <span class="badge-description">Mozilla Observatory Security Rating</span>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

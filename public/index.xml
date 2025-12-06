@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About Adler on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/</link><description>Recent content in About Adler on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 23 Nov 2025 12:00:00 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/index.xml" rel="self" type="application/rss+xml"/><item><title>Como verificar as assinaturas do meu site</title><link>https://adlermedrado.com.br/posts/verificar-assinaturas/</link><pubDate>Sun, 23 Nov 2025 12:00:00 -0300</pubDate><guid>https://adlermedrado.com.br/posts/verificar-assinaturas/</guid><description>&lt;h1 id="mudança-na-assinatura-gpg-do-meu-website"&gt;Mudança na assinatura GPG do meu website&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/</link><description>Recent content in Home on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 23 Nov 2025 12:00:00 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/index.xml" rel="self" type="application/rss+xml"/><item><title>Como verificar as assinaturas do meu site</title><link>https://adlermedrado.com.br/posts/verificar-assinaturas/</link><pubDate>Sun, 23 Nov 2025 12:00:00 -0300</pubDate><guid>https://adlermedrado.com.br/posts/verificar-assinaturas/</guid><description>&lt;h1 id="mudança-na-assinatura-gpg-do-meu-website"&gt;Mudança na assinatura GPG do meu website&lt;/h1&gt;
 &lt;p&gt;Não me lembro exatamente mas acredito que a pelo menos dois anos eu assino as páginas HTML do meu site com GPG, faço isso para praticar soberania, autenticidade até mesmo promover ferramentas que auxiliam na privacidade.&lt;/p&gt;
 &lt;p&gt;Inicialmente eu deixava a assinatura GPG embutida no próprio conteúdo HTML, por exemplo:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&amp;lt;!--
@@ -1181,4 +1181,55 @@ language translations contributed by the community (Thanks!).&lt;/strong&gt;&lt;
 site &lt;a href="https://web.archive.org/web/20060507033039/http://www.tiobe.com/tpci.htm"&gt;TIOBE Programming Community Index&lt;/a&gt; para
 verificar até que ponto aquele indíce do Tiobe é realista.&lt;/p&gt;
 &lt;p&gt;O Tiobe verifica em sites de pesquisa ( Google, Msn, etc ) quais as linguagens que mais aparecem em determinada pesquisa
-nestes engines de busca. A query utilizada pelo TIOBE (conforme mostrada em seu site ) é +&amp;quot; programming&amp;quot; -tv -channel .&lt;/p&gt;</description></item></channel></rss>
+nestes engines de busca. A query utilizada pelo TIOBE (conforme mostrada em seu site ) é +&amp;quot; programming&amp;quot; -tv -channel .&lt;/p&gt;</description></item><item><title>About</title><link>https://adlermedrado.com.br/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/about/</guid><description>&lt;h1 id="about-adler"&gt;About Adler&lt;/h1&gt;
+&lt;div class="about-hero"&gt;
+ &lt;div class="about-hero__text"&gt;
+ &lt;p&gt;I am Adler Medrado — also known as spacexnu — a software engineer with 20+ years writing code, defending systems, and staying ahead of hype.&lt;/p&gt;
+ &lt;p&gt;I care about building fast, secure systems and keeping people sovereign over their data.&lt;/p&gt;
+ &lt;/div&gt;
+ &lt;div class="about-hero__photo"&gt;
+ &lt;img src="https://adlermedrado.com.br/images/IMG_7191.jpeg" alt="Adler Medrado" loading="lazy" width="320" height="320" /&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id="what-i-do"&gt;What I do&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Architect and deploy systems across finance, e-commerce, and healthcare with security, privacy, and performance as defaults.&lt;/li&gt;
+&lt;li&gt;Build AI-powered tooling for log analysis and NLP-based data extraction.&lt;/li&gt;
+&lt;li&gt;Design decentralized, censorship-resistant tools that keep people sovereign.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="currently"&gt;Currently&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Building &lt;a href="https://fraudtalon.com"&gt;FraudTalon&lt;/a&gt;, an AI-powered platform that detects phishing, scams, and online fraud in emails, images, and URLs.&lt;/li&gt;
+&lt;li&gt;Exploring local and cloud AI stacks to keep defenses close to the metal.&lt;/li&gt;
+&lt;li&gt;Finishing a History degree while staying embedded in hacker culture.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="origin-story"&gt;Origin story&lt;/h2&gt;
+&lt;p&gt;My journey started on a BBS I ran in the 90s on a PC/AT 386 with MS-DOS. That DIY spirit still drives everything I do: build it yourself, understand every layer, stay sovereign.&lt;/p&gt;</description></item><item><title>Contact</title><link>https://adlermedrado.com.br/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/contact/</guid><description>&lt;h1 id="contact"&gt;Contact&lt;/h1&gt;
+&lt;p&gt;Want to collaborate, swap ideas, or report something? Use any channel below—email is best for detailed conversations.&lt;/p&gt;
+&lt;h2 id="direct"&gt;Direct&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Email: &lt;a href="mailto:adler@adlermedrado.com.br"&gt;adler@adlermedrado.com.br&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GPG: &lt;code&gt;07D7 0FDB CC44 6C19 CA43 02CE 6D5F 1A78 F1DC 361D&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;IRC: sometimes on &lt;code&gt;#tilde&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="find-me"&gt;Find me&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/spacexnu"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linkedin.com/in/adlermedrado"&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://x.com/spacexnu"&gt;Twitter/X&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nostr.build/u/spacexnu"&gt;Nostr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://tilde.team"&gt;Tilde.team&lt;/a&gt; and &lt;a href="https://sdf.org"&gt;SDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Prefer encrypted or private-by-default channels? Mention it and we will pick the right medium.&lt;/p&gt;</description></item><item><title>Projects</title><link>https://adlermedrado.com.br/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/projects/</guid><description>&lt;h1 id="projects"&gt;Projects&lt;/h1&gt;
+&lt;p&gt;Things I am building, maintaining, or experimenting with right now.&lt;/p&gt;
+&lt;h2 id="active-builds"&gt;Active builds&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://fraudtalon.com"&gt;FraudTalon&lt;/a&gt;: AI-powered platform that flags phishing, scams, and online fraud across emails, images, and URLs.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/spacexnu/ShadowData"&gt;ShadowData&lt;/a&gt;: NLP pipeline that hunts for sensitive data leaks inside text and documents.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/spacexnu/log-analyzer"&gt;log-analyzer&lt;/a&gt;: Real-time attack detection from logs with pragmatic rules and signals.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/spacexnu/hades"&gt;hades&lt;/a&gt;: Heuristic analysis of domains and embedded sites for quick risk assessments.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/spacexnu/job_finder"&gt;job_finder&lt;/a&gt;: CLI tool that scrapes tech job listings with filters that actually matter.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/spacexnu/sovereign-rag"&gt;Sovereign Rag&lt;/a&gt;: Fully private, offline sovereign AI pipeline for security code auditing—own your lab, models, and data with zero cloud lock-in or vendor tracking.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="elsewhere"&gt;Elsewhere&lt;/h2&gt;
+&lt;p&gt;More experiments live on &lt;a href="https://github.com/spacexnu"&gt;GitHub&lt;/a&gt;. If something here sparks an idea, reach out via the &lt;a href="https://adlermedrado.com.br/contact"&gt;contact page&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>

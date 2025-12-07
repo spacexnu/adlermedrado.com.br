@@ -15,7 +15,7 @@ Essa experiência me lembra muito de quem eu sempre fui. Não é só nostalgia d
 
 Foi por isso que decidi transformar esse notebook na pedra fundamental de uma nova fase da minha infraestrutura pessoal.  Deixei de lado o Ubuntu, o Debian, o GNOME e toda aquela estética “corporate-woke” que muitas vezes é apresentada como discurso técnico. Estou cansado desse verniz. Quero um sistema que realmente respeite o usuário.
 
-![Meu site via rede Tor](images/my-site-on-tor.png)
+<img height="50%" src="/posts/images/my-site-on-tor.png" width="50%"/>
 
 A escolha foi fácil: [openSUSE](https://opensuse.org), headless, limpo e direto ao ponto.
 

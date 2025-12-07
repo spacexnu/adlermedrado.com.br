@@ -15,7 +15,7 @@ And that feeling connects directly to who I’ve always been. It’s not just �
 
 That’s why I decided to make this laptop the cornerstone of a new phase of my personal infrastructure. Ubuntu, Debian, GNOME, and that whole “corporate-woke” aesthetic disguised as technical progress — all of that stays behind. I’m tired of the veneer. I want a system that actually respects its operator.
 
-![My website via Tor network](images/my-site-on-tor.png)
+<img height="50%" src="/posts/images/my-site-on-tor.png" width="50%"/>
 
 The choice was obvious: [openSUSE](https://opensuse.org), headless, clean, straight to the point.
 

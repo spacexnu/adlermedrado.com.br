@@ -11,7 +11,7 @@ tags:
 
 Recentemente, tive a sorte de conseguir um notebook Dell incrível em um bota-fora da empresa. Conseguir parcelar e pagar um preço acessível foi demais! **Não é um equipamento cheio de firulas ou especificações mirabolantes, mas me deu uma alegria imensa colocar as mãos em uma máquina que, com um pouco de dedicação, se transforma em uma ferramenta poderosa.**
 
-Essa experiência me lembra muito de quem eu sempre fui. Não é só nostalgia de “era BBS”, mas sim uma continuidade. Naquela época, tudo era mais manual: desmontar coisas na mesa da cozinha, ajustar um cabos, configurar IRQs e testar configurações até que funcionassem, e persistir mesmo quando nada parecia fazer sentido. Era teimosia e liberdade. Hoje, só mudaram os cabos, mas o espírito permanece o mesmo.
+Essa experiência me lembra muito de quem eu sempre fui. Não é só nostalgia de “era BBS”, mas sim uma continuidade. Naquela época, tudo era mais manual: desmontar coisas na mesa da cozinha, ajustar uns cabos, configurar IRQs e testar configurações até que funcionassem, e persistir mesmo quando nada parecia fazer sentido. Era teimosia e liberdade. Hoje, só mudaram os cabos, mas o espírito permanece o mesmo.
 
 Foi por isso que decidi transformar esse notebook na pedra fundamental de uma nova fase da minha infraestrutura pessoal.  Deixei de lado o Ubuntu, o Debian, o GNOME e toda aquela estética “corporate-woke” que muitas vezes é apresentada como discurso técnico. Estou cansado desse verniz. Quero um sistema que realmente respeite o usuário.
 
@@ -28,10 +28,11 @@ O processo foi super divertido! Não porque me senti voltando aos anos 90, mas p
 E não fiz isso só pelo desafio. Privacidade e soberania digital são mais do que slogans; são práticas que eu realmente acredito.
 
 Desde o começo, meu site sempre foi pensado dessa forma:
-Sem JavaScript
-Sem analytics
-Sem cookies
-Sem rastreamento
+
+* Sem JavaScript
+* Sem analytics
+* Sem cookies
+* Sem rastreamento
 
 HTML puro, estático, assinado com GPG para quem quiser dar uma olhada e verificar.
 

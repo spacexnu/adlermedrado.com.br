@@ -28,10 +28,11 @@ The whole process was genuinely fun. Not because I felt like I was reliving the 
 And I didn’t do any of this just for the challenge. Privacy and digital sovereignty aren’t slogans to me; they’re principles I live by.
 
 From the beginning, my website has followed this philosophy:
-No JavaScript
-No analytics
-No cookies
-No tracking
+
+* No JavaScript
+* No analytics
+* No cookies
+* No tracking
 
 Pure, static HTML, GPG-signed for anyone who wants to inspect and verify it.
 

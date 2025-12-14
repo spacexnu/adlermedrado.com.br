@@ -24,6 +24,6 @@ deploy:
 	rsync -rvhe ssh --progress --delete ./public/ xablau
 
 deploy-onion:
-	rsync -avz --delete --rsync-path="sudo rsync" ./public/ user@host:path
+	rsync -avz --delete --rsync-path="sudo rsync" ./public/ spacexnu@192.168.1.111:/srv/www/htdocs/adlermedrado
 
 .PHONY: serve build build-onion clear-sign deploy deploy-onion

@@ -7,7 +7,7 @@ Description: "Security-minded engineer building AI-powered defenses"
   <div class="home-hero__text">
     <p class="home-hero__eyebrow">Security-minded software engineer</p>
     <h1>Adler Medrado</h1>
-    <p>Building AI-powered defenses and writing about code, systems, and sovereignty from Brazil.</p>
+    <p>Writing about code, systems, and sovereignty. Building defensive AI along the way.</p>
     <ul class="home-hero__links">
       <li>Learn who I am → <a href="/about">about</a></li>
       <li>Explore what I’m building → <a href="/projects">projects</a></li>

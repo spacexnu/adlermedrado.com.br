@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Detection on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/detection/</link><description>Recent content in Detection on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 04 Jan 2026 11:52:13 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/detection/index.xml" rel="self" type="application/rss+xml"/><item><title>Evoluindo o HADES</title><link>https://adlermedrado.com.br/posts/evolucao-hades/</link><pubDate>Sun, 04 Jan 2026 11:52:13 -0300</pubDate><guid>https://adlermedrado.com.br/posts/evolucao-hades/</guid><description>&lt;p&gt;Este post descreve a evolução do &lt;strong&gt;HADES&lt;/strong&gt; na detecção de URLs fraudulentas &lt;strong&gt;sem depender de serviços pagos&lt;/strong&gt;.&lt;br&gt;
+O foco foi fortalecer a detecção com &lt;strong&gt;código próprio&lt;/strong&gt;, &lt;strong&gt;heurísticas locais (PT/BR)&lt;/strong&gt; e &lt;strong&gt;fontes públicas abertas&lt;/strong&gt;, mantendo controle total do pipeline.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; o CNPJ presente nos exemplos foi alterado para &lt;code&gt;11917932300169&lt;/code&gt;.&lt;br&gt;
+O objetivo é &lt;strong&gt;ilustrar o caso&lt;/strong&gt;, não expor pessoas físicas ou jurídicas reais.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id="1-problema-inicial-heurística-simples-falha-com-golpes-locais"&gt;1) Problema inicial: heurística simples falha com golpes locais&lt;/h2&gt;
+&lt;p&gt;O HADES usava regras simples: palavras suspeitas em inglês (&lt;code&gt;login/verify&lt;/code&gt;), HTTP sem TLS, IP na URL, subdomínios excessivos e domínio recém-registrado.&lt;br&gt;
+Essas regras funcionam para exemplos didáticos, mas falham com golpes brasileiros.&lt;/p&gt;</description></item><item><title>Evolving HADES</title><link>https://adlermedrado.com.br/posts/hades-evolution/</link><pubDate>Sun, 04 Jan 2026 11:52:13 -0300</pubDate><guid>https://adlermedrado.com.br/posts/hades-evolution/</guid><description>&lt;p&gt;This post describes how &lt;strong&gt;HADES&lt;/strong&gt; evolved to detect fraudulent URLs &lt;strong&gt;without relying on paid services&lt;/strong&gt;.&lt;br&gt;
+The focus was to strengthen detection with &lt;strong&gt;in-house code&lt;/strong&gt;, &lt;strong&gt;local heuristics (PT/BR)&lt;/strong&gt;, and &lt;strong&gt;open public sources&lt;/strong&gt;, while keeping full control of the pipeline.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; the CNPJ used in the examples was changed to &lt;code&gt;11917932300169&lt;/code&gt;.&lt;br&gt;
+The goal is to &lt;strong&gt;illustrate the case&lt;/strong&gt;, not to expose real individuals or companies.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note #2&lt;/strong&gt;: CNPJ is the Brazilian business tax ID, similar to the EIN in the U.S.&lt;/p&gt;</description></item></channel></rss>

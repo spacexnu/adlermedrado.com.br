@@ -40,4 +40,4 @@ And honestly? I’d rather drink liters of cachaça and deal with a brutal hango
 This project was never meant to compete with massive tools. It was built to give me back control, simplicity, and focus. If someone else finds it useful along the way, great. But the original motivation has always been the same: solve a real annoyance with as few layers as possible between me and the solution.
 
 If you’re interested, the repository is available at  
-[https://github.com/spacexnu/pinga](https://github.com/spacexnu/pinga), where you can also find a tentative roadmap and usage examples.
+[https://github.com/spacexnu/pinga](https://github.com/spacexnu/pinga), where you can also find a possible roadmap and usage examples.

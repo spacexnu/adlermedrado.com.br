@@ -35,7 +35,7 @@ decidimos utilizar o <a href=https://www.docker.com/>Docker</a> e um container d
 instalação de containers, entretanto, o Kitematic está em versão beta ainda e por isso ele possui algumas arestas que
 precisam ser aparadas, mas no geral ele funciona bem.</p><h4 id=problema-na-instalação>Problema na instalação</h4><p>Na hora em que o Kitematic é instalado ele verifica se o Virtualbox está instalado no computador, caso não esteja, ele
 baixa e faz a instalação automaticamente, após isso prossegue com a instalação, mas quando chegou em 99% ele ficou
-parado e não avançou mais, conforme a imagem abaixo:</p><p>Eu quase desisti após xingar bastante, mas então eu executei os seguintes comandos no terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>docker-machine rm -f dev
+parado e não avançou mais, conforme a imagem abaixo:</p><p>Eu quase desisti após xingar bastante, mas então eu executei os seguintes comandos no terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>docker-machine rm -f dev
 </span></span><span style=display:flex><span>docker-machine create -d virtualbox dev
 </span></span></code></pre></div><p>E tudo passou a funcionar corretamente.</p><p>Durante o período em que eu esperava a instalação finalizar, eu abri uma issue
 no <a href=https://github.com/kitematic/kitematic>Github do projeto</a> e em seguida ao conseguir resolver eu postei a solução

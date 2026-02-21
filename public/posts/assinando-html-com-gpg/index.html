@@ -56,8 +56,8 @@ teria um endereço com um arquivo correspondente chamado <a href=https://site.co
 cujo conteúdo é a assinatura criptográfica do arquivo index.html.</p><p>Eu optei por deixar no mesmo arquivo para facilitar
 o processo de validação, mas ambas as maneiras são válidas.</p><p>Caso tenha curiosidade para ver como é o arquivo com a assinatura embutida, utilize
 a funcionalidade <em>Mostrar código-fonte do seu navegador</em>.</p><h2 id=como-validar-a-integridade-do-arquivo-assinado>Como validar a integridade do arquivo assinado?</h2><p>Primeiro a minha chave pública deve ser importada para seu gerenciador de chaves (GPG Suite por exemplo),
-depois basta fazer o download do arquivo html e usar o comando <em>verify</em> do GPG para checar a integridade.</p><p>Para validar o arquivo HTML da home do meu site, basta executar o seguinte comando no seu terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
-</span></span></code></pre></div><p>Resultado:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
+depois basta fazer o download do arquivo html e usar o comando <em>verify</em> do GPG para checar a integridade.</p><p>Para validar o arquivo HTML da home do meu site, basta executar o seguinte comando no seu terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
+</span></span></code></pre></div><p>Resultado:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
 </span></span><span style=display:flex><span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 </span></span><span style=display:flex><span>                                 Dload  Upload   Total   Spent    Left  Speed
 </span></span><span style=display:flex><span><span style=color:#ae81ff>100</span>  <span style=color:#ae81ff>7413</span>    <span style=color:#ae81ff>0</span>  <span style=color:#ae81ff>7413</span>    <span style=color:#ae81ff>0</span>     <span style=color:#ae81ff>0</span>   <span style=color:#ae81ff>7803</span>      <span style=color:#ae81ff>0</span> --:--:-- --:--:-- --:--:--  <span style=color:#ae81ff>7803</span>
@@ -65,7 +65,7 @@ depois basta fazer o download do arquivo html e usar o comando <em>verify</em> d
 </span></span><span style=display:flex><span>gpg:                using RSA key 39A90E7D803B5C02D3EFEBA7FF676DC52A0191C3
 </span></span><span style=display:flex><span>gpg: Good signature from <span style=color:#e6db74>&#34;Adler Medrado &lt;adler@adlermedrado.com.br&gt;&#34;</span> <span style=color:#f92672>[</span>ultimate<span style=color:#f92672>]</span>
 </span></span></code></pre></div><p>Para mostrar o que aconteceria caso o conteúdo do arquivo fosse modificado, eu
-fiz uma modificação e mandei verificar novamente. O resultado:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
+fiz uma modificação e mandei verificar novamente. O resultado:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
 </span></span><span style=display:flex><span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
 </span></span><span style=display:flex><span>                                 Dload  Upload   Total   Spent    Left  Speed
 </span></span><span style=display:flex><span><span style=color:#ae81ff>100</span>  <span style=color:#ae81ff>7423</span>    <span style=color:#ae81ff>0</span>  <span style=color:#ae81ff>7423</span>    <span style=color:#ae81ff>0</span>     <span style=color:#ae81ff>0</span>   <span style=color:#ae81ff>7813</span>      <span style=color:#ae81ff>0</span> --:--:-- --:--:-- --:--:--  <span style=color:#ae81ff>7813</span>
@@ -76,7 +76,7 @@ fiz uma modificação e mandei verificar novamente. O resultado:</p><div class=h
 de acordo com a assinatua contida nele.</p><h2 id=como-assinar-os-arquivos>Como assinar os arquivos</h2><p>Como mencionei anteriormente, estou usando o Hugo para gerar os arquivos estáticos
 do site, para isso o Hugo possui um comando específico. Como são diversos comandos
 usados nesse processo, eu coloquei todos em um arquivo Makefile pois minha memória
-é péssima.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Makefile data-lang=Makefile><span style=display:flex><span><span style=color:#a6e22e>help</span><span style=color:#f92672>:</span>
+é péssima.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-Makefile data-lang=Makefile><span style=display:flex><span><span style=color:#a6e22e>help</span><span style=color:#f92672>:</span>
 </span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;targets:&#34;</span>
 </span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;serve: Run a local hugo development server&#34;</span>
 </span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;build: Build the minified version of the site&#34;</span>
@@ -101,7 +101,7 @@ usados nesse processo, eu coloquei todos em um arquivo Makefile pois minha memó
 markdown em html, em seguida eu uso o comando <em>clear-sign</em> para assinar cada
 arquivo individualmente e em seguida eu atualizo o servidor com os novos arquivos
 usando o comando <em>deploy</em>.</p><p>Para realizar as assinaturas, eu criei um pequeno script bash que é executado
-para cada arquivo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/usr/bin/env bash
+para cada arquivo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/usr/bin/env bash
 </span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>shopt -s globstar
 </span></span><span style=display:flex><span>

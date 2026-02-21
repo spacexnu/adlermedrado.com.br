@@ -4,29 +4,29 @@ uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você 
 acesso à dados, como insert, update, etc.
 Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
 tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
-de métodos específicos da classe Zend_Db_Table_Row."><meta property="og:url" content="https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Relacionamento entre tabelas com Zend Framework"><meta name=twitter:description content="O Zend Framework possui uma camada de modelo, composta por algumas classes
+de métodos específicos da classe Zend_Db_Table_Row."><meta property="og:url" content="http://xlqlev6ixhge3wyoivxhpcvuv2v5it2m2dxjnfng5d66jb7c6kpv6qid.onion/posts/relacionamento-entre-tabelas-com-zend-framework/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="http://xlqlev6ixhge3wyoivxhpcvuv2v5it2m2dxjnfng5d66jb7c6kpv6qid.onion/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Relacionamento entre tabelas com Zend Framework"><meta name=twitter:description content="O Zend Framework possui uma camada de modelo, composta por algumas classes
 como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa
 uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de
 acesso à dados, como insert, update, etc.
 Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
 tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
-de métodos específicos da classe Zend_Db_Table_Row."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Relacionamento entre tabelas com Zend Framework</title><meta name=description content="O Zend Framework possui uma camada de modelo, composta por algumas classes
+de métodos específicos da classe Zend_Db_Table_Row."><meta name=twitter:image content="http://xlqlev6ixhge3wyoivxhpcvuv2v5it2m2dxjnfng5d66jb7c6kpv6qid.onion/images/fraudtalon-preview.png"><title>Relacionamento entre tabelas com Zend Framework</title><meta name=description content="O Zend Framework possui uma camada de modelo, composta por algumas classes
 como Zend_Db, Zend_Db_Table, Zend_Db_Table_Rowset, entre outras, e é muito simples criar uma classe que representa
 uma determinada tabela, basta herdar da classe Zend_Db_Table_Abstract que você terá todos os métodos principais de
 acesso à dados, como insert, update, etc.
 Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
 tabela utilizando integridade referencial, e o Zend Framework permite que você faça isso tudo no nível de objeto através
-de métodos específicos da classe Zend_Db_Table_Row."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/relacionamento-entre-tabelas-com-zend-framework/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
-<a href=/projects>projects</a>
-<a href=/posts>posts</a>
-<a href=/missives>missives</a>
-<a href=/now>what am i doing now</a>
-<a href=/uses>what am i using</a>
-<a href=/contact>contact</a>
-<a href=/index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Relacionamento entre tabelas com Zend Framework</h1><div><div><p><small><time>March 25, 2008</time>
+de métodos específicos da classe Zend_Db_Table_Row."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=../../humans.txt><link rel=icon type=image/png href=../../images/favicon.png><link rel=canonical href=http://xlqlev6ixhge3wyoivxhpcvuv2v5it2m2dxjnfng5d66jb7c6kpv6qid.onion/posts/relacionamento-entre-tabelas-com-zend-framework/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=../../index.xml><link href=../../css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=../../ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=../../about>about</a>
+<a href=../../projects>projects</a>
+<a href=../../posts>posts</a>
+<a href=../../missives>missives</a>
+<a href=../../now>what am i doing now</a>
+<a href=../../uses>what am i using</a>
+<a href=../../contact>contact</a>
+<a href=../../index.xml aria-label="RSS feed">rss</a></div></nav></header><main><section class=section><article><div><h1>Relacionamento entre tabelas com Zend Framework</h1><div><div><p><small><time>March 25, 2008</time>
 |
 4 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
-<a href=/tags/zend-framework>zend-framework</a></p></div></p></div><span class=line_break></span></div><div class=content><p>O Zend Framework possui uma camada de modelo, composta por algumas classes
+<a href=../../tags/zend-framework>zend-framework</a></p></div></p></div><span class=line_break></span></div><div class=content><p>O Zend Framework possui uma camada de modelo, composta por algumas classes
 como <code>Zend_Db</code>, <code>Zend_Db_Table</code>, <code>Zend_Db_Table_Rowset</code>, entre outras, e é muito simples criar uma classe que representa
 uma determinada tabela, basta herdar da classe <code>Zend_Db_Table_Abstract</code> que você terá todos os métodos principais de
 acesso à dados, como insert, update, etc.</p><p>Porém as tabelas possuem relacionamentos e uma entidade em uma tabela pode ser ligada a uma ou mais entidades em outra
@@ -125,7 +125,7 @@ tem auxiliado o trabalho ele também auxilie o seu.</p><p><strong>O que que voc�
 um hello world para entender o padrão dele, outros queriam algo mais avançado, então eu pensei: Porque não escrever uma
 série de tutoriais no meu blog? Isso pode ser útil para muito mais pessoas. Então gostaria de sua opinião. Deixe seu
 comentário.</p><p>Eu estou pensando em fazer uma série de artigos simples e diretos ao assunto sobre Zend Framework, abordando desde o
-básico até o mais avançado. Então, espero começar na próxima semana.</p><p>abraço.</p></div></div></article><div><div><div><a href=https://adlermedrado.com.br/posts/lehitraot-guterman/>&#8592; Lehitraot Guterman</a>
+básico até o mais avançado. Então, espero começar na próxima semana.</p><p>abraço.</p></div></div></article><div><div><div><a href=http://xlqlev6ixhge3wyoivxhpcvuv2v5it2m2dxjnfng5d66jb7c6kpv6qid.onion/posts/lehitraot-guterman/>&#8592; Lehitraot Guterman</a>
 |
-<a href=https://adlermedrado.com.br/posts/usabilidade/>Usabilidade &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2026 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<a href=http://xlqlev6ixhge3wyoivxhpcvuv2v5it2m2dxjnfng5d66jb7c6kpv6qid.onion/posts/usabilidade/>Usabilidade &#8594;</a></div></div></div></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2026 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=../../posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
 <span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

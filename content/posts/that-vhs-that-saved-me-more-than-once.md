@@ -1,5 +1,5 @@
 ---
-title: "That VHS thar saved me (more than once)"
+title: "That VHS that saved me (more than once)"
 date: 2026-02-21T16:24:35-03:00
 draft: false
 tags: [memories]

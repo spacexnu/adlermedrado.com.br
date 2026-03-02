@@ -162,6 +162,17 @@ hr {
 .home-hero h1 {
     margin-top: 0.2em;
     margin-bottom: 0.6em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35em;
+}
+
+.home-hero__alias {
+    font-size: 0.6em;
+    color: #9ad4c5;
+    font-weight: 400;
+    text-shadow: none;
 }
 
 .home-hero__links {

@@ -1,6 +1,7 @@
 ---
 title: "The Places I Never Returned To, But Still Live in Me"
 date: 2025-04-15
+languages: ["english"]
 draft: false
 tags: 
     - "reflection" 

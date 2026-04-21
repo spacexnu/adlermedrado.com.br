@@ -1,6 +1,7 @@
 ---
 title: "Treinamento PHP5 Com Orientação a Objetos"
 date: 2008-06-19T13:30:22-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "training"

@@ -1,6 +1,7 @@
 ---
 title: "Zend Framework tutorial series capítulo 2"
 date: 2010-02-16T21:55:16-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

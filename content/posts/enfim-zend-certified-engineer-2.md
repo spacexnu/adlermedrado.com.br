@@ -1,6 +1,7 @@
 ---
 title: "Enfim Zend Certified Engineer #2"
 date: 2009-03-17T03:51:08-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

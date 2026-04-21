@@ -1,6 +1,7 @@
 ---
 title: "Pinga: minha pequena ferramenta para requisições http"
 date: 2026-01-09T18:34:00-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - cli

@@ -1,6 +1,7 @@
 ---
 title: "Remote Systems no PDT"
 date: 2008-06-27T10:30:29-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "development"

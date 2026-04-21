@@ -1,6 +1,7 @@
 ---
 title: "OFF-TOPIC — O desarmamento e suas falácias"
 date: "2014-02-24"
+languages: ["portuguese"]
 ---
 
 Ontem no [Jornal de Beltrão](http://www.jornaldebeltrao.com.br) teve uma reportagem sobre os bandidos estarem invadindo

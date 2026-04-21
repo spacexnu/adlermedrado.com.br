@@ -1,6 +1,7 @@
 ---
 title: "Shadowdata Sensitive Data Handler Python Library"
 date: 2024-10-12T21:23:34-03:00
+languages: ["english"]
 draft: false
 tags:
   - "gpg"

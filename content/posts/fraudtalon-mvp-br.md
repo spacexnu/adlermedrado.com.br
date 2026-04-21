@@ -1,6 +1,7 @@
 ---
 title: "Combatendo fraudes online com FraudTalon"
 date: 2025-06-20T17:58:55-03:00
+languages: ["portuguese"]
 draft: false
 tags: [fraudtalon, ai, seguranca, fraude]
 ---

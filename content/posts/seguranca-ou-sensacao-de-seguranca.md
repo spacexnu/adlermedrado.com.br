@@ -1,6 +1,7 @@
 ---
 title: "Segurança ou sensação de segurança?"
 date: "2015-06-03"
+languages: ["portuguese"]
 ---
 
 Hoje eu contratei o serviço de uma empresa que disponibiliza um vigilante para circular de moto ou carro (depende do

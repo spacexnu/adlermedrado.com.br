@@ -1,6 +1,7 @@
 ---
 title: "Screencast Zend Framework e Netbeans"
 date: 2010-06-13T06:07:40-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "training"

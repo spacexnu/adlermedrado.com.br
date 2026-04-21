@@ -1,6 +1,7 @@
 ---
 title: "Heróis Brasileiros esquecidos ou quase"
 date: 2009-05-10T18:00:52-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "general"

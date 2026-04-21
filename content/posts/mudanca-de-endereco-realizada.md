@@ -1,6 +1,7 @@
 ---
 title: "Mudança de endereço realizada"
 date: 2008-05-09T09:09:05-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "site"

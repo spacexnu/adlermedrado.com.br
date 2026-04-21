@@ -1,6 +1,7 @@
 ---
 title: "Profiling de banco de dados com Zend_Db_Profiler e Firebug"
 date: 2009-06-17T15:54:18-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

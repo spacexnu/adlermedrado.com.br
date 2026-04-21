@@ -1,6 +1,7 @@
 ---
 title: "Configurando um repositório privado usando Composer e Satis"
 date: "2015-06-21"
+languages: ["portuguese"]
 tags:
   - "php"
   - "composer"

@@ -1,6 +1,7 @@
 ---
 title: "Zend_Form: Um simples tutorial"
 date: 2008-09-14T19:55:18-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

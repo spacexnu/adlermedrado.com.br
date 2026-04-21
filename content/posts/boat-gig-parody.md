@@ -1,6 +1,7 @@
 ---
 title: "From BBS to Blockchain: A Boat Gig Parody for Old-School Nerds"
 date: 2025-01-28T21:33:15-03:00
+languages: ["english"]
 tags:
   - "tech"
   - "python"

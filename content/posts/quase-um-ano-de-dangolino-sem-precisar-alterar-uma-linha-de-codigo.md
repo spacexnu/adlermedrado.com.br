@@ -1,6 +1,7 @@
 ---
 title: "Quase um ano de Dangolino sem precisar alterar uma linha de código"
 date: 2013-03-15T00:09:13-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "general"

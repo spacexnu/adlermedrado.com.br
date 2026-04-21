@@ -1,6 +1,7 @@
 ---
 title: "Promoção do PHPSP te ajuda a tirar certificações Zend"
 date: 2010-06-24T23:25:35-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "php"

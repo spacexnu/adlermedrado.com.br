@@ -1,6 +1,7 @@
 ---
 title: "Treinamento PHP avançado para meus colegas do MDIC/Sigma"
 date: 2008-06-22T05:22:53-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "training"

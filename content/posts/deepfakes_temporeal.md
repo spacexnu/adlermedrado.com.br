@@ -1,6 +1,7 @@
 ---
 title: "Deepfakes em tempo real: e se \"ver para crer\" já não valer mais nada?"
 date: 2025-05-10T11:13:20-03:00
+languages: ["portuguese"]
 draft: false
 tags: ["ai", "deepfake", "criptografia", "gpg", "seguranca"]
 ---

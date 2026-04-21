@@ -1,6 +1,7 @@
 ---
 title: "Por que você deveria começar a usar GPG agora"
 date: 2025-04-27
+languages: ["portuguese"]
 tags: [gpg, criptografia, privacidade, seguranca, computacao quantica]
 ---
 

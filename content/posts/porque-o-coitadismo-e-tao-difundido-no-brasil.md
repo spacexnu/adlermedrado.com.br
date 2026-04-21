@@ -1,6 +1,7 @@
 ---
 title: "Porque o coitadismo é tão difundido no Brasil?"
 date: "2013-12-16"
+languages: ["portuguese"]
 ---
 
 Uma das coisas que eu abomino é a cultura do coitadismo que, infelizmente, está enraizado no DNA do brasileiro.

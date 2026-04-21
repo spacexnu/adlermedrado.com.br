@@ -1,6 +1,7 @@
 ---
 title: "Install lxml on MacBook with Apple Silicon"
 date: "2023-01-03"
+languages: ["english"]
 tags: 
   - "mac"
   - "python"

@@ -1,6 +1,7 @@
 ---
 title: "BBS: Depois de muitos anos, um acesso"
 date: "2015-11-06"
+languages: ["portuguese"]
 tags:
   - "bbs"
   - "history"

@@ -1,6 +1,7 @@
 ---
 title: "Aproveita, daqui pra frente é só porrada"
 date: 2025-01-30T21:21:17-03:00
+languages: ["portuguese"]
 tags:
 - "general"
 - "bbs"

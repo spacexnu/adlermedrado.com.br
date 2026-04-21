@@ -1,6 +1,7 @@
 ---
 title: "Novidades no FraudTalon: análise explicativa e planos para QR Codes e URLs"
 date: 2025-07-16
+languages: ["portuguese"]
 description: "A nova atualização do FraudTalon traz explicações sobre a classificação de fraudes, suporte a vários tipos de entrada, e planos para análise de QR codes e URLs suspeitas."
 tags: ["fraudes", "ciberseguranca", "projeto", "atualizacao", "fraudtalon"]
 slug: "fraudtalon-atualizacao-julho-2025"

@@ -1,6 +1,7 @@
 ---
 title: "Chernobyl 22 anos"
 date: 2008-04-26T17:02:35-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "history"

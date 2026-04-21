@@ -1,6 +1,7 @@
 ---
 title: "Linguagens baseadas na JVM"
 date: "2015-10-11"
+languages: ["portuguese"]
 tags:
   - "clojure"
   - "java"

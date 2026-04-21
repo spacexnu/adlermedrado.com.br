@@ -1,6 +1,7 @@
 ---
 title: "Mudanças no Zend_Loader"
 date: 2009-05-28T19:42:10-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

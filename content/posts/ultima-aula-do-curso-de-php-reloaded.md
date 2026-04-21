@@ -1,6 +1,7 @@
 ---
 title: "Última aula do curso de PHP: Reloaded"
 date: 2008-08-05T11:32:32-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "training"

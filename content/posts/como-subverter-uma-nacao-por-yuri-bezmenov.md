@@ -1,6 +1,7 @@
 ---
 title: "Como subverter uma nação. Por Yuri Bezmenov"
 date: "2014-06-21"
+languages: ["portuguese"]
 tags:
   - comunismo
   - subversao

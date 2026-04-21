@@ -1,6 +1,7 @@
 ---
 title: "Treinamento de Zend Framework em Brasilia confirmado"
 date: 2009-05-04T08:19:34-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "training"

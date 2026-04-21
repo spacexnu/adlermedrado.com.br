@@ -1,6 +1,7 @@
 ---
 title: "Introdução a Criptografia — Parte 1"
 date: "2014-12-28"
+languages: ["portuguese"]
 ---
 
 Eu gosto muito de chuva —_apenas quando estou tranquila e confortavelmente em casa_— e agora no momento em que escrevo

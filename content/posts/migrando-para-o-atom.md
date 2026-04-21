@@ -1,6 +1,7 @@
 ---
 title: "Migrando para o Atom"
 date: "2015-07-31"
+languages: ["portuguese"]
 ---
 
 Na primeira vez em que tive um Mac, um dos primeiros softwares que comprei foi o Textmate.

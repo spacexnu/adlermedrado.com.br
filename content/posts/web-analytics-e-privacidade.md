@@ -1,6 +1,7 @@
 ---
 title: "Web Analytics e Privacidade"
 date: "2013-09-23"
+languages: ["portuguese"]
 ---
 
 #### Intro

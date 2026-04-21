@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{ $filter := .Params.filterLanguage }}
+{{ if $filter }}
+{{ $posts := where .Site.RegularPages "Type" "posts" }}
+{{ $filtered := where $posts "Params.languages" "intersect" (slice $filter) }}
+{{ $paginator := .Paginate ($filtered.ByDate.Reverse) }}
+<div>
+    <div>
+        <div>
+            <h1>{{ .Title }}</h1>
+            <p><a href="/posts/">All posts</a> | <a href="/languages/english/">English</a> | <a href="/languages/portuguese/">Portuguese</a></p>
+            {{ range $paginator.Pages }}
+            <ul>
+                <li><small>{{ .PublishDate.Format "January 2, 2006" }}</small> - <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            </ul>
+            {{ end }}
+        </div>
+        {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}">← Previous / Anterior</a>
+        {{ end }}
+        {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}">Next / Próxima →</a>
+        {{ end }}
+    </div>
+</div>
+{{ else }}
+{{ $posts := where .Site.RegularPages "Type" "posts" }}
+{{ $english := where $posts "Params.languages" "intersect" (slice "english") }}
+{{ $portuguese := where $posts "Params.languages" "intersect" (slice "portuguese") }}
+<section>
+  <div>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+    <ul>
+      <li><a href="/languages/english/">English</a> <small>({{ len $english }})</small></li>
+      <li><a href="/languages/portuguese/">Portuguese</a> <small>({{ len $portuguese }})</small></li>
+    </ul>
+  </div>
+</section>
+{{ end }}
+{{ end }}

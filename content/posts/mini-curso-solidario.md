@@ -1,6 +1,7 @@
 ---
 title: "Mini-curso Solidário"
 date: 2008-11-27T13:46:53-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "training"

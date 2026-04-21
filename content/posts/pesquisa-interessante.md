@@ -1,6 +1,7 @@
 ---
 title: "Pesquisa Interessante"
 date: 2006-04-08T10:00:49-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "general"

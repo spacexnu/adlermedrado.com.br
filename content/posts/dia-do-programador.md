@@ -1,6 +1,7 @@
 ---
 title: "Dia do Programador"
 date: 2008-09-12T19:44:01-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "general"

@@ -1,6 +1,7 @@
 ---
 title: "Flisol 2009"
 date: 2009-04-26T19:11:34-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "conferences"

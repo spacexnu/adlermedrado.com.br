@@ -1,6 +1,7 @@
 ---
 title: "Como verificar as assinaturas do meu site"
 date: 2025-11-23T12:00:00-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - gpg

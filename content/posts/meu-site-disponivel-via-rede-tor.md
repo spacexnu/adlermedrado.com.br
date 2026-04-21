@@ -1,6 +1,7 @@
     ---
 title: "Meu site agora está disponível via rede Tor"
 date: 2025-12-07T10:32:00-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - seguranca

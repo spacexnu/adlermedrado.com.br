@@ -1,6 +1,7 @@
 ---
 title: "Introduction to Internet Privacy: Five Essential First Steps"
 date: 2024-08-08T16:33:40-03:00
+languages: ["english"]
 draft: false
 tags:
   - "privacy"

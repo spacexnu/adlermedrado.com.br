@@ -2,6 +2,7 @@
 ---
 title: "Ollama vs LM Studio vs llama.cpp — A No-BS Guide to Running LLMs Locally on macOS"
 date: 2025-04-21
+languages: ["english"]
 tags:
 - llama.cpp
 - ollama

@@ -23,6 +23,7 @@ theme = "dark-flat"
 [taxonomies]
   tag = "tags"
   category = "categories"
+  tongue = "languages"
 
 [markup]
     defaultMarkdownHandler = 'goldmark'

@@ -1,6 +1,7 @@
 ---
 title: "GPG no MacOS X Snow Leopard"
 date: 2010-02-21T19:08:14-03:00
+languages: ["portuguese"]
 draft: true
 tags:
   - "pgp"

@@ -1,6 +1,7 @@
 ---
 title: "Relacionamento entre tabelas com Zend Framework"
 date: 2008-03-25T05:37:34-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

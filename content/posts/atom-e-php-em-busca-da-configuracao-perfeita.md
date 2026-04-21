@@ -1,6 +1,7 @@
 ---
 title: "Atom e PHP: Em busca da configuração perfeita"
 date: "2015-08-04"
+languages: ["portuguese"]
 tags:
   - "atom"
   - "editor"

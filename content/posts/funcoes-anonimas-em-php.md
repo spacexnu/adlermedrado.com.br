@@ -1,6 +1,7 @@
 ---
 title: "Funções anônimas em PHP"
 date: 2010-09-26T20:23:35-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "php"

@@ -1,6 +1,7 @@
 ---
 title: "Atualizem suas agendas"
 date: 2010-04-25T20:05:41-03:00
+languages: ["portuguese"]
 draft: false
 tags: 
   - "conferences"

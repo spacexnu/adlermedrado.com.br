@@ -1,6 +1,7 @@
 ---
 title: "Introdução a Criptografia — Parte 3"
 date: "2015-01-06"
+languages: ["portuguese"]
 ---
 
 Continuando com a série de artigos introdutórios à criptografia, vou agora mostrar como instalar o GnuPG na plataforma

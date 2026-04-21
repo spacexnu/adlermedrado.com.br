@@ -1,6 +1,7 @@
 ---
 title: "O endereço do meu blog irá mudar"
 date: 2008-05-07T22:02:25-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "site"

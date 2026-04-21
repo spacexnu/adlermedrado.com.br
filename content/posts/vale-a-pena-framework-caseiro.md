@@ -1,6 +1,7 @@
 ---
 title: "Vale a pena desenvolver um framework caseiro ultimamente?"
 date: 2008-06-20T09:03:17-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "general"

@@ -1,6 +1,7 @@
 ---
 title: "Dica: Criptografia de informações importantes"
 date: "2014-12-22"
+languages: ["portuguese"]
 ---
 
 Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você

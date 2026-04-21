@@ -1,6 +1,7 @@
 ---
 title: "Quer ser um bom programador? Dica #1"
 date: "2014-01-17"
+languages: ["portuguese"]
 ---
 
 Uma das primeiras dicas que dou quando alguém me pergunta o que é necessário para ser um bom programador, será também a

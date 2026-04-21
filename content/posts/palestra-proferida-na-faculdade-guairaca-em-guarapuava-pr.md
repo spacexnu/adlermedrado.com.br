@@ -1,6 +1,7 @@
 ---
 title: "Palestra proferida na Faculdade Guairacá em Guarapuava/PR"
 date: "2015-10-31"
+languages: ["portuguese"]
 ---
 
 Demorei mas postei os slides aqui em meu site.

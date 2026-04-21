@@ -1,6 +1,7 @@
 ---
 title: "Enabling Click and Drag on MacBook"
 date: "2021-06-09"
+languages: ["english"]
 categories:
   - "mac"
 tags:

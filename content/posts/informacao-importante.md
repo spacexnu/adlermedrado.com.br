@@ -1,6 +1,7 @@
 ---
 title: "Informação importante"
 date: "2015-02-27"
+languages: ["portuguese"]
 ---
 
 Informo a quem interessar possa que a partir do dia **_28/02/2015_** nenhum indivíduo, empresa ou qualquer outro tipo de

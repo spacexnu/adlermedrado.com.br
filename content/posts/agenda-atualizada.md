@@ -1,6 +1,7 @@
 ---
 title: "Agenda atualizada"
 date: 2009-08-04T12:08:11-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "general"

@@ -1,6 +1,7 @@
 ---
 title: "Introdução a Criptografia — Parte 2"
 date: "2014-12-29"
+languages: ["portuguese"]
 ---
 
 Como eu havia prometido, continuo com a série de posts sobre criptografia, se você chegou aqui sem ter visto a parte 1,

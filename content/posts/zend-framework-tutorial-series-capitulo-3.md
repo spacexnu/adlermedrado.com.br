@@ -1,6 +1,7 @@
 ---
 title: "Zend Framework tutorial series capítulo 3"
 date: 2010-05-22T10:08:21-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

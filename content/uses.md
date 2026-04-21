@@ -19,10 +19,13 @@ Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 ## 💻 Hardware
 
 - MacBook Air M1 - 16GB RAM, 1TB Storage
-- Dell Latitude 3420 [hosting my website on the Tor network](/posts/my-website-available-via-tor-network/)
+- Acer Predator Helios Neo 16 AI - 32GB RAM, 1TB nvme, RTX5070 - MS Windows 11 + WSL 2 -  Turning into my daily driver
 - LG 19” Full HD Monitor
+- LG Ultragear 27" Full HD Monitor 
 - Logitech MX Anywhere Mouse
 - Logitech K30 Keyboard
+- Redragon Deicide Lite Mouse
+- Redragon Lakshmi Mechanical Keyboard
 - AirPods Pro (2nd Gen)
 - Philips TAH6509
 - 2 Nexstand K2 Folding Laptop Stands (one for my MacBook Air, another for the company’s laptop)
@@ -39,12 +42,12 @@ Tools that power my day-to-day - whether I’m writing code, answering emails, o
 - **Browser**
   - Safari - my main browser for daily usage
   - Brave - mostly for Nostr usage
+  - Edge - when using windows
 - **Apple Mail** - old-school, but essential
 - **Notes app** - for quick thoughts, task lists, project ideas
 - **Spotlight ~~Alfred~~ + Apple Shortcuts** - for quick actions, workflows, and automation
 - **Apple Terminal** - giving a new chance ~iTerm2 - my terminal of choice~
-- **ZSH** After experimenting with Fish, I reverted to Zsh to maintain a more standardized system setup ~~Fish Shell - recently moved from ZSH, and enjoying the experience~~
-
+- **ZSH** After experimenting with Fish, I reverted to Zsh to maintain a more standardized system setup 
 ---
 
 ## 🌐 This Website
@@ -72,13 +75,12 @@ Technologies I use across projects - from building APIs to backend infrastructur
 - **Neovim** - my main editor
 - **IntelliJ IDEA Ultimate** — I still use it, but only at work. After the price increase to shove in useless AI nonsense, I canceled my personal subscription.
 - **tmux** - for remote multi-session workflows
-- **VS Code** - Still trying ~~trying to embrace it again (it’s a process)~~
-
+- **VS Code** 
 ---
 
 ## 🔐 Security & Privacy
 
-I take privacy seriously - both mine and my users’.
+I take privacy seriously - both mine and my users.
 
 - **GPG:** `07D7 0FDB CC44 6C19 CA43  02CE 6D5F 1A78 F1DC 361D`
 - Antivirus - better safe than sorry
@@ -96,9 +98,10 @@ I take privacy seriously - both mine and my users’.
   - LangChain + ChromaDB
   - Local RAG pipelines with Markdown data
   - PrivateGPT
-  - ~~VS Code agents + Copilot replacements~~
-  - ChatGPT
-  - Jetbrains AI Assistant + Junie
+  - VS Code agents + Copilot replacements
+  - ChatGPT + Codex
+  - Anthropic Claude
+  - ~~Jetbrains AI Assistant + Junie~~
 
 ---
 
@@ -106,6 +109,7 @@ I take privacy seriously - both mine and my users’.
 
 - **macOS** - main development and creative environment
 - **Linux** - for servers, experiments, and staying sharp
+- **Windows** - turning into my daily driver on my Acer Predator
 
 ---
 

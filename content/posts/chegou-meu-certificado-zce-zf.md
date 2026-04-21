@@ -1,6 +1,7 @@
 ---
 title: "Chegou meu certificado ZCE-ZF"
 date: 2009-04-22T17:56:53-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

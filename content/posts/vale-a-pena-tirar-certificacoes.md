@@ -1,6 +1,7 @@
 ---
 title: "Vale a pena tirar certificacoes?"
 date: 2009-06-16T18:47:01-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "certification"

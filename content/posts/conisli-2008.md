@@ -1,6 +1,7 @@
 ---
 title: "Conisli 2008"
 date: 2008-06-30T08:00:25-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "conferences"

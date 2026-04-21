@@ -1,6 +1,7 @@
 ---
 title: "O fim do GetOnCode();"
 date: "2014-02-19"
+languages: ["portuguese"]
 ---
 
 Em 2011 eu iniciei um projeto chamado Get On Code, a idéia inicial era a de publicar notícias, artigos, etc., relacionados a desenvolvimento, bem como produzir um podcast que falasse sobre o assunto.

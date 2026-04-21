@@ -1,6 +1,7 @@
 ---
 title: "Para refletir"
 date: "2014-01-29"
+languages: ["portuguese"]
 ---
 
 Hoje eu recebi por e-mail a seguinte foto, eu creio que ela fala por ela mesma, não é?

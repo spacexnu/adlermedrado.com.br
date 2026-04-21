@@ -1,6 +1,7 @@
 ---
 title: "Acessando o Office 365 via Powershell"
 date: "2014-07-26"
+languages: ["portuguese"]
 tags:
   - "microsoft"
   - "powershell"

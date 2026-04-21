@@ -1,6 +1,7 @@
 ---
 title: "Update: Análise de emails (.eml) com FraudTalon"
 date: 2025-06-28T15:46:07-03:00
+languages: ["portuguese"]
 draft: false
 tags: [ fraudtalon, ai, seguranca, fraude ]
 ---

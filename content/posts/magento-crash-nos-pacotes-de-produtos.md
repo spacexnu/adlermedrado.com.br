@@ -1,6 +1,7 @@
 ---
 title: "Magento: Crash nos pacotes de produtos"
 date: "2015-08-12"
+languages: ["portuguese"]
 tags:
   - "magento"
   - "php"

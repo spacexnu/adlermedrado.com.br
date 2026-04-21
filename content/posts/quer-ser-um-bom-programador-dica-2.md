@@ -1,6 +1,7 @@
 ---
 title: "Quer ser um bom programador? Dica #2"
 date: "2014-01-22"
+languages: ["portuguese"]
 ---
 
 Este é o segundo de uma série de posts com dicas para se tornar um bom programador.

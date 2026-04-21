@@ -1,6 +1,7 @@
 ---
 title: "Feliz 2015"
 date: "2014-12-31"
+languages: ["portuguese"]
 ---
 
 É praticamente impossível chegar nesta época do ano sem refletir nas coisas que aconteceram durante o ano vigente.

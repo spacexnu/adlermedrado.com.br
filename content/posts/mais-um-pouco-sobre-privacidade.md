@@ -1,6 +1,7 @@
 ---
 title: "Mais um pouco sobre privacidade"
 date: "2013-12-14"
+languages: ["portuguese"]
 tags: 
   - "privacidade"
 ---

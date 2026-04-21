@@ -1,6 +1,7 @@
 ---
 title: "Dica: Solução de problema ao configurar Kitematic/Docker"
 date: "2015-06-03"
+languages: ["portuguese"]
 ---
 
 **Este é o tipo de post que eu escrevo para servir de referência futura mas que também pode acabar ajudando outras

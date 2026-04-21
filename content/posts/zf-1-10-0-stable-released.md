@@ -1,6 +1,7 @@
 ---
 title: "Zend Framework 1.10.0 stable released"
 date: 2010-01-27T08:06:09-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

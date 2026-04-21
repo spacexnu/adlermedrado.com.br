@@ -1,6 +1,7 @@
 ---
 title: "Introdução à Privacidade na Internet: Cinco Primeiros Passos Essenciais"
 date: 2024-08-05T21:19:41-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "privacidade"

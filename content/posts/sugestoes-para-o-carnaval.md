@@ -1,6 +1,7 @@
 ---
 title: "Sugestões para o carnaval"
 date: "2015-02-16"
+languages: ["portuguese"]
 ---
 
 Se você não vai passar o carnaval se embriagando, rebolando, copulando com a maior quantidade possível de vagabundas(ou

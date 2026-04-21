@@ -1,6 +1,7 @@
 ---
 title: "Erro incômodo com o Postgresql no Mac"
 date: "2016-10-02"
+languages: ["portuguese"]
 tags:
   - "mac"
   - "macos"

@@ -1,6 +1,7 @@
 ---
 title: "Gerenciador de pacotes para Windows"
 date: "2014-08-24"
+languages: ["portuguese"]
 tags:
   - windows
 ---

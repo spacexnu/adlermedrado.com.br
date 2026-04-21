@@ -1,6 +1,7 @@
 ---
 title: "Meu ambiente de trabalho na plataforma Windows"
 date: "2014-12-23"
+languages: ["portuguese"]
 tags:
   - "windows"
 ---

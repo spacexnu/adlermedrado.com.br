@@ -1,6 +1,7 @@
 ---
 title: "Pinga: my small tool for HTTP requests"
 date: 2026-01-09T18:32:00-03:00
+languages: ["english"]
 draft: false
 tags:
   - cli

@@ -1,6 +1,7 @@
 ---
 title: "Security isn’t a feature. It’s a consequence"
 date: 2025-08-16T12:12:17-03:00
+languages: ["english"]
 draft: false
 tags: ["software", "development", "security"]
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Do PHP ao Python"
 date: "2017-06-09"
+languages: ["portuguese"]
 ---
 
 Um pouco da minha experiência na transição de PHP para Python

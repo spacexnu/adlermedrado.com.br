@@ -1,6 +1,7 @@
 ---
 title: "Meu primeiro plugin para Wordpress"
 date: 2009-02-15T19:49:58-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "wordpress"

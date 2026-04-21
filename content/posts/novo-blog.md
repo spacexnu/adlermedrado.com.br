@@ -1,6 +1,7 @@
 ---
 title: "Novo blog"
 date: "2013-09-20"
+languages: ["portuguese"]
 ---
 
 #### Olá, bem vindo ao meu novo blog.

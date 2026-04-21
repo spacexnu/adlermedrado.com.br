@@ -1,6 +1,7 @@
 ---
 title: "Nova release de preview do Zend Framework neste fim de semana"
 date: 2006-04-11T08:50:03-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

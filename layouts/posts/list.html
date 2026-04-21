@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ $posts := where .RegularPages "Type" "posts" }}
+{{ $paginator := .Paginate $posts }}
+<div>
+    <div>
+        <div>
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+            <p>
+                View:
+                <a href="/posts/">All posts</a> |
+                <a href="/languages/english/">English</a> |
+                <a href="/languages/portuguese/">Portuguese</a>
+            </p>
+            {{ range $paginator.Pages }}
+            <ul>
+                <li><small>{{ .PublishDate.Format "January 2, 2006" }}</small> - <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            </ul>
+            {{ end }}
+        </div>
+        {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}">← Previous / Anterior</a>
+        {{ end }}
+        {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}">Next / Próxima →</a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

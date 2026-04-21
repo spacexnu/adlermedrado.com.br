@@ -1,6 +1,7 @@
     ---
 title: "My website available via Tor network"
 date: 2025-12-07T10:32:00-03:00
+languages: ["english"]
 draft: false
 tags:
   - security

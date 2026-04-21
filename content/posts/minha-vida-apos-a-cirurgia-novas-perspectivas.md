@@ -1,6 +1,7 @@
 ---
 title: "Minha vida após a cirurgia: Novas perspectivas"
 date: "2014-05-11"
+languages: ["portuguese"]
 ---
 
 Hoje fazem 2 meses e dois dias que eu fiz a gastrectomia vertical, também conhecida como _sleeve gástrico_ que é a

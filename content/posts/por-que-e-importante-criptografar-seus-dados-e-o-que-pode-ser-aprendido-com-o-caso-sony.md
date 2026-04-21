@@ -1,6 +1,7 @@
 ---
 title: "Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony"
 date: "2014-12-21"
+languages: ["portuguese"]
 ---
 
 Se você não estava em uma caverna, provavelmente assistiu, leu ou ouviu sobre o caso de cracking e vazamento de dados da

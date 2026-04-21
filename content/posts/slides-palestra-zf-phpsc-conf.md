@@ -1,6 +1,7 @@
 ---
 title: "Slides da Palestra sobre Zend Framework no PHPSC Conf"
 date: 2009-06-10T18:07:29-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

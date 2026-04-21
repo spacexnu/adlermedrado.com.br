@@ -1,6 +1,7 @@
 ---
 title: "Por onde anda o tio Adler"
 date: 2009-07-22T18:53:50-03:00
+languages: ["portuguese"]
 draft: false
 ---
 

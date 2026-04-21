@@ -1,6 +1,7 @@
 ---
 title: "Understanding when to use stream() vs forEach() in Java"
 date: 2024-11-03T10:58:18-03:00
+languages: ["english"]
 draft: false
 tags:
   - "programming"

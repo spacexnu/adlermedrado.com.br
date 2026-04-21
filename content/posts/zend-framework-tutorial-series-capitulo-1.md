@@ -1,6 +1,7 @@
 ---
 title: "Zend Framework tutorial series capitulo 1"
 date: 2010-01-19T18:56:50-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

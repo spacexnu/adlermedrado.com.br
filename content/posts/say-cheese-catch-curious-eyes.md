@@ -1,6 +1,7 @@
 ---
 title: "Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot"
 date: 2025-07-14T09:32:27-03:00
+languages: ["english"]
 draft: false
 tags: ["security", "macos", "open source", "apple", "scripts"]
 ---

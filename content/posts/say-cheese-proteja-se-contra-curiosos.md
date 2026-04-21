@@ -1,6 +1,7 @@
 ---
 title: "Say Cheese: Proteja Seu Mac de Curiosos com Uma Foto na Hora do Acesso"
 date: 2025-07-14T09:32:00-03:00
+languages: ["portuguese"]
 tags: ["segurança", "macos", "open source", "apple", "scripts"]
 draft: false
 ---

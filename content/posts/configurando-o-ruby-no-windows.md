@@ -1,6 +1,7 @@
 ---
 title: "Configurando o Ruby no Windows"
 date: "2014-06-16"
+languages: ["portuguese"]
 tags:
   - windows
   - ruby

@@ -1,6 +1,7 @@
 ---
 title: "Bug estranho na integração do Mac OS X com o Google"
 date: "2015-11-04"
+languages: ["portuguese"]
 tags:
   - "bug"
   - "dicas"

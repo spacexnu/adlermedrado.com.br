@@ -1,6 +1,7 @@
 ---
 title: "Música para trabalhar em um domingo preguiçoso"
 date: "2015-05-31"
+languages: ["portuguese"]
 ---
 
 Hoje o dia está bastante preguiçoso, frio, nublado além de ser domingo e domingo ser um dia preguiçoso por si só, mas,

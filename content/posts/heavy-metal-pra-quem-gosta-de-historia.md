@@ -1,6 +1,7 @@
 ---
 title: "Heavy Metal pra quem gosta de história"
 date: 2008-05-17T08:15:28-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "general"

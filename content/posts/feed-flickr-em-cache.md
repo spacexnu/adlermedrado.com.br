@@ -1,6 +1,7 @@
 ---
 title: "Feed e Flickr em cache"
 date: 2008-05-10T10:10:46-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "code"

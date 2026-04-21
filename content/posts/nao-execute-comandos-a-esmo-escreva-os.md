@@ -1,6 +1,7 @@
 ---
 title: "Não execute comandos a esmo. Escreva-os."
 date: "2014-01-03"
+languages: ["portuguese"]
 ---
 
 **Eu sempre fui um cara afobado,** então sempre quando precisava executar um comando em um servidor por exemplo, eu

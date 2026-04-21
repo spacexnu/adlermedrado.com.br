@@ -1,6 +1,7 @@
 ---
 title: "Reflexão diária"
 date: "2015-08-25"
+languages: ["portuguese"]
 tags:
   - "reflexao"
 ---

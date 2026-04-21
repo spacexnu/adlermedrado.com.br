@@ -1,6 +1,7 @@
 ---
 title: "Tutorial Zend Paginator"
 date: 2009-03-28T17:52:51-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "zend-framework"

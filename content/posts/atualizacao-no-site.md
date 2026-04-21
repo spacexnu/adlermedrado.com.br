@@ -1,6 +1,7 @@
 ---
 title: "Atualizacao No Site"
 date: 2008-05-09T03:06:57-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "site"

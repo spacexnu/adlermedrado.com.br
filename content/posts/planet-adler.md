@@ -1,6 +1,7 @@
 ---
 title: "Planet Adler"
 date: 2008-05-22T11:16:52-03:00
+languages: ["portuguese"]
 draft: false
 tags:
   - "site"

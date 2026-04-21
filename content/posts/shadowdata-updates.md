@@ -1,6 +1,7 @@
 ---
 title: "Shadowdata Updates"
 date: 2024-10-13T15:53:53-03:00
+languages: ["english"]
 draft: false
 tags:
   - "gpg"

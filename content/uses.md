@@ -12,7 +12,7 @@ If you’re curious about the tools I use to work, create, write, or simply surv
 This is a living document I update from time to time.  
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-### Last update: 2025-06-21
+### Last update: 2026-04-21
 
 ---
 

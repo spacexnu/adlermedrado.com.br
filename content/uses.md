@@ -19,7 +19,7 @@ Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 ## 💻 Hardware
 
 - MacBook Air M1 - 16GB RAM, 1TB Storage
-- Acer Predator Helios Neo 16 AI - 32GB RAM, 1TB nvme, RTX5070 - MS Windows 11 + WSL 2 -  Turning into my daily driver
+- Acer Predator Helios Neo 16 AI - Core Ultra 9, 32GB RAM, 1TB nvme, RTX5070 - MS Windows 11 + WSL 2 -  Turning into my daily driver
 - LG 19” Full HD Monitor
 - LG Ultragear 27" Full HD Monitor 
 - Logitech MX Anywhere Mouse

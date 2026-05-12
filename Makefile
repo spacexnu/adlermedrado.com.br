@@ -1,3 +1,6 @@
+DEPLOY_ENV ?= deploy.env
+-include $(DEPLOY_ENV)
+
 help:
 	@echo "targets:"
 	@echo "serve: Run a local hugo development server"
@@ -21,10 +24,10 @@ clear-sign:
 	./clearsign_html.sh
 
 deploy:
-	rsync -rvhe ssh --progress --delete ./public/ xablau
+	rsync -rvh --progress --delete -e "ssh -i $(DEPLOY_SSH_KEY)" ./public/ $(DEPLOY_USER)@$(DEPLOY_HOST):$(DEPLOY_PATH)
 
 deploy-onion:
 	# rsync -avz --delete --rsync-path="sudo rsync" ./public/ spacexnu@192.168.1.167:/srv/www/htdocs/adlermedrado
-	rsync -avz ./public/ spacexnu@217.154.210.46:/home/spacexnu/code/onion
+	rsync -avz ./public/ $(DEPLOY_ONION_USER)@$(DEPLOY_ONION_HOST):$(DEPLOY_ONION_PATH)
 
 .PHONY: serve build build-onion clear-sign deploy deploy-onion

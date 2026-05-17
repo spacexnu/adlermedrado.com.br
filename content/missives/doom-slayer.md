@@ -1,3 +1,10 @@
+---
+title: "Cheguei tarde nessa conclusão"
+date: 2026-05-16T22:17:46-03:00
+draft: false
+tags: [story]
+---
+
 Cheguei tarde nessa conclusão.
 
 Mas antes tarde do que morrer interpretando um personagem que os outros escreveram para mim.

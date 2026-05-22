@@ -1,205 +1,44 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<meta property="og:title" content="Dica: Criptografia de informações importantes">
-<meta property="og:description" content="Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Dica: Criptografia de informações importantes"><meta property="og:description" content="Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você
 possui um cofre para garantir que itens valiosos como documentos, dinheiro, jóias, etc. fiquem seguros, pois você sabe
 que para abri-lo é necessário uma chave que somente você tem e um código que somente você sabe.
 Você sabe que o cofre não garante 100% de segurança contra arrombamentos mas tem consciência que ele dará muito mais
-trabalho para quem quiser roubar suas coisas.">
-<meta property="og:url" content="https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/">
-<meta property="og:site_name" content="Adler Medrado&#39;s corner of the web">
-
-<meta property="og:type" content="article">
-
-<meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png">
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dica: Criptografia de informações importantes">
-<meta name="twitter:description" content="Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você
+trabalho para quem quiser roubar suas coisas."><meta property="og:url" content="https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Dica: Criptografia de informações importantes"><meta name=twitter:description content="Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você
 possui um cofre para garantir que itens valiosos como documentos, dinheiro, jóias, etc. fiquem seguros, pois você sabe
 que para abri-lo é necessário uma chave que somente você tem e um código que somente você sabe.
 Você sabe que o cofre não garante 100% de segurança contra arrombamentos mas tem consciência que ele dará muito mais
-trabalho para quem quiser roubar suas coisas.">
-<meta name="twitter:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png">
-
-    <title>Dica: Criptografia de informações importantes</title>
-    <meta name="description" content="Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você
+trabalho para quem quiser roubar suas coisas."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Dica: Criptografia de informações importantes</title><meta name=description content="Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você
 possui um cofre para garantir que itens valiosos como documentos, dinheiro, jóias, etc. fiquem seguros, pois você sabe
 que para abri-lo é necessário uma chave que somente você tem e um código que somente você sabe.
 Você sabe que o cofre não garante 100% de segurança contra arrombamentos mas tem consciência que ele dará muito mais
-trabalho para quem quiser roubar suas coisas.">
-    
-    
-    <meta name="keywords" content="AI fraud detection, cybersecurity Brazil, spacexnu, Adler Medrado, FraudTalon, digital sovereignty, threat intelligence, Python, Go, Rust, security engineering">
-    
-    
-    <link rel="author" href="/humans.txt"/>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="canonical" href="https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/"/>
-    
-    <link rel="alternate" type="application/rss&#43;xml" title="Adler Medrado&#39;s corner of the web" href="/index.xml"/>
-    
-    <link href="/css/styles.css" rel="stylesheet">
-    <script>
-        (function () {
-            var saved = localStorage.getItem('theme');
-            if (saved === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-            }
-        }());
-    </script>
-</head>
-<body><header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <div class="navbar_right navbar_right_animated">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">now</a>
-            <a href="/uses">uses</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-            <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-                <span class="label-dark">☀ light</span>
-                <span class="label-light">☾ dark</span>
-            </button>
-        </div>
-    </nav>
-</header>
-<script>
-    function toggleTheme() {
-        var html = document.documentElement;
-        var current = html.getAttribute('data-theme');
-        var next = current === 'light' ? 'dark' : 'light';
-        if (next === 'dark') {
-            html.removeAttribute('data-theme');
-        } else {
-            html.setAttribute('data-theme', next);
-        }
-        localStorage.setItem('theme', next);
-    }
-</script>
-<main>
-<section class="section">
-    <article>
-        <div>
-            <h1>Dica: Criptografia de informações importantes</h1>
-            <div>
-                <div>
-                    <p>
-                        <small>
-                            <time>December 22, 2014</time>
-                            |
-                            2  minutes  read
-                        </small>
-                        
-                    </p>
-                </div>
-                <span class="line_break"></span>
-            </div>
-            <div class="content">
-                <p>Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você
+trabalho para quem quiser roubar suas coisas."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/dica-criptografia-de-informacoes-importantes/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet><script>(function(){var e=localStorage.getItem("theme");e==="light"&&document.documentElement.setAttribute("data-theme","light")})()</script></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>now</a>
+<a href=/uses>uses</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a>
+<button class=theme-toggle id=theme-toggle onclick=toggleTheme() aria-label="Toggle theme">
+<span class=label-dark>☀ light</span>
+<span class=label-light>☾ dark</span></button></div></nav></header><script>function toggleTheme(){var e=document.documentElement,n=e.getAttribute("data-theme"),t=n==="light"?"dark":"light";t==="dark"?e.removeAttribute("data-theme"):e.setAttribute("data-theme",t),localStorage.setItem("theme",t)}</script><main><section class=section><article><div><h1>Dica: Criptografia de informações importantes</h1><div><div><p><small><time>December 22, 2014</time>
+|
+2 minutes read</small></p></div><span class=line_break></span></div><div class=content><p>Imagine a seguinte situação: Quando você sai da sua casa você tranca as janelas, as portas e o portão, entretanto você
 possui um cofre para garantir que itens valiosos como documentos, dinheiro, jóias, etc. fiquem seguros, pois você sabe
-que para abri-lo é necessário uma chave que somente você tem e um código que somente você sabe.</p>
-<p>Você sabe que o cofre não garante 100% de segurança contra arrombamentos mas tem consciência que ele dará muito mais
-trabalho para quem quiser roubar suas coisas.</p>
-<p>Agora imagine a mesma situação só que a casa é seu computador e seus itens valiosos são arquivos digitais como
-documentos, imagens, etc.</p>
-<p>Só você tem a senha para <em>logar</em> em seu computador, mas você quer garantir que caso alguém o acesse sem autorização,
+que para abri-lo é necessário uma chave que somente você tem e um código que somente você sabe.</p><p>Você sabe que o cofre não garante 100% de segurança contra arrombamentos mas tem consciência que ele dará muito mais
+trabalho para quem quiser roubar suas coisas.</p><p>Agora imagine a mesma situação só que a casa é seu computador e seus itens valiosos são arquivos digitais como
+documentos, imagens, etc.</p><p>Só você tem a senha para <em>logar</em> em seu computador, mas você quer garantir que caso alguém o acesse sem autorização,
 estes arquivos importantes não estejam acessíveis ou na pior das hipóteses, seja muito trabalhoso para o ladrão ter
-acesso a eles.</p>
-<p><strong>Manjou?</strong></p>
-<p>Meus próximos <em>posts</em> abordarão a <a href="http://pt.wikipedia.org/wiki/Criptografia">criptografia</a>, e hoje eu pretendo mostrar
+acesso a eles.</p><p><strong>Manjou?</strong></p><p>Meus próximos <em>posts</em> abordarão a <a href=http://pt.wikipedia.org/wiki/Criptografia>criptografia</a>, e hoje eu pretendo mostrar
 de maneira bem simples uma ferramenta que auxilia na tarefa de encriptação de dados para usuários de sistemas
-operacionais Windows e Mac OS X.</p>
-<h4 id="safe">Safe</h4>
-<p><a href="www.getsafe.org">Safe</a> é uma aplicação multiplataforma baseada no projeto
-Open-Source <a href="http://en.wikipedia.org/wiki/EncFS">EncFS</a> que cria volumes que salvam todos os arquivos dentro deles de
+operacionais Windows e Mac OS X.</p><h4 id=safe>Safe</h4><p><a href=www.getsafe.org>Safe</a> é uma aplicação multiplataforma baseada no projeto
+Open-Source <a href=http://en.wikipedia.org/wiki/EncFS>EncFS</a> que cria volumes que salvam todos os arquivos dentro deles de
 forma criptografada, basicamente depois de criar uma pasta e definir uma senha a ela, você acessa esta pasta como se
 fosse uma outra unidade de disco (um pen-drive por exemplo) e os arquivos dentro desta pasta sempre que forem acessados
-sem a senha estarão encriptados impossibilitando que seu conteúdo seja interpretado.</p>
-<p>A maior vantagem em usar o Safe em vez de truecrypt (não recomendável atualmente) ou ferramentas como os contêineres de
+sem a senha estarão encriptados impossibilitando que seu conteúdo seja interpretado.</p><p>A maior vantagem em usar o Safe em vez de truecrypt (não recomendável atualmente) ou ferramentas como os contêineres de
 dados criptografados da Kaspersky é que nestes últimos o espaço alocado para armazenar os dados criptografamos será
 fixo, por exemplo, se você criar uma unidade com 10GB será criado um arquivo de 10GB independente de ter algum arquivo
 ou não criptografado nela, o Safe por sua vez, criptografa os arquivos individualmente facilitando a manipulação deles,
-como enviar para o dropbox por exemplo.</p>
-<h4 id="para-finalizar">Para finalizar</h4>
-<p>Agora não tem mais desculpas para você que usa Windows ou Mac OS X guardar dados descriptografados, a ferramenta é
-livre (<a href="https://www.gnu.org/copyleft/gpl.html">GPLv3</a>) e fácil de usar.</p>
-<p>Dê uma olhada no site do <a href="www.getsafe.org">Safe</a>, faça o download e comece a guardar suas informações com um pouco mais
-de segurança.</p>
-
-            </div>
-        </div>
-    </article>
-    <nav class="post-nav" aria-label="Post navigation">
-        <div class="post-nav__prev">
-            
-            <a href="https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/">Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony</a>
-            
-        </div>
-        <span class="post-nav__separator" aria-hidden="true">|</span>
-        <div class="post-nav__next">
-            
-            <a href="https://adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/">Meu ambiente de trabalho na plataforma Windows</a>
-            
-        </div>
-    </nav>
-</section>
-
-</main><footer class="glitch-zone" role="contentinfo">
-    <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-2026 Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
-                </div>
-            </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+como enviar para o dropbox por exemplo.</p><h4 id=para-finalizar>Para finalizar</h4><p>Agora não tem mais desculpas para você que usa Windows ou Mac OS X guardar dados descriptografados, a ferramenta é
+livre (<a href=https://www.gnu.org/copyleft/gpl.html>GPLv3</a>) e fácil de usar.</p><p>Dê uma olhada no site do <a href=www.getsafe.org>Safe</a>, faça o download e comece a guardar suas informações com um pouco mais
+de segurança.</p></div></div></article><nav class=post-nav aria-label="Post navigation"><div class=post-nav__prev><a href=https://adlermedrado.com.br/posts/por-que-e-importante-criptografar-seus-dados-e-o-que-pode-ser-aprendido-com-o-caso-sony/>Por que é importante criptografar seus dados e o que pode ser aprendido com o caso Sony</a></div><span class=post-nav__separator aria-hidden=true>|</span><div class=post-nav__next><a href=https://adlermedrado.com.br/posts/meu-ambiente-de-trabalho-na-plataforma-windows/>Meu ambiente de trabalho na plataforma Windows</a></div></nav></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2026 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

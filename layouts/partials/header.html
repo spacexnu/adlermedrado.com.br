@@ -14,6 +14,23 @@
             <a href="/uses">uses</a>
             <a href="/contact">contact</a>
             <a href="/index.xml" aria-label="RSS feed">rss</a>
+            <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <span class="label-dark">☀ light</span>
+                <span class="label-light">☾ dark</span>
+            </button>
         </div>
     </nav>
 </header>
+<script>
+    function toggleTheme() {
+        var html = document.documentElement;
+        var current = html.getAttribute('data-theme');
+        var next = current === 'light' ? 'dark' : 'light';
+        if (next === 'dark') {
+            html.removeAttribute('data-theme');
+        } else {
+            html.setAttribute('data-theme', next);
+        }
+        localStorage.setItem('theme', next);
+    }
+</script>

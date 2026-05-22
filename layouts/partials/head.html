@@ -1,0 +1,23 @@
+<head>
+    <script src="/js/theme-toggle.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ partial "opengraph.html" . }}
+    <title>{{ .Title }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+    {{ with .Params.keywords }}
+    <meta name="keywords" content="{{ . }}">
+    {{ else }}
+    {{ with .Site.Params.keywords }}
+    <meta name="keywords" content="{{ . }}">
+    {{ end }}
+    {{ end }}
+    <link rel="author" href="/humans.txt"/>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="canonical" href="{{ .Permalink }}"/>
+    {{ with .Site.Home.OutputFormats.Get "RSS" }}
+    <link rel="alternate" type="{{ .MediaType.Type }}" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}"/>
+    {{ end }}
+    <link href="/css/styles.css" rel="stylesheet">
+</head>

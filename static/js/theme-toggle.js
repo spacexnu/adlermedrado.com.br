@@ -1,4 +1,9 @@
 (function () {
+    var saved = localStorage.getItem('theme');
+    if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+
     function toggleTheme() {
         var html = document.documentElement;
         var current = html.getAttribute('data-theme');

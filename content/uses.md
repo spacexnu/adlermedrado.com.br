@@ -18,7 +18,7 @@ Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
 ## 💻 Hardware
 
-- MacBook Air M1 - 16GB RAM, 1TB Storage
+- ~MacBook Air M1 - 16GB RAM, 1TB Storage~ - I gave this computer to my wife
 - Acer Predator Helios Neo 16 AI - Core Ultra 9, 32GB RAM, 1TB nvme, RTX5070 - MS Windows 11 + WSL 2 -  Turning into my daily driver
 - LG 19” Full HD Monitor
 - LG Ultragear 27" Full HD Monitor 
@@ -28,8 +28,9 @@ Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 - Redragon Lakshmi Mechanical Keyboard
 - AirPods Pro (2nd Gen)
 - Philips TAH6509
-- 2 Nexstand K2 Folding Laptop Stands (one for my MacBook Air, another for the company’s laptop)
-- Third-party laptop stand for the Dell 3420
+- Microphone Fifine AM8
+- Nexstand K2 Folding Laptop Stands (for the company’s laptop)
+- Third-party laptop stand for the Acer Predator ~Dell 3420~ (I gave this Dell computer to my daughter)
 - USB-C Hub w/ HDMI
 - Standard office chair, reinforced, custom-made
 
@@ -44,6 +45,7 @@ Tools that power my day-to-day - whether I’m writing code, answering emails, o
   - Brave - mostly for Nostr usage
   - Edge - when using windows
 - **Apple Mail** - old-school, but essential
+- **Microsoft Outlook** - why not?
 - **Notes app** - for quick thoughts, task lists, project ideas
 - **Spotlight ~~Alfred~~ + Apple Shortcuts** - for quick actions, workflows, and automation
 - **Apple Terminal** - giving a new chance ~iTerm2 - my terminal of choice~
@@ -74,8 +76,8 @@ Technologies I use across projects - from building APIs to backend infrastructur
 
 - **Neovim** - my main editor
 - **IntelliJ IDEA Ultimate** — I still use it, but only at work. After the price increase to shove in useless AI nonsense, I canceled my personal subscription.
-- **tmux** - for remote multi-session workflows
-- **VS Code** 
+- **tmux** - for multi-session workflows
+- **VS Code** - I'm using it a lot these days
 ---
 
 ## 🔐 Security & Privacy

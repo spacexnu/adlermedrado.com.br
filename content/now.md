@@ -35,6 +35,7 @@ Building and maintaining a few personal projects:
 
 - [FraudTalon](https://fraudtalon.com)
 - [ShadowData](https://github.com/spacexnu/ShadowData)
+- [SovereignRAG](https://github.com/spacexnu/sovereign-rag)
 - [Log Analyzer](https://github.com/spacexnu/log-analyzer)
 - [Hades](https://github.com/spacexnu/hades)
 - [Pinga](https://github.com/spacexnu/pinga)
@@ -48,6 +49,8 @@ In my spare time I’ve been playing **DayZ**.
 I enjoy the survival aspect of the game, the unpredictability of player encounters, and the stories that emerge from it.
 
 Sometimes I record gameplay and publish it on [YouTube](https://www.youtube.com/@vida_de_noobz). (In portuguese, only. Sorry).
+
+I started streaming my adventures on DayZ on my YouTube channel.
 
 ---
 

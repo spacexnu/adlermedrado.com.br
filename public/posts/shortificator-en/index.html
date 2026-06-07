@@ -1,0 +1,110 @@
+<!doctype html><html lang=en><head><script src=/js/theme-toggle.js></script><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Shortificator - My personal video generator"><meta property="og:description" content="How I built a Shorts factory that runs 100% on my own machine
+If you mess with YouTube at all, you&rsquo;ve seen Opus Clip, Klap, SubMagic and the
+rest. You drop in a long video, the tool cuts the best moments, slaps on animated
+captions, and hands you ready-to-post Shorts. It works. The catch is the usual
+one: it&rsquo;s SaaS, you pay monthly, and your video gets uploaded to someone else&rsquo;s
+server."><meta property="og:url" content="https://adlermedrado.com.br/posts/shortificator-en/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Shortificator - My personal video generator"><meta name=twitter:description content="How I built a Shorts factory that runs 100% on my own machine
+If you mess with YouTube at all, you&rsquo;ve seen Opus Clip, Klap, SubMagic and the
+rest. You drop in a long video, the tool cuts the best moments, slaps on animated
+captions, and hands you ready-to-post Shorts. It works. The catch is the usual
+one: it&rsquo;s SaaS, you pay monthly, and your video gets uploaded to someone else&rsquo;s
+server."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Shortificator - My personal video generator</title><meta name=description content="How I built a Shorts factory that runs 100% on my own machine
+If you mess with YouTube at all, you&rsquo;ve seen Opus Clip, Klap, SubMagic and the
+rest. You drop in a long video, the tool cuts the best moments, slaps on animated
+captions, and hands you ready-to-post Shorts. It works. The catch is the usual
+one: it&rsquo;s SaaS, you pay monthly, and your video gets uploaded to someone else&rsquo;s
+server."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/shortificator-en/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>now</a>
+<a href=/uses>uses</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a>
+<button class=theme-toggle id=theme-toggle aria-label="Toggle theme">
+<span class=label-dark>☀ light</span>
+<span class=label-light>☾ dark</span></button></div></nav></header><main><section class=section><article><div><h1>Shortificator - My personal video generator</h1><div><div><p><small><time>June 6, 2026</time>
+|
+7 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/ai>ai</a>,
+<a href=/tags/youtube>youtube</a>,
+<a href=/tags/llm>llm</a></p></div></p></div><span class=line_break></span></div><div class=content><h1 id=how-i-built-a-shorts-factory-that-runs-100-on-my-own-machine>How I built a Shorts factory that runs 100% on my own machine</h1><p>If you mess with YouTube at all, you&rsquo;ve seen Opus Clip, Klap, SubMagic and the
+rest. You drop in a long video, the tool cuts the best moments, slaps on animated
+captions, and hands you ready-to-post Shorts. It works. The catch is the usual
+one: it&rsquo;s SaaS, you pay monthly, and your video gets uploaded to someone else&rsquo;s
+server.</p><p>I wanted the same thing running on my RTX 5070 — nothing leaving the machine, no
+paid API. That&rsquo;s how <strong>shortificator</strong> came to be.</p><p>This post is about how it works under the hood: the technical calls, what went
+wrong along the way, and why some things are the way they are.</p><h2 id=the-idea-in-one-sentence>The idea in one sentence</h2><p>Take a long video, transcribe it, let a local LLM pick the best cuts, crop it to
+vertical while tracking the face, burn in captions, and render. All offline.</p><p>Four steps:</p><pre tabindex=0><code>input.mp4
+   ├─ 1. Transcribe       faster-whisper (large-v3, CUDA, word timestamps)
+   ├─ 2. Analyze clips    Ollama → JSON (start, end, hook, score)
+   ├─ 3. Reframe + caption YuNet (face crop) + OpenCV
+   └─ 4. Render           FFmpeg (CRF 18, AAC 192k) → output/*_short_NN.mp4
+</code></pre><p>None of these pieces is exotic. The fun is in how they fit together — and in the
+boring details nobody talks about.</p><h2 id=step-1-transcription-with-word-level-timestamps>Step 1: transcription with word-level timestamps</h2><p>I use <code>faster-whisper</code> with <code>large-v3</code> on the GPU. Not just for the text — I need
+the <strong>timestamp of every word</strong>. Without that, forget CapCut-style captions where
+the current word lights up as the person speaks. The word timestamp is what syncs
+the highlight to the audio.</p><p>This is the slowest step and the one I least want to repeat, so the transcript
+gets saved to JSON and can be reused with <code>--transcript</code>, skipping Whisper
+entirely on later runs. When you&rsquo;re iterating on a prompt or a caption style,
+that&rsquo;s the difference between waiting 5 seconds and 5 minutes per test.</p><h2 id=step-2-letting-a-local-llm-pick-the-cuts-the-annoying-part>Step 2: letting a local LLM pick the cuts (the annoying part)</h2><p>This is where most of the pain lives.</p><p>The plan: send the transcript to Ollama and ask for the best moments as JSON
+(<code>start</code>, <code>end</code>, <code>hook</code>, <code>reason</code>, <code>score</code>). Sounds trivial. It is not, when the
+model is small.</p><p>Three things I learned the hard way:</p><p><strong>1. Without structured output, the model makes stuff up.</strong> Ask for &ldquo;respond in
+JSON&rdquo; with no schema and <code>qwen2.5:7b</code> would hand me a gorgeous JSON full of
+<code>video_title</code>, <code>key_points</code>, and an empty <code>candidates</code>. It invented its own
+structure. The fix was Ollama&rsquo;s <em>structured outputs</em>: I hand-write a JSON Schema
+and pass it in <code>format=</code>. Now the model is <strong>forced</strong> into the fields I want. With
+a schema, even a 7B model behaves.</p><p><strong>2. Small models pile everything at the start.</strong> Feed it the whole video and ask
+for 5 cuts, and it dumps all 5 into the first few minutes, ignoring the rest. The
+fix was slicing the video into N time windows (<code>--max-shorts</code> windows) and making
+<strong>one call per window</strong>, asking for 2 candidates each. Each call only sees its own
+slice. Then I merge, sort by score, drop overlaps, and trim to the requested
+count. Bonus: each call is cheaper because it sees less text, and the number of
+cuts stops drifting between runs.</p><p><strong>3. The model ignores duration limits.</strong> I ask for &ldquo;between 30 and 60 seconds&rdquo;
+and it happily returns a 12s cut and a 2-minute one. Instead of discarding and
+losing the candidate, I <strong>fix it</strong>: <code>fit_clip_window</code> expands the short ones and
+trims the long ones around the cut&rsquo;s center, clamped to the video&rsquo;s edges. The
+result: any model, no matter how badly it follows instructions, produces a valid
+candidate.</p><p>For editorial quality I use <code>mistral-small</code>. It&rsquo;s slower, but the result also
+goes to disk (<code>--candidates</code>), so I only pay that cost once. When I&rsquo;m just
+iterating, <code>qwen2.5:7b</code> does the job.</p><h2 id=step-3-vertical-crop-that-follows-the-face>Step 3: vertical crop that follows the face</h2><p>Going from horizontal to 9:16 without losing what matters is harder than it
+looks. A dumb center crop slices the person&rsquo;s face in half the moment they lean to
+one side.</p><p>For face detection I used to run YOLOv11l-face. It worked great, but it&rsquo;s <strong>AGPL</strong>
+and it dragged the whole <code>torch</code> along. For a project I want open source and light
+to install, that&rsquo;s double poison: a copyleft license and several gigs of extra
+dependency. I swapped it for <strong>YuNet</strong> (<code>cv2.FaceDetectorYN</code>), which ships with
+OpenCV, is Apache-2.0, runs on CPU, and the model is 230 KB — downloaded
+automatically on first run. I lost a bit of robustness on tiny faces (PiP), but
+gained a permissive license and a PyTorch-free install. For the use case, a fair
+trade.</p><p>Details that matter in practice:</p><ul><li>Running the detector on every frame of a 4K video kills performance. So I detect
+on a downscaled frame (up to 960px wide) and only every 3 frames, reusing the
+box in between.</li><li>The face box jumps frame to frame and causes jitter. I smooth it over a
+15-frame window so the camera follows gently instead of twitching.</li><li>When there&rsquo;s more than one face, I always take the <strong>biggest</strong> box. As a side
+effect, that discards the small false positives YuNet sometimes spits out.</li></ul><p>There&rsquo;s also a <code>gameplay</code> mode: there I load no detector at all and do a stable
+center crop, to preserve the crosshair, HUD, and context. Detecting &ldquo;a face&rdquo; in
+the middle of a DayZ session makes no sense.</p><h2 id=step-4-captions-that-dont-look-auto-generated>Step 4: captions that don&rsquo;t look auto-generated</h2><p>First stumble: <code>cv2.putText</code> only speaks ASCII. Any accented word turned into
+question marks — unacceptable in Portuguese. My local OpenCV build also lacked
+<code>cv2.freetype</code>. The fix: render captions with <strong>Pillow</strong> (TrueType font, real
+UTF-8) and composite them onto the frame via OpenCV.</p><p>The fun part is the CapCut-style dynamic caption. My first version used a sliding
+window centered on the current word — the text scrolled with every spoken word. It
+was exhausting to read, like a nervous teleprompter. Threw it out and went with
+<strong>fixed blocks</strong>: I partition the words into fixed-size groups, the block stays
+still, and only the highlight (current word) moves within it. The block only swaps
+when speech crosses into the next group. During micro-pauses I hold the last block
+instead of clearing it, otherwise it flickers. It&rsquo;s exactly the behavior you see
+in the Shorts that actually land.</p><p>And all of it is configurable by flag: font, size, color, highlight color, stroke,
+vertical position, words per block. The defaults reproduce the old hardcoded
+style, so anyone who doesn&rsquo;t want to fiddle doesn&rsquo;t have to.</p><h2 id=rendering>Rendering</h2><p>FFmpeg, always via <code>subprocess.run</code>, never <code>os.system</code>. CRF 18 for high visual
+quality, AAC 192k for audio. The render is frame by frame, so there&rsquo;s a one-line
+progress bar with percentage, processed frames, ETA, and elapsed time — because
+staring at a silent terminal for minutes is torture.</p><h2 id=why-local-and-why-it-matters>Why local, and why it matters</h2><p>The algorithm isn&rsquo;t the secret — anyone can wire up Whisper + LLM + FFmpeg. The
+real value is <strong>running it all offline</strong>: no subscription, no uploading your
+footage to anyone&rsquo;s server, no dependency on an API that changes price or
+disappears.</p><p>The irony is that the hard part of turning this into a product isn&rsquo;t the code —
+it&rsquo;s the <strong>install friction</strong>. CUDA, drivers, WSL, Ollama, downloading multi-gig
+weights. That&rsquo;s exactly why I worked to keep the project light: MIT license, a
+230 KB detector, no torch, dependencies via Poetry. The fewer monsters between
+<code>git clone</code> and your first Short, the better.</p><h2 id=where-it-lives>Where it lives</h2><p>shortificator is open source (MIT) on <a href=https://github.com/spacexnu/shortificator>GitHub</a>.
+If you&rsquo;re into local AI and video automation, take a look — and if you get stuck
+on the install, tell me, because that friction is exactly what I want to kill.</p></div></div></article><nav class=post-nav aria-label="Post navigation"><div class=post-nav__prev><a href=https://adlermedrado.com.br/posts/sovereign-rag-updates/>SovereignRAG Updates</a></div><span class=post-nav__separator aria-hidden=true>|</span><div class=post-nav__next><a href=https://adlermedrado.com.br/posts/shortificator/>Shortificator - Meu gerador de vídeos verticais</a></div></nav></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2026 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

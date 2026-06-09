@@ -1,7 +1,7 @@
 ---
 title: "Uses"
 description: "Here's what I use"
-date: 2025-06-04T21:33:15-03:00
+date: 2026-06-08T21:33:15-03:00
 layout: "staticpage"
 ---
 
@@ -20,7 +20,6 @@ Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
 - ~MacBook Air M1 - 16GB RAM, 1TB Storage~ - I gave this computer to my wife
 - Acer Predator Helios Neo 16 AI - Core Ultra 9, 32GB RAM, 1TB nvme, RTX5070 - MS Windows 11 + WSL 2 -  Turning into my daily driver
-- LG 19” Full HD Monitor
 - LG Ultragear 27" Full HD Monitor 
 - Logitech MX Anywhere Mouse
 - Logitech K30 Keyboard
@@ -103,7 +102,6 @@ I take privacy seriously - both mine and my users.
   - VS Code agents + Copilot replacements
   - ChatGPT + Codex
   - Anthropic Claude
-  - ~~Jetbrains AI Assistant + Junie~~
 
 ---
 

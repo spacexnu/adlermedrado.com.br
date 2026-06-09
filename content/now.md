@@ -39,6 +39,7 @@ Building and maintaining a few personal projects:
 - [Log Analyzer](https://github.com/spacexnu/log-analyzer)
 - [Hades](https://github.com/spacexnu/hades)
 - [Pinga](https://github.com/spacexnu/pinga)
+- [shortificator](https://github.com/spacexnu/shortificator)
 
 ---
 
@@ -48,7 +49,7 @@ In my spare time I’ve been playing **DayZ**.
 
 I enjoy the survival aspect of the game, the unpredictability of player encounters, and the stories that emerge from it.
 
-Sometimes I record gameplay and publish it on [YouTube](https://www.youtube.com/@vida_de_noobz). (In portuguese, only. Sorry).
+Sometimes I record gameplay and publish it on [YouTube](https://www.youtube.com/@vida_de_noobz). (In portuguese, only).
 
 I started streaming my adventures on DayZ on my YouTube channel.
 
@@ -61,7 +62,8 @@ Mostly rock, fusion, and everything in between. Here’s what’s been on repeat
 ### 🎸 Rock
 
 - Orgasmatrom - Sepultura  
-- Walk - Pantera  
+- Walk - Pantera
+- Type O Negative - Life if Killing Me
 
 ### 🎶 Fusion / Instrumental
 

@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ .Content }}
+
+<section class="latest-posts">
+  <h2>Latest Logs</h2>
+  <ul>
+    {{ $posts := where .Site.RegularPages "Type" "posts" }}
+    {{ range first 10 (sort $posts "Date" "desc") }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <small>{{ .Date.Format "02 Jan 2006" }}</small>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

@@ -1,0 +1,94 @@
+<!doctype html><html lang=en><head><script src=/js/theme-toggle.js></script><script src=/js/taglines.js></script><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Adicionei JavaScript no site e a sua privacidade continua intacta"><meta property="og:description" content="JavaScript sem trair a premissa
+Quem acompanha este site sabe que ele tem uma premissa inegociável: eu não
+rastreio quem visita. Não tem Google Analytics, não tem pixel, não tem cookie
+de terceiro, não tem fingerprinting. Eu não sei quem visitou, não sei quantas
+pessoas visitaram, não sei de onde vieram. E gosto que seja assim.
+Durante muito tempo isso andou junto de outra regra implícita: nada de
+JavaScript. Mas o site hoje roda dois scripts. O primeiro é o
+toggle de tema claro/escuro,
+que chegou faz pouco tempo. O segundo, mais recente ainda, são as taglines
+aleatórias no estilo BBS que aparecem abaixo do cabeçalho. Este post existe pra
+explicar por que isso não fere a premissa e, de quebra, contar uma faxina
+que fiz na estrutura do site."><meta property="og:url" content="https://adlermedrado.com.br/posts/javascript-sem-trair-a-privacidade/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Adicionei JavaScript no site e a sua privacidade continua intacta"><meta name=twitter:description content="JavaScript sem trair a premissa
+Quem acompanha este site sabe que ele tem uma premissa inegociável: eu não
+rastreio quem visita. Não tem Google Analytics, não tem pixel, não tem cookie
+de terceiro, não tem fingerprinting. Eu não sei quem visitou, não sei quantas
+pessoas visitaram, não sei de onde vieram. E gosto que seja assim.
+Durante muito tempo isso andou junto de outra regra implícita: nada de
+JavaScript. Mas o site hoje roda dois scripts. O primeiro é o
+toggle de tema claro/escuro,
+que chegou faz pouco tempo. O segundo, mais recente ainda, são as taglines
+aleatórias no estilo BBS que aparecem abaixo do cabeçalho. Este post existe pra
+explicar por que isso não fere a premissa e, de quebra, contar uma faxina
+que fiz na estrutura do site."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Adicionei JavaScript no site e a sua privacidade continua intacta</title><meta name=description content="JavaScript sem trair a premissa
+Quem acompanha este site sabe que ele tem uma premissa inegociável: eu não
+rastreio quem visita. Não tem Google Analytics, não tem pixel, não tem cookie
+de terceiro, não tem fingerprinting. Eu não sei quem visitou, não sei quantas
+pessoas visitaram, não sei de onde vieram. E gosto que seja assim.
+Durante muito tempo isso andou junto de outra regra implícita: nada de
+JavaScript. Mas o site hoje roda dois scripts. O primeiro é o
+toggle de tema claro/escuro,
+que chegou faz pouco tempo. O segundo, mais recente ainda, são as taglines
+aleatórias no estilo BBS que aparecem abaixo do cabeçalho. Este post existe pra
+explicar por que isso não fere a premissa e, de quebra, contar uma faxina
+que fiz na estrutura do site."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/javascript-sem-trair-a-privacidade/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>now</a>
+<a href=/uses>uses</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a>
+<button class=theme-toggle id=theme-toggle aria-label="Toggle theme">
+<span class=label-dark>☀ light</span>
+<span class=label-light>☾ dark</span></button></div></nav><div class=tagline-bar><span id=tagline>There's no place like 127.0.0.1.</span></div></header><main><section class=section><article><div><h1>Adicionei JavaScript no site e a sua privacidade continua intacta</h1><div><div><p><small><time>June 9, 2026</time>
+|
+4 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/privacidade>privacidade</a>,
+<a href=/tags/javascript>javascript</a>,
+<a href=/tags/hugo>hugo</a>,
+<a href=/tags/meta>meta</a></p></div></p></div><span class=line_break></span></div><div class=content><h1 id=javascript-sem-trair-a-premissa>JavaScript sem trair a premissa</h1><p>Quem acompanha este site sabe que ele tem uma premissa inegociável: <strong>eu não
+rastreio quem visita</strong>. Não tem Google Analytics, não tem pixel, não tem cookie
+de terceiro, não tem fingerprinting. Eu não sei quem visitou, não sei quantas
+pessoas visitaram, não sei de onde vieram. E gosto que seja assim.</p><p>Durante muito tempo isso andou junto de outra regra implícita: nada de
+JavaScript. Mas o site hoje roda dois scripts. O primeiro é o
+<a href=/posts/tema-claro-vinte-linhas-de-javascript/>toggle de tema claro/escuro</a>,
+que chegou faz pouco tempo. O segundo, mais recente ainda, são as taglines
+aleatórias no estilo BBS que aparecem abaixo do cabeçalho. Este post existe pra
+explicar por que isso <strong>não fere a premissa</strong> e, de quebra, contar uma faxina
+que fiz na estrutura do site.</p><h2 id=javascript-não-é-o-inimigo-rastreamento-é>JavaScript não é o inimigo. Rastreamento é.</h2><p>A regra &ldquo;sem JavaScript&rdquo; sempre foi um meio, nunca o fim. O fim é: nenhum byte
+de informação sobre você sai do seu navegador por causa deste site. JavaScript
+virou sinônimo de rastreamento porque é assim que 99% da web o usa: pra carregar
+analytics, pra fingerprintar seu navegador, pra te seguir entre sites. Mas a
+linguagem em si é só uma ferramenta. O que importa é o que o código faz.</p><p>Olha o que os dois scripts deste site fazem:</p><p><strong>O toggle de tema</strong> guarda a sua preferência (claro ou escuro) no
+<code>localStorage</code> do <strong>seu</strong> navegador. Esse dado nunca sai de lá. Eu não tenho
+como ler, não é enviado em requisição nenhuma, e você pode apagar quando quiser.
+É o seu navegador lembrando uma coisa pra <strong>você</strong>, não pra mim.</p><p><strong>As taglines</strong> são ainda mais simples: uma lista de frases embutida no próprio
+arquivo JS e um <code>Math.random()</code> que sorteia uma a cada carregamento de página.
+Nada é gravado, nada é lido, nada é enviado. O navegador sorteia, mostra e
+esquece.</p><p>Os dois arquivos são servidos do meu próprio servidor, sem CDN de terceiro e
+sem dependência externa. Não existe nenhuma chamada de rede nos scripts.
+Nenhuma. E como todo o resto dos assets deste site, eles são assinados com GPG:
+você pode conferir o <code>.asc</code> correspondente e verificar que o que chegou no seu
+navegador foi o que eu publiquei.</p><p>Não confia? Ótimo, nem deveria. O código é minúsculo e legível: dá pra auditar
+em menos de um minuto com um &ldquo;view source&rdquo;. E se você navega com JavaScript
+desligado, o site continua funcionando inteiro. O tema escuro é o padrão e uma
+tagline fixa aparece no lugar da sorteada.</p><h2 id=a-faxina-adeus-dark-flat>A faxina: adeus, dark-flat</h2><p>Aproveitando que estava mexendo no site, resolvi um incômodo antigo. O tema que
+eu uso aqui, o <strong>dark-flat</strong>, vivia num repositório separado, plugado no site
+como git submodule. Parecia organizado, mas na prática era o contrário.</p><p>Com o tempo, eu fui sobrepondo partials do tema com versões locais no
+repositório do site: <code>head.html</code>, <code>header.html</code>, layouts inteiros. Resultado:
+metade do tema valendo de um lugar, metade do outro, e eu tendo que lembrar da
+ordem de precedência do Hugo pra saber qual arquivo estava de fato em uso. Pra
+piorar, qualquer ajuste de CSS exigia commit e push no repo do tema <strong>e depois</strong>
+outro commit no repo do site só pra atualizar o ponteiro do submodule. Duas
+operações pra mudar uma cor.</p><p>Um tema separado faz sentido quando ele é um produto, algo que outras pessoas
+vão usar em outros sites. Não era o caso. O dark-flat só existia pra este site,
+então a separação era atrito puro, sem benefício nenhum.</p><p>A solução foi óbvia: movi os arquivos do tema pra dentro do repositório do site,
+mantive as versões locais onde já havia sobreposição (que era exatamente o que o
+Hugo já renderizava) e removi o submodule. Verifiquei o build antes e depois:
+saída idêntica, byte a byte. Agora é um repositório só, um commit por mudança, e
+zero ambiguidade sobre qual arquivo está valendo.</p><h2 id=resumo>Resumo</h2><p>O site continua sem saber quem você é. Continua funcionando sem JavaScript.
+Continua assinado com GPG. Só ganhou um toggle de tema, umas taglines com cheiro
+de BBS dos anos 90 e uma estrutura que não me dá mais dor de cabeça pra manter.</p><p>Privacidade não é sobre dogma técnico. É sobre o que acontece com os seus
+dados. Aqui, a resposta continua a mesma de sempre: nada.</p></div></div></article><nav class=post-nav aria-label="Post navigation"><div class=post-nav__prev><a href=https://adlermedrado.com.br/posts/javascript-without-betraying-privacy/>I added JavaScript to this site and your privacy is still intact</a></div><span class=post-nav__separator aria-hidden=true>|</span><div class=post-nav__next></div></nav></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2026 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

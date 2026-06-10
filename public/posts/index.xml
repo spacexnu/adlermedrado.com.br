@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/posts/</link><description>Recent content in Posts on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 08 Jun 2026 22:59:00 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Por que eu jogo DayZ: o silêncio das cidades vazias</title><link>https://adlermedrado.com.br/posts/por-que-eu-jogo-dayz-o-silencio-das-ruas-vazias/</link><pubDate>Mon, 08 Jun 2026 22:59:00 -0300</pubDate><guid>https://adlermedrado.com.br/posts/por-que-eu-jogo-dayz-o-silencio-das-ruas-vazias/</guid><description>&lt;p&gt;&lt;img src="https://adlermedrado.com.br/posts/images/dayz-in-my-imagination.png"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/posts/</link><description>Recent content in Posts on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 09 Jun 2026 10:00:00 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Adicionei JavaScript no site e a sua privacidade continua intacta</title><link>https://adlermedrado.com.br/posts/javascript-sem-trair-a-privacidade/</link><pubDate>Tue, 09 Jun 2026 10:00:00 -0300</pubDate><guid>https://adlermedrado.com.br/posts/javascript-sem-trair-a-privacidade/</guid><description>&lt;h1 id="javascript-sem-trair-a-premissa"&gt;JavaScript sem trair a premissa&lt;/h1&gt;
+&lt;p&gt;Quem acompanha este site sabe que ele tem uma premissa inegociável: &lt;strong&gt;eu não
+rastreio quem visita&lt;/strong&gt;. Não tem Google Analytics, não tem pixel, não tem cookie
+de terceiro, não tem fingerprinting. Eu não sei quem visitou, não sei quantas
+pessoas visitaram, não sei de onde vieram. E gosto que seja assim.&lt;/p&gt;
+&lt;p&gt;Durante muito tempo isso andou junto de outra regra implícita: nada de
+JavaScript. Mas o site hoje roda dois scripts. O primeiro é o
+&lt;a href="https://adlermedrado.com.br/posts/tema-claro-vinte-linhas-de-javascript/"&gt;toggle de tema claro/escuro&lt;/a&gt;,
+que chegou faz pouco tempo. O segundo, mais recente ainda, são as taglines
+aleatórias no estilo BBS que aparecem abaixo do cabeçalho. Este post existe pra
+explicar por que isso &lt;strong&gt;não fere a premissa&lt;/strong&gt; e, de quebra, contar uma faxina
+que fiz na estrutura do site.&lt;/p&gt;</description></item><item><title>I added JavaScript to this site and your privacy is still intact</title><link>https://adlermedrado.com.br/posts/javascript-without-betraying-privacy/</link><pubDate>Tue, 09 Jun 2026 10:00:00 -0300</pubDate><guid>https://adlermedrado.com.br/posts/javascript-without-betraying-privacy/</guid><description>&lt;h1 id="javascript-without-betraying-the-premise"&gt;JavaScript without betraying the premise&lt;/h1&gt;
+&lt;p&gt;If you follow this site, you know it has one non-negotiable premise: &lt;strong&gt;I don&amp;rsquo;t
+track visitors&lt;/strong&gt;. No Google Analytics, no pixels, no third-party cookies, no
+fingerprinting. I don&amp;rsquo;t know who visited, I don&amp;rsquo;t know how many people visited,
+I don&amp;rsquo;t know where anyone came from. And I like it that way.&lt;/p&gt;
+&lt;p&gt;For a long time that premise traveled together with an implicit rule: no
+JavaScript. But the site now runs two scripts. The first is the
+&lt;a href="https://adlermedrado.com.br/posts/light-theme-twenty-lines-of-javascript/"&gt;light/dark theme toggle&lt;/a&gt;,
+which arrived a short while ago. The second, newer still, is the set of random
+BBS-style taglines that show up below the header. This post exists to explain
+why that &lt;strong&gt;doesn&amp;rsquo;t break the premise&lt;/strong&gt;, and to share some housekeeping I did on
+the site&amp;rsquo;s structure while I was at it.&lt;/p&gt;</description></item><item><title>Por que eu jogo DayZ: o silêncio das cidades vazias</title><link>https://adlermedrado.com.br/posts/por-que-eu-jogo-dayz-o-silencio-das-ruas-vazias/</link><pubDate>Mon, 08 Jun 2026 22:59:00 -0300</pubDate><guid>https://adlermedrado.com.br/posts/por-que-eu-jogo-dayz-o-silencio-das-ruas-vazias/</guid><description>&lt;p&gt;&lt;img src="https://adlermedrado.com.br/posts/images/dayz-in-my-imagination.png"
 alt="DayZ na minha imaginação"
 width="100%"
 style="max-width: 1200px; display: block; margin: 2rem auto;"&gt;&lt;/p&gt;

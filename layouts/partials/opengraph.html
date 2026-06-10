@@ -1,0 +1,37 @@
+{{ $title := .Title }}
+{{ with .Params.og_title }}{{ $title = . }}{{ end }}
+
+{{ $desc := "" }}
+{{ with .Params.og_description }}{{ $desc = . }}{{ end }}
+{{ if eq $desc "" }}{{ with .Description }}{{ $desc = . }}{{ end }}{{ end }}
+{{ if eq $desc "" }}{{ with .Summary }}{{ $desc = . }}{{ end }}{{ end }}
+{{ if eq $desc "" }}{{ with .Site.Params.description }}{{ $desc = . }}{{ end }}{{ end }}
+
+{{ $ogImg := "" }}
+{{ with .Params.images }}{{ $ogImg = index . 0 }}{{ end }}
+{{ if eq $ogImg "" }}{{ with .Params.og_image }}{{ $ogImg = . }}{{ end }}{{ end }}
+{{ if eq $ogImg "" }}{{ with .Site.Params.ogImage }}{{ $ogImg = . }}{{ end }}{{ end }}
+{{ if $ogImg }}{{ $ogImg = $ogImg | absURL }}{{ end }}
+
+{{ $twImg := "" }}
+{{ with .Params.twitter_image }}{{ $twImg = . }}{{ end }}
+{{ if eq $twImg "" }}{{ if $ogImg }}{{ $twImg = $ogImg }}{{ end }}{{ end }}
+{{ if eq $twImg "" }}{{ with .Site.Params.twitterImage }}{{ $twImg = . | absURL }}{{ end }}{{ end }}
+
+<!-- Open Graph tags -->
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{ if .IsPage }}
+<meta property="og:type" content="article">
+{{ else }}
+<meta property="og:type" content="website">
+{{ end }}
+{{ with $ogImg }}<meta property="og:image" content="{{ . }}">{{ end }}
+
+<!-- Twitter Card tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+{{ with $twImg }}<meta name="twitter:image" content="{{ . }}">{{ end }}

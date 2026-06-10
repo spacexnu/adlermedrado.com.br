@@ -1,0 +1,97 @@
+<!doctype html><html lang=en><head><script src=/js/theme-toggle.js></script><script src=/js/taglines.js></script><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="I added JavaScript to this site and your privacy is still intact"><meta property="og:description" content="JavaScript without betraying the premise
+If you follow this site, you know it has one non-negotiable premise: I don&rsquo;t
+track visitors. No Google Analytics, no pixels, no third-party cookies, no
+fingerprinting. I don&rsquo;t know who visited, I don&rsquo;t know how many people visited,
+I don&rsquo;t know where anyone came from. And I like it that way.
+For a long time that premise traveled together with an implicit rule: no
+JavaScript. But the site now runs two scripts. The first is the
+light/dark theme toggle,
+which arrived a short while ago. The second, newer still, is the set of random
+BBS-style taglines that show up below the header. This post exists to explain
+why that doesn&rsquo;t break the premise, and to share some housekeeping I did on
+the site&rsquo;s structure while I was at it."><meta property="og:url" content="https://adlermedrado.com.br/posts/javascript-without-betraying-privacy/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="I added JavaScript to this site and your privacy is still intact"><meta name=twitter:description content="JavaScript without betraying the premise
+If you follow this site, you know it has one non-negotiable premise: I don&rsquo;t
+track visitors. No Google Analytics, no pixels, no third-party cookies, no
+fingerprinting. I don&rsquo;t know who visited, I don&rsquo;t know how many people visited,
+I don&rsquo;t know where anyone came from. And I like it that way.
+For a long time that premise traveled together with an implicit rule: no
+JavaScript. But the site now runs two scripts. The first is the
+light/dark theme toggle,
+which arrived a short while ago. The second, newer still, is the set of random
+BBS-style taglines that show up below the header. This post exists to explain
+why that doesn&rsquo;t break the premise, and to share some housekeeping I did on
+the site&rsquo;s structure while I was at it."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>I added JavaScript to this site and your privacy is still intact</title><meta name=description content="JavaScript without betraying the premise
+If you follow this site, you know it has one non-negotiable premise: I don&rsquo;t
+track visitors. No Google Analytics, no pixels, no third-party cookies, no
+fingerprinting. I don&rsquo;t know who visited, I don&rsquo;t know how many people visited,
+I don&rsquo;t know where anyone came from. And I like it that way.
+For a long time that premise traveled together with an implicit rule: no
+JavaScript. But the site now runs two scripts. The first is the
+light/dark theme toggle,
+which arrived a short while ago. The second, newer still, is the set of random
+BBS-style taglines that show up below the header. This post exists to explain
+why that doesn&rsquo;t break the premise, and to share some housekeeping I did on
+the site&rsquo;s structure while I was at it."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/javascript-without-betraying-privacy/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>now</a>
+<a href=/uses>uses</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a>
+<button class=theme-toggle id=theme-toggle aria-label="Toggle theme">
+<span class=label-dark>☀ light</span>
+<span class=label-light>☾ dark</span></button></div></nav><div class=tagline-bar><span id=tagline>There's no place like 127.0.0.1.</span></div></header><main><section class=section><article><div><h1>I added JavaScript to this site and your privacy is still intact</h1><div><div><p><small><time>June 9, 2026</time>
+|
+4 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/privacy>privacy</a>,
+<a href=/tags/javascript>javascript</a>,
+<a href=/tags/hugo>hugo</a>,
+<a href=/tags/meta>meta</a></p></div></p></div><span class=line_break></span></div><div class=content><h1 id=javascript-without-betraying-the-premise>JavaScript without betraying the premise</h1><p>If you follow this site, you know it has one non-negotiable premise: <strong>I don&rsquo;t
+track visitors</strong>. No Google Analytics, no pixels, no third-party cookies, no
+fingerprinting. I don&rsquo;t know who visited, I don&rsquo;t know how many people visited,
+I don&rsquo;t know where anyone came from. And I like it that way.</p><p>For a long time that premise traveled together with an implicit rule: no
+JavaScript. But the site now runs two scripts. The first is the
+<a href=/posts/light-theme-twenty-lines-of-javascript/>light/dark theme toggle</a>,
+which arrived a short while ago. The second, newer still, is the set of random
+BBS-style taglines that show up below the header. This post exists to explain
+why that <strong>doesn&rsquo;t break the premise</strong>, and to share some housekeeping I did on
+the site&rsquo;s structure while I was at it.</p><h2 id=javascript-is-not-the-enemy-tracking-is>JavaScript is not the enemy. Tracking is.</h2><p>The &ldquo;no JavaScript&rdquo; rule was always a means, never the end. The end is: not a
+single byte of information about you leaves your browser because of this site.
+JavaScript became synonymous with tracking because that&rsquo;s how 99% of the web
+uses it: to load analytics, to fingerprint your browser, to follow you across
+sites. But the language itself is just a tool. What matters is what the code
+does.</p><p>Here&rsquo;s what the two scripts on this site do:</p><p><strong>The theme toggle</strong> stores your preference (light or dark) in your browser&rsquo;s
+<code>localStorage</code>. That value never leaves your machine. I have no way to read it,
+it&rsquo;s not sent in any request, and you can wipe it whenever you want. It&rsquo;s your
+browser remembering something for <strong>you</strong>, not for me.</p><p><strong>The taglines</strong> are even simpler: a list of one-liners embedded in the JS file
+itself and a <code>Math.random()</code> that picks one on every page load. Nothing is
+stored, nothing is read, nothing is sent. The browser rolls the dice, shows the
+result, and forgets.</p><p>Both files are served from my own server, with no third-party CDN and no
+external dependency. There isn&rsquo;t a single network call in either script. None.
+And like every other asset on this site, they&rsquo;re GPG-signed: you can check the
+matching <code>.asc</code> file and verify that what reached your browser is exactly what
+I published.</p><p>Don&rsquo;t trust me? Good, you shouldn&rsquo;t. The code is tiny and readable: you can
+audit it in under a minute with a quick view-source. And if you browse with
+JavaScript disabled, the site still works in full. Dark theme is the default
+and a fixed tagline shows up instead of a random one.</p><h2 id=the-housekeeping-goodbye-dark-flat>The housekeeping: goodbye, dark-flat</h2><p>Since I was already touching the site, I fixed something that had been bugging
+me for a while. The theme I use here, <strong>dark-flat</strong>, lived in a separate
+repository, plugged into the site as a git submodule. It looked organized. In
+practice it was the opposite.</p><p>Over time I kept overriding the theme&rsquo;s partials with local versions inside the
+site&rsquo;s repository: <code>head.html</code>, <code>header.html</code>, entire layouts. The result:
+half the theme came from one place, half from the other, and I had to keep
+Hugo&rsquo;s template lookup order in my head just to know which file was actually in
+use. Worse, any CSS tweak required a commit and push to the theme repo <strong>and
+then</strong> another commit in the site repo just to bump the submodule pointer. Two
+operations to change a color.</p><p>A separate theme makes sense when it&rsquo;s a product, something other people will
+use on other sites. That was never the case. dark-flat existed for this site
+alone, so the separation was pure friction with zero benefit.</p><p>The fix was obvious: I moved the theme&rsquo;s files into the site repository, kept
+the local versions wherever an override already existed (which is exactly what
+Hugo was rendering anyway), and removed the submodule. I diffed the build
+before and after: identical output, byte for byte. Now it&rsquo;s one repository, one
+commit per change, and no ambiguity about which file wins.</p><h2 id=wrapping-up>Wrapping up</h2><p>The site still has no idea who you are. It still works without JavaScript. It&rsquo;s
+still GPG-signed. It just gained a theme toggle, some taglines with a strong
+whiff of 90s BBS culture, and a structure that no longer gives me maintenance
+headaches.</p><p>Privacy isn&rsquo;t about technical dogma. It&rsquo;s about what happens to your data.
+Here, the answer remains the same as it&rsquo;s always been: nothing.</p></div></div></article><nav class=post-nav aria-label="Post navigation"><div class=post-nav__prev><a href=https://adlermedrado.com.br/posts/por-que-eu-jogo-dayz-o-silencio-das-ruas-vazias/>Por que eu jogo DayZ: o silêncio das cidades vazias</a></div><span class=post-nav__separator aria-hidden=true>|</span><div class=post-nav__next><a href=https://adlermedrado.com.br/posts/javascript-sem-trair-a-privacidade/>Adicionei JavaScript no site e a sua privacidade continua intacta</a></div></nav></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2026 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

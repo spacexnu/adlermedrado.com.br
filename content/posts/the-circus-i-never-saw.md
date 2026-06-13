@@ -11,7 +11,7 @@ categories: ["Personal"]
 
 I must have been five or six years old.
 
-I went to Colégio Estadual Thomas Jefferson Andrade Vieira, in the Borba Gato neighborhood of Maringá, in the state of Paraná, Brazil.
+I went to Colégio Estadual Tomaz Edison Andrade Vieira, in the Borba Gato neighborhood of Maringá, in the state of Paraná, Brazil.
 
 Next to the school there was a large vacant lot. One day a circus showed up there.
 

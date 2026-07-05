@@ -28,6 +28,6 @@ deploy:
 
 deploy-onion:
 	# rsync -avz --delete --rsync-path="sudo rsync" ./public/ spacexnu@192.168.1.167:/srv/www/htdocs/adlermedrado
-	rsync -avz ./public/ $(DEPLOY_ONION_USER)@$(DEPLOY_ONION_HOST):$(DEPLOY_ONION_PATH)
+	rsync -avz -e "ssh -i $(DEPLOY_SSH_KEY)" ./public/ $(DEPLOY_ONION_USER)@$(DEPLOY_ONION_HOST):$(DEPLOY_ONION_PATH)
 
 .PHONY: serve build build-onion clear-sign deploy deploy-onion

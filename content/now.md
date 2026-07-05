@@ -9,7 +9,7 @@ date: 2025-06-04T21:33:15-03:00
 
 This is a [now page](https://nownownow.com), and if you have your own site, [you should make one](https://nownownow.com) too.
 
-### Last updated: 2026-03-03
+### Last updated: 2026-07-05
 
 ---
 
@@ -61,29 +61,32 @@ Mostly rock, fusion, and everything in between. Here’s what’s been on repeat
 
 ### 🎸 Rock
 
-- Orgasmatrom - Sepultura  
-- Walk - Pantera
-- Type O Negative - Life if Killing Me
+- \_Type O Negative\_\_ - Life if Killing Me
+- _Doom Slayer_ - Meldamor
+
+### 🧊 Yugoslav New Wave / Minimal Synth.
+
+- _Ostavi Sve_ - Max & Intro
 
 ### 🎶 Fusion / Instrumental
 
-- _Boat Gig_ and the rest of the _Face First_ album – Tribal Tech  
-- _LL3_, _Crushing_ – moe.  
-- _Mokuba_ – Tauk  
-- _Slant_ – Mark Lettieri  
-- _Sigma Oasis_ – Phish  
-- _Bad Asteroid_ – The Aristocrats  
-- _Present Ghosts_ - Dopapod  
-- _Patos não existem_ - Urumbeta do Espaço  
-- _Dimensão Zó_ - Urumbeta do Espaço  
+- _Boat Gig_ and the rest of the _Face First_ album – Tribal Tech
+- _LL3_, _Crushing_ – moe.
+- _Mokuba_ – Tauk
+- _Slant_ – Mark Lettieri
+- _Sigma Oasis_ – Phish
+- _Bad Asteroid_ – The Aristocrats
+- _Present Ghosts_ - Dopapod
+- _Patos não existem_ - Urumbeta do Espaço
+- _Dimensão Zó_ - Urumbeta do Espaço
 
 ### 🎷 Soul
 
-- _Reach Out I'll Be There_ - Four Tops  
+- _Reach Out I'll Be There_ - Four Tops
 
 ### 🎛️ Electronic
 
-- It could be the music - Kilig  
-- When you grow up, your heart dies  
-- Run free (Nite version) - Soulwax  
+- It could be the music - Kilig
+- When you grow up, your heart dies
+- Run free (Nite version) - Soulwax
 - You Lot - Orbital

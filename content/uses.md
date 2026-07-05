@@ -1,7 +1,7 @@
 ---
 title: "Uses"
 description: "Here's what I use"
-date: 2026-06-08T21:33:15-03:00
+date: 2026-07-05T14:40:15-03:00
 layout: "staticpage"
 ---
 
@@ -12,15 +12,15 @@ If you’re curious about the tools I use to work, create, write, or simply surv
 This is a living document I update from time to time.  
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-### Last update: 2026-04-21
+### Last update: 2026-07-05
 
 ---
 
 ## 💻 Hardware
 
 - ~MacBook Air M1 - 16GB RAM, 1TB Storage~ - I gave this computer to my wife
-- Acer Predator Helios Neo 16 AI - Core Ultra 9, 32GB RAM, 1TB nvme, RTX5070 - MS Windows 11 + WSL 2 -  Turning into my daily driver
-- LG Ultragear 27" Full HD Monitor 
+- Acer Predator Helios Neo 16 AI - Core Ultra 9, 32GB RAM, 1TB nvme, RTX5070 - MS Windows 11 + WSL 2 - Turning into my daily driver
+- LG Ultragear 27" Full HD Monitor
 - Logitech MX Anywhere Mouse
 - Logitech K30 Keyboard
 - Redragon Deicide Lite Mouse
@@ -48,7 +48,8 @@ Tools that power my day-to-day - whether I’m writing code, answering emails, o
 - **Notes app** - for quick thoughts, task lists, project ideas
 - **Spotlight ~~Alfred~~ + Apple Shortcuts** - for quick actions, workflows, and automation
 - **Apple Terminal** - giving a new chance ~iTerm2 - my terminal of choice~
-- **ZSH** After experimenting with Fish, I reverted to Zsh to maintain a more standardized system setup 
+- **ZSH** After experimenting with Fish, I reverted to Zsh to maintain a more standardized system setup
+
 ---
 
 ## 🌐 This Website
@@ -74,9 +75,10 @@ Technologies I use across projects - from building APIs to backend infrastructur
 ### 🖋️ Editors & IDEs
 
 - **Neovim** - my main editor
-- **IntelliJ IDEA Ultimate** — I still use it, but only at work. After the price increase to shove in useless AI nonsense, I canceled my personal subscription.
+- **~IntelliJ IDEA Ultimate~** — I’ve been using it less over the past few months, and now I’ve stopped completely. It’s still the best tool, but they’re forcing AI into everything, ignoring long-standing bugs, and increasing the price. That’s a dealbreaker.
 - **tmux** - for multi-session workflows
 - **VS Code** - I'm using it a lot these days
+
 ---
 
 ## 🔐 Security & Privacy

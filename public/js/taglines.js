@@ -38,6 +38,7 @@
     "Have you tried turning it off and on again?",
     "99 little bugs in the code... take one down, patch it around, 127 little bugs in the code.",
     "It is only when a mosquito lands on your testicles that you realize there is always a way to solve problems without using violence. -Confucius",
+    // Personal obsessions / DayZ / zombie culture
     "Loading zombies...",
   ];
 

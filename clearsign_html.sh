@@ -17,6 +17,7 @@ extensions=(
   htm
   css
   js
+  md
   xml
   txt
   json
@@ -25,7 +26,7 @@ extensions=(
   svg
 )
 
-find_predicate=()
+find_predicate=( -name "api-catalog" -o )
 for ext in "${extensions[@]}"; do
   find_predicate+=( -name "*.${ext}" -o )
 done

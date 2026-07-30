@@ -1,0 +1,145 @@
+---
+title: "Tags"
+description: "Adler Medrado (spacexnu) - software engineer, cybersecurity enthusiast, AI practitioner, creator of FraudTalon and Sovereign-RAG. Technical content on security, AI, and digital sovereignty."
+url: "https://adlermedrado.com.br/tags/"
+---
+
+# Tags
+
+
+
+## Entries
+
+
+- [Webmcp](https://adlermedrado.com.br/tags/webmcp/) - 2026-07-29
+- [Privacy](https://adlermedrado.com.br/tags/privacy/) - 2026-07-29
+- [Nginx](https://adlermedrado.com.br/tags/nginx/) - 2026-07-29
+- [Hugo](https://adlermedrado.com.br/tags/hugo/) - 2026-07-29
+- [Dnssec](https://adlermedrado.com.br/tags/dnssec/) - 2026-07-29
+- [Ai](https://adlermedrado.com.br/tags/ai/) - 2026-07-29
+- [Agents](https://adlermedrado.com.br/tags/agents/) - 2026-07-29
+- [Vida](https://adlermedrado.com.br/tags/vida/) - 2026-07-09
+- [Memoria](https://adlermedrado.com.br/tags/memoria/) - 2026-07-09
+- [Karate](https://adlermedrado.com.br/tags/karate/) - 2026-07-09
+- [Java](https://adlermedrado.com.br/tags/java/) - 2026-07-09
+- [Brasilia](https://adlermedrado.com.br/tags/brasilia/) - 2026-07-09
+- [Musica](https://adlermedrado.com.br/tags/musica/) - 2026-07-08
+- [General](https://adlermedrado.com.br/tags/general/) - 2026-07-08
+- [Bbs](https://adlermedrado.com.br/tags/bbs/) - 2026-07-08
+- [Security](https://adlermedrado.com.br/tags/security/) - 2026-07-05
+- [Rag](https://adlermedrado.com.br/tags/rag/) - 2026-07-05
+- [Ollama](https://adlermedrado.com.br/tags/ollama/) - 2026-07-05
+- [Offline](https://adlermedrado.com.br/tags/offline/) - 2026-07-05
+- [Llm](https://adlermedrado.com.br/tags/llm/) - 2026-07-05
+- [Devsecops](https://adlermedrado.com.br/tags/devsecops/) - 2026-07-05
+- [Personal Essay](https://adlermedrado.com.br/tags/personal-essay/) - 2026-06-12
+- [Memory](https://adlermedrado.com.br/tags/memory/) - 2026-06-12
+- [Memória](https://adlermedrado.com.br/tags/mem%C3%B3ria/) - 2026-06-12
+- [Maringá](https://adlermedrado.com.br/tags/maring%C3%A1/) - 2026-06-12
+- [Infância](https://adlermedrado.com.br/tags/inf%C3%A2ncia/) - 2026-06-12
+- [Ensaio Pessoal](https://adlermedrado.com.br/tags/ensaio-pessoal/) - 2026-06-12
+- [Childhood](https://adlermedrado.com.br/tags/childhood/) - 2026-06-12
+- [Privacidade](https://adlermedrado.com.br/tags/privacidade/) - 2026-06-09
+- [Meta](https://adlermedrado.com.br/tags/meta/) - 2026-06-09
+- [Javascript](https://adlermedrado.com.br/tags/javascript/) - 2026-06-09
+- [Videosk](https://adlermedrado.com.br/tags/videosk/) - 2026-06-06
+- [Ia](https://adlermedrado.com.br/tags/ia/) - 2026-06-06
+- [Youtube](https://adlermedrado.com.br/tags/youtube/) - 2026-06-06
+- [Auditing](https://adlermedrado.com.br/tags/auditing/) - 2026-06-01
+- [Zend-Framework](https://adlermedrado.com.br/tags/zend-framework/) - 2026-06-01
+- [Auditoria De Codigo](https://adlermedrado.com.br/tags/auditoria-de-codigo/) - 2026-06-01
+- [Site](https://adlermedrado.com.br/tags/site/) - 2026-05-22
+- [Css](https://adlermedrado.com.br/tags/css/) - 2026-05-22
+- [Python](https://adlermedrado.com.br/tags/python/) - 2026-04-25
+- [Open-Source](https://adlermedrado.com.br/tags/open-source/) - 2026-04-25
+- [Tools](https://adlermedrado.com.br/tags/tools/) - 2026-01-09
+- [Opensource](https://adlermedrado.com.br/tags/opensource/) - 2026-01-09
+- [Cli](https://adlermedrado.com.br/tags/cli/) - 2026-01-09
+- [Fraud](https://adlermedrado.com.br/tags/fraud/) - 2026-01-04
+- [Detection](https://adlermedrado.com.br/tags/detection/) - 2026-01-04
+- [Tor](https://adlermedrado.com.br/tags/tor/) - 2025-12-07
+- [Seguranca](https://adlermedrado.com.br/tags/seguranca/) - 2025-12-07
+- [Gpg](https://adlermedrado.com.br/tags/gpg/) - 2025-11-23
+- [Thoughts](https://adlermedrado.com.br/tags/thoughts/) - 2025-09-26
+- [Software](https://adlermedrado.com.br/tags/software/) - 2025-08-16
+- [Development](https://adlermedrado.com.br/tags/development/) - 2025-08-16
+- [Sovereign](https://adlermedrado.com.br/tags/sovereign/) - 2025-08-03
+- [Verificacao De URL](https://adlermedrado.com.br/tags/verificacao-de-url/) - 2025-07-20
+- [Projeto](https://adlermedrado.com.br/tags/projeto/) - 2025-07-20
+- [FraudTalon](https://adlermedrado.com.br/tags/fraudtalon/) - 2025-07-20
+- [Fraude](https://adlermedrado.com.br/tags/fraude/) - 2025-07-20
+- [Cyberseguranca](https://adlermedrado.com.br/tags/cyberseguranca/) - 2025-07-20
+- [Fraudes](https://adlermedrado.com.br/tags/fraudes/) - 2025-07-16
+- [Ciberseguranca](https://adlermedrado.com.br/tags/ciberseguranca/) - 2025-07-16
+- [Atualizacao](https://adlermedrado.com.br/tags/atualizacao/) - 2025-07-16
+- [Scripts](https://adlermedrado.com.br/tags/scripts/) - 2025-07-14
+- [Macos](https://adlermedrado.com.br/tags/macos/) - 2025-07-14
+- [Apple](https://adlermedrado.com.br/tags/apple/) - 2025-07-14
+- [Segurança](https://adlermedrado.com.br/tags/seguran%C3%A7a/) - 2025-07-14
+- [Playbook](https://adlermedrado.com.br/tags/playbook/) - 2025-06-16
+- [Guide](https://adlermedrado.com.br/tags/guide/) - 2025-06-16
+- [Soberania](https://adlermedrado.com.br/tags/soberania/) - 2025-06-14
+- [Criptografia](https://adlermedrado.com.br/tags/criptografia/) - 2025-06-04
+- [Dotfiles](https://adlermedrado.com.br/tags/dotfiles/) - 2025-05-31
+- [Deepfake](https://adlermedrado.com.br/tags/deepfake/) - 2025-05-10
+- [Cryptography](https://adlermedrado.com.br/tags/cryptography/) - 2025-05-10
+- [Quantum Computing](https://adlermedrado.com.br/tags/quantum-computing/) - 2025-04-27
+- [Encryption](https://adlermedrado.com.br/tags/encryption/) - 2025-04-27
+- [Computacao Quantica](https://adlermedrado.com.br/tags/computacao-quantica/) - 2025-04-27
+- [Lm Studio](https://adlermedrado.com.br/tags/lm-studio/) - 2025-04-21
+- [Llama.cpp](https://adlermedrado.com.br/tags/llama.cpp/) - 2025-04-21
+- [Gguf](https://adlermedrado.com.br/tags/gguf/) - 2025-04-21
+- [Solitude](https://adlermedrado.com.br/tags/solitude/) - 2025-04-15
+- [Solidao](https://adlermedrado.com.br/tags/solidao/) - 2025-04-15
+- [Reflexao](https://adlermedrado.com.br/tags/reflexao/) - 2025-04-15
+- [Reflection](https://adlermedrado.com.br/tags/reflection/) - 2025-04-15
+- [Nostalgia](https://adlermedrado.com.br/tags/nostalgia/) - 2025-04-15
+- [Growth](https://adlermedrado.com.br/tags/growth/) - 2025-04-15
+- [Crescimento](https://adlermedrado.com.br/tags/crescimento/) - 2025-04-15
+- [Tech](https://adlermedrado.com.br/tags/tech/) - 2025-01-28
+- [Parody](https://adlermedrado.com.br/tags/parody/) - 2025-01-28
+- [Music](https://adlermedrado.com.br/tags/music/) - 2025-01-28
+- [Monero](https://adlermedrado.com.br/tags/monero/) - 2025-01-28
+- [Blockchain](https://adlermedrado.com.br/tags/blockchain/) - 2025-01-28
+- [Tips](https://adlermedrado.com.br/tags/tips/) - 2024-11-03
+- [Programming](https://adlermedrado.com.br/tags/programming/) - 2024-11-03
+- [Dicas](https://adlermedrado.com.br/tags/dicas/) - 2024-08-05
+- [Tip](https://adlermedrado.com.br/tags/tip/) - 2024-06-16
+- [Mac](https://adlermedrado.com.br/tags/mac/) - 2024-06-16
+- [Dica](https://adlermedrado.com.br/tags/dica/) - 2024-06-16
+- [Postgresql](https://adlermedrado.com.br/tags/postgresql/) - 2016-10-02
+- [Postgres](https://adlermedrado.com.br/tags/postgres/) - 2016-10-02
+- [Macos-Sierra](https://adlermedrado.com.br/tags/macos-sierra/) - 2016-10-02
+- [Home-Office](https://adlermedrado.com.br/tags/home-office/) - 2015-11-22
+- [Historia](https://adlermedrado.com.br/tags/historia/) - 2015-11-22
+- [Php](https://adlermedrado.com.br/tags/php/) - 2015-11-16
+- [Iniciantes](https://adlermedrado.com.br/tags/iniciantes/) - 2015-11-16
+- [History](https://adlermedrado.com.br/tags/history/) - 2015-11-06
+- [Google](https://adlermedrado.com.br/tags/google/) - 2015-11-04
+- [Gmail](https://adlermedrado.com.br/tags/gmail/) - 2015-11-04
+- [Bug](https://adlermedrado.com.br/tags/bug/) - 2015-11-04
+- [Nashorn](https://adlermedrado.com.br/tags/nashorn/) - 2015-10-11
+- [Jvm](https://adlermedrado.com.br/tags/jvm/) - 2015-10-11
+- [Jruby](https://adlermedrado.com.br/tags/jruby/) - 2015-10-11
+- [Clojure](https://adlermedrado.com.br/tags/clojure/) - 2015-10-11
+- [Magento](https://adlermedrado.com.br/tags/magento/) - 2015-08-12
+- [Editor](https://adlermedrado.com.br/tags/editor/) - 2015-08-04
+- [Atom](https://adlermedrado.com.br/tags/atom/) - 2015-08-04
+- [Satis](https://adlermedrado.com.br/tags/satis/) - 2015-06-21
+- [Composer](https://adlermedrado.com.br/tags/composer/) - 2015-06-21
+- [Liberdade](https://adlermedrado.com.br/tags/liberdade/) - 2015-06-13
+- [Windows](https://adlermedrado.com.br/tags/windows/) - 2014-12-23
+- [Powershell](https://adlermedrado.com.br/tags/powershell/) - 2014-07-26
+- [Office](https://adlermedrado.com.br/tags/office/) - 2014-07-26
+- [Microsoft](https://adlermedrado.com.br/tags/microsoft/) - 2014-07-26
+- [Subversao](https://adlermedrado.com.br/tags/subversao/) - 2014-06-21
+- [Comunismo](https://adlermedrado.com.br/tags/comunismo/) - 2014-06-21
+- [Ruby](https://adlermedrado.com.br/tags/ruby/) - 2014-06-16
+- [Palestra](https://adlermedrado.com.br/tags/palestra/) - 2014-04-25
+- [Flisol](https://adlermedrado.com.br/tags/flisol/) - 2014-04-25
+- [Training](https://adlermedrado.com.br/tags/training/) - 2010-06-13
+- [Conferences](https://adlermedrado.com.br/tags/conferences/) - 2010-04-25
+- [Certification](https://adlermedrado.com.br/tags/certification/) - 2009-06-16
+- [Wordpress](https://adlermedrado.com.br/tags/wordpress/) - 2009-02-15
+- [Phpdf](https://adlermedrado.com.br/tags/phpdf/) - 2008-06-26
+- [Code](https://adlermedrado.com.br/tags/code/) - 2008-05-10

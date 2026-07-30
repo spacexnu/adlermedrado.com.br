@@ -1,0 +1,18 @@
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description }}
+
+## Posts
+{{ range where .Site.RegularPages "Section" "posts" }}
+- [{{ .Title }}]({{ .Permalink }}){{ with .Summary }}: {{ . | plainify | htmlUnescape | truncate 160 }}{{ end }}
+{{- end }}
+
+## Missives
+{{ range where .Site.RegularPages "Section" "missives" }}
+- [{{ .Title }}]({{ .Permalink }})
+{{- end }}
+
+## Pages
+{{ range where .Site.RegularPages "Section" "" }}
+- [{{ .Title }}]({{ .Permalink }})
+{{- end }}

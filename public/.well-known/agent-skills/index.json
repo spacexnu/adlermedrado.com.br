@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "site-content",
+      "type": "skill-md",
+      "description": "Discover and read public pages and posts from adlermedrado.com.br in structured JSON or Markdown.",
+      "url": "/.well-known/agent-skills/site-content/SKILL.md",
+      "digest": "sha256:697579aa49a4f9d549d9853e0ad121891003738b9916d151bd7031272330cf44"
+    }
+  ]
+}

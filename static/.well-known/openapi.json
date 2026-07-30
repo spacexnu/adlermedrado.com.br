@@ -1,0 +1,117 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Adler Medrado Site Content API",
+    "version": "1.0.0",
+    "description": "Read-only access to public pages and posts published on adlermedrado.com.br."
+  },
+  "servers": [
+    {
+      "url": "https://adlermedrado.com.br"
+    }
+  ],
+  "paths": {
+    "/index.json": {
+      "get": {
+        "operationId": "listSiteContent",
+        "summary": "List public site content",
+        "responses": {
+          "200": {
+            "description": "A versioned list of public pages and posts.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContentIndex"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health.json": {
+      "get": {
+        "operationId": "getSiteContentApiStatus",
+        "summary": "Check static API availability",
+        "responses": {
+          "200": {
+            "description": "The static content API is available.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ContentIndex": {
+        "type": "object",
+        "required": ["version", "title", "url", "items"],
+        "properties": {
+          "version": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ContentItem"
+            }
+          }
+        }
+      },
+      "ContentItem": {
+        "type": "object",
+        "required": ["title", "url", "section", "language", "date", "summary"],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "section": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "description": "RFC 3339 timestamp, or an empty string when the page has no date."
+          },
+          "summary": {
+            "type": "string"
+          }
+        }
+      },
+      "Health": {
+        "type": "object",
+        "required": ["status", "service"],
+        "properties": {
+          "status": {
+            "type": "string",
+            "const": "ok"
+          },
+          "service": {
+            "type": "string",
+            "const": "site-content-api"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+---
+title: "Hugo"
+description: "Adler Medrado (spacexnu) - software engineer, cybersecurity enthusiast, AI practitioner, creator of FraudTalon and Sovereign-RAG. Technical content on security, AI, and digital sovereignty."
+url: "https://adlermedrado.com.br/tags/hugo/"
+---
+
+# Hugo
+
+
+
+## Entries
+
+
+- [From 21 to 71: Making My Site Legible to Agents](https://adlermedrado.com.br/posts/making-my-site-agent-ready/) - 2026-07-29: I entered this site’s address into Is It Agent Ready? and got a score of 21.
+After a few hours reading RFCs, working on Hugo, configuring Nginx, and taking a deep breath before clicking the DNSSEC …
+- [De 21 a 71: tornando meu site legível por agentes](https://adlermedrado.com.br/posts/tornando-meu-site-agent-ready/) - 2026-07-29: Eu joguei o endereço deste site no Is It Agent Ready? e recebi uma nota 21.
+Depois de algumas horas lendo RFC, mexendo no Hugo, configurando Nginx e respirando fundo antes de apertar o botão de DNSSEC …
+- [I added JavaScript to this site and your privacy is still intact](https://adlermedrado.com.br/posts/javascript-without-betraying-privacy/) - 2026-06-09: JavaScript without betraying the premise If you follow this site, you know it has one non-negotiable premise: I don’t track visitors. No Google Analytics, no pixels, no third-party cookies, no …
+- [Adicionei JavaScript no site e a sua privacidade continua intacta](https://adlermedrado.com.br/posts/javascript-sem-trair-a-privacidade/) - 2026-06-09: JavaScript sem trair a premissa Quem acompanha este site sabe que ele tem uma premissa inegociável: eu não rastreio quem visita. Não tem Google Analytics, não tem pixel, não tem cookie de terceiro, …

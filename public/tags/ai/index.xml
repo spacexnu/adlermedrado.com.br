@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/ai/</link><description>Recent content in AI on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 06 Jun 2026 09:32:27 -0300</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Shortificator - My personal video generator</title><link>https://adlermedrado.com.br/posts/shortificator-en/</link><pubDate>Sat, 06 Jun 2026 09:32:27 -0300</pubDate><guid>https://adlermedrado.com.br/posts/shortificator-en/</guid><description>&lt;h1 id="how-i-built-a-shorts-factory-that-runs-100-on-my-own-machine"&gt;How I built a Shorts factory that runs 100% on my own machine&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ai on Adler Medrado's corner of the web</title><link>https://adlermedrado.com.br/tags/ai/</link><description>Recent content in Ai on Adler Medrado's corner of the web</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://adlermedrado.com.br/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>De 21 a 71: tornando meu site legível por agentes</title><link>https://adlermedrado.com.br/posts/tornando-meu-site-agent-ready/</link><pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/tornando-meu-site-agent-ready/</guid><description>&lt;p&gt;Eu joguei o endereço deste site no
+&lt;a href="https://isitagentready.com/"&gt;Is It Agent Ready?&lt;/a&gt; e recebi uma nota 21.&lt;/p&gt;
+&lt;p&gt;Depois de algumas horas lendo RFC, mexendo no Hugo, configurando Nginx e
+respirando fundo antes de apertar o botão de DNSSEC no Registro.br, a nota
+subiu para 71. O site passou a ser classificado como &lt;strong&gt;Agent-Integrated&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A tentação óbvia seria continuar adicionando arquivos até o scanner ficar
+verde em tudo. Não fiz isso.&lt;/p&gt;
+&lt;p&gt;Uma pontuação não é uma arquitetura. Publicar metadata de OAuth sem ter
+autenticação ou anunciar um servidor MCP que não existe seria tecnicamente
+desonesto. Agentes encontrariam mais arquivos, mas receberiam informação falsa.&lt;/p&gt;</description></item><item><title>From 21 to 71: Making My Site Legible to Agents</title><link>https://adlermedrado.com.br/posts/making-my-site-agent-ready/</link><pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate><guid>https://adlermedrado.com.br/posts/making-my-site-agent-ready/</guid><description>&lt;p&gt;I entered this site&amp;rsquo;s address into
+&lt;a href="https://isitagentready.com/"&gt;Is It Agent Ready?&lt;/a&gt; and got a score of 21.&lt;/p&gt;
+&lt;p&gt;After a few hours reading RFCs, working on Hugo, configuring Nginx, and taking a
+deep breath before clicking the DNSSEC button at Registro.br, the score went up
+to 71. The site reached the &lt;strong&gt;Agent-Integrated&lt;/strong&gt; level.&lt;/p&gt;
+&lt;p&gt;The obvious temptation was to keep adding files until every scanner check
+turned green. I did not.&lt;/p&gt;
+&lt;p&gt;A score is not an architecture. Publishing OAuth metadata without
+authentication, or advertising an MCP server that does not exist, would be
+technically dishonest. Agents would discover more files, but those files would
+contain false information.&lt;/p&gt;</description></item><item><title>Shortificator - My personal video generator</title><link>https://adlermedrado.com.br/posts/shortificator-en/</link><pubDate>Sat, 06 Jun 2026 09:32:27 -0300</pubDate><guid>https://adlermedrado.com.br/posts/shortificator-en/</guid><description>&lt;h1 id="how-i-built-a-shorts-factory-that-runs-100-on-my-own-machine"&gt;How I built a Shorts factory that runs 100% on my own machine&lt;/h1&gt;
 &lt;p&gt;If you mess with YouTube at all, you&amp;rsquo;ve seen Opus Clip, Klap, SubMagic and the
 rest. You drop in a long video, the tool cuts the best moments, slaps on animated
 captions, and hands you ready-to-post Shorts. It works. The catch is the usual

@@ -14,7 +14,31 @@ title = "Adler Medrado's corner of the web"
   twitterImage = "/images/fraudtalon-preview.png"
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "llms", "Markdown", "ContentAPI"]
+  page = ["HTML", "Markdown"]
+  section = ["HTML", "RSS", "Markdown"]
+  taxonomy = ["HTML", "RSS", "Markdown"]
+  term = ["HTML", "RSS", "Markdown"]
+
+[mediaTypes."text/markdown"]
+  suffixes = ["md"]
+
+[outputFormats.Markdown]
+  mediaType = "text/markdown"
+  baseName = "index"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.ContentAPI]
+  mediaType = "application/json"
+  baseName = "index"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.llms]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
 
 [permalinks]
   missives = "/missives/:slug/"

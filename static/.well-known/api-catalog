@@ -1,0 +1,25 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://adlermedrado.com.br/index.json",
+      "service-desc": [
+        {
+          "href": "https://adlermedrado.com.br/.well-known/openapi.json",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://adlermedrado.com.br/agent-api.md",
+          "type": "text/markdown"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://adlermedrado.com.br/health.json",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}

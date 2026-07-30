@@ -1,0 +1,130 @@
+<!doctype html><html lang=en><head><script src=/js/theme-toggle.js></script><script src=/js/taglines.js></script><script src=/js/webmcp.js defer></script><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="From 21 to 71: Making My Site Legible to Agents"><meta property="og:description" content="What I changed so agents can discover this site's content, APIs, and tools without inventing OAuth, MCP, or services that do not exist."><meta property="og:url" content="https://adlermedrado.com.br/posts/making-my-site-agent-ready/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="From 21 to 71: Making My Site Legible to Agents"><meta name=twitter:description content="What I changed so agents can discover this site's content, APIs, and tools without inventing OAuth, MCP, or services that do not exist."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>From 21 to 71: Making My Site Legible to Agents</title><meta name=description content="What I changed so agents can discover this site's content, APIs, and tools without inventing OAuth, MCP, or services that do not exist."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=api-catalog href=/.well-known/api-catalog type=application/linkset+json><link rel=service-desc href=/.well-known/openapi.json type=application/vnd.oai.openapi+json><link rel=service-doc href=/agent-api.md type=text/markdown><link rel=describedby href=/.well-known/agent-skills/index.json type=application/json><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/making-my-site-agent-ready/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>now</a>
+<a href=/uses>uses</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a>
+<button class=theme-toggle id=theme-toggle aria-label="Toggle theme">
+<span class=label-dark>☀ light</span>
+<span class=label-light>☾ dark</span></button></div></nav><div class=tagline-bar><span id=tagline>There's no place like 127.0.0.1.</span></div></header><main><section class=section><article><div><h1>From 21 to 71: Making My Site Legible to Agents</h1><div><div><p><small><time>July 29, 2026</time>
+|
+9 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/ai>ai</a>,
+<a href=/tags/agents>agents</a>,
+<a href=/tags/webmcp>webmcp</a>,
+<a href=/tags/dnssec>dnssec</a>,
+<a href=/tags/nginx>nginx</a>,
+<a href=/tags/hugo>hugo</a>,
+<a href=/tags/privacy>privacy</a></p></div></p></div><span class=line_break></span></div><div class=content><p>I entered this site&rsquo;s address into
+<a href=https://isitagentready.com/>Is It Agent Ready?</a> and got a score of 21.</p><p>After a few hours reading RFCs, working on Hugo, configuring Nginx, and taking a
+deep breath before clicking the DNSSEC button at Registro.br, the score went up
+to 71. The site reached the <strong>Agent-Integrated</strong> level.</p><p>The obvious temptation was to keep adding files until every scanner check
+turned green. I did not.</p><p>A score is not an architecture. Publishing OAuth metadata without
+authentication, or advertising an MCP server that does not exist, would be
+technically dishonest. Agents would discover more files, but those files would
+contain false information.</p><p>The goal was not to win the checklist video game. It was to make what already
+exists here easier for agents to discover and consume.</p><h2 id=what-it-means-to-make-a-site-agent-ready>What it means to make a site agent-ready</h2><p>A browser gives a person HTML and expects them to understand menus, links,
+text, and forms. An agent can parse HTML too, but it should not have to guess
+everything.</p><p>A more agent-friendly site answers a few questions explicitly:</p><ul><li>where its documentation lives;</li><li>which APIs exist;</li><li>how to obtain a representation without the noise of HTML;</li><li>which uses of its content are permitted;</li><li>which structured actions the page exposes;</li><li>whether authentication is required;</li><li>how to verify all of this over HTTP or DNS.</li></ul><p>Most of that does not require a language model, a magical framework, or a new
+SaaS subscription. It requires predictable formats, correct headers, and files
+in standardized locations.</p><p>It is the least cinematic part of artificial intelligence: doing HTTP
+properly.</p><h2 id=the-architecture-stayed-simple>The architecture stayed simple</h2><p>This site is generated with Hugo and published on my own VPS. Nginx serves the
+static files. Cloudflare is my authoritative DNS provider, but nearly every
+record is set to <code>DNS only</code>.</p><p>That gave me one implementation rule: anything that could be solved in Nginx
+would be solved in Nginx.</p><p>I did not need to put the domain behind Cloudflare&rsquo;s proxy to get headers or
+content negotiation. I also did not need to depend on Transform Rules, Workers,
+or a feature available only on a paid plan.</p><p>Cloudflare remained responsible for DNS. Nginx remained responsible for HTTP.
+Hugo remained responsible for content.</p><p>Separation of concerns still works, even when someone puts &ldquo;AI&rdquo; in the
+problem&rsquo;s name.</p><h2 id=link-headers-discovery-starts-in-the-http-response>Link headers: discovery starts in the HTTP response</h2><p>The first problem was straightforward: the homepage did not return a <code>Link</code>
+response header.</p><p>I could already put <code>&lt;link></code> elements in the HTML <code>&lt;head></code>, but that is not the
+same thing. <a href=https://www.rfc-editor.org/rfc/rfc8288>RFC 8288</a> defines links at
+the HTTP protocol level, allowing an agent to discover them without parsing the
+entire document first.</p><p>Nginx now returns:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>Link: &lt;/.well-known/api-catalog&gt;; rel=&#34;api-catalog&#34;; type=&#34;application/linkset+json&#34;,
+</span></span><span style=display:flex><span>      &lt;/.well-known/openapi.json&gt;; rel=&#34;service-desc&#34;; type=&#34;application/vnd.oai.openapi+json&#34;,
+</span></span><span style=display:flex><span>      &lt;/agent-api.md&gt;; rel=&#34;service-doc&#34;; type=&#34;text/markdown&#34;,
+</span></span><span style=display:flex><span>      &lt;/.well-known/agent-skills/index.json&gt;; rel=&#34;describedby&#34;; type=&#34;application/json&#34;
+</span></span></code></pre></div><p>That advertises the API catalog, the OpenAPI specification, the Markdown
+documentation, and the skills index.</p><p>A request to <code>/</code> now comes with a map of the things a machine may want to fetch
+next.</p><h2 id=html-for-people-markdown-for-agents>HTML for people, Markdown for agents</h2><p>The site still returns HTML by default. Nothing changed for someone opening a
+page normally.</p><p>But a client can now send:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>Accept: text/markdown
+</span></span></span></code></pre></div><p>and receive:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>Content-Type: text/markdown
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>Vary: Accept
+</span></span></span></code></pre></div><p>Hugo generates a Markdown representation of every page during the build. Nginx
+inspects the <code>Accept</code> header and serves the corresponding file.</p><p>The test is simple:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>curl -I -H <span style=color:#e6db74>&#39;Accept: text/markdown&#39;</span> https://adlermedrado.com.br/
+</span></span></code></pre></div><p>Cloudflare has a ready-made feature for this called Markdown for Agents. I
+ignored it. The content already starts as Markdown, I control the server, and
+converting my own HTML back into Markdown at the edge would be like paying for
+an Uber ride to the corner of my own street.</p><h2 id=content-signals-you-may-answer-but-you-may-not-train>Content Signals: you may answer, but you may not train</h2><p>The site&rsquo;s <code>robots.txt</code> now declares:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>User-agent: *
+</span></span><span style=display:flex><span>Allow: /
+</span></span><span style=display:flex><span>Content-Signal: ai-train=no, search=yes, ai-input=yes
+</span></span></code></pre></div><p>Those three values mean different things:</p><ul><li><code>search=yes</code>: permits indexing, links, and short excerpts in search results;</li><li><code>ai-input=yes</code>: permits using the content as real-time model input,
+including RAG, grounding, answers, and summaries;</li><li><code>ai-train=no</code>: does not permit training or fine-tuning.</li></ul><p>My choice was to allow an agent to read a post in order to answer a question,
+but not to authorize using that content as training material.</p><p><a href=https://contentsignals.org/>Content Signals</a> still depend on collectors
+honoring the declaration. They are not a firewall. Even so, I would rather
+state the intent explicitly than leave silence where a rule could exist.</p><h2 id=a-catalog-for-an-api-that-already-existed>A catalog for an API that already existed</h2><p>The site already published structured content. What it lacked was a
+standardized way to discover it.</p><p>I created <code>/.well-known/api-catalog</code> following
+<a href=https://www.rfc-editor.org/rfc/rfc9727>RFC 9727</a>. The catalog points to:</p><ul><li><code>/index.json</code>, containing the list of pages and posts;</li><li><code>/.well-known/openapi.json</code>, containing the OpenAPI 3.1 description;</li><li><code>/agent-api.md</code>, containing the documentation;</li><li><code>/health.json</code>, containing the status of the static service.</li></ul><p>The catalog is served as:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>Content-Type: application/linkset+json
+</span></span></span></code></pre></div><p>It is not a write API, it has no database, and it does not accept commands. It
+is simply a structured view of the public content the site already serves.</p><p>I also published <code>/.well-known/agent-skills/index.json</code>, with a skill named
+<code>site-content</code>. It teaches an agent how to query the index, find a piece of
+content, and request the Markdown representation of the selected page.</p><p>The index includes the SHA-256 digest of the <code>SKILL.md</code>, so the advertised
+artifact can be verified before use.</p><h2 id=dns-aid-and-the-moment-i-got-nervous>DNS-AID and the moment I got nervous</h2><p>HTTP discovery works after an agent finds the site. DNS-AID lets the site
+advertise its entry point in DNS itself.</p><p>I published this record at Cloudflare:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-dns data-lang=dns><span style=display:flex><span>_index._agents.adlermedrado.com.br. <span style=color:#e6db74>3600</span> <span style=color:#66d9ef>IN</span> <span style=color:#960050;background-color:#1e0010>SVCB</span> <span style=color:#e6db74>1</span> adlermedrado.com.br. <span style=color:#960050;background-color:#1e0010>alpn=&#34;h2&#34;</span> <span style=color:#960050;background-color:#1e0010>port=</span><span style=color:#e6db74>443</span> <span style=color:#960050;background-color:#1e0010>mandatory=alpn,port</span>
+</span></span></code></pre></div><p>It says that the agent index is available at the main domain over HTTP/2 on
+port 443.</p><p>The next requirement was signing the zone with DNSSEC.</p><p>Enabling DNSSEC in Cloudflare was the easy part. The part that makes your hand
+sweat is copying the DS record to Registro.br while knowing that one incorrect
+value can make validating resolvers return <code>SERVFAIL</code>.</p><p>At Registro.br, I kept Cloudflare&rsquo;s two nameservers and filled in only:</p><ul><li><code>Keytag 1</code>: the Key Tag shown by Cloudflare;</li><li><code>Digest 1</code>: the complete digest shown by Cloudflare.</li></ul><p>After propagation:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>dig @1.1.1.1 adlermedrado.com.br DS +dnssec
+</span></span></code></pre></div><p>started returning:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>adlermedrado.com.br. 3600 IN DS 2371 13 2 ...
+</span></span></code></pre></div><p>and, more importantly:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>flags: qr rd ra ad;
+</span></span></code></pre></div><p>The <code>ad</code> flag means the resolver validated the DNSSEC chain. The scanner also
+found the SVCB record with <code>AD=true</code>.</p><p>Fear over. DNS working. No domains were harmed during the process.</p><h2 id=webmcp-tools-in-the-browser>WebMCP: tools in the browser</h2><p>WebMCP allows a page to expose JavaScript functions as structured tools for
+agents.</p><p>Instead of making an agent visually interpret the page, it receives a name, a
+description, a JSON Schema for the parameters, and an execution function. The
+specification is still under development, but the idea is sound: reduce
+ambiguity between the human interface and the action a machine needs to
+perform.</p><p>This site registers two tools:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>search_site_content
+</span></span><span style=display:flex><span>get_current_page
+</span></span></code></pre></div><p>The first searches titles and summaries in <code>/index.json</code>. The second returns
+the canonical URL, title, and description of the current page.</p><p>Both operations are read-only. They do not create accounts, send messages,
+modify content, or collect visitor data.</p><p>One detail nearly slipped past me: my Content Security Policy began with
+<code>default-src 'none'</code>. The JavaScript loaded, but the search tool&rsquo;s
+<code>fetch("/index.json")</code> would have been blocked because there was no
+<code>connect-src</code>.</p><p>The fix was specific:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>connect-src &#39;self&#39;
+</span></span></code></pre></div><p>The script is still forbidden from calling external services. It can only
+query the site itself.</p><p>I do not have Chrome installed, and WebMCP is still in early preview. Even so,
+I was able to validate the implementation: the local test captures the
+registered tools, and Is It Agent Ready loaded the page as a browser and
+detected both through <code>navigator.modelContext</code>.</p><h2 id=authmd-without-authentication-theater>Auth.md without authentication theater</h2><p>I also published <code>/auth.md</code>.</p><p>It does not teach an agent how to create an account because there is no
+account. The file says:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>Registration is not required or available.
+</span></span><span style=display:flex><span>Authentication and credentials are not required.
+</span></span><span style=display:flex><span>There are no protected API scopes.
+</span></span></code></pre></div><p>The scanner finds the document, confirms HTTP 200 and <code>text/markdown</code>, but
+still marks the check as failed because there are no registration
+instructions.</p><p>That is correct. There is no registration.</p><p>I would rather lose points with a truthful statement than gain points by
+advertising fictional endpoints.</p><h2 id=what-i-deliberately-did-not-implement>What I deliberately did not implement</h2><p>A few checks remain red:</p><ul><li>OAuth/OIDC Discovery;</li><li>OAuth Protected Resource Metadata;</li><li>Auth.md Agent Registration;</li><li>MCP Server Card;</li><li>A2A Agent Card.</li></ul><p>They are not bugs on this site.</p><p>OAuth and OIDC make sense when there is a protected API, a login, tokens,
+scopes, and a real authorization server. None of those exist here.</p><p>OAuth Protected Resource Metadata describes how to obtain authorization for a
+protected resource. Every piece of content on this site is public.</p><p>An MCP Server Card requires a real MCP server with a real transport and
+endpoint. WebMCP in the browser does not turn the domain into a remote MCP
+server.</p><p>An A2A Agent Card describes an agent capable of communicating with other
+agents. This site is a website, not an autonomous agent.</p><p>The commerce checks (x402, MPP, UCP, ACP, and AP2) show up in gray. They are
+going to stay gray. I do not sell anything here, and the last thing I want is
+to wake up one morning to find an agent buying hosting on my behalf.</p><p>Adding any of those things just to improve the score would be confusing
+protocol support with collecting <code>.well-known</code> files.</p><h2 id=the-result>The result</h2><p>The site went from 21 to 71 and reached the <strong>Agent-Integrated</strong> level.</p><p>These checks passed:</p><ul><li>Link headers;</li><li>DNS-AID with DNSSEC;</li><li>Markdown negotiation;</li><li>Content Signals;</li><li>API Catalog;</li><li>Agent Skills;</li><li>WebMCP;</li><li><code>robots.txt</code> and sitemap.</li></ul><p>More important than the score, every green check corresponds to something that
+actually exists and works.</p><p>Agents can now discover the content over HTTP and DNS, request Markdown, query
+a catalog, understand the usage policy, and access structured browser tools.</p><p>Everything else remained absent because it should remain absent.</p><h2 id=what-i-learned>What I learned</h2><p>Making a site agent-ready does not mean turning everything into a chatbot,
+adding login, or putting a language model on the server.</p><p>Most of the time, it means publishing good metadata, respecting protocols, and
+not forcing a machine to guess something you could have declared explicitly.</p><p>It also means knowing when to say no.</p><p>A scanner is useful for finding gaps. It does not know the intent behind your
+architecture. That part remains the responsibility of whoever operates the
+site.</p><p>In the end, the most important improvement was not going from 21 to 71.</p><p>It was going from a site agents had to interpret to a site capable of
+explaining itself, without lying about what it is.</p><h2 id=what-about-the-tor-version>What about the Tor version?</h2><p>And what about the version of this site running as an onion service on the Tor
+network?</p><p>Obviously, I did not configure DNS-AID, DNSSEC, or dedicated discovery metadata
+for it. You knew that, right? A <code>.onion</code> address is not part of the public DNS,
+so there is no DS record at Registro.br, no SVCB record at Cloudflare, and no
+DNSSEC chain to validate.</p><p>Both versions come from the same Hugo project, so some static files naturally
+travel with the build. But turning the onion service into another target for an
+agent-readiness scanner was never the point. It exists for a different reason:
+access through Tor, with as few dependencies and as little exposure as possible.
+And it is staying that way.</p></div></div></article><nav class=post-nav aria-label="Post navigation"><div class=post-nav__prev><a href=https://adlermedrado.com.br/posts/mais-valem-as-lagrimas-da-derrota-do-que-a-vergonha-de-nao-ter-lutado/>A frase na parede do dojo</a></div><span class=post-nav__separator aria-hidden=true>|</span><div class=post-nav__next><a href=https://adlermedrado.com.br/posts/tornando-meu-site-agent-ready/>De 21 a 71: tornando meu site legível por agentes</a></div></nav></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2026 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

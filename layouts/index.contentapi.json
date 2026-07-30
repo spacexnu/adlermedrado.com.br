@@ -1,0 +1,23 @@
+{{- $items := slice -}}
+{{- range sort .Site.RegularPages "Date" "desc" -}}
+  {{- $date := "" -}}
+  {{- if not .Date.IsZero -}}
+    {{- $date = .Date.Format "2006-01-02T15:04:05Z07:00" -}}
+  {{- end -}}
+  {{- $item := dict
+    "title" .Title
+    "url" .Permalink
+    "section" .Section
+    "language" .Language.Lang
+    "date" $date
+    "summary" (.Summary | plainify | htmlUnescape)
+  -}}
+  {{- $items = $items | append $item -}}
+{{- end -}}
+{{- dict
+  "version" "1.0"
+  "title" .Site.Title
+  "url" .Permalink
+  "items" $items
+  | jsonify (dict "indent" "  ")
+-}}

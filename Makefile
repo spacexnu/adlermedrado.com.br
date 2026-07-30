@@ -7,6 +7,7 @@ help:
 	@echo "build: Build the minified version of the site"
 	@echo "clear-sign: Generate .asc signatures for published assets"
 	@echo "deploy: Deploy files to server"
+	@echo "verify-agent-discovery: Build and validate agent discovery artifacts"
 	@echo "help: Show this help"
 	@echo "build-onion: Build the Tor version of the site"
 	@echo "deploy-onion: Deploy Tor version to the hidden service"
@@ -30,4 +31,7 @@ deploy-onion:
 	# rsync -avz --delete --rsync-path="sudo rsync" ./public/ spacexnu@192.168.1.167:/srv/www/htdocs/adlermedrado
 	rsync -avz -e "ssh -i $(DEPLOY_SSH_KEY)" ./public/ $(DEPLOY_ONION_USER)@$(DEPLOY_ONION_HOST):$(DEPLOY_ONION_PATH)
 
-.PHONY: serve build build-onion clear-sign deploy deploy-onion
+verify-agent-discovery:
+	./scripts/verify_agent_discovery.sh
+
+.PHONY: serve build build-onion clear-sign deploy deploy-onion verify-agent-discovery

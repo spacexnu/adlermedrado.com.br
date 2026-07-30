@@ -7,3 +7,9 @@ The site is my digital outpost: a space where I publish technical deep dives, pe
 Everything here is self-managed, gpg-signed content, privacy-respecting, and tracker-free. No JavaScript bloat, no analytics, no external dependencies. Just static files and intent.
 
 Visit: [https://adlermedrado.com.br](https://adlermedrado.com.br)
+
+## Agent discovery
+
+The Hugo build publishes Markdown page variants, a read-only content API,
+RFC 9727 API discovery, Content Signals, an Agent Skills index, and WebMCP
+tools. Run `make verify-agent-discovery` to validate the generated artifacts.

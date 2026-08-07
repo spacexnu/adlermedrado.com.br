@@ -19,11 +19,14 @@ url: "https://adlermedrado.com.br/tags/"
 - [Ai](https://adlermedrado.com.br/tags/ai/) - 2026-07-29
 - [Agents](https://adlermedrado.com.br/tags/agents/) - 2026-07-29
 - [Vida](https://adlermedrado.com.br/tags/vida/) - 2026-07-09
+- [Memory](https://adlermedrado.com.br/tags/memory/) - 2026-07-09
 - [Memoria](https://adlermedrado.com.br/tags/memoria/) - 2026-07-09
+- [Life](https://adlermedrado.com.br/tags/life/) - 2026-07-09
 - [Karate](https://adlermedrado.com.br/tags/karate/) - 2026-07-09
 - [Java](https://adlermedrado.com.br/tags/java/) - 2026-07-09
 - [Brasilia](https://adlermedrado.com.br/tags/brasilia/) - 2026-07-09
 - [Musica](https://adlermedrado.com.br/tags/musica/) - 2026-07-08
+- [Music](https://adlermedrado.com.br/tags/music/) - 2026-07-08
 - [General](https://adlermedrado.com.br/tags/general/) - 2026-07-08
 - [Bbs](https://adlermedrado.com.br/tags/bbs/) - 2026-07-08
 - [Security](https://adlermedrado.com.br/tags/security/) - 2026-07-05
@@ -33,7 +36,6 @@ url: "https://adlermedrado.com.br/tags/"
 - [Llm](https://adlermedrado.com.br/tags/llm/) - 2026-07-05
 - [Devsecops](https://adlermedrado.com.br/tags/devsecops/) - 2026-07-05
 - [Personal Essay](https://adlermedrado.com.br/tags/personal-essay/) - 2026-06-12
-- [Memory](https://adlermedrado.com.br/tags/memory/) - 2026-06-12
 - [Memória](https://adlermedrado.com.br/tags/mem%C3%B3ria/) - 2026-06-12
 - [Maringá](https://adlermedrado.com.br/tags/maring%C3%A1/) - 2026-06-12
 - [Infância](https://adlermedrado.com.br/tags/inf%C3%A2ncia/) - 2026-06-12
@@ -65,10 +67,14 @@ url: "https://adlermedrado.com.br/tags/"
 - [Development](https://adlermedrado.com.br/tags/development/) - 2025-08-16
 - [Sovereign](https://adlermedrado.com.br/tags/sovereign/) - 2025-08-03
 - [Verificacao De URL](https://adlermedrado.com.br/tags/verificacao-de-url/) - 2025-07-20
+- [URL Verification](https://adlermedrado.com.br/tags/url-verification/) - 2025-07-20
 - [Projeto](https://adlermedrado.com.br/tags/projeto/) - 2025-07-20
+- [Project](https://adlermedrado.com.br/tags/project/) - 2025-07-20
 - [FraudTalon](https://adlermedrado.com.br/tags/fraudtalon/) - 2025-07-20
 - [Fraude](https://adlermedrado.com.br/tags/fraude/) - 2025-07-20
 - [Cyberseguranca](https://adlermedrado.com.br/tags/cyberseguranca/) - 2025-07-20
+- [Cybersecurity](https://adlermedrado.com.br/tags/cybersecurity/) - 2025-07-20
+- [Update](https://adlermedrado.com.br/tags/update/) - 2025-07-16
 - [Fraudes](https://adlermedrado.com.br/tags/fraudes/) - 2025-07-16
 - [Ciberseguranca](https://adlermedrado.com.br/tags/ciberseguranca/) - 2025-07-16
 - [Atualizacao](https://adlermedrado.com.br/tags/atualizacao/) - 2025-07-16
@@ -98,7 +104,6 @@ url: "https://adlermedrado.com.br/tags/"
 - [Crescimento](https://adlermedrado.com.br/tags/crescimento/) - 2025-04-15
 - [Tech](https://adlermedrado.com.br/tags/tech/) - 2025-01-28
 - [Parody](https://adlermedrado.com.br/tags/parody/) - 2025-01-28
-- [Music](https://adlermedrado.com.br/tags/music/) - 2025-01-28
 - [Monero](https://adlermedrado.com.br/tags/monero/) - 2025-01-28
 - [Blockchain](https://adlermedrado.com.br/tags/blockchain/) - 2025-01-28
 - [Tips](https://adlermedrado.com.br/tags/tips/) - 2024-11-03

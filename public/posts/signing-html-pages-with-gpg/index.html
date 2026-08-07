@@ -1,0 +1,144 @@
+<!doctype html><html lang=en><head><script src=/js/theme-toggle.js></script><script src=/js/taglines.js></script><script src=/js/webmcp.js defer></script><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="Signing HTML Pages with GPG"><meta property="og:description" content="A few months ago I rebuilt this site. I was using WordPress and wasn&rsquo;t very
+happy with it, so I decided to use a static site generator, in this case Hugo.
+In the past I&rsquo;ve used Pelican, Jekyll and Dangolino,
+the last one being a tool I built myself but discontinued after a while.
+If I&rsquo;m not mistaken, there are posts here talking about them.
+Why sign the pages?
+I see cryptography as a defense mechanism. I believe people should
+encrypt everything, to try to guarantee security, privacy and authenticity, among other things."><meta property="og:url" content="https://adlermedrado.com.br/posts/signing-html-pages-with-gpg/"><meta property="og:site_name" content="Adler Medrado's corner of the web"><meta property="og:type" content="article"><meta property="og:image" content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Signing HTML Pages with GPG"><meta name=twitter:description content="A few months ago I rebuilt this site. I was using WordPress and wasn&rsquo;t very
+happy with it, so I decided to use a static site generator, in this case Hugo.
+In the past I&rsquo;ve used Pelican, Jekyll and Dangolino,
+the last one being a tool I built myself but discontinued after a while.
+If I&rsquo;m not mistaken, there are posts here talking about them.
+Why sign the pages?
+I see cryptography as a defense mechanism. I believe people should
+encrypt everything, to try to guarantee security, privacy and authenticity, among other things."><meta name=twitter:image content="https://adlermedrado.com.br/images/fraudtalon-preview.png"><title>Signing HTML Pages with GPG</title><meta name=description content="A few months ago I rebuilt this site. I was using WordPress and wasn&rsquo;t very
+happy with it, so I decided to use a static site generator, in this case Hugo.
+In the past I&rsquo;ve used Pelican, Jekyll and Dangolino,
+the last one being a tool I built myself but discontinued after a while.
+If I&rsquo;m not mistaken, there are posts here talking about them.
+Why sign the pages?
+I see cryptography as a defense mechanism. I believe people should
+encrypt everything, to try to guarantee security, privacy and authenticity, among other things."><meta name=keywords content="AI fraud detection,cybersecurity Brazil,spacexnu,Adler Medrado,FraudTalon,digital sovereignty,threat intelligence,Python,Go,Rust,security engineering"><link rel=author href=/humans.txt><link rel=api-catalog href=/.well-known/api-catalog type=application/linkset+json><link rel=service-desc href=/.well-known/openapi.json type=application/vnd.oai.openapi+json><link rel=service-doc href=/agent-api.md type=text/markdown><link rel=describedby href=/.well-known/agent-skills/index.json type=application/json><link rel=icon type=image/png href=/images/favicon.png><link rel=canonical href=https://adlermedrado.com.br/posts/signing-html-pages-with-gpg/><link rel=alternate type=application/rss+xml title="Adler Medrado's corner of the web" href=/index.xml><link href=/css/styles.css rel=stylesheet></head><body><header class=glitch-zone><nav class=navbar role=navigation aria-label="Main Navigation"><div class=navbar_left><a href=/ class=h-card rel=me><strong>Adler Medrado<span class=cursor-blink>|</span></strong></a></div><div class="navbar_right navbar_right_animated"><a href=/about>about</a>
+<a href=/projects>projects</a>
+<a href=/posts>posts</a>
+<a href=/missives>missives</a>
+<a href=/now>now</a>
+<a href=/uses>uses</a>
+<a href=/contact>contact</a>
+<a href=/index.xml aria-label="RSS feed">rss</a>
+<button class=theme-toggle id=theme-toggle aria-label="Toggle theme">
+<span class=label-dark>☀ light</span>
+<span class=label-light>☾ dark</span></button></div></nav><div class=tagline-bar><span id=tagline>There's no place like 127.0.0.1.</span></div></header><main><section class=section><article><div><h1>Signing HTML Pages with GPG</h1><div><div><p><small><time>January 7, 2024</time>
+|
+6 minutes read</small><div class=post-tags><p><strong>Tags:</strong>
+<a href=/tags/site>site</a>,
+<a href=/tags/gpg>gpg</a>,
+<a href=/tags/security>security</a></p></div></p></div><span class=line_break></span></div><div class=content><p>A few months ago I rebuilt this site. I was using WordPress and wasn&rsquo;t very
+happy with it, so I decided to use a static site generator, in this case <a href=https://gohugo.io>Hugo</a>.</p><p>In the past I&rsquo;ve used <a href=https://getpelican.com>Pelican</a>, <a href=https://jekyllrb.com>Jekyll</a> and Dangolino,
+the last one being a tool I built myself but discontinued after a while.
+If I&rsquo;m not mistaken, there are posts here talking about them.</p><h2 id=why-sign-the-pages>Why sign the pages?</h2><p>I see cryptography as a defense mechanism. I believe people should
+encrypt everything, to try to guarantee security, privacy and authenticity, among other things.</p><p>In this specific case, when I decided to restructure this site I thought about guaranteeing that
+the content published here was in fact produced by me. That would prevent a situation
+where someone with improper access to my server altered content posted here and
+compromised me in some way.</p><p>That was one point, but these days, with the amount of fake news published on the internet,
+as well as the indiscriminate use of AI, it&rsquo;s hard to know what is trustworthy or not,
+and I want at least what I post to be easily identified as legitimate.</p><h2 id=doing-this-on-my-site-will-it-change-anything>Doing this on my site, will it change anything?</h2><p>On its own it won&rsquo;t change anything, but imagine if everyone who published
+something on their sites did this? That would change something, right?</p><p>Using GPG/PGP isn&rsquo;t trivial, but it isn&rsquo;t rocket science either.
+There are posts here where I&rsquo;ve covered the subject. They&rsquo;re a few years old and may be
+outdated, but they work as a starting point if you&rsquo;re just now starting to study the topic.</p><h2 id=how-a-gpg-signature-works>How a GPG signature works</h2><p><a href=https://www.gnupg.org>GPG</a>, or GNU Privacy Guard, is a free implementation of
+<a href=https://www.openpgp.org>OpenPGP</a>, a standard for encryption, decryption,
+signing, etc., based on PGP, developed by Phil Zimmermann.</p><p>Basically GPG is a software suite that lets you manage cryptographic keys and
+encrypt and decrypt using the keys it manages.</p><p>When a person creates a key pair, they can share the public key with other people,
+who in turn also share theirs, and when there&rsquo;s a trust relationship between them,
+their keys can be mutually signed, which demonstrates to third parties that the keys are legitimate.</p><p>My public key is available <a href=/pub-key.asc>here</a> as well as on the
+<a href="https://keys.openpgp.org/search?q=FF676DC52A0191C3">OpenPGP server</a>.</p><p>Back to the point&mldr;</p><p>In the case of the signatures on my site&rsquo;s HTML pages, anyone can verify
+whether they&rsquo;re signed with my key or not. In the latter case, the content isn&rsquo;t legitimate.</p><h2 id=sign-the-file-itself-or-use-a-separate-file>Sign the file itself or use a separate file?</h2><p>My site&rsquo;s files are signed inside the HTML itself, but the signature could
+be in a separate file.</p><p>In a separate file, it would be something like this: the address <a href=https://site.com/index.html>https://site.com/index.html</a>
+would have a corresponding file at <a href=https://site.com/index.asc>https://site.com/index.asc</a>,
+whose content is the cryptographic signature of the index.html file.</p><p>I chose to keep it in the same file to make
+the validation process easier, but both ways are valid.</p><p>If you&rsquo;re curious to see what the file with the embedded signature looks like, use
+your browser&rsquo;s <em>View Page Source</em> feature.</p><h2 id=how-do-you-validate-the-integrity-of-the-signed-file>How do you validate the integrity of the signed file?</h2><p>First my public key must be imported into your key manager (GPG Suite, for example),
+then you just download the HTML file and use GPG&rsquo;s <em>verify</em> command to check integrity.</p><p>To validate the HTML file of my site&rsquo;s home page, just run the following command in your terminal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
+</span></span></code></pre></div><p>Result:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
+</span></span><span style=display:flex><span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+</span></span><span style=display:flex><span>                                 Dload  Upload   Total   Spent    Left  Speed
+</span></span><span style=display:flex><span><span style=color:#ae81ff>100</span>  <span style=color:#ae81ff>7413</span>    <span style=color:#ae81ff>0</span>  <span style=color:#ae81ff>7413</span>    <span style=color:#ae81ff>0</span>     <span style=color:#ae81ff>0</span>   <span style=color:#ae81ff>7803</span>      <span style=color:#ae81ff>0</span> --:--:-- --:--:-- --:--:--  <span style=color:#ae81ff>7803</span>
+</span></span><span style=display:flex><span>gpg: Signature made Dom <span style=color:#ae81ff>31</span> Dez 13:19:04 <span style=color:#ae81ff>2023</span> -03
+</span></span><span style=display:flex><span>gpg:                using RSA key 39A90E7D803B5C02D3EFEBA7FF676DC52A0191C3
+</span></span><span style=display:flex><span>gpg: Good signature from <span style=color:#e6db74>&#34;Adler Medrado &lt;adler@adlermedrado.com.br&gt;&#34;</span> <span style=color:#f92672>[</span>ultimate<span style=color:#f92672>]</span>
+</span></span></code></pre></div><p>To show what would happen if the file&rsquo;s content were modified, I
+made a change and asked it to verify again. The result:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>curl https://adlermedrado.com.br/ | gpg --verify
+</span></span><span style=display:flex><span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+</span></span><span style=display:flex><span>                                 Dload  Upload   Total   Spent    Left  Speed
+</span></span><span style=display:flex><span><span style=color:#ae81ff>100</span>  <span style=color:#ae81ff>7423</span>    <span style=color:#ae81ff>0</span>  <span style=color:#ae81ff>7423</span>    <span style=color:#ae81ff>0</span>     <span style=color:#ae81ff>0</span>   <span style=color:#ae81ff>7813</span>      <span style=color:#ae81ff>0</span> --:--:-- --:--:-- --:--:--  <span style=color:#ae81ff>7813</span>
+</span></span><span style=display:flex><span>gpg: Signature made Dom <span style=color:#ae81ff>31</span> Dez 13:19:04 <span style=color:#ae81ff>2023</span> -03
+</span></span><span style=display:flex><span>gpg:                using RSA key 39A90E7D803B5C02D3EFEBA7FF676DC52A0191C3
+</span></span><span style=display:flex><span>gpg: BAD signature from <span style=color:#e6db74>&#34;Adler Medrado &lt;adler@adlermedrado.com.br&gt;&#34;</span> <span style=color:#f92672>[</span>ultimate<span style=color:#f92672>]</span>
+</span></span></code></pre></div><p>This result indicates that the file was modified, meaning it isn&rsquo;t intact
+according to the signature contained in it.</p><h2 id=how-to-sign-the-files>How to sign the files</h2><p>As I mentioned earlier, I&rsquo;m using Hugo to generate the site&rsquo;s static
+files, and Hugo has a specific command for that. Since there are several commands
+used in this process, I put them all in a Makefile because my memory
+is terrible.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-Makefile data-lang=Makefile><span style=display:flex><span><span style=color:#a6e22e>help</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;targets:&#34;</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;serve: Run a local hugo development server&#34;</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;build: Build the minified version of the site&#34;</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;clear-sign: PGP Clearsign all HTML pages of the site&#34;</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;deploy: Deploy files to server&#34;</span>
+</span></span><span style=display:flex><span>	@echo <span style=color:#e6db74>&#34;help: Show this help&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>serve</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>	hugo server -D
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>build</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>	hugo --gc --minify
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>clear-sign</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>	./clearsign_html.sh
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>deploy</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>	rsync -rvhe ssh --progress --delete ./public/ host:dir
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>.PHONY</span><span style=color:#f92672>:</span> serve build signature
+</span></span></code></pre></div><p>After writing a new post, I use the <em>build</em> command to convert the markdown
+files into HTML, then I use the <em>clear-sign</em> command to sign each
+file individually, and then I update the server with the new files
+using the <em>deploy</em> command.</p><p>To produce the signatures, I created a small bash script that is executed
+for each file:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/usr/bin/env bash
+</span></span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>shopt -s globstar
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> sign_html <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>  html<span style=color:#f92672>=</span>$1
+</span></span><span style=display:flex><span>  temp<span style=color:#f92672>=</span>/tmp/pgp-html-$$
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  echo <span style=color:#e6db74>&#34;Copying file </span>$1<span style=color:#e6db74> to </span>$temp<span style=color:#e6db74> in order to be signed&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>(</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#39;--&gt;&#39;</span>
+</span></span><span style=display:flex><span>    cat <span style=color:#e6db74>&#34;</span>$html<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#39;&lt;!--&#39;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>)</span> &gt;$temp
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  echo <span style=color:#e6db74>&#34;Signing </span>$temp<span style=color:#e6db74> and renaming to </span>$html<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>(</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#39;&lt;!--&#39;</span>
+</span></span><span style=display:flex><span>    gpg --clearsign --default-key YOUR_KEY --output - $temp
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#39;--&gt;&#39;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>)</span> &gt;<span style=color:#e6db74>&#34;</span>$html<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  echo <span style=color:#e6db74>&#34;Cleaning the garbage...&#34;</span>
+</span></span><span style=display:flex><span>  rm $temp
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i in public/**/*.html; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>  sign_html <span style=color:#e6db74>&#34;</span>$i<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><h2 id=if-you-dont-use-it-consider-giving-it-some-thought>If you don&rsquo;t use it, consider giving it some thought</h2><p>Managing keys isn&rsquo;t trivial. You need to study and understand the tool and the concepts,
+which is why most people only use cryptography in cases they consider important.</p><p>That&rsquo;s why I find projects like <a href=https://keybase.io>Keybase</a> interesting,
+since they make key management easier and promote the use of cryptography.</p><p>If you&rsquo;ve never used GPG, I suggest starting there.</p><h2 id=and-from-here-on>And from here on?</h2><p>I&rsquo;ve covered only a single point related to cryptography. This universe is
+vast and I learn new things daily, and if you have the time and interest in the subject,
+you&rsquo;ll come across very interesting topics such as Bitcoin (cryptocurrencies in general)
+and the <a href=https://nostr.com>Nostr</a> protocol, for example.</p><p>Have fun. I hope that little by little people come to understand more about the
+importance of this topic and reach the same conclusion I did:
+<strong>Cryptography is our defense. Encrypt everything you can.</strong></p></div></div></article><nav class=post-nav aria-label="Post navigation"><div class=post-nav__prev><a href=https://adlermedrado.com.br/posts/ferramentas-para-uso-diario/>Ferramentas para uso diário</a></div><span class=post-nav__separator aria-hidden=true>|</span><div class=post-nav__next><a href=https://adlermedrado.com.br/posts/assinando-html-com-gpg/>Assinando páginas HTML com GPG</a></div></nav></section></main><footer class=glitch-zone role=contentinfo><div class=footer-content><div class=copyright><p><small>&copy; 1996-2026 Adler Medrado</small></p></div><div class=gpg_signed_info><div class=gpg-callout><div class=gpg-callout__icon aria-hidden=true>🔏</div><div class=gpg-callout__text><p class=gpg-callout__title>All pages are PGP signed.</p><p class=gpg-callout__subtitle>Learn how to verify my PGP signature <a class=gpg-callout__link href=/posts/verify-signatures>here</a>.</p></div></div><p><em>Privacy policy: this website employs no tracking.</em></p><p><span class=badge-a-plus><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
+<span class=badge-description>Mozilla Observatory Security Rating</span></p></div></div></footer></body></html>

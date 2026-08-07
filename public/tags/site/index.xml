@@ -359,7 +359,14 @@ este último era uma ferramenta criada por mim, mas que descontinuei depois de a
 Se não me engano, há posts aqui falando sobre eles.&lt;/p&gt;
 &lt;h2 id="por-que-assinar-as-páginas"&gt;Por que assinar as páginas?&lt;/h2&gt;
 &lt;p&gt;Eu vejo a criptografia como um mecanismo de defesa, acredito que as pessoas devem
-criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.&lt;/p&gt;</description></item><item><title>Planet Adler</title><link>https://adlermedrado.com.br/posts/planet-adler/</link><pubDate>Thu, 22 May 2008 11:16:52 -0300</pubDate><guid>https://adlermedrado.com.br/posts/planet-adler/</guid><description>&lt;p&gt;Publiquei a alguns minutos o planet adler que consiste em um espaço no meu site onde eu mostro o último post de blogs
+criptografar tudo, para tentar garantir segurança, privacidade e autenticidade, entre outras coisas.&lt;/p&gt;</description></item><item><title>Signing HTML Pages with GPG</title><link>https://adlermedrado.com.br/posts/signing-html-pages-with-gpg/</link><pubDate>Sun, 07 Jan 2024 11:44:54 -0300</pubDate><guid>https://adlermedrado.com.br/posts/signing-html-pages-with-gpg/</guid><description>&lt;p&gt;A few months ago I rebuilt this site. I was using WordPress and wasn&amp;rsquo;t very
+happy with it, so I decided to use a static site generator, in this case &lt;a href="https://gohugo.io"&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the past I&amp;rsquo;ve used &lt;a href="https://getpelican.com"&gt;Pelican&lt;/a&gt;, &lt;a href="https://jekyllrb.com"&gt;Jekyll&lt;/a&gt; and Dangolino,
+the last one being a tool I built myself but discontinued after a while.
+If I&amp;rsquo;m not mistaken, there are posts here talking about them.&lt;/p&gt;
+&lt;h2 id="why-sign-the-pages"&gt;Why sign the pages?&lt;/h2&gt;
+&lt;p&gt;I see cryptography as a defense mechanism. I believe people should
+encrypt everything, to try to guarantee security, privacy and authenticity, among other things.&lt;/p&gt;</description></item><item><title>Planet Adler</title><link>https://adlermedrado.com.br/posts/planet-adler/</link><pubDate>Thu, 22 May 2008 11:16:52 -0300</pubDate><guid>https://adlermedrado.com.br/posts/planet-adler/</guid><description>&lt;p&gt;Publiquei a alguns minutos o planet adler que consiste em um espaço no meu site onde eu mostro o último post de blogs
 que eu considero relevantes.&lt;/p&gt;
 &lt;p&gt;Eu acho interessante fazer algo do gênero por alguns motivos:&lt;/p&gt;
 &lt;ul&gt;

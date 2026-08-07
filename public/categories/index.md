@@ -12,5 +12,5 @@ url: "https://adlermedrado.com.br/categories/"
 
 
 - [Pessoal](https://adlermedrado.com.br/categories/pessoal/) - 2026-07-09
-- [Personal](https://adlermedrado.com.br/categories/personal/) - 2026-06-12
+- [Personal](https://adlermedrado.com.br/categories/personal/) - 2026-07-09
 - [Mac](https://adlermedrado.com.br/categories/mac/) - 2021-06-09

@@ -3,7 +3,7 @@ title: "The Circus I Never Saw"
 date: 2026-06-12T10:00:00-03:00
 draft: false
 slug: "the-circus-i-never-saw"
-languages: ["portuguese"]
+languages: ["english"]
 description: "The day I reached the circus lot right after it left — and why it was the traces, not the show, that stayed with me."
 tags: ["memory", "childhood", "personal essay", "Maringá"]
 categories: ["Personal"]

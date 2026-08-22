@@ -1,16 +1,19 @@
 {{ define "main" }}
-{{ .Content }}
+<section class="content-shell static-page">
+  <div class="reading-column">
+    {{ .Content }}
+  </div>
 
-<section class="latest-posts">
-    <h2>Latest Logs</h2>
-    <ul>
-      {{ range first 10 .Site.RegularPages.ByDate.Reverse }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <small>{{ .Date.Format "02 Jan 2006" }}</small>
-        </li>
-      {{ end }}
-    </ul>
+  <section class="latest-posts">
+      <h2>Latest Logs</h2>
+      <ul>
+        {{ range first 10 .Site.RegularPages.ByDate.Reverse }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <small>{{ .Date.Format "02 Jan 2006" }}</small>
+          </li>
+        {{ end }}
+      </ul>
   </section>
-
+</section>
 {{ end }}

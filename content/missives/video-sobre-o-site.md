@@ -2,6 +2,7 @@
 title: "Video sobre o meu site"
 date: 2025-06-04T20:17:00-03:00
 draft: false
+languages: ["portuguese"]
 tags: [privacidade, seguranca, criptografia]
 ---
 

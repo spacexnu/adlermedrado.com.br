@@ -1,3 +1,5 @@
 {{ define "main" }}
-{{ .Content }}
+<div class="content-shell simple-page{{ if eq .RelPermalink "/about/" }} simple-page--about{{ else }} reading-column{{ end }}">
+  {{ .Content }}
+</div>
 {{ end }}

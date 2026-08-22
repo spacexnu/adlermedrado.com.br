@@ -1,0 +1,14 @@
+{{- $locale := .Site.Language.Locale | default "en" -}}
+{{- with .Params.languages -}}
+  {{- if in . "portuguese" -}}
+    {{- $locale = "pt-BR" -}}
+  {{- else if in . "english" -}}
+    {{- $locale = "en" -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq .RelPermalink "/languages/portuguese/" -}}
+  {{- $locale = "pt-BR" -}}
+{{- else if eq .RelPermalink "/languages/english/" -}}
+  {{- $locale = "en" -}}
+{{- end -}}
+{{- return $locale -}}

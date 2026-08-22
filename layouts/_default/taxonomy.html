@@ -1,23 +1,25 @@
 {{ define "main" }}
-<section>
-  <div>
+<section class="content-shell">
+  <div class="reading-column">
+    <header class="page-header">
     <h1>
       {{ .Title }}
     </h1>
-    <div>
+    </header>
+    <div class="entry-list">
       {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
       {{ range $name, $value := $taxonomy }}
-      <div>
-        <div><p>{{ $name }} </p></div>
-        <div>
+      <section class="entry-list__item">
+        <h2>{{ $name }}</h2>
+        <ul>
           {{ range $value.Pages }}
-          <p hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </p>
+          <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}">{{ .LinkTitle }}</a></li>
           {{ end }}
-        </div>
-      </div>
+        </ul>
+      </section>
       {{ end }}
       {{ end }}
     </div>
   </div>
 </section>
-{{ end }}  
+{{ end }}

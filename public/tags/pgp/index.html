@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <script src="/js/theme-toggle.js"></script>
+    <script src="/js/mobile-navigation.js"></script>
     <script src="/js/taglines.js"></script>
     <script src="/js/webmcp.js" defer></script>
     <meta charset="utf-8" />
@@ -68,7 +69,8 @@
                 <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
             </a>
         </div>
-        <div class="navbar_right navbar_right_animated">
+        <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">menu</button>
+        <div class="navbar_right navbar_right_animated" id="primary-navigation">
             <a href="/about">about</a>
             <a href="/projects">projects</a>
             <a href="/posts">posts</a>
@@ -77,7 +79,7 @@
             <a href="/uses">uses</a>
             <a href="/contact">contact</a>
             <a href="/index.xml" aria-label="RSS feed">rss</a>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="true">
                 <span class="label-dark">☀ light</span>
                 <span class="label-light">☾ dark</span>
             </button>
@@ -88,23 +90,27 @@
     </div>
 </header>
 <main>
-<section class="tag-posts">
-    <h1 class="text-4xl font-bold mb-4">Pgp</h1>
-    <p class="text-gray-600 mb-6">Posts tagged with <strong>Pgp</strong>.</p>
+<section class="content-shell tag-posts">
+    <div class="reading-column">
+      <header class="page-header">
+        <h1>Pgp</h1>
+        <p class="page-intro">Posts tagged with <strong>Pgp</strong>.</p>
+      </header>
 
-    
-    <article class="mb-10">
-        <h2 class="text-2xl font-semibold mb-1">
-            <a href="/posts/gpg-no-macosx-snow-leopard/">GPG no MacOS X Snow Leopard</a>
-        </h2>
-        <p class="text-sm text-gray-500">21 Feb 2010</p>
-        <p><p>Desde que comprei meu mac e instalei o Snow Leopard no ano passado, eu busquei alguma forma de instalar o GPG integrado
+      <div class="entry-list">
+        
+        <article class="entry-list__item">
+            <h2><a href="/posts/gpg-no-macosx-snow-leopard/">GPG no MacOS X Snow Leopard</a></h2>
+            <time datetime="2010-02-21">21 Feb 2010</time>
+            <div><p>Desde que comprei meu mac e instalei o Snow Leopard no ano passado, eu busquei alguma forma de instalar o GPG integrado
 ao cliente de email &ldquo;Mail&rdquo; que vem com o Mac OS X, mas estava complicado porque a versão do Mail que vem com o Snow
 Leopard não suporta o GPGMail que é um bundle para o Mail que permite que esta integração seja feita.</p>
 <p>Hoje, senti necessidade novamente em criptografar meus emails utilizando GPG e por isso fui atrás de uma solução para o
-problema supracitado e desta vez eu encontrei um tutorial bacana que me permitiu fazer esta integração.</p></p>
-    </article>
-    
+problema supracitado e desta vez eu encontrei um tutorial bacana que me permitiu fazer esta integração.</p></div>
+        </article>
+        
+      </div>
+    </div>
 </section>
 
 </main><footer class="glitch-zone" role="contentinfo">

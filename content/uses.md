@@ -40,15 +40,12 @@ Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 Tools that power my day-to-day - whether I’m writing code, answering emails, or navigating the system.
 
 - **Browser**
-  - Safari - my main browser for daily usage
   - Brave - mostly for Nostr usage
   - Edge - when using windows
+  - Tor Browser - For testing my website and its onion service over the Tor network.
 - **Apple Mail** - old-school, but essential
 - **Microsoft Outlook** - why not?
-- **Notes app** - for quick thoughts, task lists, project ideas
-- **Spotlight ~~Alfred~~ + Apple Shortcuts** - for quick actions, workflows, and automation
-- **Apple Terminal** - giving a new chance ~iTerm2 - my terminal of choice~
-- **ZSH** After experimenting with Fish, I reverted to Zsh to maintain a more standardized system setup
+  - **ZSH** After experimenting with Fish, I reverted to Zsh to maintain a more standardized system setup
 
 ---
 
@@ -69,7 +66,7 @@ Technologies I use across projects - from building APIs to backend infrastructur
 - **Languages:** Python, Java, Golang, PHP, JavaScript
 - **Databases:** PostgreSQL, MySQL
 - **Frameworks:** Django, FastAPI, Spring Boot
-- **ORMs:** SQLAlchemy, Django ORM
+- **ORMs:** SQLAlchemy, Django ORM, JPA, GORM
 - **Containerization:** Docker
 
 ### 🖋️ Editors & IDEs
@@ -77,7 +74,8 @@ Technologies I use across projects - from building APIs to backend infrastructur
 - **Neovim** - my main editor
 - **~IntelliJ IDEA Ultimate~** — I’ve been using it less over the past few months, and now I’ve stopped completely. It’s still the best tool, but they’re forcing AI into everything, ignoring long-standing bugs, and increasing the price. That’s a dealbreaker.
 - **tmux** - for multi-session workflows
-- **VS Code** - I'm using it a lot these days
+- **VS Code** - ~~I’ve been using it a lot lately.~~ I tried. I just can’t.
+- **IntelliJ IDEA** - Going back to it, with all the JetBrains AI nonsense disabled.
 
 ---
 
@@ -101,7 +99,7 @@ I take privacy seriously - both mine and my users.
   - LangChain + ChromaDB
   - Local RAG pipelines with Markdown data
   - PrivateGPT
-  - VS Code agents + Copilot replacements
+  - ~~VS Code agents + Copilot replacements~~
   - ChatGPT + Codex
   - Anthropic Claude
 
@@ -109,8 +107,8 @@ I take privacy seriously - both mine and my users.
 
 ## 🖥️ Operating Systems
 
-- **macOS** - main development and creative environment
-- **Linux** - for servers, experiments, and staying sharp
+- **macOS** - ~~My main development and creative environment.~~ I recently gave my MacBook Air to my wife.- 
+- **Linux** - for servers, experiments, and WSL2
 - **Windows** - turning into my daily driver on my Acer Predator
 
 ---

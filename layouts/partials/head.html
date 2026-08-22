@@ -7,15 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ partial "opengraph.html" . }}
+    {{ $metadata := partial "metadata.html" . }}
     <title>{{ .Title }}</title>
-    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
-    {{ with .Params.keywords }}
-    <meta name="keywords" content="{{ . }}">
-    {{ else }}
-    {{ with .Site.Params.keywords }}
-    <meta name="keywords" content="{{ . }}">
-    {{ end }}
-    {{ end }}
+    <meta name="description" content="{{ $metadata.description }}">
+    {{ with $metadata.keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
     <link rel="author" href="/humans.txt"/>
     <link rel="api-catalog" href="/.well-known/api-catalog" type="application/linkset+json"/>
     <link rel="service-desc" href="/.well-known/openapi.json" type="application/vnd.oai.openapi+json"/>

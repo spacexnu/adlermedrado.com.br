@@ -9,7 +9,7 @@ date: 2025-06-04T21:33:15-03:00
 
 This is a [now page](https://nownownow.com), and if you have your own site, [you should make one](https://nownownow.com) too.
 
-### Last updated: 2026-07-05
+### Last updated: 2026-08-22
 
 ---
 
@@ -62,7 +62,6 @@ Mostly rock, fusion, and everything in between. Here’s what’s been on repeat
 ### 🎸 Rock
 
 - \_Type O Negative\_\_ - Life if Killing Me
-- _Doom Slayer_ - Meldamor
 
 ### 🧊 Yugoslav New Wave / Minimal Synth.
 

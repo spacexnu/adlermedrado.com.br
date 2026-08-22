@@ -24,7 +24,7 @@ layout: "simplepage"
 
 ## Currently
 
-- Building [FraudTalon](https://fraudtalon.com), an AI-powered platform that detects phishing, scams, and online fraud in emails, images, and URLs.
+- Building FraudTalon, an AI-powered platform that detects phishing, scams, and online fraud in emails, images, and URLs.
 - Exploring local and cloud AI stacks to keep defenses close to the metal.
 - Finishing a History degree while staying embedded in hacker culture.
 

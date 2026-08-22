@@ -25,7 +25,7 @@ O pipeline está assim:
 - Análise por IA (via OpenAI) levando em conta todo o conteúdo textual
 - Score consolidado com os sinais suspeitos encontrados
 
-Essa atualização transforma o [FraudTalon](https://fraudtalon.com) em uma ferramenta muito mais útil para análise de
+Essa atualização transforma o FraudTalon em uma ferramenta muito mais útil para análise de
 e-mails suspeitos, como golpes de Pix, phishing, ou promessas falsas de investimento.
 
 O foco a partir de agora será:

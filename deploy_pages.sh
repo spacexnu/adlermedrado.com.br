@@ -19,7 +19,6 @@ else
 fi
 
 echo "📟  Commit and push changes..."
-git add public/*
 git add content/*
 git add -p
 git commit -m "Site update at $CURRENT_DATETIME"

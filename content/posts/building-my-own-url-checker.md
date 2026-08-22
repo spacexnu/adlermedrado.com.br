@@ -10,7 +10,7 @@ description: "After testing several URL checking APIs and services, I decided to
 
 Over the last few days I dove deep into a question that had been bothering me for a while: validating suspicious URLs in the context of digital fraud.
 
-[FraudTalon](https://fraudtalon.com) already handles text, images, and emails. The idea is simple: extract any URL contained in that content and check whether it shows signs of being malicious. It sounds simple, but once you start testing the services available on the market, it gets a lot deeper than that.
+FraudTalon already handles text, images, and emails. The idea is simple: extract any URL contained in that content and check whether it shows signs of being malicious. It sounds simple, but once you start testing the services available on the market, it gets a lot deeper than that.
 
 I tried several options: Google Safe Browsing, URLScan, PhishTank, OpenPhish… and the result was frustrating. Many have severe limitations — restricted usage, poor coverage, APIs that block closed-source projects, impractical pricing (some starting at 500 dollars a month!). And even the free ones fail badly at basic detections. Safe Browsing itself, for example, only detects what is already widely known. If the scam URL is new, it will tell you everything is fine. Useless.
 

@@ -33,7 +33,7 @@ Trying to improve my quality of life. Right now I’m focused on:
 
 Building and maintaining a few personal projects:
 
-- [FraudTalon](https://fraudtalon.com)
+- FraudTalon
 - [ShadowData](https://github.com/spacexnu/ShadowData)
 - [SovereignRAG](https://github.com/spacexnu/sovereign-rag)
 - [Log Analyzer](https://github.com/spacexnu/log-analyzer)

@@ -25,7 +25,7 @@ The pipeline now works like this:
 - AI analysis (via OpenAI) that takes into account the full textual content
 - Final score with a breakdown of suspicious indicators
 
-This update makes [FraudTalon](https://fraudtalon.com) a much more powerful tool for analyzing suspicious emails like
+This update makes FraudTalon a much more powerful tool for analyzing suspicious emails like
 phishing, Pix scams, or fake investment offers.
 
 Next priorities:

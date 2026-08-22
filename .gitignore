@@ -1,5 +1,9 @@
 /.idea/
 resources/*
+/public/
+/.hugo_build.lock
+/index.html
+/index.html.asc
 .DS_Store
 .vscode
 deploy.env

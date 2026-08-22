@@ -8,6 +8,7 @@ help:
 	@echo "clear-sign: Generate .asc signatures for published assets"
 	@echo "deploy: Deploy files to server"
 	@echo "verify-agent-discovery: Build and validate agent discovery artifacts"
+	@echo "verify-site-ui: Build and validate site UI and accessibility contracts"
 	@echo "help: Show this help"
 	@echo "build-onion: Build the Tor version of the site"
 	@echo "deploy-onion: Deploy Tor version to the hidden service"
@@ -34,4 +35,7 @@ deploy-onion:
 verify-agent-discovery:
 	./scripts/verify_agent_discovery.sh
 
-.PHONY: serve build build-onion clear-sign deploy deploy-onion verify-agent-discovery
+verify-site-ui:
+	./scripts/verify_site_ui.sh
+
+.PHONY: serve build build-onion clear-sign deploy deploy-onion verify-agent-discovery verify-site-ui

@@ -1,10 +1,10 @@
 ---
-title: "FraudTalon"
+title: "Fraudtalon"
 description: "Adler Medrado (spacexnu) - software engineer, cybersecurity enthusiast, AI practitioner, creator of FraudTalon and Sovereign-RAG. Technical content on security, AI, and digital sovereignty."
 url: "https://adlermedrado.com.br/tags/fraudtalon/"
 ---
 
-# FraudTalon
+# Fraudtalon
 
 
 

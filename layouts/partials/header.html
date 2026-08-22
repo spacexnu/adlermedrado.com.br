@@ -5,7 +5,8 @@
                 <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
             </a>
         </div>
-        <div class="navbar_right navbar_right_animated">
+        <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">menu</button>
+        <div class="navbar_right navbar_right_animated" id="primary-navigation">
             <a href="/about">about</a>
             <a href="/projects">projects</a>
             <a href="/posts">posts</a>
@@ -14,7 +15,7 @@
             <a href="/uses">uses</a>
             <a href="/contact">contact</a>
             <a href="/index.xml" aria-label="RSS feed">rss</a>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="true">
                 <span class="label-dark">☀ light</span>
                 <span class="label-light">☾ dark</span>
             </button>

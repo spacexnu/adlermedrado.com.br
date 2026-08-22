@@ -16,7 +16,7 @@ url: "https://adlermedrado.com.br/tags/"
 - [Nginx](https://adlermedrado.com.br/tags/nginx/) - 2026-07-29
 - [Hugo](https://adlermedrado.com.br/tags/hugo/) - 2026-07-29
 - [Dnssec](https://adlermedrado.com.br/tags/dnssec/) - 2026-07-29
-- [Ai](https://adlermedrado.com.br/tags/ai/) - 2026-07-29
+- [AI](https://adlermedrado.com.br/tags/ai/) - 2026-07-29
 - [Agents](https://adlermedrado.com.br/tags/agents/) - 2026-07-29
 - [Vida](https://adlermedrado.com.br/tags/vida/) - 2026-07-09
 - [Memory](https://adlermedrado.com.br/tags/memory/) - 2026-07-09
@@ -70,7 +70,7 @@ url: "https://adlermedrado.com.br/tags/"
 - [URL Verification](https://adlermedrado.com.br/tags/url-verification/) - 2025-07-20
 - [Projeto](https://adlermedrado.com.br/tags/projeto/) - 2025-07-20
 - [Project](https://adlermedrado.com.br/tags/project/) - 2025-07-20
-- [FraudTalon](https://adlermedrado.com.br/tags/fraudtalon/) - 2025-07-20
+- [Fraudtalon](https://adlermedrado.com.br/tags/fraudtalon/) - 2025-07-20
 - [Fraude](https://adlermedrado.com.br/tags/fraude/) - 2025-07-20
 - [Cyberseguranca](https://adlermedrado.com.br/tags/cyberseguranca/) - 2025-07-20
 - [Cybersecurity](https://adlermedrado.com.br/tags/cybersecurity/) - 2025-07-20

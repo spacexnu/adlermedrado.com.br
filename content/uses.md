@@ -72,10 +72,9 @@ Technologies I use across projects - from building APIs to backend infrastructur
 ### 🖋️ Editors & IDEs
 
 - **Neovim** - my main editor
-- **~IntelliJ IDEA Ultimate~** — I’ve been using it less over the past few months, and now I’ve stopped completely. It’s still the best tool, but they’re forcing AI into everything, ignoring long-standing bugs, and increasing the price. That’s a dealbreaker.
 - **tmux** - for multi-session workflows
 - **VS Code** - ~~I’ve been using it a lot lately.~~ I tried. I just can’t.
-- **IntelliJ IDEA** - Going back to it, with all the JetBrains AI nonsense disabled.
+- **IntelliJ IDEA Ultimate** - Going back to it, with all the JetBrains AI nonsense disabled.
 
 ---
 

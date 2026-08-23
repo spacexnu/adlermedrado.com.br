@@ -1,0 +1,35 @@
+{{- $description := "" -}}
+{{- with .Description }}{{ $description = . }}{{ end -}}
+
+{{- if eq $description "" -}}
+  {{- if not .IsPage -}}
+    {{- with .Site.Params.description }}{{ $description = . }}{{ end -}}
+  {{- else -}}
+    {{- $content := .Content | replaceRE `(?s)<figure[^>]*>.*?</figure>` "" | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace -}}
+    {{- if $content }}{{ $description = $content }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $description "" }}{{ with .Site.Params.description }}{{ $description = . }}{{ end }}{{ end -}}
+{{- $description = $description | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate 160 -}}
+
+{{- $image := "" -}}
+{{- with .Params.images }}{{ $image = index . 0 }}{{ end -}}
+{{- if eq $image "" }}{{ with .Params.image }}{{ $image = . }}{{ end }}{{ end -}}
+{{- if eq $image "" }}{{ with .Params.og_image }}{{ $image = . }}{{ end }}{{ end -}}
+{{- if eq $image "" }}{{ with .Site.Params.ogImage }}{{ $image = . }}{{ end }}{{ end -}}
+{{- if eq $image "" }}{{ $image = "/images/default-og-image.png" }}{{ end -}}
+{{- $image = $image | absURL -}}
+
+{{- $siteKeywords := .Site.Params.keywords | default (slice) -}}
+{{- $pageKeywords := slice -}}
+{{- with .Params.keywords -}}
+  {{- if reflect.IsSlice . -}}
+    {{- $pageKeywords = . -}}
+  {{- else -}}
+    {{- $pageKeywords = split (printf "%v" .) "," -}}
+  {{- end -}}
+{{- end -}}
+{{- $keywords := union $siteKeywords $pageKeywords -}}
+{{- with .Params.tags }}{{ $keywords = union $keywords . }}{{ end -}}
+
+{{- return (dict "description" $description "image" $image "keywords" $keywords) -}}

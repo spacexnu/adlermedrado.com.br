@@ -1,0 +1,4 @@
+{{- $compact := eq (.Get "style") "compact" -}}
+{{- range hugo.Data.projects }}
+- {{ if .url }}[{{ .name }}]({{ .url }}){{ else }}{{ .name }}{{ end }}{{ if and (not $compact) .summary }}: {{ .summary }}{{ end }}
+{{- end }}

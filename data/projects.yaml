@@ -1,0 +1,26 @@
+# Source for the project lists on /projects and /now.
+# FraudTalon points at on-site writing. The product URL stays off these pages.
+- name: FraudTalon
+  url: /tags/fraudtalon/
+  summary: AI-powered platform that flags phishing, scams, and online fraud across emails, images, and URLs.
+- name: ShadowData
+  url: https://github.com/spacexnu/ShadowData
+  summary: NLP pipeline that hunts for sensitive data leaks inside text and documents.
+- name: log-analyzer
+  url: https://github.com/spacexnu/log-analyzer
+  summary: Real-time attack detection from logs with pragmatic rules and signals.
+- name: hades
+  url: https://github.com/spacexnu/hades
+  summary: Heuristic analysis of domains and embedded sites for quick risk assessments.
+- name: job_finder
+  url: https://github.com/spacexnu/job_finder
+  summary: CLI tool that scrapes tech job listings with filters that actually matter.
+- name: SovereignRAG
+  url: https://github.com/spacexnu/sovereign-rag
+  summary: Fully private, offline sovereign AI pipeline for security code auditing. Own your lab, models, and data with zero cloud lock-in or vendor tracking.
+- name: Shortificator
+  url: https://github.com/spacexnu/shortificator
+  summary: A fully local pipeline that turns long videos into vertical YouTube Shorts. No paid external APIs. It runs on your own machine and uses the GPU via CUDA.
+- name: Pinga
+  url: https://github.com/spacexnu/pinga
+  summary: Small CLI for HTTP requests defined in JSON files. No GUI, no accounts, no cloud sync.

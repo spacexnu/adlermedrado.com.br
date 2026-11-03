@@ -19,10 +19,10 @@
 
     <nav class="pagination" aria-label="Missives pagination">
       {{ if $paginator.HasPrev }}
-      <a class="button" href="{{ $paginator.Prev.URL }}">← Página anterior</a>
+      <a class="button" href="{{ $paginator.Prev.URL }}">← Previous page</a>
       {{ end }}
       {{ if $paginator.HasNext }}
-      <a class="button" href="{{ $paginator.Next.URL }}">Próxima página →</a>
+      <a class="button" href="{{ $paginator.Next.URL }}">Next page →</a>
       {{ end }}
     </nav>
   </div>

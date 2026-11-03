@@ -1,0 +1,26 @@
+{{- $page := .page -}}
+{{- $key := $page.Params.translationKey -}}
+{{- if $key -}}
+{{- $current := $page.RelPermalink -}}
+{{- range where site.RegularPages "Params.translationKey" $key -}}
+{{- if ne .RelPermalink $current -}}
+{{- $lang := "" -}}
+{{- with .Params.languages -}}
+{{- $lang = index . 0 -}}
+{{- end -}}
+{{- if eq $lang "portuguese" -}}
+{{- if eq $.format "markdown" -}}
+{{- printf "\n[Também em português](%s)\n" .Permalink -}}
+{{- else -}}
+<p class="post-translation"><a href="{{ .RelPermalink }}">Também em português</a></p>
+{{- end -}}
+{{- else if eq $lang "english" -}}
+{{- if eq $.format "markdown" -}}
+{{- printf "\n[Also in English](%s)\n" .Permalink -}}
+{{- else -}}
+<p class="post-translation"><a href="{{ .RelPermalink }}">Also in English</a></p>
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}

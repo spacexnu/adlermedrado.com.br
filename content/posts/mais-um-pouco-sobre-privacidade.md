@@ -2,8 +2,8 @@
 title: "Mais um pouco sobre privacidade"
 date: "2013-12-14"
 languages: ["portuguese"]
-tags: 
-  - "privacidade"
+tags:
+  - "privacy"
 ---
 
 Eu resolvi escrever este post depois de ficar pensando neste assunto por um tempo, então se você não se importa muito

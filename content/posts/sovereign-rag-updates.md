@@ -2,6 +2,7 @@
 title: "SovereignRAG Updates"
 date: 2026-06-01T21:53:00-03:00
 languages: ["english"]
+translationKey: "sovereign-rag-updates"
 draft: false
 tags:
   - ai

@@ -2,6 +2,7 @@
 title: "Real-time Deepfakes: what if \"seeing is believing\" no longer means anything?"
 date: 2025-05-10T11:19:13-03:00
 languages: ["english"]
+translationKey: "deepfakes_realtime"
 draft: false
 tags: ["ai", "deepfake", "cryptography", "gpg", "security"]
 ---

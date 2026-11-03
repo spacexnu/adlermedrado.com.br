@@ -2,6 +2,7 @@
 title: "Light theme on the site. Twenty lines of JavaScript."
 date: "2026-05-22"
 languages: ["english"]
+translationKey: "light-theme-twenty-lines-of-javascript"
 tags:
   - "site"
   - "css"

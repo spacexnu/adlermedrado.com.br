@@ -2,8 +2,9 @@
 title: "Deepfakes em tempo real: e se \"ver para crer\" já não valer mais nada?"
 date: 2025-05-10T11:13:20-03:00
 languages: ["portuguese"]
+translationKey: "deepfakes_realtime"
 draft: false
-tags: ["ai", "deepfake", "criptografia", "gpg", "seguranca"]
+tags: ["ai", "deepfake", "cryptography", "gpg", "security"]
 ---
 
 Um projeto open-source chamado Deep-Live-Cam está chamando atenção no GitHub. E com razão.

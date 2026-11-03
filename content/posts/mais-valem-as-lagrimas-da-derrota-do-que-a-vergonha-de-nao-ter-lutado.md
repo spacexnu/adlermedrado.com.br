@@ -2,8 +2,9 @@
 title: "A frase na parede do dojo"
 date: 2026-07-09T10:00:00-03:00
 description: "Uma frase que li numa academia de karatê em 1989 voltou quase vinte anos depois, numa sala de aula de Java."
-tags: ["memoria", "brasilia", "karate", "java", "vida"]
+tags: ["memory", "brasilia", "karate", "java", "vida"]
 languages: ["portuguese"]
+translationKey: "the-line-on-the-dojo-wall"
 categories: ["Pessoal"]
 draft: false
 ---

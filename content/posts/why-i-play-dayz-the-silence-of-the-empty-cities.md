@@ -2,6 +2,7 @@
 title: "Why I Play DayZ: The Silence of Empty Cities"
 date: 2026-06-08T22:59:00-03:00
 languages: ["english"]
+translationKey: "why-i-play-dayz-the-silence-of-the-empty-cities"
 description: "Why I keep coming back to a game about the end of the world, silence, and survival."
 draft: false
 ---

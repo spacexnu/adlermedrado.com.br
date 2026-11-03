@@ -2,6 +2,7 @@
 title: "How to verify my site signatures"
 date: 2025-11-23T12:00:00-03:00
 languages: ["english"]
+translationKey: "verify-signatures"
 draft: false
 tags:
   - gpg

@@ -1,15 +1,15 @@
 /* TEAM */
 	Adler Medrado
 	Contact: adler [at] adlermedrado.com.br
-	Twitter: @adlermedrado
+	Twitter: @spacexnu
 	Youtube: https://www.youtube.com/@adlermedrado
 	From:Sao Paulo, SP, Brasil
 
 /* SITE */
-	Last update: 2026/08/22 17:35 GMT-3
+	Last update: 2026/10/31 13:03 GMT-3
 	Language: Brazilian Portuguese / English
 	Standards: HTML5, CSS3
-	IDE: IntelliJ, Visual Studio Code, Neovim
+	IDE: IntelliJ, Neovim
 
 /* THANKS */
 	Name: James Tomasino (https://tomasino.org)

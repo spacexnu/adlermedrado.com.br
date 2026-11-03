@@ -3,7 +3,7 @@ title: "Video sobre o meu site"
 date: 2025-06-04T20:17:00-03:00
 draft: false
 languages: ["portuguese"]
-tags: [privacidade, seguranca, criptografia]
+tags: [privacy, security, cryptography]
 ---
 
 Essa semana eu [publiquei um vídeo](https://www.youtube.com/watch?v=PpYk139Xw2Y) no [meu canal do Youtube](https://www.youtube.com/@labsadler) explicando

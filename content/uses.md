@@ -1,7 +1,7 @@
 ---
 title: "Uses"
 description: "Here's what I use"
-date: 2026-07-05T14:40:15-03:00
+date: 2026-10-31T03:00:00-03:00
 layout: "staticpage"
 ---
 
@@ -12,14 +12,13 @@ If you’re curious about the tools I use to work, create, write, or simply surv
 This is a living document I update from time to time.  
 Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 
-### Last update: 2026-07-05
+{{< updated >}}
 
 ---
 
 ## 💻 Hardware
 
-- ~MacBook Air M1 - 16GB RAM, 1TB Storage~ - I gave this computer to my wife
-- Acer Predator Helios Neo 16 AI - Core Ultra 9, 32GB RAM, 1TB nvme, RTX5070 - MS Windows 11 + WSL 2 - Turning into my daily driver
+- Acer Predator Helios Neo 16 AI - Core Ultra 9, 32GB RAM, 1TB NVMe, RTX 5070. Windows 11 + WSL 2. This is the daily driver.
 - LG Ultragear 27" Full HD Monitor
 - Logitech MX Anywhere Mouse
 - Logitech K30 Keyboard
@@ -29,9 +28,14 @@ Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 - Philips TAH6509
 - Microphone Fifine AM8
 - Nexstand K2 Folding Laptop Stands (for the company’s laptop)
-- Third-party laptop stand for the Acer Predator ~Dell 3420~ (I gave this Dell computer to my daughter)
+- Third-party laptop stand for the Acer Predator
 - USB-C Hub w/ HDMI
 - Standard office chair, reinforced, custom-made
+
+### Off the desk
+
+- MacBook Air M1, 16GB RAM, 1TB. It went to my wife.
+- Dell 3420. It went to my daughter.
 
 ---
 
@@ -40,21 +44,26 @@ Inspired by Wes Bos’ [uses.tech](https://uses.tech) project.
 Tools that power my day-to-day - whether I’m writing code, answering emails, or navigating the system.
 
 - **Browser**
-  - Brave - mostly for Nostr usage
-  - Edge - when using windows
-  - Tor Browser - For testing my website and its onion service over the Tor network.
-- **Apple Mail** - old-school, but essential
-- **Microsoft Outlook** - why not?
-  - **ZSH** After experimenting with Fish, I reverted to Zsh to maintain a more standardized system setup
+  - Brave - mostly for Nostr
+  - Edge - on Windows
+  - Tor Browser - for testing this website and its onion service
+- **Mail**
+  - Apple Mail
+  - Microsoft Outlook
+  - Gmail
+- **Shell**
+  - Zsh. I tried Fish and came back, to keep a more standard setup.
 
 ---
 
 ## 🌐 This Website
 
-- Built with [Hugo](https://gohugo.io) - fast, static, reliable
-- Custom theme: [Dark Flat](https://github.com/adlermedrado/dark-flat)
-- No JavaScript, no trackers, no analytics  
-  _Just content. No distractions. No surveillance._
+- Built with [Hugo](https://gohugo.io). The layouts live in this repository.
+- A few first-party scripts: theme toggle, mobile menu, taglines, and WebMCP.
+- No trackers and no analytics.
+- Pages are GPG signed.
+
+_Just content. No distractions. No surveillance._
 
 ---
 
@@ -71,10 +80,8 @@ Technologies I use across projects - from building APIs to backend infrastructur
 
 ### 🖋️ Editors & IDEs
 
-- **Neovim** - my main editor
+- **Cursor** - my main editor
 - **tmux** - for multi-session workflows
-- **VS Code** - ~~I’ve been using it a lot lately.~~ I tried. I just can’t.
-- **IntelliJ IDEA Ultimate** - Going back to it, with all the JetBrains AI nonsense disabled.
 
 ---
 
@@ -93,12 +100,11 @@ I take privacy seriously - both mine and my users.
 
 - [Ollama](https://ollama.com) - running local LLMs like:
   - `wizardcoder`, `deepseek-coder`, `mistral`, etc.
-- `llama.cpp` - for ultra-light inference on M1
+- `llama.cpp` - for ultra-light local inference
 - Exploring:
   - LangChain + ChromaDB
   - Local RAG pipelines with Markdown data
   - PrivateGPT
-  - ~~VS Code agents + Copilot replacements~~
   - ChatGPT + Codex
   - Anthropic Claude
 
@@ -106,9 +112,9 @@ I take privacy seriously - both mine and my users.
 
 ## 🖥️ Operating Systems
 
-- **macOS** - ~~My main development and creative environment.~~ I recently gave my MacBook Air to my wife.- 
-- **Linux** - for servers, experiments, and WSL2
-- **Windows** - turning into my daily driver on my Acer Predator
+- **Windows** - daily driver on the Acer Predator
+- **Linux** - servers, experiments, and WSL2
+- **macOS** - the MacBook Air went to my wife, so it is no longer the machine on my desk
 
 ---
 

@@ -2,14 +2,14 @@
 title: "Now"
 description: "What I'm doing now"
 layout: "staticpage"
-date: 2025-06-04T21:33:15-03:00
+date: 2026-10-31T12:20:20-03:00
 ---
 
 ## 📍 What I'm Doing Now
 
 This is a [now page](https://nownownow.com), and if you have your own site, [you should make one](https://nownownow.com) too.
 
-### Last updated: 2026-08-22
+{{< updated >}}
 
 ---
 
@@ -33,13 +33,7 @@ Trying to improve my quality of life. Right now I’m focused on:
 
 Building and maintaining a few personal projects:
 
-- FraudTalon
-- [ShadowData](https://github.com/spacexnu/ShadowData)
-- [SovereignRAG](https://github.com/spacexnu/sovereign-rag)
-- [Log Analyzer](https://github.com/spacexnu/log-analyzer)
-- [Hades](https://github.com/spacexnu/hades)
-- [Pinga](https://github.com/spacexnu/pinga)
-- [shortificator](https://github.com/spacexnu/shortificator)
+{{% projects style="compact" %}}
 
 ---
 
@@ -61,11 +55,21 @@ Mostly rock, fusion, and everything in between. Here’s what’s been on repeat
 
 ### 🎸 Rock
 
-- \_Type O Negative\_\_ - Life if Killing Me
+ - _Life if Killing Me_- Type O Negative
+ - _Wolf Moon_ - Type O Negative
+ - _Mother_ - Danzig 
+ - _Evil_ - Mercyful Fate
+ - _Entheoteosis_ - Kolm
+ - _Hold on to the vision_ - Frank Harris
+
 
 ### 🧊 Yugoslav New Wave / Minimal Synth.
 
 - _Ostavi Sve_ - Max & Intro
+
+### 🛰️ Soviet Synth 
+
+- _Teletourism_ - Bioconstructor
 
 ### 🎶 Fusion / Instrumental
 
@@ -85,7 +89,8 @@ Mostly rock, fusion, and everything in between. Here’s what’s been on repeat
 
 ### 🎛️ Electronic
 
-- It could be the music - Kilig
-- When you grow up, your heart dies
-- Run free (Nite version) - Soulwax
-- You Lot - Orbital
+- _It could be the music_ - Kilig
+- _When you grow up, your heart dies_ - Gunship
+- _Run free (Nite version)_ - Soulwax
+- _You Lot_ - Orbital
+- _There's a difference_ - The Crystal Method

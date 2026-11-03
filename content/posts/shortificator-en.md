@@ -2,6 +2,7 @@
 title: "Shortificator - My personal video generator"
 date: 2026-06-06T09:32:27-03:00
 languages: ["english"]
+translationKey: "shortificator-en"
 draft: false
 tags: ["ai", "youtube", "llm"]
 ---

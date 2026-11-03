@@ -2,6 +2,7 @@
 title: "FraudTalon Updates: Explainable Analysis and Plans for QR Codes and URLs"
 date: 2025-07-16
 languages: ["english"]
+translationKey: "fraudtalon-update-explainable-analysis"
 description: "The new FraudTalon update brings explanations about fraud classification, support for several input types, and plans for analyzing QR codes and suspicious URLs."
 tags: ["fraud", "cybersecurity", "project", "update", "fraudtalon"]
 slug: "fraudtalon-update-july-2025"

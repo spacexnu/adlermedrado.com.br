@@ -3,7 +3,7 @@ title: "Home-Office significa trabalhar de cueca?"
 date: "2015-11-22"
 languages: ["portuguese"]
 tags:
-  - "historia"
+  - "history"
   - "home-office"
 ---
 

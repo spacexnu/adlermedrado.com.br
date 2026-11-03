@@ -2,10 +2,10 @@
 title: "Install lxml on MacBook with Apple Silicon"
 date: "2023-01-03"
 languages: ["english"]
-tags: 
+tags:
   - "mac"
   - "python"
-  - "tip"
+  - "tips"
 ---
 
 ![pip install error when installing lxml](/posts/images/Screenshot-2023-01-03-at-14.57.09-1024x515.png)

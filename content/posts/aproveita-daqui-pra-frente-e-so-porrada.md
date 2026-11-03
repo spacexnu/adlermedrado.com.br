@@ -2,6 +2,7 @@
 title: "Aproveita, daqui pra frente é só porrada"
 date: 2025-01-30T21:21:17-03:00
 languages: ["portuguese"]
+translationKey: "enjoy-it-from-here-on-its-all-punches"
 tags:
 - "general"
 - "bbs"

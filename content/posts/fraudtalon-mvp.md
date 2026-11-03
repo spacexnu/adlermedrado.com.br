@@ -2,6 +2,7 @@
 title: "Fighting online fraud with FraudTalon"
 date: 2025-06-20T11:24:49-03:00
 languages: ["english"]
+translationKey: "fraudtalon-mvp"
 draft: false
 tags: [ai, fraud, security]
 ---

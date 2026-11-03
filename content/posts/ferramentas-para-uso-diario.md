@@ -2,9 +2,10 @@
 title: "Ferramentas para uso diário"
 date: 2023-10-12T10:44:28-03:00
 languages: ["portuguese"]
+translationKey: "tools-for-daily-use"
 tags:
   - "tools"
-  - "dicas"
+  - "tips"
   - "general"
 ---
 

@@ -4,6 +4,7 @@ date: 2026-07-09T10:00:00-03:00
 description: "A line I read on the wall of a karate dojo in 1989 came back almost twenty years later, in a Java classroom."
 tags: ["memory", "brasilia", "karate", "java", "life"]
 languages: ["english"]
+translationKey: "the-line-on-the-dojo-wall"
 categories: ["Personal"]
 draft: false
 ---

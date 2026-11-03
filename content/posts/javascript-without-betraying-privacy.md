@@ -2,6 +2,7 @@
 title: "I added JavaScript to this site and your privacy is still intact"
 date: 2026-06-09T10:00:00-03:00
 languages: ["english"]
+translationKey: "javascript-without-betraying-privacy"
 draft: false
 tags: ["privacy", "javascript", "hugo", "meta"]
 ---

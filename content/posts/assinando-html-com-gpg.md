@@ -2,11 +2,12 @@
 title: "Assinando páginas HTML com GPG"
 date: 2024-01-07T11:44:54-03:00
 languages: ["portuguese"]
+translationKey: "signing-html-pages-with-gpg"
 draft: false
 tags:
   - "site"
   - "gpg"
-  - "seguranca"
+  - "security"
 ---
 
 Há alguns meses eu reformulei este site, eu estava usando wordpress e não estava

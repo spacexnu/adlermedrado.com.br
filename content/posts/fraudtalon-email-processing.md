@@ -2,6 +2,7 @@
 title: "Update: Email (.eml) Analysis with FraudTalon"
 date: 2025-06-28T15:46:07-03:00
 languages: ["english"]
+translationKey: "fraudtalon-email-processing"
 draft: false
 tags: [ fraudtalon, ai, security, fraud ]
 ---

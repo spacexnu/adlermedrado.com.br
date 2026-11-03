@@ -3,7 +3,7 @@ title: "Reflexão diária"
 date: "2015-08-25"
 languages: ["portuguese"]
 tags:
-  - "reflexao"
+  - "reflection"
 ---
 
 Enquanto seu inimigo dorme quente em sua cama, você deve treinar o seu machado com muito esforço e dedicação, e quando

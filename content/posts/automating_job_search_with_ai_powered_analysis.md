@@ -3,7 +3,7 @@ title: "Job Finder - Automating job search with AI powered analysis"
 date: 2025-02-06T18:08:32-03:00
 languages: ["english"]
 tags:
-  - "AI"
+  - "ai"
   - "python"
   - "open-source"
 ---

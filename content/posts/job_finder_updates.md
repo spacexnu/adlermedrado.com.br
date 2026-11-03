@@ -3,7 +3,7 @@ title: "Updated job_finder to run LLM locally"
 date: 2026-04-25T22:16:32-03:00
 languages: ["english"]
 tags:
-  - "AI"
+  - "ai"
   - "python"
   - "open-source"
 ---

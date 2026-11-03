@@ -2,8 +2,9 @@
 title: "Adicionei JavaScript no site e a sua privacidade continua intacta"
 date: 2026-06-09T10:00:00-03:00
 languages: ["portuguese"]
+translationKey: "javascript-without-betraying-privacy"
 draft: false
-tags: ["privacidade", "javascript", "hugo", "meta"]
+tags: ["privacy", "javascript", "hugo", "meta"]
 ---
 
 # JavaScript sem trair a premissa

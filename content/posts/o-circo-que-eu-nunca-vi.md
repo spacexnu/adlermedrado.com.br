@@ -4,8 +4,9 @@ date: 2026-06-12T10:00:00-03:00
 draft: false
 slug: "o-circo-que-nunca-vi"
 languages: ["portuguese"]
+translationKey: "the-circus-i-never-saw"
 description: "O dia em que cheguei ao terreno do circo logo depois que ele foi embora — e por que foram os vestígios, e não o espetáculo, que ficaram na memória."
-tags: ["memória", "infância", "ensaio pessoal", "Maringá"]
+tags: ["memory", "infância", "ensaio pessoal", "Maringá"]
 categories: ["Pessoal"]
 ---
 

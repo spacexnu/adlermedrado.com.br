@@ -2,10 +2,11 @@
 title: "Atualizações no SovereignRAG"
 date: 2026-06-01T21:45:09-03:00
 languages: ["portuguese"]
+translationKey: "sovereign-rag-updates"
 draft: false
 tags:
   - "zend-framework"
-  - "ia"
+  - "ai"
   - "llm"
   - "rag"
   - "auditoria de codigo"

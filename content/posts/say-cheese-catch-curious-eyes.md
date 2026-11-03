@@ -2,8 +2,9 @@
 title: "Say Cheese: Catch Curious Eyes on Your Mac with a Snapshot"
 date: 2025-07-14T09:32:27-03:00
 languages: ["english"]
+translationKey: "say-cheese-catch-curious-eyes"
 draft: false
-tags: ["security", "macos", "open source", "apple", "scripts"]
+tags: ["security", "macos", "open-source", "apple", "scripts"]
 ---
 
 Ever worried someone might peek at your MacBook when you're not around?

@@ -6,7 +6,6 @@ tags:
   - "mac"
   - "macos"
   - "macos-sierra"
-  - "postgres"
   - "postgresql"
 ---
 

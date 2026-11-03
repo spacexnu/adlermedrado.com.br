@@ -2,6 +2,7 @@
 title: "Why You Should Start Using GPG Now"
 date: 2025-04-27
 languages: ["english"]
+translationKey: "gpg-intro-en"
 tags: [gpg, encryption, privacy, security, quantum computing]
 ---
 # Why You Should Start Using GPG Now

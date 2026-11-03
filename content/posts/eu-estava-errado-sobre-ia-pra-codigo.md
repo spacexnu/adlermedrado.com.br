@@ -2,6 +2,7 @@
 title: "Eu era contra programar com IA. Acho que demorei demais"
 date: "2026-05-11"
 languages: ["portuguese"]
+translationKey: "i-was-wrong-aboute-coding-with-ai"
 ---
 
 Durante muito tempo torci o nariz pra essa onda. Achava que era preguiça disfarçada de inovação. Uma forma bonita de pedir código pra uma ferramenta, copiar, colar no projeto e fingir que aquilo era engenharia de software.

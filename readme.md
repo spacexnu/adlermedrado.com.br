@@ -8,6 +8,28 @@ Everything here is self-managed, gpg-signed content, privacy-respecting, and tra
 
 Visit: [https://adlermedrado.com.br](https://adlermedrado.com.br)
 
+## Local development
+
+Requirements: Linux (or WSL) or macOS, Make, curl, tar, and sha256sum or
+shasum. The existing validation scripts also require Node.js 22+ and ripgrep.
+No npm dependencies are needed.
+
+```sh
+make setup  # Download Hugo 0.167.0 and verify its release checksum
+make build  # Generate the minified site in public/
+make serve  # Start the development server at http://localhost:1313
+```
+
+Hugo is installed in `.tools/bin/`, ignored by Git. Make adds this directory
+to PATH automatically; no global installation or sudo is needed. Run
+`make setup` again when preparing a new checkout. To run Hugo directly, use
+`.tools/bin/hugo`.
+
+```sh
+make verify-agent-discovery
+make verify-site-ui
+```
+
 ## Agent discovery
 
 The Hugo build publishes Markdown page variants, a read-only content API,

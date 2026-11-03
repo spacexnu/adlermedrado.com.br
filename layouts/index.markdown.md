@@ -8,10 +8,13 @@ url: {{ .Permalink | jsonify }}
 
 {{ .Site.Params.description }}
 
+Self-hosted, with an onion mirror, and published as Markdown so agents can read the same pages.
+
 ## Site sections
 
 - [About]({{ "about/" | absURL }})
 - [Projects]({{ "projects/" | absURL }})
+- [Start here]({{ "start/" | absURL }})
 - [Posts]({{ "posts/" | absURL }})
 - [Missives]({{ "missives/" | absURL }})
 - [Now]({{ "now/" | absURL }})
@@ -20,10 +23,7 @@ url: {{ .Permalink | jsonify }}
 
 ## Latest posts
 
-{{- $posts := where .Site.RegularPages "Type" "posts" }}
-{{ range first 10 (sort $posts "Date" "desc") }}
-- [{{ .Title }}]({{ .Permalink }}){{ with .Summary }}: {{ . | plainify | htmlUnescape | truncate 200 }}{{ end }}
-{{- end }}
+{{ partial "latest-posts.html" (dict "format" "markdown") }}
 
 ## Agent resources
 

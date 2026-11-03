@@ -1,0 +1,33 @@
+{{- $posts := where site.RegularPages "Type" "posts" -}}
+{{- $groups := slice
+  (dict "title" "English" "path" "/languages/english/" "lang" "english")
+  (dict "title" "Portuguese" "path" "/languages/portuguese/" "lang" "portuguese")
+-}}
+{{- if eq .format "markdown" -}}
+{{- range $group := $groups }}
+{{- $matched := where $posts "Params.languages" "intersect" (slice $group.lang) -}}
+{{- $latest := first 5 $matched.ByDate.Reverse }}
+### [{{ $group.title }}]({{ $group.path | absURL }})
+
+{{ range $latest }}
+- [{{ .Title }}]({{ .Permalink }}){{ with .Summary }}: {{ . | plainify | htmlUnescape | truncate 200 }}{{ end }}
+{{- end }}
+{{ end }}
+{{- else -}}
+<section class="latest-posts">
+  <h2>Latest Logs</h2>
+  {{- range $group := $groups }}
+  {{- $matched := where $posts "Params.languages" "intersect" (slice $group.lang) -}}
+  {{- $latest := first 5 $matched.ByDate.Reverse }}
+  <h3><a href="{{ $group.path }}">{{ $group.title }}</a></h3>
+  <ul>
+    {{- range $latest }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <small>{{ .Date.Format "02 Jan 2006" }}</small>
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+</section>
+{{- end -}}

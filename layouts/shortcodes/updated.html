@@ -1,0 +1,11 @@
+{{- /* The current format is the one absent from the alternatives. */ -}}
+{{- $markdown := false -}}
+{{- range .Page.AlternativeOutputFormats -}}
+  {{- if eq .MediaType.Type "text/html" }}{{ $markdown = true }}{{ end -}}
+  {{- if eq .MediaType.Type "text/markdown" }}{{ $markdown = false }}{{ end -}}
+{{- end -}}
+{{- if $markdown -}}
+Last updated: {{ .Page.Date.Format "2006-01-02" }}
+{{- else -}}
+<p class="page-updated">Last updated: <time datetime="{{ .Page.Date.Format "2006-01-02" }}">{{ .Page.Date.Format "2006-01-02" }}</time></p>
+{{- end -}}

@@ -2,12 +2,13 @@
 title: "Meu site agora está disponível via rede Tor"
 date: 2025-12-07T10:32:00-03:00
 languages: ["portuguese"]
+translationKey: "my-website-available-via-tor-network"
 draft: false
 tags:
-  - seguranca
+  - security
   - site
   - tor 
-  - privacidade
+  - privacy
 ---
 
 Recentemente, tive a sorte de conseguir um notebook Dell incrível em um bota-fora da empresa. Conseguir parcelar e pagar um preço acessível foi demais! **Não é um equipamento cheio de firulas ou especificações mirabolantes, mas me deu uma alegria imensa colocar as mãos em uma máquina que, com um pouco de dedicação, se transforma em uma ferramenta poderosa.**

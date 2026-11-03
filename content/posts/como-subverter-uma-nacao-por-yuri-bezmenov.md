@@ -5,7 +5,7 @@ languages: ["portuguese"]
 tags:
   - comunismo
   - subversao
-  - reflexao
+  - reflection
 ---
 
 [Yuri Bezmenov](http://pt.wikipedia.org/wiki/Yuri_Bezmenov) foi um jornalista russo que trabalhou

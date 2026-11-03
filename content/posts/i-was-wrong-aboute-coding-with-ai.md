@@ -2,6 +2,7 @@
 title: "I was against coding with AI. Took me too long to come around"
 date: "2026-05-11"
 languages: ["english"]
+translationKey: "i-was-wrong-aboute-coding-with-ai"
 ---
 
 For a long time I turned my nose up at this whole thing. I thought it was laziness dressed up as innovation. A fancy way of asking a tool for code, copying, pasting into the project and pretending that was software engineering.

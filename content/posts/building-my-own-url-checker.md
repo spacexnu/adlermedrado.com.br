@@ -2,8 +2,9 @@
 title: "I'm Going to Build My Own URL Checker"
 date: 2025-07-20T18:05:08-03:00
 languages: ["english"]
+translationKey: "building-my-own-url-checker"
 draft: false
-tags: ["fraud", "cybersecurity", "URL verification", "project", "FraudTalon"]
+tags: ["fraud", "cybersecurity", "URL verification", "project", "fraudtalon"]
 description: "After testing several URL checking APIs and services, I decided to build my own engine exclusively for FraudTalon — fast, independent, and tuned to the reality of digital scams."
 
 ---

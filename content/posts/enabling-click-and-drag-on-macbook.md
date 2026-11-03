@@ -5,9 +5,8 @@ languages: ["english"]
 categories:
   - "mac"
 tags:
-  - "dicas"
+  - "tips"
   - "mac"
-  - "tip"
 ---
 
 I'm using macOS again, and of course that I'll forget this tip, so I'll write this post to help me another day in the

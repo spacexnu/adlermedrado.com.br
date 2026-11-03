@@ -2,6 +2,7 @@
 title: "Evolving HADES"
 date: 2026-01-04T11:52:13-03:00
 languages: ["english"]
+translationKey: "hades-evolution"
 draft: false
 tags: ["security", "fraud", "detection"]
 ---

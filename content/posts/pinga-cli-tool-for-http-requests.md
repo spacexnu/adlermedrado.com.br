@@ -2,11 +2,12 @@
 title: "Pinga: my small tool for HTTP requests"
 date: 2026-01-09T18:32:00-03:00
 languages: ["english"]
+translationKey: "pinga-cli-tool-for-http-requests"
 draft: false
 tags:
   - cli
   - tools
-  - opensource
+  - open-source
 ---
 
 It’s been a while since I felt this good using a tool.

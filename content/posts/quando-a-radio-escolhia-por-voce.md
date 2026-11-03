@@ -2,10 +2,11 @@
 title: "Quando a rádio escolhia por você"
 date: 2026-07-08T21:21:17-03:00
 languages: ["portuguese"]
+translationKey: "when-the-radio-chose-for-you"
 tags:
 - "general"
 - "bbs"
-- "musica"
+- "music"
 ---
 
 Agora há pouco começou a tocar Even Flow. Na hora fui parar em 1994.

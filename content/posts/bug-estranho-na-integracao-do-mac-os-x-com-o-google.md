@@ -4,7 +4,7 @@ date: "2015-11-04"
 languages: ["portuguese"]
 tags:
   - "bug"
-  - "dicas"
+  - "tips"
   - "general"
   - "gmail"
   - "google"

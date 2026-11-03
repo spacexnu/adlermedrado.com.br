@@ -2,6 +2,7 @@
 title: "When the Radio Chose for You"
 date: 2026-07-08T21:21:17-03:00
 languages: ["english"]
+translationKey: "when-the-radio-chose-for-you"
 tags:
 - "general"
 - "bbs"

@@ -4,7 +4,7 @@ date: 2024-06-05T20:03:28-03:00
 languages: ["english"]
 draft: false
 tags:
-  - "tip"
+  - "tips"
   - "mac"
   - "security"
 ---

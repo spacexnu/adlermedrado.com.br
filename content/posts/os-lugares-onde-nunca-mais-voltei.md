@@ -2,10 +2,11 @@
 title: "Os lugares onde nunca mais voltei, mas que ainda me habitam"
 date: 2025-04-15
 languages: ["portuguese"]
+translationKey: "the-places-i-never-returned-to"
 draft: false
-tags: 
-    - "reflexao" 
-    - "nostalgia" 
+tags:
+    - "reflection"
+    - "nostalgia"
     - "solidao"
     - "crescimento"
 ---

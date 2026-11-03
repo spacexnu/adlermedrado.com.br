@@ -2,6 +2,7 @@
 title: "Tema claro no site. Vinte linhas de JavaScript."
 date: "2026-05-22"
 languages: ["portuguese"]
+translationKey: "light-theme-twenty-lines-of-javascript"
 tags:
   - "site"
   - "css"

@@ -3,8 +3,8 @@ title: "A Segurança Das Urnas Eletrônicas"
 date: "2014-05-02"
 languages: ["portuguese"]
 tags:
-  - "reflexao"
-  - "seguranca"
+  - "reflection"
+  - "security"
 ---
 
 Quem me conhece sabe que eu sempre desconfiei da segurança das urnas  

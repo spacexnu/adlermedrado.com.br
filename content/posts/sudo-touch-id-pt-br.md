@@ -4,10 +4,9 @@ date: 2024-06-16T09:12:42-03:00
 languages: ["portuguese"]
 draft: false
 tags:
-  - "tip"
-  - "dica"
+  - "tips"
   - "mac"
-  - "seguranca"
+  - "security"
 ---
 
 Configurar o sudo para usar o Touch ID no macOS Sonoma em apenas alguns passos é muito fácil.

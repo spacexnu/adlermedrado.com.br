@@ -2,6 +2,7 @@
 title: "Signing HTML Pages with GPG"
 date: 2024-01-07T11:44:54-03:00
 languages: ["english"]
+translationKey: "signing-html-pages-with-gpg"
 draft: false
 tags:
   - "site"

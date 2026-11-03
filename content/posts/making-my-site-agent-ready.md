@@ -2,6 +2,7 @@
 title: "From 21 to 71: Making My Site Legible to Agents"
 date: 2026-07-29
 languages: ["english"]
+translationKey: "making-my-site-agent-ready"
 draft: false
 tags: ["ai", "agents", "webmcp", "dnssec", "nginx", "hugo", "privacy"]
 description: "What I changed so agents can discover this site's content, APIs, and tools without inventing OAuth, MCP, or services that do not exist."

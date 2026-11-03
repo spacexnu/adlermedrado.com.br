@@ -4,7 +4,7 @@ date: 2006-04-16T13:21:50-03:00
 languages: ["portuguese"]
 draft: false
 tags:
-  - "dicas"
+  - "tips"
 ---
 
 Para otimizar o firefox, siga os passos abaixo:

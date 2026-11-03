@@ -2,7 +2,8 @@
 title: "Por que você deveria começar a usar GPG agora"
 date: 2025-04-27
 languages: ["portuguese"]
-tags: [gpg, criptografia, privacidade, seguranca, computacao quantica]
+translationKey: "gpg-intro-en"
+tags: [gpg, cryptography, privacy, security, "computacao quantica"]
 ---
 
 # Por que você deveria começar a usar GPG agora

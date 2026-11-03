@@ -2,10 +2,11 @@
 title: "Shortificator - Meu gerador de vídeos verticais"
 date: 2026-06-06T21:52:09-03:00
 languages: ["portuguese"]
+translationKey: "shortificator-en"
 draft: false
 tags:
   - "videosk"
-  - "ia"
+  - "ai"
   - "llm"
 ---
 

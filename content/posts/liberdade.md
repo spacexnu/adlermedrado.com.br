@@ -2,8 +2,8 @@
 title: "Liberdade"
 date: "2015-06-13"
 languages: ["portuguese"]
-tags: 
-  - "reflexao"
+tags:
+  - "reflection"
   - "liberdade"
 ---
 

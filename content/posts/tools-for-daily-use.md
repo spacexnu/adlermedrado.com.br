@@ -2,6 +2,7 @@
 title: "Tools for Daily Use"
 date: 2023-10-12T10:44:28-03:00
 languages: ["english"]
+translationKey: "tools-for-daily-use"
 tags:
   - "tools"
   - "tips"

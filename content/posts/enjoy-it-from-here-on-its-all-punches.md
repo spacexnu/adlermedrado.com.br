@@ -2,6 +2,7 @@
 title: "Enjoy It, From Here On It's All Punches"
 date: 2025-01-30T21:21:17-03:00
 languages: ["english"]
+translationKey: "enjoy-it-from-here-on-its-all-punches"
 tags:
 - "general"
 - "bbs"

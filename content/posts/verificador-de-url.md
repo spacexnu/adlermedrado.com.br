@@ -2,8 +2,9 @@
 title: "Vou construir meu próprio verificador de URLs"
 date: 2025-07-20T18:05:08-03:00
 languages: ["portuguese"]
+translationKey: "building-my-own-url-checker"
 draft: false
-tags: ["fraude", "cyberseguranca", "verificacao de URL", "projeto", "FraudTalon"]
+tags: ["fraud", "cybersecurity", "verificacao de URL", "project", "fraudtalon"]
 description: "Após testar várias APIs e serviços de verificação de URLs, decidi criar meu próprio motor exclusivo para o FraudTalon — rápido, independente e afinado com a realidade dos golpes digitais."
 
 ---

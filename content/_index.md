@@ -21,4 +21,4 @@ Description: "Security-minded engineer building AI-powered defenses"
   </div>
 </div>
 
-<p class="home-contract">Self-hosted, with an onion mirror, and published as Markdown so agents can read the same pages.</p>
+<p class="home-contract">Self-hosted, with an <a href="http://xlqlev6ixhge3wyoivxhpcvuv2v5it2m2dxjnfng5d66jb7c6kpv6qid.onion/">onion mirror</a>, and published as Markdown so agents can read the same pages.</p>

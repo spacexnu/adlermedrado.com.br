@@ -47,5 +47,17 @@
     if (el) {
       el.textContent = taglines[Math.floor(Math.random() * taglines.length)];
     }
+    var header = document.querySelector('.site-header');
+    if (header) {
+      function syncHeaderHeight() {
+        document.documentElement.style.setProperty('--header-height', header.getBoundingClientRect().height + 'px');
+      }
+      syncHeaderHeight();
+      if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(syncHeaderHeight).observe(header);
+      } else {
+        window.addEventListener('resize', syncHeaderHeight);
+      }
+    }
   });
 })();

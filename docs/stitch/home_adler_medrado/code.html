@@ -1,0 +1,179 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } } .terminal-cursor { animation: blink 1s infinite; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#0f1417", "on-primary-fixed-variant": "#00531b", "on-error-container": "#ffdad6", "background": "#0f1417", "primary-container": "#00ff66", "secondary-fixed-dim": "#1cdfba", "surface-container-lowest": "#0a0f12", "text-muted": "#5C6B75", "paper-text-primary": "#121A1E", "on-secondary-fixed": "#002019", "terminal-surface": "#0E1418", "surface-bright": "#353a3d", "terminal-surface-border": "#1A262C", "on-tertiary-container": "#006797", "paper-text-dim": "#4A565E", "on-secondary": "#00382d", "paper-surface": "#EAE5DB", "on-secondary-fixed-variant": "#005142", "error": "#ffb4ab", "primary-fixed": "#6bff83", "surface-tint": "#00e55b", "surface-container-low": "#171c1f", "surface-container-highest": "#303539", "secondary-container": "#03d9b4", "on-tertiary": "#00344f", "surface": "#0f1417", "console-cyan": "#00B0FF", "paper-border": "#D5CEBF", "tertiary-container": "#bfe1ff", "primary": "#edffe8", "text-dim": "#8A99A8", "matrix-emerald": "#2FA53E", "amber-alert": "#FFB000", "on-primary-fixed": "#002107", "outline-variant": "#3b4b3a", "tertiary": "#f7faff", "tertiary-fixed": "#cae6ff", "tertiary-fixed-dim": "#8dcdff", "inverse-surface": "#dfe3e7", "error-container": "#93000a", "outline": "#849581", "secondary-fixed": "#50fcd5", "on-background": "#dfe3e7", "surface-variant": "#303539", "terminal-black": "#050709", "primary-fixed-dim": "#00e55b", "on-tertiary-fixed": "#001e30", "on-surface": "#dfe3e7", "surface-container": "#1b2023", "crimson-signal": "#FF3366", "on-error": "#690005", "inverse-on-surface": "#2c3134", "on-secondary-container": "#005a49", "on-primary-container": "#007128", "surface-container-high": "#262b2e", "secondary": "#48f6d0", "paper-base": "#F4F1EA", "on-primary": "#003911", "phosphor-green": "#00FF66", "inverse-primary": "#006e27", "on-tertiary-fixed-variant": "#004b70", "cyber-cyan": "#00F0FF", "on-surface-variant": "#b9ccb5", "electric-teal": "#00D9B4" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "space-2xl": "4rem", "margin": "2rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xl": "2.5rem" }, "fontFamily": { "headline-md": ["JetBrains Mono"], "headline-sm": ["JetBrains Mono"], "body-sm": ["JetBrains Mono"], "headline-lg-mobile": ["JetBrains Mono"], "headline-xl-mobile": ["JetBrains Mono"], "headline-xl": ["JetBrains Mono"], "label-md": ["JetBrains Mono"], "body-lg": ["JetBrains Mono"], "body-md": ["JetBrains Mono"], "label-lg": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "headline-lg": ["JetBrains Mono"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "700" }], "headline-xl-mobile": ["26px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "body-lg": ["15px", { "lineHeight": "26px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "24px", "fontWeight": "400" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }], "headline-lg": ["28px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-terminal-surface/95 backdrop-blur-md border-b border-terminal-surface-border"><div class="h-20 max-w-[960px] mx-auto px-margin-mobile md:px-margin flex flex-col justify-center"><div class="flex items-center justify-between gap-space-md mb-space-xs"><div class="flex items-center gap-space-sm overflow-hidden"><a class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-primary tracking-tight whitespace-nowrap" data-path="about" href="#"><span class="text-phosphor-green font-headline-sm text-headline-sm">&gt;</span><span>Adler Medrado | spacexnu</span><span class="inline-block w-2 h-4 bg-phosphor-green terminal-cursor ml-0.5"></span></a><span class="hidden lg:inline text-text-muted font-label-sm text-label-sm truncate">| ... Real programmers count from 0. There's no place like 127.0.0.1.</span></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex items-center gap-space-xs px-2 py-0.5 rounded bg-surface-container-lowest border border-terminal-surface-border font-label-sm text-label-sm text-text-dim"><span class="w-1.5 h-1.5 rounded-full bg-phosphor-green animate-pulse"></span><span>ONION // PGP ACTIVE</span></div><button aria-label="Toggle color mode" class="px-2 py-1 rounded bg-surface-container border border-terminal-surface-border font-label-sm text-label-sm text-text-dim hover:text-cyber-cyan hover:border-cyber-cyan transition-colors flex items-center gap-1" onclick="document.documentElement.classList.toggle('dark')" type="button"><span>☼</span><span class="text-text-muted">/</span><span>☾</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between overflow-x-auto no-scrollbar"><nav class="flex items-center gap-space-md font-label-md text-label-md py-0.5 whitespace-nowrap" data-active-classes="text-phosphor-green font-label-md border-b border-phosphor-green"><a aria-current="page" class="transition-colors pb-0.5 text-phosphor-green font-label-md border-b border-phosphor-green" data-path="about" href="#">about</a><a class="text-on-surface-variant hover:text-on-surface transition-colors pb-0.5" data-path="projects" href="#">projects</a><a class="text-on-surface-variant hover:text-on-surface transition-colors pb-0.5" data-path="posts" href="#">posts</a><a class="text-on-surface-variant hover:text-on-surface transition-colors pb-0.5" data-path="missives" href="#">missives</a><a class="text-on-surface-variant hover:text-on-surface transition-colors pb-0.5" data-path="now" href="#">now</a><a class="text-on-surface-variant hover:text-on-surface transition-colors pb-0.5" data-path="uses" href="#">uses</a><a class="text-on-surface-variant hover:text-on-surface transition-colors pb-0.5" data-path="contact" href="#">contact</a><a class="text-on-surface-variant hover:text-on-surface transition-colors pb-0.5" data-path="rss" href="#">rss</a></nav><div class="hidden md:flex items-center font-label-sm text-label-sm text-text-muted gap-space-xs"><span class="text-matrix-emerald">●</span><span>SYS: SECURE</span></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="max-w-[960px] mx-auto px-margin-mobile md:px-margin py-space-lg"><div class="flex flex-col w-full gap-y-space-xl">
+<!-- TERMINAL MAIN WINDOW / HERO PANEL -->
+<section class="relative rounded-xl bg-terminal-surface shadow-2xl p-space-md sm:p-space-lg md:p-space-xl overflow-hidden transition-all duration-300">
+<!-- Ambient CRT Glow Accents -->
+<div class="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-phosphor-green/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-20 w-64 h-64 rounded-full bg-cyber-cyan/5 blur-3xl pointer-events-none"></div>
+<!-- Terminal Window Top Control Bar -->
+<div class="flex items-center justify-between pb-space-md mb-space-lg bg-surface-container-lowest/70 px-space-md py-space-xs rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-crimson-signal/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-amber-alert/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-phosphor-green/80 inline-block"></span>
+<span class="font-label-sm text-label-sm text-text-muted ml-space-xs tracking-wider">session: pts/0 (tmux:sec-ops)</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm font-label-sm text-label-sm text-text-dim">
+<span class="text-phosphor-green">adler@spacexnu:~$</span>
+<span>whoami --verbose</span>
+</div>
+<div class="flex items-center gap-space-xs text-text-muted font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-matrix-emerald">SIG: VALID</span>
+<span>UTF-8</span>
+</div>
+</div>
+<!-- Main Hero Split Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Content Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-y-space-md">
+<!-- Subtitle Pill -->
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded bg-surface-container-low text-cyber-cyan">
+<span class="material-symbols-outlined text-[15px] text-phosphor-green">terminal</span>
+<span class="font-label-md text-label-md tracking-wider">SECURITY-MINDED SOFTWARE ENGINEER</span>
+</div>
+<!-- Name / Handle Heading -->
+<div class="flex flex-col gap-1">
+<div class="flex items-baseline flex-wrap gap-x-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-phosphor-green tracking-tight drop-shadow-[0_0_12px_rgba(0,255,102,0.35)]">
+              Adler Medrado
+            </h1>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium">
+              aka <span class="text-cyber-cyan">spacexnu</span>
+</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface mt-space-xs leading-relaxed">
+            Writing about code, systems, and sovereignty. Building defensive AI along the way.
+          </p>
+</div>
+<!-- Unix Directory Jump Tree / Navigation Table -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest/90 font-body-sm text-body-sm flex flex-col gap-y-2 mt-space-xs">
+<div class="font-label-sm text-label-sm text-text-muted flex items-center justify-between pb-1.5 mb-1">
+<span>FILESYSTEM ENTRYPOINTS [INDEX]</span>
+<span class="text-primary-fixed-dim">drwxr-xr-x</span>
+</div>
+<div class="flex items-center gap-2 group">
+<span class="text-text-muted">├─</span>
+<span class="text-on-surface">Learn who I am</span>
+<span class="text-phosphor-green">→</span>
+<a class="text-cyber-cyan hover:text-phosphor-green underline underline-offset-4 decoration-cyber-cyan/40 hover:decoration-phosphor-green transition-colors" data-path="about" href="#">about</a>
+</div>
+<div class="flex items-center gap-2 group">
+<span class="text-text-muted">├─</span>
+<span class="text-on-surface">Explore what I’m building</span>
+<span class="text-phosphor-green">→</span>
+<a class="text-cyber-cyan hover:text-phosphor-green underline underline-offset-4 decoration-cyber-cyan/40 hover:decoration-phosphor-green transition-colors" data-path="projects" href="#">projects</a>
+</div>
+<div class="flex items-center flex-wrap gap-x-2 gap-y-1 group">
+<span class="text-text-muted">├─</span>
+<span class="text-on-surface">Read my writing</span>
+<span class="text-phosphor-green">→</span>
+<a class="text-cyber-cyan hover:text-phosphor-green underline underline-offset-4 decoration-cyber-cyan/40 transition-colors" data-path="start" href="#">start here</a>,
+            <a class="text-cyber-cyan hover:text-phosphor-green underline underline-offset-4 decoration-cyber-cyan/40 transition-colors" data-path="posts" href="#">posts</a>
+<span class="text-text-dim">and</span>
+<a class="text-cyber-cyan hover:text-phosphor-green underline underline-offset-4 decoration-cyber-cyan/40 transition-colors" data-path="missives" href="#">missives</a>
+</div>
+<div class="flex items-center gap-2 group">
+<span class="text-text-muted">├─</span>
+<span class="text-on-surface">See what I’m up to</span>
+<span class="text-phosphor-green">→</span>
+<a class="text-cyber-cyan hover:text-phosphor-green underline underline-offset-4 decoration-cyber-cyan/40 transition-colors" data-path="now" href="#">now</a>
+<span class="text-text-dim">and</span>
+<a class="text-cyber-cyan hover:text-phosphor-green underline underline-offset-4 decoration-cyber-cyan/40 transition-colors" data-path="uses" href="#">uses</a>
+</div>
+<div class="flex items-center gap-2 group">
+<span class="text-text-muted">└─</span>
+<span class="text-on-surface">Reach out</span>
+<span class="text-phosphor-green">→</span>
+<a class="text-cyber-cyan hover:text-phosphor-green underline underline-offset-4 decoration-cyber-cyan/40 transition-colors" data-path="contact" href="#">contact</a>
+</div>
+</div>
+<!-- Integrity & GPG Banner -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low/70">
+<span class="text-lg select-none">🔏</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex flex-col">
+<span class="text-primary font-medium">All blog posts are GPG signed.</span>
+<span class="text-text-dim">If it isn't signed, it isn't mine.</span>
+</div>
+</div>
+</div>
+<!-- Right Cybernetic Engineer Portal (5 cols) -->
+<div class="lg:col-span-5 flex flex-col items-center justify-center relative">
+<div class="relative group p-2 rounded-full bg-gradient-to-tr from-phosphor-green/20 via-surface-container-high to-cyber-cyan/30 shadow-[0_0_30px_rgba(0,217,180,0.15)]">
+<!-- Outer Pulsing Radar Ring -->
+<div class="absolute inset-0 rounded-full bg-phosphor-green/10 animate-ping opacity-25"></div>
+<!-- Circular Hacker Avatar Container -->
+<div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full overflow-hidden bg-terminal-black flex items-center justify-center">
+<img class="w-full h-full object-cover filter contrast-105 brightness-95 group-hover:scale-105 transition-transform duration-500" data-alt="Photorealistic cybernetic security engineer Adler Medrado sitting in a moody dark data center workstation surrounded by glowing server racks, amber and green terminal screens, wearing glasses and a headset, focused and grinning, backlit by soft cyan and neon phosphor green ambient illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqKcF-9GhhiYhNB9xRP8vgKef6LFpxs5Mc91bEcsq3Rto8qRIoTSzHNPsri6-_ZZ3T3oRrWuUe0j5hPfJev-ca_UnoPs2PpSI0XE3hsEpAZJwgabyADD_gAClMV5EoRRgaD_UzhAHgSBWHMvZVzeme8zXpjMw59oqtftSuvnNayOkUT_JgVgYeBucJ5EFridrxDzdtEJ0kyb7Pvd32xumigur-6sW-Yv81jZUyw6Q">
+<!-- Scanline & Vignette Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-terminal-black/80 via-transparent to-transparent pointer-events-none"></div>
+<!-- Target Crosshair Overlays -->
+<div class="absolute top-4 right-4 text-matrix-emerald/60 font-label-sm text-label-sm pointer-events-none select-none">[42°N]</div>
+<div class="absolute bottom-3 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded bg-terminal-black/80 text-phosphor-green font-label-sm text-label-sm pointer-events-none whitespace-nowrap">
+              UID: 1000 // spacexnu
+            </div>
+</div>
+</div>
+<!-- Telemetry Stats Below Avatar -->
+<div class="mt-space-md grid grid-cols-2 gap-space-xs w-full max-w-[280px]">
+<div class="px-2 py-1 rounded bg-surface-container-lowest text-center">
+<div class="font-label-sm text-label-sm text-text-muted">GPG ENCRYPTION</div>
+<div class="font-label-md text-label-md text-matrix-emerald font-semibold">ED25519 ACTIVE</div>
+</div>
+<div class="px-2 py-1 rounded bg-surface-container-lowest text-center">
+<div class="font-label-sm text-label-sm text-text-muted">HOST ARCH</div>
+<div class="font-label-md text-label-md text-cyber-cyan font-semibold">SOVEREIGN LINUX</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sovereign Subtext Footnote -->
+<div class="mt-space-lg pt-space-md flex items-center justify-between flex-wrap gap-space-sm text-text-dim font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs text-text-muted">
+<span class="w-2 h-2 rounded-full bg-matrix-emerald animate-pulse"></span>
+<span>Self-hosted, with an onion mirror, and published as Markdown so agents can read the same pages.</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm">
+<span class="text-text-muted">ROBOTS:</span>
+<span class="text-cyber-cyan">FRIENDLY (/feed.md)</span>
+</div>
+</div>
+</section>
+<!-- LATEST LOGS SECTION -->
+<section class="flex flex-col gap-y-space-md"><div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm pb-space-xs"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-phosphor-green text-[28px]">receipt_long</span><h2 class="font-headline-lg text-headline-lg text-phosphor-green tracking-tight">Latest Logs</h2><span class="text-text-muted font-label-md text-label-md hidden md:inline ml-space-xs"># journalctl -u logs.service --no-tail -n 10</span></div><div class="flex items-center gap-space-xs text-text-muted font-label-sm text-label-sm self-start sm:self-auto"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface">STREAM: LIVE</span><span class="px-2 py-0.5 rounded bg-surface-container text-matrix-emerald">FORMAT: RFC5424</span></div></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md"><div class="rounded-xl bg-terminal-surface border border-terminal-surface-border p-space-sm sm:p-space-md flex flex-col justify-between shadow-lg"><div class="flex flex-col"><div class="flex items-center justify-between pb-space-xs mb-space-xs border-b border-terminal-surface-border/60"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-phosphor-green"></span><a class="group flex items-center gap-1 font-label-sm text-label-sm text-cyber-cyan hover:text-phosphor-green transition-colors" data-path="languages/english" href=""><span class="font-bold">journalctl -u posts-en.service</span><span class="material-symbols-outlined text-[14px] text-text-muted group-hover:text-phosphor-green transition-colors">north_east</span></a></div><span class="font-label-sm text-label-sm text-text-muted">5 entries</span></div><div class="grid grid-cols-[auto_auto_1fr_auto] items-center gap-x-2 py-1 px-1.5 font-label-sm text-label-sm text-text-muted uppercase border-b border-terminal-surface-border/40 select-none"><span>DATE</span><span>TAG</span><span>LOG MESSAGE / TITLE</span><span class="text-right">ACT</span></div><div class="flex flex-col divide-y divide-terminal-surface-border/30"><article class="group py-1.5 px-1.5 hover:bg-surface-container-low/70 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left font-body-sm text-body-sm leading-tight" data-path="posts/debugging-an-audacity-crash-on-windows" href=""><time class="font-label-sm text-label-sm text-text-muted shrink-0 tabular-nums" datetime="2026-10-02">2026-10-02</time><span class="font-label-sm text-label-sm px-1 py-0.2 rounded bg-surface-container-lowest text-cyber-cyan shrink-0">[EN]</span><span class="text-on-surface group-hover:text-cyber-cyan transition-colors underline decoration-dotted decoration-cyber-cyan/40 group-hover:decoration-cyber-cyan truncate">Debugging an Audacity Crash on Windows: From Bluetooth Headset to Open Source Bug Report</span><span class="text-phosphor-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-1.5 px-1.5 hover:bg-surface-container-low/70 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left font-body-sm text-body-sm leading-tight" data-path="posts/technical-sovereignty-cloud-provider-exit-test" href=""><time class="font-label-sm text-label-sm text-text-muted shrink-0 tabular-nums" datetime="2026-10-01">2026-10-01</time><span class="font-label-sm text-label-sm px-1 py-0.2 rounded bg-surface-container-lowest text-cyber-cyan shrink-0">[EN]</span><span class="text-on-surface group-hover:text-cyber-cyan transition-colors underline decoration-dotted decoration-cyber-cyan/40 group-hover:decoration-cyber-cyan truncate">Technical Sovereignty: Can You Actually Leave Your Cloud Provider?</span><span class="text-phosphor-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-1.5 px-1.5 hover:bg-surface-container-low/70 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left font-body-sm text-body-sm leading-tight" data-path="posts/making-my-site-agent-ready" href=""><time class="font-label-sm text-label-sm text-text-muted shrink-0 tabular-nums" datetime="2026-07-29">2026-07-29</time><span class="font-label-sm text-label-sm px-1 py-0.2 rounded bg-surface-container-lowest text-cyber-cyan shrink-0">[EN]</span><span class="text-on-surface group-hover:text-cyber-cyan transition-colors underline decoration-dotted decoration-cyber-cyan/40 group-hover:decoration-cyber-cyan truncate">From 21 to 71: Making My Site Legible to Agents</span><span class="text-phosphor-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-1.5 px-1.5 hover:bg-surface-container-low/70 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left font-body-sm text-body-sm leading-tight" data-path="posts/the-line-on-the-dojo-wall" href=""><time class="font-label-sm text-label-sm text-text-muted shrink-0 tabular-nums" datetime="2026-07-09">2026-07-09</time><span class="font-label-sm text-label-sm px-1 py-0.2 rounded bg-surface-container-lowest text-cyber-cyan shrink-0">[EN]</span><span class="text-on-surface group-hover:text-cyber-cyan transition-colors underline decoration-dotted decoration-cyber-cyan/40 group-hover:decoration-cyber-cyan truncate">The Line on the Dojo Wall</span><span class="text-phosphor-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-1.5 px-1.5 hover:bg-surface-container-low/70 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left font-body-sm text-body-sm leading-tight" data-path="posts/when-the-radio-chose-for-you" href=""><time class="font-label-sm text-label-sm text-text-muted shrink-0 tabular-nums" datetime="2026-07-08">2026-07-08</time><span class="font-label-sm text-label-sm px-1 py-0.2 rounded bg-surface-container-lowest text-cyber-cyan shrink-0">[EN]</span><span class="text-on-surface group-hover:text-cyber-cyan transition-colors underline decoration-dotted decoration-cyber-cyan/40 group-hover:decoration-cyber-cyan truncate">When the Radio Chose for You</span><span class="text-phosphor-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article></div></div><div class="mt-space-sm pt-space-xs flex justify-end border-t border-terminal-surface-border/40"><a class="font-label-sm text-label-sm text-text-dim hover:text-cyber-cyan flex items-center gap-1 transition-colors" data-path="languages/english" href=""><span>View all English archives</span><span>&gt;&gt;</span></a></div></div><div class="rounded-xl bg-terminal-surface border border-terminal-surface-border p-space-sm sm:p-space-md flex flex-col justify-between shadow-lg"><div class="flex flex-col"><div class="flex items-center justify-between pb-space-xs mb-space-xs border-b border-terminal-surface-border/60"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-matrix-emerald"></span><a class="group flex items-center gap-1 font-label-sm text-label-sm text-cyber-cyan hover:text-phosphor-green transition-colors" data-path="languages/portuguese" href=""><span class="font-bold">journalctl -u posts-pt.service</span><span class="material-symbols-outlined text-[14px] text-text-muted group-hover:text-phosphor-green transition-colors">north_east</span></a></div><span class="font-label-sm text-label-sm text-text-muted">5 publicações</span></div><div class="grid grid-cols-[auto_auto_1fr_auto] items-center gap-x-2 py-1 px-1.5 font-label-sm text-label-sm text-text-muted uppercase border-b border-terminal-surface-border/40 select-none"><span>DATA</span><span>TAG</span><span>MENSAGEM DE LOG / TÍTULO</span><span class="text-right">ACT</span></div><div class="flex flex-col divide-y divide-terminal-surface-border/30"><article class="group py-1.5 px-1.5 hover:bg-surface-container-low/70 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left font-body-sm text-body-sm leading-tight" data-path="posts/tornando-meu-site-agent-ready" href=""><time class="font-label-sm text-label-sm text-text-muted shrink-0 tabular-nums" datetime="2026-07-29">2026-07-29</time><span class="font-label-sm text-label-sm px-1 py-0.2 rounded bg-surface-container-lowest text-matrix-emerald shrink-0">[PT]</span><span class="text-on-surface group-hover:text-cyber-cyan transition-colors underline decoration-dotted decoration-cyber-cyan/40 group-hover:decoration-cyber-cyan truncate">De 21 a 71: tornando meu site legível por agentes</span><span class="text-phosphor-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-1.5 px-1.5 hover:bg-surface-container-low/70 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left font-body-sm text-body-sm leading-tight" data-path="posts/mais-valem-as-lagrimas-da-derrota-do-que-a-vergonha-de-nao-ter-lutado" href=""><time class="font-label-sm text-label-sm text-text-muted shrink-0 tabular-nums" datetime="2026-07-09">2026-07-09</time><span class="font-label-sm text-label-sm px-1 py-0.2 rounded bg-surface-container-lowest text-matrix-emerald shrink-0">[PT]</span><span class="text-on-surface group-hover:text-cyber-cyan transition-colors underline decoration-dotted decoration-cyber-cyan/40 group-hover:decoration-cyber-cyan truncate">A frase na parede do dojo</span><span class="text-phosphor-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-1.5 px-1.5 hover:bg-surface-container-low/70 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left font-body-sm text-body-sm leading-tight" data-path="posts/quando-a-radio-escolhia-por-voce" href=""><time class="font-label-sm text-label-sm text-text-muted shrink-0 tabular-nums" datetime="2026-07-08">2026-07-08</time><span class="font-label-sm text-label-sm px-1 py-0.2 rounded bg-surface-container-lowest text-matrix-emerald shrink-0">[PT]</span><span class="text-on-surface group-hover:text-cyber-cyan transition-colors underline decoration-dotted decoration-cyber-cyan/40 group-hover:decoration-cyber-cyan truncate">Quando a rádio escolhia por você</span><span class="text-phosphor-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-1.5 px-1.5 hover:bg-surface-container-low/70 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left font-body-sm text-body-sm leading-tight" data-path="posts/o-circo-que-nunca-vi" href=""><time class="font-label-sm text-label-sm text-text-muted shrink-0 tabular-nums" datetime="2026-06-12">2026-06-12</time><span class="font-label-sm text-label-sm px-1 py-0.2 rounded bg-surface-container-lowest text-matrix-emerald shrink-0">[PT]</span><span class="text-on-surface group-hover:text-cyber-cyan transition-colors underline decoration-dotted decoration-cyber-cyan/40 group-hover:decoration-cyber-cyan truncate">O circo que eu nunca vi</span><span class="text-phosphor-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-1.5 px-1.5 hover:bg-surface-container-low/70 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left font-body-sm text-body-sm leading-tight" data-path="posts/javascript-sem-trair-a-privacidade" href=""><time class="font-label-sm text-label-sm text-text-muted shrink-0 tabular-nums" datetime="2026-06-09">2026-06-09</time><span class="font-label-sm text-label-sm px-1 py-0.2 rounded bg-surface-container-lowest text-matrix-emerald shrink-0">[PT]</span><span class="text-on-surface group-hover:text-cyber-cyan transition-colors underline decoration-dotted decoration-cyber-cyan/40 group-hover:decoration-cyber-cyan truncate">Adicionei JavaScript no site e a sua privacidade continua intacta</span><span class="text-phosphor-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article></div></div><div class="mt-space-sm pt-space-xs flex justify-end border-t border-terminal-surface-border/40"><a class="font-label-sm text-label-sm text-text-dim hover:text-cyber-cyan flex items-center gap-1 transition-colors" data-path="languages/portuguese" href=""><span>Ver arquivos em português</span><span>&gt;&gt;</span></a></div></div></div></section>
+<!-- SECURITY & VERIFICATION ACCREDITATION BAR (CARD) -->
+<section class="rounded-xl bg-surface-container-low p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- PGP Verification Info -->
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-xl shadow-inner select-none">
+        🔏
+      </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-phosphor-green">All pages are PGP signed.</span>
+<div class="font-body-sm text-body-sm text-text-dim">
+          Learn how to verify my PGP signature 
+          <a class="text-cyber-cyan hover:underline decoration-cyber-cyan font-medium" data-path="posts/verify-signatures" href="#">here</a>.
+        </div>
+</div>
+</div>
+<!-- Mozilla Observatory A+ Badge & Privacy Statement -->
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="font-body-sm text-body-sm italic text-text-muted">
+        Privacy policy: this website employs no tracking.
+      </div>
+<a class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-terminal-black hover:bg-surface-container-high transition-colors group shadow-md" href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" rel="noopener noreferrer" target="_blank">
+<span class="px-2 py-0.5 rounded bg-matrix-emerald font-headline-sm text-headline-sm text-terminal-black font-bold group-hover:scale-105 transition-transform">
+          A+
+        </span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface">Mozilla Observatory</span>
+<span class="font-label-sm text-label-sm text-text-dim">Security Rating</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-text-muted group-hover:text-phosphor-green ml-1 transition-colors">
+          open_in_new
+        </span>
+</a>
+</div>
+</section>
+</div></div></main><footer class="w-full bg-surface-container-lowest border-t border-terminal-surface-border py-space-lg"><div class="max-w-[960px] mx-auto px-margin-mobile md:px-margin flex flex-col gap-space-md"><div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm font-body-sm text-body-sm text-text-dim"><div>© 1996-2026 Adler Medrado. All rights reserved.</div></div><div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm font-label-sm text-label-sm border-t border-terminal-surface-border/60 pt-space-sm text-text-muted"><div>Sovereign plaintext-first infrastructure. No telemetry.</div><div class="flex items-center gap-space-md"><span class="px-2 py-0.5 rounded border border-terminal-surface-border bg-surface-container text-text-dim">ONION: MIRRORED</span></div></div><div class="px-3 py-1.5 rounded bg-terminal-black border border-terminal-surface-border font-label-sm text-label-sm text-text-muted flex flex-wrap items-center justify-between gap-space-xs"><span>TTY: pts/0</span><span>UID: 1000 (spacexnu)</span><span>GPG: VALID [ED25519]</span><span>AGENT_READY: TRUE</span><span>TLS: A+ (HSTS/DNSSEC)</span></div></div></footer>
+
+</body></html>

@@ -1,0 +1,422 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "width": 320,
+      "theme": "dark",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "theme": "light",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/about/",
+      "width": 320,
+      "theme": "dark",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/about/",
+      "width": 320,
+      "theme": "light",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/projects/",
+      "width": 320,
+      "theme": "dark",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/projects/",
+      "width": 320,
+      "theme": "light",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/contact/",
+      "width": 320,
+      "theme": "dark",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/contact/",
+      "width": 320,
+      "theme": "light",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/start/",
+      "width": 320,
+      "theme": "dark",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/start/",
+      "width": 320,
+      "theme": "light",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/posts/debugging-an-audacity-crash-on-windows/",
+      "width": 320,
+      "theme": "dark",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/posts/debugging-an-audacity-crash-on-windows/",
+      "width": 320,
+      "theme": "light",
+      "client": 305,
+      "scroll": 305,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "theme": "dark",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "theme": "light",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/about/",
+      "width": 390,
+      "theme": "dark",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/about/",
+      "width": 390,
+      "theme": "light",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/projects/",
+      "width": 390,
+      "theme": "dark",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/projects/",
+      "width": 390,
+      "theme": "light",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/contact/",
+      "width": 390,
+      "theme": "dark",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/contact/",
+      "width": 390,
+      "theme": "light",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/start/",
+      "width": 390,
+      "theme": "dark",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/start/",
+      "width": 390,
+      "theme": "light",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/posts/debugging-an-audacity-crash-on-windows/",
+      "width": 390,
+      "theme": "dark",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/posts/debugging-an-audacity-crash-on-windows/",
+      "width": 390,
+      "theme": "light",
+      "client": 375,
+      "scroll": 375,
+      "fontLoaded": true,
+      "header": 65,
+      "offset": 65
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "theme": "dark",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "theme": "light",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    },
+    {
+      "path": "/about/",
+      "width": 1440,
+      "theme": "dark",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    },
+    {
+      "path": "/about/",
+      "width": 1440,
+      "theme": "light",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    },
+    {
+      "path": "/projects/",
+      "width": 1440,
+      "theme": "dark",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    },
+    {
+      "path": "/projects/",
+      "width": 1440,
+      "theme": "light",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    },
+    {
+      "path": "/contact/",
+      "width": 1440,
+      "theme": "dark",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    },
+    {
+      "path": "/contact/",
+      "width": 1440,
+      "theme": "light",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    },
+    {
+      "path": "/start/",
+      "width": 1440,
+      "theme": "dark",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    },
+    {
+      "path": "/start/",
+      "width": 1440,
+      "theme": "light",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    },
+    {
+      "path": "/posts/debugging-an-audacity-crash-on-windows/",
+      "width": 1440,
+      "theme": "dark",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    },
+    {
+      "path": "/posts/debugging-an-audacity-crash-on-windows/",
+      "width": 1440,
+      "theme": "light",
+      "client": 1425,
+      "scroll": 1425,
+      "fontLoaded": true,
+      "header": 115.390625,
+      "offset": 115.391
+    }
+  ],
+  "platformFonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "JetBrains Mono",
+          "postScriptName": "JetBrainsMono-Bold",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    {
+      "selector": ".home-intro > p",
+      "fonts": [
+        {
+          "familyName": "JetBrains Mono",
+          "postScriptName": "JetBrainsMono-Regular",
+          "isCustomFont": true,
+          "glyphCount": 33
+        }
+      ]
+    },
+    {
+      "selector": ".site-id__alias",
+      "fonts": [
+        {
+          "familyName": "JetBrains Mono",
+          "postScriptName": "JetBrainsMono-Regular",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:8783/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2",
+      "size": 0
+    },
+    {
+      "url": "http://127.0.0.1:8783/fonts/jetbrains-mono/JetBrainsMono-Medium.woff2",
+      "size": 93824
+    },
+    {
+      "url": "http://127.0.0.1:8783/fonts/jetbrains-mono/JetBrainsMono-SemiBold.woff2",
+      "size": 0
+    },
+    {
+      "url": "http://127.0.0.1:8783/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2",
+      "size": 0
+    },
+    {
+      "url": "http://127.0.0.1:8783/fonts/jetbrains-mono/JetBrainsMono-Italic.woff2",
+      "size": 95864
+    }
+  ],
+  "errors": []
+}

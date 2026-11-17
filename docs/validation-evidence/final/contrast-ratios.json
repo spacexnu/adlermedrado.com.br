@@ -1,0 +1,38 @@
+[
+  {
+    "path": "/",
+    "theme": "dark",
+    "minimumContrast": 6.61,
+    "passes4.5": true
+  },
+  {
+    "path": "/",
+    "theme": "light",
+    "minimumContrast": 4.81,
+    "passes4.5": true
+  },
+  {
+    "path": "/about/",
+    "theme": "dark",
+    "minimumContrast": 13.64,
+    "passes4.5": true
+  },
+  {
+    "path": "/about/",
+    "theme": "light",
+    "minimumContrast": 14.36,
+    "passes4.5": true
+  },
+  {
+    "path": "/posts/debugging-an-audacity-crash-on-windows/",
+    "theme": "dark",
+    "minimumContrast": 13.94,
+    "passes4.5": true
+  },
+  {
+    "path": "/posts/debugging-an-audacity-crash-on-windows/",
+    "theme": "light",
+    "minimumContrast": 13.94,
+    "passes4.5": true
+  }
+]

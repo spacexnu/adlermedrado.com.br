@@ -1,0 +1,186 @@
+{
+  "desktop": {
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 120.78125,
+      "top": 0,
+      "right": 1425,
+      "bottom": 120.78125,
+      "left": 0
+    },
+    "home": {
+      "x": 232.5,
+      "y": 99,
+      "width": 960,
+      "height": 1955.328125,
+      "top": 99,
+      "right": 1192.5,
+      "bottom": 2054.328125,
+      "left": 232.5
+    },
+    "mainPadding": "0px 50px",
+    "heroColumns": "488.828px 349.172px",
+    "photo": {
+      "x": 794.328125,
+      "y": 279.171875,
+      "width": 351.171875,
+      "height": 351.171875,
+      "top": 279.171875,
+      "right": 1145.5,
+      "bottom": 630.34375,
+      "left": 794.328125
+    },
+    "h1": 1,
+    "panelCounts": [
+      5,
+      5
+    ]
+  },
+  "themeReloadBefore": "light",
+  "themeReloadAfter": "light",
+  "mobileOrder": [
+    {
+      "selector": ".home-hero__copy > p",
+      "y": 193.59375
+    },
+    {
+      "selector": ".home-hero__photo",
+      "y": 803.59375
+    },
+    {
+      "selector": "#site-index",
+      "y": 405.09375
+    },
+    {
+      "selector": ".home-sign",
+      "y": 669.09375
+    }
+  ],
+  "widths": [
+    {
+      "width": 320,
+      "scrollWidth": 316,
+      "homeWidth": 275,
+      "headerHeight": 49,
+      "bodyPadding": "99px"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 375,
+      "homeWidth": 345,
+      "headerHeight": 49,
+      "bodyPadding": "99px"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 753,
+      "homeWidth": 713,
+      "headerHeight": 49,
+      "bodyPadding": "99px"
+    },
+    {
+      "width": 1023,
+      "scrollWidth": 1008,
+      "homeWidth": 948,
+      "headerHeight": 49,
+      "bodyPadding": "99px"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1009,
+      "homeWidth": 949,
+      "headerHeight": 118.984375,
+      "bodyPadding": "99px"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1425,
+      "homeWidth": 960,
+      "headerHeight": 120.421875,
+      "bodyPadding": "99px"
+    }
+  ],
+  "ptMobile": [
+    {
+      "lang": "english",
+      "hidden": true,
+      "display": "none"
+    },
+    {
+      "lang": "portuguese",
+      "hidden": false,
+      "display": "block"
+    }
+  ],
+  "ptDesktop": [
+    {
+      "lang": "english",
+      "hidden": false
+    },
+    {
+      "lang": "portuguese",
+      "hidden": false
+    }
+  ],
+  "ptBack": [
+    {
+      "lang": "english",
+      "hidden": true
+    },
+    {
+      "lang": "portuguese",
+      "hidden": false
+    }
+  ],
+  "menuOpen": {
+    "open": true,
+    "focus": "<button type=\"button\" data-menu-close=\"\">:q! close</button>",
+    "expanded": "true",
+    "overflow": "visible",
+    "bodyOverflow": "visible",
+    "lockClass": true,
+    "height": 733
+  },
+  "escape": {
+    "open": true,
+    "focus": "",
+    "expanded": "true"
+  },
+  "menuResize": {
+    "open": false,
+    "locked": false,
+    "expanded": "false"
+  },
+  "syncTheme": {
+    "theme": "light",
+    "controls": [
+      {
+        "text": "light",
+        "pressed": "false"
+      },
+      {
+        "text": "light",
+        "pressed": "true"
+      },
+      {
+        "text": "dark",
+        "pressed": "false"
+      }
+    ]
+  },
+  "blockedInitial": "dark",
+  "blockedExplicit": "light",
+  "blockedAfterSystem": "dark",
+  "noJS": {
+    "panels": [
+      "block",
+      "block"
+    ],
+    "fallback": "block",
+    "switch": "none",
+    "bg": "rgb(15, 20, 23)"
+  },
+  "errors": []
+}

@@ -1,0 +1,35 @@
+{
+  "narrow": {
+    "client": 305,
+    "scroll": 316,
+    "overflow": [
+      {
+        "tag": "DIV",
+        "class": "log-switch",
+        "right": 316.265625,
+        "text": "EN\nPT"
+      },
+      {
+        "tag": "BUTTON",
+        "class": "",
+        "right": 316.265625,
+        "text": "PT"
+      }
+    ]
+  },
+  "article": {
+    "h1": 1,
+    "readingWidth": 797.53125,
+    "codeBlocks": 14,
+    "scroll": 1425,
+    "client": 1425
+  },
+  "noJSLight": {
+    "bg": "rgb(245, 242, 235)",
+    "fallback": "block",
+    "panels": [
+      "block",
+      "block"
+    ]
+  }
+}

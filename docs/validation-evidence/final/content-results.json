@@ -1,0 +1,88 @@
+{
+  "fixtures": [
+    {
+      "language": "english",
+      "input": 0,
+      "displayed": 0,
+      "otherDisplayed": 1,
+      "correctEmptyState": true,
+      "excludedDraftFuture": true,
+      "newestFirst": true
+    },
+    {
+      "language": "english",
+      "input": 1,
+      "displayed": 1,
+      "otherDisplayed": 1,
+      "correctEmptyState": true,
+      "excludedDraftFuture": true,
+      "newestFirst": true
+    },
+    {
+      "language": "english",
+      "input": 6,
+      "displayed": 5,
+      "otherDisplayed": 1,
+      "correctEmptyState": true,
+      "excludedDraftFuture": true,
+      "newestFirst": true
+    },
+    {
+      "language": "portuguese",
+      "input": 0,
+      "displayed": 0,
+      "otherDisplayed": 1,
+      "correctEmptyState": true,
+      "excludedDraftFuture": true,
+      "newestFirst": true
+    },
+    {
+      "language": "portuguese",
+      "input": 1,
+      "displayed": 1,
+      "otherDisplayed": 1,
+      "correctEmptyState": true,
+      "excludedDraftFuture": true,
+      "newestFirst": true
+    },
+    {
+      "language": "portuguese",
+      "input": 6,
+      "displayed": 5,
+      "otherDisplayed": 1,
+      "correctEmptyState": true,
+      "excludedDraftFuture": true,
+      "newestFirst": true
+    }
+  ],
+  "editorialComparison": [
+    {
+      "path": "/about/",
+      "editorialTextIdenticalExcludingLatestPosts": true
+    },
+    {
+      "path": "/projects/",
+      "editorialTextIdenticalExcludingLatestPosts": true
+    },
+    {
+      "path": "/contact/",
+      "editorialTextIdenticalExcludingLatestPosts": true
+    },
+    {
+      "path": "/start/",
+      "editorialTextIdenticalExcludingLatestPosts": true
+    },
+    {
+      "path": "/now/",
+      "editorialTextIdenticalExcludingLatestPosts": true
+    },
+    {
+      "path": "/uses/",
+      "editorialTextIdenticalExcludingLatestPosts": true
+    },
+    {
+      "path": "/posts/debugging-an-audacity-crash-on-windows/",
+      "editorialTextIdenticalExcludingLatestPosts": true
+    }
+  ]
+}

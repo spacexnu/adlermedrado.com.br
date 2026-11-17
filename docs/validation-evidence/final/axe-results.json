@@ -1,0 +1,436 @@
+[
+  {
+    "width": 390,
+    "path": "/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            "li:nth-child(1) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(2) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(3) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(4) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(5) > .home-tree__branch[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ],
+    "passes": 41
+  },
+  {
+    "width": 390,
+    "path": "/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            "li:nth-child(1) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(2) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(3) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(4) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(5) > .home-tree__branch[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ],
+    "passes": 41
+  },
+  {
+    "width": 390,
+    "path": "/about/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".about-hero__text > p:nth-child(1)"
+          ],
+          [
+            ".about-hero__text > p:nth-child(2)"
+          ]
+        ]
+      }
+    ],
+    "passes": 41
+  },
+  {
+    "width": 390,
+    "path": "/about/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".about-hero__text > p:nth-child(1)"
+          ],
+          [
+            ".about-hero__text > p:nth-child(2)"
+          ]
+        ]
+      }
+    ],
+    "passes": 41
+  },
+  {
+    "width": 390,
+    "path": "/projects/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 390,
+    "path": "/projects/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 390,
+    "path": "/contact/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 390,
+    "path": "/contact/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 390,
+    "path": "/start/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 390,
+    "path": "/start/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 390,
+    "path": "/posts/debugging-an-audacity-crash-on-windows/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(2) > span"
+          ],
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(4) > span"
+          ],
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(6) > span"
+          ],
+          [
+            "span:nth-child(8) > span"
+          ],
+          [
+            "span:nth-child(10) > span"
+          ],
+          [
+            "span:nth-child(12) > span"
+          ]
+        ]
+      }
+    ],
+    "passes": 40
+  },
+  {
+    "width": 390,
+    "path": "/posts/debugging-an-audacity-crash-on-windows/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(2) > span"
+          ],
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(4) > span"
+          ],
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(6) > span"
+          ],
+          [
+            "span:nth-child(8) > span"
+          ],
+          [
+            "span:nth-child(10) > span"
+          ],
+          [
+            "span:nth-child(12) > span"
+          ]
+        ]
+      }
+    ],
+    "passes": 40
+  },
+  {
+    "width": 1440,
+    "path": "/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            "li:nth-child(1) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(2) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(3) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(4) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(5) > .home-tree__branch[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ],
+    "passes": 41
+  },
+  {
+    "width": 1440,
+    "path": "/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            "li:nth-child(1) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(2) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(3) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(4) > .home-tree__branch[aria-hidden=\"true\"]"
+          ],
+          [
+            "li:nth-child(5) > .home-tree__branch[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ],
+    "passes": 41
+  },
+  {
+    "width": 1440,
+    "path": "/about/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".about-hero__text > p:nth-child(1)"
+          ],
+          [
+            ".about-hero__text > p:nth-child(2)"
+          ]
+        ]
+      }
+    ],
+    "passes": 41
+  },
+  {
+    "width": 1440,
+    "path": "/about/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".about-hero__text > p:nth-child(1)"
+          ],
+          [
+            ".about-hero__text > p:nth-child(2)"
+          ]
+        ]
+      }
+    ],
+    "passes": 41
+  },
+  {
+    "width": 1440,
+    "path": "/projects/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 1440,
+    "path": "/projects/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 1440,
+    "path": "/contact/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 1440,
+    "path": "/contact/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 1440,
+    "path": "/start/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 1440,
+    "path": "/start/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [],
+    "passes": 39
+  },
+  {
+    "width": 1440,
+    "path": "/posts/debugging-an-audacity-crash-on-windows/",
+    "theme": "dark",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(2) > span"
+          ],
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(4) > span"
+          ],
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(6) > span"
+          ],
+          [
+            "span:nth-child(8) > span"
+          ],
+          [
+            "span:nth-child(10) > span"
+          ],
+          [
+            "span:nth-child(12) > span"
+          ]
+        ]
+      }
+    ],
+    "passes": 40
+  },
+  {
+    "width": 1440,
+    "path": "/posts/debugging-an-audacity-crash-on-windows/",
+    "theme": "light",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(2) > span"
+          ],
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(4) > span"
+          ],
+          [
+            ".highlight:nth-child(100) > pre > .language-text[data-lang=\"text\"] > span:nth-child(6) > span"
+          ],
+          [
+            "span:nth-child(8) > span"
+          ],
+          [
+            "span:nth-child(10) > span"
+          ],
+          [
+            "span:nth-child(12) > span"
+          ]
+        ]
+      }
+    ],
+    "passes": 40
+  },
+  {
+    "path": "menu",
+    "width": 390,
+    "theme": "dark",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "path": "menu",
+    "width": 390,
+    "theme": "light",
+    "violations": [],
+    "incomplete": []
+  }
+]

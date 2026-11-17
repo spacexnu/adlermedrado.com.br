@@ -1,7 +1,7 @@
 {{- $posts := where site.RegularPages "Type" "posts" -}}
 {{- $groups := slice
-  (dict "title" "English" "path" "/languages/english/" "lang" "english")
-  (dict "title" "Portuguese" "path" "/languages/portuguese/" "lang" "portuguese")
+  (dict "title" "English" "path" "/languages/english/" "lang" "english" "empty" "No English posts yet.")
+  (dict "title" "Portuguese" "path" "/languages/portuguese/" "lang" "portuguese" "empty" "Nenhum post em português ainda.")
 -}}
 {{- if eq .format "markdown" -}}
 {{- range $group := $groups }}
@@ -14,20 +14,40 @@
 {{- end }}
 {{ end }}
 {{- else -}}
-<section class="latest-posts">
-  <h2>Latest Logs</h2>
+<section class="latest-posts" id="latest-logs" aria-labelledby="logs-title">
+  <div class="latest-posts__head">
+    <h2 id="logs-title">Latest logs</h2>
+    <div class="log-switch" data-log-switch role="group" aria-label="Language">
+      <button type="button" data-log-target="english" aria-pressed="true" aria-controls="logs-english">EN</button>
+      <button type="button" data-log-target="portuguese" aria-pressed="false" aria-controls="logs-portuguese">PT</button>
+    </div>
+  </div>
+  <div class="log-grid">
   {{- range $group := $groups }}
   {{- $matched := where $posts "Params.languages" "intersect" (slice $group.lang) -}}
   {{- $latest := first 5 $matched.ByDate.Reverse }}
-  <h3><a href="{{ $group.path }}">{{ $group.title }}</a></h3>
-  <ul>
-    {{- range $latest }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <small>{{ .Date.Format "02 Jan 2006" }}</small>
-    </li>
+  <section class="log-panel" id="logs-{{ $group.lang }}" data-log-panel="{{ $group.lang }}" aria-labelledby="logs-heading-{{ $group.lang }}">
+    <header class="log-panel__head">
+      <h3 id="logs-heading-{{ $group.lang }}"><a href="{{ $group.path }}">{{ $group.title }}</a></h3>
+      <p>{{ len $latest }}</p>
+    </header>
+    {{- if eq (len $latest) 0 }}
+    <p class="log-empty">{{ $group.empty }}</p>
+    {{- else }}
+    <ol class="log-list">
+      {{- range $latest }}
+      <li>
+        <a href="{{ .RelPermalink }}">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          <span>{{ .Title }}</span>
+        </a>
+      </li>
+      {{- end }}
+    </ol>
     {{- end }}
-  </ul>
+    <p class="log-archive"><a href="{{ $group.path }}">Archive</a></p>
+  </section>
   {{- end }}
+  </div>
 </section>
 {{- end -}}

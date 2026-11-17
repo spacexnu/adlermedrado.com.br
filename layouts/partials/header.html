@@ -1,27 +1,73 @@
-<header class="glitch-zone">
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar_left">
-            <a href="/" class="h-card" rel="me">
-                <strong>Adler Medrado<span class="cursor-blink">|</span></strong>
-            </a>
-        </div>
-        <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">menu</button>
-        <div class="navbar_right navbar_right_animated" id="primary-navigation">
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-            <a href="/posts">posts</a>
-            <a href="/missives">missives</a>
-            <a href="/now">now</a>
-            <a href="/uses">uses</a>
-            <a href="/contact">contact</a>
-            <a href="/index.xml" aria-label="RSS feed">rss</a>
-            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="true">
-                <span class="label-dark">☀ light</span>
-                <span class="label-light">☾ dark</span>
+{{- $current := .RelPermalink -}}
+<header class="site-header">
+    <div class="site-header__row">
+        <a href="/" class="site-id h-card" rel="me">
+            <span class="site-id__prompt" aria-hidden="true">$</span>
+            <span class="site-id__name"><strong>Adler Medrado</strong><span class="site-id__separator" aria-hidden="true"> | </span><span class="site-id__alias">spacexnu</span></span>
+        </a>
+        <div class="site-header__tools">
+            <button class="theme-toggle" data-theme-toggle type="button" aria-pressed="true" aria-label="Dark mode">
+                <span data-theme-label>dark</span>
             </button>
+            <button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false">MENU</button>
         </div>
-    </nav>
-    <div class="tagline-bar">
-        <span id="tagline">There's no place like 127.0.0.1.</span>
+    </div>
+    <div class="site-header__sub">
+        <nav class="site-nav" aria-label="Main">
+            <a href="/about"{{ if eq $current "/about/" }} aria-current="page"{{ end }}>about</a>
+            <a href="/projects"{{ if eq $current "/projects/" }} aria-current="page"{{ end }}>projects</a>
+            <a href="/posts/"{{ if hasPrefix $current "/posts/" }} aria-current="page"{{ end }}>posts</a>
+            <a href="/missives/"{{ if hasPrefix $current "/missives/" }} aria-current="page"{{ end }}>missives</a>
+            <a href="/now"{{ if eq $current "/now/" }} aria-current="page"{{ end }}>now</a>
+            <a href="/uses"{{ if eq $current "/uses/" }} aria-current="page"{{ end }}>uses</a>
+            <a href="/contact"{{ if eq $current "/contact/" }} aria-current="page"{{ end }}>contact</a>
+            <a href="/start"{{ if eq $current "/start/" }} aria-current="page"{{ end }}>start</a>
+            <a href="/index.xml">rss</a>
+        </nav>
+        <p class="tagline-bar" id="tagline">There's no place like 127.0.0.1.</p>
     </div>
 </header>
+<details class="nav-fallback">
+    <summary>Menu</summary>
+    <ul>
+        <li><a href="/about">about</a></li>
+        <li><a href="/projects">projects</a></li>
+        <li><a href="/posts/">posts</a></li>
+        <li><a href="/missives/">missives</a></li>
+        <li><a href="/now">now</a></li>
+        <li><a href="/uses">uses</a></li>
+        <li><a href="/contact">contact</a></li>
+        <li><a href="/start">start</a></li>
+        <li><a href="/index.xml">rss</a></li>
+        <li><a href="http://xlqlev6ixhge3wyoivxhpcvuv2v5it2m2dxjnfng5d66jb7c6kpv6qid.onion/">onion</a></li>
+        <li><a href="/posts/verify-signatures">verify</a></li>
+    </ul>
+</details>
+<dialog id="site-menu" class="site-menu" aria-labelledby="site-menu-title">
+    <div class="site-menu__frame">
+        <div class="site-menu__bar">
+            <p id="site-menu-title">menu</p>
+            <button type="button" data-menu-close>:q! close</button>
+        </div>
+        <nav aria-label="Mobile">
+            <ol class="site-menu__tree">
+                <li><a href="/about"><span aria-hidden="true">├─ </span>about</a></li>
+                <li><a href="/projects"><span aria-hidden="true">├─ </span>projects</a></li>
+                <li><a href="/posts/"><span aria-hidden="true">├─ </span>posts</a></li>
+                <li><a href="/missives/"><span aria-hidden="true">├─ </span>missives</a></li>
+                <li><a href="/now"><span aria-hidden="true">├─ </span>now</a></li>
+                <li><a href="/uses"><span aria-hidden="true">├─ </span>uses</a></li>
+                <li><a href="/contact"><span aria-hidden="true">├─ </span>contact</a></li>
+                <li><a href="/start"><span aria-hidden="true">└─ </span>start</a></li>
+            </ol>
+        </nav>
+        <div class="site-menu__themes" role="group" aria-label="Theme">
+            <button type="button" data-theme-toggle data-theme-choice="light" aria-pressed="false">light</button>
+            <button type="button" data-theme-toggle data-theme-choice="dark" aria-pressed="true">dark</button>
+        </div>
+        <p class="site-menu__links">
+            <a href="http://xlqlev6ixhge3wyoivxhpcvuv2v5it2m2dxjnfng5d66jb7c6kpv6qid.onion/">onion</a>
+            <a href="/posts/verify-signatures">verify</a>
+        </p>
+    </div>
+</dialog>

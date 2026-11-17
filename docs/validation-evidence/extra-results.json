@@ -1,0 +1,45 @@
+{
+  "tab": {
+    "inDialog": true,
+    "text": "about"
+  },
+  "shiftTab": {
+    "inDialog": true,
+    "text": ":q! close"
+  },
+  "escape": {
+    "open": false,
+    "expanded": "false",
+    "focus": "menu-toggle"
+  },
+  "backgroundScroll": {
+    "before": 0,
+    "after": 500
+  },
+  "indexAnchor": {
+    "top": 99.09375,
+    "headerBottom": 49
+  },
+  "topAnchor": {
+    "promptTop": 131,
+    "headerBottom": 120.78125,
+    "scrollY": 0
+  },
+  "longText": {
+    "width": 720,
+    "scrollWidth": 705
+  },
+  "lowMenu": {
+    "dialogHeight": 370,
+    "frameClient": 400,
+    "frameScroll": 731,
+    "dialogClient": 368,
+    "dialogScroll": 400
+  },
+  "styles": {
+    "postFont": "15px",
+    "titleFont": "28px",
+    "homeFont": "15px",
+    "photoWidth": 280
+  }
+}

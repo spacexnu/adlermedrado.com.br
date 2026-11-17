@@ -1,0 +1,20 @@
+{
+  "baselineFiles": 958,
+  "finalFiles": 966,
+  "added": [
+    "fonts/jetbrains-mono/JetBrainsMono-Bold.woff2",
+    "fonts/jetbrains-mono/JetBrainsMono-Italic.woff2",
+    "fonts/jetbrains-mono/JetBrainsMono-Medium.woff2",
+    "fonts/jetbrains-mono/JetBrainsMono-Regular.woff2",
+    "fonts/jetbrains-mono/JetBrainsMono-SemiBold.woff2",
+    "fonts/jetbrains-mono/OFL.txt",
+    "fonts/jetbrains-mono/README.md",
+    "js/home-logs.js"
+  ],
+  "removed": [],
+  "changedCanonicalOrAlternates": [],
+  "homeMissingLocalLinks": [],
+  "rssIdentical": true,
+  "homeMarkdownIdentical": false,
+  "contentAPIIdentical": true
+}

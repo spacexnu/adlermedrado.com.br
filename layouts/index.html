@@ -1,5 +1,32 @@
 {{ define "main" }}
-{{ .Content }}
-
-{{ partial "latest-posts.html" (dict "format" "html") }}
+<div class="home">
+    <div class="home-panel">
+        <p class="home-prompt" aria-hidden="true"><span></span><span></span><span></span> whoami</p>
+        <section class="home-hero" aria-labelledby="home-title">
+            <div class="home-intro">
+                <p class="home-role">Software engineer</p>
+                <div class="home-heading">
+                    <h1 id="home-title">Adler Medrado</h1>
+                    <p class="home-alias">aka <span>spacexnu</span></p>
+                </div>
+                <p>Writing about code, systems, and sovereignty. Building defensive AI along the way.</p>
+            </div>
+            <div class="home-hero__photo">
+                <img src="/images/IMG_7191.jpeg" alt="Portrait of Adler Medrado" width="640" height="640" />
+            </div>
+            <nav class="home-index" id="site-index" aria-label="Index">
+                <ul class="home-tree">
+                    <li><span class="home-tree__branch" aria-hidden="true">├─</span><span class="home-tree__entry">Learn who I am → <a href="/about">about</a></span></li>
+                    <li><span class="home-tree__branch" aria-hidden="true">├─</span><span class="home-tree__entry">Explore what I’m building → <a href="/projects">projects</a></span></li>
+                    <li><span class="home-tree__branch" aria-hidden="true">├─</span><span class="home-tree__entry">Read my writing → <a href="/start">start here</a>, <a href="/posts/">posts</a> and <a href="/missives/">missives</a></span></li>
+                    <li><span class="home-tree__branch" aria-hidden="true">├─</span><span class="home-tree__entry">See what I’m up to → <a href="/now">now</a> and <a href="/uses">uses</a></span></li>
+                    <li><span class="home-tree__branch" aria-hidden="true">└─</span><span class="home-tree__entry">Reach out → <a href="/contact">contact</a></span></li>
+                </ul>
+            </nav>
+            <p class="home-sign">All blog posts are GPG signed. If it isn’t signed, it isn’t mine. <a href="/posts/verify-signatures">Verify</a>.</p>
+            <p class="home-contract">Self-hosted, with an <a href="http://xlqlev6ixhge3wyoivxhpcvuv2v5it2m2dxjnfng5d66jb7c6kpv6qid.onion/">onion mirror</a>, and published as <a href="/index.md">Markdown</a>.</p>
+        </section>
+    </div>
+    {{ partial "latest-posts.html" (dict "format" "html") }}
+</div>
 {{ end }}

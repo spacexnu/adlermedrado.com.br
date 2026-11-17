@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } } .terminal-cursor { animation: blink 1s infinite; }</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "parchment-bg": "#f5f2eb",
+        "parchment-card": "#ffffff",
+        "parchment-surface": "#ede8dc",
+        "parchment-subtle": "#fdfcf9",
+        "parchment-border": "#d8d2c4",
+        "parchment-border-dark": "#b8afa0",
+        "ink-primary": "#14171a",
+        "ink-secondary": "#3e464c",
+        "ink-muted": "#6a7680",
+        "terminal-green": "#0a6836",
+        "terminal-green-light": "#eaf6ee",
+        "terminal-green-border": "#84c39b",
+        "command-cyan": "#0369a1",
+        "command-cyan-light": "#f0f7fb",
+        "command-amber": "#9b4500",
+        "amber-alert": "#c26100",
+        "crimson-signal": "#ba1a1a",
+        "matrix-emerald": "#0f7643"
+      },
+      fontFamily: {
+        "mono": ["JetBrains Mono", "monospace"]
+      }
+    }
+  }
+};</script></head><body class="bg-parchment-bg text-ink-primary font-mono text-[13px] leading-[22px] min-h-screen flex flex-col selection:bg-terminal-green selection:text-white"><header class="fixed top-0 w-full z-50 bg-[#f7f4ed]/95 backdrop-blur-md border-b border-parchment-border shadow-sm"><div class="h-20 max-w-[960px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col justify-center"><div class="flex items-center justify-between gap-4 mb-2"><div class="flex items-center gap-2 overflow-hidden"><a class="flex items-center gap-1.5 font-semibold text-[16px] text-ink-primary tracking-tight whitespace-nowrap" data-path="about" href="#"><span class="text-terminal-green font-bold">&gt;</span><span class="text-ink-primary">Adler Medrado | spacexnu</span><span class="inline-block w-2 h-4 bg-terminal-green terminal-cursor ml-0.5"></span></a><span class="hidden lg:inline text-ink-muted text-[11px] truncate">| ... Real programmers count from 0. There's no place like 127.0.0.1.</span></div><div class="flex items-center gap-3 shrink-0"><div class="hidden sm:flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-parchment-surface border border-parchment-border text-[11px] text-ink-secondary"><span class="w-1.5 h-1.5 rounded-full bg-matrix-emerald animate-pulse"></span><span class="font-medium tracking-wide">ONION // PGP ACTIVE</span></div><button aria-label="Toggle color mode" class="px-2.5 py-1 rounded bg-parchment-card border border-parchment-border text-[11px] text-ink-secondary hover:text-command-cyan hover:border-command-cyan transition-colors flex items-center gap-1 shadow-sm font-medium" onclick="document.documentElement.classList.toggle('dark')" type="button"><span class="text-command-amber font-semibold">☀ LIGHT</span><span class="text-ink-muted">/</span><span class="text-ink-muted hover:text-ink-primary">☾</span></button><div class="w-8 h-8 rounded-full bg-ink-primary border border-parchment-border-dark flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-parchment-bg text-[18px]">person</span></div></div></div><div class="flex items-center justify-between overflow-x-auto no-scrollbar"><nav class="flex items-center gap-4 text-[12px] font-medium py-0.5 whitespace-nowrap"><a aria-current="page" class="transition-colors pb-0.5 text-terminal-green font-bold border-b-2 border-terminal-green" data-path="about" href="#">about</a><a class="text-ink-secondary hover:text-terminal-green transition-colors pb-0.5" data-path="projects" href="#">projects</a><a class="text-ink-secondary hover:text-terminal-green transition-colors pb-0.5" data-path="posts" href="#">posts</a><a class="text-ink-secondary hover:text-terminal-green transition-colors pb-0.5" data-path="missives" href="#">missives</a><a class="text-ink-secondary hover:text-terminal-green transition-colors pb-0.5" data-path="now" href="#">now</a><a class="text-ink-secondary hover:text-terminal-green transition-colors pb-0.5" data-path="uses" href="#">uses</a><a class="text-ink-secondary hover:text-terminal-green transition-colors pb-0.5" data-path="contact" href="#">contact</a><a class="text-ink-secondary hover:text-terminal-green transition-colors pb-0.5" data-path="rss" href="#">rss</a></nav><div class="hidden md:flex items-center text-[11px] text-ink-muted gap-1.5"><span class="text-matrix-emerald">●</span><span class="font-medium">SYS: SECURE [PARCHMENT]</span></div></div></div></header><main class="w-full pt-24 bg-parchment-bg flex-1"><div class="max-w-[960px] mx-auto px-4 sm:px-6 md:px-8 py-6"><div class="flex flex-col w-full gap-y-8">
+<!-- TERMINAL MAIN WINDOW / HERO PANEL -->
+<section class="relative rounded-xl bg-parchment-card border border-parchment-border shadow-md p-5 sm:p-6 md:p-8 overflow-hidden transition-all duration-300">
+<!-- Terminal Window Top Control Bar -->
+<div class="flex items-center justify-between pb-3 mb-6 bg-parchment-surface/90 px-3.5 py-1.5 rounded-lg border border-parchment-border">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-crimson-signal border border-crimson-signal/60 inline-block shadow-sm"></span>
+<span class="w-3 h-3 rounded-full bg-amber-alert border border-amber-alert/60 inline-block shadow-sm"></span>
+<span class="w-3 h-3 rounded-full bg-matrix-emerald border border-matrix-emerald/60 inline-block shadow-sm"></span>
+<span class="text-[11px] text-ink-muted ml-2 tracking-wider font-semibold">session: pts/0 (tmux:sec-ops)</span>
+</div>
+<div class="hidden sm:flex items-center gap-2 text-[11px] text-ink-secondary font-medium">
+<span class="text-terminal-green font-bold">adler@spacexnu:~$</span>
+<span>whoami --verbose</span>
+</div>
+<div class="flex items-center gap-2 text-ink-muted text-[11px]">
+<span class="px-2 py-0.5 rounded bg-terminal-green-light border border-terminal-green-border text-terminal-green font-semibold">SIG: VALID</span>
+<span class="font-medium text-ink-secondary">UTF-8</span>
+</div>
+</div>
+<!-- Main Hero Split Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Content Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-y-4">
+<!-- Subtitle Pill -->
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded bg-terminal-green-light border border-terminal-green-border/80 text-terminal-green">
+<span class="material-symbols-outlined text-[16px] text-terminal-green font-bold">terminal</span>
+<span class="text-[11px] font-bold tracking-wider">SECURITY-MINDED SOFTWARE ENGINEER</span>
+</div>
+<!-- Name / Handle Heading -->
+<div class="flex flex-col gap-1">
+<div class="flex items-baseline flex-wrap gap-x-2.5">
+<h1 class="text-[32px] md:text-[36px] font-bold text-ink-primary tracking-tight">
+              Adler Medrado
+            </h1>
+<span class="text-[16px] text-ink-muted font-medium">
+              aka <span class="text-command-cyan font-semibold">spacexnu</span>
+</span>
+</div>
+<p class="text-[15px] leading-relaxed text-ink-secondary mt-1">
+            Writing about code, systems, and sovereignty. Building defensive AI along the way.
+          </p>
+</div>
+<!-- Unix Directory Jump Tree / Navigation Table -->
+<div class="p-4 rounded-lg bg-parchment-surface/70 border border-parchment-border font-mono text-[12px] flex flex-col gap-y-2 mt-1">
+<div class="text-[11px] text-ink-muted flex items-center justify-between pb-1.5 mb-1 border-b border-parchment-border/70">
+<span class="font-bold tracking-wider text-ink-secondary">FILESYSTEM ENTRYPOINTS [INDEX]</span>
+<span class="text-terminal-green font-bold">drwxr-xr-x</span>
+</div>
+<div class="flex items-center gap-2 group">
+<span class="text-ink-muted select-none">├─</span>
+<span class="text-ink-primary font-medium">Learn who I am</span>
+<span class="text-terminal-green font-bold">→</span>
+<a class="text-command-cyan hover:text-terminal-green underline underline-offset-4 decoration-command-cyan/50 hover:decoration-terminal-green transition-colors font-semibold" data-path="about" href="#">about</a>
+</div>
+<div class="flex items-center gap-2 group">
+<span class="text-ink-muted select-none">├─</span>
+<span class="text-ink-primary font-medium">Explore what I’m building</span>
+<span class="text-terminal-green font-bold">→</span>
+<a class="text-command-cyan hover:text-terminal-green underline underline-offset-4 decoration-command-cyan/50 hover:decoration-terminal-green transition-colors font-semibold" data-path="projects" href="#">projects</a>
+</div>
+<div class="flex items-center flex-wrap gap-x-2 gap-y-1 group">
+<span class="text-ink-muted select-none">├─</span>
+<span class="text-ink-primary font-medium">Read my writing</span>
+<span class="text-terminal-green font-bold">→</span>
+<a class="text-command-cyan hover:text-terminal-green underline underline-offset-4 decoration-command-cyan/50 transition-colors font-semibold" data-path="start" href="#">start here</a>,
+            <a class="text-command-cyan hover:text-terminal-green underline underline-offset-4 decoration-command-cyan/50 transition-colors font-semibold" data-path="posts" href="#">posts</a>
+<span class="text-ink-muted">and</span>
+<a class="text-command-cyan hover:text-terminal-green underline underline-offset-4 decoration-command-cyan/50 transition-colors font-semibold" data-path="missives" href="#">missives</a>
+</div>
+<div class="flex items-center gap-2 group">
+<span class="text-ink-muted select-none">├─</span>
+<span class="text-ink-primary font-medium">See what I’m up to</span>
+<span class="text-terminal-green font-bold">→</span>
+<a class="text-command-cyan hover:text-terminal-green underline underline-offset-4 decoration-command-cyan/50 transition-colors font-semibold" data-path="now" href="#">now</a>
+<span class="text-ink-muted">and</span>
+<a class="text-command-cyan hover:text-terminal-green underline underline-offset-4 decoration-command-cyan/50 transition-colors font-semibold" data-path="uses" href="#">uses</a>
+</div>
+<div class="flex items-center gap-2 group">
+<span class="text-ink-muted select-none">└─</span>
+<span class="text-ink-primary font-medium">Reach out</span>
+<span class="text-terminal-green font-bold">→</span>
+<a class="text-command-cyan hover:text-terminal-green underline underline-offset-4 decoration-command-cyan/50 transition-colors font-semibold" data-path="contact" href="#">contact</a>
+</div>
+</div>
+<!-- Integrity & GPG Banner -->
+<div class="flex items-start gap-2.5 p-3 rounded-lg bg-terminal-green-light/70 border border-terminal-green-border/80">
+<span class="text-lg select-none">🔏</span>
+<div class="text-[12px] leading-snug flex flex-col">
+<span class="text-terminal-green font-bold">All blog posts are GPG signed.</span>
+<span class="text-ink-secondary">If it isn't signed, it isn't mine.</span>
+</div>
+</div>
+</div>
+<!-- Right Cybernetic Engineer Portal (5 cols) -->
+<div class="lg:col-span-5 flex flex-col items-center justify-center relative">
+<div class="relative group p-2 rounded-full bg-gradient-to-tr from-parchment-border via-parchment-card to-terminal-green-border shadow-md">
+<!-- Outer Ring -->
+<div class="absolute inset-0 rounded-full border border-terminal-green/30"></div>
+<!-- Circular Hacker Avatar Container -->
+<div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full overflow-hidden bg-parchment-surface border-2 border-parchment-border-dark flex items-center justify-center shadow-inner">
+<img class="w-full h-full object-cover filter contrast-105 group-hover:scale-105 transition-transform duration-500" data-alt="Photorealistic cybernetic security engineer Adler Medrado sitting in a moody dark data center workstation surrounded by glowing server racks, amber and green terminal screens, wearing glasses and a headset, focused and grinning, backlit by soft cyan and neon phosphor green ambient illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqKcF-9GhhiYhNB9xRP8vgKef6LFpxs5Mc91bEcsq3Rto8qRIoTSzHNPsri6-_ZZ3T3oRrWuUe0j5hPfJev-ca_UnoPs2PpSI0XE3hsEpAZJwgabyADD_gAClMV5EoRRgaD_UzhAHgSBWHMvZVzeme8zXpjMw59oqtftSuvnNayOkUT_JgVgYeBucJ5EFridrxDzdtEJ0kyb7Pvd32xumigur-6sW-Yv81jZUyw6Q"/>
+<!-- Subtle Vignette Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-ink-primary/70 via-transparent to-transparent pointer-events-none"></div>
+<!-- Target Crosshair Overlays -->
+<div class="absolute top-4 right-4 text-white font-mono text-[11px] font-bold pointer-events-none select-none drop-shadow">[42°N]</div>
+<div class="absolute bottom-3 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded bg-ink-primary/90 text-parchment-bg font-mono text-[11px] font-semibold border border-parchment-border/50 pointer-events-none whitespace-nowrap">
+              UID: 1000 // spacexnu
+            </div>
+</div>
+</div>
+<!-- Telemetry Stats Below Avatar -->
+<div class="mt-4 grid grid-cols-2 gap-2 w-full max-w-[280px]">
+<div class="px-2.5 py-1.5 rounded bg-parchment-surface border border-parchment-border text-center shadow-xs">
+<div class="text-[10px] text-ink-muted font-bold tracking-wider">GPG ENCRYPTION</div>
+<div class="text-[11px] text-terminal-green font-bold">ED25519 ACTIVE</div>
+</div>
+<div class="px-2.5 py-1.5 rounded bg-parchment-surface border border-parchment-border text-center shadow-xs">
+<div class="text-[10px] text-ink-muted font-bold tracking-wider">HOST ARCH</div>
+<div class="text-[11px] text-command-cyan font-bold">SOVEREIGN LINUX</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sovereign Subtext Footnote -->
+<div class="mt-6 pt-4 border-t border-parchment-border flex items-center justify-between flex-wrap gap-2 text-ink-secondary text-[12px]">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-matrix-emerald"></span>
+<span>Self-hosted, with an onion mirror, and published as Markdown so agents can read the same pages.</span>
+</div>
+<div class="flex items-center gap-1.5 text-[11px] font-semibold">
+<span class="text-ink-muted">ROBOTS:</span>
+<span class="text-command-cyan">FRIENDLY (/feed.md)</span>
+</div>
+</div>
+</section>
+<!-- LATEST LOGS SECTION -->
+<section class="flex flex-col gap-y-4"><div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 pb-1"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-terminal-green text-[26px]">receipt_long</span><h2 class="text-[24px] font-bold text-ink-primary tracking-tight">Latest Logs</h2><span class="text-ink-muted text-[12px] font-medium hidden md:inline ml-2"># journalctl -u logs.service --no-tail -n 10</span></div><div class="flex items-center gap-2 text-ink-secondary text-[11px] self-start sm:self-auto font-medium"><span class="px-2 py-0.5 rounded bg-parchment-card border border-parchment-border text-ink-primary">STREAM: LIVE</span><span class="px-2 py-0.5 rounded bg-terminal-green-light border border-terminal-green-border text-terminal-green font-semibold">FORMAT: RFC5424</span></div></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-4"><div class="rounded-xl bg-parchment-card border border-parchment-border p-4 sm:p-5 flex flex-col justify-between shadow-sm"><div class="flex flex-col"><div class="flex items-center justify-between pb-2 mb-2 border-b border-parchment-border"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-terminal-green"></span><a class="group flex items-center gap-1 text-[11px] text-command-cyan hover:text-terminal-green transition-colors font-bold" data-path="languages/english" href=""><span class="font-bold">journalctl -u posts-en.service</span><span class="material-symbols-outlined text-[14px] text-ink-muted group-hover:text-terminal-green transition-colors">north_east</span></a></div><span class="text-[11px] text-ink-muted font-medium">5 entries</span></div><div class="grid grid-cols-[auto_auto_1fr_auto] items-center gap-x-2 py-1 px-1.5 text-[10px] text-ink-muted uppercase border-b border-parchment-border/70 select-none font-bold tracking-wider"><span>DATE</span><span>TAG</span><span>LOG MESSAGE / TITLE</span><span class="text-right">ACT</span></div><div class="flex flex-col divide-y divide-parchment-border/60"><article class="group py-2 px-1.5 hover:bg-parchment-surface/60 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left text-[12px] leading-snug" data-path="posts/debugging-an-audacity-crash-on-windows" href=""><time class="text-[11px] text-ink-muted shrink-0 tabular-nums font-medium" datetime="2026-10-02">2026-10-02</time><span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-command-cyan-light border border-command-cyan/30 text-command-cyan shrink-0">[EN]</span><span class="text-ink-primary font-medium group-hover:text-command-cyan transition-colors underline decoration-dotted decoration-command-cyan/40 group-hover:decoration-command-cyan truncate">Debugging an Audacity Crash on Windows: From Bluetooth Headset to Open Source Bug Report</span><span class="text-terminal-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-2 px-1.5 hover:bg-parchment-surface/60 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left text-[12px] leading-snug" data-path="posts/technical-sovereignty-cloud-provider-exit-test" href=""><time class="text-[11px] text-ink-muted shrink-0 tabular-nums font-medium" datetime="2026-10-01">2026-10-01</time><span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-command-cyan-light border border-command-cyan/30 text-command-cyan shrink-0">[EN]</span><span class="text-ink-primary font-medium group-hover:text-command-cyan transition-colors underline decoration-dotted decoration-command-cyan/40 group-hover:decoration-command-cyan truncate">Technical Sovereignty: Can You Actually Leave Your Cloud Provider?</span><span class="text-terminal-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-2 px-1.5 hover:bg-parchment-surface/60 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left text-[12px] leading-snug" data-path="posts/making-my-site-agent-ready" href=""><time class="text-[11px] text-ink-muted shrink-0 tabular-nums font-medium" datetime="2026-07-29">2026-07-29</time><span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-command-cyan-light border border-command-cyan/30 text-command-cyan shrink-0">[EN]</span><span class="text-ink-primary font-medium group-hover:text-command-cyan transition-colors underline decoration-dotted decoration-command-cyan/40 group-hover:decoration-command-cyan truncate">From 21 to 71: Making My Site Legible to Agents</span><span class="text-terminal-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-2 px-1.5 hover:bg-parchment-surface/60 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left text-[12px] leading-snug" data-path="posts/the-line-on-the-dojo-wall" href=""><time class="text-[11px] text-ink-muted shrink-0 tabular-nums font-medium" datetime="2026-07-09">2026-07-09</time><span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-command-cyan-light border border-command-cyan/30 text-command-cyan shrink-0">[EN]</span><span class="text-ink-primary font-medium group-hover:text-command-cyan transition-colors underline decoration-dotted decoration-command-cyan/40 group-hover:decoration-cyber-cyan truncate">The Line on the Dojo Wall</span><span class="text-terminal-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-2 px-1.5 hover:bg-parchment-surface/60 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left text-[12px] leading-snug" data-path="posts/when-the-radio-chose-for-you" href=""><time class="text-[11px] text-ink-muted shrink-0 tabular-nums font-medium" datetime="2026-07-08">2026-07-08</time><span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-command-cyan-light border border-command-cyan/30 text-command-cyan shrink-0">[EN]</span><span class="text-ink-primary font-medium group-hover:text-command-cyan transition-colors underline decoration-dotted decoration-command-cyan/40 group-hover:decoration-cyan truncate">When the Radio Chose for You</span><span class="text-terminal-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article></div></div><div class="mt-3 pt-2.5 flex justify-end border-t border-parchment-border"><a class="text-[11px] font-bold text-ink-secondary hover:text-terminal-green flex items-center gap-1 transition-colors" data-path="languages/english" href=""><span>View all English archives</span><span>&gt;&gt;</span></a></div></div><div class="rounded-xl bg-parchment-card border border-parchment-border p-4 sm:p-5 flex flex-col justify-between shadow-sm"><div class="flex flex-col"><div class="flex items-center justify-between pb-2 mb-2 border-b border-parchment-border"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-matrix-emerald"></span><a class="group flex items-center gap-1 text-[11px] text-command-cyan hover:text-terminal-green transition-colors font-bold" data-path="languages/portuguese" href=""><span class="font-bold">journalctl -u posts-pt.service</span><span class="material-symbols-outlined text-[14px] text-ink-muted group-hover:text-terminal-green transition-colors">north_east</span></a></div><span class="text-[11px] text-ink-muted font-medium">5 publicações</span></div><div class="grid grid-cols-[auto_auto_1fr_auto] items-center gap-x-2 py-1 px-1.5 text-[10px] text-ink-muted uppercase border-b border-parchment-border/70 select-none font-bold tracking-wider"><span>DATA</span><span>TAG</span><span>MENSAGEM DE LOG / TÍTULO</span><span class="text-right">ACT</span></div><div class="flex flex-col divide-y divide-parchment-border/60"><article class="group py-2 px-1.5 hover:bg-parchment-surface/60 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left text-[12px] leading-snug" data-path="posts/tornando-meu-site-agent-ready" href=""><time class="text-[11px] text-ink-muted shrink-0 tabular-nums font-medium" datetime="2026-07-29">2026-07-29</time><span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-terminal-green-light border border-terminal-green-border text-terminal-green shrink-0">[PT]</span><span class="text-ink-primary font-medium group-hover:text-command-cyan transition-colors underline decoration-dotted decoration-command-cyan/40 group-hover:decoration-command-cyan truncate">De 21 a 71: tornando meu site legível por agentes</span><span class="text-terminal-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-2 px-1.5 hover:bg-parchment-surface/60 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left text-[12px] leading-snug" data-path="posts/mais-valem-as-lagrimas-da-derrota-do-que-a-vergonha-de-nao-ter-lutado" href=""><time class="text-[11px] text-ink-muted shrink-0 tabular-nums font-medium" datetime="2026-07-09">2026-07-09</time><span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-terminal-green-light border border-terminal-green-border text-terminal-green shrink-0">[PT]</span><span class="text-ink-primary font-medium group-hover:text-command-cyan transition-colors underline decoration-dotted decoration-command-cyan/40 group-hover:decoration-command-cyan truncate">A frase na parede do dojo</span><span class="text-terminal-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-2 px-1.5 hover:bg-parchment-surface/60 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left text-[12px] leading-snug" data-path="posts/quando-a-radio-escolhia-por-voce" href=""><time class="text-[11px] text-ink-muted shrink-0 tabular-nums font-medium" datetime="2026-07-08">2026-07-08</time><span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-terminal-green-light border border-terminal-green-border text-terminal-green shrink-0">[PT]</span><span class="text-ink-primary font-medium group-hover:text-command-cyan transition-colors underline decoration-dotted decoration-command-cyan/40 group-hover:decoration-command-cyan truncate">Quando a rádio escolhia por você</span><span class="text-terminal-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-2 px-1.5 hover:bg-parchment-surface/60 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left text-[12px] leading-snug" data-path="posts/o-circo-que-nunca-vi" href=""><time class="text-[11px] text-ink-muted shrink-0 tabular-nums font-medium" datetime="2026-06-12">2026-06-12</time><span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-terminal-green-light border border-terminal-green-border text-terminal-green shrink-0">[PT]</span><span class="text-ink-primary font-medium group-hover:text-command-cyan transition-colors underline decoration-dotted decoration-command-cyan/40 group-hover:decoration-command-cyan truncate">O circo que eu nunca vi</span><span class="text-terminal-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article><article class="group py-2 px-1.5 hover:bg-parchment-surface/60 rounded transition-colors"><a class="grid grid-cols-[auto_auto_1fr_auto] items-baseline gap-x-2 w-full text-left text-[12px] leading-snug" data-path="posts/javascript-sem-trair-a-privacidade" href=""><time class="text-[11px] text-ink-muted shrink-0 tabular-nums font-medium" datetime="2026-06-09">2026-06-09</time><span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-terminal-green-light border border-terminal-green-border text-terminal-green shrink-0">[PT]</span><span class="text-ink-primary font-medium group-hover:text-command-cyan transition-colors underline decoration-dotted decoration-command-cyan/40 group-hover:decoration-command-cyan truncate">Adicionei JavaScript no site e a sua privacidade continua intacta</span><span class="text-terminal-green opacity-0 group-hover:opacity-100 transition-opacity font-bold text-right shrink-0">→</span></a></article></div></div><div class="mt-3 pt-2.5 flex justify-end border-t border-parchment-border"><a class="text-[11px] font-bold text-ink-secondary hover:text-terminal-green flex items-center gap-1 transition-colors" data-path="languages/portuguese" href=""><span>Ver arquivos em português</span><span>&gt;&gt;</span></a></div></div></div></section>
+<!-- SECURITY & VERIFICATION ACCREDITATION BAR (CARD) -->
+<section class="rounded-xl bg-parchment-card border border-parchment-border p-4 md:p-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-sm">
+<!-- PGP Verification Info -->
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-parchment-surface border border-parchment-border flex items-center justify-center shrink-0 text-xl shadow-inner select-none">
+        🔏
+      </div>
+<div class="flex flex-col">
+<span class="text-[15px] font-bold text-terminal-green">All pages are PGP signed.</span>
+<div class="text-[12px] text-ink-secondary">
+          Learn how to verify my PGP signature 
+          <a class="text-command-cyan hover:underline decoration-command-cyan font-bold" data-path="posts/verify-signatures" href="#">here</a>.
+        </div>
+</div>
+</div>
+<!-- Mozilla Observatory A+ Badge & Privacy Statement -->
+<div class="flex flex-wrap items-center gap-4">
+<div class="text-[12px] italic text-ink-muted">
+        Privacy policy: this website employs no tracking.
+      </div>
+<a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-parchment-surface hover:bg-parchment-bg border border-parchment-border transition-colors group shadow-xs" href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" rel="noopener noreferrer" target="_blank">
+<span class="px-2 py-0.5 rounded bg-terminal-green text-white text-[13px] font-bold group-hover:scale-105 transition-transform shadow-xs">
+          A+
+        </span>
+<div class="flex flex-col text-left">
+<span class="text-[11px] font-bold text-ink-primary">Mozilla Observatory</span>
+<span class="text-[10px] text-ink-muted">Security Rating</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-ink-muted group-hover:text-terminal-green ml-0.5 transition-colors">
+          open_in_new
+        </span>
+</a>
+</div>
+</section>
+</div></div></main><footer class="w-full bg-[#ede8dc] border-t border-parchment-border py-6 mt-12"><div class="max-w-[960px] mx-auto px-4 sm:px-6 md:px-8 flex flex-col gap-4"><div class="flex flex-col md:flex-row md:items-center justify-between gap-2 text-[12px] text-ink-secondary font-medium"><div>© 1996-2026 Adler Medrado. All rights reserved.</div><div class="text-ink-muted">Mainframe terminal output · Edition 2026.04</div></div><div class="flex flex-col md:flex-row md:items-center justify-between gap-2 text-[11px] border-t border-parchment-border/70 pt-3 text-ink-muted"><div>Sovereign plaintext-first infrastructure. No telemetry.</div><div class="flex items-center gap-3"><span class="px-2 py-0.5 rounded border border-parchment-border bg-parchment-card text-ink-secondary font-semibold">ONION: MIRRORED</span></div></div><div class="px-3.5 py-2 rounded-lg bg-parchment-card border border-parchment-border text-[11px] text-ink-secondary flex flex-wrap items-center justify-between gap-2 shadow-xs font-mono"><span><strong class="text-ink-muted">TTY:</strong> pts/0</span><span><strong class="text-ink-muted">UID:</strong> 1000 (spacexnu)</span><span><strong class="text-ink-muted">GPG:</strong> <span class="text-terminal-green font-bold">VALID [ED25519]</span></span><span><strong class="text-ink-muted">AGENT_READY:</strong> <span class="text-command-cyan font-bold">TRUE</span></span><span><strong class="text-ink-muted">TLS:</strong> A+ (HSTS/DNSSEC)</span></div></div></footer></body></html>

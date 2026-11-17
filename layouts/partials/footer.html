@@ -1,23 +1,28 @@
-<footer class="glitch-zone" role="contentinfo">
+<footer class="site-footer" role="contentinfo">
     <div class="footer-content">
-        <div class="copyright">
-            <p><small>&copy; 1996-{{ now.Format "2006" }} Adler Medrado</small></p>
-        </div>
-        <div class="gpg_signed_info">
-            <div class="gpg-callout">
-                <div class="gpg-callout__icon" aria-hidden="true">🔏</div>
-                <div class="gpg-callout__text">
-                    <p class="gpg-callout__title">All pages are PGP signed.</p>
-                    <p class="gpg-callout__subtitle">Learn how to verify my PGP signature <a class="gpg-callout__link" href="/posts/verify-signatures">here</a>.</p>
+        <div class="footer-integrity">
+            <div class="footer-signature">
+                <svg class="footer-signature__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg>
+                <div>
+                    <p class="footer-signature__title">All pages are GPG signed.</p>
+                    <p>Learn how to verify my PGP signature <a href="/posts/verify-signatures">here</a>.</p>
+                    <p class="footer-signature__key"><a href="/pub-key.asc">Download my public key</a></p>
                 </div>
             </div>
-            <p>
-                <em>Privacy policy: this website employs no tracking.</em>
-            </p>
-            <p>
-                <span class="badge-a-plus"><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br" aria-label="Mozilla Observatory Security Rating: A+">A+</a></span>
-                <span class="badge-description">Mozilla Observatory Security Rating</span>
-            </p>
+            <div class="footer-security">
+                <a class="observatory-badge" href="https://developer.mozilla.org/en-US/observatory/analyze?host=adlermedrado.com.br">
+                    <span class="observatory-badge__grade" aria-label="Security rating: A+">A+</span>
+                    <span class="observatory-badge__details"><strong>Mozilla Observatory</strong><small>View security analysis</small></span>
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+            <p class="footer-privacy">Privacy policy: this website employs no tracking.</p>
         </div>
+        <p class="footer-copyright"><small>&copy; 1996-{{ now.Format "2006" }} Adler Medrado</small></p>
     </div>
 </footer>
+<nav class="mobile-dock" aria-label="Shortcuts">
+    <a href="/#top">Home</a>
+    <a href="/#site-index">Índice</a>
+    <a href="/#latest-logs">Posts</a>
+</nav>

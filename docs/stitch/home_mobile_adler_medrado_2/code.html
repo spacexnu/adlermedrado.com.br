@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { theme: { extend: { "colors": { "background": "#f5f2eb", "paper-base": "#eae5d9", "paper-surface": "#fbf9f5", "paper-card": "#ffffff", "paper-border": "#d6cebf", "paper-border-dark": "#b8afa0", "text-ink": "#14171a", "text-body": "#262b30", "text-muted": "#68737d", "text-dim": "#828f99", "phosphor-green": "#0a6836", "phosphor-green-light": "#0f8344", "cyber-cyan": "#0369a1", "cyber-cyan-dark": "#024a73", "amber-alert": "#b45309", "crimson-signal": "#c2410c", "terminal-dark": "#1a1f24" }, "fontFamily": { "mono": ["JetBrains Mono", "monospace"] }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.375rem", "xl": "0.5rem" } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-[#f5f2eb] font-mono text-[#262b30] antialiased flex flex-col min-h-screen select-none"><header class="fixed top-0 w-full z-50 pt-safe bg-[#f5f2eb]/95 backdrop-blur-md border-b border-[#d6cebf] shadow-sm"><div class="h-16 px-4 flex items-center justify-between gap-2"><div class="flex items-center gap-1.5 min-w-0"><span class="text-[#0a6836] font-bold text-base select-none">&gt;</span><div class="flex flex-col truncate"><span class="font-bold text-[15px] text-[#14171a] tracking-tight truncate">adler medrado</span><span class="text-[10px] font-semibold text-[#0369a1] tracking-wider uppercase">SPACEXNU:~$ ABOUT</span></div></div><div class="flex items-center gap-2 shrink-0"><div class="hidden sm:flex items-center gap-1 bg-[#eae5d9] px-2 py-0.5 rounded border border-[#d6cebf]"><span class="w-1.5 h-1.5 rounded-full bg-[#0a6836] animate-pulse"></span><span class="text-[10px] text-[#68737d]">ONION/PGP</span></div><button aria-label="Toggle Theme" class="w-10 h-10 flex items-center justify-center rounded border border-[#d6cebf] bg-[#ffffff] text-[#0369a1] hover:bg-[#eae5d9] transition-colors shadow-xs" type="button"><span class="text-sm font-bold">☀</span></button><button aria-label="Terminal Menu" class="min-h-[40px] px-2.5 flex items-center justify-center rounded border border-[#0a6836]/30 bg-[#0a6836]/10 text-[#0a6836] font-semibold text-xs hover:bg-[#0a6836]/20 transition-colors" onclick="const m=document.getElementById('cli-overlay-menu');m.classList.toggle('hidden');m.classList.toggle('flex')" type="button">[MENU]</button><div class="w-8 h-8 rounded-full bg-[#0a6836] flex items-center justify-center shrink-0 shadow-xs"><span class="material-symbols-outlined text-white text-[18px]">person</span></div></div></div></header><div class="hidden fixed inset-0 z-40 bg-[#f5f2eb]/98 backdrop-blur-xl flex-col pt-20 pb-20 px-4 overflow-y-auto" id="cli-overlay-menu"><div class="flex items-center justify-between pb-3 border-b border-[#d6cebf]"><span class="text-[11px] font-semibold text-[#0369a1] tracking-widest uppercase">// SYSTEM INDEX &amp; BUILTINS</span><button class="min-h-[40px] px-3 flex items-center justify-center text-xs font-semibold text-[#c2410c] hover:bg-[#c2410c]/10 rounded border border-[#c2410c]/30" onclick="const m=document.getElementById('cli-overlay-menu');m.classList.add('hidden');m.classList.remove('flex')" type="button">[CLOSE_ESC]</button></div><div class="grid grid-cols-2 gap-2 py-3"><a class="flex items-center min-h-[40px] px-3 py-2 rounded bg-white border border-[#d6cebf] text-[#14171a] hover:text-[#0a6836] hover:border-[#0a6836] text-xs transition-colors" data-path="about" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-[#0369a1] mr-1.5 font-bold">~</span>/about</a><a class="flex items-center min-h-[40px] px-3 py-2 rounded bg-white border border-[#d6cebf] text-[#14171a] hover:text-[#0a6836] hover:border-[#0a6836] text-xs transition-colors" data-path="projects" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-[#0369a1] mr-1.5 font-bold">~</span>/projects</a><a class="flex items-center min-h-[40px] px-3 py-2 rounded bg-white border border-[#d6cebf] text-[#14171a] hover:text-[#0a6836] hover:border-[#0a6836] text-xs transition-colors" data-path="posts" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-[#0369a1] mr-1.5 font-bold">~</span>/posts</a><a class="flex items-center min-h-[40px] px-3 py-2 rounded bg-white border border-[#d6cebf] text-[#14171a] hover:text-[#0a6836] hover:border-[#0a6836] text-xs transition-colors" data-path="missives" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-[#0369a1] mr-1.5 font-bold">~</span>/missives</a><a class="flex items-center min-h-[40px] px-3 py-2 rounded bg-white border border-[#d6cebf] text-[#14171a] hover:text-[#0a6836] hover:border-[#0a6836] text-xs transition-colors" data-path="now" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-[#0369a1] mr-1.5 font-bold">~</span>/now</a><a class="flex items-center min-h-[40px] px-3 py-2 rounded bg-white border border-[#d6cebf] text-[#14171a] hover:text-[#0a6836] hover:border-[#0a6836] text-xs transition-colors" data-path="uses" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-[#0369a1] mr-1.5 font-bold">~</span>/uses</a><a class="flex items-center min-h-[40px] px-3 py-2 rounded bg-white border border-[#d6cebf] text-[#14171a] hover:text-[#0a6836] hover:border-[#0a6836] text-xs transition-colors" data-path="contact" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-[#0369a1] mr-1.5 font-bold">~</span>/contact</a><a class="flex items-center min-h-[40px] px-3 py-2 rounded bg-white border border-[#d6cebf] text-[#14171a] hover:text-[#0a6836] hover:border-[#0a6836] text-xs transition-colors" data-path="rss" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-[#0369a1] mr-1.5 font-bold">~</span>/rss.xml</a></div><div class="mt-4 p-3 bg-white rounded border border-[#d6cebf] text-[11px] text-[#68737d] flex flex-col gap-1"><span class="text-[#0a6836] font-semibold">FINGERPRINT: 4FA1 91E0 B627 E780 C1F2</span><span>SEC_LEVEL: SOVEREIGN_ENCRYPTED</span><span>NETWORK: TOR_ENABLED (ONION_V3)</span></div></div><main class="flex flex-col relative w-full pt-16 pb-20 bg-[#f5f2eb] min-h-screen"><div class="flex flex-col w-full text-[#262b30] select-none pb-8">
+<!-- Top Session Bar / Terminal Frame -->
+<div class="mx-4 mt-3 bg-white rounded-lg border border-[#d6cebf] overflow-hidden shadow-sm">
+<!-- Window Controls & Session Path -->
+<div class="flex items-center justify-between px-3 py-2 bg-[#eae5d9] border-b border-[#d6cebf] text-[#68737d] text-[11px]">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#c2410c] inline-block opacity-90 border border-[#c2410c]/30"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#b45309] inline-block opacity-90 border border-[#b45309]/30"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#0a6836] inline-block opacity-90 border border-[#0a6836]/30"></span>
+<span class="ml-2 text-[#262b30] font-semibold text-[11px]">pts/0 (tmux:sec-ops)</span>
+</div>
+<div class="flex items-center gap-1 text-[#0a6836]">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span class="uppercase tracking-widest text-[9px] font-bold">SIG: VALID</span>
+</div>
+</div>
+<!-- Active Terminal Session Prompt -->
+<div class="p-3 bg-[#fbf9f5] flex flex-col gap-1 text-xs">
+<div class="flex items-center flex-wrap gap-1 text-[#68737d]">
+<span class="text-[#0a6836] font-bold">adler@spacexnu</span>
+<span class="text-[#b8afa0]">:</span>
+<span class="text-[#0369a1] font-semibold">~</span>
+<span class="text-[#14171a] font-bold">$</span>
+<span class="text-[#14171a] font-medium ml-1">whoami --verbose</span>
+</div>
+<div class="text-[#68737d] text-[11px] leading-tight mt-0.5">
+        &gt;&gt; HOST: sovereign-node | ENV: PROD_HARDENED | KERNEL: 6.11.2-hardened-gnu
+      </div>
+</div>
+</div>
+<!-- Hero & Profile Section -->
+<div class="mx-4 mt-4 flex flex-col gap-2">
+<!-- Role Capsule Badge -->
+<div class="inline-flex items-center self-start gap-1.5 px-2.5 py-1 rounded bg-[#0a6836]/10 border border-[#0a6836]/25 text-[#0a6836] text-[11px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#0a6836] animate-pulse"></span>
+<span class="tracking-wide">SECURITY-MINDED SOFTWARE ENGINEER</span>
+</div>
+<!-- Heading Block -->
+<div class="flex flex-col mt-1">
+<h1 class="text-2xl font-bold text-[#14171a] tracking-tight">
+        Adler Medrado
+      </h1>
+<div class="flex items-center gap-2 text-[#0369a1] text-base font-semibold mt-0.5">
+<span class="text-[#68737d] font-normal text-sm">aka</span>
+<span class="bg-[#eae5d9] border border-[#d6cebf] px-2 py-0.5 rounded text-[#0369a1] font-bold text-sm">spacexnu</span>
+</div>
+</div>
+<!-- Subtitle / Mission Statement -->
+<p class="text-xs text-[#262b30] leading-relaxed mt-1">
+      Writing about code, systems, and sovereignty. Building defensive AI along the way.
+    </p>
+<!-- Photo Card with Cybernetic Telemetry Frame -->
+<div class="relative mt-2 rounded-lg overflow-hidden bg-white border border-[#d6cebf] shadow-sm">
+<!-- Portrait Image with Tactical Styling -->
+<div class="w-full h-56 bg-cover bg-center filter contrast-110 brightness-95 relative" data-alt="Monochromatic high-contrast hacker portrait of Adler Medrado sitting inside a dark computer operations room bathed in phosphor green CRT ambient glow, illuminated dual displays showing shell consoles and binary telemetry, retro cybernetic hacker aesthetic, cinematic low-angle security engineer profile." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCaZupqdoE2TpFhV2kD3I_FohEgXYQynGWtPZqe5ex9i3bH2ROTA1pr1chsioAA5Cly3E0btIAVDFjCBMM9tHt5qNCzbcmPobymG61AQN-GrR12FP6xJ5O9T0iY-pwxXh4hh3Vl37ob4dFJjPmqqcpCDcGFLQMhvFQ0lcSN6aZi0JFaj2ENusNPpTCVBD-PkvTlSYc3vOk_vmR4KAOdLupp6SpPFPv-Nz3_exRv45A')">
+<!-- Parchment Vignette Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#14171a]/90 via-transparent to-[#14171a]/40"></div>
+<!-- Upper HUD Overlay Over Image -->
+<div class="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between text-[10px] font-semibold">
+<span class="px-2 py-0.5 rounded bg-[#f5f2eb]/90 border border-[#d6cebf] text-[#0a6836] backdrop-blur-sm">[42°N] LAT_LOCK</span>
+<span class="px-2 py-0.5 rounded bg-[#f5f2eb]/90 border border-[#d6cebf] text-[#0369a1] backdrop-blur-sm">UID: 1000 // spacexnu</span>
+</div>
+<!-- Bottom Inset Status on Image -->
+<div class="absolute bottom-2.5 left-2.5 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[#34d399] text-[16px]">terminal</span>
+<span class="text-white font-medium text-[10px] tracking-wide bg-[#14171a]/80 border border-white/20 px-1.5 py-0.5 rounded backdrop-blur-sm">DEFENSIVE_OPS::READY</span>
+</div>
+</div>
+<!-- Telemetry Ribbons Below Photo -->
+<div class="p-3 bg-[#fbf9f5] border-t border-[#d6cebf] flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-[#68737d] font-semibold">ENCRYPTION ENGINE:</span>
+<span class="text-[#0a6836] font-bold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-[#0a6836]"></span>
+            ED25519 ACTIVE
+          </span>
+</div>
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-[#68737d] font-semibold">HOST ARCHITECTURE:</span>
+<span class="text-[#0369a1] font-bold">SOVEREIGN LINUX</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Filesystem Entrypoints (CLI Tree Navigation) -->
+<div class="mx-4 mt-4 bg-white rounded-lg p-3.5 border border-[#d6cebf] shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between pb-1.5 border-b border-[#eae5d9]">
+<div class="flex items-center gap-1.5 text-[#0369a1] text-xs font-bold tracking-wider">
+<span class="material-symbols-outlined text-[15px]">account_tree</span>
+<span>FILESYSTEM ENTRYPOINTS [INDEX]</span>
+</div>
+<span class="text-[#68737d] text-[11px] font-mono">drwxr-xr-x</span>
+</div>
+<!-- Tree Structure Links -->
+<div class="flex flex-col text-xs leading-relaxed text-[#14171a]">
+<div class="py-1 flex items-baseline">
+<span class="text-[#b8afa0] select-none mr-2 font-mono">├──</span>
+<span class="text-[#68737d]">Learn who I am</span>
+<span class="text-[#0a6836] font-bold mx-1.5">→</span>
+<a class="text-[#0369a1] font-bold hover:text-[#0a6836] transition-colors underline decoration-dotted underline-offset-4" href="#about">about</a>
+</div>
+<div class="py-1 flex items-baseline">
+<span class="text-[#b8afa0] select-none mr-2 font-mono">├──</span>
+<span class="text-[#68737d]">Explore what I'm building</span>
+<span class="text-[#0a6836] font-bold mx-1.5">→</span>
+<a class="text-[#0369a1] font-bold hover:text-[#0a6836] transition-colors underline decoration-dotted underline-offset-4" href="#projects">projects</a>
+</div>
+<div class="py-1 flex items-baseline flex-wrap">
+<span class="text-[#b8afa0] select-none mr-2 font-mono">├──</span>
+<span class="text-[#68737d]">Read my writing</span>
+<span class="text-[#0a6836] font-bold mx-1.5">→</span>
+<a class="text-[#0369a1] font-bold hover:text-[#0a6836] transition-colors underline decoration-dotted underline-offset-4" href="#start">start here</a><span class="text-[#68737d]">,</span> 
+        <a class="text-[#0369a1] font-bold hover:text-[#0a6836] transition-colors underline decoration-dotted underline-offset-4" href="#posts">posts</a> <span class="text-[#68737d]">and</span> 
+        <a class="text-[#0369a1] font-bold hover:text-[#0a6836] transition-colors underline decoration-dotted underline-offset-4" href="#missives">missives</a>
+</div>
+<div class="py-1 flex items-baseline flex-wrap">
+<span class="text-[#b8afa0] select-none mr-2 font-mono">├──</span>
+<span class="text-[#68737d]">See what I'm up to</span>
+<span class="text-[#0a6836] font-bold mx-1.5">→</span>
+<a class="text-[#0369a1] font-bold hover:text-[#0a6836] transition-colors underline decoration-dotted underline-offset-4" href="#now">now</a> <span class="text-[#68737d]">and</span> 
+        <a class="text-[#0369a1] font-bold hover:text-[#0a6836] transition-colors underline decoration-dotted underline-offset-4" href="#uses">uses</a>
+</div>
+<div class="py-1 flex items-baseline">
+<span class="text-[#b8afa0] select-none mr-2 font-mono">└──</span>
+<span class="text-[#68737d]">Reach out</span>
+<span class="text-[#0a6836] font-bold mx-1.5">→</span>
+<a class="text-[#0a6836] font-bold hover:text-[#0369a1] transition-colors underline decoration-dotted underline-offset-4" href="#contact">contact</a>
+</div>
+</div>
+</div>
+<!-- GPG Verification Callout Card -->
+<div class="mx-4 mt-3 bg-[#eae5d9] border border-[#d6cebf] rounded-lg p-3 flex items-start gap-2.5 shadow-xs">
+<div class="w-8 h-8 rounded bg-white border border-[#d6cebf] flex items-center justify-center shrink-0 text-[#0a6836] shadow-xs">
+<span class="material-symbols-outlined text-[18px]">enhanced_encryption</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[11px] font-bold text-[#0a6836] uppercase tracking-wider">Cryptographic Signature</span>
+<p class="text-xs text-[#14171a] font-medium mt-0.5 leading-snug">
+        All blog posts are GPG signed. If it isn't signed, it isn't mine.
+      </p>
+</div>
+</div>
+<!-- Infrastructure & Agent Readability Note -->
+<div class="mx-4 mt-3 bg-white rounded-lg p-3 border border-[#d6cebf] shadow-xs flex flex-col gap-2">
+<div class="flex items-start gap-2 text-[#262b30] text-xs leading-snug">
+<span class="text-[#0a6836] font-bold select-none">●</span>
+<span>Self-hosted, with an onion mirror, and published as Markdown so agents can read the same pages.</span>
+</div>
+<div class="flex items-center justify-between pt-2 bg-[#fbf9f5] border border-[#eae5d9] px-2.5 py-1.5 rounded text-[11px]">
+<span class="text-[#68737d] font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-[#0369a1]">smart_toy</span>
+        ROBOTS: FRIENDLY
+      </span>
+<a class="text-[#0369a1] font-bold hover:text-[#0a6836] transition-colors flex items-center gap-0.5" href="#feed">
+<span>/feed.md</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Latest Logs Section (Mobile journalctl style) -->
+<div class="mx-4 mt-5 flex flex-col gap-2">
+<!-- Log Command Header -->
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1 text-[#0a6836] font-bold text-sm">
+<span class="select-none font-bold">#</span>
+<span>journalctl -u posts.service</span>
+</div>
+<span class="text-[#68737d] text-[10px] font-mono">--no-pager</span>
+</div>
+<p class="text-[#68737d] text-[11px]">Index of recent public logs, analyses and field notes</p>
+</div>
+<!-- Filter Toggle Tabs -->
+<div class="grid grid-cols-2 gap-1.5 p-1 bg-[#eae5d9] rounded border border-[#d6cebf]">
+<button class="min-h-[38px] flex items-center justify-center gap-1.5 rounded bg-white text-[#0a6836] font-bold text-xs border border-[#d6cebf] shadow-xs transition-all" id="tab-en" onclick="document.getElementById('feed-en').classList.remove('hidden'); document.getElementById('feed-pt').classList.add('hidden'); this.classList.add('bg-white', 'text-[#0a6836]', 'border-[#d6cebf]', 'shadow-xs'); this.classList.remove('text-[#68737d]', 'border-transparent'); document.getElementById('tab-pt').classList.remove('bg-white', 'text-[#0a6836]', 'border-[#d6cebf]', 'shadow-xs'); document.getElementById('tab-pt').classList.add('text-[#68737d]', 'border-transparent');" type="button">
+<span class="text-[9px] px-1 py-0.2 bg-[#eae5d9] border border-[#d6cebf] rounded font-bold">EN</span>
+<span>english.log (5)</span>
+</button>
+<button class="min-h-[38px] flex items-center justify-center gap-1.5 rounded text-[#68737d] font-semibold text-xs border border-transparent hover:text-[#14171a] transition-all" id="tab-pt" onclick="document.getElementById('feed-pt').classList.remove('hidden'); document.getElementById('feed-en').classList.add('hidden'); this.classList.add('bg-white', 'text-[#0a6836]', 'border-[#d6cebf]', 'shadow-xs'); this.classList.remove('text-[#68737d]', 'border-transparent'); document.getElementById('tab-en').classList.remove('bg-white', 'text-[#0a6836]', 'border-[#d6cebf]', 'shadow-xs'); document.getElementById('tab-en').classList.add('text-[#68737d]', 'border-transparent');" type="button">
+<span class="text-[9px] px-1 py-0.2 bg-[#eae5d9] border border-[#d6cebf] rounded font-bold">PT</span>
+<span>portugues.log (5)</span>
+</button>
+</div>
+<!-- English Posts Stream -->
+<div class="flex flex-col gap-2" id="feed-en">
+<!-- Item 1 -->
+<a class="flex flex-col p-3 rounded-lg bg-white border border-[#d6cebf] hover:border-[#0a6836] transition-colors group shadow-xs" href="#post-audacity">
+<div class="flex items-center justify-between text-[11px] mb-1">
+<span class="text-[#68737d] font-mono">2026-10-02</span>
+<span class="text-[#0369a1] font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            LOG_READ <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-[#14171a] font-semibold text-xs group-hover:text-[#0a6836] transition-colors leading-snug">
+          Debugging an Audacity Crash on Windows: From Bluetooth Headset to Open Source Bug Report
+        </span>
+</a>
+<!-- Item 2 -->
+<a class="flex flex-col p-3 rounded-lg bg-white border border-[#d6cebf] hover:border-[#0a6836] transition-colors group shadow-xs" href="#post-cloud">
+<div class="flex items-center justify-between text-[11px] mb-1">
+<span class="text-[#68737d] font-mono">2026-10-01</span>
+<span class="text-[#0369a1] font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            LOG_READ <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-[#14171a] font-semibold text-xs group-hover:text-[#0a6836] transition-colors leading-snug">
+          Technical Sovereignty: Can You Actually Leave Your Cloud Provider?
+        </span>
+</a>
+<!-- Item 3 -->
+<a class="flex flex-col p-3 rounded-lg bg-white border border-[#d6cebf] hover:border-[#0a6836] transition-colors group shadow-xs" href="#post-agents-en">
+<div class="flex items-center justify-between text-[11px] mb-1">
+<span class="text-[#68737d] font-mono">2026-07-29</span>
+<span class="text-[#0369a1] font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            LOG_READ <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-[#14171a] font-semibold text-xs group-hover:text-[#0a6836] transition-colors leading-snug">
+          From 21 to 71: Making My Site Legible to Agents
+        </span>
+</a>
+<!-- Item 4 -->
+<a class="flex flex-col p-3 rounded-lg bg-white border border-[#d6cebf] hover:border-[#0a6836] transition-colors group shadow-xs" href="#post-dojo-en">
+<div class="flex items-center justify-between text-[11px] mb-1">
+<span class="text-[#68737d] font-mono">2026-07-09</span>
+<span class="text-[#0369a1] font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            LOG_READ <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-[#14171a] font-semibold text-xs group-hover:text-[#0a6836] transition-colors leading-snug">
+          The Line on the Dojo Wall
+        </span>
+</a>
+<!-- Item 5 -->
+<a class="flex flex-col p-3 rounded-lg bg-white border border-[#d6cebf] hover:border-[#0a6836] transition-colors group shadow-xs" href="#post-radio-en">
+<div class="flex items-center justify-between text-[11px] mb-1">
+<span class="text-[#68737d] font-mono">2026-07-08</span>
+<span class="text-[#0369a1] font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            LOG_READ <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-[#14171a] font-semibold text-xs group-hover:text-[#0a6836] transition-colors leading-snug">
+          When the Radio Chose for You
+        </span>
+</a>
+</div>
+<!-- Portuguese Posts Stream (Initially Hidden) -->
+<div class="hidden flex flex-col gap-2" id="feed-pt">
+<!-- Item 1 PT -->
+<a class="flex flex-col p-3 rounded-lg bg-white border border-[#d6cebf] hover:border-[#0a6836] transition-colors group shadow-xs" href="#post-agentes-pt">
+<div class="flex items-center justify-between text-[11px] mb-1">
+<span class="text-[#68737d] font-mono">2026-07-29</span>
+<span class="text-[#0369a1] font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            REGISTRO <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-[#14171a] font-semibold text-xs group-hover:text-[#0a6836] transition-colors leading-snug">
+          De 21 a 71: tornando meu site legível por agentes
+        </span>
+</a>
+<!-- Item 2 PT -->
+<a class="flex flex-col p-3 rounded-lg bg-white border border-[#d6cebf] hover:border-[#0a6836] transition-colors group shadow-xs" href="#post-dojo-pt">
+<div class="flex items-center justify-between text-[11px] mb-1">
+<span class="text-[#68737d] font-mono">2026-07-09</span>
+<span class="text-[#0369a1] font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            REGISTRO <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-[#14171a] font-semibold text-xs group-hover:text-[#0a6836] transition-colors leading-snug">
+          A frase na parede do dojo
+        </span>
+</a>
+<!-- Item 3 PT -->
+<a class="flex flex-col p-3 rounded-lg bg-white border border-[#d6cebf] hover:border-[#0a6836] transition-colors group shadow-xs" href="#post-radio-pt">
+<div class="flex items-center justify-between text-[11px] mb-1">
+<span class="text-[#68737d] font-mono">2026-07-08</span>
+<span class="text-[#0369a1] font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            REGISTRO <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-[#14171a] font-semibold text-xs group-hover:text-[#0a6836] transition-colors leading-snug">
+          Quando a rádio escolhia por você
+        </span>
+</a>
+<!-- Item 4 PT -->
+<a class="flex flex-col p-3 rounded-lg bg-white border border-[#d6cebf] hover:border-[#0a6836] transition-colors group shadow-xs" href="#post-circo">
+<div class="flex items-center justify-between text-[11px] mb-1">
+<span class="text-[#68737d] font-mono">2026-06-12</span>
+<span class="text-[#0369a1] font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            REGISTRO <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-[#14171a] font-semibold text-xs group-hover:text-[#0a6836] transition-colors leading-snug">
+          O circo que eu nunca vi
+        </span>
+</a>
+<!-- Item 5 PT -->
+<a class="flex flex-col p-3 rounded-lg bg-white border border-[#d6cebf] hover:border-[#0a6836] transition-colors group shadow-xs" href="#post-js-privacidade">
+<div class="flex items-center justify-between text-[11px] mb-1">
+<span class="text-[#68737d] font-mono">2026-06-09</span>
+<span class="text-[#0369a1] font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            REGISTRO <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-[#14171a] font-semibold text-xs group-hover:text-[#0a6836] transition-colors leading-snug">
+          Adicionei JavaScript no site e a sua privacidade continua intacta
+        </span>
+</a>
+</div>
+</div>
+<!-- Security & Telemetry Footer Card -->
+<div class="mx-4 mt-5 bg-white rounded-lg p-3.5 border border-[#d6cebf] flex flex-col gap-3 shadow-sm">
+<!-- PGP Verification and Tracking Notice -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-[#0a6836] font-bold text-sm">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>Cryptographic Integrity</span>
+</div>
+<p class="text-xs text-[#262b30] leading-relaxed">
+        All pages are PGP signed. Learn how to verify my PGP signature 
+        <a class="text-[#0369a1] font-bold underline decoration-dotted underline-offset-4 hover:text-[#0a6836]" href="#verify">here</a>.
+      </p>
+<p class="text-[11px] text-[#68737d] italic">
+        Privacy policy: this website employs no tracking.
+      </p>
+</div>
+<!-- Security Badges Row -->
+<div class="flex items-center justify-between pt-2.5 border-t border-[#eae5d9] bg-[#fbf9f5] p-2.5 rounded border flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-[#0a6836] text-white font-bold text-xs">A+</span>
+<div class="flex flex-col">
+<span class="text-[#14171a] font-bold text-xs">Mozilla Observatory</span>
+<span class="text-[#68737d] text-[10px]">Security Rating: Maximum</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-[#0a6836] font-bold text-xs">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>PASSED</span>
+</div>
+</div>
+<!-- System Telemetry Strip -->
+<div class="p-2.5 bg-[#eae5d9] rounded border border-[#d6cebf] text-[#68737d] text-[11px] font-mono flex flex-col gap-1 leading-tight">
+<div class="flex justify-between items-center">
+<span>TTY: <strong class="text-[#14171a]">pts/0</strong></span>
+<span>UID: <strong class="text-[#14171a]">1000 (spacexnu)</strong></span>
+</div>
+<div class="flex justify-between items-center text-[#68737d]">
+<span>GPG: <strong class="text-[#0a6836]">VALID [ED25519]</strong></span>
+<span>ONION: <strong class="text-[#0369a1]">MIRRORED</strong></span>
+</div>
+</div>
+<!-- Copyright Statement -->
+<div class="text-center pt-1 text-[#68737d] text-[10px]">
+      © 1996-2026 Adler Medrado. All rights reserved.
+    </div>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-[#f5f2eb]/95 backdrop-blur-md border-t border-[#d6cebf] shadow-sm"><div class="flex justify-between items-center h-12 px-4"><div class="flex items-center gap-1.5"><a aria-current="page" class="min-h-[36px] min-w-[36px] px-2 flex items-center justify-center rounded text-xs font-bold text-[#0a6836] bg-[#eae5d9] border border-[#d6cebf]" data-path="about" href="#"><span class="text-[#0369a1] mr-0.5 font-bold">#</span>root</a><a class="min-h-[36px] min-w-[36px] px-2 flex items-center justify-center rounded text-xs font-medium text-[#68737d] hover:text-[#14171a] transition-colors" data-path="projects" href="#"><span class="text-[#0369a1] mr-0.5 font-bold">#</span>bin</a><a class="min-h-[36px] min-w-[36px] px-2 flex items-center justify-center rounded text-xs font-medium text-[#68737d] hover:text-[#14171a] transition-colors" data-path="posts" href="#"><span class="text-[#0369a1] mr-0.5 font-bold">#</span>log</a></div><div class="flex items-center gap-1.5 text-[10px] font-mono text-[#68737d] shrink-0"><span class="text-[#0a6836] font-bold">pts/0</span><span>|</span><span class="text-[#0a6836] font-bold">GPG:OK</span><span>|</span><span class="text-[#68737d]">©96-26</span></div></div></nav></body></html>

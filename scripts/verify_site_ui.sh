@@ -23,7 +23,7 @@ fi
 
 node "$ROOT_DIR/scripts/verify_site_ui.mjs" "$BUILD_DIR"
 
-for script in theme-toggle.js mobile-navigation.js taglines.js webmcp.js
+for script in theme-toggle.js mobile-navigation.js home-logs.js taglines.js webmcp.js
 do
   node --check "$BUILD_DIR/js/$script"
 done
@@ -35,7 +35,7 @@ then
   exit 1
 fi
 
-if rg -n 'Roboto Mono|@font-face|fonts\.googleapis|fonts\.gstatic' \
+if rg -n 'Roboto Mono|fonts\.googleapis|fonts\.gstatic' \
   static/css layouts
 then
   exit 1

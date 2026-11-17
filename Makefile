@@ -2,6 +2,8 @@ DEPLOY_ENV ?= deploy.env
 -include $(DEPLOY_ENV)
 export PATH := $(CURDIR)/.tools/bin:$(PATH)
 
+DEPLOY_SSH_KEY_PATH = $(patsubst ~/%,$(HOME)/%,$(DEPLOY_SSH_KEY))
+
 help:
 	@echo "targets:"
 	@echo "setup: Install the pinned Hugo version locally"
@@ -37,10 +39,10 @@ clear-sign:
 	./clearsign_html.sh
 
 deploy:
-	rsync -rvh --progress --delete -e "ssh -o BatchMode=yes -o IdentitiesOnly=yes -o PreferredAuthentications=publickey -i $(DEPLOY_SSH_KEY)" ./public/ $(DEPLOY_USER)@$(DEPLOY_HOST):$(DEPLOY_PATH)
+	rsync -rvh --progress --delete -e "ssh -o BatchMode=yes -o IdentitiesOnly=yes -o PreferredAuthentications=publickey -i $(DEPLOY_SSH_KEY_PATH)" ./public/ $(DEPLOY_USER)@$(DEPLOY_HOST):$(DEPLOY_PATH)
 
 deploy-onion:
-	rsync -rvh --progress --delete -e "ssh -o BatchMode=yes -o IdentitiesOnly=yes -o PreferredAuthentications=publickey -i $(DEPLOY_SSH_KEY)" ./public/ $(DEPLOY_ONION_USER)@$(DEPLOY_ONION_HOST):$(DEPLOY_ONION_PATH)
+	rsync -rvh --progress --delete -e "ssh -o BatchMode=yes -o IdentitiesOnly=yes -o PreferredAuthentications=publickey -i $(DEPLOY_SSH_KEY_PATH)" ./public/ $(DEPLOY_ONION_USER)@$(DEPLOY_ONION_HOST):$(DEPLOY_ONION_PATH)
 
 verify-agent-discovery:
 	./scripts/verify_agent_discovery.sh

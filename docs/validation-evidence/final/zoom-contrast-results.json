@@ -1,0 +1,1113 @@
+{
+  "zoomAPI": "function",
+  "pages": [
+    {
+      "path": "/",
+      "theme": "dark",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "path": "/",
+      "theme": "light",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "path": "/about/",
+      "theme": "dark",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "path": "/about/",
+      "theme": "light",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "path": "/projects/",
+      "theme": "dark",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "path": "/projects/",
+      "theme": "light",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "path": "/contact/",
+      "theme": "dark",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "path": "/contact/",
+      "theme": "light",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "path": "/start/",
+      "theme": "dark",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "path": "/start/",
+      "theme": "light",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "path": "/posts/debugging-an-audacity-crash-on-windows/",
+      "theme": "dark",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "path": "/posts/debugging-an-audacity-crash-on-windows/",
+      "theme": "light",
+      "width": 720,
+      "dpr": 2,
+      "client": 712,
+      "scroll": 712,
+      "header": 65,
+      "offset": 65,
+      "fonts": [
+        "JetBrains Mono",
+        "JetBrains Mono",
+        "JetBrains Mono"
+      ]
+    }
+  ],
+  "manualContrast": [
+    {
+      "path": "/",
+      "theme": "dark",
+      "elements": [
+        {
+          "text": "├─",
+          "color": "rgb(138, 153, 168)",
+          "backgrounds": [
+            {
+              "tag": "NAV",
+              "bg": "rgb(10, 15, 18)",
+              "image": "none"
+            },
+            {
+              "tag": "SECTION",
+              "bg": "rgb(14, 20, 24)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "├─",
+          "color": "rgb(138, 153, 168)",
+          "backgrounds": [
+            {
+              "tag": "NAV",
+              "bg": "rgb(10, 15, 18)",
+              "image": "none"
+            },
+            {
+              "tag": "SECTION",
+              "bg": "rgb(14, 20, 24)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "├─",
+          "color": "rgb(138, 153, 168)",
+          "backgrounds": [
+            {
+              "tag": "NAV",
+              "bg": "rgb(10, 15, 18)",
+              "image": "none"
+            },
+            {
+              "tag": "SECTION",
+              "bg": "rgb(14, 20, 24)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "├─",
+          "color": "rgb(138, 153, 168)",
+          "backgrounds": [
+            {
+              "tag": "NAV",
+              "bg": "rgb(10, 15, 18)",
+              "image": "none"
+            },
+            {
+              "tag": "SECTION",
+              "bg": "rgb(14, 20, 24)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "└─",
+          "color": "rgb(138, 153, 168)",
+          "backgrounds": [
+            {
+              "tag": "NAV",
+              "bg": "rgb(10, 15, 18)",
+              "image": "none"
+            },
+            {
+              "tag": "SECTION",
+              "bg": "rgb(14, 20, 24)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "theme": "light",
+      "elements": [
+        {
+          "text": "├─",
+          "color": "rgb(92, 99, 112)",
+          "backgrounds": [
+            {
+              "tag": "NAV",
+              "bg": "rgb(234, 229, 217)",
+              "image": "none"
+            },
+            {
+              "tag": "SECTION",
+              "bg": "rgb(255, 255, 255)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "├─",
+          "color": "rgb(92, 99, 112)",
+          "backgrounds": [
+            {
+              "tag": "NAV",
+              "bg": "rgb(234, 229, 217)",
+              "image": "none"
+            },
+            {
+              "tag": "SECTION",
+              "bg": "rgb(255, 255, 255)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "├─",
+          "color": "rgb(92, 99, 112)",
+          "backgrounds": [
+            {
+              "tag": "NAV",
+              "bg": "rgb(234, 229, 217)",
+              "image": "none"
+            },
+            {
+              "tag": "SECTION",
+              "bg": "rgb(255, 255, 255)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "├─",
+          "color": "rgb(92, 99, 112)",
+          "backgrounds": [
+            {
+              "tag": "NAV",
+              "bg": "rgb(234, 229, 217)",
+              "image": "none"
+            },
+            {
+              "tag": "SECTION",
+              "bg": "rgb(255, 255, 255)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "└─",
+          "color": "rgb(92, 99, 112)",
+          "backgrounds": [
+            {
+              "tag": "NAV",
+              "bg": "rgb(234, 229, 217)",
+              "image": "none"
+            },
+            {
+              "tag": "SECTION",
+              "bg": "rgb(255, 255, 255)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/about/",
+      "theme": "dark",
+      "elements": [
+        {
+          "text": "I am Adler Medrado — also known as spacexnu — a software engineer with 20+ years",
+          "color": "rgb(223, 227, 231)",
+          "backgrounds": [
+            {
+              "tag": "DIV",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "linear-gradient(135deg, rgba(0, 255, 195, 0.03), rgba(0, 179, 255, 0.03))"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "I care about building fast, secure systems and keeping people sovereign over the",
+          "color": "rgb(223, 227, 231)",
+          "backgrounds": [
+            {
+              "tag": "DIV",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "linear-gradient(135deg, rgba(0, 255, 195, 0.03), rgba(0, 179, 255, 0.03))"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/about/",
+      "theme": "light",
+      "elements": [
+        {
+          "text": "I am Adler Medrado — also known as spacexnu — a software engineer with 20+ years",
+          "color": "rgb(26, 29, 32)",
+          "backgrounds": [
+            {
+              "tag": "DIV",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "linear-gradient(135deg, rgba(0, 122, 110, 0.04), rgba(0, 85, 170, 0.03))"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "I care about building fast, secure systems and keeping people sovereign over the",
+          "color": "rgb(26, 29, 32)",
+          "backgrounds": [
+            {
+              "tag": "DIV",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "linear-gradient(135deg, rgba(0, 122, 110, 0.04), rgba(0, 85, 170, 0.03))"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/posts/debugging-an-audacity-crash-on-windows/",
+      "theme": "dark",
+      "elements": [
+        {
+          "text": "user hits bug\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "bug is investigated\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "reproduction is documented\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "another user confirms it\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "maintainer produces test build\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "user validates fix\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "fix moves toward release\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(15, 20, 23)",
+              "image": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/posts/debugging-an-audacity-crash-on-windows/",
+      "theme": "light",
+      "elements": [
+        {
+          "text": "user hits bug\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "bug is investigated\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "reproduction is documented\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "another user confirms it\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "maintainer produces test build\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "user validates fix\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "    ↓\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        },
+        {
+          "text": "fix moves toward release\n",
+          "color": "rgb(248, 248, 242)",
+          "backgrounds": [
+            {
+              "tag": "PRE",
+              "bg": "rgb(39, 40, 34)",
+              "image": "none"
+            },
+            {
+              "tag": "BODY",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            },
+            {
+              "tag": "HTML",
+              "bg": "rgb(245, 242, 235)",
+              "image": "none"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

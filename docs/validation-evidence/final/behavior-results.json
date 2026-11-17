@@ -1,0 +1,584 @@
+{
+  "checks": [
+    {
+      "name": "V03 width 320",
+      "pass": true,
+      "detail": {
+        "client": 305,
+        "scroll": 305,
+        "home": 305,
+        "header": 65,
+        "prompt": 113,
+        "photo": 430,
+        "index": 594.65625,
+        "sign": 924.65625,
+        "panels": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "name": "V02 DOM/order 320",
+      "pass": true,
+      "detail": {
+        "client": 305,
+        "scroll": 305,
+        "home": 305,
+        "header": 65,
+        "prompt": 113,
+        "photo": 430,
+        "index": 594.65625,
+        "sign": 924.65625,
+        "panels": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "name": "V03 width 390",
+      "pass": true,
+      "detail": {
+        "client": 375,
+        "scroll": 375,
+        "home": 375,
+        "header": 65,
+        "prompt": 113,
+        "photo": 406,
+        "index": 617.328125,
+        "sign": 899.328125,
+        "panels": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "name": "V02 DOM/order 390",
+      "pass": true,
+      "detail": {
+        "client": 375,
+        "scroll": 375,
+        "home": 375,
+        "header": 65,
+        "prompt": 113,
+        "photo": 406,
+        "index": 617.328125,
+        "sign": 899.328125,
+        "panels": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "name": "V03 width 768",
+      "pass": true,
+      "detail": {
+        "client": 753,
+        "scroll": 753,
+        "home": 753,
+        "header": 65,
+        "prompt": 113,
+        "photo": 382,
+        "index": 845.328125,
+        "sign": 1055.328125,
+        "panels": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "name": "V02 DOM/order 768",
+      "pass": true,
+      "detail": {
+        "client": 753,
+        "scroll": 753,
+        "home": 753,
+        "header": 65,
+        "prompt": 113,
+        "photo": 382,
+        "index": 845.328125,
+        "sign": 1055.328125,
+        "panels": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "name": "V03 width 1023",
+      "pass": true,
+      "detail": {
+        "client": 1008,
+        "scroll": 1008,
+        "home": 960,
+        "header": 65,
+        "prompt": 113,
+        "photo": 348,
+        "index": 949.328125,
+        "sign": 1159.328125,
+        "panels": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "name": "V02 DOM/order 1023",
+      "pass": true,
+      "detail": {
+        "client": 1008,
+        "scroll": 1008,
+        "home": 960,
+        "header": 65,
+        "prompt": 113,
+        "photo": 348,
+        "index": 949.328125,
+        "sign": 1159.328125,
+        "panels": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "name": "V03 width 1024",
+      "pass": true,
+      "detail": {
+        "client": 1009,
+        "scroll": 1009,
+        "home": 960,
+        "header": 135,
+        "prompt": 183,
+        "photo": 245,
+        "index": 432.5,
+        "sign": 652.5,
+        "panels": [
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "name": "V01 panels 1024",
+      "pass": true,
+      "detail": {
+        "client": 1009,
+        "scroll": 1009,
+        "home": 960,
+        "header": 135,
+        "prompt": 183,
+        "photo": 245,
+        "index": 432.5,
+        "sign": 652.5,
+        "panels": [
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "name": "V03 width 1440",
+      "pass": true,
+      "detail": {
+        "client": 1425,
+        "scroll": 1425,
+        "home": 960,
+        "header": 115.390625,
+        "prompt": 163.390625,
+        "photo": 225.390625,
+        "index": 412.890625,
+        "sign": 632.890625,
+        "panels": [
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "name": "V01 panels 1440",
+      "pass": true,
+      "detail": {
+        "client": 1425,
+        "scroll": 1425,
+        "home": 960,
+        "header": 115.390625,
+        "prompt": 163.390625,
+        "photo": 225.390625,
+        "index": 412.890625,
+        "sign": 632.890625,
+        "panels": [
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "name": "I01 system dark",
+      "pass": true
+    },
+    {
+      "name": "I04 follows system without explicit",
+      "pass": true
+    },
+    {
+      "name": "I02 explicit dark",
+      "pass": true
+    },
+    {
+      "name": "I04 explicit survives system",
+      "pass": true
+    },
+    {
+      "name": "I02 persists on article",
+      "pass": true
+    },
+    {
+      "name": "I03 invalid uses system light",
+      "pass": true
+    },
+    {
+      "name": "I03 blocked storage keeps explicit light",
+      "pass": true
+    },
+    {
+      "name": "I05 keyboard opens and focuses close",
+      "pass": true
+    },
+    {
+      "name": "I05 Tab and Shift+Tab cycle",
+      "pass": true,
+      "detail": [
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 about",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 projects",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 posts",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 missives",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 now",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 uses",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 contact",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u2514\u2500 start",
+          "inDialog": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "light",
+          "inDialog": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "dark",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "onion",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "verify",
+          "inDialog": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": ":q! close",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 about",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 projects",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 posts",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 projects",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 about",
+          "inDialog": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": ":q! close",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "verify",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "onion",
+          "inDialog": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "dark",
+          "inDialog": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "light",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u2514\u2500 start",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 contact",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 uses",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 now",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 missives",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 posts",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 projects",
+          "inDialog": true
+        },
+        {
+          "tag": "A",
+          "text": "\u251c\u2500 about",
+          "inDialog": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": ":q! close",
+          "inDialog": true
+        }
+      ]
+    },
+    {
+      "name": "I05 background remains locked",
+      "pass": true
+    },
+    {
+      "name": "I05 Escape restores trigger",
+      "pass": true
+    },
+    {
+      "name": "I06 close button",
+      "pass": true
+    },
+    {
+      "name": "I06 backdrop",
+      "pass": true
+    },
+    {
+      "name": "I06 link closes and navigates",
+      "pass": true
+    },
+    {
+      "name": "I08 synchronized theme",
+      "pass": true
+    },
+    {
+      "name": "I07 resize clears menu",
+      "pass": true
+    },
+    {
+      "name": "I09 desktop both languages",
+      "pass": true
+    },
+    {
+      "name": "I09 mobile PT restored",
+      "pass": true
+    },
+    {
+      "name": "I05 restores scroll position",
+      "pass": true,
+      "detail": {
+        "before": 500,
+        "after": 500
+      }
+    },
+    {
+      "name": "I12 last item visible low screen",
+      "pass": true,
+      "detail": {
+        "top": 327.5,
+        "bottom": 378.5,
+        "dialogTop": 16,
+        "dialogBottom": 386
+      }
+    },
+    {
+      "name": "I12 close reachable after scrolling",
+      "pass": true
+    },
+    {
+      "name": "I12 touch opens menu",
+      "pass": true
+    },
+    {
+      "name": "I11 internal shortcut /#site-index",
+      "pass": true,
+      "detail": {
+        "path": "/",
+        "hash": "#site-index",
+        "top": 65.328125,
+        "header": 65
+      }
+    },
+    {
+      "name": "I11 internal shortcut /#latest-logs",
+      "pass": true,
+      "detail": {
+        "path": "/",
+        "hash": "#latest-logs",
+        "top": 65.328125,
+        "header": 65
+      }
+    },
+    {
+      "name": "I11 internal shortcut /#top",
+      "pass": true,
+      "detail": {
+        "path": "/",
+        "hash": "#top",
+        "top": 0,
+        "header": 65
+      }
+    },
+    {
+      "name": "R3 text selection",
+      "pass": true
+    },
+    {
+      "name": "V05 failed portrait retains area and alt",
+      "pass": true,
+      "detail": {
+        "failed": true,
+        "alt": "Portrait of Adler Medrado",
+        "width": 293,
+        "height": 195.328125,
+        "scroll": 375,
+        "client": 375
+      }
+    },
+    {
+      "name": "I10 noJS dark",
+      "pass": true,
+      "detail": {
+        "panels": [
+          "block",
+          "block"
+        ],
+        "fallback": "block",
+        "switch": "none",
+        "bg": "rgb(15, 20, 23)"
+      }
+    },
+    {
+      "name": "I10 noJS light",
+      "pass": true,
+      "detail": {
+        "panels": [
+          "block",
+          "block"
+        ],
+        "fallback": "block",
+        "switch": "none",
+        "bg": "rgb(245, 242, 235)"
+      }
+    },
+    {
+      "name": "V04 long title and fingerprint",
+      "pass": true
+    }
+  ],
+  "details": {},
+  "errors": [
+    {
+      "method": "Network.loadingFailed",
+      "params": {
+        "requestId": "43546.546",
+        "timestamp": 5612.72833,
+        "type": "Image",
+        "errorText": "",
+        "canceled": false,
+        "blockedReason": "inspector"
+      }
+    }
+  ],
+  "expectedNetworkFailures": [
+    {
+      "method": "Network.loadingFailed",
+      "params": {
+        "requestId": "43546.546",
+        "timestamp": 5612.72833,
+        "type": "Image",
+        "errorText": "",
+        "canceled": false,
+        "blockedReason": "inspector"
+      }
+    }
+  ],
+  "unexpectedNetworkErrors": []
+}

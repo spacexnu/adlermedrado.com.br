@@ -1,0 +1,26 @@
+[
+  {
+    "englishInput": 0,
+    "englishDisplayed": 0,
+    "portugueseDisplayed": 1,
+    "emptyMessage": true,
+    "draftExcluded": true,
+    "futureExcluded": true
+  },
+  {
+    "englishInput": 1,
+    "englishDisplayed": 1,
+    "portugueseDisplayed": 1,
+    "emptyMessage": false,
+    "draftExcluded": true,
+    "futureExcluded": true
+  },
+  {
+    "englishInput": 6,
+    "englishDisplayed": 5,
+    "portugueseDisplayed": 1,
+    "emptyMessage": false,
+    "draftExcluded": true,
+    "futureExcluded": true
+  }
+]

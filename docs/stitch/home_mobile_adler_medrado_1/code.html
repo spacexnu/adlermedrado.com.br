@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#006e27", "outline-variant": "#3b4b3a", "surface-variant": "#303539", "surface-dim": "#0f1417", "primary-fixed-dim": "#00e55b", "console-cyan": "#00B0FF", "inverse-on-surface": "#2c3134", "on-tertiary-fixed-variant": "#004b70", "on-error": "#690005", "on-primary-container": "#007128", "paper-surface": "#EAE5DB", "on-secondary-container": "#005a49", "background": "#0f1417", "terminal-surface-border": "#1A262C", "on-tertiary-container": "#006797", "tertiary-fixed": "#cae6ff", "on-secondary-fixed-variant": "#005142", "inverse-surface": "#dfe3e7", "surface-container-highest": "#303539", "on-primary": "#003911", "paper-text-dim": "#4A565E", "secondary": "#48f6d0", "tertiary": "#f7faff", "error": "#ffb4ab", "electric-teal": "#00D9B4", "phosphor-green": "#00FF66", "matrix-emerald": "#2FA53E", "paper-base": "#F4F1EA", "tertiary-container": "#bfe1ff", "on-tertiary-fixed": "#001e30", "on-tertiary": "#00344f", "outline": "#849581", "paper-border": "#D5CEBF", "on-primary-fixed": "#002107", "surface-bright": "#353a3d", "amber-alert": "#FFB000", "terminal-surface": "#0E1418", "surface-container-high": "#262b2e", "terminal-black": "#050709", "on-primary-fixed-variant": "#00531b", "tertiary-fixed-dim": "#8dcdff", "secondary-fixed": "#50fcd5", "error-container": "#93000a", "on-error-container": "#ffdad6", "text-dim": "#8A99A8", "surface": "#0f1417", "on-background": "#dfe3e7", "cyber-cyan": "#00F0FF", "on-secondary-fixed": "#002019", "surface-container": "#1b2023", "secondary-container": "#03d9b4", "surface-container-low": "#171c1f", "primary-container": "#00ff66", "surface-container-lowest": "#0a0f12", "surface-tint": "#00e55b", "primary": "#edffe8", "text-muted": "#5C6B75", "secondary-fixed-dim": "#1cdfba", "crimson-signal": "#FF3366", "on-surface-variant": "#b9ccb5", "on-surface": "#dfe3e7", "on-secondary": "#00382d", "primary-fixed": "#6bff83", "paper-text-primary": "#121A1E" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2.5rem", "margin": "2rem", "space-2xl": "4rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem" }, "fontFamily": { "headline-md": ["JetBrains Mono"], "headline-xl": ["JetBrains Mono"], "body-md": ["JetBrains Mono"], "label-lg": ["JetBrains Mono"], "headline-xl-mobile": ["JetBrains Mono"], "body-lg": ["JetBrains Mono"], "body-sm": ["JetBrains Mono"], "headline-lg-mobile": ["JetBrains Mono"], "label-md": ["JetBrains Mono"], "headline-sm": ["JetBrains Mono"], "headline-lg": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"] }, "fontSize": { "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "headline-xl": ["36px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "24px", "fontWeight": "400"}], "label-lg": ["13px", {"lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600"}], "headline-xl-mobile": ["26px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "body-lg": ["15px", {"lineHeight": "26px", "fontWeight": "400"}], "body-sm": ["12px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-lg-mobile": ["22px", {"lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "700"}], "label-md": ["11px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500"}], "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "headline-lg": ["28px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500"}] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen select-none"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-2"><div class="flex items-center gap-space-xs min-w-0"><span class="text-phosphor-green font-headline-sm text-headline-sm select-none">&gt;</span><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">adler medrado</span><span class="font-label-sm text-label-sm text-cyber-cyan tracking-wider uppercase">spacexnu:~$ About</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="hidden sm:flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded-lg"><span class="w-1.5 h-1.5 rounded-full bg-phosphor-green animate-pulse"></span><span class="font-label-sm text-label-sm text-text-dim">ONION/PGP</span></div><button aria-label="Toggle Theme" class="w-11 h-11 flex items-center justify-center rounded-lg bg-surface-container-low text-cyber-cyan hover:text-primary transition-colors" onclick="document.documentElement.classList.toggle('dark')" type="button"><span class="font-body-md text-body-md">☀/☾</span></button><button aria-label="Terminal Menu" class="min-h-[44px] px-2.5 flex items-center justify-center rounded-lg bg-surface-container-high text-phosphor-green font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="const m=document.getElementById('cli-overlay-menu');m.classList.toggle('hidden');m.classList.toggle('flex')" type="button">[MENU]</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="hidden fixed inset-0 z-40 bg-terminal-black/95 backdrop-blur-2xl flex-col pt-20 pb-20 px-gutter-mobile overflow-y-auto" id="cli-overlay-menu"><div class="flex items-center justify-between pb-space-sm"><span class="font-label-sm text-label-sm text-cyber-cyan tracking-widest uppercase">// SYSTEM INDEX &amp; BUILTINS</span><button class="min-h-[44px] px-3 flex items-center justify-center font-label-md text-label-md text-error hover:text-on-error-container" onclick="const m=document.getElementById('cli-overlay-menu');m.classList.add('hidden');m.classList.remove('flex')" type="button">[CLOSE_ESC]</button></div><div class="grid grid-cols-2 gap-space-xs py-space-sm"><a class="flex items-center min-h-[44px] px-3 py-2 rounded bg-surface-container-low text-on-surface hover:text-phosphor-green font-body-sm text-body-sm" data-path="about" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-cyber-cyan mr-1.5">~</span>/about</a><a class="flex items-center min-h-[44px] px-3 py-2 rounded bg-surface-container-low text-on-surface hover:text-phosphor-green font-body-sm text-body-sm" data-path="projects" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-cyber-cyan mr-1.5">~</span>/projects</a><a class="flex items-center min-h-[44px] px-3 py-2 rounded bg-surface-container-low text-on-surface hover:text-phosphor-green font-body-sm text-body-sm" data-path="posts" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-cyber-cyan mr-1.5">~</span>/posts</a><a class="flex items-center min-h-[44px] px-3 py-2 rounded bg-surface-container-low text-on-surface hover:text-phosphor-green font-body-sm text-body-sm" data-path="missives" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-cyber-cyan mr-1.5">~</span>/missives</a><a class="flex items-center min-h-[44px] px-3 py-2 rounded bg-surface-container-low text-on-surface hover:text-phosphor-green font-body-sm text-body-sm" data-path="now" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-cyber-cyan mr-1.5">~</span>/now</a><a class="flex items-center min-h-[44px] px-3 py-2 rounded bg-surface-container-low text-on-surface hover:text-phosphor-green font-body-sm text-body-sm" data-path="uses" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-cyber-cyan mr-1.5">~</span>/uses</a><a class="flex items-center min-h-[44px] px-3 py-2 rounded bg-surface-container-low text-on-surface hover:text-phosphor-green font-body-sm text-body-sm" data-path="contact" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-cyber-cyan mr-1.5">~</span>/contact</a><a class="flex items-center min-h-[44px] px-3 py-2 rounded bg-surface-container-low text-on-surface hover:text-phosphor-green font-body-sm text-body-sm" data-path="rss" href="#" onclick="document.getElementById('cli-overlay-menu').classList.add('hidden')"><span class="text-cyber-cyan mr-1.5">~</span>/rss.xml</a></div><div class="mt-space-md p-space-sm bg-surface-container-lowest rounded-lg font-label-sm text-label-sm text-text-dim flex flex-col gap-1"><span class="text-phosphor-green">FINGERPRINT: 4FA1 91E0 B627 E780 C1F2</span><span>SEC_LEVEL: SOVEREIGN_ENCRYPTED</span><span>NETWORK: TOR_ENABLED (ONION_V3)</span></div></div><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface select-none pb-8">
+<!-- Top Session Bar / Terminal Frame -->
+<div class="mx-margin-mobile mt-space-sm bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg">
+<!-- Window Controls & Session Path -->
+<div class="flex items-center justify-between px-3 py-2 bg-surface-container-low text-text-dim font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-crimson-signal inline-block opacity-85"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-alert inline-block opacity-85"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-phosphor-green inline-block opacity-85"></span>
+<span class="ml-2 text-text-muted font-label-sm">pts/0 (tmux:sec-ops)</span>
+</div>
+<div class="flex items-center gap-1 text-matrix-emerald">
+<span class="material-symbols-outlined text-[13px]">verified_user</span>
+<span class="uppercase tracking-widest text-[9px]">SIG: VALID</span>
+</div>
+</div>
+<!-- Active Terminal Session Prompt -->
+<div class="p-3 bg-terminal-black flex flex-col gap-1 font-body-sm text-body-sm">
+<div class="flex items-center flex-wrap gap-1 text-text-dim">
+<span class="text-phosphor-green font-headline-sm">adler@spacexnu</span>
+<span class="text-text-muted">:</span>
+<span class="text-cyber-cyan">~</span>
+<span class="text-on-surface">$</span>
+<span class="text-primary ml-1">whoami --verbose</span>
+</div>
+<div class="text-text-muted text-[11px] leading-tight mt-0.5">
+        &gt;&gt; HOST: sovereign-node | ENV: PROD_HARDENED | KERNEL: 6.11.2-hardened-gnu
+      </div>
+</div>
+</div>
+<!-- Hero & Profile Section -->
+<div class="mx-margin-mobile mt-space-md flex flex-col gap-space-sm">
+<!-- Role Capsule Badge -->
+<div class="inline-flex items-center self-start gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-phosphor-green font-label-md text-label-md shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-phosphor-green animate-pulse"></span>
+<span>SECURITY-MINDED SOFTWARE ENGINEER</span>
+</div>
+<!-- Heading Block -->
+<div class="flex flex-col mt-1">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary tracking-tight">
+        Adler Medrado
+      </h1>
+<div class="flex items-center gap-2 text-cyber-cyan font-headline-sm text-headline-sm">
+<span>aka</span>
+<span class="bg-surface-container-low px-2 py-0.5 rounded text-secondary font-headline-sm">spacexnu</span>
+</div>
+</div>
+<!-- Subtitle / Mission Statement -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Writing about code, systems, and sovereignty. Building defensive AI along the way.
+    </p>
+<!-- Photo Card with Cybernetic Telemetry Frame -->
+<div class="relative mt-2 rounded-xl overflow-hidden bg-surface-container-lowest shadow-xl">
+<!-- Portrait Image with Tactical Styling -->
+<div class="w-full h-56 bg-cover bg-center filter grayscale contrast-125 brightness-90 relative" data-alt="Monochromatic high-contrast hacker portrait of Adler Medrado sitting inside a dark computer operations room bathed in phosphor green CRT ambient glow, illuminated dual displays showing shell consoles and binary telemetry, retro cybernetic hacker aesthetic, cinematic low-angle security engineer profile." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCaZupqdoE2TpFhV2kD3I_FohEgXYQynGWtPZqe5ex9i3bH2ROTA1pr1chsioAA5Cly3E0btIAVDFjCBMM9tHt5qNCzbcmPobymG61AQN-GrR12FP6xJ5O9T0iY-pwxXh4hh3Vl37ob4dFJjPmqqcpCDcGFLQMhvFQ0lcSN6aZi0JFaj2ENusNPpTCVBD-PkvTlSYc3vOk_vmR4KAOdLupp6SpPFPv-Nz3_exRv45A')">
+<!-- CRT Scanline & Phosphor Gradient Vignette -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Upper HUD Overlay Over Image -->
+<div class="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between text-label-sm font-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 text-phosphor-green backdrop-blur-sm">[42°N] LAT_LOCK</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 text-cyber-cyan backdrop-blur-sm">UID: 1000 // spacexnu</span>
+</div>
+<!-- Bottom Inset Status on Image -->
+<div class="absolute bottom-2.5 left-2.5 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-phosphor-green text-[16px]">terminal</span>
+<span class="text-primary font-label-sm text-label-sm tracking-wide bg-surface-container-lowest/80 px-1.5 py-0.5 rounded">DEFENSIVE_OPS::READY</span>
+</div>
+</div>
+<!-- Telemetry Ribbons Below Photo -->
+<div class="p-3 bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-text-muted">ENCRYPTION ENGINE:</span>
+<span class="text-phosphor-green font-label-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-phosphor-green"></span>
+            ED25519 ACTIVE
+          </span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-text-muted">HOST ARCHITECTURE:</span>
+<span class="text-cyber-cyan font-label-md">SOVEREIGN LINUX</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Filesystem Entrypoints (CLI Tree Navigation) -->
+<div class="mx-margin-mobile mt-space-lg bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-2.5">
+<div class="flex items-center justify-between pb-1.5">
+<div class="flex items-center gap-1.5 text-cyber-cyan font-label-sm text-label-sm tracking-wider">
+<span class="material-symbols-outlined text-[15px]">account_tree</span>
+<span>FILESYSTEM ENTRYPOINTS [INDEX]</span>
+</div>
+<span class="text-text-muted font-label-sm text-label-sm">drwxr-xr-x</span>
+</div>
+<!-- Tree Structure Links -->
+<div class="flex flex-col font-body-sm text-body-sm leading-relaxed text-on-surface">
+<div class="py-1 flex items-baseline">
+<span class="text-text-muted select-none mr-2">├──</span>
+<span class="text-text-dim">Learn who I am</span>
+<span class="text-phosphor-green mx-1.5">→</span>
+<a class="text-cyber-cyan font-headline-sm hover:text-primary transition-colors underline decoration-dotted underline-offset-4" href="#about">about</a>
+</div>
+<div class="py-1 flex items-baseline">
+<span class="text-text-muted select-none mr-2">├──</span>
+<span class="text-text-dim">Explore what I'm building</span>
+<span class="text-phosphor-green mx-1.5">→</span>
+<a class="text-cyber-cyan font-headline-sm hover:text-primary transition-colors underline decoration-dotted underline-offset-4" href="#projects">projects</a>
+</div>
+<div class="py-1 flex items-baseline flex-wrap">
+<span class="text-text-muted select-none mr-2">├──</span>
+<span class="text-text-dim">Read my writing</span>
+<span class="text-phosphor-green mx-1.5">→</span>
+<a class="text-cyber-cyan hover:text-primary transition-colors underline decoration-dotted underline-offset-4" href="#start">start here</a><span class="text-text-muted">,</span> 
+        <a class="text-cyber-cyan hover:text-primary transition-colors underline decoration-dotted underline-offset-4" href="#posts">posts</a> <span class="text-text-muted">and</span> 
+        <a class="text-cyber-cyan hover:text-primary transition-colors underline decoration-dotted underline-offset-4" href="#missives">missives</a>
+</div>
+<div class="py-1 flex items-baseline flex-wrap">
+<span class="text-text-muted select-none mr-2">├──</span>
+<span class="text-text-dim">See what I'm up to</span>
+<span class="text-phosphor-green mx-1.5">→</span>
+<a class="text-cyber-cyan hover:text-primary transition-colors underline decoration-dotted underline-offset-4" href="#now">now</a> <span class="text-text-muted">and</span> 
+        <a class="text-cyber-cyan hover:text-primary transition-colors underline decoration-dotted underline-offset-4" href="#uses">uses</a>
+</div>
+<div class="py-1 flex items-baseline">
+<span class="text-text-muted select-none mr-2">└──</span>
+<span class="text-text-dim">Reach out</span>
+<span class="text-phosphor-green mx-1.5">→</span>
+<a class="text-phosphor-green font-headline-sm hover:text-primary transition-colors underline decoration-dotted underline-offset-4" href="#contact">contact</a>
+</div>
+</div>
+</div>
+<!-- GPG Verification Callout Card -->
+<div class="mx-margin-mobile mt-space-md bg-surface-container-high rounded-xl p-space-md flex items-start gap-space-sm shadow-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 text-phosphor-green">
+<span class="material-symbols-outlined text-[20px]">enhanced_encryption</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-phosphor-green uppercase tracking-wider">Cryptographic Signature</span>
+<p class="font-body-md text-body-md text-primary mt-0.5">
+        All blog posts are GPG signed. If it isn't signed, it isn't mine.
+      </p>
+</div>
+</div>
+<!-- Infrastructure & Agent Readability Note -->
+<div class="mx-margin-mobile mt-space-sm bg-surface-container-lowest rounded-xl p-3 flex flex-col gap-2">
+<div class="flex items-start gap-2 text-on-surface-variant font-body-sm text-body-sm leading-snug">
+<span class="text-phosphor-green select-none">●</span>
+<span>Self-hosted, with an onion mirror, and published as Markdown so agents can read the same pages.</span>
+</div>
+<div class="flex items-center justify-between pt-2 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-label-sm font-label-sm">
+<span class="text-text-dim flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-cyber-cyan">smart_toy</span>
+        ROBOTS: FRIENDLY
+      </span>
+<a class="text-cyber-cyan hover:text-primary transition-colors flex items-center gap-0.5" href="#feed">
+<span>/feed.md</span>
+<span class="material-symbols-outlined text-[12px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Latest Logs Section (Mobile journalctl style) -->
+<div class="mx-margin-mobile mt-space-lg flex flex-col gap-space-sm">
+<!-- Log Command Header -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-phosphor-green font-headline-sm text-headline-sm">
+<span class="select-none">#</span>
+<span>journalctl -u posts.service</span>
+</div>
+<span class="text-text-muted font-label-sm text-label-sm">--no-pager</span>
+</div>
+<p class="text-text-dim font-label-sm text-label-sm">Index of recent public logs, analyses and field notes</p>
+</div>
+<!-- Filter Toggle Tabs -->
+<div class="grid grid-cols-2 gap-space-xs p-1 bg-surface-container-lowest rounded-lg">
+<button class="min-h-[44px] flex items-center justify-center gap-1.5 rounded bg-surface-container-high text-phosphor-green font-label-md text-label-md transition-all" id="tab-en" onclick="document.getElementById('feed-en').classList.remove('hidden'); document.getElementById('feed-pt').classList.add('hidden'); this.classList.add('bg-surface-container-high', 'text-phosphor-green'); this.classList.remove('text-text-dim'); document.getElementById('tab-pt').classList.remove('bg-surface-container-high', 'text-phosphor-green'); document.getElementById('tab-pt').classList.add('text-text-dim');" type="button">
+<span class="text-[10px] px-1 py-0.2 bg-surface-container-lowest rounded">EN</span>
+<span>english.log (5)</span>
+</button>
+<button class="min-h-[44px] flex items-center justify-center gap-1.5 rounded text-text-dim font-label-md text-label-md hover:text-on-surface transition-all" id="tab-pt" onclick="document.getElementById('feed-pt').classList.remove('hidden'); document.getElementById('feed-en').classList.add('hidden'); this.classList.add('bg-surface-container-high', 'text-phosphor-green'); this.classList.remove('text-text-dim'); document.getElementById('tab-en').classList.remove('bg-surface-container-high', 'text-phosphor-green'); document.getElementById('tab-en').classList.add('text-text-dim');" type="button">
+<span class="text-[10px] px-1 py-0.2 bg-surface-container-lowest rounded">PT</span>
+<span>portugues.log (5)</span>
+</button>
+</div>
+<!-- English Posts Stream -->
+<div class="flex flex-col gap-space-xs" id="feed-en">
+<!-- Item 1 -->
+<a class="flex flex-col p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group" href="#post-audacity">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
+<span class="text-text-muted">2026-10-02</span>
+<span class="text-cyber-cyan group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            LOG_READ <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-primary font-body-md text-body-md group-hover:text-phosphor-green transition-colors leading-snug">
+          Debugging an Audacity Crash on Windows: From Bluetooth Headset to Open Source Bug Report
+        </span>
+</a>
+<!-- Item 2 -->
+<a class="flex flex-col p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group" href="#post-cloud">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
+<span class="text-text-muted">2026-10-01</span>
+<span class="text-cyber-cyan group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            LOG_READ <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-primary font-body-md text-body-md group-hover:text-phosphor-green transition-colors leading-snug">
+          Technical Sovereignty: Can You Actually Leave Your Cloud Provider?
+        </span>
+</a>
+<!-- Item 3 -->
+<a class="flex flex-col p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group" href="#post-agents-en">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
+<span class="text-text-muted">2026-07-29</span>
+<span class="text-cyber-cyan group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            LOG_READ <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-primary font-body-md text-body-md group-hover:text-phosphor-green transition-colors leading-snug">
+          From 21 to 71: Making My Site Legible to Agents
+        </span>
+</a>
+<!-- Item 4 -->
+<a class="flex flex-col p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group" href="#post-dojo-en">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
+<span class="text-text-muted">2026-07-09</span>
+<span class="text-cyber-cyan group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            LOG_READ <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-primary font-body-md text-body-md group-hover:text-phosphor-green transition-colors leading-snug">
+          The Line on the Dojo Wall
+        </span>
+</a>
+<!-- Item 5 -->
+<a class="flex flex-col p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group" href="#post-radio-en">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
+<span class="text-text-muted">2026-07-08</span>
+<span class="text-cyber-cyan group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            LOG_READ <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-primary font-body-md text-body-md group-hover:text-phosphor-green transition-colors leading-snug">
+          When the Radio Chose for You
+        </span>
+</a>
+</div>
+<!-- Portuguese Posts Stream (Initially Hidden) -->
+<div class="hidden flex flex-col gap-space-xs" id="feed-pt">
+<!-- Item 1 PT -->
+<a class="flex flex-col p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group" href="#post-agentes-pt">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
+<span class="text-text-muted">2026-07-29</span>
+<span class="text-cyber-cyan group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            REGISTRO <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-primary font-body-md text-body-md group-hover:text-phosphor-green transition-colors leading-snug">
+          De 21 a 71: tornando meu site legível por agentes
+        </span>
+</a>
+<!-- Item 2 PT -->
+<a class="flex flex-col p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group" href="#post-dojo-pt">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
+<span class="text-text-muted">2026-07-09</span>
+<span class="text-cyber-cyan group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            REGISTRO <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-primary font-body-md text-body-md group-hover:text-phosphor-green transition-colors leading-snug">
+          A frase na parede do dojo
+        </span>
+</a>
+<!-- Item 3 PT -->
+<a class="flex flex-col p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group" href="#post-radio-pt">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
+<span class="text-text-muted">2026-07-08</span>
+<span class="text-cyber-cyan group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            REGISTRO <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-primary font-body-md text-body-md group-hover:text-phosphor-green transition-colors leading-snug">
+          Quando a rádio escolhia por você
+        </span>
+</a>
+<!-- Item 4 PT -->
+<a class="flex flex-col p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group" href="#post-circo">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
+<span class="text-text-muted">2026-06-12</span>
+<span class="text-cyber-cyan group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            REGISTRO <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-primary font-body-md text-body-md group-hover:text-phosphor-green transition-colors leading-snug">
+          O circo que eu nunca vi
+        </span>
+</a>
+<!-- Item 5 PT -->
+<a class="flex flex-col p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group" href="#post-js-privacidade">
+<div class="flex items-center justify-between text-label-sm font-label-sm mb-1">
+<span class="text-text-muted">2026-06-09</span>
+<span class="text-cyber-cyan group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+            REGISTRO <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</span>
+</div>
+<span class="text-primary font-body-md text-body-md group-hover:text-phosphor-green transition-colors leading-snug">
+          Adicionei JavaScript no site e a sua privacidade continua intacta
+        </span>
+</a>
+</div>
+</div>
+<!-- Security & Telemetry Footer Card -->
+<div class="mx-margin-mobile mt-space-lg bg-surface-container-lowest rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<!-- PGP Verification and Tracking Notice -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-phosphor-green font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>Cryptographic Integrity</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+        All pages are PGP signed. Learn how to verify my PGP signature 
+        <a class="text-cyber-cyan underline decoration-dotted underline-offset-4 hover:text-primary" href="#verify">here</a>.
+      </p>
+<p class="font-body-sm text-body-sm text-text-dim italic">
+        Privacy policy: this website employs no tracking.
+      </p>
+</div>
+<!-- Security Badges Row -->
+<div class="flex items-center justify-between pt-3 bg-surface-container-low p-2.5 rounded-lg flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-matrix-emerald text-on-primary font-headline-sm text-headline-sm">A+</span>
+<div class="flex flex-col">
+<span class="text-primary font-label-md text-label-md">Mozilla Observatory</span>
+<span class="text-text-muted font-label-sm text-label-sm">Security Rating: Maximum</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-phosphor-green font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+<span>PASSED</span>
+</div>
+</div>
+<!-- System Telemetry Strip -->
+<div class="mt-1 p-2.5 bg-terminal-black rounded-lg text-text-dim font-label-sm text-label-sm flex flex-col gap-1 leading-tight">
+<div class="flex justify-between items-center">
+<span>TTY: <strong class="text-primary">pts/0</strong></span>
+<span>UID: <strong class="text-primary">1000 (spacexnu)</strong></span>
+</div>
+<div class="flex justify-between items-center text-text-muted">
+<span>GPG: <strong class="text-matrix-emerald font-semibold">VALID [ED25519]</strong></span>
+<span>ONION: <strong class="text-cyber-cyan">MIRRORED</strong></span>
+</div>
+</div>
+<!-- Copyright Statement -->
+<div class="text-center pt-2 text-text-muted font-label-sm text-label-sm">
+      © 1996-2026 Adler Medrado. All rights reserved.
+    </div>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.5)]" data-active-classes="text-phosphor-green bg-surface-container-high"><div class="flex justify-between items-center h-12 px-gutter-mobile"><div class="flex items-center gap-space-xs"><a aria-current="page" class="min-h-[44px] min-w-[44px] px-2 flex items-center justify-center rounded-lg font-label-md transition-colors text-phosphor-green bg-surface-container-high" data-path="about" href="#"><span class="text-cyber-cyan mr-0.5">#</span>root</a><a class="min-h-[44px] min-w-[44px] px-2 flex items-center justify-center rounded-lg text-text-dim font-label-md text-label-md transition-colors" data-path="projects" href="#"><span class="text-cyber-cyan mr-0.5">#</span>bin</a><a class="min-h-[44px] min-w-[44px] px-2 flex items-center justify-center rounded-lg text-text-dim font-label-md text-label-md transition-colors" data-path="posts" href="#"><span class="text-cyber-cyan mr-0.5">#</span>log</a></div><div class="flex items-center gap-2 font-label-sm text-label-sm text-text-dim shrink-0"><span class="text-phosphor-green">pts/0</span><span>|</span><span class="text-matrix-emerald">GPG:OK</span><span>|</span><span class="text-text-muted">©96-26</span></div></div></nav></body></html>

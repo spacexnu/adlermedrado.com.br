@@ -1,0 +1,13 @@
+{
+  "baselineFiles": 958,
+  "finalFiles": 959,
+  "added": [
+    "js/home-logs.js"
+  ],
+  "removed": [],
+  "changedCanonicalOrAlternates": [],
+  "homeMissingLocalLinks": [],
+  "rssIdentical": true,
+  "homeMarkdownIdentical": true,
+  "contentAPIIdentical": true
+}

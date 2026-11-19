@@ -1134,7 +1134,7 @@ header.glitch-zone {
 
 /* ===== SHARED CHROME ===== */
 :root {
-    --header-offset: 80px;
+    --header-offset: 96px;
 }
 
 html.menu-open,
@@ -1176,13 +1176,14 @@ html.menu-open body {
 .site-header__sub {
     display: grid;
     gap: 4px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     min-width: 0;
     min-height: 32px;
 }
 
 .site-header__row {
     min-height: 48px;
+    padding-block: 12px 4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1674,6 +1675,7 @@ html.menu-open body {
 
     .site-header__row {
         min-height: 64px;
+        padding-block: 0;
     }
 
     .site-id__name { display: flex; flex-direction: column; line-height: 20px; font-size: 14px; }

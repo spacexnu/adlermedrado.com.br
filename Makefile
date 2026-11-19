@@ -39,10 +39,10 @@ clear-sign:
 	./clearsign_html.sh
 
 deploy:
-	rsync -rvh --progress --delete -e "ssh -o BatchMode=yes -o IdentitiesOnly=yes -o PreferredAuthentications=publickey -i $(DEPLOY_SSH_KEY_PATH)" ./public/ $(DEPLOY_USER)@$(DEPLOY_HOST):$(DEPLOY_PATH)
+	rsync -rvh --progress --delete -e "ssh -o BatchMode=yes -o IdentitiesOnly=yes -o PreferredAuthentications=publickey -i $(DEPLOY_SSH_KEY_PATH)" ./public/ "$(strip $(DEPLOY_USER))@$(strip $(DEPLOY_HOST)):$(DEPLOY_PATH)"
 
 deploy-onion:
-	rsync -rvh --progress --delete -e "ssh -o BatchMode=yes -o IdentitiesOnly=yes -o PreferredAuthentications=publickey -i $(DEPLOY_SSH_KEY_PATH)" ./public/ $(DEPLOY_ONION_USER)@$(DEPLOY_ONION_HOST):$(DEPLOY_ONION_PATH)
+	rsync -rvh --progress --delete -e "ssh -o BatchMode=yes -o IdentitiesOnly=yes -o PreferredAuthentications=publickey -i $(DEPLOY_SSH_KEY_PATH)" ./public/ "$(strip $(DEPLOY_ONION_USER))@$(strip $(DEPLOY_ONION_HOST)):$(DEPLOY_ONION_PATH)"
 
 verify-agent-discovery:
 	./scripts/verify_agent_discovery.sh

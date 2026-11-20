@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $isPortuguese := eq (partial "page-locale.html" .) "pt-BR" }}
 <section class="content-shell">
     <article class="reading-column">
         <header class="page-header">
@@ -6,13 +7,19 @@
         </header>
         <div class="content-meta">
             <small>
+                {{ if $isPortuguese }}
+                {{ $months := slice "janeiro" "fevereiro" "março" "abril" "maio" "junho" "julho" "agosto" "setembro" "outubro" "novembro" "dezembro" }}
+                <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Day }} de {{ index $months (sub (int .PublishDate.Month) 1) }} de {{ .PublishDate.Year }}</time>
+                · {{ .ReadingTime }} min de leitura
+                {{ else }}
                 <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
                 |
                 {{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }} read
+                {{ end }}
             </small>
             {{ if .Params.tags }}
             <div class="post-tags">
-                <strong>Tags:</strong>
+                <strong>{{ if $isPortuguese }}Temas{{ else }}Tags{{ end }}:</strong>
                 {{ range .Params.tags }}
                 <a href="/tags/{{ . | urlize }}">{{ . }}</a>{{ if not (eq (index $.Params.tags (sub (len
                 $.Params.tags) 1)) .) }}, {{ end }}

@@ -15,10 +15,14 @@
 <p class="post-translation"><a href="{{ .RelPermalink }}">Também em português</a></p>
 {{- end -}}
 {{- else if eq $lang "english" -}}
+{{- $label := "Also in English" -}}
+{{- if eq (partial "page-locale.html" $page) "pt-BR" -}}
+{{- $label = "Também em inglês" -}}
+{{- end -}}
 {{- if eq $.format "markdown" -}}
-{{- printf "\n[Also in English](%s)\n" .Permalink -}}
+{{- printf "\n[%s](%s)\n" $label .Permalink -}}
 {{- else -}}
-<p class="post-translation"><a href="{{ .RelPermalink }}">Also in English</a></p>
+<p class="post-translation"><a href="{{ .RelPermalink }}">{{ $label }}</a></p>
 {{- end -}}
 {{- end -}}
 {{- end -}}

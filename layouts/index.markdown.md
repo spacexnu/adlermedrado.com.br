@@ -6,7 +6,7 @@ url: {{ .Permalink | jsonify }}
 
 # {{ .Site.Title }}
 
-{{ .Site.Params.description }}
+{{ .Description | default .Site.Params.description }}
 
 Self-hosted, with an onion mirror, and published as Markdown so agents can read the same pages.
 

@@ -1,6 +1,6 @@
 # {{ .Site.Title }}
 
-> {{ .Site.Params.description }}
+> {{ .Description | default .Site.Params.description }}
 
 ## Posts
 {{ range where .Site.RegularPages "Section" "posts" }}

@@ -691,13 +691,42 @@ header.glitch-zone {
     grid-template-columns: minmax(0, 1fr) minmax(220px, 0.8fr);
     gap: 28px;
     align-items: center;
+    box-sizing: border-box;
     border: 1px solid var(--about-border);
     border-radius: 10px;
     background: var(--about-bg);
 }
 
+.about-hero__text {
+    min-width: 0;
+}
+
 .about-hero__text p {
     margin-top: 0;
+    margin-bottom: 0.85em;
+}
+
+.about-hero__text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-hero__tagline {
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 1.45em;
+    font-weight: 700;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+}
+
+.about-principle {
+    margin: 1.15em 0 0;
+    padding: 0.15em 0 0.15em 0.85em;
+    border-left: 3px solid var(--accent);
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-weight: 600;
+    line-height: 1.45;
 }
 
 .about-hero__photo {
@@ -1106,6 +1135,10 @@ header.glitch-zone {
 
     .about-hero__photo img {
         max-width: 200px;
+    }
+
+    .about-hero__tagline {
+        font-size: 1.28em;
     }
 }
 

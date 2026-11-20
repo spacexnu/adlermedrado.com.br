@@ -28,22 +28,20 @@ layout: "simplepage"
 
 ## My journey
 
-I started programming in the mid-1990s, in the days of MS-DOS, dial-up connections, and bulletin board systems.
+I started programming in the mid-1990s, in the days of MS-DOS, dial-up connections, and bulletin board systems. Back then, I ran my own BBS on a 386 PC running MS-DOS.
 
-I've witnessed the rise of the web, the open-source revolution, the emergence of cloud computing, blockchain, and artificial intelligence.
+Over the years, I've witnessed the rise of the web, the open-source revolution, the emergence of cloud computing, blockchain, and artificial intelligence.
 
-Three decades later, I'm still writing code, learning, experimenting, and building.
+More than three decades later, I'm still writing code, learning, experimenting, and building.
 
-<p class="about-principle">Technologies change. Engineering principles endure.</p>
+The DIY spirit of those early days still drives me: build it yourself, understand every layer, stay sovereign.
+
+**Technologies change. Engineering principles endure.**
+
+If you want to collaborate or just say hi, head to the [contact page](/contact).
 
 ## Currently
 
 - Building [FraudTalon](/tags/fraudtalon/), an AI-powered platform that detects phishing, scams, and online fraud in emails, images, and URLs.
 - Exploring local and cloud AI stacks to keep defenses close to the metal.
 - Finishing a History degree while staying embedded in hacker culture.
-
-## Origin story
-
-My journey started on a BBS I ran in the 90s on a PC/AT 386 with MS-DOS. That DIY spirit still drives everything I do: build it yourself, understand every layer, stay sovereign.
-
-If you want to collaborate or just say hi, head to the [contact page](/contact).
